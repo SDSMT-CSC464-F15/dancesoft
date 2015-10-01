@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  1 OCT 2015 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  1 OCT 2015 15:06
 entering extended mode
 **SystemTemplate.tex
 (SystemTemplate.tex
@@ -1720,7 +1720,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <./SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=967, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=973, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -1736,7 +1736,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <./SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=972, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=979, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -1752,7 +1752,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <./SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=977, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=985, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -1768,7 +1768,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <./SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=982, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=991, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -1843,15 +1843,14 @@ Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on SystemTemplate.pdf (69 pages, 424354 bytes).
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on SystemTemplate.pdf (69 pages, 746331 bytes).
 PDF statistics:
- 1178 PDF objects out of 1200 (max. 8388607)
+ 1189 PDF objects out of 1200 (max. 8388607)
  257 named destinations out of 1000 (max. 500000)
  1090 words of extra memory for PDF output out of 10000 (max. 10000000)
 

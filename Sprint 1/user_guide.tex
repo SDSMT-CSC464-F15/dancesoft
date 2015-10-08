@@ -1,0 +1,57 @@
+\documentclass[11pt]{book}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage[width=7.0in, height=9.0in, top=1.0in, papersize={8.5in,11in}]{geometry}
+\usepackage[pdftex]{graphicx}
+%\usepackage{datetime}
+\usepackage{anyfontsize}
+\usepackage{t1enc}
+\usepackage{verbatim}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{framed}
+\usepackage{pdfpages}
+\usepackage{listings}
+\lstset{language=C}
+
+\lstset{language=python,frame=ltrb,framesep=5pt,basicstyle=\normalsize,
+ keywordstyle=\ttfamily\color{DarkRed},
+%morecomment=[n][\textbf]{In\ [}{]\:},
+%morecomment=[n][\textbf]{Out\ [}{]\:},
+morecomment=[s][\color{blue}]{In\ [}{]\:},
+morecomment=[s][\color{red}]{Out[}{]\:},
+identifierstyle=\ttfamily\color{DarkBlue}\bfseries,
+commentstyle=\color{DarkGreen},
+stringstyle=\ttfamily,
+showstringspaces=false,tabsize = 3}
+
+
+\lstdefinelanguage{shell} {
+commentstyle = \color{black},
+keywordstyle = \color{black},
+stringstyle = \color{black},
+identifierstyle = \color{black},
+morecomment=[s][\color{blue}]{In\ [}{]\:},
+morecomment=[s][\color{red}]{Out[}{]\:},
+ }
+
+\pagestyle{empty}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+
+\fontsize{16}{16}\selectfont User guide for how to use PyQt on Mac
+
+\section{Team Members:}
+Dicheng Wu
+\\Marcus Berger\\
+\textbf{Sponsor:}
+\\Jeff McGough
+\\
+
+This file will guide users to install Python and PyQt on Mac. First go to Python official website and download python version 3.2 \url{https://www.python.org/download/releases/3.2/}, and choose \textcolor{blue} {Mac OS X 64-bit/32-bit Installer (3.2) for Mac OS X 10.6 } to download. Then you are supposed to follow the installation guide of Python and you will be fine. Next, you are going to download PyQt4 from \url {http://sourceforge.net/projects/pyqtx/files/Complete/PyQtX%2B_py323_q482_pyqt494.pkg.mpkg2.zip/download} and wait for seconds, it should starts downloading. After that, you should follow the installation guide. finally, you can go to GitHub and download the application of window and run it on your own machine!
+
+\end{document}

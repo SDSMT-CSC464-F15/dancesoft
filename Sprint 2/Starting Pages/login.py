@@ -1,147 +1,66 @@
-from PyQt4 import QtGui
-from PyQt4.QtSql import *
-import os, sys
+# -*- coding: utf-8 -*-
 
-class Login(QtGui.QDialog):
-    def __init__(self):
-        super(Login, self).__init__()
-        
-        '''
-        self.textName = QtGui.QLineEdit()
-        self.resize(371, 225)
-        self.textPass = QtGui.QLineEdit()
-        self.buttonLogin = QtGui.QPushButton('Login', self)
-        #self.buttonLogin.setGeometry(130, 160, 111, 31)
-        
-        self.buttonLogin.clicked.connect(self.handleLogin)
-        self.layout = QtGui.QVBoxLayout(self)
-        self.layout.addWidget(self.textName)
-        self.layout.addWidget(self.textPass)
-        self.layout.addWidget(self.buttonLogin)
-        '''
-        
-        self.initUI()
+# Form implementation generated from reading ui file 'Login.ui'
+#
+# Created by: PyQt4 UI code generator 4.11.4
+#
+# WARNING! All changes made in this file will be lost!
 
-    def initUI(self):
-        #set the window's size
-        self.setWindowTitle('Login')
-        self.resize(394, 171) 
-        self.verticalLayoutWidget = QtGui.QWidget(self)
-        self.verticalLayoutWidget.setGeometry(9, 9, 379, 151)
-       
-        
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_Login(object):
+    def setupUi(self, Login):
+        Login.setObjectName(_fromUtf8("Login"))
+        Login.resize(400, 171)
+        self.verticalLayoutWidget = QtGui.QWidget(Login)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(9, 9, 381, 151))
+        self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.verticalLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
-
-        #add frame of Dance Arts
-        self.groupBox = QtGui.QGroupBox('Dance Arts', self.verticalLayoutWidget) 
-        self.groupBox.setAutoFillBackground(True)
-
-        #login button
-        self.loginButton = QtGui.QPushButton('Login',self.groupBox)
-        self.loginButton.setGeometry(200, 110, 75, 23)
-
-        #cancel button (exit login page)
-        self.cancelButton = QtGui.QPushButton('Cancel',self.groupBox)
-        self.cancelButton.setGeometry(280, 110, 75, 23)
-        
-        #link two buttons to different functions 
-        self.loginButton.clicked.connect(self.handleLogin)
-        self.cancelButton.clicked.connect(sys.exit)
-
-        #username input box
-        self.textName = QtGui.QLineEdit(self.groupBox)
-        self.textName.setGeometry(80, 50, 271, 20)
-        
-        #password input box with mask
-        self.textPass = QtGui.QLineEdit(self.groupBox)
-        self.textPass.setGeometry(80, 80, 271, 20)
-        self.textPass.setAutoFillBackground(False)
-        self.textPass.setEchoMode(QtGui.QLineEdit.Password)
-        
-        #username label
-        self.nameLabel = QtGui.QLabel('Username',self.groupBox)
-        self.nameLabel.setGeometry(10, 50, 61, 20)
-      
-        #password label
-        self.passLabel = QtGui.QLabel('Password', self.groupBox)
-        self.passLabel.setGeometry(10, 80, 61, 16)
-
-  
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.groupBox = QtGui.QGroupBox(self.verticalLayoutWidget)
+        self.groupBox.setObjectName(_fromUtf8("groupBox"))
+        self.pushButton = QtGui.QPushButton(self.groupBox)
+        self.pushButton.setGeometry(QtCore.QRect(270, 100, 75, 23))
+        self.pushButton.setObjectName(_fromUtf8("pushButton"))
+        self.pushButton_2 = QtGui.QPushButton(self.groupBox)
+        self.pushButton_2.setGeometry(QtCore.QRect(180, 100, 75, 23))
+        self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
+        self.label = QtGui.QLabel(self.groupBox)
+        self.label.setGeometry(QtCore.QRect(10, 40, 61, 16))
+        self.label.setObjectName(_fromUtf8("label"))
+        self.label_2 = QtGui.QLabel(self.groupBox)
+        self.label_2.setGeometry(QtCore.QRect(10, 70, 51, 16))
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.lineEdit = QtGui.QLineEdit(self.groupBox)
+        self.lineEdit.setGeometry(QtCore.QRect(70, 40, 271, 20))
+        self.lineEdit.setObjectName(_fromUtf8("lineEdit"))
+        self.lineEdit_2 = QtGui.QLineEdit(self.groupBox)
+        self.lineEdit_2.setGeometry(QtCore.QRect(70, 70, 271, 20))
+        self.lineEdit_2.setObjectName(_fromUtf8("lineEdit_2"))
         self.verticalLayout.addWidget(self.groupBox)
 
+        self.retranslateUi(Login)
+        QtCore.QMetaObject.connectSlotsByName(Login)
 
-    def handleLogin(self):
-        # if cannot connect to database showing error window
-        if not self.conn():
-            QtGui.QMessageBox.warning(
-                self, 'Error', 'database contecting error')
-        
-        # create sql query to retrieve username, password, accesslevel
-        query = QSqlQuery()
-        query.exec_("SELECT User_name, User_password, Access_level FROM Account")
+    def retranslateUi(self, Login):
+        Login.setWindowTitle(_translate("Login", "Login", None))
+        self.groupBox.setTitle(_translate("Login", "Dance Arts", None))
+        self.pushButton.setText(_translate("Login", "Cancel", None))
+        self.pushButton_2.setText(_translate("Login", "Login", None))
+        self.label.setText(_translate("Login", "Username", None))
+        self.label_2.setText(_translate("Login", "Password", None))
 
-        # get username and password from gui
-        input_name = self.textName.text()
-        input_pass = self.textPass.text() 
-
-        #this flag for detect weather the username and password are valid
-        self.flag = False
-        
-        while query.next():
-            # get username, password and accesslevel from database
-            user_name = query.value(0).toString()
-            user_password = query.value(1).toString()
-            user_access_level = query.value(2).toInt()
-
-            # campare above information to the user inputted information
-            if (user_name == input_name and user_password == input_pass):
-                # if valid user found, set flag true
-                self.flag = True
-                # save personal information once the valid information found 
-                self.user_name = user_name
-                self.user_password = user_password
-                self.user_access_level = user_access_level[0]
-
-                #test.....
-                if self.user_access_level == 1:
-                    QtGui.QMessageBox.warning(
-                self, 'message', 'admin')
-                elif self.user_access_level == 2:
-                    QtGui.QMessageBox.warning(
-                self, 'message', 'teacher')
-                #self.accept()
-        # if user not found, show error message.              
-        if not self.flag:
-            QtGui.QMessageBox.warning(
-                self, 'Error', 'Invalid user or password')
-
-    # set up database connection 
-    def conn(self):
-        print "test!!!"
-        self.db = QSqlDatabase.addDatabase("QMYSQL")
-        self.db.setHostName("services1.mcs.sdsmt.edu")
-        self.db.setDatabaseName("db_dancesoft_f15")
-        self.db.setUserName("dancesoft_f15")
-        self.db.setPassword("DanceSoft")
-        return self.db.open()
-	
-'''
-class Window(QtGui.QMainWindow):
-    def __init__(self):
-        QtGui.QMainWindow.__init__(self)
-'''
-
-
-
-import sys
-app = QtGui.QApplication(sys.argv)
-window = Login().exec_()
-    
-
-'''
-    if window.exec_() == QtGui.QDialog.Accepted:
-        if window.user_access_level == 1:
-            window = Window()
-            window.show()
-            sys.exit(app.exec_())
-'''

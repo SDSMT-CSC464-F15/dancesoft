@@ -1,11 +1,11 @@
-﻿import sys
+import sys
 from PyQt4 import QtGui, QtCore
 
 
 class Window(QtGui.QMainWindow):
 
     def __init__(self):
-        super().__init__()
+        super(Window,self).__init__()
         self.setGeometry(50,50,500,300)
         self.setWindowTitle("DanceSoft Sample Window")
         self.setWindowIcon(QtGui.QIcon('adalogo.png'))

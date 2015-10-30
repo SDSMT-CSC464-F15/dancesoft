@@ -51,6 +51,8 @@ class Ui_Login(object):
         self.lineEdit_2 = QtGui.QLineEdit(self.groupBox)
         self.lineEdit_2.setGeometry(QtCore.QRect(70, 70, 271, 20))
         self.lineEdit_2.setObjectName(_fromUtf8("lineEdit_2"))
+        self.lineEdit_2.setAutoFillBackground(False)
+        self.lineEdit_2.setEchoMode(QtGui.QLineEdit.Password)
         self.verticalLayout.addWidget(self.groupBox)
 
         self.retranslateUi(Login)

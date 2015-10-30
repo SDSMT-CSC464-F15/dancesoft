@@ -1,6 +1,7 @@
 import sys
 from PyQt4 import QtGui
 from login import Ui_Login
+from PyQt4.QtSql import *
 
 class Login_Window(QtGui.QDialog):
     def __init__(self):
@@ -8,8 +9,10 @@ class Login_Window(QtGui.QDialog):
         self.user_access_level = -1
         self.ui = Ui_Login()
         self.ui.setupUi(self)
+        self.ui.pushButton_2.clicked.connect(self.handleLogin)
+        self.ui.pushButton.clicked.connect(self.close)
 
-        def handleLogin(self):
+    def handleLogin(self):
         # if cannot connect to database showing error window
         if not self.conn():
             QtGui.QMessageBox.warning(
@@ -20,8 +23,8 @@ class Login_Window(QtGui.QDialog):
         query.exec_("SELECT User_name, User_password, Access_level FROM Account")
 
         # get username and password from gui
-        input_name = self.textName.text()
-        input_pass = self.textPass.text() 
+        input_name = self.ui.lineEdit.text()
+        input_pass = self.ui.lineEdit_2.text() 
 
         #this flag for detect weather the username and password are valid
         self.flag = False
@@ -31,38 +34,27 @@ class Login_Window(QtGui.QDialog):
             user_name = query.value(0).toString()
             user_password = query.value(1).toString()
             user_access_level = query.value(2).toInt()
-
+            
             # campare above information to the user inputted information
             if (user_name == input_name and user_password == input_pass):
                 # if valid user found, set flag true
                 self.flag = True
                 # save personal information once the valid information found 
-                self.user_name = user_name
-                self.user_password = user_password
                 self.user_access_level = user_access_level[0]
 
                 #test.....
-                if self.user_access_level == 1:
-                    QtGui.QMessageBox.warning(
-                self, 'message', 'admin')
+                if self.user_access_level == 1:        
+                    self.done(self.user_access_level)
                 
-                elif self.user_access_level == 2:
-                    
-                    from Teacher import Teacher_window
-                    self.tea = Teacher_window()
-                    self.tea.show()
-                    
-                    
-
-                '''
-                self.accept()
-                '''
+                elif self.user_access_level == 2:           
+                    self.done(self.user_access_level)
                 
                 
         # if user not found, show error message.              
         if not self.flag:
             QtGui.QMessageBox.warning(
                 self, 'Error', 'Invalid user or password')
+            self.ui.lineEdit_2.clear()
 
     # set up database connection 
     def conn(self):
@@ -72,49 +64,25 @@ class Login_Window(QtGui.QDialog):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
-        
 
-
-
-import sys
-app = QtGui.QApplication(sys.argv)
-Current_Window = Login_Window()
-Current_Window.show()
-sys.exit(app.exec_())
-
-
-
-
-
-'''
 def main():
-    import sys
     app = QtGui.QApplication(sys.argv)
+    flag = Login_Window().exec_()
 
-    
-    Login().exec_()
-
-'''
-    if Login().exec_() == QtGui.QDialog.Accepted:
-        print ''
+    if flag == 1:
+        from Admin import Admin_window
+        window = Admin_window()
+        window.show()
+        sys.exit(app.exec_())
+    elif flag == 2:
         from Teacher import Teacher_window
         window = Teacher_window()
         window.show()
         sys.exit(app.exec_())
-
-'''       
-
+    
 
 if __name__ == '__main__':
     main()
 
 
-'''
-    if window.exec_() == QtGui.QDialog.Accepted:
-        if window.user_access_level == 1:
-            window = Window()
-            window.show()
-            sys.exit(app.exec_())
-'''
 
-'''

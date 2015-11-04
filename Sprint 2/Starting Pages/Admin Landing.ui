@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>549</width>
-    <height>344</height>
+    <width>629</width>
+    <height>387</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,12 +19,12 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>521</width>
-      <height>311</height>
+      <width>551</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Landing">
      <widget class="QWidget" name="verticalLayoutWidget">
@@ -616,44 +616,11 @@
      </widget>
     </widget>
     <widget class="QWidget" name="page">
-     <widget class="QLabel" name="label">
+     <widget class="QPushButton" name="Teacher_search_back_btn">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>30</y>
-        <width>46</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Search</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>30</y>
-        <width>421</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTableWidget" name="tableWidget">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>70</y>
-        <width>461</width>
-        <height>201</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="Payroll_back_btn_2">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>280</y>
+        <x>460</x>
+        <y>290</y>
         <width>75</width>
         <height>23</height>
        </rect>
@@ -668,45 +635,67 @@
        <string>Back</string>
       </property>
      </widget>
-    </widget>
-    <widget class="QWidget" name="page_2">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QLineEdit" name="Search_lineEdit">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>280</y>
-        <width>75</width>
+        <x>100</x>
+        <y>10</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableView" name="Teacher_view">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>541</width>
+        <height>241</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Teacher Name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Search_btn">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>101</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>Submit</string>
+       <string>Search</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="Adv_search_btn">
       <property name="geometry">
        <rect>
         <x>440</x>
-        <y>280</y>
-        <width>75</width>
+        <y>10</y>
+        <width>101</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>Back</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>50</y>
-        <width>211</width>
-        <height>22</height>
-       </rect>
+       <string>Advanced Search</string>
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="page_2"/>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="label_2">
       <property name="geometry">
@@ -1023,7 +1012,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>549</width>
+     <width>629</width>
      <height>21</height>
     </rect>
    </property>

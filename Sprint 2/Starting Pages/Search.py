@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'search.ui'
 #
-# Created: Sun Nov  1 15:39:33 2015
+# Created: Tue Nov  3 17:07:14 2015
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -44,6 +44,9 @@ class Ui_Search_MainWindow(object):
         self.Student_view = QtGui.QTableView(self.centralwidget)
         self.Student_view.setGeometry(QtCore.QRect(25, 121, 751, 431))
         self.Student_view.setObjectName(_fromUtf8("Student_view"))
+        self.Reset_search_btn = QtGui.QPushButton(self.centralwidget)
+        self.Reset_search_btn.setGeometry(QtCore.QRect(680, 60, 111, 23))
+        self.Reset_search_btn.setObjectName(_fromUtf8("Reset_search_btn"))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
@@ -61,4 +64,5 @@ class Ui_Search_MainWindow(object):
         self.label.setText(_translate("MainWindow", "Enter Student Name", None))
         self.Search_btn.setText(_translate("MainWindow", "Search", None))
         self.Adv_search_btn.setText(_translate("MainWindow", "Advanced Search", None))
+        self.Reset_search_btn.setText(_translate("MainWindow", "Reset", None))
 

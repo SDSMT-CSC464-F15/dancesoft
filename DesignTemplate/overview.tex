@@ -16,20 +16,20 @@ What is the purpose of the system or product?
 
 \section{Deliverables} 
 
-\subsection{Major System Component \#1}
-Describe briefly the role this major component plays in this system. 
+\subsection{Major System Component: Database}
+The first major component of the system is the MySQL relational database. The database will contain the Academy's data and be the core of the back-end side of the software, and be the conduit for most of the systems interactions with the data. The database will live within a local computer provided by the user.  
 
-\subsection{Major System Component \#2}
-Describe briefly the role this major component plays in this system. 
+\subsection{Major System Component: User Interface}
+The second major component of the system is the front-end user interface. This will be the only part of the system most users ever see, and will provide an effective means to complete the desired user task. This is accomplished through the use of pages created in PyQt with interfaces to give users effective ways to interact with the database and the necessary data for their requested operation.
 
 \subsection{Major System Component \#3}
 Describe briefly the role this major component plays in this system. 
 
 \section{Systems Goals}
-Briefly describe the overall goals this system plans to achieve.
-These goals are typically provided by the stakeholders.  This is not
-intended to be a detailed requirements listing.  Keep in mind that
-this section is still part of the Overview.
+The system needs to provide a solution which can run the dance studio data and some day to day activities in an effective and secure manner. This includes allowing teachers to print role sheets, look at schedules, and manage their information. Students need to have the ability to see information pertinent to them such as registration and class requirements. Owners need to be able to use the system to manage their employees, the academy's students and it classes, and other administrative duties such as billing and payroll  Lastly this system as a whole also needs to be an improvement on the current system in use by the customer and provide an easier and more efficient way to run the clients business.
+
+Overall the system goal is to provide a environment where academy owners, teachers, and students can effectively manage their personal needs and requirements for academy participation and continued operations.
+
 
 \section{System Overview and Diagram}
 Provide a more detailed description of the major system components
@@ -51,26 +51,15 @@ update correctly.
 \end{figure}
 
 \section{Technologies Overview}
-This section should contain a list of specific technologies used to
-develop the system.  The list should contain the name of the
-technology, brief description, link to reference material for further
-understanding, and briefly how/where/why it was used in the system.
-See Table~\ref{somenumbers}.  This is a floating table environment.
-\LaTeX\ will try to put it close to where it was typeset but will not
-allow the table to be split.
+The primary Technologies for this projects are as follows:
 
-\begin{table}[tbh]
-\caption{A sample Table ... some numbers. \label{somenumbers}}
-\begin{center}
-\begin{tabular}{|r|l|}
-  \hline
-  7C0 & hexadecimal \\
-  3700 & octal \\ \cline{2-2}
-  11111000000 & binary \\
-  \hline \hline
-  1984 & decimal \\
-  \hline
-\end{tabular}
-\end{center}
-\end{table}
+\begin{enumerate}
+\item Xcode and Visual Studio - Xcode and MSVS are the primary development IDEs for this project. Of the two the one the group used the most was visual studio so we could develop on the machines provided by the school.
+\item Python - the primary programming language for the project
+\item PHP - primary language for student web interface
+\item PyQt and Qt Designer - Gui package and development environment 
+\item MySQL - MySQL provides the database and relational quires to manage the data and organize it within the system.
+\end{enumerate}
 
+
+These technologies were selected after a first research sprint where research into programming language, GUI, and database options were selected. A brief description                    of the research can be found in the sprint 1 report or the first prototype sections of this document.

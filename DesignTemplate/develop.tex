@@ -1,23 +1,46 @@
 % !TEX root = SystemTemplate.tex
 \chapter{Development Environment}
-The basic purpose for this section is to give a developer all of the necessary 
-information to setup their development environment to run, test, and/or develop. 
+The purpose of this section is to give a developer the necessary information to setup their development environment to run, test, develop and/or update the DanceSoft software. 
 
 
 \section{Development IDE and Tools}
-Describe which IDE and provide links to installs and/or reference material. 
+The two main IDEs were used in the this project were Microsoft Visual Studio 2015, and Xcode 6. Python IDLE would also be used on occasion for minor quick fixes so the main IDEs would not need to be loaded completely. Of these the bulk of development was conducted with Visual Studio due to the fact that the laptops provided by South Dakota School of Mine and Technology run windows as their primary operating system. Visual Studio also provided a suite of debugging and testing features that allowed the team to manage and manipulate the code effectively.\\
+The second IDE used was Xcode which is the primary development environment for the Mac operating system. This IDE was used when ever we want to directly test Mac compatability with our code. Since Mac is the required working operating system for this project. Though due to accessibility Xcode was not the Main IDE used by the team. Should the project be futher developed in the future IDE selection should not matter due to the cross-platform development of the project.
+
+\begin{enumerate}
+\item Visual Studio install: \url{https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx}
+\item Visual Studio Reference: \url{https://msdn.microsoft.com/en-us/library/scesz732.aspx}
+\item Xcode install: \url{https://developer.apple.com/xcode/downloads/}
+\item Xcode Reference: \url{https://developer.apple.com/}
+\item IDLE install: comes with python 3 download url{https://www.python.org/downloads/}
+\item IDLE Reference: \url{https://docs.python.org/3.1/}
+\end{enumerate}
 
 \section{Source  Control}
-Which source control system is/was used?  How was it setup?  How does a developer 
-connect to it? 
+The source control for this product is conducted through Github. The Github repo is broken down into a final code folder, a documentation folder, and six sprint folders which contain the materials worked on in each sprint for senior design grading purposes. Connects and management is done through the provided Github GUI, which is installed when Github is downloaded. If the GUI is insufficient the group will sometimes use the shell also provided with the install. The repo is public and can be seen by anyone by going to \url{https://github.com/SDSMT-CSC464-F15/dancesoft/}
+
 
 \section{Dependencies}
-Describe all dependencies associated with developing the system. 
+Currently the project contains two known dependencies. The first is in the PyQt4 Python library which if changed could cause issues within the system GUI. However this seem unlikely since the main focus of PyQt updates is now focused on PyQt5. Second is the project dependence on MySQL relational database. This dependency should also be negligible since any update to MySQL are normally done with continuing compatibly with existing software in mind.
 
 \section{Build  Environment}
+-------------------------------------------------------------------\\
+NOT KNOWN AT THIS TIME, WILL ADD LATER\\
+-------------------------------------------------------------------------
+
 How are the packages built?  Are there build scripts? 
 
 \section{Development Machine Setup}
-If warranted, provide a list of steps and details associated with setting up a 
-machine for use by a developer. 
+Setup requirements to develop on this project:
+
+\begin{enumerate}
+\item Download Python 3: \url{https://www.python.org/downloads/}
+\item Download necessary IDE from the links provided above or another source
+\item Download MySQL: \url{https://www.mysql.com/downloads/}
+\item Download the PyQt4 Python library: \url{http://sourceforge.net/projects/pyqt/}
+\item Connect to the MySQL database using credentials received from the client 
+\item Get the python scripts and any makefiles from the DanceSoft Github repo
+\item Run and test script functionality
+\item Begin development updates  
+\end{enumerate} 
 

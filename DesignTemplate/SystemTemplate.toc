@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.1}Overview}{7}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Scope}{7}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Purpose of the System}{7}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2} Stakeholder Information}{7}{section.3.2}
+\contentsline {section}{\numberline {3.2}Stakeholder Information}{7}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Customer or End User (Product Owner)}{7}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Management or Instructor (Scrum Master)}{8}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Developers --Testers}{8}{subsection.3.2.3}
@@ -41,10 +41,9 @@
 \contentsline {subsubsection}{\numberline {3.5.1.a}User Story \#1 Breakdown}{9}{subsubsection.3.5.1.1}
 \contentsline {subsection}{\numberline {3.5.2}User Story \#2}{9}{subsection.3.5.2}
 \contentsline {subsubsection}{\numberline {3.5.2.a}User Story \#2 Breakdown}{9}{subsubsection.3.5.2.1}
-\contentsline {subsection}{\numberline {3.5.3}User Story \#3}{9}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.a}User Story \#3 Breakdown}{9}{subsubsection.3.5.3.1}
+\contentsline {subsection}{\numberline {3.5.3}User Story \#3}{10}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.a}User Story \#3 Breakdown}{10}{subsubsection.3.5.3.1}
 \contentsline {section}{\numberline {3.6}Research or Proof of Concept Results}{10}{section.3.6}
-\contentsline {section}{\numberline {3.7}Supporting Material}{10}{section.3.7}
 \contentsline {chapter}{\numberline {4}Design and Implementation}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Major Component \#1 }{11}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Technologies Used}{12}{subsection.4.1.1}
@@ -74,9 +73,9 @@
 \contentsline {chapter}{\numberline {6}Development Environment}{17}{chapter.6}
 \contentsline {section}{\numberline {6.1}Development IDE and Tools}{17}{section.6.1}
 \contentsline {section}{\numberline {6.2}Source Control}{17}{section.6.2}
-\contentsline {section}{\numberline {6.3}Dependencies}{17}{section.6.3}
-\contentsline {section}{\numberline {6.4}Build Environment}{17}{section.6.4}
-\contentsline {section}{\numberline {6.5}Development Machine Setup}{17}{section.6.5}
+\contentsline {section}{\numberline {6.3}Dependencies}{18}{section.6.3}
+\contentsline {section}{\numberline {6.4}Build Environment}{18}{section.6.4}
+\contentsline {section}{\numberline {6.5}Development Machine Setup}{18}{section.6.5}
 \contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{19}{chapter.7}
 \contentsline {section}{\numberline {7.1}Deployment Information and Dependencies}{19}{section.7.1}
 \contentsline {section}{\numberline {7.2}Setup Information}{19}{section.7.2}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  8 NOV 2015 15:50
 entering extended mode
 **sprints_2_wrapper.tex
@@ -8,6 +9,29 @@ Babel <3.9m> and hyphenation patterns for 69 languages loaded.
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
 File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.12)  9 NOV 2015 21:10
+entering extended mode
+**sprints_2_wrapper.tex
+
+("C:\Users\7304859\Desktop\senior design\dancesoft\Sprint 2\sprints_2_wrapper.t
+ex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -26,7 +50,11 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+<<<<<<< HEAD
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+=======
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 \KV@toks@=\toks14
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
@@ -55,10 +83,17 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+<<<<<<< HEAD
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+=======
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -66,7 +101,11 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
+<<<<<<< HEAD
 Package graphics Info: Driver file: pdftex.def on input line 94.
+=======
+Package graphics Info: Driver file: pdftex.def on input line 91.
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -89,7 +128,11 @@ Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 Package: t1enc 1994/06/01 Standard LaTeX package
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+<<<<<<< HEAD
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+=======
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 \every@verbatim=\toks16
 \verbatim@line=\toks17
 \verbatim@in@stream=\read1
@@ -107,7 +150,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box27
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+<<<<<<< HEAD
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+=======
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 )
 \@float@every@algorithm=\toks20
 \c@algorithm=\count93
@@ -133,15 +180,24 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+<<<<<<< HEAD
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+=======
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 \calc@Acount=\count98
 \calc@Bcount=\count99
 \calc@Adimen=\dimen117
 \calc@Bdimen=\dimen118
 \calc@Askip=\skip46
 \calc@Bskip=\skip47
+<<<<<<< HEAD
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
+=======
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 \calc@Ccount=\count100
 \calc@Cskip=\skip48
 )
@@ -194,12 +250,17 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 \lst@maxwidth=\dimen124
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+<<<<<<< HEAD
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+=======
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 \c@lstnumber=\count108
 \lst@skipnumbers=\count109
 \lst@framebox=\box31
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+<<<<<<< HEAD
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
@@ -212,11 +273,30 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
+=======
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
+<<<<<<< HEAD
 No file sprints_2_wrapper.aux.
+=======
+("C:\Users\7304859\Desktop\senior design\dancesoft\Sprint 2\sprints_2_wrapper.a
+ux")
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
@@ -230,7 +310,11 @@ LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 42.
+<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+=======
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 *geometry* driver: auto-detecting
@@ -304,14 +388,23 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 67.
 [1
 
+<<<<<<< HEAD
 {C:/Users/7110002/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+=======
+{C:/Users/7304859/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 <database_tables.png, id=7, 690.32906pt x 292.09125pt>
 File: database_tables.png Graphic file (type png)
 
 <use database_tables.png>
 Package pdftex.def Info: database_tables.png used on input line 90.
 (pdftex.def)             Requested size: 252.94499pt x 107.02467pt.
+<<<<<<< HEAD
  [2 <./database_tables.png>]
+=======
+ [2 <C:/Users/7304859/Desktop/senior design/dancesoft/Sprint 2/database_tables.
+png>]
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 <login_page.png, id=11, 304.88907pt x 154.32657pt>
 File: login_page.png Graphic file (type png)
  <use login_page.png>
@@ -328,7 +421,12 @@ File: admin_landing.png Graphic file (type png)
 <use admin_landing.png>
 Package pdftex.def Info: admin_landing.png used on input line 121.
 (pdftex.def)             Requested size: 252.94499pt x 180.53816pt.
+<<<<<<< HEAD
  [4 <./login_page.png> <./admin_landing.png>]
+=======
+ [4 <C:/Users/7304859/Desktop/senior design/dancesoft/Sprint 2/login_page.png> 
+<C:/Users/7304859/Desktop/senior design/dancesoft/Sprint 2/admin_landing.png>]
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 Overfull \hbox (29.052pt too wide) in paragraph at lines 137--138
 \T1/phv/m/n/16 on time due to many time drain-ing is-sues, such as other class 
 work,family
@@ -344,6 +442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
+<<<<<<< HEAD
 [6] (sprints_2_wrapper.aux) ) 
 Here is how much of TeX's memory you used:
  4529 strings out of 493673
@@ -358,6 +457,23 @@ Here is how much of TeX's memory you used:
 vb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb
 >
 Output written on sprints_2_wrapper.pdf (6 pages, 64189 bytes).
+=======
+[6]
+("C:\Users\7304859\Desktop\senior design\dancesoft\Sprint 2\sprints_2_wrapper.a
+ux") ) 
+Here is how much of TeX's memory you used:
+ 4533 strings out of 493921
+ 65629 string characters out of 3144870
+ 162736 words of memory out of 3000000
+ 7766 multiletter control sequences out of 15000+200000
+ 22151 words of font info for 28 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 37i,6n,49p,717b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on sprints_2_wrapper.pdf (6 pages, 64200 bytes).
+>>>>>>> b94ec0bb826ab200223e98254829d3c88fca03a9
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

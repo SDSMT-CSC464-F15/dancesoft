@@ -51,7 +51,7 @@ class Search_window(QtGui.QMainWindow):
         self.adv.ui.Cancel_adv_btn.clicked.connect(self.adv.close)
         
     def advsearch_query(self):
-        self.reset_table()
+        #self.reset_table()
         self.adv.ui.Id_adv_label.hide()
         self.adv.ui.Name_adv_label.hide()
         self.adv.ui.Phone_adv_label.hide()
@@ -62,11 +62,15 @@ class Search_window(QtGui.QMainWindow):
         Stu_phone = self.adv.ui.Phone_adv_ledit.text()
         Stu_guardian = self.adv.ui.Guardian_adv_ledit.text()
 
+        self.ui.student.setFilter("Student_name = '*'")
+
+        
         flag = True
         
+        '''     
         if self.adv.ui.ID_cbox.isChecked() and Stu_ID == '':
             self.adv.ui.Id_adv_label.show()
-            flag = False
+            flag = False 
         elif Stu_ID != '':
             self.ui.student.setFilter("Student_id = %s"%Stu_ID)
             
@@ -87,12 +91,12 @@ class Search_window(QtGui.QMainWindow):
             flag = False
         elif Stu_guardian != '':
             self.ui.student.setFilter("relTblAl_8.Guardian_name = '%s'" % Stu_guardian)
-            
-        if flag:
-            self.adv.close()
-            
-        
 
+        if flag:
+            self.adv.close()    
+        '''
+        
+        
     def reset_table(self):
         self.ui.student.setFilter('')
         

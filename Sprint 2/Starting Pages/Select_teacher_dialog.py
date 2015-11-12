@@ -86,7 +86,6 @@ class modify_Information(QtGui.QDialog):
             if find >= 0:
                 self.modify.genderComboBox.setCurrentIndex(find)
             self.modify.SSNLineEdit.setText(str(record.value(8).toString()))
-            print(float(record.value(9).toString()))
             self.modify.payRateDoubleSpinBox.setValue(float(record.value(9).toString()))
             self.modify.textEdit.setText(str(record.value(10).toString()))
 

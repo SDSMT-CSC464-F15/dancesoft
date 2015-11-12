@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Search_MainWindow</class>
+ <widget class="QMainWindow" name="Search_MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>629</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -83,7 +83,20 @@
      </rect>
     </property>
     <property name="text">
-     <string>Reset</string>
+     <string>Refresh</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Detail_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>560</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Detail</string>
     </property>
    </widget>
   </widget>

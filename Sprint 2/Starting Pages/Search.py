@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'search.ui'
 #
-# Created: Tue Nov  3 17:07:14 2015
+# Created: Wed Nov 11 21:33:28 2015
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,7 +26,7 @@ except AttributeError:
 class Ui_Search_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(800, 600)
+        MainWindow.resize(800, 629)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.label = QtGui.QLabel(self.centralwidget)
@@ -47,6 +47,9 @@ class Ui_Search_MainWindow(object):
         self.Reset_search_btn = QtGui.QPushButton(self.centralwidget)
         self.Reset_search_btn.setGeometry(QtCore.QRect(680, 60, 111, 23))
         self.Reset_search_btn.setObjectName(_fromUtf8("Reset_search_btn"))
+        self.Detail_btn = QtGui.QPushButton(self.centralwidget)
+        self.Detail_btn.setGeometry(QtCore.QRect(30, 560, 111, 23))
+        self.Detail_btn.setObjectName(_fromUtf8("Detail_btn"))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
@@ -64,5 +67,6 @@ class Ui_Search_MainWindow(object):
         self.label.setText(_translate("MainWindow", "Enter Student Name", None))
         self.Search_btn.setText(_translate("MainWindow", "Search", None))
         self.Adv_search_btn.setText(_translate("MainWindow", "Advanced Search", None))
-        self.Reset_search_btn.setText(_translate("MainWindow", "Reset", None))
+        self.Reset_search_btn.setText(_translate("MainWindow", "Refresh", None))
+        self.Detail_btn.setText(_translate("MainWindow", "Detail", None))
 

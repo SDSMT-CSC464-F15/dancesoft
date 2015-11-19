@@ -21,6 +21,7 @@ class Search_window(QtGui.QMainWindow):
     
         self.ui.student.setRelation(8, QSqlRelation("Guardian", "Guardian_id", "Guardian_name"))
         self.ui.student.setRelation(9, QSqlRelation("Guardian", "Guardian_id", "Guardian_name"))
+
         
         self.ui.student.setHeaderData(0, QtCore.Qt.Horizontal, "ID")
         self.ui.student.setHeaderData(2, QtCore.Qt.Horizontal, "Name")
@@ -49,6 +50,7 @@ class Search_window(QtGui.QMainWindow):
         self.ui.Adv_search_btn.clicked.connect(self.advsearch_show)
         self.ui.Reset_search_btn.clicked.connect(self.reset_table)
         self.ui.Detail_btn.clicked.connect(self.detail_show)
+
 
     def stuinfo_update(self):
         #TODO check input validity
@@ -85,6 +87,7 @@ class Search_window(QtGui.QMainWindow):
                                    %(self.detail.StuSG, int(self.detail.StuID))):
             QtGui.QMessageBox.information(
                 self.detail, 'Success', 'Update record successfully')
+            self.reset_table()
         else:
             QtGui.QMessageBox.warning(
                 self, 'Error', 'Update record unsuccessfully')
@@ -99,6 +102,7 @@ class Search_window(QtGui.QMainWindow):
        
         self.detail = Stu_info_dialog()
         self.detail.show()
+        
         self.detail.record = self.ui.student.record(curIndex)
 
         address = QSqlQuery()
@@ -189,7 +193,10 @@ class Search_window(QtGui.QMainWindow):
             self.adv.ui.Id_adv_label.show()
             flag = False 
         elif Stu_ID != '':
-            whereClause += ("Student_id = %s"%Stu_ID)
+            if self.adv.ui.ID_partial_cbox.isChecked():
+                whereClause += ("Student_id like %%%s%%"%Stu_ID)
+            else:
+                whereClause += ("Student_id = %s"%Stu_ID)
             
         if self.adv.ui.Name_cobx.isChecked() and Stu_name == '':
             self.adv.ui.Name_adv_label.show()
@@ -197,7 +204,10 @@ class Search_window(QtGui.QMainWindow):
         elif Stu_name != '':
             if whereClause != '':
                 whereClause += ' and '
-            whereClause += ("Student_name = '%s'"%Stu_name)
+            if self.adv.ui.Name_partial_cobx.isChecked():
+                whereClause += ("Student_name like '%%%s%%'"%Stu_name)
+            else:
+                whereClause += ("Student_name = '%%%s%%'"%Stu_name)
             
         if self.adv.ui.Phone_cbox.isChecked() and Stu_phone == '':
             self.adv.ui.Phone_adv_label.show()
@@ -205,7 +215,10 @@ class Search_window(QtGui.QMainWindow):
         elif Stu_phone != '':
             if whereClause != '':
                 whereClause += ' and '
-            whereClause += ("Student_home_phone = '%s'"%Stu_phone)
+            if self.adv.ui.Phone_partial_cbox.isChecked():
+                whereClause += ("Student_home_phone like '%%%s%%'"%Stu_phone)
+            else:
+                whereClause += ("Student_home_phone = '%s'"%Stu_phone)
             
         if self.adv.ui.Guardian_cbox.isChecked() and Stu_guardian == '':
             self.adv.ui.Guardian_adv_label.show()
@@ -213,7 +226,10 @@ class Search_window(QtGui.QMainWindow):
         elif Stu_guardian != '':
             if whereClause != '':
                 whereClause += ' and '
-            whereClause += ("relTblAl_8.Guardian_name = '%s'" % Stu_guardian)
+            if self.adv.ui.Guardian_partial_cbox.isChecked():
+                whereClause += ("relTblAl_8.Guardian_name like '%%%s%%'" % Stu_guardian)
+            else:
+                whereClause += ("relTblAl_8.Guardian_name = '%s'" % Stu_guardian)
 
         self.ui.student.setFilter(whereClause)
 
@@ -233,8 +249,15 @@ class Search_window(QtGui.QMainWindow):
         #refreash rows
         self.reset_table()
         input_student_name = self.ui.Search_lineEdit.text()
+
+        
         if input_student_name != '':
-            self.ui.student.setFilter("Student_name = '%s'" % input_student_name)
+            if self.ui.Partial_search_cbox.isChecked():
+                self.ui.student.setFilter("Student_name like '%%%s%%'" % input_student_name)
+            else:
+                self.ui.student.setFilter("Student_name = '%s'" % input_student_name)
+           
+            
         if self.ui.Search_lineEdit.text() == '':
             QtGui.QMessageBox.warning(
                 self, 'Error', 'Please input keyword you want to search by') 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Add_Class</class>
+ <widget class="QMainWindow" name="Add_Class">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -25,74 +25,110 @@
     </property>
     <layout class="QFormLayout" name="formLayout">
      <item row="0" column="0">
-      <widget class="QLabel" name="label_12">
+      <widget class="QLabel" name="Name_label">
        <property name="text">
         <string>Name</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="Name_lineEdit"/>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_13">
+      <widget class="QLabel" name="Cost_label">
        <property name="text">
         <string>Cost</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+      <widget class="QDoubleSpinBox" name="Cost_spinBox"/>
      </item>
      <item row="2" column="0">
-      <widget class="QLabel" name="timeLabel">
+      <widget class="QLabel" name="Time_label">
        <property name="text">
         <string>Time</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QTimeEdit" name="timeTimeEdit"/>
+      <widget class="QTimeEdit" name="Time_timeEdit"/>
      </item>
      <item row="3" column="0">
-      <widget class="QLabel" name="dayLabel">
+      <widget class="QLabel" name="Day">
        <property name="text">
         <string>Day</string>
        </property>
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QComboBox" name="dayComboBox"/>
+      <widget class="QComboBox" name="Day_comboBox">
+       <item>
+        <property name="text">
+         <string>Sunday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Monday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tuesday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wednesday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Thursday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Friday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Saturday</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QLabel" name="locationLabel">
+      <widget class="QLabel" name="Location_label">
        <property name="text">
         <string>Location</string>
        </property>
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLineEdit" name="locationLineEdit"/>
+      <widget class="QLineEdit" name="Location_lineEdit"/>
      </item>
      <item row="5" column="0">
-      <widget class="QLabel" name="capLabel">
+      <widget class="QLabel" name="Cap">
        <property name="text">
         <string>Cap</string>
        </property>
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QSpinBox" name="capSpinBox"/>
+      <widget class="QSpinBox" name="Cap_spinBox"/>
      </item>
      <item row="6" column="0">
-      <widget class="QLabel" name="label_14">
+      <widget class="QLabel" name="Clothing_label">
        <property name="text">
         <string>Clothing</string>
        </property>
       </widget>
      </item>
      <item row="6" column="1">
-      <widget class="QTextEdit" name="textEdit">
+      <widget class="QTextEdit" name="Clothing_textEdit">
        <property name="minimumSize">
         <size>
          <width>0</width>
@@ -108,14 +144,14 @@
       </widget>
      </item>
      <item row="7" column="0">
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="Description">
        <property name="text">
         <string>Description</string>
        </property>
       </widget>
      </item>
      <item row="7" column="1">
-      <widget class="QTextEdit" name="textEdit_2">
+      <widget class="QTextEdit" name="Description_textEdit">
        <property name="maximumSize">
         <size>
          <width>680</width>
@@ -125,48 +161,48 @@
       </widget>
      </item>
      <item row="8" column="0">
-      <widget class="QLabel" name="startDateLabel">
+      <widget class="QLabel" name="Start_date_label">
        <property name="text">
         <string>Start Date</string>
        </property>
       </widget>
      </item>
      <item row="8" column="1">
-      <widget class="QDateEdit" name="startDateDateEdit"/>
+      <widget class="QDateEdit" name="Start_date_dateEdit"/>
      </item>
      <item row="9" column="0">
-      <widget class="QLabel" name="endDateLabel">
+      <widget class="QLabel" name="End_date">
        <property name="text">
         <string>End Date</string>
        </property>
       </widget>
      </item>
      <item row="9" column="1">
-      <widget class="QDateEdit" name="endDateDateEdit"/>
+      <widget class="QDateEdit" name="End_date_dateEdit"/>
      </item>
      <item row="10" column="0">
-      <widget class="QLabel" name="ageLabel">
+      <widget class="QLabel" name="Age">
        <property name="text">
         <string>Age</string>
        </property>
       </widget>
      </item>
      <item row="10" column="1">
-      <widget class="QSpinBox" name="ageSpinBox"/>
+      <widget class="QSpinBox" name="Age_spinBox"/>
      </item>
      <item row="11" column="0">
-      <widget class="QLabel" name="ageLimitLabel">
+      <widget class="QLabel" name="Age_limit">
        <property name="text">
         <string>Age Limit</string>
        </property>
       </widget>
      </item>
      <item row="11" column="1">
-      <widget class="QSpinBox" name="ageLimitSpinBox"/>
+      <widget class="QSpinBox" name="Age_limit_spinBox"/>
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Submit_btn">
     <property name="geometry">
      <rect>
       <x>580</x>
@@ -179,7 +215,7 @@
      <string>Submit</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="Back_btn">
     <property name="geometry">
      <rect>
       <x>670</x>

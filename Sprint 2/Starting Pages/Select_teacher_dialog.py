@@ -33,7 +33,7 @@ class select_Teacher(QtGui.QDialog):
         query.exec_("Select Teacher_name FROM Teacher")
         while query.next():
             record = query.record()
-            self.name = str(record.value(0).toString())
+            self.name = str(record.value(0))
             self.ui.selectTeacherComboBox.addItem(self.name)
         
         
@@ -68,26 +68,26 @@ class modify_Information(QtGui.QDialog):
         address_query.exec_("SELECT Address_id, Street, City, State FROM Address, Teacher WHERE Teacher_address = Address_id AND Teacher_name = '%s'" % selected_teacher_name)
         while query.next():
             record = query.record()
-            self.Teacher_id = str(record.value(0).toString())
-            self.modify.nameLineEdit.setText(str(record.value(1).toString()))
-            self.modify.homePhoneLineEdit.setText(str(record.value(2).toString()))
-            self.modify.cellPhoneLineEdit.setText(str(record.value(3).toString()))
-            self.modify.workPhoneLineEdit.setText(str(record.value(4).toString()))
+            self.Teacher_id = str(record.value(0))
+            self.modify.nameLineEdit.setText(str(record.value(1)))
+            self.modify.homePhoneLineEdit.setText(str(record.value(2)))
+            self.modify.cellPhoneLineEdit.setText(str(record.value(3)))
+            self.modify.workPhoneLineEdit.setText(str(record.value(4)))
             while address_query.next():
                 address_record =address_query.record()
-                self.address_id = str(address_record.value(0).toString())
-                self.modify.addressLineEdit.setText(str(address_record.value(1).toString()))
-                self.modify.cityLineEdit.setText(str(address_record.value(2).toString()))
-                find = self.modify.stateComboBox.findText(str(address_record.value(3).toString()),QtCore.Qt.MatchFixedString)
+                self.address_id = str(address_record.value(0))
+                self.modify.addressLineEdit.setText(str(address_record.value(1)))
+                self.modify.cityLineEdit.setText(str(address_record.value(2)))
+                find = self.modify.stateComboBox.findText(str(address_record.value(3)),QtCore.Qt.MatchFixedString)
                 if find >= 0:
                     self.modify.stateComboBox.setCurrentIndex(find)
-            self.modify.emailLineEdit.setText(str(record.value(6).toString()))
-            find = self.modify.genderComboBox.findText(str(record.value(7).toString()),QtCore.Qt.MatchFixedString)
+            self.modify.emailLineEdit.setText(str(record.value(6)))
+            find = self.modify.genderComboBox.findText(str(record.value(7)),QtCore.Qt.MatchFixedString)
             if find >= 0:
                 self.modify.genderComboBox.setCurrentIndex(find)
-            self.modify.SSNLineEdit.setText(str(record.value(8).toString()))
-            self.modify.payRateDoubleSpinBox.setValue(float(record.value(9).toString()))
-            self.modify.textEdit.setText(str(record.value(10).toString()))
+            self.modify.SSNLineEdit.setText(str(record.value(8)))
+            self.modify.payRateDoubleSpinBox.setValue(float(record.value(9)))
+            self.modify.textEdit.setText(str(record.value(10)))
 
         self.modify.pushButton.clicked.connect(self.submit_updates)
 

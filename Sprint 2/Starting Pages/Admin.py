@@ -96,7 +96,7 @@ class Admin_window(QtGui.QMainWindow):
         query = QSqlQuery()
         query.exec_("SELECT * FROM Teacher WHERE Teacher_name = '%s'" % input_teacher_name)
 
-        print query.value(2).toString()
+        
         self.ui.teacher.setQuery(query)       
         
 

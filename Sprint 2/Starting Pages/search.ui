@@ -99,7 +99,7 @@
      <string>Detail</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="Partial_search_cbox">
+   <widget class="QCheckBox" name="Exact_search_cbox">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -109,7 +109,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>  Partial</string>
+     <string>Exact</string>
     </property>
    </widget>
   </widget>

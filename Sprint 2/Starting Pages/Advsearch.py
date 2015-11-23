@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Advsearch.ui'
 #
-# Created: Tue Nov 17 11:15:40 2015
+# Created: Thu Nov 19 10:56:49 2015
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -92,18 +92,18 @@ class Ui_advsearch_dialog(object):
         self.Birth_to_label = QtGui.QLabel(advsearch_dialog)
         self.Birth_to_label.setGeometry(QtCore.QRect(240, 230, 21, 21))
         self.Birth_to_label.setObjectName(_fromUtf8("Birth_to_label"))
-        self.ID_partial_cbox = QtGui.QCheckBox(advsearch_dialog)
-        self.ID_partial_cbox.setGeometry(QtCore.QRect(80, 30, 71, 16))
-        self.ID_partial_cbox.setObjectName(_fromUtf8("ID_partial_cbox"))
-        self.Name_partial_cobx = QtGui.QCheckBox(advsearch_dialog)
-        self.Name_partial_cobx.setGeometry(QtCore.QRect(80, 80, 71, 16))
-        self.Name_partial_cobx.setObjectName(_fromUtf8("Name_partial_cobx"))
-        self.Phone_partial_cbox = QtGui.QCheckBox(advsearch_dialog)
-        self.Phone_partial_cbox.setGeometry(QtCore.QRect(80, 130, 71, 16))
-        self.Phone_partial_cbox.setObjectName(_fromUtf8("Phone_partial_cbox"))
-        self.Guardian_partial_cbox = QtGui.QCheckBox(advsearch_dialog)
-        self.Guardian_partial_cbox.setGeometry(QtCore.QRect(80, 180, 71, 16))
-        self.Guardian_partial_cbox.setObjectName(_fromUtf8("Guardian_partial_cbox"))
+        self.ID_Exact_cbox = QtGui.QCheckBox(advsearch_dialog)
+        self.ID_Exact_cbox.setGeometry(QtCore.QRect(80, 30, 71, 16))
+        self.ID_Exact_cbox.setObjectName(_fromUtf8("ID_Exact_cbox"))
+        self.Name_Exact_cobx = QtGui.QCheckBox(advsearch_dialog)
+        self.Name_Exact_cobx.setGeometry(QtCore.QRect(80, 80, 71, 16))
+        self.Name_Exact_cobx.setObjectName(_fromUtf8("Name_Exact_cobx"))
+        self.Phone_Exact_cbox = QtGui.QCheckBox(advsearch_dialog)
+        self.Phone_Exact_cbox.setGeometry(QtCore.QRect(80, 130, 71, 16))
+        self.Phone_Exact_cbox.setObjectName(_fromUtf8("Phone_Exact_cbox"))
+        self.Guardian_Exact_cbox = QtGui.QCheckBox(advsearch_dialog)
+        self.Guardian_Exact_cbox.setGeometry(QtCore.QRect(80, 180, 71, 16))
+        self.Guardian_Exact_cbox.setObjectName(_fromUtf8("Guardian_Exact_cbox"))
 
         self.retranslateUi(advsearch_dialog)
         QtCore.QMetaObject.connectSlotsByName(advsearch_dialog)
@@ -138,8 +138,8 @@ class Ui_advsearch_dialog(object):
 "</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ff0000;\">Required field!</span></p></body></html>", None))
         self.Birth_to_label.setText(_translate("advsearch_dialog", "To", None))
-        self.ID_partial_cbox.setText(_translate("advsearch_dialog", "Partial", None))
-        self.Name_partial_cobx.setText(_translate("advsearch_dialog", "Partial", None))
-        self.Phone_partial_cbox.setText(_translate("advsearch_dialog", "Partial", None))
-        self.Guardian_partial_cbox.setText(_translate("advsearch_dialog", "Partial", None))
+        self.ID_Exact_cbox.setText(_translate("advsearch_dialog", "Exact", None))
+        self.Name_Exact_cobx.setText(_translate("advsearch_dialog", "Exact", None))
+        self.Phone_Exact_cbox.setText(_translate("advsearch_dialog", "Exact", None))
+        self.Guardian_Exact_cbox.setText(_translate("advsearch_dialog", "Exact", None))
 

@@ -282,7 +282,7 @@ p, li { white-space: pre-wrap; }
     <string>To</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="ID_partial_cbox">
+  <widget class="QCheckBox" name="ID_Exact_cbox">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -292,10 +292,10 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <property name="text">
-    <string>Partial</string>
+    <string>Exact</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="Name_partial_cobx">
+  <widget class="QCheckBox" name="Name_Exact_cobx">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -305,10 +305,10 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <property name="text">
-    <string>Partial</string>
+    <string>Exact</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="Phone_partial_cbox">
+  <widget class="QCheckBox" name="Phone_Exact_cbox">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -318,10 +318,10 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <property name="text">
-    <string>Partial</string>
+    <string>Exact</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="Guardian_partial_cbox">
+  <widget class="QCheckBox" name="Guardian_Exact_cbox">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -331,7 +331,7 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <property name="text">
-    <string>Partial</string>
+    <string>Exact</string>
    </property>
   </widget>
  </widget>

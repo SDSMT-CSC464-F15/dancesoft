@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'search.ui'
 #
-# Created: Tue Nov 17 11:00:29 2015
+# Created: Thu Nov 19 11:00:03 2015
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -50,9 +50,9 @@ class Ui_Search_MainWindow(object):
         self.Detail_btn = QtGui.QPushButton(self.centralwidget)
         self.Detail_btn.setGeometry(QtCore.QRect(30, 560, 111, 23))
         self.Detail_btn.setObjectName(_fromUtf8("Detail_btn"))
-        self.Partial_search_cbox = QtGui.QCheckBox(self.centralwidget)
-        self.Partial_search_cbox.setGeometry(QtCore.QRect(120, 50, 71, 41))
-        self.Partial_search_cbox.setObjectName(_fromUtf8("Partial_search_cbox"))
+        self.Exact_search_cbox = QtGui.QCheckBox(self.centralwidget)
+        self.Exact_search_cbox.setGeometry(QtCore.QRect(120, 50, 71, 41))
+        self.Exact_search_cbox.setObjectName(_fromUtf8("Exact_search_cbox"))
         Search_MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(Search_MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
@@ -72,5 +72,5 @@ class Ui_Search_MainWindow(object):
         self.Adv_search_btn.setText(_translate("Search_MainWindow", "Advanced Search", None))
         self.Reset_search_btn.setText(_translate("Search_MainWindow", "Refresh", None))
         self.Detail_btn.setText(_translate("Search_MainWindow", "Detail", None))
-        self.Partial_search_cbox.setText(_translate("Search_MainWindow", "  Partial", None))
+        self.Exact_search_cbox.setText(_translate("Search_MainWindow", "Exact", None))
 

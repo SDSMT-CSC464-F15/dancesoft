@@ -193,10 +193,10 @@ class Search_window(QtGui.QMainWindow):
             self.adv.ui.Id_adv_label.show()
             flag = False 
         elif Stu_ID != '':
-            if self.adv.ui.ID_partial_cbox.isChecked():
-                whereClause += ("Student_id like %%%s%%"%Stu_ID)
-            else:
+            if self.adv.ui.ID_Exact_cbox.isChecked():
                 whereClause += ("Student_id = %s"%Stu_ID)
+            else:
+                whereClause += ("Student_id like %%%s%%"%Stu_ID)
             
         if self.adv.ui.Name_cobx.isChecked() and Stu_name == '':
             self.adv.ui.Name_adv_label.show()
@@ -204,10 +204,10 @@ class Search_window(QtGui.QMainWindow):
         elif Stu_name != '':
             if whereClause != '':
                 whereClause += ' and '
-            if self.adv.ui.Name_partial_cobx.isChecked():
-                whereClause += ("Student_name like '%%%s%%'"%Stu_name)
+            if self.adv.ui.Name_Exact_cobx.isChecked():
+                whereClause += ("Student_name = '%s'"%Stu_name)
             else:
-                whereClause += ("Student_name = '%%%s%%'"%Stu_name)
+                whereClause += ("Student_name like '%%%s%%'"%Stu_name)
             
         if self.adv.ui.Phone_cbox.isChecked() and Stu_phone == '':
             self.adv.ui.Phone_adv_label.show()
@@ -215,10 +215,10 @@ class Search_window(QtGui.QMainWindow):
         elif Stu_phone != '':
             if whereClause != '':
                 whereClause += ' and '
-            if self.adv.ui.Phone_partial_cbox.isChecked():
-                whereClause += ("Student_home_phone like '%%%s%%'"%Stu_phone)
-            else:
+            if self.adv.ui.Phone_Exact_cbox.isChecked():
                 whereClause += ("Student_home_phone = '%s'"%Stu_phone)
+            else:
+                whereClause += ("Student_home_phone like '%%%s%%'"%Stu_phone)
             
         if self.adv.ui.Guardian_cbox.isChecked() and Stu_guardian == '':
             self.adv.ui.Guardian_adv_label.show()
@@ -226,10 +226,10 @@ class Search_window(QtGui.QMainWindow):
         elif Stu_guardian != '':
             if whereClause != '':
                 whereClause += ' and '
-            if self.adv.ui.Guardian_partial_cbox.isChecked():
-                whereClause += ("relTblAl_8.Guardian_name like '%%%s%%'" % Stu_guardian)
-            else:
+            if self.adv.ui.Guardian_Exact_cbox.isChecked():
                 whereClause += ("relTblAl_8.Guardian_name = '%s'" % Stu_guardian)
+            else:
+                whereClause += ("relTblAl_8.Guardian_name like '%%%s%%'" % Stu_guardian)
 
         self.ui.student.setFilter(whereClause)
 
@@ -252,10 +252,10 @@ class Search_window(QtGui.QMainWindow):
 
         
         if input_student_name != '':
-            if self.ui.Partial_search_cbox.isChecked():
-                self.ui.student.setFilter("Student_name like '%%%s%%'" % input_student_name)
-            else:
+            if self.ui.Exact_search_cbox.isChecked():
                 self.ui.student.setFilter("Student_name = '%s'" % input_student_name)
+            else:
+                self.ui.student.setFilter("Student_name like '%%%s%%'" % input_student_name)
            
             
         if self.ui.Search_lineEdit.text() == '':

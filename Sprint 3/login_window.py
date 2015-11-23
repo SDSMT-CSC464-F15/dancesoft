@@ -50,7 +50,7 @@ class Login_Window(QtGui.QDialog):
                 # save personal information once the valid information found 
                 self.user_access_level = user_access_level
                 #test.....
-                if self.user_access_level == 1:   
+                if self.user_access_level == 1:
                     self.done(self.user_access_level)
                 
                 elif self.user_access_level == 2:           
@@ -75,7 +75,12 @@ class Login_Window(QtGui.QDialog):
 def main():
     app = QtGui.QApplication(sys.argv)
     flag = Login_Window().exec_()
+    
     global name
+    if flag != 0:
+        from Navi_dialog import Navi_dialog
+        flag = Navi_dialog(flag).exec_()
+    
     if flag == 1:
         from Admin import Admin_window
         window = Admin_window()

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>modify_teacher</class>
+ <widget class="QDialog" name="modify_teacher">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -27,73 +27,80 @@
      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
     </property>
     <item row="0" column="0">
-     <widget class="QLabel" name="enterName">
+     <widget class="QLabel" name="selectTeacherLabel">
+      <property name="text">
+       <string>Select Teacher</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="selectTeacherComboBox"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="NameLabel">
       <property name="text">
        <string>Name*</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
+    <item row="2" column="1">
      <widget class="QLineEdit" name="nameLineEdit"/>
     </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="homePhone">
+    <item row="3" column="0">
+     <widget class="QLabel" name="homePhoneLabel">
       <property name="text">
        <string>Home Phone*</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="homePhoneLineEdit"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="cellPhone">
+    <item row="4" column="0">
+     <widget class="QLabel" name="cellPhoneLabel">
       <property name="text">
        <string>Cell Phone</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="4" column="1">
      <widget class="QLineEdit" name="cellPhoneLineEdit"/>
     </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="workPhone">
+    <item row="5" column="0">
+     <widget class="QLabel" name="workPhoneLabel">
       <property name="text">
        <string>Work Phone</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="1">
+    <item row="5" column="1">
      <widget class="QLineEdit" name="workPhoneLineEdit"/>
     </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="adress">
+    <item row="6" column="0">
+     <widget class="QLabel" name="addressLabel">
       <property name="text">
        <string>Address*</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="1">
-     <widget class="QLineEdit" name="adressLineEdit"/>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="addressLineEdit"/>
     </item>
-    <item row="5" column="0">
+    <item row="7" column="0">
      <widget class="QLabel" name="cityLabel">
       <property name="text">
        <string>City*</string>
       </property>
      </widget>
     </item>
-    <item row="5" column="1">
+    <item row="7" column="1">
      <widget class="QLineEdit" name="cityLineEdit"/>
     </item>
-    <item row="6" column="0">
+    <item row="8" column="0">
      <widget class="QLabel" name="stateLabel">
       <property name="text">
        <string>State*</string>
       </property>
      </widget>
     </item>
-    <item row="6" column="1">
+    <item row="8" column="1">
      <widget class="QComboBox" name="stateComboBox">
       <item>
        <property name="text">
@@ -347,24 +354,24 @@
       </item>
      </widget>
     </item>
-    <item row="7" column="0">
-     <widget class="QLabel" name="email">
+    <item row="9" column="0">
+     <widget class="QLabel" name="emailLabel">
       <property name="text">
        <string>Email</string>
       </property>
      </widget>
     </item>
-    <item row="7" column="1">
+    <item row="9" column="1">
      <widget class="QLineEdit" name="emailLineEdit"/>
     </item>
-    <item row="8" column="0">
+    <item row="10" column="0">
      <widget class="QLabel" name="genderLabel">
       <property name="text">
        <string>Gender</string>
       </property>
      </widget>
     </item>
-    <item row="8" column="1">
+    <item row="10" column="1">
      <widget class="QComboBox" name="genderComboBox">
       <item>
        <property name="text">
@@ -378,51 +385,61 @@
       </item>
      </widget>
     </item>
-    <item row="9" column="0">
+    <item row="11" column="0">
      <widget class="QLabel" name="SSNLabel">
       <property name="text">
        <string>SSN*</string>
       </property>
      </widget>
     </item>
-    <item row="9" column="1">
-     <widget class="QLineEdit" name="sSNLineEdit"/>
+    <item row="11" column="1">
+     <widget class="QLineEdit" name="SSNLineEdit"/>
     </item>
-    <item row="10" column="0">
+    <item row="12" column="0">
      <widget class="QLabel" name="payRateLabel">
       <property name="text">
        <string>Pay Rate</string>
       </property>
      </widget>
     </item>
-    <item row="10" column="1">
+    <item row="12" column="1">
      <widget class="QDoubleSpinBox" name="payRateDoubleSpinBox">
       <property name="singleStep">
        <double>0.010000000000000</double>
       </property>
      </widget>
     </item>
-    <item row="11" column="0">
-     <widget class="QLabel" name="label">
+    <item row="13" column="0">
+     <widget class="QLabel" name="medicalLabel">
       <property name="text">
        <string>Medical Information</string>
       </property>
      </widget>
     </item>
-    <item row="11" column="1">
+    <item row="13" column="1">
      <widget class="QTextEdit" name="textEdit"/>
     </item>
-    <item row="12" column="1">
-     <widget class="QPushButton" name="pushButton">
+    <item row="14" column="0">
+     <widget class="QLabel" name="requiredLabel">
+      <property name="text">
+       <string>* Required Field</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="1">
+     <widget class="QPushButton" name="Submit_btn">
       <property name="text">
        <string>Submit</string>
       </property>
      </widget>
     </item>
-    <item row="12" column="0">
-     <widget class="QLabel" name="label_2">
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="homePhoneLineEdit"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="Select_teacher_btn">
       <property name="text">
-       <string>* Required Field</string>
+       <string>Select</string>
       </property>
      </widget>
     </item>

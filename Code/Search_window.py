@@ -35,7 +35,7 @@ class Search_window(QtGui.QMainWindow):
         
 
         #display window
-        self.ui.Student_view.setModel(self.ui.student)      
+        self.ui.Student_view.setModel(self.ui.student)
         self.ui.Student_view.hideColumn(1)
         self.ui.Student_view.hideColumn(4)
         self.ui.Student_view.hideColumn(7)

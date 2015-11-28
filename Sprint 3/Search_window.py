@@ -172,62 +172,75 @@ class Search_window(QtGui.QMainWindow):
         #self.reset_table()
         self.adv.ui.Id_adv_label.hide()
         self.adv.ui.Name_adv_label.hide()
-        self.adv.ui.Phone_adv_label.hide()
-        self.adv.ui.Guardian_adv_label.hide()
-        
-        Stu_ID = self.adv.ui.ID_adv_ledit.text()
-        Stu_name = self.adv.ui.Name_adv_ledit.text()
-        Stu_phone = self.adv.ui.Phone_adv_ledit.text()
-        Stu_guardian = self.adv.ui.Guardian_adv_ledit.text()
+        self.adv.ui.Homephone_adv_label.hide()
+        self.adv.ui.Cellphone_adv_label.hide()
+        self.adv.ui.Workphone_adv_label.hide()
 
+        
+        
+        Teacher_ID = self.adv.ui.ID_adv_ledit.text()
+        Teacher_name = self.adv.ui.Name_adv_ledit.text()
+        Teacher_homephone = self.adv.ui.Homephone_adv_ledit.text()
+        Teacher_cellphone = self.adv.ui.Cellphone_adv_ledit.text()
+        Teacher_workphone = self.adv.ui.Workphone_adv_ledit.text()
         whereClause = ''
         
         flag = True
         
           
-        if self.adv.ui.ID_cbox.isChecked() and Stu_ID == '':
+        if self.adv.ui.ID_cbox.isChecked() and Teacher_ID == '':
             self.adv.ui.Id_adv_label.show()
             flag = False 
-        elif Stu_ID != '':
-            if self.adv.ui.ID_Exact_cbox.isChecked():
-                whereClause += ("Student_id = %s"%Stu_ID)
-            else:
-                whereClause += ("Student_id like %%%s%%"%Stu_ID)
+        elif Teacher_ID != '':
+            whereClause += ("Teacher_id = %s"%Teacher_ID)
+
             
-        if self.adv.ui.Name_cobx.isChecked() and Stu_name == '':
+        if self.adv.ui.Name_cobx.isChecked() and Teacher_name == '':
             self.adv.ui.Name_adv_label.show()
             flag = False
-        elif Stu_name != '':
+        elif Teacher_name != '':
             if whereClause != '':
                 whereClause += ' and '
             if self.adv.ui.Name_Exact_cobx.isChecked():
-                whereClause += ("Student_name = '%s'"%Stu_name)
+                whereClause += ("Teacher_name = '%s'"%Teacher_name)
             else:
-                whereClause += ("Student_name like '%%%s%%'"%Stu_name)
+                whereClause += ("Teacher_name like '%%%s%%'"%Teacher_name)
             
-        if self.adv.ui.Phone_cbox.isChecked() and Stu_phone == '':
-            self.adv.ui.Phone_adv_label.show()
+        if self.adv.ui.Homephone_cbox.isChecked() and Teacher_homephone == '':
+            self.adv.ui.Homephone_adv_label.show()
             flag = False
-        elif Stu_phone != '':
+        elif Teacher_homephone != '':
             if whereClause != '':
                 whereClause += ' and '
-            if self.adv.ui.Phone_Exact_cbox.isChecked():
-                whereClause += ("Student_home_phone = '%s'"%Stu_phone)
+            if self.adv.ui.Homephone_Exact_cbox.isChecked():
+                whereClause += ("Teacher_home_phone = '%s'"%Teacher_homephone)
             else:
-                whereClause += ("Student_home_phone like '%%%s%%'"%Stu_phone)
+                whereClause += ("Teacher_home_phone like '%%%s%%'"%Teacher_homephone)
             
-        if self.adv.ui.Guardian_cbox.isChecked() and Stu_guardian == '':
-            self.adv.ui.Guardian_adv_label.show()
+        if self.adv.ui.Cellphone_cbox.isChecked() and Teacher_cellphone == '':
+            self.adv.ui.Cellphone_adv_label.show()
             flag = False
-        elif Stu_guardian != '':
+        elif Teacher_cellphone != '':
             if whereClause != '':
                 whereClause += ' and '
-            if self.adv.ui.Guardian_Exact_cbox.isChecked():
-                whereClause += ("relTblAl_8.Guardian_name = '%s'" % Stu_guardian)
+            if self.adv.ui.Cellphone_Exact_cbox.isChecked():
+                whereClause += ("Teacher_cell_phone = '%s'" % Teacher_cellphone)
             else:
-                whereClause += ("relTblAl_8.Guardian_name like '%%%s%%'" % Stu_guardian)
+                whereClause += ("Teacher_cell_phone like '%%%s%%'" % Teacher_cellphone)
+                
+        if self.adv.ui.Workphone_cbox.isChecked() and Teacher_workphone == '':
+            self.adv.ui.Workphone_adv_label.show()
+            flag = False
+        elif Teacher_workphone != '':
+            if whereClause != '':
+                whereClause += ' and '
+            if self.adv.ui.WorkPhone_Exact_cbox.isChecked():
+                whereClause += ("Teacher_work_phone = '%s'" % Teacher_workphone)
+            else:
+                whereClause += ("Teacher_work_phone like '%%%s%%'" % Teacher_workphone)
 
         self.ui.student.setFilter(whereClause)
+        print (whereClause)
 
         if flag:
             self.adv.close()    

@@ -45,23 +45,27 @@
       <widget class="QDoubleSpinBox" name="Cost_spinBox"/>
      </item>
      <item row="2" column="0">
-      <widget class="QLabel" name="Time_label">
+      <widget class="QLabel" name="Start_time_label">
        <property name="text">
-        <string>Time</string>
+        <string>Start Time</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QTimeEdit" name="Time_timeEdit"/>
+      <widget class="QTimeEdit" name="Start_time_timeEdit">
+       <property name="displayFormat">
+        <string>HH:mm:ss</string>
+       </property>
+      </widget>
      </item>
-     <item row="3" column="0">
+     <item row="4" column="0">
       <widget class="QLabel" name="Day">
        <property name="text">
         <string>Day</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
+     <item row="4" column="1">
       <widget class="QComboBox" name="Day_comboBox">
        <item>
         <property name="text">
@@ -100,31 +104,31 @@
        </item>
       </widget>
      </item>
-     <item row="4" column="0">
+     <item row="5" column="0">
       <widget class="QLabel" name="Location_label">
        <property name="text">
         <string>Location</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="0">
+     <item row="6" column="0">
       <widget class="QLabel" name="Cap">
        <property name="text">
         <string>Cap</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
+     <item row="6" column="1">
       <widget class="QSpinBox" name="Cap_spinBox"/>
      </item>
-     <item row="6" column="0">
+     <item row="7" column="0">
       <widget class="QLabel" name="Clothing_label">
        <property name="text">
         <string>Clothing</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="1">
+     <item row="7" column="1">
       <widget class="QTextEdit" name="Clothing_textEdit">
        <property name="minimumSize">
         <size>
@@ -140,14 +144,14 @@
        </property>
       </widget>
      </item>
-     <item row="7" column="0">
+     <item row="8" column="0">
       <widget class="QLabel" name="Description">
        <property name="text">
         <string>Description</string>
        </property>
       </widget>
      </item>
-     <item row="7" column="1">
+     <item row="8" column="1">
       <widget class="QTextEdit" name="Description_textEdit">
        <property name="maximumSize">
         <size>
@@ -157,48 +161,62 @@
        </property>
       </widget>
      </item>
-     <item row="8" column="0">
+     <item row="9" column="0">
       <widget class="QLabel" name="Start_date_label">
        <property name="text">
         <string>Start Date</string>
        </property>
       </widget>
      </item>
-     <item row="8" column="1">
+     <item row="9" column="1">
       <widget class="QDateEdit" name="Start_date_dateEdit"/>
      </item>
-     <item row="9" column="0">
+     <item row="10" column="0">
       <widget class="QLabel" name="End_date">
        <property name="text">
         <string>End Date</string>
        </property>
       </widget>
      </item>
-     <item row="9" column="1">
+     <item row="10" column="1">
       <widget class="QDateEdit" name="End_date_dateEdit"/>
      </item>
-     <item row="10" column="0">
+     <item row="11" column="0">
       <widget class="QLabel" name="Age">
        <property name="text">
         <string>Age</string>
        </property>
       </widget>
      </item>
-     <item row="10" column="1">
+     <item row="11" column="1">
       <widget class="QSpinBox" name="Age_spinBox"/>
      </item>
-     <item row="11" column="0">
+     <item row="12" column="0">
       <widget class="QLabel" name="Age_limit">
        <property name="text">
         <string>Age Limit</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="1">
+     <item row="12" column="1">
       <widget class="QSpinBox" name="Age_limit_spinBox"/>
      </item>
-     <item row="4" column="1">
+     <item row="5" column="1">
       <widget class="QComboBox" name="Location_comboBox"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="End_time_label">
+       <property name="text">
+        <string>End Time</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QTimeEdit" name="End_time_timeEdit">
+       <property name="displayFormat">
+        <string>HH:mm:ss </string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>

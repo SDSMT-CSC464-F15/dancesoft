@@ -37,8 +37,11 @@ class add_Class(QtGui.QMainWindow):
     def add_class(self):
         self.name = self.ui.Name_lineEdit.text()
         self.cost = self.ui.Cost_spinBox.value()
-        self.time = self.ui.Time_timeEdit.time()
-        self.time = self.time.toString("h:mm ap")
+        self.start_time = self.ui.Start_time_timeEdit.time()
+        self.start_time = self.start_time.toString("HH:mm:ss")
+        self.end_time = self.ui.End_time_timeEdit.time()
+        self.end_time = self.end_time.toString("HH:mm:ss")
+        print(self.start_time, ' ', self.end_time)
         self.date = str(self.ui.Day_comboBox.currentText())
         self.location = str(self.ui.Location_comboBox.currentText())
         self.cap = self.ui.Cap_spinBox.value()
@@ -50,9 +53,9 @@ class add_Class(QtGui.QMainWindow):
         self.end = self.ui.End_date_dateEdit.date()
         self.end = self.end.toPyDate()
 
-        temp = "INSERT INTO Class %s VALUES( '%s','%s','%s','%s','%s','%s',\
+        temp = "INSERT INTO Class %s VALUES( '%s','%s','%s','%s','%s','%s','%s',\
                         '%s','%s','%s','%s','%s'"
-        attributes = "(Class_id, Class_name, Class_cost, Class_time, Class_day, Class_location, Class_cap, Class_clothing, Class_description, Class_start_date, Class_end_date"
+        attributes = "(Class_id, Class_name, Class_cost, Class_time, Class_end_time, Class_day, Class_location, Class_cap, Class_clothing, Class_description, Class_start_date, Class_end_date"
 
 
         self.age = self.ui.Age_spinBox.value()
@@ -75,17 +78,19 @@ class add_Class(QtGui.QMainWindow):
             self.id += 1
             self.id = str(self.id)
             
-        results_msg = "Are you sure you want to exit the program?"
-        reply = QtGui.QMessageBox.question(self, 'Message', 
-                     results_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
-
-        if reply == QtGui.QMessageBox.Yes:
-            add_query = QSqlQuery()
-            add_query.exec_(temp \
-                            %(attributes, self.id, self.name, self.cost, self.time, self.date, self.location, \
-                               self.cap, self.clothing, self.descirption, self.start, self.end \
-                               ))
-        sys.exit()
+        else:
+            results_msg = "Add this class: \n Name:'%s' \n Cost:'%s' \n Start Time:'%s' \n End Time:'%s' \n Day:'%s' \n Location:'%s' \n Student Cap:'%s' \
+ \n Clothing Requirements:'%s' \n Class Descirption:'%s' \n Start Date:'%s' \n End Date:'%s' \n Age Requirement:'%s' \n Age Limit:'%s'" % (self.name, self.cost, \
+                            self.start_time, self.end_time, self.date, self.location, self.cap, self.clothing, self.descirption, self.start, self.end, self.age, self.age_limit)
+            reply = QtGui.QMessageBox.question(self, 'Message', 
+                         results_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
+            if reply == QtGui.QMessageBox.Yes:
+                add_query = QSqlQuery()
+                add_query.exec_(temp \
+                                %(attributes, self.id, self.name, self.cost, self.start_time, self.end_time, self.date, self.location, \
+                                   self.cap, self.clothing, self.descirption, self.start, self.end))
+            
+                sys.exit()
     
 
     def back(self):

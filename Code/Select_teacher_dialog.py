@@ -90,12 +90,11 @@ class modify_Information(QtGui.QDialog):
         if self.name == '':
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please fill in required fields: Name, House Phone, Address, City, State, Gender, and Social security number(SSN).\
-                \nPhone number format: ###-###-#### \nAddress format: ### Street \nSNN format: ###-##-####" )
+                \nPhone number format: ###-###-#### \nAddress format: #'s Street \nSNN format: ###-##-####" )
             
-        elif self.home == '' or self.home.len() < 10:
+        elif self.home == '' or self.home.len() < 10:w
             QtGui.QMessageBox.warning(
-                self, 'Error', "Please fill in required fields: Name, House Phone, Address, City, State, Gender, and Social security number(SSN).\
-                \nPhone number format: ###-###-#### \nAddress format: ### Street \nSNN format: ###-##-####" )
+                self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
             
         elif self.cell != '' and self.cell.len() < 10:
             QtGui.QMessageBox.warning(
@@ -104,23 +103,37 @@ class modify_Information(QtGui.QDialog):
         elif self.work != '' and self.work.len() < 10:
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
-        
-            
-        else:
-            update_query = QSqlQuery()
-            update_query.exec_("Update Teacher SET Teacher_name ='%s', \
-                                Teacher_home_phone ='%s', Teacher_cell_phone ='%s',\
-                                Teacher_work_phone ='%s', Teacher_email ='%s',\
-                                Teacher_sex ='%s', Teacher_SSN ='%s', \
-                                Teacher_pay_rate ='%s', Teacher_medical_information ='%s' WHERE \
-                                Teacher_id ='%s'" \
-                               %( self.name, self.home, self.cell, self.work, self.email, \
-                               self.gender, self.ssn, self.pay, self.medical, self.Teacher_id))
 
-            update_query2 = QSqlQuery()
-            update_query2.exec_("Update Address SET Street ='%s', City ='%s',\
-                                State ='%s' WHERE Address_id ='%u'" %(self.address, \
-                                self.city, self.state, int(self.address_id)))
+        elif self.address == '' || self.address.len() < 5:
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please fill in required fields: Name, House Phone, Address, City, State, Gender, and Social security number(SSN).\
+                \nPhone number format: ###-###-#### \nAddress format: #'s Street \nSNN format: ###-##-####" )
+            
+        elif self.city == '':
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please fill in required fields: Name, House Phone, Address, City, State, Gender, and Social security number(SSN).\
+                \nPhone number format: ###-###-#### \nAddress format: #'s Street \nSNN format: ###-##-####" )
+
+        else:
+            results_msg = "Pending Upadates: \n Name:'%s' \n Home phone:'%s' \n Cell phone:'%s' \n Work phone:'%s' \n Address:'%s' \n City:'%s' \n State:'%s' \
+                          \n Email:'%s' \n Gender:'%s' \n SSN:'%s' \n Pay:'%s' \n Medical:'%s'"
+            reply = QtGui.QMessageBox.question(self, 'Message', 
+                         results_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
+            if reply == Yes:
+                update_query = QSqlQuery()
+                update_query.exec_("Update Teacher SET Teacher_name ='%s', \
+                                    Teacher_home_phone ='%s', Teacher_cell_phone ='%s',\
+                                    Teacher_work_phone ='%s', Teacher_email ='%s',\
+                                    Teacher_sex ='%s', Teacher_SSN ='%s', \
+                                    Teacher_pay_rate ='%s', Teacher_medical_information ='%s' WHERE \
+                                    Teacher_id ='%s'" \
+                                   %( self.name, self.home, self.cell, self.work, self.email, \
+                                   self.gender, self.ssn, self.pay, self.medical, self.Teacher_id))
+
+                update_query2 = QSqlQuery()
+                update_query2.exec_("Update Address SET Street ='%s', City ='%s',\
+                                    State ='%s' WHERE Address_id ='%u'" %(self.address, \
+                                    self.city, self.state, int(self.address_id)))
 
         
 
@@ -135,5 +148,5 @@ class modify_Information(QtGui.QDialog):
 app = QtGui.QApplication(sys.argv)
 Current_Window = modify_Information()
 Current_Window.show()
-print("here") 
+print("here")
 sys.exit(app.exec_())

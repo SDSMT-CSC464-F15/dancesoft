@@ -2,6 +2,7 @@ import sys
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtSql import *
 from Role import Ui_Role_window
+from Role_print import Print_window
 
 
 class Role_window(QtGui.QMainWindow):
@@ -12,10 +13,34 @@ class Role_window(QtGui.QMainWindow):
         self.conn() #need cathch exeption
         Class_query = QSqlQuery()
         Class_query.exec_("Select C.Class_name from Teacher_Class as T, Class as C where \
-                           T.Class_id = C.Class_id and T.Teacher_id = '%s'" % Id)
+                           T.Class_id = C.Class_id and T.Teacher_id = '%d'"% Id)
 
-         
-        self.ui.Role_listView.setModel(QSqlQueryModel().setQuery(Class_query))
+
+        model = QSqlQueryModel()
+        model.setQuery(Class_query)
+        self.ui.Role_listView.setModel(model)
+        self.ui.Role_listView.clicked.connect(self.show_class) 
+        self.ui.Role_print_btn.clicked.connect(self.print_student)
+        self.ui.Role_print_btn.setEnabled(False)
+
+    def print_student(self):
+        self.ui.print = Print_window(self.ui.Student_info)
+        self.ui.print.show()
+
+    def show_class(self, index):
+        self.ui.Student_info = []
+        self.ui.Role_print_btn.setEnabled(True)
+        Student_query = QSqlQuery()
+        Student_query.exec_("Select S.Student_name from Student_Class as SC,Student as S where\
+                            SC.Class_id = (Select Class_id from Class where Class_name = '%s') \
+                            and SC.Student_id = S.Student_id and SC.Class_finished <> 1 and \
+                            SC.Class_approval <> -1" % index.data())
+        while Student_query.next():
+            self.ui.Student_info.append(Student_query.value(0))
+        model = QSqlQueryModel()
+        model.setQuery(Student_query)      
+        self.ui.Stu_listView.setModel(model)
+        
 
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")

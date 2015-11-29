@@ -53,48 +53,44 @@ class add_Class(QtGui.QMainWindow):
         self.end = self.ui.End_date_dateEdit.date()
         self.end = self.end.toPyDate()
 
-        if self.name == '':
-            QtGui.QMessageBox.warning(
-                self, 'Error', "Please fill in class name" )
-        else:
-            temp = "INSERT INTO Class %s VALUES( '%s','%s','%s','%s','%s','%s','%s',\
-                            '%s','%s','%s','%s','%s'"
-            attributes = "(Class_id, Class_name, Class_cost, Class_time, Class_end_time, Class_day, Class_location, Class_cap, Class_clothing, Class_description, Class_start_date, Class_end_date"
+        temp = "INSERT INTO Class %s VALUES( '%s','%s','%s','%s','%s','%s','%s',\
+                        '%s','%s','%s','%s','%s'"
+        attributes = "(Class_id, Class_name, Class_cost, Class_time, Class_end_time, Class_day, Class_location, Class_cap, Class_clothing, Class_description, Class_start_date, Class_end_date"
 
 
-            self.age = self.ui.Age_spinBox.value()
-            if self.age != 0:
-                temp += ",'%d'" % self.age
-                attributes += ', Class_age'
-            self.age_limit = self.ui.Age_limit_spinBox.value()
-            if self.age_limit != 0:
-                temp += ",'%d'" % self.age_limit
-                attributes += ', Class_age_end'
+        self.age = self.ui.Age_spinBox.value()
+        if self.age != 0:
+            temp += ",'%d'" % self.age
+            attributes += ', Class_age'
+        self.age_limit = self.ui.Age_limit_spinBox.value()
+        if self.age_limit != 0:
+            temp += ",'%d'" % self.age_limit
+            attributes += ', Class_age_end'
+        
+        attributes += ')'
+        temp += ')'
+
+        id_query =QSqlQuery()
+        id_query.exec_("SELECT Class_id FROM Class ORDER BY Class_id DESC LIMIT 1")
+        while id_query.next():
+            record = id_query.record()
+            self.id = record.value(0)
+            self.id += 1
+            self.id = str(self.id)
             
-            attributes += ')'
-            temp += ')'
-
-            id_query =QSqlQuery()
-            id_query.exec_("SELECT Class_id FROM Class ORDER BY Class_id DESC LIMIT 1")
-            while id_query.next():
-                record = id_query.record()
-                self.id = record.value(0)
-                self.id += 1
-                self.id = str(self.id)
-                
-            else:
-                results_msg = "Add this class: \n Name:'%s' \n Cost:'%s' \n Start Time:'%s' \n End Time:'%s' \n Day:'%s' \n Location:'%s' \n Student Cap:'%s' \
-     \n Clothing Requirements:'%s' \n Class Descirption:'%s' \n Start Date:'%s' \n End Date:'%s' \n Age Requirement:'%s' \n Age Limit:'%s'" % (self.name, self.cost, \
-                                self.start_time, self.end_time, self.date, self.location, self.cap, self.clothing, self.descirption, self.start, self.end, self.age, self.age_limit)
-                reply = QtGui.QMessageBox.question(self, 'Message', 
-                             results_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
-                if reply == QtGui.QMessageBox.Yes:
-                    add_query = QSqlQuery()
-                    add_query.exec_(temp \
-                                    %(attributes, self.id, self.name, self.cost, self.start_time, self.end_time, self.date, self.location, \
-                                       self.cap, self.clothing, self.descirption, self.start, self.end))
-                
-                    sys.exit()
+        else:
+            results_msg = "Add this class: \n Name:'%s' \n Cost:'%s' \n Start Time:'%s' \n End Time:'%s' \n Day:'%s' \n Location:'%s' \n Student Cap:'%s' \
+ \n Clothing Requirements:'%s' \n Class Descirption:'%s' \n Start Date:'%s' \n End Date:'%s' \n Age Requirement:'%s' \n Age Limit:'%s'" % (self.name, self.cost, \
+                            self.start_time, self.end_time, self.date, self.location, self.cap, self.clothing, self.descirption, self.start, self.end, self.age, self.age_limit)
+            reply = QtGui.QMessageBox.question(self, 'Message', 
+                         results_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
+            if reply == QtGui.QMessageBox.Yes:
+                add_query = QSqlQuery()
+                add_query.exec_(temp \
+                                %(attributes, self.id, self.name, self.cost, self.start_time, self.end_time, self.date, self.location, \
+                                   self.cap, self.clothing, self.descirption, self.start, self.end))
+            
+                sys.exit()
     
 
     def back(self):

@@ -3,7 +3,7 @@ from PyQt4 import QtGui, QtCore
 from Search import Ui_Search_MainWindow
 from PyQt4.QtSql import *
 from Advsearch_Dialog import Advsearch_Dialog
-from Teacher_info_Dialog import Teacher_info_dialog
+from Stu_info_Dialog import Stu_info_dialog
 
 class Search_window(QtGui.QMainWindow):
     def __init__(self):
@@ -17,16 +17,18 @@ class Search_window(QtGui.QMainWindow):
        
         #TODO deal with foreign key
         self.ui.student = QSqlRelationalTableModel(db = self.db)
-        self.ui.student.setTable("Teacher")
+        self.ui.student.setTable("Student")
+    
+        self.ui.student.setRelation(8, QSqlRelation("Guardian", "Guardian_id", "Guardian_name"))
+        self.ui.student.setRelation(9, QSqlRelation("Guardian", "Guardian_id", "Guardian_name"))
 
         
         self.ui.student.setHeaderData(0, QtCore.Qt.Horizontal, "ID")
-        self.ui.student.setHeaderData(1, QtCore.Qt.Horizontal, "Name")
-        self.ui.student.setHeaderData(7, QtCore.Qt.Horizontal, "Gender")
-        self.ui.student.setHeaderData(11, QtCore.Qt.Horizontal, "Date of Birth")
-        self.ui.student.setHeaderData(2, QtCore.Qt.Horizontal, "Home Phone")
-        self.ui.student.setHeaderData(3, QtCore.Qt.Horizontal, "Cell Phone")
-        self.ui.student.setHeaderData(4, QtCore.Qt.Horizontal, "Work Phone")
+        self.ui.student.setHeaderData(2, QtCore.Qt.Horizontal, "Name")
+        self.ui.student.setHeaderData(3, QtCore.Qt.Horizontal, "Gender")
+        self.ui.student.setHeaderData(5, QtCore.Qt.Horizontal, "Date of Birth")
+        self.ui.student.setHeaderData(6, QtCore.Qt.Horizontal, "Phone")
+        self.ui.student.setHeaderData(8, QtCore.Qt.Horizontal, "Primary Guardian")
         self.ui.student.setFilter('')
         self.ui.student.select()
         
@@ -34,11 +36,14 @@ class Search_window(QtGui.QMainWindow):
 
         #display window
         self.ui.Student_view.setModel(self.ui.student)
-        self.ui.Student_view.hideColumn(5)
-        self.ui.Student_view.hideColumn(6)
-        self.ui.Student_view.hideColumn(8)
+        self.ui.Student_view.hideColumn(1)
+        self.ui.Student_view.hideColumn(4)
+        self.ui.Student_view.hideColumn(7)
         self.ui.Student_view.hideColumn(9)
         self.ui.Student_view.hideColumn(10)
+        self.ui.Student_view.hideColumn(11)
+        self.ui.Student_view.hideColumn(12)
+        self.ui.Student_view.hideColumn(13)
 
 
         self.ui.Search_btn.clicked.connect(self.search)
@@ -95,14 +100,13 @@ class Search_window(QtGui.QMainWindow):
             return curIndex
         
        
-        self.detail = Teacher_info_dialog()
-        
+        self.detail = Stu_info_dialog()
         self.detail.show()
         
         self.detail.record = self.ui.student.record(curIndex)
 
         address = QSqlQuery()
-        self.detail.Address_id = self.detail.record.field(5).value()
+        self.detail.Address_id = self.detail.record.field(1).value()
         address.exec_("select * from Address where Address_id = %d" % self.detail.Address_id)
         address.next()
         self.detail.record_A = address.record()
@@ -111,41 +115,42 @@ class Search_window(QtGui.QMainWindow):
         
         #check weather the data exists in database
 
-        #TeacherID
+        #StuID
         if not isinstance(self.detail.record.field(0).value(), QtCore.QPyNullVariant):
             self.detail.ui.Id_detail_lineEdit.setText(str(self.detail.record.field(0).value()))
-        #TeacherName
-        if not isinstance(self.detail.record.field(1).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Name_detail_lineEdit.setText(self.detail.record.field(1).value())
-        #TeacherGender
-        if not isinstance(self.detail.record.field(7).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Gender_detail_lineEdit.setText(self.detail.record.field(7).value())
-        #TeacherEmail
-        if not isinstance(self.detail.record.field(6).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Email_detail_lineEdit.setText(self.detail.record.field(6).value())
-        #need detail
-        #TeacherBirth
-        if not isinstance(self.detail.record.field(11).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Birth_detail_dateEdit.setDate(self.detail.record.field(11).value())
-        #TeacherHomePhone
+        #StuName
         if not isinstance(self.detail.record.field(2).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Homephone_detail_lineEdit.setText(self.detail.record.field(2).value())
-        #TeacherCellPhone
+            self.detail.ui.Name_detail_lineEdit.setText(self.detail.record.field(2).value())
+        #StuGender
         if not isinstance(self.detail.record.field(3).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Cellphone_detail_lineEdit.setText(self.detail.record.field(3).value())
-        #TeacherWorkPhone
+            self.detail.ui.Gender_detail_lineEdit.setText(self.detail.record.field(3).value())
+        #StuEmail
         if not isinstance(self.detail.record.field(4).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Workphone_detail_lineEdit.setText(self.detail.record.field(4).value())
-
-        #TeacherSNN  
+            self.detail.ui.Email_detail_lineEdit.setText(self.detail.record.field(4).value())
+        #need detail
+        #StuBirth
+        if not isinstance(self.detail.record.field(5).value(), QtCore.QPyNullVariant):
+            self.detail.ui.Birth_detail_dateEdit.setDate(self.detail.record.field(5).value())
+        #StuPhone
+        if not isinstance(self.detail.record.field(6).value(), QtCore.QPyNullVariant):
+            self.detail.ui.Phone_detail_lineEdit.setText(self.detail.record.field(6).value())
+        #StuPG
         if not isinstance(self.detail.record.field(8).value(), QtCore.QPyNullVariant):
-            self.detail.ui.SSN_detail_lineEdit.setText(self.detail.record.field(8).value())
-        #TeacherPayRate
+            self.detail.ui.Pguradian_detail_lineEdit.setText(self.detail.record.field(8).value())
+        #StuSG
         if not isinstance(self.detail.record.field(9).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Payrate_detail_lineEdit.setText(str(self.detail.record.field(9).value()))
-        #Teacher address
-        if not isinstance(self.detail.record_A.field(4).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Zipcode_detail_lineEdit.setText(str(self.detail.record_A.field(4).value()))
+            self.detail.ui.Sguardian_detail_lineEdit.setText(self.detail.record.field(9).value())
+
+        #StuEcon     
+        if not isinstance(self.detail.record.field(10).value(), QtCore.QPyNullVariant):
+            self.detail.ui.Econtact_detail_lineEdit.setText(self.detail.record.field(10).value())
+        #StuEphone
+        if not isinstance(self.detail.record.field(11).value(), QtCore.QPyNullVariant):
+            self.detail.ui.Ephone_detail_lineEdit.setText(self.detail.record.field(11).value())
+        #StuTuition
+        if not isinstance(self.detail.record.field(13).value(), QtCore.QPyNullVariant):
+            self.detail.ui.Tuition_detail_lineEdit.setText(str(self.detail.record.field(13).value()))
+
 
         if not isinstance(self.detail.record.field(1).value(), QtCore.QPyNullVariant):
             self.detail.ui.Address_detail_lineEdit.setText(self.detail.record_A.field(1).value())
@@ -154,7 +159,6 @@ class Search_window(QtGui.QMainWindow):
             self.detail.ui.City_detail_lineEdit.setText(self.detail.record_A.field(2).value())
         if not isinstance(self.detail.record_A.field(3).value(), QtCore.QPyNullVariant):
             self.detail.ui.State_detail_lineEdit.setText(self.detail.record_A.field(3).value())
-        #TeacherMedical
         if not isinstance(self.detail.record.field(12).value(), QtCore.QPyNullVariant):
             self.detail.ui.Medical_detail_textEdit.setText(self.detail.record.field(12).value())
         
@@ -172,75 +176,62 @@ class Search_window(QtGui.QMainWindow):
         #self.reset_table()
         self.adv.ui.Id_adv_label.hide()
         self.adv.ui.Name_adv_label.hide()
-        self.adv.ui.Homephone_adv_label.hide()
-        self.adv.ui.Cellphone_adv_label.hide()
-        self.adv.ui.Workphone_adv_label.hide()
+        self.adv.ui.Phone_adv_label.hide()
+        self.adv.ui.Guardian_adv_label.hide()
+        
+        Stu_ID = self.adv.ui.ID_adv_ledit.text()
+        Stu_name = self.adv.ui.Name_adv_ledit.text()
+        Stu_phone = self.adv.ui.Phone_adv_ledit.text()
+        Stu_guardian = self.adv.ui.Guardian_adv_ledit.text()
 
-        
-        
-        Teacher_ID = self.adv.ui.ID_adv_ledit.text()
-        Teacher_name = self.adv.ui.Name_adv_ledit.text()
-        Teacher_homephone = self.adv.ui.Homephone_adv_ledit.text()
-        Teacher_cellphone = self.adv.ui.Cellphone_adv_ledit.text()
-        Teacher_workphone = self.adv.ui.Workphone_adv_ledit.text()
         whereClause = ''
         
         flag = True
         
           
-        if self.adv.ui.ID_cbox.isChecked() and Teacher_ID == '':
+        if self.adv.ui.ID_cbox.isChecked() and Stu_ID == '':
             self.adv.ui.Id_adv_label.show()
             flag = False 
-        elif Teacher_ID != '':
-            whereClause += ("Teacher_id = %s"%Teacher_ID)
-
+        elif Stu_ID != '':
+            if self.adv.ui.ID_Exact_cbox.isChecked():
+                whereClause += ("Student_id = %s"%Stu_ID)
+            else:
+                whereClause += ("Student_id like %%%s%%"%Stu_ID)
             
-        if self.adv.ui.Name_cobx.isChecked() and Teacher_name == '':
+        if self.adv.ui.Name_cobx.isChecked() and Stu_name == '':
             self.adv.ui.Name_adv_label.show()
             flag = False
-        elif Teacher_name != '':
+        elif Stu_name != '':
             if whereClause != '':
                 whereClause += ' and '
             if self.adv.ui.Name_Exact_cobx.isChecked():
-                whereClause += ("Teacher_name = '%s'"%Teacher_name)
+                whereClause += ("Student_name = '%s'"%Stu_name)
             else:
-                whereClause += ("Teacher_name like '%%%s%%'"%Teacher_name)
+                whereClause += ("Student_name like '%%%s%%'"%Stu_name)
             
-        if self.adv.ui.Homephone_cbox.isChecked() and Teacher_homephone == '':
-            self.adv.ui.Homephone_adv_label.show()
+        if self.adv.ui.Phone_cbox.isChecked() and Stu_phone == '':
+            self.adv.ui.Phone_adv_label.show()
             flag = False
-        elif Teacher_homephone != '':
+        elif Stu_phone != '':
             if whereClause != '':
                 whereClause += ' and '
-            if self.adv.ui.Homephone_Exact_cbox.isChecked():
-                whereClause += ("Teacher_home_phone = '%s'"%Teacher_homephone)
+            if self.adv.ui.Phone_Exact_cbox.isChecked():
+                whereClause += ("Student_home_phone = '%s'"%Stu_phone)
             else:
-                whereClause += ("Teacher_home_phone like '%%%s%%'"%Teacher_homephone)
+                whereClause += ("Student_home_phone like '%%%s%%'"%Stu_phone)
             
-        if self.adv.ui.Cellphone_cbox.isChecked() and Teacher_cellphone == '':
-            self.adv.ui.Cellphone_adv_label.show()
+        if self.adv.ui.Guardian_cbox.isChecked() and Stu_guardian == '':
+            self.adv.ui.Guardian_adv_label.show()
             flag = False
-        elif Teacher_cellphone != '':
+        elif Stu_guardian != '':
             if whereClause != '':
                 whereClause += ' and '
-            if self.adv.ui.Cellphone_Exact_cbox.isChecked():
-                whereClause += ("Teacher_cell_phone = '%s'" % Teacher_cellphone)
+            if self.adv.ui.Guardian_Exact_cbox.isChecked():
+                whereClause += ("relTblAl_8.Guardian_name = '%s'" % Stu_guardian)
             else:
-                whereClause += ("Teacher_cell_phone like '%%%s%%'" % Teacher_cellphone)
-                
-        if self.adv.ui.Workphone_cbox.isChecked() and Teacher_workphone == '':
-            self.adv.ui.Workphone_adv_label.show()
-            flag = False
-        elif Teacher_workphone != '':
-            if whereClause != '':
-                whereClause += ' and '
-            if self.adv.ui.WorkPhone_Exact_cbox.isChecked():
-                whereClause += ("Teacher_work_phone = '%s'" % Teacher_workphone)
-            else:
-                whereClause += ("Teacher_work_phone like '%%%s%%'" % Teacher_workphone)
+                whereClause += ("relTblAl_8.Guardian_name like '%%%s%%'" % Stu_guardian)
 
         self.ui.student.setFilter(whereClause)
-        print (whereClause)
 
         if flag:
             self.adv.close()    
@@ -262,9 +253,9 @@ class Search_window(QtGui.QMainWindow):
         
         if input_student_name != '':
             if self.ui.Exact_search_cbox.isChecked():
-                self.ui.student.setFilter("Teacher_name = '%s'" % input_student_name)
+                self.ui.student.setFilter("Student_name = '%s'" % input_student_name)
             else:
-                self.ui.student.setFilter("Teacher_name like '%%%s%%'" % input_student_name)
+                self.ui.student.setFilter("Student_name like '%%%s%%'" % input_student_name)
            
             
         if self.ui.Search_lineEdit.text() == '':

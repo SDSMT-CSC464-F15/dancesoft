@@ -20,31 +20,44 @@
       <x>20</x>
       <y>20</y>
       <width>151</width>
-      <height>331</height>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Role_apply_btn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apply</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="Role_tableView">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>421</width>
+      <height>371</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="Role_print_btn">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>370</y>
+      <x>50</x>
+      <y>320</y>
       <width>91</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
      <string>Print</string>
-    </property>
-   </widget>
-   <widget class="QListView" name="Stu_listView">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>20</y>
-      <width>411</width>
-      <height>371</height>
-     </rect>
     </property>
    </widget>
   </widget>

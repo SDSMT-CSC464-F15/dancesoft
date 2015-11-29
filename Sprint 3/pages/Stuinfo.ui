@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Teacher_info_dialog</class>
- <widget class="QDialog" name="Teacher_info_dialog">
+ <class>stu_info_dialog</class>
+ <widget class="QDialog" name="stu_info_dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -52,7 +52,7 @@
     <string>Date Birth</string>
    </property>
   </widget>
-  <widget class="QLabel" name="Cellphone_detail_label">
+  <widget class="QLabel" name="Pguradian_detail_label">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -62,10 +62,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>Cell Phone</string>
+    <string>Primary Guardian</string>
    </property>
   </widget>
-  <widget class="QLabel" name="SNN_detail_label">
+  <widget class="QLabel" name="Econtact_detail_label">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -75,10 +75,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>SSN</string>
+    <string>Emergency Contact</string>
    </property>
   </widget>
-  <widget class="QLabel" name="Zipcode_detail_label">
+  <widget class="QLabel" name="Tuition_detail_label">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -88,7 +88,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Zipcode</string>
+    <string>Tuition</string>
    </property>
   </widget>
   <widget class="QLabel" name="Address_detail_label">
@@ -130,20 +130,20 @@
     <string>Email</string>
    </property>
   </widget>
-  <widget class="QLabel" name="Homephone_detail_label">
+  <widget class="QLabel" name="Phone_detail_label">
    <property name="geometry">
     <rect>
      <x>380</x>
      <y>130</y>
-     <width>81</width>
-     <height>16</height>
+     <width>54</width>
+     <height>12</height>
     </rect>
    </property>
    <property name="text">
-    <string>Home Phone</string>
+    <string>Phone</string>
    </property>
   </widget>
-  <widget class="QLabel" name="Workphone_detail_label">
+  <widget class="QLabel" name="Sguardian_detail_label">
    <property name="geometry">
     <rect>
      <x>380</x>
@@ -153,10 +153,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>Work Phone</string>
+    <string>Secondary Guardian</string>
    </property>
   </widget>
-  <widget class="QLabel" name="Payrate_detail_label">
+  <widget class="QLabel" name="Ephone_detail_label">
    <property name="geometry">
     <rect>
      <x>380</x>
@@ -166,7 +166,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Pay Rate</string>
+    <string>Emergency Phone</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="Id_detail_lineEdit">
@@ -189,7 +189,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Cellphone_detail_lineEdit">
+  <widget class="QLineEdit" name="Pguradian_detail_lineEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -199,7 +199,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="SSN_detail_lineEdit">
+  <widget class="QLineEdit" name="Econtact_detail_lineEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -209,7 +209,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Zipcode_detail_lineEdit">
+  <widget class="QLineEdit" name="Tuition_detail_lineEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -219,7 +219,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Homephone_detail_lineEdit">
+  <widget class="QLineEdit" name="Phone_detail_lineEdit">
    <property name="geometry">
     <rect>
      <x>500</x>
@@ -239,7 +239,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Workphone_detail_lineEdit">
+  <widget class="QLineEdit" name="Sguardian_detail_lineEdit">
    <property name="geometry">
     <rect>
      <x>500</x>
@@ -249,7 +249,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Payrate_detail_lineEdit">
+  <widget class="QLineEdit" name="Ephone_detail_lineEdit">
    <property name="geometry">
     <rect>
      <x>500</x>

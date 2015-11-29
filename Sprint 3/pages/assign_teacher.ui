@@ -1,49 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Role_window</class>
- <widget class="QMainWindow" name="Role_window">
+ <class>Assign_teacher_window</class>
+ <widget class="QMainWindow" name="Assign_teacher_window">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>622</width>
-    <height>437</height>
+    <width>466</width>
+    <height>364</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="Role_listView">
+   <widget class="QListView" name="Class_listView">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>151</width>
-      <height>331</height>
+      <width>191</width>
+      <height>261</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="Role_print_btn">
+   <widget class="QPushButton" name="Assign_teacher_btn">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>370</y>
+      <x>300</x>
+      <y>290</y>
       <width>91</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Print</string>
+     <string>Assign Teacher</string>
     </property>
    </widget>
-   <widget class="QListView" name="Stu_listView">
+   <widget class="QPushButton" name="Select_class_btn">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>70</x>
+      <y>290</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Class</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="Teacher_listView">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
       <y>20</y>
-      <width>411</width>
-      <height>371</height>
+      <width>191</width>
+      <height>261</height>
      </rect>
     </property>
    </widget>
@@ -53,7 +66,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>622</width>
+     <width>466</width>
      <height>21</height>
     </rect>
    </property>

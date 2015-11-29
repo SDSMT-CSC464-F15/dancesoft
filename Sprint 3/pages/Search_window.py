@@ -35,7 +35,7 @@ class Search_window(QtGui.QMainWindow):
         
 
         #display window
-        self.ui.Student_view.setModel(self.ui.student)      
+        self.ui.Student_view.setModel(self.ui.student)
         self.ui.Student_view.hideColumn(1)
         self.ui.Student_view.hideColumn(4)
         self.ui.Student_view.hideColumn(7)
@@ -129,10 +129,10 @@ class Search_window(QtGui.QMainWindow):
             self.detail.ui.Email_detail_lineEdit.setText(self.detail.record.field(4).value())
         #need detail
         #StuBirth
-        if not isinstance(self.detail.record.field(6).value(), QtCore.QPyNullVariant):
+        if not isinstance(self.detail.record.field(5).value(), QtCore.QPyNullVariant):
             self.detail.ui.Birth_detail_dateEdit.setDate(self.detail.record.field(5).value())
         #StuPhone
-        if not isinstance(self.detail.record.field(7).value(), QtCore.QPyNullVariant):
+        if not isinstance(self.detail.record.field(6).value(), QtCore.QPyNullVariant):
             self.detail.ui.Phone_detail_lineEdit.setText(self.detail.record.field(6).value())
         #StuPG
         if not isinstance(self.detail.record.field(8).value(), QtCore.QPyNullVariant):

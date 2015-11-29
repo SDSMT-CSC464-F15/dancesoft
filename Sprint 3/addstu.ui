@@ -1,50 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Role_window</class>
- <widget class="QMainWindow" name="Role_window">
+ <class>Addstu_window</class>
+ <widget class="QMainWindow" name="Addstu_window">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>622</width>
-    <height>437</height>
+    <width>531</width>
+    <height>405</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="Role_listView">
+   <widget class="QListView" name="Class_listView">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>151</width>
-      <height>331</height>
+      <width>201</width>
+      <height>281</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="Role_print_btn">
+   <widget class="QPushButton" name="Remove_stu_btn">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>370</y>
+      <x>80</x>
+      <y>330</y>
       <width>91</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Print</string>
+     <string>Remove</string>
     </property>
    </widget>
    <widget class="QListView" name="Stu_listView">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>280</x>
       <y>20</y>
-      <width>411</width>
-      <height>371</height>
+      <width>221</width>
+      <height>281</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Add_stu_btn">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>330</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add</string>
     </property>
    </widget>
   </widget>
@@ -53,7 +66,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>622</width>
+     <width>531</width>
      <height>21</height>
     </rect>
    </property>

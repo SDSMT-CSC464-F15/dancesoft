@@ -20,7 +20,7 @@
       <x>0</x>
       <y>0</y>
       <width>741</width>
-      <height>481</height>
+      <height>484</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
@@ -215,6 +215,20 @@
       <widget class="QTimeEdit" name="End_time_timeEdit">
        <property name="displayFormat">
         <string>HH:mm:ss </string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>*Required Fields                * 0 in Age or Age Limit represents no restriction (Leave 0's for All age classes) </string>
        </property>
       </widget>
      </item>

@@ -15,7 +15,7 @@ class assign_teacher(QtGui.QMainWindow):
         if not self.conn():
             QtGui.QMessageBox.warning(
                 self, 'Error', 'database contecting error')
-
+            
         self.assign.sel_teach = QSqlRelationalTableModel(db = self.db)
         self.assign.sel_teach.setTable("Class")
 
@@ -36,24 +36,55 @@ class assign_teacher(QtGui.QMainWindow):
         return self.db.open()
     
     def teacher_assignment(self, class_index):
-
+        self.current_teacher = ''
         self.selected_class = class_index.data()
+        print(self.selected_class)
+
+        self.current_teacher_query = QSqlQuery()
+        self.current_teacher_query.exec("SELECT Teacher_name FROM Teacher \
+                        WHERE Teacher_id = (SELECT DISTINCT Teacher_Class.Teacher_id\
+                        FROM Teacher, Teacher_Class WHERE Teacher_Class.Class_id = \
+                        (select Class_id from Class where class_name = '%s'))" % (self.selected_class))
         
-        self.teacher_query = QSqlQuery()
-        self.teacher_query.exec_("SELECT NC.Teacher_name from (SELECT T.Teacher_name, C.Class_time, C.Class_end_time from Teacher as T, Teacher_Class as TC, \
-                                Class as C WHERE TC.Teacher_id = T.Teacher_id and TC.Class_id = C.Class_id) as NC, \
-                                (SELECT C.Class_time, C.Class_end_time FROM Class as C WHERE C.Class_name = '%s') as C WHERE NC.Class_time >= \
-                                C.Class_end_time or C.Class_time >= NC.Class_end_time" % (self.selected_class))
+        self.current_teacher_query.next()
+        self.current_teacher = self.current_teacher_query.value(0)
+        if self.current_teacher != None:
+            confirm_msg = "This class is currently assigned to '%s' do you want to change teachers" %(self.current_teacher)
+            
+            reply = QtGui.QMessageBox.question(self, 'Reassign Class', 
+                    confirm_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
+            if reply == QtGui.QMessageBox.Yes:
+                self.teacher_query = QSqlQuery()
+                self.teacher_query.exec_( "SELECT Teacher_name from Teacher WHERE Teacher_name\
+                      not in (SELECT NC.Teacher_name from (SELECT T.Teacher_name, C.Class_time, C.Class_end_time\
+                      from Teacher as T, Teacher_Class as TC, Class as C WHERE TC.Teacher_id = T.Teacher_id and \
+                      TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time FROM Class \
+                      as C WHERE C.Class_name = '%s') as C WHERE not (NC.Class_time >= C.Class_end_time or \
+                      C.Class_time >= NC.Class_end_time))" % (self.selected_class))
         
-        self.teacher_result = QSqlQueryModel()
-        self.teacher_result.setQuery(self.teacher_query)
-        self.assign.Teacher_listView.setModel(self.teacher_result)
-        self.assign.Teacher_listView.clicked.connect(self.assign_teacher)
+                self.teacher_result = QSqlQueryModel()
+                self.teacher_result.setQuery(self.teacher_query)
+                self.assign.Teacher_listView.setModel(self.teacher_result)
+                self.assign.Teacher_listView.clicked.connect(self.Update_assign_teacher)
+
+        else:
+        
+            self.teacher_query = QSqlQuery()
+            self.teacher_query.exec_( "SELECT Teacher_name from Teacher WHERE Teacher_name\
+                          not in (SELECT NC.Teacher_name from (SELECT T.Teacher_name, C.Class_time, C.Class_end_time\
+                          from Teacher as T, Teacher_Class as TC, Class as C WHERE TC.Teacher_id = T.Teacher_id and \
+                          TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time FROM Class \
+                          as C WHERE C.Class_name = '%s') as C WHERE not (NC.Class_time >= C.Class_end_time or \
+                          C.Class_time >= NC.Class_end_time))" % (self.selected_class))
+            
+            self.teacher_result = QSqlQueryModel()
+            self.teacher_result.setQuery(self.teacher_query)
+            self.assign.Teacher_listView.setModel(self.teacher_result)
+            self.assign.Teacher_listView.clicked.connect(self.assign_teacher)
 
     def assign_teacher(self, teacher_index):
         
         confirm_msg = "Are you sure you want to assign '%s' to teach '%s'" %(teacher_index.data(), self.selected_class)
-        print(teacher_index.data(), ' ', self.selected_class)
         
         reply = QtGui.QMessageBox.question(self, 'Confirm', 
                 confirm_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
@@ -69,13 +100,30 @@ class assign_teacher(QtGui.QMainWindow):
                 #assign teacher query
                 assign_teach_query = QSqlQuery()
                 assign_teach_query.exec("INSERT INTO Teacher_Class Values('%s','%s')" %(self.teacher_rec, self.class_rec))
+
+    def Update_assign_teacher(self, teacher_index):
         
+        confirm_msg = "Are you sure you want to assign '%s' to teach '%s'" %(teacher_index.data(), self.selected_class)
+        
+        
+        reply = QtGui.QMessageBox.question(self, 'Confirm', 
+                confirm_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
+        if reply == QtGui.QMessageBox.Yes:
+                get_data_query = QSqlQuery()
+                get_data_query.exec("Select Teacher_id, Class_id FROM Teacher, Class WHERE Teacher_name = '%s' AND Class_name = '%s'" % (teacher_index.data(), self.selected_class) )
+                
+                get_data_query.next()
+                self.teacher_rec = get_data_query.value(0)
+                self.class_rec = get_data_query.value(1)
+                
+                #assign teacher query
+                assign_teach_query = QSqlQuery()
+                assign_teach_query.exec("Update Teacher_Class SET Teacher_id = '%s' WHERE Class_id = '%s'" %(self.teacher_rec, self.class_rec))
 
         
         
         
 app = QtGui.QApplication(sys.argv)
 Current_Window = assign_teacher()
-Current_Window.show()
-print("here") 
+Current_Window.show() 
 sys.exit(app.exec_())

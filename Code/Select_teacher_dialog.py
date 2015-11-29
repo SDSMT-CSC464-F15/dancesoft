@@ -148,5 +148,4 @@ class modify_Information(QtGui.QDialog):
 app = QtGui.QApplication(sys.argv)
 Current_Window = modify_Information()
 Current_Window.show()
-print("here")
 sys.exit(app.exec_())

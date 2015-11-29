@@ -52,96 +52,70 @@ Marcus Berger
 \\
 
 \section{Prototype Progress}
-The progress is mostly out of the research phase and has began the first steps of production. The progress is laid out in more detail in this report. As of now the prototype is in a state to begin working on functionality. The rough (not final) GUI pages are laid out and being constructed to give us an environment for creating the functionality. The back end database has been constructed and will allow us to begin testing the database connected page as we create them. Current pages constructed are log in page, landing pages, and some options page.
+The progress is being made on the simpler functions of the projects including search, updates, and role sheets. As of now the prototype is in a state of some working functionality on the admin and teacher side. The pages are not yet tied together but the complete functions function independently. Several GUI pages are complete or in a working state to compliment these functions. The back end database has been slightly updated to adjust to the needs of the project. Lastly the prototype has reached a state where testing can be conducted on parts of the project, more information is given later in this document.
 
-\section{Project deliverables of Sprint 2:}
+\section{Project deliverables of Sprint 3:}
 
 \begin{enumerate}
-\item The database creation script  
-\item Gui path work, meaning figuring out the path through the Gui
-\item Log in page that reads users permission level and sends them to the correct landing page
-\item Rough landing pages for Admin and Teachers (design improvements to come in later sprint) 
+\item Student search page 
+\item Employee search page
+\item Add a class to the database
+\item Update teacher and student information pages
+\item Modify clothing requirements for a class
+\item Generate a class role sheet
+\item Assign teacher to a class
+\item Ability to add and subtract students from a class  
 \end{enumerate}
 
 
-\subsection{Sprint 2 Backlog:}
+\subsection{Sprint 3 Backlog:}
 
 \begin{enumerate}
-\item Creation of database tables 
-\item Draw Gui path
-\item Decision on rough Gui theme
-\item Create a log in page that sends the user to the correct landing page based on their permission level
-\item Create rough versions of teacher and admin landing pages to test functionally (improve look in latter sprint 
-\item Continue rough gui page creation to have environments for functionality 
-\item Sprint 2 Review
-\item Continuing practice with QT
+\item Queries in database to retrieve student and employee information
+\item Query and insert information needed to create and new class and produce a results page.
+\item Query database to produce class role sheet
+\item Create clothing requirement update function, and add clothing function for teachers and admin
+\item Create update query to assign teachers to a class
+\item Create ability for employee to look up and modify student registration info
+\item Add and subtract students from a class
+\item Sprint 3 Review
+\item Create Client presentation
+\item Documentation for semester
 \end{enumerate}
 
-\section{Database Creation}
-
-The first thing we tackled in sprint 2 was getting the database up so we could begin actually developing the product and give our qt interface something to actually interface with. The main goal here was to make sure we had constructed the database in such a way that it could complete all the user stories it needed to in a way that made sense. After talking through the tables and the users stories we came up with the table creation script that was submitted with this sprint. While modifications will need to be made for when we do the billing side of the project, we think that this table structure should provide for the need of the academy.
-
-A few thing to note in the database, we created student\_class and teacher\_class tables to deal with the many to many relationships in the database. Also there are no payroll or transaction tables yet as the group is still trying to figure out how to handle billing information and data.
+\section{Search Pages}
+The first page tackled this sprint was the search page. The page takes user input and searches based on name using a fuzzy search. Also included in both searches is an advanced search option that allows the user to check boxes corresponding to the fields in the database, which allows the user to search in more versatile ways. Lastly the user can click on a student to pull up all of their information and modify it as needed.
 
 
 \begin{figure}
-\caption{Tables currently in database}
+\caption{Search Pages}
 \centering
-\includegraphics[width=0.5\textwidth]{database_tables}
+\includegraphics[width=0.5\textwidth]{search}
 \end{figure}
 
-\section{GUI Work}
+\section{Add A Class}
+Clicking on the "Add a Class" button on the admin landing page will open a dialog. From this dialog box the user can type in information to a add a class. These fields include class name, cost, start and end times, day, clothing requirements, class description, start and end dates, and the age range for the class.  At the time of class creation only name, is a required field. When the submit button is clicked a message box will pop up to confirm the database submission before submitting to the database  
 
-\subsection{GUI Path and Theme}
+\section{Role Sheet}
 
-The path for the gui was part of the backlog so we could figure out the minimum number of pages we would need to do the things required by this project. This does not mean we are looking to create only the minimum but just get a general idea of how many pages we would need. Also it allowed us to see how the pages were connected and how we expect navigation through the system to work. The rough drawing of the path can be found in the Github repo's sprint two folder.
+\section{Update Pages}
+These pages are fairly simple to explain sometimes the user will need to add or alter a record of some kind these pages need to be able to do that in a simple and concise way. The update pages worked on in this sprint include student information from the employee side, updating teacher information and updates to clothing requirements for a class. Most of these page will just produce a form where information can be displayed and updated.
 
-The other thing we need was to talk to the client about what he wanted for a navigation theme. We came up with three options, first was a button layout on the top and side of the page, second was  drop down menu similar to the way was mac and windows handle navigation in their products. Last was an expanding folder structure similar to that of the content management system Ektron. After consulting with Dr. Mcgough, he  decided that the more familiar drop down menu would be the easiest and most user friendly option and the option he would prefer we do. This decision allows us to use the built in menu bar functionality of pyqt and should reduce work load on navigation for this project.
+\section{Assign Teacher to a Class}
+This page allows an admin to select a class, clicking on a class pulls up a list of available teachers to select to teach the class. Clicking on a teacher will pull up a message box to confirm the selections before submitting to the database. The available teachers are selected based on the start time of the selected class and the end time of the classes already being taught by each teacher. If the class times overlap then that teacher will not show up in the available teachers list.
 
-Another part of theme is color and design, the color scheme will most likely resemble the academy's color plate, but the improve design will be worked on later. As of now the primary focus is making sure all the functionality works.
-
-
-\subsection{GUI Pages}
-
-The GUI pages for this sprint were the log in page and the landing pages for admin and teachers. The student part of the gui will be php which will be worked on in a future sprint once the functionlity is done. Since the student functions are similar to some of the admin or teacher functions most work should port over fairly quickly.
-
-The first page we made was a login in page that takes a username and a password and first checks to see if they exist and are correct within the system. If they are not a dialog saying whats wrong appears and prompts the user again. If the information passes the check the system reads the users permission level and sends them to the corresponding landing page.
-
-\begin{figure}
-\caption{Current iteration of the log in page}
-\centering
-\includegraphics[width=0.5\textwidth]{login_page}
-\end{figure}
-
-The other set of pages we need to make to begin writing functionality was the landing pages for the admin and teacher permission levels. These pages show the types of things each can do and allow navigation to the various different functionality that permission level can do. For example the admin landing page has a button to take you to a student options page, from there you select which option you want and will be taken to the page to execute that function. The idea is to start at the landing page and be able to navigate to a specific function in three or four clicks max. The menu bar will also execute navigation and should allow the user to jump to a desired function.\\
-
-\begin{figure}
-\caption{Current iteration of the Admin Landing page}
-\centering
-\includegraphics[width=0.5\textwidth]{admin_landing}
-\end{figure}
-
-Pages currently being worked on include:
-
-\begin{enumerate}
-\item Search pages
-\item Modify data page
-\item Add information and new information pages
-\end{enumerate}
-
-
-\section{Sprint 2 Issues}
+\section{Sprint 3 Issues}
 Some issues that were encountered during this sprint were:
 
 \begin{enumerate}
-\item Running out of time - the group found it hard to complete this sprint on time due to many time draining issues, such as other class work,family matters, midterm exams and a client presentation during this sprint. Mitigation for this issue will be better time management for the team.
-\item Inexperience with pyqt - The team ran into some issues that drained on time when working with pyqt, such as looking up information on how to perform a needed task. Mitigation for this issue is mostly experience based as we learn the system and learn how to more efficiently navigate the community the time sink should go down.
-\item Team communication - The team found some issues in communicating with one another because of the language barriers within the team. Which in some cases slowed sprint progress. Mitigation for this issue will come with time as the group begin to understand each other better and find efficient patterns of communication.
+\item Time - While not as much of a problem as it was in sprint two the group still found itself running low on time. The lead gained during Christmas break should reduce the issue in phase 2.
+\item Inexperience with pyqt - While still a small issue the experience of the team is growing and while some issues still exist such as needing to look up information at times, the issues are lessened from the last sprint.
+\item Team communication - The team found some issues in communicating with one another because of other projects and assignments. Which in some cases slowed sprint progress. Mitigation for this issue will be to more strongly impose a schedule in phase 2.
 \end{enumerate}
 
 \section{Client Interactions}
 
-Client interactions came in the form of weekly meeting every wednesday at 2:00 p.m. Topics included:
+Client interactions came in the form of weekly meeting every Wednesday at 2:00 p.m. Topics included:
 
 \begin{enumerate}
 \item Progress reports on where we are in the project
@@ -152,29 +126,34 @@ Client interactions came in the form of weekly meeting every wednesday at 2:00 p
 
 \section{Group Meeting}
 
-The group has a standard meeting time of 4:00-5:00 or 4:00-6:00 MWF and a second meeting time of TTH 10:00 - 12:00
+The group has a standard meeting time of TTH 10:00 - 12:00 and once during the weekend usually from 1:00-5:00 
 
-Meeting can continue pass these times if needed, and other times during the weekend. However weekend times fluctuate and do not remain constant from week to week. 
+Meeting can continue pass these times if needed, and other times during the weekend. However extra weekend times fluctuate and do not remain constant from week to week. 
 
 \section{Work Distribution}
 
 Marcus:
 \begin{enumerate}
-\item Gui Path Charts
-\item Landing page Construction\\
+\item Add a class
+\item Assign teacher to class
+\item Update teacher page
+\item Update clothing
+\item documentation
+\item trello management\\
 \end{enumerate}
 
 Dicheng:
 \begin{enumerate}
-\item GUI Theme Ideas
-\item Log In Page and Permission Navigation\\
+\item Search Pages
+\item Role sheet
+\item Modify student information
+\item Add and Subtract students from a class\\
 \end{enumerate}
 
 
 Together:
 \begin{enumerate}
-\item Wrote and talked through database and construction
-\item Got database running
+\item Updated database construction
 \item GUI page breakdown based on user stories and product backlog
 \item Coded some functionality
 \end{enumerate}

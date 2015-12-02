@@ -6,7 +6,7 @@ from Role_print import Print_window
 
 
 class Role_window(QtGui.QMainWindow):
-    def __init__(self, Id = 1):
+    def __init__(self, Id = 2): #connect with login page
         QtGui.QMainWindow.__init__(self)
         self.ui = Ui_Role_window()
         self.ui.setupUi(self)

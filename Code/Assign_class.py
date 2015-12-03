@@ -38,7 +38,6 @@ class assign_teacher(QtGui.QMainWindow):
     def teacher_assignment(self, class_index):
         self.current_teacher = ''
         self.selected_class = class_index.data()
-        print(self.selected_class)
 
         self.current_teacher_query = QSqlQuery()
         self.current_teacher_query.exec("SELECT Teacher_name FROM Teacher \
@@ -95,7 +94,6 @@ class assign_teacher(QtGui.QMainWindow):
                 get_data_query.next()
                 self.teacher_rec = get_data_query.value(0)
                 self.class_rec = get_data_query.value(1)
-                print(str(self.teacher_rec), str(self.class_rec))
                 
                 #assign teacher query
                 assign_teach_query = QSqlQuery()

@@ -92,7 +92,7 @@ class modify_Information(QtGui.QDialog):
                 self, 'Error', "Please fill in required fields: Name, House Phone, Address, City, State, Gender, and Social security number(SSN).\
                 \nPhone number format: ###-###-#### \nAddress format: #'s Street \nSNN format: ###-##-####" )
             
-        elif self.home == '' or self.home.len() < 10:w
+        elif self.home == '' or self.home.len() < 10:
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
             
@@ -104,7 +104,7 @@ class modify_Information(QtGui.QDialog):
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
 
-        elif self.address == '' || self.address.len() < 5:
+        elif self.address == '' or self.address.len() < 5:
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please fill in required fields: Name, House Phone, Address, City, State, Gender, and Social security number(SSN).\
                 \nPhone number format: ###-###-#### \nAddress format: #'s Street \nSNN format: ###-##-####" )

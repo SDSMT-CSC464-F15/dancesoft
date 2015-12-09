@@ -18,13 +18,13 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>0</y>
       <width>501</width>
       <height>301</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Teacher_page">
      <widget class="QWidget" name="verticalLayoutWidget">
@@ -246,7 +246,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Request Add to Class</string>
+       <string>Add Student to Class</string>
       </property>
      </widget>
      <widget class="QPushButton" name="See_student_schedule_btn">

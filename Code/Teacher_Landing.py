@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Teacher Landing.ui'
 #
-# Created: Sun Nov  1 12:26:03 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -30,7 +29,7 @@ class Ui_Teacher_Landing(object):
         self.centralwidget = QtGui.QWidget(Teacher_Landing)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.stackedWidget = QtGui.QStackedWidget(self.centralwidget)
-        self.stackedWidget.setGeometry(QtCore.QRect(10, 10, 501, 301))
+        self.stackedWidget.setGeometry(QtCore.QRect(10, 0, 501, 301))
         self.stackedWidget.setObjectName(_fromUtf8("stackedWidget"))
         self.Teacher_page = QtGui.QWidget()
         self.Teacher_page.setObjectName(_fromUtf8("Teacher_page"))
@@ -38,7 +37,6 @@ class Ui_Teacher_Landing(object):
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 501, 301))
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.verticalLayout_2 = QtGui.QVBoxLayout(self.verticalLayoutWidget)
-        self.verticalLayout_2.setMargin(0)
         self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
         self.groupBox_2 = QtGui.QGroupBox(self.verticalLayoutWidget)
         font = QtGui.QFont()
@@ -230,7 +228,7 @@ class Ui_Teacher_Landing(object):
         Teacher_Landing.setStatusBar(self.statusbar)
 
         self.retranslateUi(Teacher_Landing)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(Teacher_Landing)
 
     def retranslateUi(self, Teacher_Landing):
@@ -245,7 +243,7 @@ class Ui_Teacher_Landing(object):
         self.Student_quit_btn.setText(_translate("Teacher_Landing", "Quit", None))
         self.Modify_student_info_btn.setText(_translate("Teacher_Landing", "Modify Student Info", None))
         self.Search_student_btn.setText(_translate("Teacher_Landing", "Search for Student", None))
-        self.Add_class_btn.setText(_translate("Teacher_Landing", "Request Add to Class", None))
+        self.Add_class_btn.setText(_translate("Teacher_Landing", "Add Student to Class", None))
         self.See_student_schedule_btn.setText(_translate("Teacher_Landing", "See Schedule", None))
         self.Class_back_btn.setText(_translate("Teacher_Landing", "Back", None))
         self.Class_quit_btn.setText(_translate("Teacher_Landing", "Quit", None))

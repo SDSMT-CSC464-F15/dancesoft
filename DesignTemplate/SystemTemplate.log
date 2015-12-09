@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.12)  9 DEC 2015 13:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.12)  9 DEC 2015 15:11
 entering extended mode
 **SystemTemplate.tex
 
@@ -1526,48 +1526,48 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 
 ]
 ("C:\Users\7304859\Desktop\senior design\dancesoft\DesignTemplate\SystemTemplat
-e.toc" [3] [4] [5]
-Overfull \hbox (0.4722pt too wide) detected at line 138
+e.toc" [3] [4]
+Overfull \hbox (0.4722pt too wide) detected at line 131
  []\OT1/cmr/m/n/10 D-1
  []
 
 
-Overfull \hbox (0.4722pt too wide) detected at line 139
+Overfull \hbox (0.4722pt too wide) detected at line 132
  []\OT1/cmr/m/n/10 D-1
  []
 
 
-Overfull \hbox (0.4722pt too wide) detected at line 140
+Overfull \hbox (0.4722pt too wide) detected at line 133
  []\OT1/cmr/m/n/10 D-1
  []
 
 
-Overfull \hbox (0.4722pt too wide) detected at line 141
+Overfull \hbox (0.4722pt too wide) detected at line 134
  []\OT1/cmr/m/n/10 D-1
  []
 
 
-Overfull \hbox (0.4722pt too wide) detected at line 142
+Overfull \hbox (0.4722pt too wide) detected at line 135
  []\OT1/cmr/m/n/10 D-1
  []
 
-
-Overfull \hbox (9.08334pt too wide) detected at line 146
+[5]
+Overfull \hbox (9.08334pt too wide) detected at line 139
  []\OT1/cmr/m/n/10 BM-1
  []
 
 
-Overfull \hbox (9.08334pt too wide) detected at line 147
+Overfull \hbox (9.08334pt too wide) detected at line 140
  []\OT1/cmr/m/n/10 BM-1
  []
 
 
-Overfull \hbox (9.08334pt too wide) detected at line 148
+Overfull \hbox (9.08334pt too wide) detected at line 141
  []\OT1/cmr/m/n/10 BM-2
  []
 
 
-Overfull \hbox (9.08334pt too wide) detected at line 149
+Overfull \hbox (9.08334pt too wide) detected at line 142
  []\OT1/cmr/m/n/10 BM-2
  []
 
@@ -1611,7 +1611,7 @@ Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--37
 Chapter 1.
 [1
 
-] <./diagram.png, id=796, 722.7pt x 542.025pt>
+] <./diagram.png, id=757, 722.7pt x 542.025pt>
 File: ./diagram.png Graphic file (type png)
  <use ./diagram.png>
 Package pdftex.def Info: ./diagram.png used on input line 46.
@@ -1639,45 +1639,70 @@ Chapter 3.
 ("C:\Users\7304859\Desktop\senior design\dancesoft\DesignTemplate\design.tex"
 [12]
 Chapter 4.
-<pics/database.png, id=874, 614.295pt x 405.01312pt>
-File: pics/database.png Graphic file (type png)
- <use pics/database.png>
-Package pdftex.def Info: pics/database.png used on input line 6.
-(pdftex.def)             Requested size: 307.14674pt x 202.50606pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--8
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 15.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+<pics/gui.png, id=835, 560.8453pt x 315.42844pt>
+File: pics/gui.png Graphic file (type png)
+ <use pics/gui.png>
+Package pdftex.def Info: pics/gui.png used on input line 8.
+(pdftex.def)             Requested size: 280.42197pt x 157.71382pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--30
+
+ []
+
+[13
+
+ <C:/Users/7304859/Desktop/senior design/dancesoft/DesignTemplate/pics/gui.png>
+] <pics/database.png, id=840, 614.295pt x 405.01312pt>
+File: pics/database.png Graphic file (type png)
+
+<use pics/database.png>
+Package pdftex.def Info: pics/database.png used on input line 36.
+(pdftex.def)             Requested size: 491.43666pt x 324.01093pt.
+
+Overfull \hbox (21.68167pt too wide) in paragraph at lines 36--37
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+[14 <C:/Users/7304859/Desktop/senior design/dancesoft/DesignTemplate/pics/datab
+ase.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 47.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
- [13
-
- <C:/Users/7304859/Desktop/senior design/dancesoft/DesignTemplate/pics/database
-.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 70.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 70.
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 75.
- [14] [15])
 ("C:\Users\7304859\Desktop\senior design\dancesoft\DesignTemplate\testing.tex"
-[16]
+[15] [16
+
+]
 Chapter 5.
 ) ("C:\Users\7304859\Desktop\senior design\dancesoft\DesignTemplate\develop.tex
-" [17
-
-] [18
+" [17] [18
 
 ]
 Chapter 6.
@@ -1734,7 +1759,7 @@ e.bbl" [33] [34
 ]) [35] [36
 
 ]
-<SoftwareContract.pdf, id=1065, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1005, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -1745,7 +1770,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf used on input line 67.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SoftwareContract.pdf, id=1068, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1008, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -1771,7 +1796,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <C:/Users/7304859/Desktop/senior design/dancesoft/DesignTemplate/SoftwareCo
 ntract.pdf>]
-<SoftwareContract.pdf, id=1095, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1035, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -1788,7 +1813,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <C:/Users/7304859/Desktop/senior design/dancesoft/DesignTemplate/SoftwareCo
 ntract.pdf>]
-<SoftwareContract.pdf, id=1101, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1041, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -1805,7 +1830,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <C:/Users/7304859/Desktop/senior design/dancesoft/DesignTemplate/SoftwareCo
 ntract.pdf>]
-<SoftwareContract.pdf, id=1108, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1048, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -1822,7 +1847,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <C:/Users/7304859/Desktop/senior design/dancesoft/DesignTemplate/SoftwareCo
 ntract.pdf>]
-<SoftwareContract.pdf, id=1114, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1054, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -1886,17 +1911,17 @@ e.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `SystemTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: AE0C1DD2616E865E63BF006F069BDBD8;9580.
+(rerunfilecheck)             Checksum: 3B3C425D6899F8234562A6B4354D60FF;9039.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 26013 strings out of 493921
- 463071 string characters out of 3144870
- 588263 words of memory out of 3000000
- 28379 multiletter control sequences out of 15000+200000
+ 25954 strings out of 493921
+ 462435 string characters out of 3144870
+ 587209 words of memory out of 3000000
+ 28344 multiletter control sequences out of 15000+200000
  17336 words of font info for 69 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,18n,65p,3300b,1882s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,18n,65p,3300b,1359s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\7304859\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\tcrm1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
@@ -1915,9 +1940,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on SystemTemplate.pdf (73 pages, 841751 bytes).
+Output written on SystemTemplate.pdf (73 pages, 882220 bytes).
 PDF statistics:
- 1323 PDF objects out of 1440 (max. 8388607)
- 311 named destinations out of 1000 (max. 500000)
- 1191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1259 PDF objects out of 1440 (max. 8388607)
+ 286 named destinations out of 1000 (max. 500000)
+ 1140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

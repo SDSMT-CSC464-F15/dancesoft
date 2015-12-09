@@ -61,27 +61,20 @@
 \contentsline {subsection}{\numberline {3.5.17}User Story \#17}{12}{subsection.3.5.17}
 \contentsline {section}{\numberline {3.6}Research or Proof of Concept Results}{12}{section.3.6}
 \contentsline {chapter}{\numberline {4}Design and Implementation}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Major Component \#1 }{13}{section.4.1}
+\contentsline {section}{\numberline {4.1}Database}{13}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Technologies Used}{13}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Component Overview}{14}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Phase Overview}{14}{subsection.4.1.3}
 \contentsline {subsection}{\numberline {4.1.4} Architecture Diagram}{14}{subsection.4.1.4}
 \contentsline {subsection}{\numberline {4.1.5}Data Flow Diagram}{14}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Design Details}{14}{subsection.4.1.6}
-\contentsline {section}{\numberline {4.2}Major Component \#2 }{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.6}Design Details}{15}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}GUI}{15}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Technologies Used}{15}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Component Overview}{15}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Phase Overview}{15}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4} Architecture Diagram}{15}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Data Flow Diagram}{15}{subsection.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}Design Details}{15}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Major Component \#3 }{15}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Technologies Used}{15}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Component Overview}{15}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Phase Overview}{15}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4} Architecture Diagram}{16}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Data Flow Diagram}{16}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Design Details}{16}{subsection.4.3.6}
 \contentsline {chapter}{\numberline {5}System and Unit Testing}{17}{chapter.5}
 \contentsline {section}{\numberline {5.1}Overview}{17}{section.5.1}
 \contentsline {section}{\numberline {5.2}Dependencies}{17}{section.5.2}

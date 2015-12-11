@@ -1,8 +1,49 @@
+\section{Overview}
+This document provides a description of the project the team intends to produce.
 
+\section{Scope}
+This document covers the general product description to be developed in accordance with the Dancesoft software contract.
 
-Write a description of the product to be developed.
-Use sectioning commands as neccessary.
-\vspace{2\baselineskip}
+\section{System Goal}
+The system needs to provide a solution which can run the dance studio data and some day to day activities in an effective and secure manner. This includes allowing teachers to print role sheets, look at schedules, and manage their information. Students need to have the ability to see information pertinent to them such as registration and class requirements. Owners need to be able to use the system to manage their employees, the academy's students and it classes, and other administrative duties such as billing and payroll  Lastly this system as a whole also needs to be an improvement on the current system in use by the customer and provide an easier and more efficient way to run the clients business.
 
-\centerline{\Large {\bf NOTE:} {\em This is part of the contract.}}
+Overall the system goal is to provide a environment where academy owners, teachers, and students can effectively manage their personal needs and requirements for academy participation and continued operations.
+
+\section{System Components}
+The project is broken down into three primary components. First is the Admin and Teacher GUI system, second is the back end database to store academy information. Third is the student web interface for student to manage their information.
+
+\subsection{Admin and Teacher}
+The admin and teacher interface will provide a simple and easy to use way for academy employees to manage day to day activities and academy information. This is accomplish through the various features requested by the client, such as admins adding classes, and teacher printing role sheets.
+
+These request will be implemented using a PyQt GUI with tools to navigate to the features. For example a admin will be able to click on a "manage classes" button then an "add a class" to being up a form where they can add a class to the system. Navigation will be done in two ways using the page by page navigation or a navigation bar located near the top of most main windows.
+
+\bf(NOTE TO SELF: REFINE LATER AND EXPAND ON AS FUNCTIONS BUILD OUT [MB])
+
+\subsection{Database}
+The main storage method for academy data is a MySQL database so the project can use relational queries to access the information requested by specific feature. It also provides a back end to tie to the GUI to populate forms and submit to.
+
+The database will be small due to the size of the academy and includes tables for academy data, student data, and transactions and payroll information
+
+\subsection{Student Interface}
+The student interface is a HTML and PHP set of web pages to allow students to manage their academy information. The web page will then be tied into the existing RC Dance Arts web page for students to access. The features to be included in this interface are provided by the client.
+
+\bf(NOTE TO SELF: REFINE LATER AND EXPAND ON AS FUNCTIONS BUILD OUT [MB])
+
+\section{Project Deliverables}
+The following are the deliverables that should be provide to the client in accordance with the software contract at the end of the project:
+
+\begin{enumerate}
+\item The database back end with information
+\item The Admin Teacher interface
+\item The student web page and information
+\item System files
+\item Code and frameworks for project
+\item Proof of system function for both Windows and Mac
+\item User manuals and documentation
+\end{enumerate}
+
+\subsection{Project Delivery}
+Project should be delivered in a complete state to client by the end of 2015-2016 academic school year.
+
+\bf(Replace School year with delivery date) 
 

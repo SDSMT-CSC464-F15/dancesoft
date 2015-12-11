@@ -68,63 +68,66 @@
 \BOOKMARK [2][-]{subsection.3.5.17}{User Story \04317}{section.3.5}% 68
 \BOOKMARK [1][-]{section.3.6}{Research or Proof of Concept Results}{chapter.3}% 69
 \BOOKMARK [0][-]{chapter.4}{Design and Implementation}{}% 70
-\BOOKMARK [1][-]{section.4.1}{Major Component \0431 }{chapter.4}% 71
-\BOOKMARK [2][-]{subsection.4.1.1}{Technologies Used}{section.4.1}% 72
-\BOOKMARK [2][-]{subsection.4.1.2}{Component Overview}{section.4.1}% 73
-\BOOKMARK [2][-]{subsection.4.1.3}{Phase Overview}{section.4.1}% 74
-\BOOKMARK [2][-]{subsection.4.1.4}{ Architecture Diagram}{section.4.1}% 75
-\BOOKMARK [2][-]{subsection.4.1.5}{Data Flow Diagram}{section.4.1}% 76
-\BOOKMARK [2][-]{subsection.4.1.6}{Design Details}{section.4.1}% 77
-\BOOKMARK [1][-]{section.4.2}{Major Component \0432 }{chapter.4}% 78
-\BOOKMARK [2][-]{subsection.4.2.1}{Technologies Used}{section.4.2}% 79
-\BOOKMARK [2][-]{subsection.4.2.2}{Component Overview}{section.4.2}% 80
-\BOOKMARK [2][-]{subsection.4.2.3}{Phase Overview}{section.4.2}% 81
-\BOOKMARK [2][-]{subsection.4.2.4}{ Architecture Diagram}{section.4.2}% 82
-\BOOKMARK [2][-]{subsection.4.2.5}{Data Flow Diagram}{section.4.2}% 83
-\BOOKMARK [2][-]{subsection.4.2.6}{Design Details}{section.4.2}% 84
-\BOOKMARK [1][-]{section.4.3}{Major Component \0433 }{chapter.4}% 85
-\BOOKMARK [2][-]{subsection.4.3.1}{Technologies Used}{section.4.3}% 86
-\BOOKMARK [2][-]{subsection.4.3.2}{Component Overview}{section.4.3}% 87
-\BOOKMARK [2][-]{subsection.4.3.3}{Phase Overview}{section.4.3}% 88
-\BOOKMARK [2][-]{subsection.4.3.4}{ Architecture Diagram}{section.4.3}% 89
-\BOOKMARK [2][-]{subsection.4.3.5}{Data Flow Diagram}{section.4.3}% 90
-\BOOKMARK [2][-]{subsection.4.3.6}{Design Details}{section.4.3}% 91
-\BOOKMARK [0][-]{chapter.5}{System and Unit Testing}{}% 92
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 93
-\BOOKMARK [1][-]{section.5.2}{Dependencies}{chapter.5}% 94
-\BOOKMARK [1][-]{section.5.3}{Test Setup and Execution}{chapter.5}% 95
-\BOOKMARK [0][-]{chapter.6}{Development Environment}{}% 96
-\BOOKMARK [1][-]{section.6.1}{Development IDE and Tools}{chapter.6}% 97
-\BOOKMARK [1][-]{section.6.2}{Source Control}{chapter.6}% 98
-\BOOKMARK [1][-]{section.6.3}{Dependencies}{chapter.6}% 99
-\BOOKMARK [1][-]{section.6.4}{Build Environment}{chapter.6}% 100
-\BOOKMARK [1][-]{section.6.5}{Development Machine Setup}{chapter.6}% 101
-\BOOKMARK [0][-]{chapter.7}{Release \205 Setup \205 Deployment}{}% 102
-\BOOKMARK [1][-]{section.7.1}{Deployment Information and Dependencies}{chapter.7}% 103
-\BOOKMARK [1][-]{section.7.2}{Setup Information}{chapter.7}% 104
-\BOOKMARK [1][-]{section.7.3}{System Versioning Information}{chapter.7}% 105
-\BOOKMARK [0][-]{chapter.8}{User Documentation}{}% 106
-\BOOKMARK [1][-]{section.8.1}{User Guide}{chapter.8}% 107
-\BOOKMARK [1][-]{section.8.2}{Installation Guide}{chapter.8}% 108
-\BOOKMARK [1][-]{section.8.3}{Programmer Manual}{chapter.8}% 109
-\BOOKMARK [0][-]{chapter.9}{Class Index}{}% 110
-\BOOKMARK [1][-]{section.9.1}{Class List}{chapter.9}% 111
-\BOOKMARK [0][-]{chapter.10}{Class Documentation}{}% 112
-\BOOKMARK [1][-]{section.10.1}{Poly Class Reference}{chapter.10}% 113
-\BOOKMARK [2][-]{subsection.10.1.1}{Constructor \046 Destructor Documentation}{section.10.1}% 114
-\BOOKMARK [2][-]{subsection.10.1.2}{Member Function Documentation}{section.10.1}% 115
-\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 116
-\BOOKMARK [0][-]{chapter.11}{Software Agreement}{}% 117
-\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 118
-\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 119
-\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 120
-\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 121
-\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 122
-\BOOKMARK [1][-]{section.B.4}{Sprint Report ...}{appendix.B}% 123
-\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 124
-\BOOKMARK [1][-]{section.C.1}{Resumes}{appendix.C}% 125
-\BOOKMARK [1][-]{section.C.2}{ABET: Industrial Experience Reports}{appendix.C}% 126
-\BOOKMARK [2][-]{subsection.C.2.1}{Marcus Berger}{section.C.2}% 127
-\BOOKMARK [2][-]{subsection.C.2.2}{Dicheng Wu}{section.C.2}% 128
-\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 129
-\BOOKMARK [0][-]{appendix.E}{Supporting Materials}{}% 130
+\BOOKMARK [1][-]{section.4.1}{Database}{chapter.4}% 71
+\BOOKMARK [1][-]{section.4.2}{Major Component \0431 }{chapter.4}% 72
+\BOOKMARK [2][-]{subsection.4.2.1}{Technologies Used}{section.4.2}% 73
+\BOOKMARK [2][-]{subsection.4.2.2}{Component Overview}{section.4.2}% 74
+\BOOKMARK [2][-]{subsection.4.2.3}{ Architecture Diagram}{section.4.2}% 75
+\BOOKMARK [2][-]{subsection.4.2.4}{Phase Overview}{section.4.2}% 76
+\BOOKMARK [2][-]{subsection.4.2.5}{ Architecture Diagram}{section.4.2}% 77
+\BOOKMARK [2][-]{subsection.4.2.6}{Data Flow Description}{section.4.2}% 78
+\BOOKMARK [1][-]{section.4.3}{GUI}{chapter.4}% 79
+\BOOKMARK [2][-]{subsection.4.3.1}{Technologies Used}{section.4.3}% 80
+\BOOKMARK [2][-]{subsection.4.3.2}{Component Overview}{section.4.3}% 81
+\BOOKMARK [2][-]{subsection.4.3.3}{Phase Overview}{section.4.3}% 82
+\BOOKMARK [2][-]{subsection.4.3.4}{Architecture Diagram}{section.4.3}% 83
+\BOOKMARK [2][-]{subsection.4.3.5}{Data Flow Description}{section.4.3}% 84
+\BOOKMARK [2][-]{subsection.4.3.6}{Design Details}{section.4.3}% 85
+\BOOKMARK [0][-]{chapter.5}{System and Unit Testing}{}% 86
+\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 87
+\BOOKMARK [1][-]{section.5.2}{Dependencies}{chapter.5}% 88
+\BOOKMARK [1][-]{section.5.3}{Test Setup and Execution}{chapter.5}% 89
+\BOOKMARK [0][-]{chapter.6}{Development Environment}{}% 90
+\BOOKMARK [1][-]{section.6.1}{Development IDE and Tools}{chapter.6}% 91
+\BOOKMARK [1][-]{section.6.2}{Source Control}{chapter.6}% 92
+\BOOKMARK [1][-]{section.6.3}{Dependencies}{chapter.6}% 93
+\BOOKMARK [1][-]{section.6.4}{Build Environment}{chapter.6}% 94
+\BOOKMARK [1][-]{section.6.5}{Development Machine Setup}{chapter.6}% 95
+\BOOKMARK [0][-]{chapter.7}{Release \205 Setup \205 Deployment}{}% 96
+\BOOKMARK [1][-]{section.7.1}{Deployment Information and Dependencies}{chapter.7}% 97
+\BOOKMARK [1][-]{section.7.2}{Setup Information}{chapter.7}% 98
+\BOOKMARK [1][-]{section.7.3}{System Versioning Information}{chapter.7}% 99
+\BOOKMARK [0][-]{chapter.8}{User Documentation}{}% 100
+\BOOKMARK [1][-]{section.8.1}{User Guide}{chapter.8}% 101
+\BOOKMARK [1][-]{section.8.2}{Installation Guide}{chapter.8}% 102
+\BOOKMARK [1][-]{section.8.3}{Programmer Manual}{chapter.8}% 103
+\BOOKMARK [0][-]{chapter.9}{Class Index}{}% 104
+\BOOKMARK [1][-]{section.9.1}{Class List}{chapter.9}% 105
+\BOOKMARK [0][-]{chapter.10}{Class Documentation}{}% 106
+\BOOKMARK [1][-]{section.10.1}{Poly Class Reference}{chapter.10}% 107
+\BOOKMARK [2][-]{subsection.10.1.1}{Constructor \046 Destructor Documentation}{section.10.1}% 108
+\BOOKMARK [2][-]{subsection.10.1.2}{Member Function Documentation}{section.10.1}% 109
+\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 110
+\BOOKMARK [0][-]{chapter.11}{Software Agreement}{}% 111
+\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 112
+\BOOKMARK [1][-]{section.A.1}{Overview}{appendix.A}% 113
+\BOOKMARK [1][-]{section.A.2}{Scope}{appendix.A}% 114
+\BOOKMARK [1][-]{section.A.3}{System Goal}{appendix.A}% 115
+\BOOKMARK [1][-]{section.A.4}{System Components}{appendix.A}% 116
+\BOOKMARK [2][-]{subsection.A.4.1}{Admin and Teacher}{section.A.4}% 117
+\BOOKMARK [2][-]{subsection.A.4.2}{Database}{section.A.4}% 118
+\BOOKMARK [2][-]{subsection.A.4.3}{Student Interface}{section.A.4}% 119
+\BOOKMARK [1][-]{section.A.5}{Project Deliverables}{appendix.A}% 120
+\BOOKMARK [2][-]{subsection.A.5.1}{Project Delivery}{section.A.5}% 121
+\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 122
+\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 123
+\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 124
+\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 125
+\BOOKMARK [1][-]{section.B.4}{Sprint Report ...}{appendix.B}% 126
+\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 127
+\BOOKMARK [1][-]{section.C.1}{Resumes}{appendix.C}% 128
+\BOOKMARK [1][-]{section.C.2}{ABET: Industrial Experience Reports}{appendix.C}% 129
+\BOOKMARK [2][-]{subsection.C.2.1}{Marcus Berger}{section.C.2}% 130
+\BOOKMARK [2][-]{subsection.C.2.2}{Dicheng Wu}{section.C.2}% 131
+\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 132
+\BOOKMARK [0][-]{appendix.E}{Supporting Materials}{}% 133

@@ -1,63 +1,25 @@
 % !TEX root = SystemTemplate.tex
 
 \chapter{Design  and Implementation}
-<<<<<<< HEAD
 The software is designed and implemented in term of different components, and it can be split into GUI and database. \\
 
 
 
 \section{Database}
 [DW]
-=======
-This section is used to describe the design details for each of the major components 
-in the system.    Note that this chapter is critical for all tracks.  Research tracks would do experimental design here where other tracks would include the engineering design aspects.    This section is not brief and requires the necessary detail that 
-can be used by the reader to truly understand the architecture and implementation 
-details without having to dig into the code.    Sample algorithm:  Algorithm~\ref{alg1}.  This algorithm environment is automatically placed - meaning it floats.   You don't have to worry about placement or numbering.  
-
-\begin{algorithm} [tbh]                     % enter the algorithm environment
-\caption{Calculate $y = x^n$}          % give the algorithm a caption
-\label{alg1}                           % and a label for \ref{} commands later in the document
-\begin{algorithmic}                    % enter the algorithmic environment
-    \REQUIRE $n \geq 0 \vee x \neq 0$
-    \ENSURE $y = x^n$
-    \STATE $y \Leftarrow 1$
-    \IF{$n < 0$}
-        \STATE $X \Leftarrow 1 / x$
-        \STATE $N \Leftarrow -n$
-    \ELSE
-        \STATE $X \Leftarrow x$
-        \STATE $N \Leftarrow n$
-    \ENDIF
-    \WHILE{$N \neq 0$}
-        \IF{$N$ is even}
-            \STATE $X \Leftarrow X \times X$
-            \STATE $N \Leftarrow N / 2$
-        \ELSE[$N$ is odd]
-            \STATE $y \Leftarrow y \times X$
-            \STATE $N \Leftarrow N - 1$
-        \ENDIF
-    \ENDWHILE
-\end{algorithmic}
-\end{algorithm}
-Citations look like~\cite{Choset:2005:PRM, arkin2009governing, lavalle2006}  and~\cite{wiki:asimo,lumelsky:1987, nolfi2000evolutionary}.  These are done automatically.  Just fill in the database {\tt designrefs.bib} using the same field structure as the other entries.  Then pdflatex the document, bibtex the document and pdflatex twice again.  The first pdflatex creates requests for bibliography entries.
-The bibtex extracts and formats the requested entries.  The next pdflatex puts them in order and assigns labels.  The final pdflatex replaces references in the text with the assigned labels.
-The bibliography is automatically constructed.  
+ 
  
 
 \section{Major Component \#1 }
->>>>>>> origin/master
+
 
 \subsection{Technologies  Used}
 This section provides a list of technologies used for this component.  The details 
 for the technologies have already been provided in the Overview section. 
 
-<<<<<<< HEAD
 \subsection{Component Overview}
 There are several tables in database stores different information and interact with each other.\\
-=======
-\subsection{Component  Overview}
-This section can take the form of a list of features. 
->>>>>>> origin/master
+
 
 \subsubsection{Account table}
 Store account's information of admins, teacher and students.\\
@@ -74,6 +36,8 @@ Store address of admins, teacher and students\\
 \textbf{city:} Store information of city.\\
 \textbf{zipcode:} Store information of zipcode.\\
 \textbf{country:} Store information of country.\\
+
+
 \subsubsection{Admin table}
 Store information of admins\\
 \textbf{admin\_id:} Store admin's id\\
@@ -153,17 +117,15 @@ Link teacher and class tables together\\
 \textbf{t\_id:} This is a primary and foreign key links teacher and teacher-class together\\
 \textbf{class\_id:} This is a primary and foreign key links class and teacher-class tables together
 
-<<<<<<< HEAD
-=======
+
 \subsection{ Architecture  Diagram}
 It is important to build and maintain an architecture diagram.  However, it may 
 be that a component is best described visually with a data flow diagram. 
->>>>>>> origin/master
 
 \subsection{Phase Overview}
 
 \subsubsection{Initial creation}
-There are Student, teacher, admins and class tables and each are connected by different relationship in order to perform certain functionalities we want. It consists many-to-many relationship has intermediate table and many-to-one relationship. We also have N account table for user authentication and it has permission level included in order to distinguish different user groups for example admin and teacher have different permission levels.\\
+There are Student, teacher, admins and class tables and each are connected by different relationship in order to perform certain functionality we want. It consists many-to-many relationship has intermediate table and many-to-one relationship. We also have N account table for user authentication and it has permission level included in order to distinguish different user groups for example admin and teacher have different permission levels.\\
 
 \subsubsection{Later creation}
 We are going to add new table for billing and payroll in later spring.\\
@@ -174,12 +136,8 @@ We are going to add new table for billing and payroll in later spring.\\
 
 
 \subsection{Data Flow Description}
-Each table has different purposes for example teacher's table is for storing information of teachers and student's table's is for storing information of student. Different tables are evoked by different functionalities for instance the function of search for students' information will use student and guardians and address tables at same time, and for assign teacher to classes it will use teacher and class and class-teacher table at same time
+Each table has different purposes for example teacher's table is for storing information of teachers and student's table's is for storing information of student. Different tables are evoked by different functionality for instance the function of search for students' information will use student and guardians and address tables at same time, and for assign teacher to classes it will use teacher and class and class-teacher table at same time
 
-<<<<<<< HEAD
-=======
-\section{Major Component \#2 }
->>>>>>> origin/master
 
 \section{GUI}
 [DW]
@@ -241,7 +199,7 @@ clicking add button which pops up a dialog containing a list of student's names 
 
 \subsubsection{Search Page}
 \includegraphics[scale=0.5]{pics/search.png}\\
-This window provides the ability for searching information students and employees. User can search full or partial name by check or uncheck exact box, and it will populate brief information on the table view.
+This window provides the ability for searching information students and employees. User can search full or partial name by check or unchecked exact box, and it will populate brief information on the table view.
 \includegraphics[scale=0.5]{pics/adv_search.png}\\
 User can do advanced search by clicking advanced search button. It will let user to choose what kinds of attributes the user wants to use and do the and operation search.\\
 \includegraphics[scale=0.5]{pics/detail.png}\\
@@ -251,35 +209,3 @@ User can look into details of each one in the list and click detail button, it w
 The assign teacher page is how a user will assign a selected teacher to a class. This is done through a window that pops up with two fields. The user will then select a class from the list of classes and a list of available teachers will appear in the right field. The user then selects a teacher and clicks yes on the confirmation message. The system then submits the SQL query to the system with the selected teacher and class. 
 
 If the user selects a classes that is already assigned then the GUI will pop up a message telling the user who is currently assigned to teach the class. The user can then select if they want to change the teacher assigned. If the user selects yes then the right field will populate with a list of other available teachers, retrieved using a query to the database.
-=======
-This is where the details are presented and may contain subsections. 
-
-
-\section{Major Component \#3 }
-
-\subsection{Technologies  Used}
-This section provides a list of technologies used for this component.  The details 
-for the technologies have already been provided in the Overview section. 
-
-\subsection{Component  Overview}
-This section can take the form of a list of features. 
-
-\subsection{Phase Overview}
-This is an extension of the Phase Overview above, but specific to this component. 
- It is meant to be basically a brief list with space for marking the phase status. 
-
-\subsection{ Architecture  Diagram}
-It is important to build and maintain an architecture diagram.  However, it may 
-be that a component is best described visually with a data flow diagram. 
-
-
-\subsection{Data Flow Diagram}
-It is important to build and maintain a data flow diagram.  However, it may be 
-that a component is best described visually with an architecture diagram. 
-
-
-\subsection{Design Details}
-This is where the details are presented and may contain subsections. 
-
->>>>>>> origin/master
-

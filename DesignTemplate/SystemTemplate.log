@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  9 DEC 2015 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  11 DEC 2015 16:09
 entering extended mode
 **SystemTemplate.tex
 (SystemTemplate.tex
@@ -1516,68 +1516,73 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 {C:/Users/7110002/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-(SystemTemplate.toc [3] [4] [5]
-Overfull \hbox (5.05554pt too wide) detected at line 180
- []\OT1/cmr/m/n/10 C-10
+(SystemTemplate.toc [3] [4]
+Overfull \hbox (0.33331pt too wide) detected at line 178
+ []\OT1/cmr/m/n/10 A-1
  []
 
 
-Overfull \hbox (5.05554pt too wide) detected at line 181
- []\OT1/cmr/m/n/10 C-17
+Overfull \hbox (0.33331pt too wide) detected at line 179
+ []\OT1/cmr/m/n/10 A-1
  []
 
 
-Overfull \hbox (5.05554pt too wide) detected at line 182
- []\OT1/cmr/m/n/10 C-23
+Overfull \hbox (0.33331pt too wide) detected at line 180
+ []\OT1/cmr/m/n/10 A-1
  []
 
 
-Overfull \hbox (0.4722pt too wide) detected at line 184
- []\OT1/cmr/m/n/10 D-1
+Overfull \hbox (0.33331pt too wide) detected at line 181
+ []\OT1/cmr/m/n/10 A-1
  []
 
 
-Overfull \hbox (0.4722pt too wide) detected at line 185
- []\OT1/cmr/m/n/10 D-3
+Overfull \hbox (0.33331pt too wide) detected at line 182
+ []\OT1/cmr/m/n/10 A-1
  []
 
 
-Overfull \hbox (0.4722pt too wide) detected at line 186
- []\OT1/cmr/m/n/10 D-3
+Overfull \hbox (0.33331pt too wide) detected at line 183
+ []\OT1/cmr/m/n/10 A-2
  []
 
 
-Overfull \hbox (0.4722pt too wide) detected at line 187
- []\OT1/cmr/m/n/10 D-3
+Overfull \hbox (0.33331pt too wide) detected at line 184
+ []\OT1/cmr/m/n/10 A-2
  []
 
 
-Overfull \hbox (9.08334pt too wide) detected at line 191
- []\OT1/cmr/m/n/10 BM-1
+Overfull \hbox (0.33331pt too wide) detected at line 185
+ []\OT1/cmr/m/n/10 A-2
  []
 
 
-Overfull \hbox (9.08334pt too wide) detected at line 192
- []\OT1/cmr/m/n/10 BM-1
+Overfull \hbox (0.33331pt too wide) detected at line 186
+ []\OT1/cmr/m/n/10 A-2
  []
 
 
-Overfull \hbox (9.08334pt too wide) detected at line 193
- []\OT1/cmr/m/n/10 BM-2
+Overfull \hbox (4.91667pt too wide) detected at line 189
+ []\OT1/cmr/m/n/10 B-10
  []
 
 
-Overfull \hbox (9.08334pt too wide) detected at line 194
- []\OT1/cmr/m/n/10 BM-2
+Overfull \hbox (4.91667pt too wide) detected at line 190
+ []\OT1/cmr/m/n/10 B-17
+ []
+
+
+Overfull \hbox (4.91667pt too wide) detected at line 191
+ []\OT1/cmr/m/n/10 B-23
  []
 
 )
 \tf@toc=\write6
- [6] (SystemTemplate.lof)
-\tf@lof=\write7
- [7
+ [5] [6
 
-] [8
+] (SystemTemplate.lof)
+\tf@lof=\write7
+ [7] [8
 
 ] (SystemTemplate.lot)
 \tf@lot=\write8
@@ -1606,7 +1611,17 @@ Overfull \hbox (5.92586pt too wide) in paragraph at lines 30--30
  []
 
 
-Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--53
+Overfull \hbox (5.92586pt too wide) in paragraph at lines 46--46
+[]|\OT1/cmr/bx/it/10 12/10/15|  
+ []
+
+
+Overfull \hbox (5.92586pt too wide) in paragraph at lines 48--48
+[]|\OT1/cmr/bx/it/10 12/10/15|  
+ []
+
+
+Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--61
 [] 
  []
 
@@ -1616,7 +1631,7 @@ Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--53
 Chapter 1.
 [1
 
-] [2] [3] [4] <./diagram.png, id=874, 722.7pt x 542.025pt>
+] [2] [3] [4] <./diagram.png, id=774, 722.7pt x 542.025pt>
 File: ./diagram.png Graphic file (type png)
 
 <use ./diagram.png>
@@ -1640,33 +1655,186 @@ Chapter 3.
 
 ]
 Chapter 4.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 10.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
- [17]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 65.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 65.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 65.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 71.
- [18])
-(testing.tex [19] [20
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--39
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 80--91
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+<pics/database.png, id=876, 614.295pt x 405.01312pt>
+File: pics/database.png Graphic file (type png)
+ <use pics/database.png>
+Package pdftex.def Info: pics/database.png used on input line 135.
+(pdftex.def)             Requested size: 491.43666pt x 324.01093pt.
+
+Overfull \hbox (21.68167pt too wide) in paragraph at lines 135--136
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+[19] [20 <./pics/database.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+<pics/login_page.png, id=890, 304.88907pt x 154.32657pt>
+File: pics/login_page.png Graphic file (type png)
+
+<use pics/login_page.png>
+Package pdftex.def Info: pics/login_page.png used on input line 159.
+(pdftex.def)             Requested size: 213.42088pt x 108.02785pt.
+
+<pics/admin_landing.png, id=891, 410.2828pt x 292.84406pt>
+File: pics/admin_landing.png Graphic file (type png)
+
+<use pics/admin_landing.png>
+Package pdftex.def Info: pics/admin_landing.png used on input line 162.
+(pdftex.def)             Requested size: 287.196pt x 204.98944pt.
+
+<pics/teacher_landing.png, id=892, 407.27156pt x 287.57437pt>
+File: pics/teacher_landing.png Graphic file (type png)
+
+<use pics/teacher_landing.png>
+Package pdftex.def Info: pics/teacher_landing.png used on input line 166.
+(pdftex.def)             Requested size: 285.08813pt x 201.30069pt.
+ [21 <./pics/login_page.png> <./pics/admin_landing.png>] <pics/gui.png, id=902,
+ 560.8453pt x 315.42844pt>
+File: pics/gui.png Graphic file (type png)
+ <use pics/gui.png>
+Package pdftex.def Info: pics/gui.png used on input line 172.
+(pdftex.def)             Requested size: 280.42197pt x 157.71382pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+<pics/role.png, id=903, 480.29437pt x 357.58594pt>
+File: pics/role.png Graphic file (type png)
+ <use pics/role.png>
+Package pdftex.def Info: pics/role.png used on input line 181.
+(pdftex.def)             Requested size: 240.14659pt x 178.79253pt.
+
+<pics/print.png, id=904, 493.845pt x 386.94562pt>
+File: pics/print.png Graphic file (type png)
+ <use pics/print.png>
+Package pdftex.def Info: pics/print.png used on input line 183.
+(pdftex.def)             Requested size: 246.92189pt x 193.47234pt.
+ [22 <./pics/teacher_landing.png> <./pics/gui.png>]
+
+LaTeX Warning: File `pics/Update Teacher.png' not found on input line 187.
+
+<pics/Update Teacher.png, id=911, 524.71031pt x 390.70969pt>
+File: pics/Update Teacher.png Graphic file (type png)
+
+<use pics/Update Teacher.png>
+Package pdftex.def Info: pics/Update Teacher.png used on input line 187.
+(pdftex.def)             Requested size: 262.3545pt x 195.35435pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./pics/role.png> <./pics/print.png>]
+<pics/Add_class.png, id=917, 590.95781pt x 440.39531pt>
+File: pics/Add_class.png Graphic file (type png)
+
+<use pics/Add_class.png>
+Package pdftex.def Info: pics/Add_class.png used on input line 190.
+(pdftex.def)             Requested size: 295.47818pt x 220.19711pt.
+
+<pics/assin_stu.png, id=918, 411.78844pt x 333.49594pt>
+File: pics/assin_stu.png Graphic file (type png)
+
+<use pics/assin_stu.png>
+Package pdftex.def Info: pics/assin_stu.png used on input line 195.
+(pdftex.def)             Requested size: 205.8937pt x 166.74756pt.
+
+<pics/assin_stu_2.png, id=919, 224.33812pt x 307.1475pt>
+File: pics/assin_stu_2.png Graphic file (type png)
+
+<use pics/assin_stu_2.png>
+Package pdftex.def Info: pics/assin_stu_2.png used on input line 197.
+(pdftex.def)             Requested size: 112.16878pt x 153.57336pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./pics/Update Teacher.png> <./pics/Add_class.png>]
+<pics/search.png, id=925, 614.295pt x 502.12593pt>
+File: pics/search.png Graphic file (type png)
+ <use pics/search.png>
+Package pdftex.def Info: pics/search.png used on input line 201.
+(pdftex.def)             Requested size: 307.14674pt x 251.06235pt.
+
+<pics/adv_search.png, id=926, 327.47343pt x 291.33844pt>
+File: pics/adv_search.png Graphic file (type png)
+
+<use pics/adv_search.png>
+Package pdftex.def Info: pics/adv_search.png used on input line 203.
+(pdftex.def)             Requested size: 163.73631pt x 145.66885pt.
+ <pics/detail.png, id=927, 602.25pt x 398.23781pt>
+File: pics/detail.png Graphic file (type png)
+
+<use pics/detail.png>
+Package pdftex.def Info: pics/detail.png used on input line 205.
+(pdftex.def)             Requested size: 301.12425pt x 199.11841pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./pics/assin_stu.png> <./pics/assin_stu_2.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./pics/search.png> <./pics/adv_search.png>]
+<pics/assign_teacher.png, id=937, 362.85562pt x 302.63063pt>
+File: pics/assign_teacher.png Graphic file (type png)
+
+<use pics/assign_teacher.png>
+Package pdftex.def Info: pics/assign_teacher.png used on input line 208.
+(pdftex.def)             Requested size: 181.42737pt x 151.31494pt.
+) (testing.tex [27 <./pics/detail.png> <./pics/assign_teacher.png>] [28
 
 ]
 Chapter 5.
-[21]) (develop.tex [22]
+[29]) (develop.tex
+Overfull \hbox (0.606pt too wide) in paragraph at lines 24--2
+\OT1/cmr/bx/n/10 TEST AS WRIT-TEN) (UP-DATE UNIT TEST FRAME-WORK AS PROJECT PRO
+-GRESSES
+ []
+
+[30]
 Chapter 6.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 11.
 
 Overfull \hbox (37.5217pt too wide) in paragraph at lines 11--12
 []\OT1/cmr/bx/n/10 Visual Stu-dio in-stall: []$\OT1/cmtt/m/n/10 https : / / www
@@ -1674,30 +1842,30 @@ Overfull \hbox (37.5217pt too wide) in paragraph at lines 11--12
 $
  []
 
-[23
+[31
 
-]) (deploy.tex [24]
+]) (deploy.tex [32]
 Chapter 7.
-) (userdocs.tex [25
+) (userdocs.tex [33
 
-] [26
+] [34
 
 ]
 Chapter 8.
-) (refman.tex [27] [28
+) (refman.tex [35] [36
 
 ]
 Chapter 9.
-(annotated.tex) [29] [30
+(annotated.tex) [37] [38
 
 ]
 Chapter 10.
-(class_poly.tex)) (SystemTemplate.bbl [31] [32
+(class_poly.tex)) (SystemTemplate.bbl [39] [40
 
-]) [33] [34
+]) [41] [42
 
 ]
-<SoftwareContract.pdf, id=1130, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1054, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -1708,7 +1876,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf used on input line 65.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SoftwareContract.pdf, id=1133, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1057, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -1733,7 +1901,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 65.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <./SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=1160, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1084, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -1749,7 +1917,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 65.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <./SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=1166, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1090, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -1765,7 +1933,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 65.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <./SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=1172, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1097, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -1781,7 +1949,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 65.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <./SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=1178, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1103, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -1800,11 +1968,9 @@ Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 65.
 
 ]
 Appendix A.
-(productdescription.tex) [1] [2
-
-]
+(productdescription.tex [1]) [2]
 Appendix B.
-(sprints.tex <sprint_1_wrapper.pdf, id=1197, 614.295pt x 794.97pt>
+(sprints.tex <sprint_1_wrapper.pdf, id=1128, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf>
@@ -1815,7 +1981,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf used on input line 5.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<sprint_1_wrapper.pdf, id=1200, page=1, 614.295pt x 794.97pt>
+<sprint_1_wrapper.pdf, id=1131, page=1, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 1>
@@ -1825,7 +1991,9 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
  <use sprint_1_wrapper.pdf, page 1>
 Package pdftex.def Info: sprint_1_wrapper.pdf, page1 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [1]
+ [1
+
+]
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 1>
@@ -1841,7 +2009,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf, page1 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <./sprint_1_wrapper.pdf>]
-<sprint_1_wrapper.pdf, id=1221, page=2, 614.295pt x 794.97pt>
+<sprint_1_wrapper.pdf, id=1152, page=2, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 2>
@@ -1857,7 +2025,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf, page2 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <./sprint_1_wrapper.pdf>]
-<sprint_1_wrapper.pdf, id=1227, page=3, 614.295pt x 794.97pt>
+<sprint_1_wrapper.pdf, id=1157, page=3, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 3>
@@ -1873,7 +2041,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf, page3 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <./sprint_1_wrapper.pdf>]
-<sprint_1_wrapper.pdf, id=1232, page=4, 614.295pt x 794.97pt>
+<sprint_1_wrapper.pdf, id=1162, page=4, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 4>
@@ -1889,7 +2057,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf, page4 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [5 <./sprint_1_wrapper.pdf>]
-<sprint_1_wrapper.pdf, id=1237, page=5, 614.295pt x 794.97pt>
+<sprint_1_wrapper.pdf, id=1167, page=5, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 5>
@@ -1905,7 +2073,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf, page5 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [6 <./sprint_1_wrapper.pdf>]
-<sprint_1_wrapper.pdf, id=1243, page=6, 614.295pt x 794.97pt>
+<sprint_1_wrapper.pdf, id=1173, page=6, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 6>
@@ -1921,7 +2089,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf, page6 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [7 <./sprint_1_wrapper.pdf>]
-<sprint_1_wrapper.pdf, id=1248, page=7, 614.295pt x 794.97pt>
+<sprint_1_wrapper.pdf, id=1179, page=7, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 7>
@@ -1937,7 +2105,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf, page7 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [8 <./sprint_1_wrapper.pdf>]
-<sprint_1_wrapper.pdf, id=1253, page=8, 614.295pt x 794.97pt>
+<sprint_1_wrapper.pdf, id=1184, page=8, 614.295pt x 794.97pt>
 File: sprint_1_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_1_wrapper.pdf, page 8>
@@ -1953,7 +2121,7 @@ File: sprint_1_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_1_wrapper.pdf, page8 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [9 <./sprint_1_wrapper.pdf>]
-<sprint_2_wrapper.pdf, id=1259, 614.295pt x 794.97pt>
+<sprint_2_wrapper.pdf, id=1189, 614.295pt x 794.97pt>
 File: sprint_2_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_2_wrapper.pdf>
@@ -1964,7 +2132,7 @@ File: sprint_2_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_2_wrapper.pdf used on input line 8.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<sprint_2_wrapper.pdf, id=1262, page=1, 614.295pt x 794.97pt>
+<sprint_2_wrapper.pdf, id=1192, page=1, 614.295pt x 794.97pt>
 File: sprint_2_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_2_wrapper.pdf, page 1>
@@ -1990,7 +2158,7 @@ File: sprint_2_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_2_wrapper.pdf, page1 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [11 <./sprint_2_wrapper.pdf>]
-<sprint_2_wrapper.pdf, id=1279, page=2, 614.295pt x 794.97pt>
+<sprint_2_wrapper.pdf, id=1208, page=2, 614.295pt x 794.97pt>
 File: sprint_2_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_2_wrapper.pdf, page 2>
@@ -2006,7 +2174,7 @@ File: sprint_2_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_2_wrapper.pdf, page2 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [12 <./sprint_2_wrapper.pdf>]
-<sprint_2_wrapper.pdf, id=1285, page=3, 614.295pt x 794.97pt>
+<sprint_2_wrapper.pdf, id=1214, page=3, 614.295pt x 794.97pt>
 File: sprint_2_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_2_wrapper.pdf, page 3>
@@ -2022,7 +2190,7 @@ File: sprint_2_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_2_wrapper.pdf, page3 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [13 <./sprint_2_wrapper.pdf>]
-<sprint_2_wrapper.pdf, id=1290, page=4, 614.295pt x 794.97pt>
+<sprint_2_wrapper.pdf, id=1220, page=4, 614.295pt x 794.97pt>
 File: sprint_2_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_2_wrapper.pdf, page 4>
@@ -2038,7 +2206,7 @@ File: sprint_2_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_2_wrapper.pdf, page4 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [14 <./sprint_2_wrapper.pdf>]
-<sprint_2_wrapper.pdf, id=1297, page=5, 614.295pt x 794.97pt>
+<sprint_2_wrapper.pdf, id=1227, page=5, 614.295pt x 794.97pt>
 File: sprint_2_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_2_wrapper.pdf, page 5>
@@ -2054,7 +2222,7 @@ File: sprint_2_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_2_wrapper.pdf, page5 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [15 <./sprint_2_wrapper.pdf>]
-<sprint_2_wrapper.pdf, id=1303, page=6, 614.295pt x 794.97pt>
+<sprint_2_wrapper.pdf, id=1232, page=6, 614.295pt x 794.97pt>
 File: sprint_2_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_2_wrapper.pdf, page 6>
@@ -2070,7 +2238,7 @@ File: sprint_2_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_2_wrapper.pdf, page6 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [16 <./sprint_2_wrapper.pdf>]
-<sprint_3_wrapper.pdf, id=1308, 614.295pt x 794.97pt>
+<sprint_3_wrapper.pdf, id=1237, 614.295pt x 794.97pt>
 File: sprint_3_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_3_wrapper.pdf>
@@ -2081,7 +2249,7 @@ File: sprint_3_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_3_wrapper.pdf used on input line 11.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<sprint_3_wrapper.pdf, id=1311, page=1, 614.295pt x 794.97pt>
+<sprint_3_wrapper.pdf, id=1240, page=1, 614.295pt x 794.97pt>
 File: sprint_3_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_3_wrapper.pdf, page 1>
@@ -2107,7 +2275,7 @@ File: sprint_3_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_3_wrapper.pdf, page1 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [18 <./sprint_3_wrapper.pdf>]
-<sprint_3_wrapper.pdf, id=1328, page=2, 614.295pt x 794.97pt>
+<sprint_3_wrapper.pdf, id=1256, page=2, 614.295pt x 794.97pt>
 File: sprint_3_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_3_wrapper.pdf, page 2>
@@ -2123,7 +2291,7 @@ File: sprint_3_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_3_wrapper.pdf, page2 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [19 <./sprint_3_wrapper.pdf>]
-<sprint_3_wrapper.pdf, id=1333, page=3, 614.295pt x 794.97pt>
+<sprint_3_wrapper.pdf, id=1262, page=3, 614.295pt x 794.97pt>
 File: sprint_3_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_3_wrapper.pdf, page 3>
@@ -2139,7 +2307,7 @@ File: sprint_3_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_3_wrapper.pdf, page3 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [20 <./sprint_3_wrapper.pdf>]
-<sprint_3_wrapper.pdf, id=1338, page=4, 614.295pt x 794.97pt>
+<sprint_3_wrapper.pdf, id=1267, page=4, 614.295pt x 794.97pt>
 File: sprint_3_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_3_wrapper.pdf, page 4>
@@ -2155,7 +2323,7 @@ File: sprint_3_wrapper.pdf Graphic file (type pdf)
 Package pdftex.def Info: sprint_3_wrapper.pdf, page4 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [21 <./sprint_3_wrapper.pdf>]
-<sprint_3_wrapper.pdf, id=1344, page=5, 614.295pt x 794.97pt>
+<sprint_3_wrapper.pdf, id=1272, page=5, 614.295pt x 794.97pt>
 File: sprint_3_wrapper.pdf Graphic file (type pdf)
 
 <use sprint_3_wrapper.pdf, page 5>
@@ -2174,7 +2342,7 @@ Package pdftex.def Info: sprint_3_wrapper.pdf, page5 used on input line 11.
 
 ]
 Appendix C.
-(industrial.tex <Berger_Marcus_Resume.pdf, id=1358, 614.295pt x 794.97pt>
+(industrial.tex <Berger_Marcus_Resume.pdf, id=1285, 614.295pt x 794.97pt>
 File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 
 <use Berger_Marcus_Resume.pdf>
@@ -2185,7 +2353,7 @@ File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 Package pdftex.def Info: Berger_Marcus_Resume.pdf used on input line 6.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<Berger_Marcus_Resume.pdf, id=1361, page=1, 614.295pt x 794.97pt>
+<Berger_Marcus_Resume.pdf, id=1288, page=1, 614.295pt x 794.97pt>
 File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 
 <use Berger_Marcus_Resume.pdf, page 1>
@@ -2212,7 +2380,7 @@ Package pdftex.def Info: Berger_Marcus_Resume.pdf, page1 used on input line 6.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 [2 <./Berger_Marcus_Resume.pdf>]
-<Wu_resume.pdf, id=1412, 614.295pt x 794.97pt>
+<Wu_resume.pdf, id=1340, 614.295pt x 794.97pt>
 File: Wu_resume.pdf Graphic file (type pdf)
  <use Wu_resume.pdf>
 Package pdftex.def Info: Wu_resume.pdf used on input line 7.
@@ -2222,7 +2390,7 @@ File: Wu_resume.pdf Graphic file (type pdf)
 <use Wu_resume.pdf>
 Package pdftex.def Info: Wu_resume.pdf used on input line 7.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <Wu_resume.pdf, id=1415, page=1, 614.295pt x 794.97pt>
+ <Wu_resume.pdf, id=1343, page=1, 614.295pt x 794.97pt>
 File: Wu_resume.pdf Graphic file (type pdf)
 
 <use Wu_resume.pdf, page 1>
@@ -2262,132 +2430,33 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (SystemTemplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
-
-
-Package rerunfilecheck Warning: File `SystemTemplate.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `SystemTemplate.out':
-(rerunfilecheck)             Before: 640EF9359B0AFBD5F45598072A63B426;10486
-(rerunfilecheck)             After:  2F370CD5D525D30C4B0EE21568FB4431;9054.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `SystemTemplate.out' has not changed.
+(rerunfilecheck)             Checksum: 00E32DBC4D76C60B332215E3D9FFAEFC;9191.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 26268 strings out of 493673
- 464706 string characters out of 3141524
- 595266 words of memory out of 3000000
- 28639 multiletter control sequences out of 15000+200000
- 16719 words of font info for 66 fonts, out of 3000000 for 9000
+ 25890 strings out of 493673
+ 462105 string characters out of 3141524
+ 592195 words of memory out of 3000000
+ 28280 multiletter control sequences out of 15000+200000
+ 15437 words of font info for 62 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 64i,18n,65p,3300b,1361s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.F.4} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.F.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.F.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.F.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.F} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.D.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.D.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.D.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.D.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.C.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.C.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.14} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.13.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.13} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.12} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.9} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.7} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.5} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.1} has been referenced but does not exis
-t, replaced by a fixed one
-
- <C:\Users\7110002\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-tcbx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on SystemTemplate.pdf (90 pages, 1550460 bytes).
+ 64i,18n,65p,3300b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\7110002\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\tcbx1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+xti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on SystemTemplate.pdf (98 pages, 1926813 bytes).
 PDF statistics:
- 1617 PDF objects out of 1728 (max. 8388607)
- 363 named destinations out of 1000 (max. 500000)
- 1454 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1522 PDF objects out of 1728 (max. 8388607)
+ 337 named destinations out of 1000 (max. 500000)
+ 1377 words of extra memory for PDF output out of 10000 (max. 10000000)
 

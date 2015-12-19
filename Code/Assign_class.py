@@ -9,6 +9,7 @@ class assign_teacher(QtGui.QMainWindow):
         QtGui.QMainWindow.__init__(self)
         self.assign = Ui_Assign_teacher_window()
         self.assign.setupUi(self)
+        self.dialogbox_Flag = False
 
         self.conn()
 
@@ -26,6 +27,7 @@ class assign_teacher(QtGui.QMainWindow):
         self.assign.Class_listView.setModel(self.class_result)
 
         self.assign.Class_listView.clicked.connect(self.teacher_assignment)
+        self.assign.Assign_teacher_back_btn.clicked.connect(self.back)
 
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")
@@ -65,6 +67,7 @@ class assign_teacher(QtGui.QMainWindow):
                 self.teacher_result.setQuery(self.teacher_query)
                 self.assign.Teacher_listView.setModel(self.teacher_result)
                 self.assign.Teacher_listView.clicked.connect(self.Update_assign_teacher)
+                self.dialogbox_Flag = False
 
         else:
         
@@ -100,23 +103,29 @@ class assign_teacher(QtGui.QMainWindow):
                 assign_teach_query.exec("INSERT INTO Teacher_Class Values('%s','%s')" %(self.teacher_rec, self.class_rec))
 
     def Update_assign_teacher(self, teacher_index):
-        
-        confirm_msg = "Are you sure you want to assign '%s' to teach '%s'" %(teacher_index.data(), self.selected_class)
-        
-        
-        reply = QtGui.QMessageBox.question(self, 'Confirm', 
-                confirm_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
-        if reply == QtGui.QMessageBox.Yes:
-                get_data_query = QSqlQuery()
-                get_data_query.exec("Select Teacher_id, Class_id FROM Teacher, Class WHERE Teacher_name = '%s' AND Class_name = '%s'" % (teacher_index.data(), self.selected_class) )
-                
-                get_data_query.next()
-                self.teacher_rec = get_data_query.value(0)
-                self.class_rec = get_data_query.value(1)
-                
-                #assign teacher query
-                assign_teach_query = QSqlQuery()
-                assign_teach_query.exec("Update Teacher_Class SET Teacher_id = '%s' WHERE Class_id = '%s'" %(self.teacher_rec, self.class_rec))
+        if self.dialogbox_Flag == False:
+            print("Problem ")
+            
+            confirm_msg = "Are you sure you want to assign '%s' to teach '%s'" %(teacher_index.data(), self.selected_class)
+            
+            
+            reply = QtGui.QMessageBox.question(self, 'Confirm', 
+                    confirm_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
+            if reply == QtGui.QMessageBox.Yes:
+                    get_data_query = QSqlQuery()
+                    get_data_query.exec("Select Teacher_id, Class_id FROM Teacher, Class WHERE Teacher_name = '%s' AND Class_name = '%s'" % (teacher_index.data(), self.selected_class) )
+                    
+                    get_data_query.next()
+                    self.teacher_rec = get_data_query.value(0)
+                    self.class_rec = get_data_query.value(1)
+                    
+                    #assign teacher query
+                    assign_teach_query = QSqlQuery()
+                    assign_teach_query.exec("Update Teacher_Class SET Teacher_id = '%s' WHERE Class_id = '%s'" %(self.teacher_rec, self.class_rec))
+            self.dialogbox_Flag = True
+
+    def back(self):
+        sys.exit(app.exec_())
 
         
         

@@ -39,7 +39,8 @@ class modify_Information(QtGui.QDialog):
         query = QSqlQuery()
         address_query =QSqlQuery()
         query.exec_("SELECT * FROM Teacher WHERE Teacher_name = '%s'" % selected_teacher_name)
-        address_query.exec_("SELECT Address_id, Street, City, State FROM Address, Teacher WHERE Teacher_address = Address_id AND Teacher_name = '%s'" % selected_teacher_name)
+        address_query.exec_("SELECT Address_id, Street, City, State, Zipcode FROM Address, \
+                             Teacher WHERE Teacher_address = Address_id AND Teacher_name = '%s'" % selected_teacher_name)
         while query.next():
             record = query.record()
             self.Teacher_id = str(record.value(0))
@@ -53,6 +54,7 @@ class modify_Information(QtGui.QDialog):
                 self.modify.addressLineEdit.setText(str(address_record.value(1)))
                 self.modify.cityLineEdit.setText(str(address_record.value(2)))
                 find = self.modify.stateComboBox.findText(str(address_record.value(3)),QtCore.Qt.MatchFixedString)
+                self.modify.zipLineEdit.setText(str(address_record.value(4)))
                 if find >= 0:
                     self.modify.stateComboBox.setCurrentIndex(find)
             self.modify.emailLineEdit.setText(str(record.value(6)))
@@ -81,7 +83,8 @@ class modify_Information(QtGui.QDialog):
         
         self.address = self.modify.addressLineEdit.text()
         self.city = self.modify.cityLineEdit.text()
-        self.state = str(self.modify.stateComboBox.currentText())    
+        self.state = str(self.modify.stateComboBox.currentText())
+        self.zip = self.modify.zipLineEdit.text()
         self.email = self.modify.emailLineEdit.text()
         self.gender = str(self.modify.genderComboBox.currentText())
         self.ssn = self.modify.SSNLineEdit.text()
@@ -118,6 +121,10 @@ class modify_Information(QtGui.QDialog):
                 \nPhone number format: ###-###-#### \nAddress format: #'s Street \nSNN format: ###-##-####" )
 
         else:
+            self.address_question = "Would you like to update the existing address add as a new address? \n (If no address fields were changed select update)"
+            self.address_reply = QtGui.QMessageBox.question(self, 'Address', 
+                         self.address_question, QtGui.QMessageBox.Update, QtGui.QMessageBox.New)
+            
             results_msg = "Pending Upadates: \n Name:'%s' \n DOB:'%s' \n Home phone:'%s' \n Cell phone:'%s' \n Work phone:'%s' \n Address:'%s' \n City:'%s' \n State:'%s' \
                           \n Email:'%s' \n Gender:'%s' \n SSN:'%s' \n Pay:'%s' \n Medical:'%s'" %( self.name, self.DOB, self.home, self.cell, self.work,\
                            self.address, self.city, self.state, self.email, self.gender, self.ssn, self.pay, self.medical)
@@ -125,23 +132,38 @@ class modify_Information(QtGui.QDialog):
                          results_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
            
             if reply == QtGui.QMessageBox.Yes:
+                if self.address_reply == QtGui.QMessageBox.New:
+                    self.address_query = QSqlQuery()
+                    self.address_query.exec_("SELECT Address_id FROM Address ORDER BY Address_id DESC LIMIT 1")
+                    while self.address_query.next():
+                            self.record = self.address_query.record()
+                            self.address_id = self.record.value(0)
+                            self.address_id += 1
+                    
+                    update_query2 = QSqlQuery()
+                    self.update_query2.exec_("Insert into Address (Address_id, Street,\
+                                            City, State, zipcode) values('%u','%s','%s','%s','%s')" \
+                                            %( int(self.address_id), self.address, self.city, self.state, self.zip))
+                
+                elif self.address_reply == QtGui.QMessageBox.Update:
+                    update_query2.exec_("Update Address SET Street ='%s', City ='%s',\
+                                    State ='%s', Zipcode ='%s' WHERE Address_id ='%u'" %(self.address, \
+                                    self.city, self.state, int(self.address_id), self.zip))
+                
+                
                 update_query = QSqlQuery()
                 update_query.exec_("Update Teacher SET Teacher_name ='%s', \
                                     Teacher_home_phone ='%s', Teacher_cell_phone ='%s',\
-                                    Teacher_work_phone ='%s', Teacher_email ='%s',\
+                                    Teacher_work_phone ='%s', Teacher_address_id = %d Teacher_email ='%s',\
                                     Teacher_sex ='%s', Teacher_SSN ='%s', \
                                     Teacher_pay_rate ='%s', Teacher_medical_information ='%s',\
                                     Teacher_date_of_birth ='%s' WHERE \
                                     Teacher_id ='%s'" \
-                                   %( self.name, self.home, self.cell, self.work, self.email, \
+                                   %( self.name, self.home, self.cell, self.work, int(self.address_id), self.email, \
                                    self.gender, self.ssn, self.pay, self.medical, self.DOB,\
                                       self.Teacher_id))
 
-                update_query2 = QSqlQuery()
-                update_query2.exec_("Update Address SET Street ='%s', City ='%s',\
-                                    State ='%s' WHERE Address_id ='%u'" %(self.address, \
-                                    self.city, self.state, int(self.address_id)))
-
+                
         
 
     def conn(self):

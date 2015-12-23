@@ -68,111 +68,111 @@
 \contentsline {subsection}{\numberline {2.3.4}Development Updates and Testing}{8}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Final Testing, Production, and Delivery}{8}{subsection.2.3.5}
 \contentsline {section}{\numberline {2.4}Terminology and Acronyms}{8}{section.2.4}
-\contentsline {chapter}{\numberline {3}User Stories, Backlog and Requirements}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Overview}{9}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Scope}{9}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Purpose of the System}{9}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Stakeholder Information}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Customer or End User (Product Owner)}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Management or Instructor (Scrum Master)}{10}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Developers --Testers}{10}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Business Need}{10}{section.3.3}
-\contentsline {section}{\numberline {3.4}Requirements and Design Constraints}{10}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}System Requirements}{10}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Network Requirements}{10}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Development Environment Requirements}{11}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Project Management Methodology}{11}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}User Stories}{11}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}User Story \#1}{12}{subsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.1.a}User Story \#1 Breakdown}{12}{subsubsection.3.5.1.1}
-\contentsline {subsection}{\numberline {3.5.2}User Story \#2}{12}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}User Story \#3}{12}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.a}User Story \#3 Breakdown}{12}{subsubsection.3.5.3.1}
-\contentsline {subsubsection}{\numberline {3.5.3.b}Further Breakdown}{12}{subsubsection.3.5.3.2}
-\contentsline {subsection}{\numberline {3.5.4}User Story \#4}{12}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}User Story \#5}{12}{subsection.3.5.5}
-\contentsline {subsection}{\numberline {3.5.6}User Story \#6}{13}{subsection.3.5.6}
-\contentsline {subsection}{\numberline {3.5.7}User Story \#7}{13}{subsection.3.5.7}
-\contentsline {subsection}{\numberline {3.5.8}User Story \#8}{13}{subsection.3.5.8}
-\contentsline {subsection}{\numberline {3.5.9}User Story \#9}{13}{subsection.3.5.9}
-\contentsline {subsection}{\numberline {3.5.10}User Story \#10}{13}{subsection.3.5.10}
-\contentsline {subsubsection}{\numberline {3.5.10.a}User Story \#10 Breakdown}{13}{subsubsection.3.5.10.1}
-\contentsline {subsection}{\numberline {3.5.11}User Story \#11}{13}{subsection.3.5.11}
-\contentsline {subsection}{\numberline {3.5.12}User Story \#12}{13}{subsection.3.5.12}
-\contentsline {subsection}{\numberline {3.5.13}User Story \#13}{14}{subsection.3.5.13}
-\contentsline {subsubsection}{\numberline {3.5.13.a}User Story \#13 Breakdown}{14}{subsubsection.3.5.13.1}
-\contentsline {subsection}{\numberline {3.5.14}User Story \#14}{14}{subsection.3.5.14}
-\contentsline {subsection}{\numberline {3.5.15}User Story \#15}{14}{subsection.3.5.15}
-\contentsline {subsubsection}{\numberline {3.5.15.a}User Story \#15 Breakdown}{14}{subsubsection.3.5.15.1}
-\contentsline {subsection}{\numberline {3.5.16}User Story \#16}{14}{subsection.3.5.16}
-\contentsline {subsection}{\numberline {3.5.17}User Story \#17}{14}{subsection.3.5.17}
-\contentsline {section}{\numberline {3.6}Research or Proof of Concept Results}{14}{section.3.6}
-\contentsline {chapter}{\numberline {4}Design and Implementation}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Database}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Major Component \#1 }{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Technologies Used}{17}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Component Overview}{17}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.a}Account table}{17}{subsubsection.4.2.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2.b}Address table}{17}{subsubsection.4.2.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.c}Admin table}{18}{subsubsection.4.2.2.3}
-\contentsline {subsubsection}{\numberline {4.2.2.d}Class table}{18}{subsubsection.4.2.2.4}
-\contentsline {subsubsection}{\numberline {4.2.2.e}Guardian table}{18}{subsubsection.4.2.2.5}
-\contentsline {subsubsection}{\numberline {4.2.2.f}Student table}{18}{subsubsection.4.2.2.6}
-\contentsline {subsubsection}{\numberline {4.2.2.g}Teacher table}{19}{subsubsection.4.2.2.7}
-\contentsline {subsubsection}{\numberline {4.2.2.h}Student\_Class table}{19}{subsubsection.4.2.2.8}
-\contentsline {subsubsection}{\numberline {4.2.2.i}Teacher\_Class table}{19}{subsubsection.4.2.2.9}
-\contentsline {subsection}{\numberline {4.2.3} Architecture Diagram}{19}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Phase Overview}{19}{subsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.4.a}Initial creation}{19}{subsubsection.4.2.4.1}
-\contentsline {subsubsection}{\numberline {4.2.4.b}Later creation}{19}{subsubsection.4.2.4.2}
-\contentsline {subsection}{\numberline {4.2.5} Architecture Diagram}{20}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Data Flow Description}{20}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}GUI}{20}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Technologies Used}{20}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Component Overview}{20}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Phase Overview}{20}{subsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.3.a}Initial Creation}{21}{subsubsection.4.3.3.1}
-\contentsline {subsubsection}{\numberline {4.3.3.b}Later Creation}{21}{subsubsection.4.3.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3.c}authentication pages}{21}{subsubsection.4.3.3.3}
-\contentsline {subsubsection}{\numberline {4.3.3.d}admin landing pages}{21}{subsubsection.4.3.3.4}
-\contentsline {subsubsection}{\numberline {4.3.3.e}teacher landing pages}{21}{subsubsection.4.3.3.5}
-\contentsline {subsubsection}{\numberline {4.3.3.f}student pages}{22}{subsubsection.4.3.3.6}
-\contentsline {subsection}{\numberline {4.3.4}Architecture Diagram}{22}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Data Flow Description}{22}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Design Details}{22}{subsection.4.3.6}
-\contentsline {subsubsection}{\numberline {4.3.6.a}Role Sheet Page}{23}{subsubsection.4.3.6.1}
-\contentsline {subsubsection}{\numberline {4.3.6.b}Update Form Page}{24}{subsubsection.4.3.6.2}
-\contentsline {subsubsection}{\numberline {4.3.6.c}Add Information Page}{24}{subsubsection.4.3.6.3}
-\contentsline {subsubsection}{\numberline {4.3.6.d}Search Page}{26}{subsubsection.4.3.6.4}
-\contentsline {subsubsection}{\numberline {4.3.6.e}Assign Teacher}{27}{subsubsection.4.3.6.5}
-\contentsline {chapter}{\numberline {5}System and Unit Testing}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Overview}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Dependencies}{29}{section.5.2}
-\contentsline {section}{\numberline {5.3}Test Setup and Execution}{29}{section.5.3}
-\contentsline {chapter}{\numberline {6}Development Environment}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Development IDE and Tools}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Source Control}{31}{section.6.2}
-\contentsline {section}{\numberline {6.3}Dependencies}{32}{section.6.3}
-\contentsline {section}{\numberline {6.4}Build Environment}{32}{section.6.4}
-\contentsline {section}{\numberline {6.5}Development Machine Setup}{32}{section.6.5}
-\contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{33}{chapter.7}
-\contentsline {section}{\numberline {7.1}Deployment Information and Dependencies}{33}{section.7.1}
-\contentsline {section}{\numberline {7.2}Setup Information}{33}{section.7.2}
-\contentsline {section}{\numberline {7.3}System Versioning Information}{33}{section.7.3}
-\contentsline {chapter}{\numberline {8}User Documentation}{35}{chapter.8}
-\contentsline {section}{\numberline {8.1}User Guide}{35}{section.8.1}
-\contentsline {section}{\numberline {8.2}Installation Guide}{35}{section.8.2}
-\contentsline {section}{\numberline {8.3}Programmer Manual}{35}{section.8.3}
-\contentsline {chapter}{\numberline {9}Class Index}{37}{chapter.9}
-\contentsline {section}{\numberline {9.1}Class List}{37}{section.9.1}
-\contentsline {chapter}{\numberline {10}Class Documentation}{39}{chapter.10}
-\contentsline {section}{\numberline {10.1}Poly Class Reference}{39}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{39}{subsection.10.1.1}
-\contentsline {subsubsection}{\numberline {10.1.1.a}Poly}{39}{subsubsection.10.1.1.1}
-\contentsline {subsubsection}{\numberline {10.1.1.b}$\sim $\discretionary {-}{}{}Poly}{39}{subsubsection.10.1.1.2}
-\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{39}{subsection.10.1.2}
-\contentsline {subsubsection}{\numberline {10.1.2.a}myfunction}{39}{subsubsection.10.1.2.1}
-\contentsline {chapter}{Bibliography}{41}{chapter*.7}
+\contentsline {chapter}{\numberline {3}User Stories, Backlog and Requirements}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Overview}{11}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Scope}{11}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Purpose of the System}{11}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Stakeholder Information}{11}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Customer or End User (Product Owner)}{11}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Management or Instructor (Scrum Master)}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Developers --Testers}{12}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Business Need}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Requirements and Design Constraints}{12}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}System Requirements}{12}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Network Requirements}{12}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Development Environment Requirements}{13}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Project Management Methodology}{13}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}User Stories}{13}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}User Story \#1}{14}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.a}User Story \#1 Breakdown}{14}{subsubsection.3.5.1.1}
+\contentsline {subsection}{\numberline {3.5.2}User Story \#2}{14}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}User Story \#3}{14}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.a}User Story \#3 Breakdown}{14}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.b}Further Breakdown}{14}{subsubsection.3.5.3.2}
+\contentsline {subsection}{\numberline {3.5.4}User Story \#4}{14}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}User Story \#5}{14}{subsection.3.5.5}
+\contentsline {subsection}{\numberline {3.5.6}User Story \#6}{15}{subsection.3.5.6}
+\contentsline {subsection}{\numberline {3.5.7}User Story \#7}{15}{subsection.3.5.7}
+\contentsline {subsection}{\numberline {3.5.8}User Story \#8}{15}{subsection.3.5.8}
+\contentsline {subsection}{\numberline {3.5.9}User Story \#9}{15}{subsection.3.5.9}
+\contentsline {subsection}{\numberline {3.5.10}User Story \#10}{15}{subsection.3.5.10}
+\contentsline {subsubsection}{\numberline {3.5.10.a}User Story \#10 Breakdown}{15}{subsubsection.3.5.10.1}
+\contentsline {subsection}{\numberline {3.5.11}User Story \#11}{15}{subsection.3.5.11}
+\contentsline {subsection}{\numberline {3.5.12}User Story \#12}{15}{subsection.3.5.12}
+\contentsline {subsection}{\numberline {3.5.13}User Story \#13}{16}{subsection.3.5.13}
+\contentsline {subsubsection}{\numberline {3.5.13.a}User Story \#13 Breakdown}{16}{subsubsection.3.5.13.1}
+\contentsline {subsection}{\numberline {3.5.14}User Story \#14}{16}{subsection.3.5.14}
+\contentsline {subsection}{\numberline {3.5.15}User Story \#15}{16}{subsection.3.5.15}
+\contentsline {subsubsection}{\numberline {3.5.15.a}User Story \#15 Breakdown}{16}{subsubsection.3.5.15.1}
+\contentsline {subsection}{\numberline {3.5.16}User Story \#16}{16}{subsection.3.5.16}
+\contentsline {subsection}{\numberline {3.5.17}User Story \#17}{16}{subsection.3.5.17}
+\contentsline {section}{\numberline {3.6}Research or Proof of Concept Results}{16}{section.3.6}
+\contentsline {chapter}{\numberline {4}Design and Implementation}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Database}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Major Component \#1 }{19}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Technologies Used}{19}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Component Overview}{19}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.a}Account table}{19}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.b}Address table}{19}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.c}Admin table}{20}{subsubsection.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4.2.2.d}Class table}{20}{subsubsection.4.2.2.4}
+\contentsline {subsubsection}{\numberline {4.2.2.e}Guardian table}{20}{subsubsection.4.2.2.5}
+\contentsline {subsubsection}{\numberline {4.2.2.f}Student table}{20}{subsubsection.4.2.2.6}
+\contentsline {subsubsection}{\numberline {4.2.2.g}Teacher table}{21}{subsubsection.4.2.2.7}
+\contentsline {subsubsection}{\numberline {4.2.2.h}Student\_Class table}{21}{subsubsection.4.2.2.8}
+\contentsline {subsubsection}{\numberline {4.2.2.i}Teacher\_Class table}{21}{subsubsection.4.2.2.9}
+\contentsline {subsection}{\numberline {4.2.3} Architecture Diagram}{21}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Phase Overview}{21}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.a}Initial creation}{21}{subsubsection.4.2.4.1}
+\contentsline {subsubsection}{\numberline {4.2.4.b}Later creation}{21}{subsubsection.4.2.4.2}
+\contentsline {subsection}{\numberline {4.2.5} Architecture Diagram}{22}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Data Flow Description}{22}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}GUI}{22}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Technologies Used}{22}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Component Overview}{22}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Phase Overview}{22}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.a}Initial Creation}{23}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.b}Later Creation}{23}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.c}authentication pages}{23}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.d}admin landing pages}{23}{subsubsection.4.3.3.4}
+\contentsline {subsubsection}{\numberline {4.3.3.e}teacher landing pages}{23}{subsubsection.4.3.3.5}
+\contentsline {subsubsection}{\numberline {4.3.3.f}student pages}{24}{subsubsection.4.3.3.6}
+\contentsline {subsection}{\numberline {4.3.4}Architecture Diagram}{24}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Data Flow Description}{24}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Design Details}{24}{subsection.4.3.6}
+\contentsline {subsubsection}{\numberline {4.3.6.a}Role Sheet Page}{25}{subsubsection.4.3.6.1}
+\contentsline {subsubsection}{\numberline {4.3.6.b}Update Form Page}{26}{subsubsection.4.3.6.2}
+\contentsline {subsubsection}{\numberline {4.3.6.c}Add Information Page}{26}{subsubsection.4.3.6.3}
+\contentsline {subsubsection}{\numberline {4.3.6.d}Search Page}{28}{subsubsection.4.3.6.4}
+\contentsline {subsubsection}{\numberline {4.3.6.e}Assign Teacher}{29}{subsubsection.4.3.6.5}
+\contentsline {chapter}{\numberline {5}System and Unit Testing}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Overview}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Dependencies}{31}{section.5.2}
+\contentsline {section}{\numberline {5.3}Test Setup and Execution}{31}{section.5.3}
+\contentsline {chapter}{\numberline {6}Development Environment}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Development IDE and Tools}{33}{section.6.1}
+\contentsline {section}{\numberline {6.2}Source Control}{33}{section.6.2}
+\contentsline {section}{\numberline {6.3}Dependencies}{34}{section.6.3}
+\contentsline {section}{\numberline {6.4}Build Environment}{34}{section.6.4}
+\contentsline {section}{\numberline {6.5}Development Machine Setup}{34}{section.6.5}
+\contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{35}{chapter.7}
+\contentsline {section}{\numberline {7.1}Deployment Information and Dependencies}{35}{section.7.1}
+\contentsline {section}{\numberline {7.2}Setup Information}{35}{section.7.2}
+\contentsline {section}{\numberline {7.3}System Versioning Information}{35}{section.7.3}
+\contentsline {chapter}{\numberline {8}User Documentation}{37}{chapter.8}
+\contentsline {section}{\numberline {8.1}User Guide}{37}{section.8.1}
+\contentsline {section}{\numberline {8.2}Installation Guide}{37}{section.8.2}
+\contentsline {section}{\numberline {8.3}Programmer Manual}{37}{section.8.3}
+\contentsline {chapter}{\numberline {9}Class Index}{39}{chapter.9}
+\contentsline {section}{\numberline {9.1}Class List}{39}{section.9.1}
+\contentsline {chapter}{\numberline {10}Class Documentation}{41}{chapter.10}
+\contentsline {section}{\numberline {10.1}Poly Class Reference}{41}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{41}{subsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.1.a}Poly}{41}{subsubsection.10.1.1.1}
+\contentsline {subsubsection}{\numberline {10.1.1.b}$\sim $\discretionary {-}{}{}Poly}{41}{subsubsection.10.1.1.2}
+\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{41}{subsection.10.1.2}
+\contentsline {subsubsection}{\numberline {10.1.2.a}myfunction}{41}{subsubsection.10.1.2.1}
+\contentsline {chapter}{Bibliography}{43}{chapter*.7}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.11}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {section}{\numberline {1}Overview}{A-1}{section.A.1}

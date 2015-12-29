@@ -182,9 +182,9 @@ class Ui_modify_teacher(object):
         self.zipcodeLabel = QtGui.QLabel(self.formLayoutWidget)
         self.zipcodeLabel.setObjectName(_fromUtf8("zipcodeLabel"))
         self.formLayout.setWidget(10, QtGui.QFormLayout.LabelRole, self.zipcodeLabel)
-        self.lineEdit = QtGui.QLineEdit(self.formLayoutWidget)
-        self.lineEdit.setObjectName(_fromUtf8("lineEdit"))
-        self.formLayout.setWidget(10, QtGui.QFormLayout.FieldRole, self.lineEdit)
+        self.zipLineEdit = QtGui.QLineEdit(self.formLayoutWidget)
+        self.zipLineEdit.setObjectName(_fromUtf8("zipLineEdit"))
+        self.formLayout.setWidget(10, QtGui.QFormLayout.FieldRole, self.zipLineEdit)
 
         self.retranslateUi(modify_teacher)
         QtCore.QMetaObject.connectSlotsByName(modify_teacher)
@@ -260,5 +260,5 @@ class Ui_modify_teacher(object):
         self.Submit_btn.setText(_translate("modify_teacher", "Submit", None))
         self.Select_teacher_btn.setText(_translate("modify_teacher", "Select", None))
         self.DOBlabel.setText(_translate("modify_teacher", "Date of Birth*", None))
-        self.zipcodeLabel.setText(_translate("modify_teacher", "Zipcodel", None))
+        self.zipcodeLabel.setText(_translate("modify_teacher", "Zipcode", None))
 

@@ -31,6 +31,21 @@ class modify_Information(QtGui.QDialog):
 
         self.modify.Submit_btn.clicked.connect(self.submit_updates)
 
+    def check_existing_address(self):
+        temp_id = 0 
+        existing_address_query =QSqlQuery()
+        existing_address_query.exec_("SELECT * FROM Address WHERE Street = '%s'\
+                            AND City = '%s' AND State = '%s' AND Zipcode = '%s'" % (self.address, self.city, self.state, self.zip))
+        while existing_address_query.next():
+            result = existing_address_query.record()
+            temp_id =  int(result.value(0))
+        print("check ", temp_id)
+
+        return temp_id
+            
+        
+        
+
     def fill_form(self):
         self.modify.sel_teach = QSqlRelationalTableModel(db = self.db)
         self.modify.sel_teach.setTable("Teacher")
@@ -120,10 +135,20 @@ class modify_Information(QtGui.QDialog):
                 self, 'Error', "Please fill in required fields: Name, House Phone, Address, City, State, Gender, and Social security number(SSN).\
                 \nPhone number format: ###-###-#### \nAddress format: #'s Street \nSNN format: ###-##-####" )
 
+        elif self.zip == '' or  re.match('^\d{5}(-\d{4})?$', self.zip) == None:
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please enter a vaild zipcode")
+
+        elif self.ssn == '' or  re.match('^\d{3}-\d{2}-\d{4}$', self.ssn) == None:
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please enter a vaild SSN. SNN format: ###-##-####")
+
         else:
-            self.address_question = "Would you like to update the existing address add as a new address? \n (If no address fields were changed select update)"
+            self.address_question = "Would you like to add as a new address? \n (Click no to update current address)"
             self.address_reply = QtGui.QMessageBox.question(self, 'Address', 
-                         self.address_question, QtGui.QMessageBox.Update, QtGui.QMessageBox.New)
+                         self.address_question, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
+            
+            self.address_exist = self.check_existing_address()
             
             results_msg = "Pending Upadates: \n Name:'%s' \n DOB:'%s' \n Home phone:'%s' \n Cell phone:'%s' \n Work phone:'%s' \n Address:'%s' \n City:'%s' \n State:'%s' \
                           \n Email:'%s' \n Gender:'%s' \n SSN:'%s' \n Pay:'%s' \n Medical:'%s'" %( self.name, self.DOB, self.home, self.cell, self.work,\
@@ -132,29 +157,37 @@ class modify_Information(QtGui.QDialog):
                          results_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
            
             if reply == QtGui.QMessageBox.Yes:
-                if self.address_reply == QtGui.QMessageBox.New:
-                    self.address_query = QSqlQuery()
-                    self.address_query.exec_("SELECT Address_id FROM Address ORDER BY Address_id DESC LIMIT 1")
-                    while self.address_query.next():
-                            self.record = self.address_query.record()
-                            self.address_id = self.record.value(0)
-                            self.address_id += 1
-                    
-                    update_query2 = QSqlQuery()
-                    self.update_query2.exec_("Insert into Address (Address_id, Street,\
-                                            City, State, zipcode) values('%u','%s','%s','%s','%s')" \
-                                            %( int(self.address_id), self.address, self.city, self.state, self.zip))
+                if self.address_reply == QtGui.QMessageBox.Yes:
+                    if self.address_exist == 0:
+                        self.address_query = QSqlQuery()
+                        self.address_query.exec_("SELECT Address_id FROM Address ORDER BY Address_id DESC LIMIT 1")
+                        while self.address_query.next():
+                                self.record = self.address_query.record()
+                                self.address_id = self.record.value(0)
+                                self.address_id += 1
+                        
+                        self.update_query2 = QSqlQuery()
+                        self.update_query2.exec_("Insert into Address (Address_id, Street,\
+                                                City, State, zipcode) values('%d','%s','%s','%s','%s')" \
+                                                %( int(self.address_id), self.address, self.city, self.state, self.zip))
+                    else:
+                         self.exist_msg = "Address already exist, setting teacher to existing address."
+                         self.exist_reply = QtGui.QMessageBox.information(self, 'Already Exist', 
+                         self.exist_msg, QtGui.QMessageBox.Ok)
+
+                         self.address_id = self.address_exist
+                         print(self.address_id)
                 
-                elif self.address_reply == QtGui.QMessageBox.Update:
-                    update_query2.exec_("Update Address SET Street ='%s', City ='%s',\
-                                    State ='%s', Zipcode ='%s' WHERE Address_id ='%u'" %(self.address, \
-                                    self.city, self.state, int(self.address_id), self.zip))
-                
+                elif self.address_reply == QtGui.QMessageBox.No:
+                    self.update_query2 = QSqlQuery()
+                    self.update_query2.exec_("Update Address SET Street ='%s', City ='%s',\
+                                    State ='%s', Zipcode ='%s' WHERE Address_id ='%d'" %(self.address, \
+                                    self.city, self.state, self.zip, int(self.address_id) ))
                 
                 update_query = QSqlQuery()
                 update_query.exec_("Update Teacher SET Teacher_name ='%s', \
                                     Teacher_home_phone ='%s', Teacher_cell_phone ='%s',\
-                                    Teacher_work_phone ='%s', Teacher_address_id = %d Teacher_email ='%s',\
+                                    Teacher_work_phone ='%s', Teacher_address = %d, Teacher_email ='%s',\
                                     Teacher_sex ='%s', Teacher_SSN ='%s', \
                                     Teacher_pay_rate ='%s', Teacher_medical_information ='%s',\
                                     Teacher_date_of_birth ='%s' WHERE \

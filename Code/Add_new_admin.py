@@ -1,27 +1,27 @@
 import sys
 from PyQt4 import QtGui
 from PyQt4 import QtCore
-from Add_teacher import Ui_add_teacher
+from Add_admin import Ui_add_admin
 from PyQt4.QtSql import *
 import re
 
-class add_teacher(QtGui.QDialog):
+class add_admin(QtGui.QDialog):
     def __init__(self):
         QtGui.QDialog.__init__(self)
-        self.teacher = Ui_add_teacher()
-        self.teacher.setupUi(self)
+        self.admin = Ui_add_admin()
+        self.admin.setupUi(self)
 
         self.conn()
 
-        self.teacher.sel_teach = QSqlRelationalTableModel(db = self.db)
-        self.teacher.sel_teach.setTable("Teacher")
+        self.admin.sel_admin = QSqlRelationalTableModel(db = self.db)
+        self.admin.sel_admin.setTable("Admin")
 
         if not self.conn():
             QtGui.QMessageBox.warning(
                 self, 'Error', 'database contecting error')
 
 
-        self.teacher.Submit_btn.clicked.connect(self.insert_teacher)
+        self.admin.Submit_btn.clicked.connect(self.insert_admin)
 
     def check_existing_address(self):
         temp_id = 0
@@ -35,30 +35,32 @@ class add_teacher(QtGui.QDialog):
 
         return temp_id
 
-    def insert_teacher(self):
-            self.name = self.teacher.nameLineEdit.text()
-            self.home = self.teacher.homePhoneLineEdit.text()
+    def insert_admin(self):
+            self.name = self.admin.nameLineEdit.text()
+            self.home = self.admin.homePhoneLineEdit.text()
             self.home = re.sub('[^0-9]+', '', self.home)
             self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.home[:-1])) + self.home[-1]
  
-            self.cell = self.teacher.cellPhoneLineEdit.text()
-            self.cell = re.sub('[^0-9]+', '', self.cell)
-            self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
+            self.cell = self.admin.cellPhoneLineEdit.text()
+            if self.cell != '':
+                self.cell = re.sub('[^0-9]+', '', self.cell)
+                self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
      
-            self.work = self.teacher.workPhoneLineEdit.text()
-            self.work = re.sub('[^0-9]+', '', self.work)
-            self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
+            self.work = self.admin.workPhoneLineEdit.text()
+            if self.work != '':
+                self.work = re.sub('[^0-9]+', '', self.work)
+                self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
       
-            self.address = self.teacher.addressLineEdit.text()
-            self.city = self.teacher.cityLineEdit.text()
-            self.state = self.teacher.stateComboBox.currentText()
-            self.zip = self.teacher.zipcodeLineEdit.text()
-            self.email = self.teacher.emailLineEdit.text()
-            self.gender = self.teacher.genderComboBox.currentText()
-            self.SSN = self.teacher.SSNLineEdit.text()
-            self.pay = self.teacher.payRateDoubleSpinBox.value()
-            self.medical = self.teacher.medicalTextEdit.toPlainText()
-            self.DOB = self.teacher.DOBDateEdit.date()
+            self.address = self.admin.addressLineEdit.text()
+            self.city = self.admin.cityLineEdit.text()
+            self.state = self.admin.stateComboBox.currentText()
+            self.zip = self.admin.zipcodeLineEdit.text()
+            self.email = self.admin.emailLineEdit.text()
+            self.gender = self.admin.genderComboBox.currentText()
+            self.SSN = self.admin.SSNLineEdit.text()
+            self.pay = self.admin.payRateDoubleSpinBox.value()
+            self.medical = self.admin.medicalTextEdit.toPlainText()
+            self.DOB = self.admin.DOBDateEdit.date()
             self.DOB = self.DOB.toPyDate()
             print(self.home, ' ', len(self.home))
             print("test:",  re.match('^\d{5}(-\d{4})?$', self.zip))
@@ -123,7 +125,7 @@ class add_teacher(QtGui.QDialog):
                                             %( int(self.address_id), self.address, self.city, self.state, self.zip))
 
                     else:
-                        self.exist_msg = "Address already exist, setting teacher to existing address."
+                        self.exist_msg = "Address already exist, setting Admin to existing address."
                         self.exist_reply = QtGui.QMessageBox.information(self, 'Already Exist', 
                         self.exist_msg, QtGui.QMessageBox.Ok)
 
@@ -131,21 +133,22 @@ class add_teacher(QtGui.QDialog):
                         print(self.address_id)
                          
                     self.id_query =QSqlQuery()
-                    self.id_query.exec_("SELECT Teacher_id FROM Teacher ORDER BY Teacher_id DESC LIMIT 1")
+                    self.id_query.exec_("SELECT Admin_id FROM Admin ORDER BY Admin_id DESC LIMIT 1")
                     while self.id_query.next():
                         self.record = self.id_query.record()
-                        self.Teacher_id = self.record.value(0)
-                        self.Teacher_id += 1
-                        print(self.Teacher_id)
+                        print(self.record.value(0))
+                        self.admin_id = self.record.value(0)
+                        self.admin_id += 1
+                        print(self.admin_id)
 
                     
-                    Insert_Teacher_query = QSqlQuery()
-                    Insert_Teacher_query.exec_("Insert into Teacher (Teacher_id,Teacher_name,\
-                    Teacher_home_phone, Teacher_cell_phone, Teacher_work_phone,\
-                    Teacher_address, Teacher_email, Teacher_sex, Teacher_SSN, \
-                    Teacher_pay_rate, Teacher_medical_information, Teacher_date_of_birth)\
+                    Insert_Admin_query = QSqlQuery()
+                    Insert_Admin_query.exec_("Insert into Admin (Admin_id,Admin_name,\
+                    Admin_home_phone, Admin_cell_phone, Admin_work_phone,\
+                    Admin_address, Admin_email, Admin_sex, Admin_SSN, \
+                    Admin_pay_rate, Admin_medical_information, Admin_date_of_birth)\
                     values(%d,'%s', '%s', '%s','%s',%d,'%s','%s', '%s', '%s', '%s','%s')"
-                    %(int(self.Teacher_id), self.name, self.home, self.cell, self.work,\
+                    %(int(self.admin_id), self.name, self.home, self.cell, self.work,\
                       int(self.address_id), self.email, self.gender, self.SSN, self.pay,\
                       self.medical, self.DOB))
 
@@ -160,6 +163,6 @@ class add_teacher(QtGui.QDialog):
         return self.db.open()
 
 app = QtGui.QApplication(sys.argv)
-Current_Window = add_teacher()
+Current_Window = add_admin()
 Current_Window.show()
 sys.exit(app.exec_())

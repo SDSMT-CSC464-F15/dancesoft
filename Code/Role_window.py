@@ -15,7 +15,7 @@ class Role_window(QtGui.QMainWindow):
         Class_query.exec_("Select C.Class_name from Teacher_Class as T, Class as C where \
                            T.Class_id = C.Class_id and T.Teacher_id = '%d'"% Id)
 
-
+        
         model = QSqlQueryModel()
         model.setQuery(Class_query)
         self.ui.Role_listView.setModel(model)
@@ -31,14 +31,14 @@ class Role_window(QtGui.QMainWindow):
         self.ui.Student_info = []
         self.ui.Role_print_btn.setEnabled(True)
         Student_query = QSqlQuery()
-        Student_query.exec_("Select S.Student_name from Student_Class as SC,Student as S where\
+        Student_query.exec_("Select S.Student_name, S.Student_id, S.Student_home_phone, S.Student_Emergency_contact, S.Emergency_contact_phone from Student_Class as SC,Student as S where\
                             SC.Class_id = (Select Class_id from Class where Class_name = '%s') \
                             and SC.Student_id = S.Student_id and SC.Class_finished <> 1 and \
                             SC.Class_approval <> -1" % index.data())
         while Student_query.next():
-            self.ui.Student_info.append(Student_query.value(0))
+            self.ui.Student_info.append(str(Student_query.value(1)) + ',' + str(Student_query.value(0)) + ',' + str(Student_query.value(2)) +',' + str(Student_query.value(3)) +',' + str(Student_query.value(4)))
         model = QSqlQueryModel()
-        model.setQuery(Student_query)      
+        model.setQuery(Student_query)
         self.ui.Stu_listView.setModel(model)
         
 

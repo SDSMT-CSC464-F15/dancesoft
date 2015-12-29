@@ -5,10 +5,36 @@ class Print_window(QtGui.QWidget):
         QtGui.QWidget.__init__(self)
         self.setWindowTitle(self.tr('Document Printer'))
         self.resize(640, 480)
-        self.editor = QtGui.QTextEdit(self)
+        
+        self.editor = QtGui.QTextBrowser(self)
         self.editor.setFontPointSize(14);
+
+        html = '<p><center><font size="6">Attandence Sheet</font></center></p>'
+        
+        html += '<table border="1" cellspacing = "0" style = "border:1px black;font-size: 17px;">\
+                            <tr>\
+                                <td>ID</td>\
+                                <td>Name</td>\
+                                <td>Home Phone</td>\
+                                <td>Emergency Contact</td>\
+                                <td>Emergency Phone</td>\
+                                <th colspan="4">    Month 1   </th>\
+                                <th colspan="4">    Month 2   </th>\
+                                <th colspan="4">    Month 3   </th>\
+                            </tr>'
+        
         for i in text_msg:
-            self.editor.insertPlainText('%s\n' % i)
+            temp = i.split(',')
+            html += '<tr>\
+                      <td>%s</td>\
+                      <td>%s</td>\
+                      <td>%s</td>\
+                      <td>%s</td>\
+                      <td>%s</td>\
+                     </tr>' % (temp[0], temp[1], temp[2], temp[3], temp[4])
+        html += '</table>'
+        print (html)
+        self.editor.append(html)
         
         self.editor.textChanged.connect(self.handleTextChanged)
         self.buttonOpen = QtGui.QPushButton('Open', self)

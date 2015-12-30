@@ -14,13 +14,23 @@ class add_admin(QtGui.QDialog):
         self.conn()
 
         self.admin.sel_admin = QSqlRelationalTableModel(db = self.db)
-        self.admin.sel_admin.setTable("Admin")
+        self.admin.sel_admin.setTable("Teacher")
 
         if not self.conn():
             QtGui.QMessageBox.warning(
                 self, 'Error', 'database contecting error')
+            
+        self.admin.selectComboBox.addItem("New Admin")
+        self.teach_query = QSqlQuery()
+        self.teach_query.exec_("Select Teacher_name FROM Teacher, Account where \
+                                Account.Teacher_id = Teacher.Teacher_id AND \
+                                Account.Admin_id = 0 ")
+        while self.teach_query.next():
+            record = self.teach_query.record()
+            self.name = str(record.value(0))
+            self.admin.selectComboBox.addItem(self.name)
 
-
+        self.admin.Select_btn.clicked.connect(self.fill_existing)
         self.admin.Submit_btn.clicked.connect(self.insert_admin)
 
     def check_existing_address(self):
@@ -34,6 +44,42 @@ class add_admin(QtGui.QDialog):
         print("check ", temp_id)
 
         return temp_id
+
+    def fill_existing(self):
+        self.admin.sel_teach = QSqlRelationalTableModel(db = self.db)
+        self.admin.sel_teach.setTable("Teacher")
+
+        selected_teacher_name = str(self.admin.selectComboBox.currentText())
+        query = QSqlQuery()
+        address_query =QSqlQuery()
+        query.exec_("SELECT * FROM Teacher WHERE Teacher_name = '%s'" % selected_teacher_name)
+        address_query.exec_("SELECT Address_id, Street, City, State, Zipcode FROM Address, \
+                             Teacher WHERE Teacher_address = Address_id AND Teacher_name = '%s'" % selected_teacher_name)
+        while query.next():
+            record = query.record()
+            self.Teacher_id = str(record.value(0))
+            self.admin.nameLineEdit.setText(str(record.value(1)))
+            self.admin.homePhoneLineEdit.setText(str(record.value(2)))
+            self.admin.cellPhoneLineEdit.setText(str(record.value(3)))
+            self.admin.workPhoneLineEdit.setText(str(record.value(4)))
+            while address_query.next():
+                address_record =address_query.record()
+                self.address_id = str(address_record.value(0))
+                self.admin.addressLineEdit.setText(str(address_record.value(1)))
+                self.admin.cityLineEdit.setText(str(address_record.value(2)))
+                find = self.admin.stateComboBox.findText(str(address_record.value(3)),QtCore.Qt.MatchFixedString)
+                self.admin.zipcodeLineEdit.setText(str(address_record.value(4)))
+                if find >= 0:
+                    self.admin.stateComboBox.setCurrentIndex(find)
+            self.admin.emailLineEdit.setText(str(record.value(6)))
+            find = self.admin.genderComboBox.findText(str(record.value(7)),QtCore.Qt.MatchFixedString)
+            if find >= 0:
+                self.admin.genderComboBox.setCurrentIndex(find)
+            self.admin.SSNLineEdit.setText(str(record.value(8)))
+            self.admin.payRateDoubleSpinBox.setValue(float(record.value(9)))
+            self.admin.medicalTextEdit.setText(str(record.value(10)))
+            self.admin.DOBDateEdit.setDate(record.value(11))
+        
 
     def insert_admin(self):
             self.name = self.admin.nameLineEdit.text()
@@ -130,16 +176,13 @@ class add_admin(QtGui.QDialog):
                         self.exist_msg, QtGui.QMessageBox.Ok)
 
                         self.address_id = self.address_exist
-                        print(self.address_id)
                          
                     self.id_query =QSqlQuery()
                     self.id_query.exec_("SELECT Admin_id FROM Admin ORDER BY Admin_id DESC LIMIT 1")
                     while self.id_query.next():
                         self.record = self.id_query.record()
-                        print(self.record.value(0))
                         self.admin_id = self.record.value(0)
                         self.admin_id += 1
-                        print(self.admin_id)
 
                     
                     Insert_Admin_query = QSqlQuery()
@@ -151,6 +194,41 @@ class add_admin(QtGui.QDialog):
                     %(int(self.admin_id), self.name, self.home, self.cell, self.work,\
                       int(self.address_id), self.email, self.gender, self.SSN, self.pay,\
                       self.medical, self.DOB))
+
+                    self.create_account()
+
+    def create_account(self):
+        if str(self.admin.selectComboBox.currentText()) == "New Admin":
+            id_query =QSqlQuery()
+            id_query.exec_("SELECT User_id FROM Account ORDER BY User_id DESC LIMIT 1")
+            while id_query.next():
+                result = id_query.record()
+                print("record: ",result.value(0))
+                user_id = result.value(0)
+                user_id += 1
+                print("User id: ",user_id)
+
+            username = self.admin.nameLineEdit.text()
+            pword = "rcdancearts"
+            access = 1
+            stu_id = 0
+            teach_id = 0
+
+            print("test: ",int(user_id), username, pword, access, stu_id, \
+                             teach_id, int(self.admin_id)) 
+
+            new_query = QSqlQuery()
+            new_query.exec_("Insert into Account (User_id, User_name, User_password,\
+               Access_level, Student_id, Teacher_id, Admin_id) values(%d,'%s','%s',%d,\
+               %d,%d,%d)" % (int(user_id), username, pword, access, stu_id, \
+                             teach_id, int(self.admin_id)))
+
+        else:
+            update_query = QSqlQuery()
+            update_query.exec_("Update Account SET Access_level=1, Admin_id=%d \
+                WHERE Teacher_id = (SELECT Teacher_id FROM Teacher WHERE Teacher_name ='%s')"\
+                %(int(self.admin_id), self.name))
+            print(self.admin_id, self.name)
 
         
 

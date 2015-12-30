@@ -38,17 +38,20 @@ class add_teacher(QtGui.QDialog):
     def insert_teacher(self):
             self.name = self.teacher.nameLineEdit.text()
             self.home = self.teacher.homePhoneLineEdit.text()
-            self.home = re.sub('[^0-9]+', '', self.home)
-            self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.home[:-1])) + self.home[-1]
- 
-            self.cell = self.teacher.cellPhoneLineEdit.text()
-            self.cell = re.sub('[^0-9]+', '', self.cell)
-            self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
+            if self.home != '':
+                self.home = re.sub('[^0-9]+', '', self.home)
+                self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.home[:-1])) + self.home[-1]
      
+            self.cell = self.teacher.cellPhoneLineEdit.text()
+            if self.cell != '':
+                self.cell = re.sub('[^0-9]+', '', self.cell)
+                self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
+         
             self.work = self.teacher.workPhoneLineEdit.text()
-            self.work = re.sub('[^0-9]+', '', self.work)
-            self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
-      
+            if self.work != '':
+                self.work = re.sub('[^0-9]+', '', self.work)
+                self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
+          
             self.address = self.teacher.addressLineEdit.text()
             self.city = self.teacher.cityLineEdit.text()
             self.state = self.teacher.stateComboBox.currentText()
@@ -148,6 +151,33 @@ class add_teacher(QtGui.QDialog):
                     %(int(self.Teacher_id), self.name, self.home, self.cell, self.work,\
                       int(self.address_id), self.email, self.gender, self.SSN, self.pay,\
                       self.medical, self.DOB))
+
+                    self.create_account()
+
+    def create_account(self):
+        id_query =QSqlQuery()
+        id_query.exec_("SELECT User_id FROM Account ORDER BY User_id DESC LIMIT 1")
+        while id_query.next():
+            result = id_query.record()
+            print("record: ",result.value(0))
+            user_id = result.value(0)
+            user_id += 1
+            print("User id: ",user_id)
+
+            username = self.name
+            pword = "rcdancearts"
+            access = 2
+            stu_id = 0
+            teach_id = int(self.Teacher_id)
+
+            print("test: ",int(user_id), username, pword, access, stu_id, \
+                             teach_id, 0) 
+
+            new_query = QSqlQuery()
+            new_query.exec_("Insert into Account (User_id, User_name, User_password,\
+               Access_level, Student_id, Teacher_id, Admin_id) values(%d,'%s','%s',%d,\
+               %d,%d,%d)" % (int(user_id), username, pword, access, stu_id, \
+                             teach_id, 0))
 
         
 

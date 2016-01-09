@@ -19,7 +19,7 @@
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>111</width>
+      <width>131</width>
       <height>31</height>
      </rect>
     </property>
@@ -30,7 +30,7 @@
    <widget class="QLineEdit" name="Search_lineEdit">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>210</x>
       <y>60</y>
       <width>221</width>
       <height>21</height>
@@ -40,7 +40,7 @@
    <widget class="QPushButton" name="Search_btn">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>440</x>
       <y>60</y>
       <width>111</width>
       <height>23</height>
@@ -53,7 +53,7 @@
    <widget class="QPushButton" name="Adv_search_btn">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>550</x>
       <y>60</y>
       <width>131</width>
       <height>23</height>
@@ -76,7 +76,7 @@
    <widget class="QPushButton" name="Reset_search_btn">
     <property name="geometry">
      <rect>
-      <x>670</x>
+      <x>680</x>
       <y>60</y>
       <width>111</width>
       <height>23</height>
@@ -102,7 +102,7 @@
    <widget class="QCheckBox" name="Exact_search_cbox">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>140</x>
       <y>50</y>
       <width>71</width>
       <height>41</height>
@@ -119,7 +119,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

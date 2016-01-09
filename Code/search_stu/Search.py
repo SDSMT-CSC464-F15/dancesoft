@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'search.ui'
 #
-# Created: Thu Nov 19 11:00:03 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -33,19 +32,19 @@ class Ui_Search_MainWindow(object):
         self.label.setGeometry(QtCore.QRect(10, 50, 111, 31))
         self.label.setObjectName(_fromUtf8("label"))
         self.Search_lineEdit = QtGui.QLineEdit(self.centralwidget)
-        self.Search_lineEdit.setGeometry(QtCore.QRect(200, 60, 221, 21))
+        self.Search_lineEdit.setGeometry(QtCore.QRect(180, 60, 221, 21))
         self.Search_lineEdit.setObjectName(_fromUtf8("Search_lineEdit"))
         self.Search_btn = QtGui.QPushButton(self.centralwidget)
-        self.Search_btn.setGeometry(QtCore.QRect(440, 60, 111, 23))
+        self.Search_btn.setGeometry(QtCore.QRect(410, 60, 111, 23))
         self.Search_btn.setObjectName(_fromUtf8("Search_btn"))
         self.Adv_search_btn = QtGui.QPushButton(self.centralwidget)
-        self.Adv_search_btn.setGeometry(QtCore.QRect(560, 60, 111, 23))
+        self.Adv_search_btn.setGeometry(QtCore.QRect(530, 60, 131, 23))
         self.Adv_search_btn.setObjectName(_fromUtf8("Adv_search_btn"))
         self.Student_view = QtGui.QTableView(self.centralwidget)
         self.Student_view.setGeometry(QtCore.QRect(25, 121, 751, 431))
         self.Student_view.setObjectName(_fromUtf8("Student_view"))
         self.Reset_search_btn = QtGui.QPushButton(self.centralwidget)
-        self.Reset_search_btn.setGeometry(QtCore.QRect(680, 60, 111, 23))
+        self.Reset_search_btn.setGeometry(QtCore.QRect(670, 60, 111, 23))
         self.Reset_search_btn.setObjectName(_fromUtf8("Reset_search_btn"))
         self.Detail_btn = QtGui.QPushButton(self.centralwidget)
         self.Detail_btn.setGeometry(QtCore.QRect(30, 560, 111, 23))
@@ -73,3 +72,4 @@ class Ui_Search_MainWindow(object):
         self.Reset_search_btn.setText(_translate("Search_MainWindow", "Refresh", None))
         self.Detail_btn.setText(_translate("Search_MainWindow", "Detail", None))
         self.Exact_search_cbox.setText(_translate("Search_MainWindow", "Exact", None))
+

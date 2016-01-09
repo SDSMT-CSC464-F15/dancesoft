@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'search.ui'
 #
-# Created: Mon Dec 28 00:21:35 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -33,13 +32,13 @@ class Ui_Search_MainWindow(object):
         self.label.setGeometry(QtCore.QRect(10, 50, 111, 31))
         self.label.setObjectName(_fromUtf8("label"))
         self.Search_lineEdit = QtGui.QLineEdit(self.centralwidget)
-        self.Search_lineEdit.setGeometry(QtCore.QRect(200, 60, 221, 21))
+        self.Search_lineEdit.setGeometry(QtCore.QRect(190, 60, 221, 21))
         self.Search_lineEdit.setObjectName(_fromUtf8("Search_lineEdit"))
         self.Search_btn = QtGui.QPushButton(self.centralwidget)
-        self.Search_btn.setGeometry(QtCore.QRect(440, 60, 111, 23))
+        self.Search_btn.setGeometry(QtCore.QRect(420, 60, 111, 23))
         self.Search_btn.setObjectName(_fromUtf8("Search_btn"))
         self.Adv_search_btn = QtGui.QPushButton(self.centralwidget)
-        self.Adv_search_btn.setGeometry(QtCore.QRect(560, 60, 111, 23))
+        self.Adv_search_btn.setGeometry(QtCore.QRect(540, 60, 131, 23))
         self.Adv_search_btn.setObjectName(_fromUtf8("Adv_search_btn"))
         self.Class_view = QtGui.QTableView(self.centralwidget)
         self.Class_view.setGeometry(QtCore.QRect(25, 121, 751, 431))

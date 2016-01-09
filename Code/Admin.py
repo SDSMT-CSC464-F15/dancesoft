@@ -119,7 +119,6 @@ class Admin_window(QtGui.QMainWindow):
         
         
 
-import sys
 app = QtGui.QApplication(sys.argv)
 Current_Window = Admin_window()
 Current_Window.show()

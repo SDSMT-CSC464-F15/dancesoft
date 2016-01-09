@@ -12,7 +12,7 @@ class clothing_requirements(QtGui.QDialog):
         self.setup_database()
 
         self.ui.submit.clicked.connect(self.modify_information)
-        self.ui.cancel.clicked.connect(self.modify_information)
+        self.ui.cancel.clicked.connect(self.quits)
 
         
         

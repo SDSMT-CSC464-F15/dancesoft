@@ -1,7 +1,7 @@
 import sys
 from PyQt4 import QtGui
 from PyQt4 import QtCore
-from Add_Class import Ui_Modify_Class
+from Modify_Class import Ui_Modify_Class
 from PyQt4.QtSql import *
 
 class mod_Class(QtGui.QMainWindow):
@@ -27,7 +27,7 @@ class mod_Class(QtGui.QMainWindow):
 
         self.MC.Select_class_btn.clicked.connect(self.current_class)
 
-        self.MC.Submit_btn.clicked.connect(self.add_class)
+        self.MC.Submit_btn.clicked.connect(self.modify_class)
         self.MC.Back_btn.clicked.connect(self.back)
         
         
@@ -63,10 +63,10 @@ class mod_Class(QtGui.QMainWindow):
             self.MC.Start_date_dateEdit.setValue(str(record.value(10)))
             self.MC.End_date_dateEdit.setValue(str(record.value(11)))
             self.MC.Age_spinBox.setValue(str(record.value(12)))
-            self.MC.Age_limit_spinBox.setValue(str(record.value(13))
+            self.MC.Age_limit_spinBox.setValue(str(record.value(13)))
         
         
-    def mod_class(self):
+    def modify_class(self):
         self.name = self.MC.Name_lineEdit.text()
         self.cost = self.MC.Cost_spinBox.value()
         self.start_time = self.MC.Start_time_timeEdit.time()
@@ -126,6 +126,6 @@ class mod_Class(QtGui.QMainWindow):
         return self.db.open()
 
 app = QtGui.QApplication(sys.argv)
-Current_Window = add_Class()
+Current_Window = mod_Class()
 Current_Window.show()
 sys.exit(app.exec_())

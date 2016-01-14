@@ -281,7 +281,7 @@ class Ui_Admin_Landing(object):
         self.Admin_menubar.addAction(self.menuNavigation.menuAction())
 
         self.retranslateUi(Admin_Landing)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(Admin_Landing)
 
     def retranslateUi(self, Admin_Landing):

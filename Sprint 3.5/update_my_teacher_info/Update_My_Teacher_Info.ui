@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>modify_my_teacher</class>
+ <widget class="QDialog" name="modify_my_teacher">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>701</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="fieldGrowthPolicy">
+     <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="NameLabel">
+      <property name="text">
+       <string>Name*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="nameLineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="DOBlabel">
+      <property name="text">
+       <string>Date of Birth*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDateEdit" name="DOBDateEdit">
+      <property name="date">
+       <date>
+        <year>1970</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="homePhoneLabel">
+      <property name="text">
+       <string>Home Phone*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="homePhoneLineEdit"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="cellPhoneLabel">
+      <property name="text">
+       <string>Cell Phone</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="cellPhoneLineEdit"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="workPhoneLabel">
+      <property name="text">
+       <string>Work Phone</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="workPhoneLineEdit"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="addressLabel">
+      <property name="text">
+       <string>Address*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="addressLineEdit"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="cityLabel">
+      <property name="text">
+       <string>City*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="cityLineEdit"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="stateLabel">
+      <property name="text">
+       <string>State*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QComboBox" name="stateComboBox">
+      <item>
+       <property name="text">
+        <string>Alabama</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Alaska</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Arizona</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Arkansas</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>California</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Colorado</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Connecticut</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Delaware</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Florida</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Georgia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hawaii</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Idaho</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Illinois</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Indiana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Iowa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kansas</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kentucky</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Louisiana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maine</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maryland</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Massachusetts</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Michigan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minnesota</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mississippi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Missouri</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Montana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nebraska</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nevada</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Hampshire</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Jersey</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Mexico</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New York</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>North Carolina</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>North Dakota</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ohio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Oklahoma</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Oregon</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pennsylvania</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rhode Island</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>South Carolina</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>South Dakota</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tennessee</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Texas</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Utah</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vermont</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Virginia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Washington</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>West Virginia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wisconsin</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wyoming</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="zipcodeLabel">
+      <property name="text">
+       <string>Zipcode</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="zipLineEdit"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="emailLabel">
+      <property name="text">
+       <string>Email</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLineEdit" name="emailLineEdit"/>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="genderLabel">
+      <property name="text">
+       <string>Gender</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QComboBox" name="genderComboBox">
+      <item>
+       <property name="text">
+        <string>Male</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Female</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="SSNLabel">
+      <property name="text">
+       <string>SSN*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLineEdit" name="SSNLineEdit"/>
+    </item>
+    <item row="12" column="0">
+     <widget class="QLabel" name="medicalLabel">
+      <property name="text">
+       <string>Medical Information</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QTextEdit" name="medicalTextEdit"/>
+    </item>
+    <item row="13" column="0">
+     <widget class="QLabel" name="requiredLabel">
+      <property name="text">
+       <string>* Required Field</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="1">
+     <widget class="QPushButton" name="Submit_btn">
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

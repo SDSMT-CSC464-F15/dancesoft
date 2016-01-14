@@ -67,8 +67,4 @@ class class_reg_dialog(QtGui.QDialog):
         self.db.setPassword("DanceSoft")
         return self.db.open()
 
-app = QtGui.QApplication(sys.argv)
-window = class_reg_dialog()
-window.show()
-sys.exit(app.exec_())
 

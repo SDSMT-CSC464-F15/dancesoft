@@ -11,6 +11,7 @@ from Role_window import Role_window
 from change_password_window import password_window
 from My_Information import modify_My_Information
 
+
 class Teacher_window(QtGui.QMainWindow):
     def __init__(self, name):
         QtGui.QMainWindow.__init__(self)
@@ -24,7 +25,8 @@ class Teacher_window(QtGui.QMainWindow):
         self.ui.Student_back_btn.clicked.connect(partial(self.change_window, index = 0))
         self.ui.Class_back_btn.clicked.connect(partial(self.change_window, index = 0))
         self.ui.Personal_back_btn.clicked.connect(partial(self.change_window, index = 0))
-
+        self.ui.Logout_btn.clicked.connect(self.logout)
+        
         self.ui.Search_student_btn.clicked.connect(self.search_student)
         self.ui.See_student_schedule_btn.clicked.connect(self.See_student_schedule)
         self.ui.Add_class_btn.clicked.connect(self.Add_student_class)
@@ -32,11 +34,14 @@ class Teacher_window(QtGui.QMainWindow):
         self.ui.See_class_info_btn.clicked.connect(self.search_class)
         self.ui.See_class_role_btn.clicked.connect(self.roll_sheet)
         self.ui.Modify_personal_info.clicked.connect(self.update_teacher)
-        self.ui.Reset_password.clicked.connect(self.reset_password)
-        
+        self.ui.Reset_password.clicked.connect(self.reset_password)      
         self.ui.Student_quit_btn.clicked.connect(self.close)
         self.ui.Class_quit_btn.clicked.connect(self.close)
         self.ui.Personal_quit_btn.clicked.connect(self.close)
+        self.num = True
+    def logout(self):
+        self.num = False
+        self.close()
 
     def reset_password(self):
         self.ui.reset_password = password_window()

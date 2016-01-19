@@ -32,7 +32,7 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.Class_back_btn.clicked.connect(self.Back_btn)
         self.ui.Student_back_btn.clicked.connect(self.Back_btn)
         self.ui.Payroll_back_btn.clicked.connect(self.Back_btn)
-
+        self.ui.Logout_btn.clicked.connect(self.logout)
 
         self.ui.Search_teacher_btn.clicked.connect(self.search_teacher)
         self.ui.Update_teacher_btn.clicked.connect(self.update_teacher)
@@ -52,6 +52,10 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.Quit_btn_3.clicked.connect(self.Quit)
         self.ui.Quit_btn_4.clicked.connect(self.Quit)
         self.ui.Quit_btn_5.clicked.connect(self.Quit)
+        self.num = True
+    def logout(self):
+        self.num = False
+        self.close()
 
     def add_teacher(self):
         self.ui.add_teacher = add_teacher()

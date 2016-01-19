@@ -8,6 +8,7 @@ from Teacher import Teacher_window
 
 
 name = '' #keep track of user name
+number = 1
 
 class Login_Window(QtGui.QDialog):
     def __init__(self):
@@ -75,26 +76,27 @@ class Login_Window(QtGui.QDialog):
         return self.db.open()
 
 def main():
+    global number
     app = QtGui.QApplication(sys.argv)
-    sign = Login_Window().exec_()
-
-    flag = 0
-
-    if sign == 1:
-        flag = Navi_dialog(sign).exec_()
-
-    
-    global name
-
-    if flag == 1:
-        window = Admin_window(name)
-        window.show()
-        sys.exit(app.exec_())
-    elif flag == 2:
-        window = Teacher_window(name)
-        window.show()
-        sys.exit(app.exec_())
-    
+    while True:
+        isExit = True
+        sign = Login_Window().exec_()
+        flag = 0
+        if sign == 1 or sign == 2:
+            flag = Navi_dialog(sign).exec_()   
+        global name
+        if flag == 1:
+            window = Admin_window(name)
+            window.show()
+            app.exec_()
+            isExit = window.num
+        elif flag == 2:
+            window = Teacher_window(name)
+            window.show()
+            app.exec_()
+            isExit = window.num
+        if (isExit):
+            break
 
 if __name__ == '__main__':
     main()

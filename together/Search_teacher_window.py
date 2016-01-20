@@ -56,12 +56,12 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.detail.TeacherGender = self.detail.ui.Gender_detail_lineEdit.text()   
         self.detail.TeacherEmail = self.detail.ui.Email_detail_lineEdit.text()
         self.detail.TeacherBirth = self.detail.ui.Birth_detail_dateEdit.date()  
-        self.detail.TeacherPhone = self.detail.ui.Phone_detail_lineEdit.text()
-        self.detail.TeacherPG = self.detail.ui.Pguradian_detail_lineEdit.text()  
-        self.detail.TeacherSG = self.detail.ui.Sguardian_detail_lineEdit.text()
-        self.detail.TeacherEcon = self.detail.ui.Econtact_detail_lineEdit.text()
-        self.detail.TeacherEphone = self.detail.ui.Ephone_detail_lineEdit.text()
-        self.detail.TeacherTuition = self.detail.ui.Tuition_detail_lineEdit.text()
+        self.detail.TeacherHomePhone = self.detail.ui.Homephone_detail_lineEdit.text()
+        self.detail.TeacherCellPhone = self.detail.ui.Cellphone_detail_lineEdit.text()  
+        self.detail.TeacherWorkPhone = self.detail.ui.Workphone_detail_lineEdit.text()
+        self.detail.TeacherSSN = self.detail.ui.SSN_detail_lineEdit.text()
+        self.detail.TeacherPay = self.detail.ui.Payrate_detail_lineEdit.text()
+        self.detail.TeacherZipcode = self.detail.ui.Zipcode_detail_lineEdit.text()
         self.detail.TeacherAddress = self.detail.ui.Address_detail_lineEdit.text()
         self.detail.TeacherCity = self.detail.ui.City_detail_lineEdit.text()    
         self.detail.TeacherState = self.detail.ui.State_detail_lineEdit.text()
@@ -69,23 +69,26 @@ class Search_teacher_window(QtGui.QMainWindow):
 
 
         update_query = QSqlQuery()
-        
-        if update_query.exec_("Update Teacher, Address, Guardian Set Teacher.Teacher_name = '%s', Teacher.Teacher_sex = '%s', Teacher.Teacher_email = '%s', \
-                           Teacher.Teacher_date_of_birth = '%s', Teacher.Teacher_home_phone = '%s', Teacher.Teacher_Emergency_contact = '%s', Teacher.Emergency_contact_phone = '%s', \
-                           Teacher.Teacher_medical_information = '%s', Teacher.Tuition = '%s', \
-                           Address.Street = '%s', Address.City = '%s', Address.State = '%s', Guardian.Guardian_name = '%s'\
-                           Where Teacher.Teacher_id = '%d' and Teacher.Teacher_address = Address.Address_id and Teacher.Guardian_primary = Guardian.Guardian_id"\
-                           %(self.detail.TeacherName,  self.detail.TeacherGender, self.detail.TeacherEmail, self.detail.TeacherBirth.toString("yyyy-MM-dd"), self.detail.TeacherPhone,  self.detail.TeacherEcon, self.detail.TeacherEphone,\
-                           self.detail.TeacherMedical, self.detail.TeacherTuition, self.detail.TeacherAddress, self.detail.TeacherCity, self.detail.TeacherState, self.detail.TeacherPG, int(self.detail.TeacherID)))\
-            and update_query.exec_("Update Teacher, Guardian Set Guardian.Guardian_name = '%s '\
-                                    Where Teacher.Teacher_id = '%d' and Teacher.Guardian_secondary = Guardian.Guardian_id" \
-                                   %(self.detail.TeacherSG, int(self.detail.TeacherID))):
+
+        if update_query.exec_("Update Teacher, Address set Teacher.Teacher_name = '%s', Teacher.Teacher_sex = '%s',\
+                            Teacher.Teacher_email = '%s', Teacher.Teacher_date_of_birth = '%s', \
+                            Teacher.Teacher_home_phone = '%s', Teacher.Teacher_cell_phone = '%s',\
+                            Teacher.Teacher_work_phone = '%s', Teacher.Teacher_SSN = '%s', Teacher.Teacher_pay_rate = '%s',\
+                            Address.Zipcode = '%s', Address.Street = '%s', Address.City = '%s', Address.State = '%s', \
+                            Teacher.Teacher_medical_information = '%s' where Teacher.Teacher_id = '%d' and Address.Address_id = '%d'"\
+                           % (self.detail.TeacherName, self.detail.TeacherGender, \
+                           self.detail.TeacherEmail,self.detail.TeacherBirth, self.detail.TeacherHomePhone, self.detail.TeacherCellPhone,\
+                           self.detail.TeacherWorkPhone,self.detail.TeacherSSN,self.detail.TeacherPay, self.detail.TeacherZipcode,\
+                           self.detail.TeacherAddress, self.detail.TeacherCity, self.detail.TeacherState, self.detail.TeacherMedical,\
+                           int(self.detail.TeacherID), int(self.detail.Address_id))):
             QtGui.QMessageBox.information(
                 self.detail, 'Success', 'Update record successfully')
             self.reset_table()
         else:
             QtGui.QMessageBox.warning(
                 self, 'Error', 'Update record unsuccessfully')
+       
+ 
         
     def detail_show(self):
         curIndex = self.ui.Teacher_view.currentIndex().row()
@@ -280,4 +283,10 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
+
+app = QtGui.QApplication(sys.argv)
+window = Search_teacher_window()
+window.show()
+sys.exit(app.exec_())
+
 

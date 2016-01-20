@@ -49,46 +49,35 @@ class Search_class_window(QtGui.QMainWindow):
 
 
     def Classinfo_update(self):
-        #TODO check input validity
-        #TODO Solve foreign key!!!!!!!!!!!!!!!
-        
-        self.detail.ClassID = self.detail.ui.Id_detail_lineEdit.text()
+        self.detail.ClassId = self.detail.ui.Id_detail_lineEdit.text()
         self.detail.ClassName = self.detail.ui.Name_detail_lineEdit.text()      
-        self.detail.ClassGender = self.detail.ui.Gender_detail_lineEdit.text()   
-        self.detail.ClassEmail = self.detail.ui.Email_detail_lineEdit.text()
-        self.detail.ClassBirth = self.detail.ui.Birth_detail_dateEdit.date()  
-        self.detail.ClassPhone = self.detail.ui.Phone_detail_lineEdit.text()
-        self.detail.ClassPG = self.detail.ui.Pguradian_detail_lineEdit.text()  
-        self.detail.ClassSG = self.detail.ui.Sguardian_detail_lineEdit.text()
-        self.detail.ClassEcon = self.detail.ui.Econtact_detail_lineEdit.text()
-        self.detail.ClassEphone = self.detail.ui.Ephone_detail_lineEdit.text()
-        self.detail.ClassTuition = self.detail.ui.Tuition_detail_lineEdit.text()
-        self.detail.ClassAddress = self.detail.ui.Address_detail_lineEdit.text()
-        self.detail.ClassCity = self.detail.ui.City_detail_lineEdit.text()    
-        self.detail.ClassState = self.detail.ui.State_detail_lineEdit.text()
-        self.detail.ClassMedical = self.detail.ui.Medical_detail_textEdit.toPlainText()
-
-
+        self.detail.ClassCost = self.detail.ui.Cost_detail_lineEdit.text()   
+        self.detail.ClassTimeS = self.detail.ui.Time_start_detail_timeEdit.text()
+        self.detail.ClassTimeE = self.detail.ui.Time_end_detail_timeEdit.text()  
+        self.detail.ClassDay = self.detail.ui.Day_detail_lineEdit.text()
+        self.detail.ClassLoc = self.detail.ui.Location_detail_lineEdit.text()  
+        self.detail.ClassCap = self.detail.ui.Capacity_detail_lineEdit.text()
+        self.detail.ClassCloth = self.detail.ui.Clothing_detail_lineEdit.text()
+        self.detail.ClassDateS = self.detail.ui.Date_start_detail_dateEdit.text()
+        self.detail.ClassDateE = self.detail.ui.Date_end_detail_dateEdit.text()
+        self.detail.ClassAgeS = self.detail.ui.Age_start_detail_lineEdit.text()
+        self.detail.ClassAgeE = self.detail.ui.Age_end_detail_lineEdit.text()    
+        self.detail.ClassDes = self.detail.ui.Description_detail_textEdit.toPlainText()
         update_query = QSqlQuery()
 
-        '''
-        if update_query.exec_("Update Class, Address, Guardian Set Class.Class_name = '%s', Class.Class_sex = '%s', Class.Class_email = '%s', \
-                           Class.Class_date_of_birth = '%s', Class.Class_home_phone = '%s', Class.Class_Emergency_contact = '%s', Class.Emergency_contact_phone = '%s', \
-                           Class.Class_medical_information = '%s', Class.Tuition = '%s', \
-                           Address.Street = '%s', Address.City = '%s', Address.State = '%s', Guardian.Guardian_name = '%s'\
-                           Where Class.Class_id = '%d' and Class.Class_address = Address.Address_id and Class.Guardian_primary = Guardian.Guardian_id"\
-                           %(self.detail.ClassName,  self.detail.ClassGender, self.detail.ClassEmail, self.detail.ClassBirth.toString("yyyy-MM-dd"), self.detail.ClassPhone,  self.detail.ClassEcon, self.detail.ClassEphone,\
-                           self.detail.ClassMedical, self.detail.ClassTuition, self.detail.ClassAddress, self.detail.ClassCity, self.detail.ClassState, self.detail.ClassPG, int(self.detail.ClassID)))\
-            and update_query.exec_("Update Class, Guardian Set Guardian.Guardian_name = '%s '\
-                                    Where Class.Class_id = '%d' and Class.Guardian_secondary = Guardian.Guardian_id" \
-                                   %(self.detail.ClassSG, int(self.detail.ClassID))):
-            QtGui.QMessageBox.information(
-                self.detail, 'Success', 'Update record successfully')
+        if update_query.exec_("Update Class set Class_name = '%s', Class_cost = '%f', Class_time = '%s',\
+                            Class_end_time = '%s', Class_day = '%s', Class_location = '%s', Class_cap = '%d', \
+                            Class_clothing = '%s', Class_start_date = '%s', Class_end_date = '%s', Class_age = '%s',\
+                            Class_age_end = '%s', Class_description = '%s' where Class_id = '%d'"\
+                           %(self.detail.ClassName, float(self.detail.ClassCost),  self.detail.ClassTimeS,\
+                             self.detail.ClassTimeE, self.detail.ClassDay, self.detail.ClassLoc, int(self.detail.ClassCap),\
+                             self.detail.ClassCloth, self.detail.ClassDateS, self.detail.ClassDateE, self.detail.ClassAgeS,\
+                             self.detail.ClassAgeE, self.detail.ClassDes, int(self.detail.ClassId))):
+            QtGui.QMessageBox.information(self.detail, 'Success', 'Update record successfully')
             self.reset_table()
         else:
             QtGui.QMessageBox.warning(
                 self, 'Error', 'Update record unsuccessfully')
-        '''
         
     def detail_show(self):
         curIndex = self.ui.Class_view.currentIndex().row()
@@ -97,7 +86,8 @@ class Search_class_window(QtGui.QMainWindow):
                 self, 'Error', 'Please select a row')
             return curIndex
         
-       
+        
+        
         self.detail = Class_info_dialog()
         self.detail.show()
         
@@ -157,6 +147,8 @@ class Search_class_window(QtGui.QMainWindow):
         if not isinstance(self.detail.record.field(9).value(), QtCore.QPyNullVariant):
             self.detail.ui.Description_detail_textEdit.setText(self.detail.record.field(9).value())
 
+        self.detail.ui.Id_detail_lineEdit.setDisabled(True)
+        
         self.detail.ui.Close_detail_btn.clicked.connect(self.detail.close)
         self.detail.ui.Update_detail_btn.clicked.connect(self.Classinfo_update)
             
@@ -272,4 +264,9 @@ class Search_class_window(QtGui.QMainWindow):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
-
+'''
+app = QtGui.QApplication(sys.argv)
+window = Search_class_window()
+window.show()
+sys.exit(app.exec_())
+'''

@@ -284,9 +284,5 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
 
-app = QtGui.QApplication(sys.argv)
-window = Search_teacher_window()
-window.show()
-sys.exit(app.exec_())
 
 

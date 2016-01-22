@@ -7,8 +7,6 @@ from Admin import Admin_window
 from Teacher import Teacher_window
 
 
-name = '' #keep track of user name
-number = 1
 
 class Login_Window(QtGui.QDialog):
     def __init__(self):
@@ -18,6 +16,7 @@ class Login_Window(QtGui.QDialog):
         self.ui.setupUi(self)
         self.ui.pushButton_2.clicked.connect(self.handleLogin)
         self.ui.pushButton.clicked.connect(self.close)
+        self.name = '' #keep track of user name
 
     def handleLogin(self):
         # if cannot connect to database showing error window
@@ -47,17 +46,12 @@ class Login_Window(QtGui.QDialog):
                 # if valid user found, set flag true
                 self.flag = True
                 
-                global name
-                name = user_name
+                self.name = user_name
                 
                 # save personal information once the valid information found 
                 self.user_access_level = user_access_level
                 #test.....
-                if self.user_access_level == 1:   
-                    self.done(self.user_access_level)
-                
-                elif self.user_access_level == 2:           
-                    self.done(self.user_access_level)
+                self.close()
                 
                 
         # if user not found, show error message.              
@@ -66,7 +60,11 @@ class Login_Window(QtGui.QDialog):
                 self, 'Error', 'Invalid user or password')
             self.ui.lineEdit_2.clear()
 
-    # set up database connection 
+    # set up database connection
+    def getAccessLevel(self):
+        return self.user_access_level
+    def getUsername(self):
+        return self.name
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")
         self.db.setHostName("services1.mcs.sdsmt.edu")
@@ -76,15 +74,19 @@ class Login_Window(QtGui.QDialog):
         return self.db.open()
 
 def main():
-    global number
     app = QtGui.QApplication(sys.argv)
     while True:
         isExit = True
-        sign = Login_Window().exec_()
+        log_win = Login_Window()
+        log_win.show()
+        app.exec_()
+        sign = log_win.getAccessLevel()
+        name = log_win.getUsername()
+        
         flag = 0
         if sign == 1 or sign == 2:
             flag = Navi_dialog(sign).exec_()   
-        global name
+        
         if flag == 1:
             window = Admin_window(name)
             window.show()

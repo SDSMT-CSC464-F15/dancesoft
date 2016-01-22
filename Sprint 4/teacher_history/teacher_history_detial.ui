@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Teacher_history_dialog</class>
+ <widget class="QDialog" name="Teacher_history_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QListView" name="history_listView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>241</width>
+     <height>321</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="history_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>350</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

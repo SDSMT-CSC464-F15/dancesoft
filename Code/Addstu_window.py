@@ -9,7 +9,7 @@ class Addstu_window(QtGui.QMainWindow):
         QtGui.QMainWindow.__init__(self)
         self.ui = Ui_Addstu_window()
         self.ui.setupUi(self)
-        self.conn() #need cathch exeption
+        self.conn() #need exeption
         Addstu_query = QSqlQuery()
 
         Addstu_query.exec_("Select Class_name from Class")

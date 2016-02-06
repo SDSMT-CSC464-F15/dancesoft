@@ -33,6 +33,7 @@ class Student_payment_window(QtGui.QMainWindow):
             self.ui.rates.append(float(Rate_query.value(0)))
             self.ui.time.append(float(Rate_query.value(1)))
         
+        
     def get_rate(self, minitue):
         for i in range(len(self.ui.time)):
             if (minitue <= self.ui.time[i]):
@@ -69,7 +70,8 @@ class Student_payment_window(QtGui.QMainWindow):
             Money = float(Money_query.value(0))
 
         self.ui.print = Print_window(self.ui.cur_term, Money, self.get_rate(minutes))
-        self.ui.print.show() 
+        self.ui.print.show()
+        
         
         '''
         self.ui.history = Teacher_history_dialog(self.ui.name)

@@ -79,7 +79,7 @@ class Enter_fullpayment_window(QtGui.QMainWindow):
             #print (self.stuid_dict[i.data()])
             #print (i.data(), self.stuid_dict[i.data()], self.owe_dict[i.data()])
             delete_list.append(i.row())
-            pay.exec_("INSERT INTO Payment VALUES (NULL, '%s', %d, '%s', NOW())" % ( self.stuid_dict[i.data()], self.owe_dict[i.data()], self.ui.cur_term))
+            pay.exec_("INSERT INTO Payment VALUES (NULL, '%s', %d, '%s', NOW(), 'default')" % ( self.stuid_dict[i.data()], self.owe_dict[i.data()], self.ui.cur_term))
             #self.ui.Student_listView.model().removeRow(i.row())
         delete_list = sorted(delete_list, reverse = True)
         for i in delete_list:

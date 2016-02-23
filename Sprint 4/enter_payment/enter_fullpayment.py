@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'enter_fullpayment.ui'
 #
-# Created: Fri Feb  5 18:08:19 2016
+# Created: Tue Feb 16 03:05:07 2016
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!

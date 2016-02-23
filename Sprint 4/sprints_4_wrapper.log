@@ -1,13 +1,24 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  11 FEB 2016 16:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.12)  12 FEB 2016 23:25
 entering extended mode
 **sprints_4_wrapper.tex
-(sprints_4_wrapper.tex
-LaTeX2e <2015/01/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+
+("C:\Users\7304859\Desktop\senior design\dancesoft\Sprint 4\sprints_4_wrapper.t
+ex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
-File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -26,7 +37,7 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
@@ -55,10 +66,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -66,7 +77,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -89,7 +100,7 @@ Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 Package: t1enc 1994/06/01 Standard LaTeX package
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks16
 \verbatim@line=\toks17
 \verbatim@in@stream=\read1
@@ -107,7 +118,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box27
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks20
 \c@algorithm=\count93
@@ -133,15 +144,15 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count98
 \calc@Bcount=\count99
 \calc@Adimen=\dimen117
 \calc@Bdimen=\dimen118
 \calc@Askip=\skip46
 \calc@Bskip=\skip47
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count100
 \calc@Cskip=\skip48
 )
@@ -194,29 +205,30 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 \lst@maxwidth=\dimen124
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count108
 \lst@skipnumbers=\count109
 \lst@framebox=\box31
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
-File: listings.cfg 2015/06/04 1.6 listings configuration
+File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
+File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
+File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(sprints_4_wrapper.aux)
+("C:\Users\7304859\Desktop\senior design\dancesoft\Sprint 4\sprints_4_wrapper.a
+ux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
@@ -230,8 +242,7 @@ LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 42.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 *geometry* driver: auto-detecting
@@ -305,7 +316,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 67.
 [1
 
-{C:/Users/7110002/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/7304859/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 [2] <tuitionRates.png, id=10, 410.2828pt x 405.01312pt>
 File: tuitionRates.png Graphic file (type png)
  <use tuitionRates.png>
@@ -331,22 +342,25 @@ File: payment.png Graphic file (type png)
 <use payment.png>
 Package pdftex.def Info: payment.png used on input line 123.
 (pdftex.def)             Requested size: 156.58461pt x 92.5957pt.
- [4 <./tuitionRates.png> <./teacherHistory.png>]
-<invoice.png, id=21, 493.845pt x 389.95688pt>
+ [4 <C:/Users/7304859/Desktop/senior design/dancesoft/Sprint 4/tuitionRates.png
+> <C:/Users/7304859/Desktop/senior design/dancesoft/Sprint 4/teacherHistory.png
+>] <invoice.png, id=21, 493.845pt x 389.95688pt>
 File: invoice.png Graphic file (type png)
- <use invoice.png>
+
+<use invoice.png>
 Package pdftex.def Info: invoice.png used on input line 127.
 (pdftex.def)             Requested size: 246.92189pt x 194.97795pt.
-
-<enterPayment.png, id=22, 276.28218pt x 339.51843pt>
+ <enterPayment.png, id=22, 276.28218pt x 339.51843pt>
 File: enterPayment.png Graphic file (type png)
- <use enterPayment.png>
+
+<use enterPayment.png>
 Package pdftex.def Info: enterPayment.png used on input line 131.
 (pdftex.def)             Requested size: 138.14075pt x 169.75879pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./payment.png> <./invoice.png>]
+ [5 <C:/Users/7304859/Desktop/senior design/dancesoft/Sprint 4/payment.png> <C:
+/Users/7304859/Desktop/senior design/dancesoft/Sprint 4/invoice.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
@@ -359,25 +373,28 @@ Package pdftex.def Info: billHistory.png used on input line 136.
 
 Underfull \vbox (badness 1565) has occurred while \output is active []
 
- [6 <./enterPayment.png> <./billHistory.png>] [7]
+ [6 <C:/Users/7304859/Desktop/senior design/dancesoft/Sprint 4/enterPayment.png
+> <C:/Users/7304859/Desktop/senior design/dancesoft/Sprint 4/billHistory.png>] 
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
-[8] [9] (sprints_4_wrapper.aux) ) 
+[8] [9]
+("C:\Users\7304859\Desktop\senior design\dancesoft\Sprint 4\sprints_4_wrapper.a
+ux") ) 
 Here is how much of TeX's memory you used:
- 4543 strings out of 493673
- 65468 string characters out of 3141524
- 165351 words of memory out of 3000000
- 7829 multiletter control sequences out of 15000+200000
+ 4545 strings out of 493921
+ 65844 string characters out of 3144870
+ 161736 words of memory out of 3000000
+ 7776 multiletter control sequences out of 15000+200000
  20997 words of font info for 27 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
+ 841 hyphenation exceptions out of 8191
  37i,7n,49p,528b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/d
-vips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helveti
-c/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a
-.pfb>
-Output written on sprints_4_wrapper.pdf (9 pages, 235304 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on sprints_4_wrapper.pdf (9 pages, 235386 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

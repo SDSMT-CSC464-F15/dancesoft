@@ -76,11 +76,8 @@ class Enter_fullpayment_window(QtGui.QMainWindow):
         pay = QSqlQuery()
         delete_list = []
         for i in self.ui.Student_listView.selectedIndexes():
-            #print (self.stuid_dict[i.data()])
-            #print (i.data(), self.stuid_dict[i.data()], self.owe_dict[i.data()])
             delete_list.append(i.row())
             pay.exec_("INSERT INTO Payment VALUES (NULL, '%s', %d, '%s', NOW(), 'default')" % ( self.stuid_dict[i.data()], self.owe_dict[i.data()], self.ui.cur_term))
-            #self.ui.Student_listView.model().removeRow(i.row())
         delete_list = sorted(delete_list, reverse = True)
         for i in delete_list:
             self.ui.Student_listView.model().removeRow(i)

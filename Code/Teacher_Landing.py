@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Teacher Landing.ui'
 #
-# Created: Sun Nov  1 12:26:03 2015
+# Created: Sat Jan  9 14:59:41 2016
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,7 +26,7 @@ except AttributeError:
 class Ui_Teacher_Landing(object):
     def setupUi(self, Teacher_Landing):
         Teacher_Landing.setObjectName(_fromUtf8("Teacher_Landing"))
-        Teacher_Landing.resize(525, 344)
+        Teacher_Landing.resize(530, 360)
         self.centralwidget = QtGui.QWidget(Teacher_Landing)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.stackedWidget = QtGui.QStackedWidget(self.centralwidget)
@@ -101,16 +101,8 @@ class Ui_Teacher_Landing(object):
         font.setWeight(50)
         self.Student_quit_btn.setFont(font)
         self.Student_quit_btn.setObjectName(_fromUtf8("Student_quit_btn"))
-        self.Modify_student_info_btn = QtGui.QPushButton(self.Student_page)
-        self.Modify_student_info_btn.setGeometry(QtCore.QRect(90, 40, 211, 41))
-        font = QtGui.QFont()
-        font.setFamily(_fromUtf8("Arial"))
-        font.setPointSize(12)
-        font.setItalic(True)
-        self.Modify_student_info_btn.setFont(font)
-        self.Modify_student_info_btn.setObjectName(_fromUtf8("Modify_student_info_btn"))
         self.Search_student_btn = QtGui.QPushButton(self.Student_page)
-        self.Search_student_btn.setGeometry(QtCore.QRect(90, 110, 211, 41))
+        self.Search_student_btn.setGeometry(QtCore.QRect(90, 50, 211, 41))
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Arial"))
         font.setPointSize(12)
@@ -118,7 +110,7 @@ class Ui_Teacher_Landing(object):
         self.Search_student_btn.setFont(font)
         self.Search_student_btn.setObjectName(_fromUtf8("Search_student_btn"))
         self.Add_class_btn = QtGui.QPushButton(self.Student_page)
-        self.Add_class_btn.setGeometry(QtCore.QRect(90, 180, 211, 41))
+        self.Add_class_btn.setGeometry(QtCore.QRect(90, 120, 211, 41))
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Arial"))
         font.setPointSize(12)
@@ -126,7 +118,7 @@ class Ui_Teacher_Landing(object):
         self.Add_class_btn.setFont(font)
         self.Add_class_btn.setObjectName(_fromUtf8("Add_class_btn"))
         self.See_student_schedule_btn = QtGui.QPushButton(self.Student_page)
-        self.See_student_schedule_btn.setGeometry(QtCore.QRect(90, 250, 211, 41))
+        self.See_student_schedule_btn.setGeometry(QtCore.QRect(90, 190, 211, 41))
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Arial"))
         font.setPointSize(12)
@@ -222,7 +214,7 @@ class Ui_Teacher_Landing(object):
         self.stackedWidget.addWidget(self.Personal_page)
         Teacher_Landing.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(Teacher_Landing)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 525, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 530, 21))
         self.menubar.setObjectName(_fromUtf8("menubar"))
         Teacher_Landing.setMenuBar(self.menubar)
         self.statusbar = QtGui.QStatusBar(Teacher_Landing)
@@ -243,7 +235,6 @@ class Ui_Teacher_Landing(object):
         self.Class_btn.setText(_translate("Teacher_Landing", "Class Options", None))
         self.Student_back_btn.setText(_translate("Teacher_Landing", "Back", None))
         self.Student_quit_btn.setText(_translate("Teacher_Landing", "Quit", None))
-        self.Modify_student_info_btn.setText(_translate("Teacher_Landing", "Modify Student Info", None))
         self.Search_student_btn.setText(_translate("Teacher_Landing", "Search for Student", None))
         self.Add_class_btn.setText(_translate("Teacher_Landing", "Request Add to Class", None))
         self.See_student_schedule_btn.setText(_translate("Teacher_Landing", "See Schedule", None))

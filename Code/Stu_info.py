@@ -146,4 +146,3 @@ class Ui_stu_info_dialog(object):
         self.Update_detail_btn.setText(_translate("stu_info_dialog", "Update", None))
         self.City_detail_label.setText(_translate("stu_info_dialog", "City", None))
         self.State_detail_label_3.setText(_translate("stu_info_dialog", "State", None))
-

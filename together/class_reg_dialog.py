@@ -21,6 +21,7 @@ class class_reg_dialog(QtGui.QDialog):
         self.ui.reject_btn.setEnabled(False)
         self.ui.approve_btn.clicked.connect(partial(self.update_satus, index = 1))
         self.ui.reject_btn.clicked.connect(partial(self.update_satus, index = -1))
+        self.ui.cancel_btn.clicked.connect(self.close)
         
     def update_satus(self, index):
         update_query = QSqlQuery()

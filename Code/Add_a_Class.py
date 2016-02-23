@@ -19,7 +19,7 @@ class add_Class(QtGui.QMainWindow):
             self.ui.Location_comboBox.addItem(self.location)
 
         self.ui.Submit_btn.clicked.connect(self.add_class)
-        self.ui.Back_btn.clicked.connect(self.back)
+        self.ui.Back_btn.clicked.connect(self.close)
         
         
     def setup_database(self):
@@ -95,10 +95,6 @@ class add_Class(QtGui.QMainWindow):
                                        self.cap, self.clothing, self.descirption, self.start, self.end))
                 
                     sys.exit()
-    
-
-    def back(self):
-        sys.exit()
         
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")

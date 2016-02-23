@@ -206,8 +206,3 @@ class modify_Information(QtGui.QDialog):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
-
-app = QtGui.QApplication(sys.argv)
-Current_Window = modify_Information()
-Current_Window.show()
-sys.exit(app.exec_())

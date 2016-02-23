@@ -27,11 +27,11 @@ class modify_Information(QtGui.QDialog):
             self.name = str(record.value(0))
             self.modify.selectTeacherComboBox.addItem(self.name)
             
-        self.modify.Select_teacher_btn.clicked.connect(self.fill_form)
+        self.modify.Select_teacher_btn.clicked.connect(self.fillForm)
 
-        self.modify.Submit_btn.clicked.connect(self.submit_updates)
+        self.modify.Submit_btn.clicked.connect(self.submitUpdates)
 
-    def check_existing_address(self):
+    def checkExistingAddress(self):
         temp_id = 0 
         existing_address_query =QSqlQuery()
         existing_address_query.exec_("SELECT * FROM Address WHERE Street = '%s'\
@@ -43,10 +43,30 @@ class modify_Information(QtGui.QDialog):
 
         return temp_id
             
-        
+    def clearForm(self):
+        self.modify.nameLineEdit.setText("")
+        self.modify.homePhoneLineEdit.setText("")
+        self.modify.cellPhoneLineEdit.setText("")
+        self.modify.workPhoneLineEdit.setText("")
+        self.modify.addressLineEdit.setText("")
+        self.modify.cityLineEdit.setText("")
+        find = self.modify.stateComboBox.findText("South Dakota",QtCore.Qt.MatchFixedString)
+        self.modify.zipLineEdit.setText("")
+        if find >= 0:
+            self.modify.stateComboBox.setCurrentIndex(find)
+        self.modify.emailLineEdit.setText("")
+        find = self.modify.genderComboBox.findText("Male",QtCore.Qt.MatchFixedString)
+        if find >= 0:
+            self.modify.genderComboBox.setCurrentIndex(find)
+        self.modify.SSNLineEdit.setText("")
+        self.modify.payRateDoubleSpinBox.setValue(0.00)
+        self.modify.medicalTextEdit.setText("")
+        self.modify.DOBDateEdit.setDate(QtCore.QDate.currentDate())
         
 
-    def fill_form(self):
+    def fillForm(self):
+
+        self.clearForm()
         self.modify.sel_teach = QSqlRelationalTableModel(db = self.db)
         self.modify.sel_teach.setTable("Teacher")
 
@@ -61,8 +81,10 @@ class modify_Information(QtGui.QDialog):
             self.Teacher_id = str(record.value(0))
             self.modify.nameLineEdit.setText(str(record.value(1)))
             self.modify.homePhoneLineEdit.setText(str(record.value(2)))
-            self.modify.cellPhoneLineEdit.setText(str(record.value(3)))
-            self.modify.workPhoneLineEdit.setText(str(record.value(4)))
+            if not isinstance(record.value(3), QtCore.QPyNullVariant):
+                self.modify.cellPhoneLineEdit.setText(str(record.value(3)))
+            if not isinstance(record.value(4), QtCore.QPyNullVariant):
+                self.modify.workPhoneLineEdit.setText(str(record.value(4)))
             while address_query.next():
                 address_record =address_query.record()
                 self.address_id = str(address_record.value(0))
@@ -81,7 +103,7 @@ class modify_Information(QtGui.QDialog):
             self.modify.medicalTextEdit.setText(str(record.value(10)))
             self.modify.DOBDateEdit.setDate(record.value(11))
 
-    def submit_updates(self):
+    def submitUpdates(self):
         self.name = self.modify.nameLineEdit.text()
         
         self.home = self.modify.homePhoneLineEdit.text()
@@ -89,12 +111,14 @@ class modify_Information(QtGui.QDialog):
         self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.home[:-1])) + self.home[-1]
         
         self.cell = self.modify.cellPhoneLineEdit.text()
-        self.cell = re.sub('[^0-9]+', '', self.cell)
-        self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
+        if self.cell != '': 
+            self.cell = re.sub('[^0-9]+', '', self.cell)
+            self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
         
         self.work = self.modify.workPhoneLineEdit.text()
-        self.work = re.sub('[^0-9]+', '', self.work)
-        self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
+        if self.work != '':
+            self.work = re.sub('[^0-9]+', '', self.work)
+            self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
         
         self.address = self.modify.addressLineEdit.text()
         self.city = self.modify.cityLineEdit.text()
@@ -148,7 +172,7 @@ class modify_Information(QtGui.QDialog):
             self.address_reply = QtGui.QMessageBox.question(self, 'Address', 
                          self.address_question, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
             
-            self.address_exist = self.check_existing_address()
+            self.address_exist = self.checkExistingAddress()
             
             results_msg = "Pending Upadates: \n Name:'%s' \n DOB:'%s' \n Home phone:'%s' \n Cell phone:'%s' \n Work phone:'%s' \n Address:'%s' \n City:'%s' \n State:'%s' \
                           \n Email:'%s' \n Gender:'%s' \n SSN:'%s' \n Pay:'%s' \n Medical:'%s'" %( self.name, self.DOB, self.home, self.cell, self.work,\
@@ -206,4 +230,3 @@ class modify_Information(QtGui.QDialog):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
-

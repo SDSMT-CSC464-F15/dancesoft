@@ -27,7 +27,7 @@ class assign_teacher(QtGui.QMainWindow):
         self.assign.Class_listView.setModel(self.class_result)
 
         self.assign.Class_listView.clicked.connect(self.teacher_assignment)
-        self.assign.Assign_teacher_back_btn.clicked.connect(self.back)
+        self.assign.Assign_teacher_back_btn.clicked.connect(self.close)
 
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")
@@ -124,13 +124,5 @@ class assign_teacher(QtGui.QMainWindow):
                     assign_teach_query.exec("Update Teacher_Class SET Teacher_id = '%s' WHERE Class_id = '%s'" %(self.teacher_rec, self.class_rec))
             self.dialogbox_Flag = True
 
-    def back(self):
-        sys.exit(app.exec_())
 
         
-        
-        
-app = QtGui.QApplication(sys.argv)
-Current_Window = assign_teacher()
-Current_Window.show() 
-sys.exit(app.exec_())

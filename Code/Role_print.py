@@ -33,7 +33,6 @@ class Print_window(QtGui.QWidget):
                       <td>%s</td>\
                      </tr>' % (temp[0], temp[1], temp[2], temp[3], temp[4])
         html += '</table>'
-        print (html)
         self.editor.append(html)
         
         self.editor.textChanged.connect(self.handleTextChanged)

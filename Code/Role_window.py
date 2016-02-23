@@ -6,14 +6,16 @@ from Role_print import Print_window
 
 
 class Role_window(QtGui.QMainWindow):
-    def __init__(self, Id = 1):
+    def __init__(self, name):
         QtGui.QMainWindow.__init__(self)
         self.ui = Ui_Role_window()
         self.ui.setupUi(self)
         self.conn() #need cathch exeption
         Class_query = QSqlQuery()
-        Class_query.exec_("Select C.Class_name from Teacher_Class as T, Class as C where \
-                           T.Class_id = C.Class_id and T.Teacher_id = '%d'"% Id)
+        Class_query.exec_("Select Class_name from Class as C, Teacher_Class as\
+                           TC, Teacher as T where T.Teacher_id = TC.Teacher_id and \
+                           T.Teacher_id = (select Teacher_id from Account where User_name = \
+                           '%s') and TC.Class_id = C.Class_id" % name)
 
         
         model = QSqlQueryModel()
@@ -50,10 +52,4 @@ class Role_window(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
         
-
-app = QtGui.QApplication(sys.argv)
-window = Role_window()
-window.show()
-sys.exit(app.exec_())
-
 

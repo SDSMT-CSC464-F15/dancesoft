@@ -4,16 +4,25 @@ from PyQt4 import QtCore
 from Admin_Landing import Ui_Admin_Landing
 from functools import partial
 from PyQt4.QtSql import *
+from Search_teacher_window import Search_teacher_window
+from Select_teacher_dialog import  modify_Information
+from Assign_class import assign_teacher
+from Add_new_teacher import add_teacher
+from Search_class_window import Search_class_window
+from Add_a_Class import add_Class
+from Search_window import Search_window
+from Addstu_window_admin import Addstu_window
+from class_reg_dialog import class_reg_dialog
 
 class Admin_window(QtGui.QMainWindow):
-    def __init__(self):
+    def __init__(self, name):
         QtGui.QMainWindow.__init__(self)
         self.ui = Ui_Admin_Landing()
         self.ui.setupUi(self)
         self.current_index = 0
         self.prev_index = 0
 
-        
+        self.ui.name = name
         self.ui.Employee_btn.clicked.connect(partial(self.change_window, index = 1))
         self.ui.Class_btn.clicked.connect(partial(self.change_window, index = 2))
         self.ui.Student_btn.clicked.connect(partial(self.change_window, index = 3))
@@ -23,81 +32,74 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.Class_back_btn.clicked.connect(self.Back_btn)
         self.ui.Student_back_btn.clicked.connect(self.Back_btn)
         self.ui.Payroll_back_btn.clicked.connect(self.Back_btn)
+        self.ui.Logout_btn.clicked.connect(self.logout)
 
-        self.ui.Search_teacher_btn.clicked.connect(partial(self.change_window, index = 5))
-        self.ui.Teacher_search_back_btn.clicked.connect(self.Back_btn)
+        self.ui.Search_teacher_btn.clicked.connect(self.search_teacher)
+        self.ui.Update_teacher_btn.clicked.connect(self.update_teacher)
+        self.ui.Assign_teacher_btn.clicked.connect(self.assign_teacher)
+        self.ui.New_teacher_btn.clicked.connect(self.add_teacher)
 
-        self.ui.Update_teacher_btn.clicked.connect(self.modify_teacher)
+        self.ui.View_class_btn.clicked.connect(self.view_class)
+        self.ui.Add_Class_btn.clicked.connect(self.new_class)
+        self.ui.Class_tuition_btn.clicked.connect(self.class_tuition)
+        
+        self.ui.Search_student_btn.clicked.connect(self.search_student)
+        self.ui.Add_student_btn.clicked.connect(self.add_student)
+        self.ui.Registration_btn.clicked.connect(self.register)
 
         self.ui.Quit_btn.clicked.connect(self.Quit)
         self.ui.Quit_btn_2.clicked.connect(self.Quit)
         self.ui.Quit_btn_3.clicked.connect(self.Quit)
         self.ui.Quit_btn_4.clicked.connect(self.Quit)
         self.ui.Quit_btn_5.clicked.connect(self.Quit)
+        self.num = True
+    def logout(self):
+        self.num = False
+        self.close()
 
-        self.setup_database
+    def add_teacher(self):
+        self.ui.add_teacher = add_teacher()
+        self.ui.add_teacher.show()
         
+    def assign_teacher(self):
+        self.ui.assign_teacher = assign_teacher()
+        self.ui.assign_teacher.show()
+
+    def update_teacher(self):
+        self.ui.update_teacher = modify_Information()
+        self.ui.update_teacher.show()
+        
+    def search_teacher(self):
+        self.ui.search_teacher_w = Search_teacher_window()
+        self.ui.search_teacher_w.show()
+
+    def view_class(self):
+        self.ui.see_class = Search_class_window()
+        self.ui.see_class.show()
+
+    def new_class(self):
+        self.ui.add_class = add_Class()
+        self.ui.add_class.show()
+        
+    def class_tuition(self):
+        print("In Progress")
+
+    def search_student(self):
+        self.ui.search_student_window = Search_window()
+        self.ui.search_student_window.show()
+
+    def add_student(self):
+        self.ui.place_student = Addstu_window()
+        self.ui.place_student.show()
+
+    def register(self):
+        self.ui.registration = class_reg_dialog()
+        self.ui.registration.show()
         
     def change_window(self, index):
         self.prev_index = self.current_index
         self.ui.stackedWidget.setCurrentIndex(index)
-        self.current_index = index
-        if (self.current_index == 5):
-            self.setup_database()
-
-
-    def modify_teacher(self):
-        self.select_teacher = Select_teacher()
-        self.select_teacher.show()
-
-    def setup_database(self):
-
-        print("got Here")
-        
-        self.conn() #need catch exception
-        
-        self.ui.teacher = QSqlRelationalTableModel(db = self.db)
-        self.ui.teacher.setTable("Teacher")
-
-        #TODO deal with foreign key
-        
-       # self.ui.teacher.setRelation(8, QSqlRelation("Guardian", "Guardian_id", "Guardian_name"))
-        self.ui.teacher.setHeaderData(0, QtCore.Qt.Horizontal, "ID")
-        self.ui.teacher.setHeaderData(1, QtCore.Qt.Horizontal, "Name")
-        self.ui.teacher.setHeaderData(2, QtCore.Qt.Horizontal, "Home Phone")
-        self.ui.teacher.setHeaderData(3, QtCore.Qt.Horizontal, "Cell Phone")
-        self.ui.teacher.setHeaderData(4, QtCore.Qt.Horizontal, "Work Phone")
-        self.ui.teacher.setHeaderData(6, QtCore.Qt.Horizontal, "Email")
-        
-        
-        self.ui.teacher.select()
-        
-
-        #display window
-        self.ui.Teacher_view.setModel(self.ui.teacher)      
-        self.ui.Teacher_view.hideColumn(5)
-        self.ui.Teacher_view.hideColumn(7)
-        self.ui.Teacher_view.hideColumn(8)
-        self.ui.Teacher_view.hideColumn(9)
-        self.ui.Teacher_view.hideColumn(10)
-        self.ui.Teacher_view.hideColumn(11)
-
-        self.ui.Search_btn.clicked.connect(self.search)
-
-    def search(self):
-        if not self.conn():
-            QtGui.QMessageBox.warning(
-                self, 'Error', 'database contecting error')
-            
-
-        #get input data from user
-        
-        input_teacher_name = self.ui.Search_lineEdit.text()
-        query = QSqlQuery()
-        query.exec_("SELECT * FROM Teacher WHERE Teacher_name = '%s'" % input_teacher_name)
-
-        
-        self.ui.teacher.setQuery(query)       
+        self.current_index = index   
         
 
     def conn(self):
@@ -118,8 +120,6 @@ class Admin_window(QtGui.QMainWindow):
         
         
         
+        
+        
 
-app = QtGui.QApplication(sys.argv)
-Current_Window = Admin_window()
-Current_Window.show()
-sys.exit(app.exec_())

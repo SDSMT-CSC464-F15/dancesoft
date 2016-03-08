@@ -4,6 +4,7 @@ from Search_class import Ui_Search_MainWindow
 from PyQt4.QtSql import *
 from Advsearch_class_Dialog import Advsearch_Dialog
 from Class_info_Dialog import Class_info_dialog
+from PyQt4.QtGui import QAbstractItemView
 
 class Search_class_window(QtGui.QMainWindow):
     def __init__(self):
@@ -40,6 +41,7 @@ class Search_class_window(QtGui.QMainWindow):
         self.ui.Class_view.hideColumn(11)
         self.ui.Class_view.hideColumn(12)
         self.ui.Class_view.hideColumn(13)
+        self.ui.Class_view.setEditTriggers(QAbstractItemView.NoEditTriggers)
 
 
         self.ui.Search_btn.clicked.connect(self.search)

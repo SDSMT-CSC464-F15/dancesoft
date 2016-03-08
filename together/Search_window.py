@@ -1,9 +1,12 @@
 import sys
 from PyQt4 import QtGui, QtCore
+from PyQt4.QtGui import QAbstractItemView
 from Search import Ui_Search_MainWindow
 from PyQt4.QtSql import *
 from Advsearch_Dialog import Advsearch_Dialog
 from Stu_info_Dialog import Stu_info_dialog
+
+
 
 class Search_window(QtGui.QMainWindow):
     def __init__(self):
@@ -44,6 +47,7 @@ class Search_window(QtGui.QMainWindow):
         self.ui.Student_view.hideColumn(11)
         self.ui.Student_view.hideColumn(12)
         self.ui.Student_view.hideColumn(13)
+        self.ui.Student_view.setEditTriggers(QAbstractItemView.NoEditTriggers)
 
 
         self.ui.Search_btn.clicked.connect(self.search)
@@ -274,3 +278,4 @@ class Search_window(QtGui.QMainWindow):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
+

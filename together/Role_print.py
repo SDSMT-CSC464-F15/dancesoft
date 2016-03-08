@@ -53,6 +53,7 @@ class Print_window(QtGui.QWidget):
         path = QtGui.QFileDialog.getOpenFileName(
             self, self.tr('Open file'), '',
             self.tr('HTML files (*.html);;Text files (*.txt)'))
+        
         if not path.isEmpty():
             stream = QtCore.QFile(path)
             if stream.open(QtCore.QIODevice.ReadOnly):

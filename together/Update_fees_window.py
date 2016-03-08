@@ -18,8 +18,17 @@ class fee_dialog(QtGui.QDialog):
         else:
             self.fee.ok_btn.clicked.connect(self.submit_updates)
 
+        self.fee.flatCheckBox.stateChanged.connect(self.change_flat)
+        self.fee.percentCheckBox.stateChanged.connect(self.change_percent)
         self.fee.cancel_btn.clicked.connect(self.close)
 
+    def change_flat(self):
+        if self.fee.flatCheckBox.isChecked():
+            self.fee.percentCheckBox.setChecked(False)
+            
+    def change_percent(self):
+        if self.fee.percentCheckBox.isChecked():
+            self.fee.flatCheckBox.setChecked(False)
 
     def fill_window(self):
         self.query = QSqlQuery()
@@ -34,25 +43,50 @@ class fee_dialog(QtGui.QDialog):
     def submit_updates(self):
         self.description = self.fee.descriptionLineEdit.text()
         self.newCost = self.fee.costDoubleSpinBox.value()
-        self.update_query = QSqlQuery()
-        modify_query = ("Update One_Off_Fees Set Fee_Description = '%s',\
-                    Fee_Cost = %d Where Fee_Description = '%s'" \
-                         % (self.description, self.newCost,\
-                            self.selected_decription))
-        self.update_query.exec_(modify_query)
-        self.close()
+        print(self.newCost)
+        if(self.fee.percentCheckBox.isChecked() == False and
+           self.fee.flatCheckBox.isChecked() == False):
+            self.check_msg = "Please check flat rate or percent"
+            self.check_reply = QtGui.QMessageBox.information(self, 'Error', 
+                        self.check_msg, QtGui.QMessageBox.Ok)
+        
+        
+        elif (self.fee.percentCheckBox.isChecked() and self.newCost >= 1):
+            self.percent_msg = "Please enter a number less then one. \n Usage Example: 0.15 is 15 percent"
+            self.percent_reply = QtGui.QMessageBox.information(self, 'Enter Percent', 
+                        self.percent_msg, QtGui.QMessageBox.Ok)
+            
+        else:
+            self.update_query = QSqlQuery()
+            self.update_query.exec_("Update One_Off_Fees Set Fee_Description = '%s',\
+                        Fee_Cost = %f Where Fee_Description = '%s'" \
+                             % (self.description, self.newCost,\
+                                self.selected_decription))
+            self.close()
 
 
     def add_rate(self):
         self.description = self.fee.descriptionLineEdit.text()
         self.newCost = self.fee.costDoubleSpinBox.value()
-        self.add_query = QSqlQuery()
 
-        insert_query = ("Insert into One_Off_Fees (Fee_Description,\
-                    Fee_Cost) Values ('%s',%d)" \
+        if(self.fee.percentCheckBox.isChecked() == False and
+           self.fee.flatCheckBox.isChecked() == False):
+            self.check_msg = "Please check flat rate or percent"
+            self.check_reply = QtGui.QMessageBox.information(self, 'Error', 
+                        self.check_msg, QtGui.QMessageBox.Ok)
+        
+        
+        elif (self.fee.percentCheckBox.isChecked() and self.newCost >= 1):
+            self.percent_msg = "Please enter a number less then one. \n Usage Example: 0.15 is 15 percent"
+            self.percent_reply = QtGui.QMessageBox.information(self, 'Enter Percent', 
+                        self.percent_msg, QtGui.QMessageBox.Ok)
+            
+        else:
+            self.add_query = QSqlQuery()
+            self.add_query.exec_("Insert into One_Off_Fees (Fee_Description,\
+                    Fee_Cost) Values ('%s',%f)" \
                          % (self.description, self.newCost))
-        self.add_query.exec_(insert_query)
-        self.close()
+            self.close()
             
 
         

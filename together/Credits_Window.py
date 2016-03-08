@@ -9,7 +9,7 @@ class discounts(QtGui.QMainWindow):
         self.credit = Ui_Credits()
         self.credit.setupUi(self)
 
-        self.conn() #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        self.conn() 
 
         #query to fill student list
         self.student_query = QSqlQuery()
@@ -27,7 +27,7 @@ class discounts(QtGui.QMainWindow):
         self.credit.apply_btn.clicked.connect(self.applyDiscount)
         
         
-    #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Need header block!!!!!!!!!!!!!!!!!
+    
     def applyDiscount(self,index):
         #retrive the credit value in the interface fields
         self.newCredit = self.credit.creditDoubleSpinBox.value()
@@ -40,10 +40,9 @@ class discounts(QtGui.QMainWindow):
         
         # if they do update the credits
         if self.findStudentQuery.next():
-            print("here")
             record = self.findStudentQuery.record()
             self.update_query = QSqlQuery()
-            self.update_query.exec_("Update Credits set Credit_amount = %d \
+            self.update_query.exec_("Update Credits set Credit_amount = %f \
                                where Student_id = (Select Student_id from Student \
                                where Student_name = '%s')" % (self.newCredit,\
                                 self.selectedStudent))
@@ -66,7 +65,7 @@ class discounts(QtGui.QMainWindow):
             # Apply the credit to the students account
             self.apply_query = QSqlQuery()
             self.apply_query.exec_("Insert into Credits (Credit_id, Student_id,\
-                                Credit_amount) values(%d,%d,%d)" % (self.creditId,\
+                                Credit_amount) values(%d,%d,%f)" % (self.creditId,\
                                 self.studentId, self.newCredit))
 
     

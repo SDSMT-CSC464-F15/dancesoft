@@ -5,11 +5,11 @@ from PyQt4.QtSql import *
 
 
 class password_window(QtGui.QDialog):
-    def __init__(self):
+    def __init__(self, name):
         QtGui.QDialog.__init__(self)
-        self.user_access_level = -1
         self.ui = Ui_change_password()
         self.ui.setupUi(self)
+        self.name = name;
         self.ui.change_btn.clicked.connect(self.update)
         self.ui.cancel_btn.clicked.connect(self.close)
 
@@ -20,21 +20,34 @@ class password_window(QtGui.QDialog):
                 self, 'Error', 'database contecting error')
 
         # get username and password from gui
-        input_name = self.ui.userLineEdit.text()
-        input_pass = self.ui.passwordLineEdit.text()
-        input_confirm = self.ui.confirmLineEdit.text()
+        self.input_name = self.ui.userLineEdit.text()
+        self.input_pass = self.ui.passwordLineEdit.text()
+        self.input_confirm = self.ui.confirmLineEdit.text()
 
-        if input_pass != input_confirm:
+        #check for password confirmation
+        if self.input_pass != self.input_confirm:
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter the same password")
             self.ui.userLineEdit.clear()
             self.ui.passwordLineEdit.clear()
             self.ui.confirmLineEdit.clear()
+            
+        elif self.input_name != self.name:
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please enter your username")
+            self.ui.userLineEdit.clear()
+            self.ui.passwordLineEdit.clear()
+            self.ui.confirmLineEdit.clear()
 
-        else:
+        else: # make changes
             change_query = QSqlQuery()
-            change_query.exec_("Update Account SET User_name='%s', User_password='%s' WHERE User_name = '%s'" %(name))
-            name = input_name
+            change_query.exec_("Update Account SET User_password='%s' WHERE User_name = '%s'" \
+                               %(self.input_confirm, self.input_name))
+            self.default_msg = "Password Changed"
+            self.default_reply = QtGui.QMessageBox.information(self, 'Change Password', 
+                        self.default_msg, QtGui.QMessageBox.Ok)
+            self.close();
+            
 
     # set up database connection 
     def conn(self):

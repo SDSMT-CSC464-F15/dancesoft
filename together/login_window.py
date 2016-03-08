@@ -46,6 +46,13 @@ class Login_Window(QtGui.QDialog):
                 self.flag = True
                 
                 self.name = user_name
+
+                #check for default password
+                if (user_password == "rcdancearts"):
+                    self.default_msg = "Remember to change your password"
+                    self.default_reply = QtGui.QMessageBox.information(self, 'Change Password', 
+                        self.default_msg, QtGui.QMessageBox.Ok)
+                    
                 
                 # save personal information once the valid information found 
                 self.user_access_level = user_access_level

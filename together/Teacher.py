@@ -44,7 +44,7 @@ class Teacher_window(QtGui.QMainWindow):
         self.close()
 
     def reset_password(self):
-        self.ui.reset_password = password_window()
+        self.ui.reset_password = password_window(self.ui.name)
         self.ui.reset_password.show()
 
     def update_teacher(self):

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>531</width>
-    <height>405</height>
+    <width>524</width>
+    <height>419</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,16 +37,6 @@
      <string>Remove</string>
     </property>
    </widget>
-   <widget class="QListView" name="Stu_listView">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>20</y>
-      <width>221</width>
-      <height>281</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="Add_stu_btn">
     <property name="geometry">
      <rect>
@@ -60,13 +50,36 @@
      <string>Add</string>
     </property>
    </widget>
+   <widget class="QTableView" name="Stu_tableView">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>221</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>571</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>* Class Approval:   Pending: 0    Approved: 1     Rejected: -1</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>531</width>
+     <width>524</width>
      <height>21</height>
     </rect>
    </property>

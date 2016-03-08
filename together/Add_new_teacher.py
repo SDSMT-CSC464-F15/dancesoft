@@ -170,9 +170,6 @@ class add_teacher(QtGui.QDialog):
             stu_id = 0
             teach_id = int(self.Teacher_id)
 
-            print("test: ",int(user_id), username, pword, access, stu_id, \
-                             teach_id, 0) 
-
             new_query = QSqlQuery()
             new_query.exec_("Insert into Account (User_id, User_name, User_password,\
                Access_level, Student_id, Teacher_id, Admin_id) values(%d,'%s','%s',%d,\

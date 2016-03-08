@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'addstu.ui'
 #
-# Created: Sun Nov 29 14:15:36 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -26,7 +25,7 @@ except AttributeError:
 class Ui_Addstu_window(object):
     def setupUi(self, Addstu_window):
         Addstu_window.setObjectName(_fromUtf8("Addstu_window"))
-        Addstu_window.resize(531, 405)
+        Addstu_window.resize(524, 419)
         self.centralwidget = QtGui.QWidget(Addstu_window)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.Class_listView = QtGui.QListView(self.centralwidget)
@@ -35,15 +34,18 @@ class Ui_Addstu_window(object):
         self.Remove_stu_btn = QtGui.QPushButton(self.centralwidget)
         self.Remove_stu_btn.setGeometry(QtCore.QRect(80, 330, 91, 21))
         self.Remove_stu_btn.setObjectName(_fromUtf8("Remove_stu_btn"))
-        self.Stu_listView = QtGui.QListView(self.centralwidget)
-        self.Stu_listView.setGeometry(QtCore.QRect(280, 20, 221, 281))
-        self.Stu_listView.setObjectName(_fromUtf8("Stu_listView"))
         self.Add_stu_btn = QtGui.QPushButton(self.centralwidget)
         self.Add_stu_btn.setGeometry(QtCore.QRect(320, 330, 91, 21))
         self.Add_stu_btn.setObjectName(_fromUtf8("Add_stu_btn"))
+        self.Stu_tableView = QtGui.QTableView(self.centralwidget)
+        self.Stu_tableView.setGeometry(QtCore.QRect(280, 20, 221, 281))
+        self.Stu_tableView.setObjectName(_fromUtf8("Stu_tableView"))
+        self.label = QtGui.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(30, 360, 571, 16))
+        self.label.setObjectName(_fromUtf8("label"))
         Addstu_window.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(Addstu_window)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 531, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 524, 21))
         self.menubar.setObjectName(_fromUtf8("menubar"))
         Addstu_window.setMenuBar(self.menubar)
         self.statusbar = QtGui.QStatusBar(Addstu_window)
@@ -57,4 +59,5 @@ class Ui_Addstu_window(object):
         Addstu_window.setWindowTitle(_translate("Addstu_window", "MainWindow", None))
         self.Remove_stu_btn.setText(_translate("Addstu_window", "Remove", None))
         self.Add_stu_btn.setText(_translate("Addstu_window", "Add", None))
+        self.label.setText(_translate("Addstu_window", "* Class Approval:   Pending: 0    Approved: 1     Rejected: -1", None))
 

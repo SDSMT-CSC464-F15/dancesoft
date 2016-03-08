@@ -88,6 +88,32 @@
     <double>99999.990000000005239</double>
    </property>
   </widget>
+  <widget class="QCheckBox" name="flatCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>60</y>
+     <width>70</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Flat Rate</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="percentCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>60</y>
+     <width>70</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Percent</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

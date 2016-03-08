@@ -45,6 +45,12 @@ class Ui_feeRateDialog(object):
         self.costDoubleSpinBox.setGeometry(QtCore.QRect(120, 60, 141, 22))
         self.costDoubleSpinBox.setMaximum(99999.99)
         self.costDoubleSpinBox.setObjectName(_fromUtf8("costDoubleSpinBox"))
+        self.flatCheckBox = QtGui.QCheckBox(feeRateDialog)
+        self.flatCheckBox.setGeometry(QtCore.QRect(270, 60, 70, 17))
+        self.flatCheckBox.setObjectName(_fromUtf8("flatCheckBox"))
+        self.percentCheckBox = QtGui.QCheckBox(feeRateDialog)
+        self.percentCheckBox.setGeometry(QtCore.QRect(350, 60, 70, 17))
+        self.percentCheckBox.setObjectName(_fromUtf8("percentCheckBox"))
 
         self.retranslateUi(feeRateDialog)
         QtCore.QMetaObject.connectSlotsByName(feeRateDialog)
@@ -55,4 +61,6 @@ class Ui_feeRateDialog(object):
         self.cancel_btn.setText(_translate("feeRateDialog", "Cancel", None))
         self.feeCostLabel.setText(_translate("feeRateDialog", " Cost", None))
         self.ok_btn.setText(_translate("feeRateDialog", "OK", None))
+        self.flatCheckBox.setText(_translate("feeRateDialog", " Flat Rate", None))
+        self.percentCheckBox.setText(_translate("feeRateDialog", "Percent", None))
 

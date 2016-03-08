@@ -36,12 +36,10 @@ class rates_dialog(QtGui.QDialog):
 
     def change_min_checkbox(self):
         if self.rates.minuteCheckBox.isChecked():
-            print("min")
             self.rates.hoursCheckBox.setChecked(False)
             
     def change_hour_checkbox(self):
         if self.rates.hoursCheckBox.isChecked():
-            print("hour")
             self.rates.minuteCheckBox.setChecked(False)           
                     
 
@@ -54,7 +52,7 @@ class rates_dialog(QtGui.QDialog):
 
         if self.rates.minuteCheckBox.isChecked():
             min_query = ("Update Tuition_Rates Set Tuition_Description = '%s',\
-                    Tuition_Rate = %d, Tuition_Time = %d Where \
+                    Tuition_Rate = %f, Tuition_Time = %d Where \
                     Tuition_Description = '%s'" % (self.description, self.newCost,\
                                                    self.time, self.selected_decription))
             self.update_query.exec_(min_query)
@@ -64,7 +62,7 @@ class rates_dialog(QtGui.QDialog):
         elif self.rates.hoursCheckBox.isChecked():
             self.time = self.time * 60
             hour_query = ("Update Tuition_Rates Set Tuition_Description = '%s',\
-                    Tuition_Rate = %d, Tuition_Time = %d Where \
+                    Tuition_Rate = %f, Tuition_Time = %d Where \
                     Tuition_Description = '%s'" % (self.description, self.newCost,\
                                                    self.time, self.selected_decription))
             self.update_query.exec_(hour_query)
@@ -82,7 +80,7 @@ class rates_dialog(QtGui.QDialog):
 
         if self.rates.minuteCheckBox.isChecked():
             min_query = ("Insert into Tuition_Rates (Tuition_Description,\
-                    Tuition_Rate, Tuition_Time) Values ('%s',%d,%d)" \
+                    Tuition_Rate, Tuition_Time) Values ('%s',%f,%d)" \
                          % (self.description, self.newCost, self.time))
             self.add_query.exec_(min_query)
             self.close()
@@ -91,7 +89,7 @@ class rates_dialog(QtGui.QDialog):
         elif self.rates.hoursCheckBox.isChecked():
             self.time = self.time * 60
             hour_query = ("Insert into Tuition_Rates (Tuition_Description,\
-                           Tuition_Rate, Tuition_Time) Values ('%s',%d,%d)" \
+                           Tuition_Rate, Tuition_Time) Values ('%s',%f,%d)" \
                           % (self.description, self.newCost, self.time))
             self.add_query.exec_(hour_query)
             self.close()

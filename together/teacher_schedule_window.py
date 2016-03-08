@@ -11,7 +11,7 @@ class Teacher_schedule_window(QtGui.QMainWindow):
         self.ui.setupUi(self)
         self.conn()
         Teacher_query = QSqlQuery()
-        Teacher_query.exec_("select Teacher_name from Teacher")
+        Teacher_query.exec_("Select Teacher_name From Teacher ORDER BY Teacher_name")
         model = QSqlQueryModel()
         model.setQuery(Teacher_query)
         self.ui.Teacher_listView.setModel(model)
@@ -19,11 +19,12 @@ class Teacher_schedule_window(QtGui.QMainWindow):
         self.ui.Search_btn.clicked.connect(self.search_student)
         self.ui.schedule_btn.clicked.connect(self.print_schedule)
         self.ui.Teacher_listView.clicked.connect(self.select_teacher)
+        self.ui.cancel_btn.clicked.connect(self.close)
         
     def search_student(self):
         input_teacher_name = self.ui.Teacher_lineEdit.text()
         Teacher_query = QSqlQuery()
-        Teacher_query.exec_("select Teacher_name from Teacher where Teacher_name like '%%%s%%'" % input_teacher_name)
+        Teacher_query.exec_("Select Teacher_name From Teacher where Teacher_name like '%%%s%%'" % input_teacher_name)
         model = QSqlQueryModel()
         model.setQuery(Teacher_query)
         self.ui.Teacher_listView.setModel(model)

@@ -7,7 +7,6 @@ from Admin import Admin_window
 from Teacher import Teacher_window
 
 
-
 class Login_Window(QtGui.QDialog):
     def __init__(self):
         QtGui.QDialog.__init__(self)

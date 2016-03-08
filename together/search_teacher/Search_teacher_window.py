@@ -45,6 +45,7 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.ui.Adv_search_btn.clicked.connect(self.advsearch_show)
         self.ui.Reset_search_btn.clicked.connect(self.reset_table)
         self.ui.Detail_btn.clicked.connect(self.detail_show)
+        self.ui.Back_btn.clicked.connect(self.close)
 
 
     def Teacherinfo_update(self):

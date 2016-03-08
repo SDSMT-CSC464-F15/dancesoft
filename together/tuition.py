@@ -16,7 +16,7 @@ class tuition(QtGui.QMainWindow):
         self.tuit.remove_btn.setEnabled(False)
         self.description_query = QSqlQuery()
 
-        self.description_query.exec_("Select Tuition_Description from Tuition_Rates")
+        self.description_query.exec_("Select Tuition_Description from Tuition_Rates ORDER BY Tuition_Description")
         self.model = QSqlQueryModel()
         self.model.setQuery(self.description_query)
         self.tuit.descriptionListView.setModel(self.model)
@@ -30,6 +30,8 @@ class tuition(QtGui.QMainWindow):
         self.tuit.update_btn.clicked.connect(self.update)
         self.tuit.remove_btn.clicked.connect(self.remove)
         self.tuit.refresh_btn.clicked.connect(self.refresh_list)
+        self.tuit.cancel_btn.clicked.connect(self.close)
+        
         
 
     def show_information(self, index):
@@ -49,12 +51,10 @@ class tuition(QtGui.QMainWindow):
 
     def change_min_checkbox(self):
         if self.tuit.minuteCheckBox.isChecked():
-            print("min")
             self.tuit.hoursCheckBox.setChecked(False)
             
     def change_hour_checkbox(self):
         if self.tuit.hoursCheckBox.isChecked():
-            print("hour")
             self.tuit.minuteCheckBox.setChecked(False)
         
         

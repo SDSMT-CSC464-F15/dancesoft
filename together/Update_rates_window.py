@@ -22,6 +22,8 @@ class rates_dialog(QtGui.QDialog):
         else:
             self.rates.ok_btn.clicked.connect(self.submit_updates)
 
+        self.rates.cancel_btn.clicked.connect(self.close)
+
 
     def fill_window(self):
         self.query = QSqlQuery()

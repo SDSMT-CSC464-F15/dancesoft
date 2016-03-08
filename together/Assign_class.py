@@ -21,7 +21,7 @@ class assign_teacher(QtGui.QMainWindow):
         self.assign.sel_teach.setTable("Class")
 
         self.class_query = QSqlQuery()
-        self.class_query.exec_("Select Class_name FROM Class")
+        self.class_query.exec_("Select Class_name FROM Class ORDER BY Class_id")
         self.class_result = QSqlQueryModel()
         self.class_result.setQuery(self.class_query)
         self.assign.Class_listView.setModel(self.class_result)
@@ -45,7 +45,7 @@ class assign_teacher(QtGui.QMainWindow):
         self.current_teacher_query.exec("SELECT Teacher_name FROM Teacher \
                         WHERE Teacher_id = (SELECT DISTINCT Teacher_Class.Teacher_id\
                         FROM Teacher, Teacher_Class WHERE Teacher_Class.Class_id = \
-                        (select Class_id from Class where class_name = '%s'))" % (self.selected_class))
+                        (select Class_id from Class where class_name = '%s')) ORDER BY Teacher_id" % (self.selected_class))
         
         self.current_teacher_query.next()
         self.current_teacher = self.current_teacher_query.value(0)
@@ -61,7 +61,7 @@ class assign_teacher(QtGui.QMainWindow):
                       from Teacher as T, Teacher_Class as TC, Class as C WHERE TC.Teacher_id = T.Teacher_id and \
                       TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time FROM Class \
                       as C WHERE C.Class_name = '%s') as C WHERE not (NC.Class_time >= C.Class_end_time or \
-                      C.Class_time >= NC.Class_end_time))" % (self.selected_class))
+                      C.Class_time >= NC.Class_end_time)) ORDER BY Teacher_id" % (self.selected_class))
         
                 self.teacher_result = QSqlQueryModel()
                 self.teacher_result.setQuery(self.teacher_query)
@@ -77,7 +77,7 @@ class assign_teacher(QtGui.QMainWindow):
                           from Teacher as T, Teacher_Class as TC, Class as C WHERE TC.Teacher_id = T.Teacher_id and \
                           TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time FROM Class \
                           as C WHERE C.Class_name = '%s') as C WHERE not (NC.Class_time >= C.Class_end_time or \
-                          C.Class_time >= NC.Class_end_time))" % (self.selected_class))
+                          C.Class_time >= NC.Class_end_time)) ORDER BY Teacher_id" % (self.selected_class))
             
             self.teacher_result = QSqlQueryModel()
             self.teacher_result.setQuery(self.teacher_query)

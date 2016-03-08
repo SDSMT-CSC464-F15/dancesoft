@@ -18,6 +18,8 @@ class fee_dialog(QtGui.QDialog):
         else:
             self.fee.ok_btn.clicked.connect(self.submit_updates)
 
+        self.fee.cancel_btn.clicked.connect(self.close)
+
 
     def fill_window(self):
         self.query = QSqlQuery()

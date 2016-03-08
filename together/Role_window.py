@@ -15,7 +15,7 @@ class Role_window(QtGui.QMainWindow):
         Class_query.exec_("Select Class_name from Class as C, Teacher_Class as\
                            TC, Teacher as T where T.Teacher_id = TC.Teacher_id and \
                            T.Teacher_id = (select Teacher_id from Account where User_name = \
-                           '%s') and TC.Class_id = C.Class_id" % name)
+                           '%s') and TC.Class_id = C.Class_id ORDER BY Class_name" % name)
 
         
         model = QSqlQueryModel()
@@ -36,7 +36,7 @@ class Role_window(QtGui.QMainWindow):
         Student_query.exec_("Select S.Student_name, S.Student_id, S.Student_home_phone, S.Student_Emergency_contact, S.Emergency_contact_phone from Student_Class as SC,Student as S where\
                             SC.Class_id = (Select Class_id from Class where Class_name = '%s') \
                             and SC.Student_id = S.Student_id and SC.Class_finished <> 1 and \
-                            SC.Class_approval <> -1" % index.data())
+                            SC.Class_approval <> -1 ORDER BY S.Student_name" % index.data())
         while Student_query.next():
             self.ui.Student_info.append(str(Student_query.value(1)) + ',' + str(Student_query.value(0)) + ',' + str(Student_query.value(2)) +',' + str(Student_query.value(3)) +',' + str(Student_query.value(4)))
         model = QSqlQueryModel()

@@ -3,10 +3,11 @@ from PyQt4 import QtGui, QtCore
 from PyQt4.QtSql import *
 from Addstu import Ui_Addstu_window
 from Addstu_detail_dialog import Addstu_detail_dialog
+from refunds import refund
 
 class Addstu_window(QtGui.QMainWindow):
     def __init__(self, name = None):
-        QtGui.QMainWindow.__init__(self)
+        QtGui.QMainWindow.__init__(self)       
         self.ui = Ui_Addstu_window()
         self.ui.setupUi(self)
         self.conn() #need catch exeption
@@ -14,7 +15,7 @@ class Addstu_window(QtGui.QMainWindow):
         Addstu_query.exec_("Select Class_name from Class as C, Teacher_Class as\
                            TC, Teacher as T where T.Teacher_id = TC.Teacher_id and \
                            T.Teacher_id = (select Teacher_id from Account where User_name = \
-                           '%s') and TC.Class_id = C.Class_id" % name)
+                           '%s') and TC.Class_id = C.Class_id ORDER BY Class_name" % name)
         model = QSqlQueryModel()
         model.setQuery(Addstu_query)
         self.ui.Class_listView.setModel(model)
@@ -38,6 +39,9 @@ class Addstu_window(QtGui.QMainWindow):
                             Student_id = (Select Student_id from Student Where Student_name = \
                             '%s') and Class_id = (Select Class_id from Class where \
                             Class_name = '%s')" % (self.stu_name, self.class_name)):
+
+            refund(self.class_name, self.stu_name)
+            
             QtGui.QMessageBox.information(
                 self, 'Success', 'Remove student from class successfully')
      
@@ -52,7 +56,7 @@ class Addstu_window(QtGui.QMainWindow):
         Student_query.exec_("Select S.Student_name from Student_Class as SC,Student as S where\
                             SC.Class_id = (Select Class_id from Class where Class_name = '%s') \
                             and SC.Student_id = S.Student_id and SC.Class_finished <> 1 and \
-                            SC.Class_approval <> -1" % index.data())
+                            SC.Class_approval <> -1 ORDER BY S.Student_name" % index.data())
         self.class_name = index.data()
         model = QSqlQueryModel()
         model.setQuery(Student_query)      

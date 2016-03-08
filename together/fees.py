@@ -16,7 +16,7 @@ class fees(QtGui.QMainWindow):
         self.fee.remove_btn.setEnabled(False)
         self.description_query = QSqlQuery()
 
-        self.description_query.exec_("Select Fee_Description from One_Off_Fees")
+        self.description_query.exec_("Select Fee_Description from One_Off_Fees ORDER BY Fee_Description")
         self.model = QSqlQueryModel()
         self.model.setQuery(self.description_query)
         self.fee.descriptionListView.setModel(self.model)
@@ -26,6 +26,7 @@ class fees(QtGui.QMainWindow):
         self.fee.update_btn.clicked.connect(self.update)
         self.fee.remove_btn.clicked.connect(self.remove)
         self.fee.refresh_btn.clicked.connect(self.refresh_list)
+        self.fee.cancel_btn.clicked.connect(self.close)
         
 
     def show_information(self, index):

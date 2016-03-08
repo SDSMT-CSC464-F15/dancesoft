@@ -11,7 +11,7 @@ class class_reg_dialog(QtGui.QDialog):
         self.ui.setupUi(self)
         self.conn()
         Class_query = QSqlQuery()
-        Class_query.exec_("select Class_name from Class")
+        Class_query.exec_("select Class_name from Class ORDER BY Class_name")
         model = QSqlQueryModel()
         model.setQuery(Class_query)
         self.ui.class_listView.setModel(model)
@@ -47,7 +47,7 @@ class class_reg_dialog(QtGui.QDialog):
         Student_query.exec_("Select S.Student_name from Student_Class as SC,Student as S where\
                             SC.Class_id = (Select Class_id from Class where Class_name = '%s') \
                             and SC.Student_id = S.Student_id and SC.Class_finished <> 1 and \
-                            SC.Class_approval = 0" % index.data())
+                            SC.Class_approval = 0 ORDER BY S.Student_name" % index.data())
         
         self.class_name = index.data()
         model = QSqlQueryModel()

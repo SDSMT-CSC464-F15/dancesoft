@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'search.ui'
 #
-# Created: Mon Dec 28 00:21:35 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -53,6 +52,9 @@ class Ui_Search_MainWindow(object):
         self.Exact_search_cbox = QtGui.QCheckBox(self.centralwidget)
         self.Exact_search_cbox.setGeometry(QtCore.QRect(120, 50, 71, 41))
         self.Exact_search_cbox.setObjectName(_fromUtf8("Exact_search_cbox"))
+        self.Back_btn = QtGui.QPushButton(self.centralwidget)
+        self.Back_btn.setGeometry(QtCore.QRect(660, 560, 111, 23))
+        self.Back_btn.setObjectName(_fromUtf8("Back_btn"))
         Search_MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(Search_MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
@@ -73,4 +75,5 @@ class Ui_Search_MainWindow(object):
         self.Reset_search_btn.setText(_translate("Search_MainWindow", "Refresh", None))
         self.Detail_btn.setText(_translate("Search_MainWindow", "Detail", None))
         self.Exact_search_cbox.setText(_translate("Search_MainWindow", "Exact", None))
+        self.Back_btn.setText(_translate("Search_MainWindow", "Back", None))
 

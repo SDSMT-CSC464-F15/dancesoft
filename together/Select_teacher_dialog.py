@@ -11,6 +11,9 @@ class modify_Information(QtGui.QDialog):
         self.modify = Ui_modify_teacher()
         self.modify.setupUi(self)
 
+        self.Admin_id = 0
+        self.Teacher_id = 0
+
         self.conn()
 
         self.modify.sel_teach = QSqlRelationalTableModel(db = self.db)
@@ -39,7 +42,6 @@ class modify_Information(QtGui.QDialog):
         while existing_address_query.next():
             result = existing_address_query.record()
             temp_id =  int(result.value(0))
-        print("check ", temp_id)
 
         return temp_id
             
@@ -78,7 +80,7 @@ class modify_Information(QtGui.QDialog):
                              Teacher WHERE Teacher_address = Address_id AND Teacher_name = '%s'" % selected_teacher_name)
         while query.next():
             record = query.record()
-            self.Teacher_id = str(record.value(0))
+            self.Teacher_id = int(record.value(0))
             self.modify.nameLineEdit.setText(str(record.value(1)))
             self.modify.homePhoneLineEdit.setText(str(record.value(2)))
             if not isinstance(record.value(3), QtCore.QPyNullVariant):
@@ -103,6 +105,13 @@ class modify_Information(QtGui.QDialog):
             self.modify.medicalTextEdit.setText(str(record.value(10)))
             self.modify.DOBDateEdit.setDate(record.value(11))
 
+        if self.Teacher_id != 0:
+            query.exec("Select Admin_id From Account Where Teacher_id = %d" % self.Teacher_id)
+            if query.next():
+                record = query.record()
+                self.Admin_id = int(record.value(0))
+            
+
     def submitUpdates(self):
         self.name = self.modify.nameLineEdit.text()
         
@@ -121,10 +130,13 @@ class modify_Information(QtGui.QDialog):
             self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
         
         self.address = self.modify.addressLineEdit.text()
+        self.address.upper()
         self.city = self.modify.cityLineEdit.text()
+        self.address.upper()
         self.state = str(self.modify.stateComboBox.currentText())
         self.zip = self.modify.zipLineEdit.text()
         self.email = self.modify.emailLineEdit.text()
+        self.email.lower()
         self.gender = str(self.modify.genderComboBox.currentText())
         self.ssn = self.modify.SSNLineEdit.text()
         self.pay = self.modify.payRateDoubleSpinBox.value()
@@ -200,7 +212,6 @@ class modify_Information(QtGui.QDialog):
                          self.exist_msg, QtGui.QMessageBox.Ok)
 
                          self.address_id = self.address_exist
-                         print(self.address_id)
                 
                 elif self.address_reply == QtGui.QMessageBox.No:
                     self.update_query2 = QSqlQuery()
@@ -215,10 +226,25 @@ class modify_Information(QtGui.QDialog):
                                     Teacher_sex ='%s', Teacher_SSN ='%s', \
                                     Teacher_pay_rate ='%s', Teacher_medical_information ='%s',\
                                     Teacher_date_of_birth ='%s' WHERE \
-                                    Teacher_id ='%s'" \
-                                   %( self.name, self.home, self.cell, self.work, int(self.address_id), self.email, \
-                                   self.gender, self.ssn, self.pay, self.medical, self.DOB,\
+                                    Teacher_id =%d" \
+                                   %( self.name, self.home, self.cell, self.work, \
+                                      int(self.address_id), self.email, self.gender,\
+                                      self.ssn, self.pay, self.medical, self.DOB,\
                                       self.Teacher_id))
+                
+                if self.Admin_id != 0:
+                    update_query.exec_("Update Admin SET Admin_name ='%s', \
+                                    Admin_home_phone ='%s', Admin_cell_phone ='%s',\
+                                    Admin_work_phone ='%s', Admin_address = %d, Admin_email ='%s',\
+                                    Admin_sex ='%s', Admin_SSN ='%s', \
+                                    Admin_pay_rate ='%s', Admin_medical_information ='%s',\
+                                    Admin_date_of_birth ='%s' WHERE \
+                                    Admin_id =%d" \
+                                   %( self.name, self.home, self.cell, self.work, \
+                                      int(self.address_id), self.email,self.gender,\
+                                      self.ssn, self.pay, self.medical, self.DOB,\
+                                      self.Admin_id))
+                    
 
                 
         

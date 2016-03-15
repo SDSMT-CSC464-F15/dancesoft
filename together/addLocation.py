@@ -16,6 +16,7 @@ class addLocationDialog(QtGui.QDialog):
 
     def addLocation(self):
         self.newLocation = self.location.locationLineEdit.text()
+        self.newLocation.upper()
         self.accept()
 
     def getLocation(self):

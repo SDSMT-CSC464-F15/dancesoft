@@ -104,7 +104,6 @@ class assign_teacher(QtGui.QMainWindow):
 
     def Update_assign_teacher(self, teacher_index):
         if self.dialogbox_Flag == False:
-            print("Problem ")
             
             confirm_msg = "Are you sure you want to assign '%s' to teach '%s'" %(teacher_index.data(), self.selected_class)
             

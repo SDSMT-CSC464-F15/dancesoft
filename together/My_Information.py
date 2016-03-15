@@ -6,12 +6,13 @@ from PyQt4.QtSql import *
 import re
 
 class modify_My_Information(QtGui.QDialog):
-    def __init__(self):
+    def __init__(self, name):
         QtGui.QDialog.__init__(self)
         self.modify = Ui_modify_my_teacher()
         self.modify.setupUi(self)
 
-        self.name = "jwitmore"
+        self.name = name
+        self.Admin_id = 0
 
         self.conn()
 
@@ -33,7 +34,6 @@ class modify_My_Information(QtGui.QDialog):
         while existing_address_query.next():
             result = existing_address_query.record()
             temp_id =  int(result.value(0))
-        print("check ", temp_id)
 
         return temp_id
             
@@ -54,7 +54,7 @@ class modify_My_Information(QtGui.QDialog):
                             (select Teacher_id from Account where User_name = '%s')" % self.name)
         while query.next():
             record = query.record()
-            self.Teacher_id = str(record.value(0))
+            self.Teacher_id = int(record.value(0))
             self.modify.nameLineEdit.setText(str(record.value(1)))
             self.modify.homePhoneLineEdit.setText(str(record.value(2)))
             self.modify.cellPhoneLineEdit.setText(str(record.value(3)))
@@ -76,6 +76,12 @@ class modify_My_Information(QtGui.QDialog):
             self.modify.medicalTextEdit.setText(str(record.value(10)))
             self.modify.DOBDateEdit.setDate(record.value(11))
 
+            if self.Teacher_id != 0:
+                query.exec("Select Admin_id From Account Where Teacher_id = %d" % self.Teacher_id)
+                if query.next():
+                    record = query.record()
+                    self.Admin_id = int(record.value(0))
+
     def submit_updates(self):
         self.name = self.modify.nameLineEdit.text()
         
@@ -92,10 +98,13 @@ class modify_My_Information(QtGui.QDialog):
         self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
         
         self.address = self.modify.addressLineEdit.text()
+        self.address.upper()
         self.city = self.modify.cityLineEdit.text()
+        self.city.upper()
         self.state = str(self.modify.stateComboBox.currentText())
         self.zip = self.modify.zipLineEdit.text()
         self.email = self.modify.emailLineEdit.text()
+        self.email.lower()
         self.gender = str(self.modify.genderComboBox.currentText())
         self.ssn = self.modify.SSNLineEdit.text()
         self.medical = self.modify.medicalTextEdit.toPlainText()
@@ -185,10 +194,24 @@ class modify_My_Information(QtGui.QDialog):
                                     Teacher_sex ='%s', Teacher_SSN ='%s', \
                                     Teacher_medical_information ='%s',\
                                     Teacher_date_of_birth ='%s' WHERE \
-                                    Teacher_id ='%s'" \
+                                    Teacher_id = %d" \
                                    %( self.name, self.home, self.cell, self.work, int(self.address_id), self.email, \
                                    self.gender, self.ssn, self.medical, self.DOB,\
                                       self.Teacher_id))
+
+                if self.Admin_id != 0:
+                    update_query.exec_("Update Admin SET Admin_name ='%s', \
+                                    Admin_home_phone ='%s', Admin_cell_phone ='%s',\
+                                    Admin_work_phone ='%s', Admin_address = %d, Admin_email ='%s',\
+                                    Admin_sex ='%s', Admin_SSN ='%s', \
+                                    Admin_medical_information ='%s',\
+                                    Admin_date_of_birth ='%s' WHERE \
+                                    Admin_id =%d" \
+                                   %( self.name, self.home, self.cell, self.work, \
+                                      int(self.address_id), self.email,self.gender,\
+                                      self.ssn, self.medical, self.DOB,\
+                                      self.Admin_id))
+
 
                 
         

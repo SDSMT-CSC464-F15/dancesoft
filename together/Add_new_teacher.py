@@ -53,18 +53,19 @@ class add_teacher(QtGui.QDialog):
                 self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
           
             self.address = self.teacher.addressLineEdit.text()
+            self.address.upper()
             self.city = self.teacher.cityLineEdit.text()
+            self.city.upper()
             self.state = self.teacher.stateComboBox.currentText()
             self.zip = self.teacher.zipcodeLineEdit.text()
             self.email = self.teacher.emailLineEdit.text()
+            self.email.lower()
             self.gender = self.teacher.genderComboBox.currentText()
             self.SSN = self.teacher.SSNLineEdit.text()
             self.pay = self.teacher.payRateDoubleSpinBox.value()
             self.medical = self.teacher.medicalTextEdit.toPlainText()
             self.DOB = self.teacher.DOBDateEdit.date()
             self.DOB = self.DOB.toPyDate()
-            print(self.home, ' ', len(self.home))
-            print("test:",  re.match('^\d{5}(-\d{4})?$', self.zip))
 
             if self.name == '':
                 QtGui.QMessageBox.warning(

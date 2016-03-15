@@ -74,7 +74,9 @@ class Search_window(QtGui.QMainWindow):
         self.detail.StuEphone = self.detail.ui.Ephone_detail_lineEdit.text()
         self.detail.StuTuition = self.detail.ui.Tuition_detail_lineEdit.text()
         self.detail.StuAddress = self.detail.ui.Address_detail_lineEdit.text()
-        self.detail.StuCity = self.detail.ui.City_detail_lineEdit.text()    
+        self.detail.StuAddress.upper()
+        self.detail.StuCity = self.detail.ui.City_detail_lineEdit.text()
+        self.detail.StuCity.upper()
         self.detail.StuState = self.detail.ui.State_detail_lineEdit.text()
         self.detail.StuMedical = self.detail.ui.Medical_detail_textEdit.toPlainText()
 

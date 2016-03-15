@@ -12,6 +12,7 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.ui = Ui_Search_MainWindow()
         self.ui.setupUi(self)
 
+        self.Admin_id = 0
         
         self.conn() #need catch exception
         
@@ -52,12 +53,12 @@ class Search_teacher_window(QtGui.QMainWindow):
 
     def Teacherinfo_update(self):
         #TODO check input validity
-        #TODO Solve foreign key!!!!!!!!!!!!!!!
         
         self.detail.TeacherID = self.detail.ui.Id_detail_lineEdit.text()
         self.detail.TeacherName = self.detail.ui.Name_detail_lineEdit.text()      
         self.detail.TeacherGender = self.detail.ui.Gender_detail_lineEdit.text()   
         self.detail.TeacherEmail = self.detail.ui.Email_detail_lineEdit.text()
+        self.detail.TeacherEmail.lower()
         self.detail.TeacherBirth = self.detail.ui.Birth_detail_dateEdit.date()  
         self.detail.TeacherHomePhone = self.detail.ui.Homephone_detail_lineEdit.text()
         self.detail.TeacherCellPhone = self.detail.ui.Cellphone_detail_lineEdit.text()  
@@ -66,12 +67,22 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.detail.TeacherPay = self.detail.ui.Payrate_detail_lineEdit.text()
         self.detail.TeacherZipcode = self.detail.ui.Zipcode_detail_lineEdit.text()
         self.detail.TeacherAddress = self.detail.ui.Address_detail_lineEdit.text()
-        self.detail.TeacherCity = self.detail.ui.City_detail_lineEdit.text()    
+        self.detail.TeacherAddress.upper()
+        self.detail.TeacherCity = self.detail.ui.City_detail_lineEdit.text()
+        self.detail.TeacherCity.upper()
         self.detail.TeacherState = self.detail.ui.State_detail_lineEdit.text()
         self.detail.TeacherMedical = self.detail.ui.Medical_detail_textEdit.toPlainText()
 
 
+        
+
         update_query = QSqlQuery()
+
+        update_query.exec("Select Admin_id From Account Where Teacher_id = '%d'" % self.detail.TeacherID)
+            if query.next():
+                record = query.record()
+                self.Admin_id = int(record.value(0))
+        
 
         if update_query.exec_("Update Teacher, Address set Teacher.Teacher_name = '%s', Teacher.Teacher_sex = '%s',\
                             Teacher.Teacher_email = '%s', Teacher.Teacher_date_of_birth = '%s', \
@@ -84,6 +95,20 @@ class Search_teacher_window(QtGui.QMainWindow):
                            self.detail.TeacherWorkPhone,self.detail.TeacherSSN,self.detail.TeacherPay, self.detail.TeacherZipcode,\
                            self.detail.TeacherAddress, self.detail.TeacherCity, self.detail.TeacherState, self.detail.TeacherMedical,\
                            int(self.detail.TeacherID), int(self.detail.Address_id))):
+            if self.Admin_id != 0:
+                update_query.exec_("Update Admin, Address set Admin.Admin_name = '%s', Admin.Admin_sex = '%s',\
+                            Admin.Admin_email = '%s', Admin.Admin_date_of_birth = '%s', \
+                            Admin.Admin_home_phone = '%s', Admin.Admin_cell_phone = '%s',\
+                            Admin.Admin_work_phone = '%s', Admin.Admin_SSN = '%s', Admin.Admin_pay_rate = '%s',\
+                            Address.Zipcode = '%s', Address.Street = '%s', Address.City = '%s', Address.State = '%s', \
+                            Admin.Admin_medical_information = '%s' where Admin.Admin_id = '%d' and Address.Address_id = '%d'"\
+                           % (self.detail.TeacherName, self.detail.TeacherGender, \
+                           self.detail.TeacherEmail,self.detail.TeacherBirth, self.detail.TeacherHomePhone, self.detail.TeacherCellPhone,\
+                           self.detail.TeacherWorkPhone,self.detail.TeacherSSN,self.detail.TeacherPay, self.detail.TeacherZipcode,\
+                           self.detail.TeacherAddress, self.detail.TeacherCity, self.detail.TeacherState, self.detail.TeacherMedical,\
+                           int(self.Admin_id), int(self.detail.Address_id))):
+
+                
             QtGui.QMessageBox.information(
                 self.detail, 'Success', 'Update record successfully')
             self.reset_table()

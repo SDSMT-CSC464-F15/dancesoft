@@ -10,7 +10,7 @@ class Role_window(QtGui.QMainWindow):
         QtGui.QMainWindow.__init__(self)
         self.ui = Ui_Role_window()
         self.ui.setupUi(self)
-        self.conn() #need cathch exeption
+        self.conn() #need catch exeption
         Class_query = QSqlQuery()
         Class_query.exec_("Select Class_name from Class as C, Teacher_Class as\
                            TC, Teacher as T where T.Teacher_id = TC.Teacher_id and \

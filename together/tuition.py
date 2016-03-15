@@ -36,7 +36,6 @@ class tuition(QtGui.QMainWindow):
 
     def show_information(self, index):
         self.selected_decription = index.data()
-        print(self.selected_decription)
         
         self.show_query = QSqlQuery()
         self.show_query.exec_("Select Tuition_Rate, Tuition_Time from Tuition_Rates\

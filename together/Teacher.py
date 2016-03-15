@@ -48,7 +48,7 @@ class Teacher_window(QtGui.QMainWindow):
         self.ui.reset_password.show()
 
     def update_teacher(self):
-        self.ui.my_info = modify_My_Information()
+        self.ui.my_info = modify_My_Information(self.ui.name)
         self.ui.my_info.show()
         
     def roll_sheet(self):

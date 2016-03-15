@@ -35,7 +35,7 @@ class class_search_dialog(QtGui.QDialog):
                             Class_name = '%s')" % (index, self.stu_name, self.class_name)):
             QtGui.QMessageBox.information(
                 self, 'Success', '%s student successfully' % message)
-        print (self.selected_row)
+            
         self.ui.student_listView.setRowHidden(self.selected_row, True)
 
     def show_student(self, index):

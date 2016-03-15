@@ -41,7 +41,6 @@ class add_admin(QtGui.QDialog):
         while existing_address_query.next():
             result = existing_address_query.record()
             temp_id =  int(result.value(0))
-        print("check ", temp_id)
 
         return temp_id
 
@@ -98,18 +97,19 @@ class add_admin(QtGui.QDialog):
                 self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
       
             self.address = self.admin.addressLineEdit.text()
+            self.address.upper()
             self.city = self.admin.cityLineEdit.text()
+            self.city.upper()
             self.state = self.admin.stateComboBox.currentText()
             self.zip = self.admin.zipcodeLineEdit.text()
             self.email = self.admin.emailLineEdit.text()
+            self.email.lower()
             self.gender = self.admin.genderComboBox.currentText()
             self.SSN = self.admin.SSNLineEdit.text()
             self.pay = self.admin.payRateDoubleSpinBox.value()
             self.medical = self.admin.medicalTextEdit.toPlainText()
             self.DOB = self.admin.DOBDateEdit.date()
             self.DOB = self.DOB.toPyDate()
-            print(self.home, ' ', len(self.home))
-            print("test:",  re.match('^\d{5}(-\d{4})?$', self.zip))
 
             if self.name == '':
                 QtGui.QMessageBox.warning(
@@ -203,10 +203,8 @@ class add_admin(QtGui.QDialog):
             id_query.exec_("SELECT User_id FROM Account ORDER BY User_id DESC LIMIT 1")
             while id_query.next():
                 result = id_query.record()
-                print("record: ",result.value(0))
                 user_id = result.value(0)
                 user_id += 1
-                print("User id: ",user_id)
 
             username = self.admin.nameLineEdit.text()
             pword = "rcdancearts"
@@ -214,8 +212,6 @@ class add_admin(QtGui.QDialog):
             stu_id = 0
             teach_id = 0
 
-            print("test: ",int(user_id), username, pword, access, stu_id, \
-                             teach_id, int(self.admin_id)) 
 
             new_query = QSqlQuery()
             new_query.exec_("Insert into Account (User_id, User_name, User_password,\

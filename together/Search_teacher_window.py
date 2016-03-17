@@ -79,9 +79,9 @@ class Search_teacher_window(QtGui.QMainWindow):
         update_query = QSqlQuery()
 
         update_query.exec("Select Admin_id From Account Where Teacher_id = '%d'" % self.detail.TeacherID)
-            if query.next():
-                record = query.record()
-                self.Admin_id = int(record.value(0))
+        if query.next():
+            record = query.record()
+            self.Admin_id = int(record.value(0))
         
 
         if update_query.exec_("Update Teacher, Address set Teacher.Teacher_name = '%s', Teacher.Teacher_sex = '%s',\
@@ -106,7 +106,7 @@ class Search_teacher_window(QtGui.QMainWindow):
                            self.detail.TeacherEmail,self.detail.TeacherBirth, self.detail.TeacherHomePhone, self.detail.TeacherCellPhone,\
                            self.detail.TeacherWorkPhone,self.detail.TeacherSSN,self.detail.TeacherPay, self.detail.TeacherZipcode,\
                            self.detail.TeacherAddress, self.detail.TeacherCity, self.detail.TeacherState, self.detail.TeacherMedical,\
-                           int(self.Admin_id), int(self.detail.Address_id))):
+                           int(self.Admin_id), int(self.detail.Address_id)))
 
                 
             QtGui.QMessageBox.information(

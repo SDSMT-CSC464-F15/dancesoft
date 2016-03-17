@@ -93,12 +93,14 @@ The prorated refunds code will keep track of how much a class costed a student. 
 This page needed to undergo changes after meeting with client. The new version will allow a teacher to log their in class hours, office hours, trip hours, etc. These hours will then be paid out at their different rates respectfully. The hours will be logged as single numbers not by days or weeks. This function is now completed
 
 \section{Enter Teacher Wages}
-This was handled in the database in previous sprints assuming one pay rate. However in talks with the client the academy pays different pay rates based on what part of academy work they are doing. So the page will need to be updated once the list of possible pay rates have been provided by the client. This pages and its updates are still in progress. 
+This was handled in the database in previous sprints assuming one pay rate. However in talks with the client the academy pays different pay rates based on what part of academy work they are doing. So the page will need to be updated once the list of possible pay rates have been provided by the client. This pages and its updates are still in progress. \\
+
+\includegraphics[scale=0.5]{payRates.png}
 
 \section{Enter Tuition Rates and Fees}
-Updated these pages to provide quality of life updates to the function requested by the client.
+Updated these pages to provide quality of life updates to the function requested by the client.\\
 
-\includegraphics[scale=0.5]{tuitionRates.png}
+\includegraphics[scale=0.5]{feeDialog.png}
 
 \section{Bug Fixes}
 During the course of testing and the client meeting some bugs or inconsistencies were discovered within the project. The bugs found and fixed are:
@@ -112,29 +114,28 @@ During the course of testing and the client meeting some bugs or inconsistencies
 \item Forms seem to be bugged at times, however can not recreate bug. Status: In testing possibly fixed.  
 \end{enumerate}
 
-\includegraphics[scale=0.5]{teacherHistory.png}
-
 \section{Updates Crossover}
 One of the updates that needed to be completed this sprint was the need for admin and teacher updates to crossover if something was changed. This means that if someone is an admin and they update there phone number through the "update my information form" then the phone number will be updated in both the teacher table and the admin table. This way the system will not have conflicting information in different places. 
 
 \section{Approved/Rejected Student Updates}
 A update requested by the client was the ability to see rejected students in the approved/rejected pages just in case the academy changed its mind about a student. The page underwent slight modifications to the way information was displayed to make this change efficiently\\
 
-\includegraphics[scale=0.5]{payment.png}
+\includegraphics[scale=0.5]{newAddStudent.png}
 
 \section{Admin List}
 In creating some of the updates it became clear that a specific admin list was needed to see who had admin access to the system. This was done through a simple list view of the names that can then be selected to display more detailed information.\\
-\includegraphics[scale=0.5]{invoice.png}
+
 
 \section{Add/Remove Locations}
 Another requested feature was the ability to add and remove locations for classes in the database. This feature is necessary because the academy sometimes teaches classes in different places based on need. The team accomplished this using a simple dialog that connects to the location table in the database. When the user updates or adds a new class the location combo box provides a list of locations in the database and an add location option.\\
 
-\includegraphics[scale=0.5]{enterPayment.png}
+\includegraphics[scale=0.5]{newLocation.png}
 
 
 \section{Removal Functions}
-These are simple functions that pull up a dialog box where the user can select a name and remove all the information related to that user from the system. The removal functions that exist in the system are: teacher, admin, student, and class. Teacher will remove that persons information from the system. Admin removes that persons admin rights and then ask if the whole user should be removed.
+These are simple functions that pull up a dialog box where the user can select a name and remove all the information related to that user from the system. The removal functions that exist in the system are: teacher, admin, student, and class. Teacher will remove that persons information from the system. Admin removes that persons admin rights and then ask if the whole user should be removed.\\
 
+\includegraphics[scale=0.5]{removal.png}
 
 \section{Sprint 5 Issues}
 Some issues that were encountered during this sprint were:

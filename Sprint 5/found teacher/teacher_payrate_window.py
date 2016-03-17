@@ -2,6 +2,7 @@ import sys
 from PyQt4 import QtGui
 from teacher_payrate import Ui_Teacher_payrate
 from PyQt4.QtSql import *
+from teacher_payrate_dialog import Teacher_payrate_dialog
 
 class Teacher_payrate_window(QtGui.QMainWindow):
     def __init__(self):
@@ -28,7 +29,10 @@ class Teacher_payrate_window(QtGui.QMainWindow):
         self.ui.Teacher_listView.setModel(model)
         
     def print_history(self):
-        self.ui.history = Teacher_history_dialog(self.ui.name)
+        Teacher_query = QSqlQuery()
+        Teacher_query.exec_("select Teacher_id from Teacher where Teacher_name = '%s'" % self.ui.name)
+        Teacher_query.next()
+        self.ui.history = Teacher_payrate_dialog(int(Teacher_query.value(0)))
         self.ui.history.show()
         
     def select_teacher(self, index):

@@ -4,11 +4,10 @@ from teacher_payrate_detial import Ui_teacher_payrate_dialog
 from PyQt4.QtSql import *
 
 class Teacher_payrate_dialog(QtGui.QDialog):
-    def __init__(self, id = 1):
+    def __init__(self, id):
         QtGui.QDialog.__init__(self)
         self.ui = Ui_teacher_payrate_dialog()
         self.ui.setupUi(self)
-        self.conn()
         self.id_number = id;
 
         #store payrate
@@ -27,7 +26,6 @@ class Teacher_payrate_dialog(QtGui.QDialog):
             self.ui.Payrate_update_lineEdit.setText(str(self.payrate_dict[str(self.ui.Payname_comboBox.currentText())]))  
         self.ui.Update_btn.clicked.connect(self.update)
         self.ui.Payname_comboBox.currentIndexChanged.connect(self.update_text)
-        self.ui.Print_btn.clicked.connect(self.print_rate)
 
 
     def update_text(self):
@@ -72,16 +70,4 @@ class Teacher_payrate_dialog(QtGui.QDialog):
         else:
             QtGui.QMessageBox.information(self, 'fail', 'Fail!')
     
-        
-    def conn(self):
-        self.db = QSqlDatabase.addDatabase("QMYSQL")
-        self.db.setHostName("services1.mcs.sdsmt.edu")
-        self.db.setDatabaseName("db_dancesoft_f15")
-        self.db.setUserName("dancesoft_f15")
-        self.db.setPassword("DanceSoft")
-        return self.db.open()
 
-app = QtGui.QApplication(sys.argv)
-window = Teacher_payrate_dialog()
-window.show()
-sys.exit(app.exec_())

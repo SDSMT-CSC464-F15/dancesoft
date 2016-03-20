@@ -63,7 +63,7 @@ class Teacher_payrate_dialog(QtGui.QDialog):
             insert_query.exec("SELECT LAST_INSERT_ID()")
             insert_query.next()
             payrate_id = insert_query.value(0)
-            if insert_query.exec("insert into Teacher_Payrate values ('%s', '%s')" %(self.id_number, payrate_id)):
+            if insert_query.exec("insert into Teacher_Payrate values ('%s', '%s', 0)" %(self.id_number, payrate_id)):
                 QtGui.QMessageBox.information(self, 'success', 'Success!')
             else:
                 QtGui.QMessageBox.information(self, 'fail', 'Fail!')

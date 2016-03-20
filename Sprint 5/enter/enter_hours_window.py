@@ -12,7 +12,6 @@ class Enter_hours_window(QtGui.QMainWindow):
         self.ui.setupUi(self)
         self.conn()
 
-        
         Teacher_query = QSqlQuery()
         Teacher_query.exec_("select Teacher_name from Teacher")
         model = QSqlQueryModel()

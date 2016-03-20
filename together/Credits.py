@@ -61,8 +61,8 @@ class Ui_Credits(object):
 
     def retranslateUi(self, Credits):
         Credits.setWindowTitle(_translate("Credits", "MainWindow", None))
-        self.creditLabel.setText(_translate("Credits", "Apply Credit", None))
+        self.creditLabel.setText(_translate("Credits", "Update Credit", None))
         self.back_btn.setText(_translate("Credits", "Back", None))
         self.studentLabel.setText(_translate("Credits", "Select a Student", None))
-        self.apply_btn.setText(_translate("Credits", "Apply Credit", None))
+        self.apply_btn.setText(_translate("Credits", "Apply", None))
 

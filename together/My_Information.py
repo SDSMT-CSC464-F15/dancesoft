@@ -86,25 +86,43 @@ class modify_My_Information(QtGui.QDialog):
         self.name = self.modify.nameLineEdit.text()
         
         self.home = self.modify.homePhoneLineEdit.text()
-        self.home = re.sub('[^0-9]+', '', self.home)
-        self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.home[:-1])) + self.home[-1]
+        try:
+            self.home = re.sub('[^0-9]+', '', self.home)
+            self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.home[:-1])) + self.home[-1]
+            
+        except ValueError:
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
+            return
         
         self.cell = self.modify.cellPhoneLineEdit.text()
-        self.cell = re.sub('[^0-9]+', '', self.cell)
-        self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
+        try:
+            self.cell = re.sub('[^0-9]+', '', self.cell)
+            self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
+
+        except ValueError:
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please enter vaild cell phone.\nPhone number format: ###-###-####" )
+            return
         
         self.work = self.modify.workPhoneLineEdit.text()
-        self.work = re.sub('[^0-9]+', '', self.work)
-        self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
+        try:
+            self.work = re.sub('[^0-9]+', '', self.work)
+            self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
+
+        except ValueError:
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please enter vaild work phone.\nPhone number format: ###-###-####" )
+            return
         
         self.address = self.modify.addressLineEdit.text()
-        self.address.upper()
+        self.address = self.address.upper()
         self.city = self.modify.cityLineEdit.text()
-        self.city.upper()
+        self.city = self.city.upper()
         self.state = str(self.modify.stateComboBox.currentText())
         self.zip = self.modify.zipLineEdit.text()
         self.email = self.modify.emailLineEdit.text()
-        self.email.lower()
+        self.email = self.email.lower()
         self.gender = str(self.modify.genderComboBox.currentText())
         self.ssn = self.modify.SSNLineEdit.text()
         self.medical = self.modify.medicalTextEdit.toPlainText()
@@ -116,15 +134,15 @@ class modify_My_Information(QtGui.QDialog):
                 self, 'Error', "Please fill in required fields: Name, House Phone, Address, City, State, Gender, and Social security number(SSN).\
                 \nPhone number format: ###-###-#### \nAddress format: #'s Street \nSNN format: ###-##-####" )
             
-        elif self.home == '' or len(self.home) < 10:
+        elif self.home == '' or (len(self.home) < 10 or len(self.home) > 12):
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
             
-        elif self.cell != '' and len(self.cell) < 10:
+        elif self.cell != '' and (len(self.cell) < 10 or len(self.cell) > 12):
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
             
-        elif self.work != '' and len(self.work) < 10:
+        elif self.work != '' and (len(self.work) < 10 or len(self.work) > 12):
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
 
@@ -179,7 +197,6 @@ class modify_My_Information(QtGui.QDialog):
                          self.exist_msg, QtGui.QMessageBox.Ok)
 
                          self.address_id = self.address_exist
-                         print(self.address_id)
                 
                 elif self.address_reply == QtGui.QMessageBox.No:
                     self.update_query2 = QSqlQuery()

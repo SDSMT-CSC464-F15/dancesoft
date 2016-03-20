@@ -116,27 +116,46 @@ class modify_Information(QtGui.QDialog):
         self.name = self.modify.nameLineEdit.text()
         
         self.home = self.modify.homePhoneLineEdit.text()
-        self.home = re.sub('[^0-9]+', '', self.home)
-        self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.home[:-1])) + self.home[-1]
+        try:
+            self.home = re.sub('[^0-9]+', '', self.home)
+            self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" \
+                               % int(self.home[:-1])) + self.home[-1]
+            
+        except ValueError:
+                QtGui.QMessageBox.warning(
+                    self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
+                return
         
         self.cell = self.modify.cellPhoneLineEdit.text()
-        if self.cell != '': 
-            self.cell = re.sub('[^0-9]+', '', self.cell)
-            self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
+        try:
+            if self.cell != '': 
+                self.cell = re.sub('[^0-9]+', '', self.cell)
+                self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" \
+                                   % int(self.cell[:-1])) + self.cell[-1]
+        except ValueError:
+                QtGui.QMessageBox.warning(
+                    self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
+                return
         
         self.work = self.modify.workPhoneLineEdit.text()
-        if self.work != '':
-            self.work = re.sub('[^0-9]+', '', self.work)
-            self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
+        try:
+            if self.work != '':
+                self.work = re.sub('[^0-9]+', '', self.work)
+                self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" \
+                                   % int(self.work[:-1])) + self.work[-1]
+        except ValueError:
+                QtGui.QMessageBox.warning(
+                    self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
+                return
         
         self.address = self.modify.addressLineEdit.text()
-        self.address.upper()
+        self.address = self.address.upper()
         self.city = self.modify.cityLineEdit.text()
-        self.address.upper()
+        self.city = self.city.upper()
         self.state = str(self.modify.stateComboBox.currentText())
         self.zip = self.modify.zipLineEdit.text()
         self.email = self.modify.emailLineEdit.text()
-        self.email.lower()
+        self.email = self.email.lower()
         self.gender = str(self.modify.genderComboBox.currentText())
         self.ssn = self.modify.SSNLineEdit.text()
         self.pay = self.modify.payRateDoubleSpinBox.value()

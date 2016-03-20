@@ -11,16 +11,16 @@ class Print_window(QtGui.QWidget):
 
         html = '<p><center><font size="6">Attandence Sheet</font></center></p>'
         
-        html += '<table cellpadding="5" border="1" cellspacing = "2" style = "border:1px black;font-size: 17px;">\
+        html += '<table cellpadding="5" border="1" cellspacing = "2" style = "border:1px black;font-size: 12px;">\
                             <tr>\
                                 <td>ID</td>\
                                 <td>Name</td>\
                                 <td>Home Phone</td>\
                                 <td>Emergency Contact</td>\
                                 <td>Emergency Phone</td>\
-                                <th colspan="3">    Month 1   </th>\
-                                <th colspan="3">    Month 2   </th>\
-                                <th colspan="3">    Month 3   </th>\
+                                <th colspan="5">    Month 1   </th>\
+                                <th colspan="5">    Month 2   </th>\
+                                <th colspan="5">    Month 3   </th>\
                             </tr>'
         
         for i in text_msg:

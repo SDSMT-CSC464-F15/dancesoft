@@ -31,35 +31,53 @@ class add_teacher(QtGui.QDialog):
         while existing_address_query.next():
             result = existing_address_query.record()
             temp_id =  int(result.value(0))
-        print("check ", temp_id)
 
         return temp_id
 
     def insert_teacher(self):
             self.name = self.teacher.nameLineEdit.text()
+            
             self.home = self.teacher.homePhoneLineEdit.text()
-            if self.home != '':
-                self.home = re.sub('[^0-9]+', '', self.home)
-                self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.home[:-1])) + self.home[-1]
+            try:
+                if self.home != '':
+                    self.home = re.sub('[^0-9]+', '', self.home)
+                    self.home = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" \
+                                       % int(self.home[:-1])) + self.home[-1]
+            except ValueError:
+                QtGui.QMessageBox.warning(
+                    self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
+                return
      
             self.cell = self.teacher.cellPhoneLineEdit.text()
-            if self.cell != '':
-                self.cell = re.sub('[^0-9]+', '', self.cell)
-                self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.cell[:-1])) + self.cell[-1]
+            try:
+                if self.cell != '':
+                    self.cell = re.sub('[^0-9]+', '', self.cell)
+                    self.cell = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" \
+                                       % int(self.cell[:-1])) + self.cell[-1]
+            except ValueError:
+                QtGui.QMessageBox.warning(
+                    self, 'Error', "Please enter vaild cell phone number.\nPhone number format: ###-###-####" )
+                return
          
             self.work = self.teacher.workPhoneLineEdit.text()
-            if self.work != '':
-                self.work = re.sub('[^0-9]+', '', self.work)
-                self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(self.work[:-1])) + self.work[-1]
+            try:
+                if self.work != '':
+                    self.work = re.sub('[^0-9]+', '', self.work)
+                    self.work = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" \
+                                       % int(self.work[:-1])) + self.work[-1]
+            except ValueError:
+                QtGui.QMessageBox.warning(
+                    self, 'Error', "Please enter vaild work phone.\nPhone number format: ###-###-####" )
+                return
           
             self.address = self.teacher.addressLineEdit.text()
-            self.address.upper()
+            self.address = self.address.upper()
             self.city = self.teacher.cityLineEdit.text()
-            self.city.upper()
+            self.city = self.city.upper()
             self.state = self.teacher.stateComboBox.currentText()
             self.zip = self.teacher.zipcodeLineEdit.text()
             self.email = self.teacher.emailLineEdit.text()
-            self.email.lower()
+            self.email = self.email.lower()
             self.gender = self.teacher.genderComboBox.currentText()
             self.SSN = self.teacher.SSNLineEdit.text()
             self.pay = self.teacher.payRateDoubleSpinBox.value()
@@ -78,11 +96,11 @@ class add_teacher(QtGui.QDialog):
                 
             elif self.cell != '' and len(self.cell) < 10 or len(self.cell) > 12:
                 QtGui.QMessageBox.warning(
-                    self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
+                    self, 'Error', "Please enter vaild cell phone number.\nPhone number format: ###-###-####" )
                 
             elif self.work != '' and len(self.work) < 10 or len(self.work) > 12:
                 QtGui.QMessageBox.warning(
-                    self, 'Error', "Please enter vaild phone number.\nPhone number format: ###-###-####" )
+                    self, 'Error', "Please enter vaild work phone.\nPhone number format: ###-###-####" )
 
             elif self.address == '' or len(self.address) < 5:
                 QtGui.QMessageBox.warning(
@@ -132,7 +150,6 @@ class add_teacher(QtGui.QDialog):
                         self.exist_msg, QtGui.QMessageBox.Ok)
 
                         self.address_id = self.address_exist
-                        print(self.address_id)
                          
                     self.id_query =QSqlQuery()
                     self.id_query.exec_("SELECT Teacher_id FROM Teacher ORDER BY Teacher_id DESC LIMIT 1")
@@ -140,7 +157,6 @@ class add_teacher(QtGui.QDialog):
                         self.record = self.id_query.record()
                         self.Teacher_id = self.record.value(0)
                         self.Teacher_id += 1
-                        print(self.Teacher_id)
 
                     
                     Insert_Teacher_query = QSqlQuery()
@@ -160,10 +176,8 @@ class add_teacher(QtGui.QDialog):
         id_query.exec_("SELECT User_id FROM Account ORDER BY User_id DESC LIMIT 1")
         while id_query.next():
             result = id_query.record()
-            print("record: ",result.value(0))
             user_id = result.value(0)
             user_id += 1
-            print("User id: ",user_id)
 
             username = self.name
             pword = "rcdancearts"

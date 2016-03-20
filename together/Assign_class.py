@@ -21,7 +21,7 @@ class assign_teacher(QtGui.QMainWindow):
         self.assign.sel_teach.setTable("Class")
 
         self.class_query = QSqlQuery()
-        self.class_query.exec_("Select Class_name FROM Class ORDER BY Class_id")
+        self.class_query.exec_("Select Class_name FROM Class ORDER BY Class_name")
         self.class_result = QSqlQueryModel()
         self.class_result.setQuery(self.class_query)
         self.assign.Class_listView.setModel(self.class_result)
@@ -85,22 +85,29 @@ class assign_teacher(QtGui.QMainWindow):
             self.assign.Teacher_listView.clicked.connect(self.assign_teacher)
 
     def assign_teacher(self, teacher_index):
-        
-        confirm_msg = "Are you sure you want to assign '%s' to teach '%s'" %(teacher_index.data(), self.selected_class)
-        
-        reply = QtGui.QMessageBox.question(self, 'Confirm', 
-                confirm_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
-        if reply == QtGui.QMessageBox.Yes:
-                get_data_query = QSqlQuery()
-                get_data_query.exec("Select Teacher_id, Class_id FROM Teacher, Class WHERE Teacher_name = '%s' AND Class_name = '%s'" % (teacher_index.data(), self.selected_class) )
-                
-                get_data_query.next()
-                self.teacher_rec = get_data_query.value(0)
-                self.class_rec = get_data_query.value(1)
-                
-                #assign teacher query
-                assign_teach_query = QSqlQuery()
-                assign_teach_query.exec("INSERT INTO Teacher_Class Values('%s','%s')" %(self.teacher_rec, self.class_rec))
+        if self.dialogbox_Flag == False:
+            confirm_msg = "Are you sure you want to assign '%s' to teach '%s'"\
+                          %(teacher_index.data(), self.selected_class)
+            
+            reply = QtGui.QMessageBox.question(self, 'Confirm', 
+                    confirm_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
+            if reply == QtGui.QMessageBox.Yes:
+                    get_data_query = QSqlQuery()
+                    get_data_query.exec("Select Teacher_id, Class_id, Current_term FROM \
+                                         Teacher, Class, System WHERE Teacher_name \
+                                         = '%s' AND Class_name = '%s' AND System_id = 1;" % (teacher_index.data(), self.selected_class) )
+                    
+                    if get_data_query.next():
+                        record = get_data_query.record()
+                        self.teacher_rec = int(record.value(0))
+                        self.class_rec = int(record.value(1))
+                        self.current_term = str(record.value(2))
+                    
+                        #assign teacher query
+                        assign_teach_query = QSqlQuery()
+                        assign_teach_query.exec("INSERT INTO Teacher_Class Values(%d,%d,'%s')"\
+                                                %(self.teacher_rec, self.class_rec, self.current_term))
+            self.dialogbox_Flag = True
 
     def Update_assign_teacher(self, teacher_index):
         if self.dialogbox_Flag == False:
@@ -114,13 +121,14 @@ class assign_teacher(QtGui.QMainWindow):
                     get_data_query = QSqlQuery()
                     get_data_query.exec("Select Teacher_id, Class_id FROM Teacher, Class WHERE Teacher_name = '%s' AND Class_name = '%s'" % (teacher_index.data(), self.selected_class) )
                     
-                    get_data_query.next()
-                    self.teacher_rec = get_data_query.value(0)
-                    self.class_rec = get_data_query.value(1)
+                    if get_data_query.next():
+                        record = get_data_query.record()
+                        self.teacher_rec = int(record.value(0))
+                        self.class_rec = int(record.value(1))
                     
-                    #assign teacher query
-                    assign_teach_query = QSqlQuery()
-                    assign_teach_query.exec("Update Teacher_Class SET Teacher_id = '%s' WHERE Class_id = '%s'" %(self.teacher_rec, self.class_rec))
+                        #assign teacher query
+                        assign_teach_query = QSqlQuery()
+                        assign_teach_query.exec("Update Teacher_Class SET Teacher_id = %d WHERE Class_id = %d" %(self.teacher_rec, self.class_rec))
             self.dialogbox_Flag = True
 
 

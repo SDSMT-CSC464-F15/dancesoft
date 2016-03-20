@@ -31,7 +31,14 @@ class password_window(QtGui.QDialog):
             self.ui.userLineEdit.clear()
             self.ui.passwordLineEdit.clear()
             self.ui.confirmLineEdit.clear()
-            
+
+        elif self.input_pass == "":
+            QtGui.QMessageBox.warning(
+                self, 'Error', "Please enter a new password")
+            self.ui.userLineEdit.clear()
+            self.ui.passwordLineEdit.clear()
+            self.ui.confirmLineEdit.clear()
+        
         elif self.input_name != self.name:
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter your username")

@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Apply Credit</string>
+     <string>Update Credit</string>
     </property>
    </widget>
    <widget class="QPushButton" name="back_btn">
@@ -73,7 +73,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Apply Credit</string>
+     <string>Apply</string>
     </property>
    </widget>
    <widget class="QDoubleSpinBox" name="creditDoubleSpinBox">

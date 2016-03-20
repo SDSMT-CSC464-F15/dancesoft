@@ -13,7 +13,7 @@ class discounts(QtGui.QMainWindow):
 
         #query to fill student list
         self.student_query = QSqlQuery()
-        self.student_query.exec_("Select Student_name from Student")
+        self.student_query.exec_("Select Student_name from Student order by Student_name")
 
         #set up sql model to display results of the query to the list view widget
         self.model = QSqlQueryModel()
@@ -67,6 +67,9 @@ class discounts(QtGui.QMainWindow):
             self.apply_query.exec_("Insert into Credits (Credit_id, Student_id,\
                                 Credit_amount) values(%d,%d,%f)" % (self.creditId,\
                                 self.studentId, self.newCredit))
+        self.default_msg = "Student Credit Updated"
+        self.default_reply = QtGui.QMessageBox.information(self, 'Credit Changed', 
+                        self.default_msg, QtGui.QMessageBox.Ok)
 
     
     def showStudentInformation(self,index):

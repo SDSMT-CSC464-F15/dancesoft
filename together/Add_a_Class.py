@@ -57,7 +57,7 @@ class add_Class(QtGui.QMainWindow):
             self.add_location()
             if self.closeFlag != 0:
                 return
-            if self.location == "Add New Location":
+            if self.location == "Add New Location" or self.location == '':
                 return
         
         self.cap = self.ui.Cap_spinBox.value()

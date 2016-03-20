@@ -8,7 +8,7 @@ class addLocationDialog(QtGui.QDialog):
         QtGui.QDialog.__init__(self)
         self.location = Ui_locationDialog()
         self.location.setupUi(self)
-        closeFlag = 0
+        self.closeFlag = 0
 
         self.location.ok_btn.clicked.connect(self.addLocation)
         self.location.cancel_btn.clicked.connect(self.setClose)
@@ -16,7 +16,7 @@ class addLocationDialog(QtGui.QDialog):
 
     def addLocation(self):
         self.newLocation = self.location.locationLineEdit.text()
-        self.newLocation.upper()
+        self.newLocation = self.newLocation.upper()
         self.accept()
 
     def getLocation(self):

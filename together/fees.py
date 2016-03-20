@@ -65,6 +65,8 @@ class fees(QtGui.QMainWindow):
         self.model = QSqlQueryModel()
         self.model.setQuery(self.description_query)
         self.fee.descriptionListView.setModel(self.model)
+        self.fee.update_btn.setEnabled(False)
+        self.fee.remove_btn.setEnabled(False)
 
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")

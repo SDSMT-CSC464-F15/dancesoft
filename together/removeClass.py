@@ -45,7 +45,7 @@ class removeClass(QtGui.QDialog):
 
             self.message = "Class Removed"
             
-            self.confirmReply = QtGui.QMessageBox.information(self, 'Message', 
+            self.confirmReply = QtGui.QMessageBox.information(self, 'Class Removed', 
                 self.message)
 
     def conn(self):

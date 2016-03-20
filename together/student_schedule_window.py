@@ -24,7 +24,7 @@ class Student_schedule_window(QtGui.QMainWindow):
     def search_student(self):
         input_Student_name = self.ui.Student_lineEdit.text()
         Student_query = QSqlQuery()
-        Student_query.exec_("Select Student_name From Student where Student_name like '%%%s%%'" % input_Student_name)
+        Student_query.exec_("Select Student_name From Student where Student_name like '%%%s%%' ORDER BY Student_name" % input_Student_name)
         model = QSqlQueryModel()
         model.setQuery(Student_query)
         self.ui.Student_listView.setModel(model)

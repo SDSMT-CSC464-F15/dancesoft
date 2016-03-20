@@ -36,6 +36,8 @@ class Ui_Search_MainWindow(object):
         self.Search_lineEdit.setObjectName(_fromUtf8("Search_lineEdit"))
         self.Search_btn = QtGui.QPushButton(self.centralwidget)
         self.Search_btn.setGeometry(QtCore.QRect(440, 60, 111, 23))
+        self.Search_btn.setAutoDefault(True)
+        self.Search_btn.setDefault(True)
         self.Search_btn.setObjectName(_fromUtf8("Search_btn"))
         self.Adv_search_btn = QtGui.QPushButton(self.centralwidget)
         self.Adv_search_btn.setGeometry(QtCore.QRect(560, 60, 111, 23))

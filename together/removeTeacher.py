@@ -61,7 +61,7 @@ class removeTeacher(QtGui.QDialog):
             self.teach_query.exec_("DELETE from Teacher WHERE Teacher_name = '%s'" % self.selectedTeacher)
             self.teach_query.exec_("DELETE from Admin WHERE Admin_name = '%s'" % self.selectedTeacher)
             self.teach_query.exec_("DELETE from Account WHERE Teacher_id = %d" % self.id)
-            self.teach_query.exec_("DELETE from Teacher_Class WHERE Teacher_id = %d" % self.id)
+            self.teach_query.exec_("UPDATE Teacher_Class SET Teacher_id = 0 WHERE Teacher_id = %d" % self.id)
             
             if (self.addressCounter == 1):
                 self.teach_query.exec_("DELETE from Address WHERE Address_id = %d" % self.addressId)

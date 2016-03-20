@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>530</width>
-    <height>360</height>
+    <width>558</width>
+    <height>335</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>501</width>
-      <height>301</height>
+      <width>531</width>
+      <height>311</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -32,8 +32,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>501</width>
-        <height>301</height>
+        <width>521</width>
+        <height>311</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -51,7 +51,7 @@
           <property name="geometry">
            <rect>
             <x>420</x>
-            <y>270</y>
+            <y>250</y>
             <width>75</width>
             <height>23</height>
            </rect>
@@ -69,7 +69,7 @@
           <property name="geometry">
            <rect>
             <x>340</x>
-            <y>270</y>
+            <y>250</y>
             <width>75</width>
             <height>23</height>
            </rect>
@@ -456,17 +456,6 @@
     </widget>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>530</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

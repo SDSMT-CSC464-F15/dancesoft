@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Login</class>
- <widget class="QDialog" name="Login">
+ <class>change_username</class>
+ <widget class="QDialog" name="change_username">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>171</height>
+    <width>423</width>
+    <height>206</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,8 +18,8 @@
     <rect>
      <x>9</x>
      <y>9</y>
-     <width>381</width>
-     <height>151</height>
+     <width>401</width>
+     <height>181</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -28,14 +28,11 @@
       <property name="title">
        <string>Dance Arts</string>
       </property>
-      <widget class="QPushButton" name="pushButton">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
+      <widget class="QPushButton" name="cancel_btn">
        <property name="geometry">
         <rect>
-         <x>270</x>
-         <y>100</y>
+         <x>300</x>
+         <y>130</y>
          <width>75</width>
          <height>23</height>
         </rect>
@@ -43,33 +40,24 @@
        <property name="text">
         <string>Cancel</string>
        </property>
-       <property name="autoDefault">
-        <bool>false</bool>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="change_btn">
        <property name="geometry">
         <rect>
-         <x>180</x>
-         <y>100</y>
+         <x>210</x>
+         <y>130</y>
          <width>75</width>
          <height>23</height>
         </rect>
        </property>
        <property name="text">
-        <string>Login</string>
-       </property>
-       <property name="autoDefault">
-        <bool>true</bool>
+        <string>Change</string>
        </property>
        <property name="default">
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="usernameLabel">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -82,12 +70,48 @@
         <string>Username</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="newUserLabel">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>70</y>
-         <width>51</width>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>New Username</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="userLineEdit">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>40</y>
+         <width>271</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newUserLineEdit">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>271</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="confirmLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>91</width>
          <height>16</height>
         </rect>
        </property>
@@ -95,21 +119,11 @@
         <string>Password</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="confirmLineEdit">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>40</y>
-         <width>271</width>
-         <height>20</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_2">
-       <property name="geometry">
-        <rect>
-         <x>70</x>
-         <y>70</y>
+         <x>100</x>
+         <y>100</y>
          <width>271</width>
          <height>20</height>
         </rect>

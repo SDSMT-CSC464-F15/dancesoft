@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Teacher Landing.ui'
 #
-# Created: Sat Jan  9 14:59:41 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -26,19 +25,18 @@ except AttributeError:
 class Ui_Teacher_Landing(object):
     def setupUi(self, Teacher_Landing):
         Teacher_Landing.setObjectName(_fromUtf8("Teacher_Landing"))
-        Teacher_Landing.resize(530, 360)
+        Teacher_Landing.resize(558, 335)
         self.centralwidget = QtGui.QWidget(Teacher_Landing)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.stackedWidget = QtGui.QStackedWidget(self.centralwidget)
-        self.stackedWidget.setGeometry(QtCore.QRect(10, 10, 501, 301))
+        self.stackedWidget.setGeometry(QtCore.QRect(10, 10, 531, 311))
         self.stackedWidget.setObjectName(_fromUtf8("stackedWidget"))
         self.Teacher_page = QtGui.QWidget()
         self.Teacher_page.setObjectName(_fromUtf8("Teacher_page"))
         self.verticalLayoutWidget = QtGui.QWidget(self.Teacher_page)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 501, 301))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 521, 311))
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.verticalLayout_2 = QtGui.QVBoxLayout(self.verticalLayoutWidget)
-        self.verticalLayout_2.setMargin(0)
         self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
         self.groupBox_2 = QtGui.QGroupBox(self.verticalLayoutWidget)
         font = QtGui.QFont()
@@ -46,13 +44,13 @@ class Ui_Teacher_Landing(object):
         self.groupBox_2.setFont(font)
         self.groupBox_2.setObjectName(_fromUtf8("groupBox_2"))
         self.Quit_btn = QtGui.QPushButton(self.groupBox_2)
-        self.Quit_btn.setGeometry(QtCore.QRect(420, 270, 75, 23))
+        self.Quit_btn.setGeometry(QtCore.QRect(420, 250, 75, 23))
         font = QtGui.QFont()
         font.setItalic(True)
         self.Quit_btn.setFont(font)
         self.Quit_btn.setObjectName(_fromUtf8("Quit_btn"))
         self.Logout_btn = QtGui.QPushButton(self.groupBox_2)
-        self.Logout_btn.setGeometry(QtCore.QRect(340, 270, 75, 23))
+        self.Logout_btn.setGeometry(QtCore.QRect(340, 250, 75, 23))
         font = QtGui.QFont()
         font.setItalic(True)
         self.Logout_btn.setFont(font)
@@ -213,13 +211,6 @@ class Ui_Teacher_Landing(object):
         self.Reset_password.setObjectName(_fromUtf8("Reset_password"))
         self.stackedWidget.addWidget(self.Personal_page)
         Teacher_Landing.setCentralWidget(self.centralwidget)
-        self.menubar = QtGui.QMenuBar(Teacher_Landing)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 530, 21))
-        self.menubar.setObjectName(_fromUtf8("menubar"))
-        Teacher_Landing.setMenuBar(self.menubar)
-        self.statusbar = QtGui.QStatusBar(Teacher_Landing)
-        self.statusbar.setObjectName(_fromUtf8("statusbar"))
-        Teacher_Landing.setStatusBar(self.statusbar)
 
         self.retranslateUi(Teacher_Landing)
         self.stackedWidget.setCurrentIndex(0)

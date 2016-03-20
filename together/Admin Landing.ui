@@ -31,7 +31,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>10</y>
         <width>521</width>
         <height>311</height>
        </rect>
@@ -154,6 +154,8 @@
        </item>
       </layout>
      </widget>
+     <zorder>verticalLayoutWidget</zorder>
+     <zorder>groupBox</zorder>
     </widget>
     <widget class="QWidget" name="Admin_employee">
      <widget class="QPushButton" name="Employee_back_btn">
@@ -597,23 +599,6 @@
     </widget>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="Admin_menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>619</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuNavigation">
-    <property name="title">
-     <string>Navigation</string>
-    </property>
-   </widget>
-   <addaction name="menuNavigation"/>
-  </widget>
-  <widget class="QStatusBar" name="Admin_statusbar"/>
   <action name="actionBacon">
    <property name="text">
     <string>Bacon</string>

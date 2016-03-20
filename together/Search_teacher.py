@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'search.ui'
+# Form implementation generated from reading ui file 'search_teacher.ui'
 #
 # Created by: PyQt4 UI code generator 4.11.4
 #
@@ -36,6 +36,8 @@ class Ui_Search_MainWindow(object):
         self.Search_lineEdit.setObjectName(_fromUtf8("Search_lineEdit"))
         self.Search_btn = QtGui.QPushButton(self.centralwidget)
         self.Search_btn.setGeometry(QtCore.QRect(440, 60, 111, 23))
+        self.Search_btn.setAutoDefault(True)
+        self.Search_btn.setDefault(True)
         self.Search_btn.setObjectName(_fromUtf8("Search_btn"))
         self.Adv_search_btn = QtGui.QPushButton(self.centralwidget)
         self.Adv_search_btn.setGeometry(QtCore.QRect(560, 60, 111, 23))
@@ -69,7 +71,7 @@ class Ui_Search_MainWindow(object):
 
     def retranslateUi(self, Search_MainWindow):
         Search_MainWindow.setWindowTitle(_translate("Search_MainWindow", "MainWindow", None))
-        self.label.setText(_translate("Search_MainWindow", "Enter Student Name", None))
+        self.label.setText(_translate("Search_MainWindow", "Enter Teacher Name", None))
         self.Search_btn.setText(_translate("Search_MainWindow", "Search", None))
         self.Adv_search_btn.setText(_translate("Search_MainWindow", "Advanced Search", None))
         self.Reset_search_btn.setText(_translate("Search_MainWindow", "Refresh", None))

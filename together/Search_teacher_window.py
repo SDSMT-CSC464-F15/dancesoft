@@ -187,7 +187,7 @@ class Search_teacher_window(QtGui.QMainWindow):
             self.detail.ui.State_detail_lineEdit.setText(self.detail.record_A.field(3).value())
         #TeacherMedical
         if not isinstance(self.detail.record.field(12).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Medical_detail_textEdit.setText(self.detail.record.field(12).value())
+            self.detail.ui.Medical_detail_textEdit.setText(str(self.detail.record.field(10).value()))
         
 
         self.detail.ui.Close_detail_btn.clicked.connect(self.detail.close)

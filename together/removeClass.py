@@ -41,6 +41,8 @@ class removeClass(QtGui.QDialog):
         if (self.confirmReply == QtGui.QMessageBox.Yes):
             self.confirm_query = QSqlQuery()
             self.class_query.exec_("DELETE from Class WHERE Class_name = '%s'" % self.selectedClass)
+            self.class_query.exec_("DELETE from Teacher_Class WHERE Class_id = \
+                (SELECT Class_id FROM Class WHERE Class_name = '%s')" % self.selectedClass)
             
 
             self.message = "Class Removed"

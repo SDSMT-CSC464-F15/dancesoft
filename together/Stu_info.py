@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Stuinfo.ui'
 #
-# Created: Tue Nov 10 14:42:19 2015
+# Created: Tue Mar 22 10:52:35 2016
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -66,9 +66,6 @@ class Ui_stu_info_dialog(object):
         self.Id_detail_lineEdit = QtGui.QLineEdit(stu_info_dialog)
         self.Id_detail_lineEdit.setGeometry(QtCore.QRect(130, 50, 221, 20))
         self.Id_detail_lineEdit.setObjectName(_fromUtf8("Id_detail_lineEdit"))
-        self.Gender_detail_lineEdit = QtGui.QLineEdit(stu_info_dialog)
-        self.Gender_detail_lineEdit.setGeometry(QtCore.QRect(130, 90, 221, 20))
-        self.Gender_detail_lineEdit.setObjectName(_fromUtf8("Gender_detail_lineEdit"))
         self.Pguradian_detail_lineEdit = QtGui.QLineEdit(stu_info_dialog)
         self.Pguradian_detail_lineEdit.setGeometry(QtCore.QRect(130, 170, 221, 20))
         self.Pguradian_detail_lineEdit.setObjectName(_fromUtf8("Pguradian_detail_lineEdit"))
@@ -123,6 +120,9 @@ class Ui_stu_info_dialog(object):
         self.Birth_detail_dateEdit = QtGui.QDateEdit(stu_info_dialog)
         self.Birth_detail_dateEdit.setGeometry(QtCore.QRect(130, 130, 221, 22))
         self.Birth_detail_dateEdit.setObjectName(_fromUtf8("Birth_detail_dateEdit"))
+        self.Gender_comboBox = QtGui.QComboBox(stu_info_dialog)
+        self.Gender_comboBox.setGeometry(QtCore.QRect(130, 90, 221, 22))
+        self.Gender_comboBox.setObjectName(_fromUtf8("Gender_comboBox"))
 
         self.retranslateUi(stu_info_dialog)
         QtCore.QMetaObject.connectSlotsByName(stu_info_dialog)
@@ -146,3 +146,4 @@ class Ui_stu_info_dialog(object):
         self.Update_detail_btn.setText(_translate("stu_info_dialog", "Update", None))
         self.City_detail_label.setText(_translate("stu_info_dialog", "City", None))
         self.State_detail_label_3.setText(_translate("stu_info_dialog", "State", None))
+

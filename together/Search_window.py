@@ -64,7 +64,7 @@ class Search_window(QtGui.QMainWindow):
         
         self.detail.StuID = self.detail.ui.Id_detail_lineEdit.text()
         self.detail.StuName = self.detail.ui.Name_detail_lineEdit.text()      
-        self.detail.StuGender = self.detail.ui.Gender_detail_lineEdit.text()   
+        self.detail.StuGender = self.detail.ui.Gender_comboBox.currentText()   
         self.detail.StuEmail = self.detail.ui.Email_detail_lineEdit.text()
         self.detail.StuBirth = self.detail.ui.Birth_detail_dateEdit.date()  
         self.detail.StuPhone = self.detail.ui.Phone_detail_lineEdit.text()
@@ -131,7 +131,13 @@ class Search_window(QtGui.QMainWindow):
             self.detail.ui.Name_detail_lineEdit.setText(self.detail.record.field(2).value())
         #StuGender
         if not isinstance(self.detail.record.field(3).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Gender_detail_lineEdit.setText(self.detail.record.field(3).value())
+            self.detail.ui.Gender_comboBox.addItem("Male")
+            self.detail.ui.Gender_comboBox.addItem("Female")
+            if self.detail.record.field(3).value() == "Male":
+                self.detail.ui.Gender_comboBox.setCurrentIndex(0)
+            else:
+                self.detail.ui.Gender_comboBox.setCurrentIndex(1)
+                
         #StuEmail
         if not isinstance(self.detail.record.field(4).value(), QtCore.QPyNullVariant):
             self.detail.ui.Email_detail_lineEdit.setText(self.detail.record.field(4).value())
@@ -280,4 +286,10 @@ class Search_window(QtGui.QMainWindow):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
+    
+app = QtGui.QApplication(sys.argv)
+window = Search_window()
+window.show()
+sys.exit(app.exec_())
+
 

@@ -11,4 +11,5 @@ class Teacher_info_dialog(QtGui.QDialog):
         QtGui.QDialog.__init__(self)
         self.ui = Ui_Teacher_info_dialog()
         self.ui.setupUi(self)
+        self.ui.Id_detail_lineEdit.setDisabled(True)
 

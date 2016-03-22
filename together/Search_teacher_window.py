@@ -16,7 +16,6 @@ class Search_teacher_window(QtGui.QMainWindow):
         
         self.conn() #need catch exception
         
-       
         #TODO deal with foreign key
         self.ui.Teacher = QSqlRelationalTableModel(db = self.db)
         self.ui.Teacher.setTable("Teacher")
@@ -56,7 +55,7 @@ class Search_teacher_window(QtGui.QMainWindow):
         
         self.detail.TeacherID = self.detail.ui.Id_detail_lineEdit.text()
         self.detail.TeacherName = self.detail.ui.Name_detail_lineEdit.text()      
-        self.detail.TeacherGender = self.detail.ui.Gender_detail_lineEdit.text()   
+        self.detail.TeacherGender = self.detail.ui.Gender_comboBox.currentText()   
         self.detail.TeacherEmail = self.detail.ui.Email_detail_lineEdit.text()
         self.detail.TeacherEmail.lower()
         self.detail.TeacherBirth = self.detail.ui.Birth_detail_dateEdit.date()  
@@ -78,9 +77,9 @@ class Search_teacher_window(QtGui.QMainWindow):
 
         update_query = QSqlQuery()
 
-        update_query.exec("Select Admin_id From Account Where Teacher_id = '%d'" % self.detail.TeacherID)
-        if query.next():
-            record = query.record()
+        update_query.exec("Select Admin_id From Account Where Teacher_id = '%d'" % int(self.detail.TeacherID))
+        if update_query.next():
+            record = update_query.record()
             self.Admin_id = int(record.value(0))
         
 
@@ -134,8 +133,9 @@ class Search_teacher_window(QtGui.QMainWindow):
 
         address = QSqlQuery()
         self.detail.Address_id = self.detail.record.field(5).value()
-        address.exec_("select * from Address where Address_id = %d" % self.detail.Address_id)
-        address.next()
+        if not isinstance(self.detail.Address_id, QtCore.QPyNullVariant):
+            address.exec_("select * from Address where Address_id = %d" % self.detail.Address_id)
+            address.next()
         self.detail.record_A = address.record()
     
   
@@ -150,7 +150,14 @@ class Search_teacher_window(QtGui.QMainWindow):
             self.detail.ui.Name_detail_lineEdit.setText(self.detail.record.field(1).value())
         #TeacherGender
         if not isinstance(self.detail.record.field(7).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Gender_detail_lineEdit.setText(self.detail.record.field(7).value())
+            self.detail.ui.Gender_comboBox.addItem("Male")
+            self.detail.ui.Gender_comboBox.addItem("Female")
+            if self.detail.record.field(7).value() == "Male":
+                self.detail.ui.Gender_comboBox.setCurrentIndex(0)
+            else:
+                self.detail.ui.Gender_comboBox.setCurrentIndex(1)
+            
+        
         #TeacherEmail
         if not isinstance(self.detail.record.field(6).value(), QtCore.QPyNullVariant):
             self.detail.ui.Email_detail_lineEdit.setText(self.detail.record.field(6).value())
@@ -312,5 +319,9 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
 
+app = QtGui.QApplication(sys.argv)
+window = Search_teacher_window()
+window.show()
+sys.exit(app.exec_())
 
 

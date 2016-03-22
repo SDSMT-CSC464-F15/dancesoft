@@ -61,9 +61,11 @@ class username_window(QtGui.QDialog):
             self.default_msg = "Username Changed"
             self.default_reply = QtGui.QMessageBox.information(self, 'Change Username', 
                         self.default_msg, QtGui.QMessageBox.Ok)
-            self.close();
+            self.accept();
             
-
+    def getName(self):
+        return self.input_newName
+    
     # set up database connection 
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")
@@ -72,5 +74,3 @@ class username_window(QtGui.QDialog):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
-
-

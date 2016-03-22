@@ -49,6 +49,8 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.ui.Detail_btn.clicked.connect(self.detail_show)
         self.ui.Back_btn.clicked.connect(self.close)
 
+        self.ui.Teacher_view.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.ui.Teacher_view.setSelectionBehavior(QAbstractItemView.SelectRows)
 
     def Teacherinfo_update(self):
         #TODO check input validity
@@ -63,13 +65,12 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.detail.TeacherCellPhone = self.detail.ui.Cellphone_detail_lineEdit.text()  
         self.detail.TeacherWorkPhone = self.detail.ui.Workphone_detail_lineEdit.text()
         self.detail.TeacherSSN = self.detail.ui.SSN_detail_lineEdit.text()
-        self.detail.TeacherPay = self.detail.ui.Payrate_detail_lineEdit.text()
         self.detail.TeacherZipcode = self.detail.ui.Zipcode_detail_lineEdit.text()
         self.detail.TeacherAddress = self.detail.ui.Address_detail_lineEdit.text()
         self.detail.TeacherAddress.upper()
         self.detail.TeacherCity = self.detail.ui.City_detail_lineEdit.text()
         self.detail.TeacherCity.upper()
-        self.detail.TeacherState = self.detail.ui.State_detail_lineEdit.text()
+        self.detail.TeacherState = self.detail.ui.State_detail_ComboBox.currentText()
         self.detail.TeacherMedical = self.detail.ui.Medical_detail_textEdit.toPlainText()
 
 
@@ -178,9 +179,6 @@ class Search_teacher_window(QtGui.QMainWindow):
         #TeacherSNN  
         if not isinstance(self.detail.record.field(8).value(), QtCore.QPyNullVariant):
             self.detail.ui.SSN_detail_lineEdit.setText(self.detail.record.field(8).value())
-        #TeacherPayRate
-        if not isinstance(self.detail.record.field(9).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Payrate_detail_lineEdit.setText(str(self.detail.record.field(9).value()))
         #Teacher address
         if not isinstance(self.detail.record_A.field(4).value(), QtCore.QPyNullVariant):
             self.detail.ui.Zipcode_detail_lineEdit.setText(str(self.detail.record_A.field(4).value()))
@@ -191,7 +189,8 @@ class Search_teacher_window(QtGui.QMainWindow):
         if not isinstance(self.detail.record_A.field(2).value(), QtCore.QPyNullVariant):
             self.detail.ui.City_detail_lineEdit.setText(self.detail.record_A.field(2).value())
         if not isinstance(self.detail.record_A.field(3).value(), QtCore.QPyNullVariant):
-            self.detail.ui.State_detail_lineEdit.setText(self.detail.record_A.field(3).value())
+            index = self.detail.ui.State_detail_ComboBox.findText(self.detail.record_A.field(3).value())
+            self.detail.ui.State_detail_ComboBox.setCurrentIndex(index)
         #TeacherMedical
         if not isinstance(self.detail.record.field(12).value(), QtCore.QPyNullVariant):
             self.detail.ui.Medical_detail_textEdit.setText(str(self.detail.record.field(10).value()))
@@ -221,6 +220,9 @@ class Search_teacher_window(QtGui.QMainWindow):
         Teacher_homephone = self.adv.ui.Homephone_adv_ledit.text()
         Teacher_cellphone = self.adv.ui.Cellphone_adv_ledit.text()
         Teacher_workphone = self.adv.ui.Workphone_adv_ledit.text()
+        Teacher_datebirth = self.adv.ui.Start_dateedit.date()
+        Teacher_end_datebirth = self.adv.ui.End_dateedit.date()
+        
         whereClause = ''
         
         flag = True
@@ -272,10 +274,17 @@ class Search_teacher_window(QtGui.QMainWindow):
         elif Teacher_workphone != '':
             if whereClause != '':
                 whereClause += ' and '
-            if self.adv.ui.WorkPhone_Exact_cbox.isChecked():
+            if self.adv.ui.Workphone_Exact_cbox.isChecked():
                 whereClause += ("Teacher_work_phone = '%s'" % Teacher_workphone)
             else:
                 whereClause += ("Teacher_work_phone like '%%%s%%'" % Teacher_workphone)
+
+
+  
+        if whereClause != '':
+            whereClause += ' and '
+        whereClause += ("Teacher_date_of_birth >= '%s' and Teacher_date_of_birth <= '%s'"% \
+                        (Teacher_datebirth.toString("yyyy-MM-dd"), Teacher_end_datebirth.toString("yyyy-MM-dd")))
 
         self.ui.Teacher.setFilter(whereClause)
 
@@ -323,5 +332,3 @@ app = QtGui.QApplication(sys.argv)
 window = Search_teacher_window()
 window.show()
 sys.exit(app.exec_())
-
-

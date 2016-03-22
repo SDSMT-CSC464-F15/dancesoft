@@ -31,7 +31,8 @@ class Advsearch_Dialog(QtGui.QDialog):
         self.ui.Workphone_adv_ledit.setDisabled(True)
         self.connect(self.ui.Workphone_cbox,  QtCore.SIGNAL("stateChanged(int)"), partial(self.checkbox_change, index = 5))
 
-
+        self.ui.WorkPhone_Exact_cbox.setDisabled(True)
+        
         self.ui.Id_adv_label.hide()
         self.ui.Name_adv_label.hide()
         self.ui.Homephone_adv_label.hide()

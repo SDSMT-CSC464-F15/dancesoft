@@ -17,7 +17,7 @@ class Search_window(QtGui.QMainWindow):
         
         self.conn() #need catch exception
         
-       
+             
         #TODO deal with foreign key
         self.ui.student = QSqlRelationalTableModel(db = self.db)
         self.ui.student.setTable("Student")
@@ -55,6 +55,9 @@ class Search_window(QtGui.QMainWindow):
         self.ui.Reset_search_btn.clicked.connect(self.reset_table)
         self.ui.Detail_btn.clicked.connect(self.detail_show)
         self.ui.Back_btn.clicked.connect(self.close)
+
+        self.ui.Student_view.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.ui.Student_view.setSelectionBehavior(QAbstractItemView.SelectRows)
         
 
 
@@ -77,7 +80,7 @@ class Search_window(QtGui.QMainWindow):
         self.detail.StuAddress.upper()
         self.detail.StuCity = self.detail.ui.City_detail_lineEdit.text()
         self.detail.StuCity.upper()
-        self.detail.StuState = self.detail.ui.State_detail_lineEdit.text()
+        self.detail.StuState = self.detail.ui.State_detail_ComboBox.currentText()
         self.detail.StuMedical = self.detail.ui.Medical_detail_textEdit.toPlainText()
 
 
@@ -172,7 +175,9 @@ class Search_window(QtGui.QMainWindow):
         if not isinstance(self.detail.record_A.field(2).value(), QtCore.QPyNullVariant):
             self.detail.ui.City_detail_lineEdit.setText(self.detail.record_A.field(2).value())
         if not isinstance(self.detail.record_A.field(3).value(), QtCore.QPyNullVariant):
-            self.detail.ui.State_detail_lineEdit.setText(self.detail.record_A.field(3).value())
+            index = self.detail.ui.State_detail_ComboBox.findText(self.detail.record_A.field(3).value())
+            self.detail.ui.State_detail_ComboBox.setCurrentIndex(index)
+            
         if not isinstance(self.detail.record.field(12).value(), QtCore.QPyNullVariant):
             self.detail.ui.Medical_detail_textEdit.setText(self.detail.record.field(12).value())
         
@@ -197,6 +202,9 @@ class Search_window(QtGui.QMainWindow):
         Stu_name = self.adv.ui.Name_adv_ledit.text()
         Stu_phone = self.adv.ui.Phone_adv_ledit.text()
         Stu_guardian = self.adv.ui.Guardian_adv_ledit.text()
+
+        Stu_datebirth = self.adv.ui.Start_dateedit.date()
+        Stu_end_datebirth = self.adv.ui.End_dateedit.date()
 
         whereClause = ''
         
@@ -245,6 +253,15 @@ class Search_window(QtGui.QMainWindow):
             else:
                 whereClause += ("relTblAl_8.Guardian_name like '%%%s%%'" % Stu_guardian)
 
+
+
+
+        if whereClause != '':
+            whereClause += ' and '
+        whereClause += ("Student_date_of_birth >= '%s' and Student_date_of_birth <= '%s'"% \
+                            (Stu_datebirth.toString("yyyy-MM-dd"), Stu_end_datebirth.toString("yyyy-MM-dd")))
+
+
         self.ui.student.setFilter(whereClause)
 
         if flag:
@@ -287,9 +304,10 @@ class Search_window(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
     
+
+
+
 app = QtGui.QApplication(sys.argv)
 window = Search_window()
 window.show()
 sys.exit(app.exec_())
-
-

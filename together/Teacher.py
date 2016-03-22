@@ -8,6 +8,7 @@ from Addstu_window import Addstu_window
 from teacher_schedule_window import Teacher_schedule_window
 from Search_class_window import Search_class_window
 from Role_window import Role_window
+from change_username_window import username_window
 from change_password_window import password_window
 from My_Information import modify_My_Information
 
@@ -42,6 +43,13 @@ class Teacher_window(QtGui.QMainWindow):
     def logout(self):
         self.num = False
         self.close()
+
+    def reset_user(self):
+        self.ui.reset_user = username_window(self.ui.name)
+        if self.ui.reset_user.exec():
+            self.ui.name = self.ui.reset_user.getName()
+            name = self.ui.name
+            
 
     def reset_password(self):
         self.ui.reset_password = password_window(self.ui.name)

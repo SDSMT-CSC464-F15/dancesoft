@@ -4,6 +4,7 @@ from teacher_schedule import Ui_Teacher_schedule
 from schedule_print import Print_window
 from PyQt4.QtSql import *
 
+
 class Teacher_schedule_window(QtGui.QMainWindow):
     def __init__(self):
         QtGui.QMainWindow.__init__(self)
@@ -11,7 +12,7 @@ class Teacher_schedule_window(QtGui.QMainWindow):
         self.ui.setupUi(self)
         self.conn()
         Teacher_query = QSqlQuery()
-        Teacher_query.exec_("Select Teacher_name From Teacher ORDER BY Teacher_name")
+        Teacher_query.exec_("select Teacher_name from Teacher")
         model = QSqlQueryModel()
         model.setQuery(Teacher_query)
         self.ui.Teacher_listView.setModel(model)
@@ -19,25 +20,32 @@ class Teacher_schedule_window(QtGui.QMainWindow):
         self.ui.Search_btn.clicked.connect(self.search_student)
         self.ui.schedule_btn.clicked.connect(self.print_schedule)
         self.ui.Teacher_listView.clicked.connect(self.select_teacher)
-        self.ui.cancel_btn.clicked.connect(self.close)
         
     def search_student(self):
         input_teacher_name = self.ui.Teacher_lineEdit.text()
         Teacher_query = QSqlQuery()
-        Teacher_query.exec_("Select Teacher_name From Teacher where Teacher_name like '%%%s%%'" % input_teacher_name)
+        Teacher_query.exec_("select Teacher_name from Teacher where Teacher_name like '%%%s%%'" % input_teacher_name)
         model = QSqlQueryModel()
         model.setQuery(Teacher_query)
         self.ui.Teacher_listView.setModel(model)
         
     def print_schedule(self):
-        self.ui.print = Print_window(self.ui.msg)
+        self.ui.print = Print_window(self.ui.timeslicing, self.ui.msg)
         self.ui.print.show()
-        
+
+    class time:
+        def __init__(self):
+            self.day = ""
+            self.start = ""
+            self.end = ""
+            self.class_name = ""
+    
     def select_teacher(self, index):
         self.ui.Teacher_info = []
         self.ui.msg = []
         lookup = {'Monday': 0, 'Tuesday': 1, 'Wednesday':2, 'Thrusday':3, 'Friday':4, 'Saturday':5}
-        self.ui.msg = [['' for i in range(6)] for j in range(13)]
+        
+
         
         self.ui.schedule_btn.setEnabled(True)
         Teacher_query = QSqlQuery()
@@ -49,18 +57,32 @@ class Teacher_schedule_window(QtGui.QMainWindow):
             self.ui.Teacher_info.append(str(Teacher_query.value(3)) + ',' + str(Teacher_query.value(1).toString()) + ',' +
                                         str(Teacher_query.value(2).toString()) +',' + str(Teacher_query.value(0)) )
 
-        for i in self.ui.Teacher_info:
-            temp = i.split(',')
-            start = int(temp[1][0:2])
-            start -= 8
-            end = int(temp[2][0:2])
-            end -= 8
-            if int(temp[2][3:5]) == 0:
-                end -= 1;
-            for j in range(start, end+1):
-                self.ui.msg[j][lookup[temp[0]]] = temp[3]
+        timelist = [self.time() for i in range(len(self.ui.Teacher_info))]
+
+        self.ui.timeslicing = []
+        for i in range(len(self.ui.Teacher_info)):
+            temp = self.ui.Teacher_info[i].split(',')
+            timelist[i].day = temp[0]
+            timelist[i].start = temp[1][0:5]
+            timelist[i].end = temp[2][0:5]
+            timelist[i].class_name = temp[3]
+            if not temp[1][0:5] in self.ui.timeslicing:
+                self.ui.timeslicing.append(temp[1][0:5])
+            if not temp[2][0:5] in self.ui.timeslicing:
+                self.ui.timeslicing.append(temp[2][0:5])
+
+        self.ui.timeslicing.sort()
+        time_length = len(self.ui.timeslicing)
+        if time_length > 1:
+            time_length -= 1
+
+        self.ui.msg = [['' for i in range(time_length)] for j in range(6)]
         
-            
+        for i in range(len(timelist)):
+            for j in range(self.ui.timeslicing.index(timelist[i].start), self.ui.timeslicing.index(timelist[i].end)):
+                self.ui.msg[lookup[timelist[i].day]][j] = timelist[i].class_name
+
+        
             
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")
@@ -70,4 +92,3 @@ class Teacher_schedule_window(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
 
-        

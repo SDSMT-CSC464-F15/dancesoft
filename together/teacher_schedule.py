@@ -2,7 +2,8 @@
 
 # Form implementation generated from reading ui file 'teacher_schedule.ui'
 #
-# Created by: PyQt4 UI code generator 4.11.4
+# Created: Mon Jan  4 14:27:02 2016
+#      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -40,9 +41,6 @@ class Ui_Teacher_schedule(object):
         self.schedule_btn = QtGui.QPushButton(self.centralwidget)
         self.schedule_btn.setGeometry(QtCore.QRect(20, 350, 91, 21))
         self.schedule_btn.setObjectName(_fromUtf8("schedule_btn"))
-        self.cancel_btn = QtGui.QPushButton(self.centralwidget)
-        self.cancel_btn.setGeometry(QtCore.QRect(230, 350, 101, 23))
-        self.cancel_btn.setObjectName(_fromUtf8("cancel_btn"))
         Teacher_schedule.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(Teacher_schedule)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 351, 21))
@@ -59,5 +57,4 @@ class Ui_Teacher_schedule(object):
         Teacher_schedule.setWindowTitle(_translate("Teacher_schedule", "MainWindow", None))
         self.Search_btn.setText(_translate("Teacher_schedule", "search", None))
         self.schedule_btn.setText(_translate("Teacher_schedule", "schedule", None))
-        self.cancel_btn.setText(_translate("Teacher_schedule", "Cancel", None))
 

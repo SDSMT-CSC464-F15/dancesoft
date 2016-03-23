@@ -304,10 +304,3 @@ class Search_window(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
     
-
-
-
-app = QtGui.QApplication(sys.argv)
-window = Search_window()
-window.show()
-sys.exit(app.exec_())

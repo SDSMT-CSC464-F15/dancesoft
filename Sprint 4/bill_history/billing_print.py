@@ -56,7 +56,6 @@ class Print_window(QtGui.QWidget):
     </tr>\
 </div>'
         for i in HistoryList:
-            print (i[0])
             html += '<tr>\
                     <td>%s</td>\
                     <td>%s</td>\

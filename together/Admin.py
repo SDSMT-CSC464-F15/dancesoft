@@ -13,6 +13,16 @@ from Add_a_Class import add_Class
 from Search_window import Search_window
 from Addstu_window_admin import Addstu_window
 from class_reg_dialog import class_reg_dialog
+from billing_history_window import Billing_history_window
+from teacher_history_window import Teacher_history_window
+from set_dialog import semester_set_dialog
+from partial_main_window import Enter_partialpayment_window
+from enter_fullpayment_window import Enter_fullpayment_window
+from student_owe_window import Student_payment_window
+from Admin_list_window import Admin_list_window
+from enter_hours_window import Enter_hours_window
+from teacher_payrate_window import Teacher_payrate_window
+from Student_reg_window import Stu_reg_window
 
 class Admin_window(QtGui.QMainWindow):
     def __init__(self, name):
@@ -46,6 +56,18 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.Search_student_btn.clicked.connect(self.search_student)
         self.ui.Add_student_btn.clicked.connect(self.add_student)
         self.ui.Registration_btn.clicked.connect(self.register)
+        self.ui.Billing_history_btn.clicked.connect(self.billing)
+
+        
+        self.ui.Teaching_his_btn.clicked.connect(self.teaching_his)
+        self.ui.Set_Semester_btn.clicked.connect(self.set_semester)
+        self.ui.Enter_partial_payment_btn.clicked.connect(self.enter_partial_payment)
+        self.ui.Enter_full_payment_btn.clicked.connect(self.enter_full_payment)
+        self.ui.Student_balance_btn.clicked.connect(self.student_balance)
+        self.ui.Show_admin_list_btn.clicked.connect(self.show_admin_list)
+        self.ui.Enter_teacher_hour_btn.clicked.connect(self.enter_teacher_hour)
+        self.ui.Enter_teacher_payrate_btn.clicked.connect(self.enter_teacher_payrate)
+        self.ui.Registration_btn.clicked.connect(self.registration)
 
         self.ui.Quit_btn.clicked.connect(self.Quit)
         self.ui.Quit_btn_2.clicked.connect(self.Quit)
@@ -56,6 +78,46 @@ class Admin_window(QtGui.QMainWindow):
     def logout(self):
         self.num = False
         self.close()
+
+    def registration(self):
+        self.ui.registration = Stu_reg_window()
+        self.ui.registration.show()
+
+    def enter_teacher_payrate(self):
+        self.ui.enter_teacher_payrate = Teacher_payrate_window()
+        self.ui.enter_teacher_payrate.show()
+
+    def enter_teacher_hour(self):
+        self.ui.enter_teacher_hour = Enter_hours_window()
+        self.ui.enter_teacher_hour.show()
+        
+    def show_admin_list(self):
+        self.ui.show_admin_list = Admin_list_window()
+        self.ui.show_admin_list.show()
+        
+    def student_balance(self):
+        self.ui.student_balance = Student_payment_window()
+        self.ui.student_balance.show()
+        
+    def enter_full_payment(self):
+        self.ui.enter_full_payment = Enter_fullpayment_window()
+        self.ui.enter_full_payment.show()
+        
+    def enter_partial_payment(self):
+        self.ui.enter_partial_payment = Enter_partialpayment_window()
+        self.ui.enter_partial_payment.show()
+        
+    def set_semester(self):
+        self.ui.set_semester = semester_set_dialog()
+        self.ui.set_semester.show()
+
+    def teaching_his(self):
+        self.ui.teaching_his = Teacher_history_window()
+        self.ui.teaching_his.show()
+        
+    def billing(self):
+        self.ui.billing = Billing_history_window()
+        self.ui.billing.show()
 
     def add_teacher(self):
         self.ui.add_teacher = add_teacher()

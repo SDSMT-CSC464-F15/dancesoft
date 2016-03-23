@@ -2,7 +2,7 @@ import sys
 from PyQt4 import QtGui, QtCore
 
 class Print_window(QtGui.QWidget):
-    def __init__(self, text_msg = None):
+    def __init__(self, time = None, text_msg = None):
         QtGui.QWidget.__init__(self)
         self.setWindowTitle(self.tr('Document Printer'))
         self.resize(840, 480)
@@ -57,9 +57,9 @@ class Print_window(QtGui.QWidget):
         <th>Saturday</th>\
     </tr>\
 </div>'
-        for i in range(13):
+        for i in range(len(text_msg[0])):
            html += '<tr>\
-                <th>%d:00 - %d:00</th>\
+                <th>%s - %s</th>\
                     <td>%s</td>\
                     <td>%s</td>\
                     <td>%s</td>\
@@ -67,22 +67,39 @@ class Print_window(QtGui.QWidget):
                     <td>%s</td>\
                     <td>%s</td>\
                 </div>\
-            </tr>' % ((i+7)%12 + 1, (i+8)%12 + 1, text_msg[i][0], text_msg[i][1], text_msg[i][2],text_msg[i][3] ,text_msg[i][4] , text_msg[i][5])       
+            </tr>' % (time[i], time[i+1], text_msg[0][i], text_msg[1][i], text_msg[2][i],text_msg[3][i] ,text_msg[4][i] , text_msg[5][i])       
         html += '</table>'
 
         self.editor.append(html)
         
         self.editor.textChanged.connect(self.handleTextChanged)
+        self.buttonOpen = QtGui.QPushButton('Open', self)
+        self.buttonOpen.clicked.connect(self.handleOpen)
         self.buttonPrint = QtGui.QPushButton('Print', self)
         self.buttonPrint.clicked.connect(self.handlePrint)
         self.buttonPreview = QtGui.QPushButton('Preview', self)
         self.buttonPreview.clicked.connect(self.handlePreview)
         layout = QtGui.QGridLayout(self)
-        layout.addWidget(self.editor, 0, 0, 1, 2)
-        layout.addWidget(self.buttonPrint, 1, 0)
-        layout.addWidget(self.buttonPreview, 1, 1)
+        layout.addWidget(self.editor, 0, 0, 1, 3)
+        layout.addWidget(self.buttonOpen, 1, 0)
+        layout.addWidget(self.buttonPrint, 1, 1)
+        layout.addWidget(self.buttonPreview, 1, 2)
         self.handleTextChanged()
 
+    def handleOpen(self):
+        path = QtGui.QFileDialog.getOpenFileName(
+            self, self.tr('Open file'), '',
+            self.tr('HTML files (*.html);;Text files (*.txt)'))
+        if not path.isEmpty():
+            stream = QtCore.QFile(path)
+            if stream.open(QtCore.QIODevice.ReadOnly):
+                info = QtCore.QFileInfo(path)
+                text = QtCore.QString.fromLocal8Bit(stream.readAll())
+                if info.completeSuffix() == 'html':
+                    self.editor.setHtml(text)
+                else:
+                    self.editor.setPlainText(text)
+            stream.close()
 
     def handlePrint(self):
         dialog = QtGui.QPrintDialog()

@@ -255,10 +255,10 @@ class Search_window(QtGui.QMainWindow):
 
 
 
-
-        if whereClause != '':
-            whereClause += ' and '
-        whereClause += ("Student_date_of_birth >= '%s' and Student_date_of_birth <= '%s'"% \
+        if self.adv.ui.Birth_cbox.isChecked():
+            if whereClause != '':
+                whereClause += ' and '
+            whereClause += ("Student_date_of_birth >= '%s' and Student_date_of_birth <= '%s'"% \
                             (Stu_datebirth.toString("yyyy-MM-dd"), Stu_end_datebirth.toString("yyyy-MM-dd")))
 
 

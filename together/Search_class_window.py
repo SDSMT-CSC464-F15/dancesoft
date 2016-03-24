@@ -223,10 +223,10 @@ class Search_class_window(QtGui.QMainWindow):
             else:
                 whereClause += ("Class_location like '%%%s%%'" % Class_location)
 
-
-        if whereClause != '':
-            whereClause += ' and '
-        whereClause += ("Class_time >= '%s' and Class_end_time <= '%s'"% (Class_time_start.toString(), Class_time_end.toString()))
+        if self.adv.ui.Time_cbox.isChecked():
+            if whereClause != '':
+                whereClause += ' and '
+            whereClause += ("Class_time >= '%s' and Class_end_time <= '%s'"% (Class_time_start.toString(), Class_time_end.toString()))
 
         self.ui.Class.setFilter(whereClause)
         if flag:

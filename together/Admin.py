@@ -55,7 +55,7 @@ class Admin_window(QtGui.QMainWindow):
         
         self.ui.Search_student_btn.clicked.connect(self.search_student)
         self.ui.Add_student_btn.clicked.connect(self.add_student)
-        self.ui.Registration_btn.clicked.connect(self.register)
+        #self.ui.Registration_btn.clicked.connect(self.register)
         self.ui.Billing_history_btn.clicked.connect(self.billing)
 
         
@@ -80,8 +80,8 @@ class Admin_window(QtGui.QMainWindow):
         self.close()
 
     def registration(self):
-        self.ui.registration = Stu_reg_window()
-        self.ui.registration.show()
+        self.ui.regi = Stu_reg_window()
+        self.ui.regi.show()
 
     def enter_teacher_payrate(self):
         self.ui.enter_teacher_payrate = Teacher_payrate_window()

@@ -87,24 +87,24 @@ class Search_teacher_window(QtGui.QMainWindow):
         if update_query.exec_("Update Teacher, Address set Teacher.Teacher_name = '%s', Teacher.Teacher_sex = '%s',\
                             Teacher.Teacher_email = '%s', Teacher.Teacher_date_of_birth = '%s', \
                             Teacher.Teacher_home_phone = '%s', Teacher.Teacher_cell_phone = '%s',\
-                            Teacher.Teacher_work_phone = '%s', Teacher.Teacher_SSN = '%s', Teacher.Teacher_pay_rate = '%s',\
+                            Teacher.Teacher_work_phone = '%s', Teacher.Teacher_SSN = '%s',\
                             Address.Zipcode = '%s', Address.Street = '%s', Address.City = '%s', Address.State = '%s', \
                             Teacher.Teacher_medical_information = '%s' where Teacher.Teacher_id = '%d' and Address.Address_id = '%d'"\
                            % (self.detail.TeacherName, self.detail.TeacherGender, \
                            self.detail.TeacherEmail,self.detail.TeacherBirth, self.detail.TeacherHomePhone, self.detail.TeacherCellPhone,\
-                           self.detail.TeacherWorkPhone,self.detail.TeacherSSN,self.detail.TeacherPay, self.detail.TeacherZipcode,\
+                           self.detail.TeacherWorkPhone,self.detail.TeacherSSN, self.detail.TeacherZipcode,\
                            self.detail.TeacherAddress, self.detail.TeacherCity, self.detail.TeacherState, self.detail.TeacherMedical,\
                            int(self.detail.TeacherID), int(self.detail.Address_id))):
             if self.Admin_id != 0:
                 update_query.exec_("Update Admin, Address set Admin.Admin_name = '%s', Admin.Admin_sex = '%s',\
                             Admin.Admin_email = '%s', Admin.Admin_date_of_birth = '%s', \
                             Admin.Admin_home_phone = '%s', Admin.Admin_cell_phone = '%s',\
-                            Admin.Admin_work_phone = '%s', Admin.Admin_SSN = '%s', Admin.Admin_pay_rate = '%s',\
+                            Admin.Admin_work_phone = '%s', Admin.Admin_SSN = '%s',\
                             Address.Zipcode = '%s', Address.Street = '%s', Address.City = '%s', Address.State = '%s', \
                             Admin.Admin_medical_information = '%s' where Admin.Admin_id = '%d' and Address.Address_id = '%d'"\
                            % (self.detail.TeacherName, self.detail.TeacherGender, \
                            self.detail.TeacherEmail,self.detail.TeacherBirth, self.detail.TeacherHomePhone, self.detail.TeacherCellPhone,\
-                           self.detail.TeacherWorkPhone,self.detail.TeacherSSN,self.detail.TeacherPay, self.detail.TeacherZipcode,\
+                           self.detail.TeacherWorkPhone,self.detail.TeacherSSN, self.detail.TeacherZipcode,\
                            self.detail.TeacherAddress, self.detail.TeacherCity, self.detail.TeacherState, self.detail.TeacherMedical,\
                            int(self.Admin_id), int(self.detail.Address_id)))
 
@@ -280,10 +280,10 @@ class Search_teacher_window(QtGui.QMainWindow):
                 whereClause += ("Teacher_work_phone like '%%%s%%'" % Teacher_workphone)
 
 
-  
-        if whereClause != '':
-            whereClause += ' and '
-        whereClause += ("Teacher_date_of_birth >= '%s' and Teacher_date_of_birth <= '%s'"% \
+        if self.adv.ui.Birth_cbox.isChecked():
+            if whereClause != '':
+                whereClause += ' and '
+            whereClause += ("Teacher_date_of_birth >= '%s' and Teacher_date_of_birth <= '%s'"% \
                         (Teacher_datebirth.toString("yyyy-MM-dd"), Teacher_end_datebirth.toString("yyyy-MM-dd")))
 
         self.ui.Teacher.setFilter(whereClause)

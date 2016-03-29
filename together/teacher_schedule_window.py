@@ -12,16 +12,20 @@ class Teacher_schedule_window(QtGui.QMainWindow):
         self.ui.setupUi(self)
         self.conn()
         Teacher_query = QSqlQuery()
+        #get teacher name for user choosing
         Teacher_query.exec_("select Teacher_name from Teacher")
         model = QSqlQueryModel()
         model.setQuery(Teacher_query)
+        #populate listview by teacher's name
         self.ui.Teacher_listView.setModel(model)
+        #disable button when the focus is not on the list
         self.ui.schedule_btn.setEnabled(False)
-        self.ui.Search_btn.clicked.connect(self.search_student)
+        self.ui.Search_btn.clicked.connect(self.search_teacher)
         self.ui.schedule_btn.clicked.connect(self.print_schedule)
         self.ui.Teacher_listView.clicked.connect(self.select_teacher)
         
-    def search_student(self):
+    def search_teacher(self):
+        #search teacher by names
         input_teacher_name = self.ui.Teacher_lineEdit.text()
         Teacher_query = QSqlQuery()
         Teacher_query.exec_("select Teacher_name from Teacher where Teacher_name like '%%%s%%'" % input_teacher_name)
@@ -30,6 +34,7 @@ class Teacher_schedule_window(QtGui.QMainWindow):
         self.ui.Teacher_listView.setModel(model)
         
     def print_schedule(self):
+        #print teacher's schedule in a new window
         self.ui.print = Print_window(self.ui.timeslicing, self.ui.msg)
         self.ui.print.show()
 

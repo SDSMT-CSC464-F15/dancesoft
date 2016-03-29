@@ -153,26 +153,6 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Cost_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>90</y>
-     <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Capacity_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>170</y>
-     <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="Location_detail_lineEdit">
    <property name="geometry">
     <rect>
@@ -199,16 +179,6 @@
      <x>500</x>
      <y>170</y>
      <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Age_start_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>500</x>
-     <y>210</y>
-     <width>91</width>
      <height>20</height>
     </rect>
    </property>
@@ -295,16 +265,6 @@
     <string>To</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Day_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>130</y>
-     <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QDateEdit" name="Date_start_detail_dateEdit">
    <property name="geometry">
     <rect>
@@ -338,16 +298,6 @@
     <string>To</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Age_end_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>630</x>
-     <y>210</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="Age_to_detail_label">
    <property name="geometry">
     <rect>
@@ -359,6 +309,91 @@
    </property>
    <property name="text">
     <string>To</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Day_detail_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>130</y>
+     <width>221</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Monday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tuesday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Wednesday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Thursday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Friday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Saturday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sunday</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="Capacity_detail_spinBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>170</y>
+     <width>221</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Cost_detail_doubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>90</y>
+     <width>221</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Age_start_detail_spinBox">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>210</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Age_end_detail_spinBox">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>210</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
    </property>
   </widget>
  </widget>

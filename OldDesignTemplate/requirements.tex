@@ -1,0 +1,185 @@
+% !TEX root = SystemTemplate.tex
+\chapter{User Stories, Backlog and Requirements}
+\section{Overview}
+
+This document covers the client information, an overview of the requirements of the system and the requirements laid out by the client. These requirements are laid out in this document with how the group plans to implemented them within the system. [MB]
+
+\bf(SECTION WILL UPDATE AS USER STORIES ARE CLARIFIED, UPDATED, AND AFTER VISIT TO SEE CURRENT PROJECT) 
+
+\subsection{Scope}
+
+This section covers several sections in the project which are as follows:
+\begin{enumerate}
+\item Purpose of Systems
+\item The Client's Information
+\item The Client's Information and Restrictions on the System
+\item The User Stories for Requirements
+\end{enumerate} 
+
+
+\subsection{Purpose of the System}
+The purpose of this system is to provide a system for the Academy of Dance Arts to manage their day to day operations, their employees, and their s friendly students. These day to day operations range from assigning teachers to classes, looking up information, printing roles sheets for classes, etc.  Also the system must accomplish these task using a user friendly interface, that is as intuitive as possible. Students will also have a simple web interface to look up their information and register for new classes.
+
+
+\section{Stakeholder Information}
+
+The stakeholder and sponsoring customer for this project is Dr. Jeff McGough a computer science professor at the South Dakota School of Mines and Technology and the vice president of the Academy of Dance Arts in Rapid City, South Dakota.
+Well not the sponsor of the project Dr. McGough's wife, Julie McFarland is also a key part of the customer base and a stakeholder as the owner and artistic director of the Academy. [MB] 
+
+
+\subsection{Customer or End User (Product Owner)}
+The primary end user for this product is Julie McFarland and her employees to manage the Academy of Dance Arts. Julie well not playing a direct role in product development is able to convey the academy's needs through Dr. McGough.
+
+Dr. Jeff McGough is the primary point of contact in the project. He assumes the role of scrum master at times and drives the product backlog and provides more details on product backlog materials during the weekly meeting with the development team. 
+
+\subsection{Management or Instructor (Scrum Master)}
+Dr. Jeff McGough is the primary point of contact in the project. He assumes the role of scrum master at times and drives the product backlog and provides more details on product backlog materials during the weekly meeting with the development team.
+
+
+\subsection{Developers --Testers}
+The DanceSoft team consist of two members, Marcus Berger and Dicheng Wu, who are both primarily developers and testers. due to the fact that the team is so small. All development roles are shared between the two team members.
+
+
+\section{Business Need}
+The customer needs us to develop a software solution which can run the dance studio in an effective manner. The product also needs to handle changing classes from year to year without needing to be updated. This means that the software needs to sync with multiple users, and handle new information such as class rosters, prices, clothing requirements for classes, changes in the employment roster, and many other changes that can occur in the running of a dance school.\\
+This project as a whole needs to be an improvement on the current system in use by the customer and provide an easy and efficient way to run the clients business. This project will  the data manipulation task through the back-end MySQL database, and the ease of use will be handled with a simple Pyqt GUI [MB]
+
+\bf(NEED TO ADD MORE CLARITY WILL ADD TO AND ADAPT AFTER SEEING CURRENT INTERFACE)
+
+\section{Requirements and Design Constraints}
+This section discusses what requirements exist that deal with meeting the business needs the customer has. For the DanceSoft these include system needs to run the academy, network connection issues, and some environment requirements laid out by both the client and the senior design requirements. [MB]
+
+
+\subsection{System  Requirements}
+The system requirements laid out by the clients are just the necessary features laid out in the user stories below. There was no preference on language or GUI environment on the part of the client. Due to some of the user stories and information handled within the system a level of security becomes a system requirement. 
+
+
+\subsection{Network Requirements}
+The network inside the Academy has connection issues and therefore a cloud or online based data storage option is not a highly advised possibility. The network issues within the school means the system will be contained in a local system to provide more stability within the system.
+
+
+\subsection{Development Environment Requirements}
+The academy runs on a Mac currently so the system must work on the Mac OSX operating system. While not required the project is developed in Python, so the end product will work cross platform should the academy ever switch operating systems or if the academy is ever sold the system will work if the new owners run windows.
+
+
+\subsection{Project  Management Methodology}
+The client requires a weekly meeting every Wednesday at 2:00 p.m. to check on the progress of the system. These meeting vary on topic and length depending on the needs of the project and the status of task. The senior design class requires that this project be completed in six sprint that are all roughly three weeks long, with a week long results period after each one. Another project requirement is the presentations that are required by the senior design class. These presentation occurs twice every semester usually after the first and last sprint each semester. Each presentation cover the content of the project up to that point, and updates on topics such as risk mitigation, budget, and current prototypes. Lastly it was requested by Dr. Mcgough as part of senior design and as the client that we provide him with access to the Github repository for the project and the Trello board for check in purposes.
+ 
+
+
+\section{User Stories}
+After the requirement for the project were laid out the team created the user stories based on those requirement. The user stories the team came up with are as fallows: [MB]
+
+\begin{enumerate}
+  \item As a user i want to adjust students payment models
+  \item As the owner I would like to see automatic database backups.
+  \item As a student I would like to be able to register online (with special app). Classes must be approved before added.
+  \item As a student I would like to be able to search clothing requirements.
+  \item As a student I would like to know my billing.
+  \item As the owner I would like to indicate clothing requirements per class.
+  \item As a studio person, I would like to be able to add students to classes.
+  \item  As a student, teacher etc, I would like to be able to look up a students class list.
+  \item As the teacher I would like to get a class role for each class.
+  \item Given a class list, I would like to get an invoice of the tuition due.
+  \item Studio would like to track payments and estimate remainder due.  I would like to generate an invoice for this amount.
+  \item As a student I would like to be able to register online (with special app).   Classes must be approved before added.
+  \item As a student I would like to know my billing.
+  \item As the owner I would like to track teacher hours and compute payroll.
+  \item As a studio employee I would like to open a registration pane and add student data
+  \item As the studio owner I would like to enter teacher information and look up information such as SS and pay rates.
+  \item As the owner, I would like to enter classes: time, location, registration cap. I would like to view this information later. I would like to assign instructors
+  \item As a user I want to have different payment models for different situations
+\end{enumerate}
+
+
+
+\subsection{User Story \#1}
+As a user i want to adjust students payment models. This user stories means that the user should be able to go find a student, select that student and change the pay model to another existing payment model. Adding a payment model is part of a different user story. 
+
+\subsubsection{User Story \#1 Breakdown}
+Further breakdown for this user story could be the creation of the student select function but this is mostly covered by other user stories.
+
+\subsection{User Story \#2}
+As the owner I would like to see automatic database backups. This one is fairly simple the system will need to back up the data from the database locally or by an external provider. 
+
+
+\subsection{User Story \#3} 
+As a student I would like to be able to register online (with special app). Classes must be approved before added. The special app references in this user story is the php student web interface that the team will create. The students will be able to go to the website, log in and register for classes along with other features listed in other user stories.
+
+\subsubsection{User Story \#3 Breakdown}
+Also listed in this user story is the ability for admins to approve any class registrations by students before the registration is finalizes and submitted to the data base. This approval system needs to have three states. First is pending which will be the unanswered request in the system. Second is the approved option which will finalize the students registration and place them in their desired class. Lastly is denied which will not put the student in the class.
+
+\subsubsection{Further Breakdown}
+This interface will also include the options to manage the student information handled by the system. This include the registration functionality, views, updates, registrations, and submits. The interface will run the requirements of the student and their guardians, most of which are covered by other user requirements
+
+\subsection{User Story \#4}
+As a student I would like to be able to search clothing requirements. This will be part of the student interface and will allow them to click on a class and see clothing requirements for that class from the database.
+
+\subsection{User Story \#5}
+As a student I would like to know my billing. The students will be able to click a link within the interface and see their various billing info, such as remaining balance, payment plan, and date payment is due.
+
+\subsection{User Story \#6}
+As the owner I would like to indicate clothing requirements per class. The owner or other admin will be able to add clothing requirements to a specific class and change them in a class menu using an update form.
+
+
+\subsection{User Story \#7}
+As a studio person, I would like to be able to add students to classes. This options will allow all employees to request a specific student be added to a class. This will sent a request to an admin which will need to approve the request like a normal registration or approval by teachers.
+
+\subsection{User Story \#8}
+As a student, teacher etc, I would like to be able to look up a students class list. Users need to select a student and see what their class schedule is and which class they have pending registrations for. This will be accomplished through an output dialog that pops up to display the students schedule.
+
+
+\subsection{User Story \#9}
+As the teacher I would like to get a class role for each class. Users need to select a class and see who is enrolled in it. Also the list needs to be exportable or printable so teachers can take role at a class. This is done through a window where the teacher can select one of the classes they are teaching and print the role sheet for that class.
+
+\subsection{User Story \#10}
+Given a class list, I would like to get an invoice of the tuition due. Users should be able to get an invoice for their billing based on the number of classes being taken, and the payment model the student is placed under.
+
+\bf(UPDATE AFTER STUDENT INTERFACE)
+
+\subsubsection{User Story \#10 Breakdown}
+This user story along with any others that deal with payroll or billing with need to have a system for amount calculation and a way to adjust or add payment models on the admin/owner side of the software.
+
+\bf(UPDATE AFTER PAYROLL SPRINT)
+
+\subsection{User Story \#11}
+Studio would like to track payments and estimate remainder due.  I would like to generate an invoice for this amount. This user story fallows user story 10. The system should track payments made and given those payments calculate what students or parents have left to pay.
+
+\bf(UPDATE AFTER PAYROLL SPRINT)
+
+\subsection{User Story \#12}
+As a student I would like to know my billing. Simply put students and parents want the ability to see how they are charged and what they have left to pay. This should be an option within the php based student web interface.
+
+\bf(UPDATE AFTER PAYROLL AND STUDENT INTERFACE)
+
+\subsection{User Story \#13}
+As the owner I would like to track teacher hours and compute payroll. Hours for teachers will need to be approved by an admin within their interface. Also calculations will be made based on that teachers pay rate to compute their pay. Lastly tax algorithms will need to be used to effective make sure that tax are withdrawn correctly and neither the teacher or the academy will be liable in the case of audits.
+
+\bf(UPDATE AFTER PAYROLL AND STUDENT INTERFACE)
+
+\subsubsection{User Story \#13 Breakdown}
+Teachers and employees will need to be given a way to submit hours through their interface that can then be approved by the owner.
+
+\subsection{User Story \#14}
+As a studio employee I would like to open a registration pane and add student data. The employees of the academy should be able to modify student registration information. This will be used should the students information change, or if the students information was entered incorrectly. 
+
+This is done through an update form where the user can modify the information and submit the updates to the database.
+
+\subsection{User Story \#15}
+As the studio owner I would like to enter teacher information and look up information such as SS and pay rates. The system will provide the owner with the ability to search, view, and modify information within the system.
+
+\subsubsection{User Story \#15 Breakdown}
+Search and view functions will exist for all level of users with different results in different areas. Examples being students need to see class information, teachers should search classes and students, admin should be able to see all information.
+
+\subsection{User Story \#16}
+As the owner, I would like to enter classes: time, location, registration cap. I would like to view this information later. I would like to assign instructors. Simply put this is the ability of the owner to a class to the academy's roster. Which is done through an add information form which checks required information and submits it to the database. 
+
+\subsection{User Story \#17}
+As a user I want to have different payment models for different situations. Allow the owner the ability to change, add, and select different payment methods for billing based on a number of factors. These factors include time of registration, dropped classes, admin selects payment options for a specific situation, etc.
+
+\bf(UPDATE AFTER PAYROLL AND BILLING SPRINT)
+
+\section{Research or Proof of Concept Results}
+Before production could begin research had to be conducted into which programming language, GUI framework, and database type would be used to complete the project. A explanation of the research conducted can be found in the sprint one wrapper or in the prototype sections of this document. After this research was conducted the team selected Python, PyQt, and MySQL as the language, GUI, and database respectfully.\\
+After the research no explicit proof of concept was required, however as pages are functional pages are shown too, or approved by the client.
+

@@ -62,12 +62,12 @@ class assign_teacher(QtGui.QMainWindow):
                       TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time FROM Class \
                       as C WHERE C.Class_name = '%s') as C WHERE not (NC.Class_time >= C.Class_end_time or \
                       C.Class_time >= NC.Class_end_time)) ORDER BY Teacher_id" % (self.selected_class))
-        
+                self.dialogbox_Flag = False
                 self.teacher_result = QSqlQueryModel()
                 self.teacher_result.setQuery(self.teacher_query)
                 self.assign.Teacher_listView.setModel(self.teacher_result)
                 self.assign.Teacher_listView.clicked.connect(self.Update_assign_teacher)
-                self.dialogbox_Flag = False
+                
 
         else:
         
@@ -83,6 +83,7 @@ class assign_teacher(QtGui.QMainWindow):
             self.teacher_result.setQuery(self.teacher_query)
             self.assign.Teacher_listView.setModel(self.teacher_result)
             self.assign.Teacher_listView.clicked.connect(self.assign_teacher)
+            self.dialogbox_Flag = False
 
     def assign_teacher(self, teacher_index):
         if self.dialogbox_Flag == False:

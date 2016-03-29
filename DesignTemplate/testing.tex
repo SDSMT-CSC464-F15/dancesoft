@@ -1,27 +1,38 @@
-% !TEX root = SystemTemplate.tex
+% !TEX root = DesignDocument.tex
+
 
 \chapter{System  and Unit Testing}
 
-This section describes the approach taken with regard to system and GUI testing within the system. 
+This section describes the approach taken with regard to system and unit testing. 
 
 \section{Overview}
-The testing for this project will be done using a GUI test approach through manual and unit test usually done through provided frameworks provided inside either Visual Studio or Xcode and manual checks. Also user test will need to be conducted on the user interface since code based unit test can not be written for certain parts of the user interface, such as navigation flow. The test will be small pieces of code meant to test small sections of code for success or points of failure. The overall goal will be to get as much code tested as possible.
+Provides a brief overview of the testing approach, testing frameworks, and general 
+how testing is/will be done to provide a measure of success for the system. 
 
-GUI flow and GUI interaction will start as mostly manual testing and if possible automate as much as possible of the GUI testing as possible. [MB] 
+Each requirement (user story component) should be tested.    A review of objectives and
+constraints might be needed here.  
 
 \section{Dependencies}
-Currently the project contains a few known dependencies in a testing environment. The first is in the PyQt4 Python library which if changed could cause issues within the system GUI and functionality test written for it. However this seems unlikely since the main focus of PyQt updates is now focused on PyQt5. Second is the project dependence on MySQL relational database. This dependency should also be negligible since any update to MySQL are normally done with continuing compatibly with existing software in mind. A third dependency is the RC Dance Arts web page interfacing with the student interface while should not be an issue due to the way the website is constructed since the website is mostly just html. [MB]
-
-\bf (UPDATES WILL NEED TO BE MADE IN LATER SPRINTS AS TESTING FRAMEWORK GROWS PAST MANUAL TESTING) 
+Describe the basic dependencies which should include unit testing frameworks and 
+reference material. 
 
 
 \section{Test Setup and Execution}
-Test cases for this project were develop by the team to test specific functions and code sections and are therefore developed by the coder to test sections of the code. This can range from a print to test loops or function access to produce a full data entry or a response to test database connects and data modifications.
-Depending on the type of test needed the development can take many forms. Such as specific script file test, in which case the test will execute every time the script is run until the test is removed from the code of the script. This form of test is usually used by the team to test loop or other condition statement functionality or any other one off type of code test.
-Second is GUI test, user interface test will be conducted in two ways. Buttons and pathways will be manually tested, this means running the program and clicking the buttons to make sure that the window function properly. Second is the GUI's ability to connect and interact with the database in the correct manner. This is done through a combination of manual and script or query test. 
+Describe how test cases were developed, setup, and executed.  This section can 
+be extremely involved if a complete list of test cases was warranted for the system.   One 
+approach is to list each requirement, module, or component and describe the test.
 
+The unit tests are described here.
 
-\bf(ADD EXTERIOR SYSTEM, STUDENT INTERFACE, and SYSTEM INTEGRATION TEST AS WRITTEN)
-\bf(UPDATE UNIT TEST FRAMEWORK AS PROJECT PROGRESSES PAST MANUAL TESTING)
-\bf(CREATE RECORD OF TEST ON STUDENT INTERFACE AND PAYROLL DURING SEMESTER 2) 
-\bf(NOTE TO SELF COVER MANUAL TEST LOG BETTER IN SEMESTER 2)
+\section{System Testing}
+
+\section{System Integration Analysis}
+
+\section{Risk Analysis}
+
+\subsection{Risk Mitigation}
+
+\section{Successes, Issues and Problems}
+
+\subsection{Changes to the Backlog}
+

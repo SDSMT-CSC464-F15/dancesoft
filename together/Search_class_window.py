@@ -56,25 +56,25 @@ class Search_class_window(QtGui.QMainWindow):
     def Classinfo_update(self):
         self.detail.ClassId = self.detail.ui.Id_detail_lineEdit.text()
         self.detail.ClassName = self.detail.ui.Name_detail_lineEdit.text()      
-        self.detail.ClassCost = self.detail.ui.Cost_detail_lineEdit.text()   
+        self.detail.ClassCost = self.detail.ui.Cost_detail_doubleSpinBox.value()  
         self.detail.ClassTimeS = self.detail.ui.Time_start_detail_timeEdit.text()
         self.detail.ClassTimeE = self.detail.ui.Time_end_detail_timeEdit.text()  
-        self.detail.ClassDay = self.detail.ui.Day_detail_lineEdit.text()
+        self.detail.ClassDay = self.detail.ui.Day_detail_comboBox.currentText()
         self.detail.ClassLoc = self.detail.ui.Location_detail_lineEdit.text()
         self.detail.ClassLoc.upper()
-        self.detail.ClassCap = self.detail.ui.Capacity_detail_lineEdit.text()
+        self.detail.ClassCap = self.detail.ui.Capacity_detail_spinBox.value()
         self.detail.ClassCloth = self.detail.ui.Clothing_detail_lineEdit.text()
         self.detail.ClassDateS = self.detail.ui.Date_start_detail_dateEdit.text()
         self.detail.ClassDateE = self.detail.ui.Date_end_detail_dateEdit.text()
-        self.detail.ClassAgeS = self.detail.ui.Age_start_detail_lineEdit.text()
-        self.detail.ClassAgeE = self.detail.ui.Age_end_detail_lineEdit.text()    
+        self.detail.ClassAgeS = self.detail.ui.Age_start_detail_spinBox.value()
+        self.detail.ClassAgeE = self.detail.ui.Age_end_detail_spinBox.value()    
         self.detail.ClassDes = self.detail.ui.Description_detail_textEdit.toPlainText()
         update_query = QSqlQuery()
 
         if update_query.exec_("Update Class set Class_name = '%s', Class_cost = '%f', Class_time = '%s',\
                             Class_end_time = '%s', Class_day = '%s', Class_location = '%s', Class_cap = '%d', \
-                            Class_clothing = '%s', Class_start_date = '%s', Class_end_date = '%s', Class_age = '%s',\
-                            Class_age_end = '%s', Class_description = '%s' where Class_id = '%d'"\
+                            Class_clothing = '%s', Class_start_date = '%s', Class_end_date = '%s', Class_age = '%d',\
+                            Class_age_end = '%d', Class_description = '%s' where Class_id = '%d'"\
                            %(self.detail.ClassName, float(self.detail.ClassCost),  self.detail.ClassTimeS,\
                              self.detail.ClassTimeE, self.detail.ClassDay, self.detail.ClassLoc, int(self.detail.ClassCap),\
                              self.detail.ClassCloth, self.detail.ClassDateS, self.detail.ClassDateE, self.detail.ClassAgeS,\
@@ -109,7 +109,7 @@ class Search_class_window(QtGui.QMainWindow):
             self.detail.ui.Name_detail_lineEdit.setText(self.detail.record.field(1).value())
         #ClassCost
         if not isinstance(self.detail.record.field(2).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Cost_detail_lineEdit.setText(str(self.detail.record.field(2).value()))
+            self.detail.ui.Cost_detail_doubleSpinBox.setValue(self.detail.record.field(2).value())
             
         #ClassTimeStart
         if not isinstance(self.detail.record.field(3).value(), QtCore.QPyNullVariant):
@@ -122,7 +122,8 @@ class Search_class_window(QtGui.QMainWindow):
             
         #ClassDay
         if not isinstance(self.detail.record.field(5).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Day_detail_lineEdit.setText(self.detail.record.field(5).value())
+            index = self.detail.ui.Day_detail_comboBox.findText(self.detail.record.field(5).value())
+            self.detail.ui.Day_detail_comboBox.setCurrentIndex(index)
             
         #ClassLocation
         if not isinstance(self.detail.record.field(6).value(), QtCore.QPyNullVariant):
@@ -130,7 +131,7 @@ class Search_class_window(QtGui.QMainWindow):
             
         #ClassCapacity
         if not isinstance(self.detail.record.field(7).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Capacity_detail_lineEdit.setText(str(self.detail.record.field(7).value()))
+            self.detail.ui.Capacity_detail_spinBox.setValue(self.detail.record.field(7).value())
 
         #ClassClothing    
         if not isinstance(self.detail.record.field(8).value(), QtCore.QPyNullVariant):
@@ -145,10 +146,10 @@ class Search_class_window(QtGui.QMainWindow):
 
         #ClassAgeStart
         if not isinstance(self.detail.record.field(12).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Age_start_detail_lineEdit.setText(str(self.detail.record.field(12).value()))
+            self.detail.ui.Age_start_detail_spinBox.setValue(self.detail.record.field(12).value())
         #ClassAgeEnd
         if not isinstance(self.detail.record.field(13).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Age_end_detail_lineEdit.setText(str(self.detail.record.field(13).value()))
+            self.detail.ui.Age_end_detail_spinBox.setValue(self.detail.record.field(13).value())
         #ClassDescription
         if not isinstance(self.detail.record.field(9).value(), QtCore.QPyNullVariant):
             self.detail.ui.Description_detail_textEdit.setText(self.detail.record.field(9).value())
@@ -188,10 +189,7 @@ class Search_class_window(QtGui.QMainWindow):
             self.adv.ui.Id_adv_label.show()
             flag = False 
         elif Class_ID != '':
-            if self.adv.ui.ID_Exact_cbox.isChecked():
-                whereClause += ("Class_id = %s"%Class_ID)
-            else:
-                whereClause += ("Class_id like %%%s%%"%Class_ID)
+            whereClause += ("Class_id = %s"%Class_ID)
             
         if self.adv.ui.Name_cobx.isChecked() and Class_name == '':
             self.adv.ui.Name_adv_label.show()

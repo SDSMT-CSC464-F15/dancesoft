@@ -73,33 +73,15 @@ class Print_window(QtGui.QWidget):
         self.editor.append(html)
         
         self.editor.textChanged.connect(self.handleTextChanged)
-        self.buttonOpen = QtGui.QPushButton('Open', self)
-        self.buttonOpen.clicked.connect(self.handleOpen)
         self.buttonPrint = QtGui.QPushButton('Print', self)
         self.buttonPrint.clicked.connect(self.handlePrint)
         self.buttonPreview = QtGui.QPushButton('Preview', self)
         self.buttonPreview.clicked.connect(self.handlePreview)
         layout = QtGui.QGridLayout(self)
-        layout.addWidget(self.editor, 0, 0, 1, 3)
-        layout.addWidget(self.buttonOpen, 1, 0)
-        layout.addWidget(self.buttonPrint, 1, 1)
-        layout.addWidget(self.buttonPreview, 1, 2)
+        layout.addWidget(self.editor, 0, 0, 1, 2)
+        layout.addWidget(self.buttonPrint, 1, 0)
+        layout.addWidget(self.buttonPreview, 1, 1)
         self.handleTextChanged()
-
-    def handleOpen(self):
-        path = QtGui.QFileDialog.getOpenFileName(
-            self, self.tr('Open file'), '',
-            self.tr('HTML files (*.html);;Text files (*.txt)'))
-        if not path.isEmpty():
-            stream = QtCore.QFile(path)
-            if stream.open(QtCore.QIODevice.ReadOnly):
-                info = QtCore.QFileInfo(path)
-                text = QtCore.QString.fromLocal8Bit(stream.readAll())
-                if info.completeSuffix() == 'html':
-                    self.editor.setHtml(text)
-                else:
-                    self.editor.setPlainText(text)
-            stream.close()
 
     def handlePrint(self):
         dialog = QtGui.QPrintDialog()

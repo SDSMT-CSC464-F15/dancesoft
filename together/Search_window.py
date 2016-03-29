@@ -215,10 +215,7 @@ class Search_window(QtGui.QMainWindow):
             self.adv.ui.Id_adv_label.show()
             flag = False 
         elif Stu_ID != '':
-            if self.adv.ui.ID_Exact_cbox.isChecked():
-                whereClause += ("Student_id = %s"%Stu_ID)
-            else:
-                whereClause += ("Student_id like %%%s%%"%Stu_ID)
+            whereClause += ("Student_id = %s"%Stu_ID)
             
         if self.adv.ui.Name_cobx.isChecked() and Stu_name == '':
             self.adv.ui.Name_adv_label.show()

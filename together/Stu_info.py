@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Stuinfo.ui'
 #
-# Created: Tue Mar 22 11:54:10 2016
+# Created: Tue Mar 29 19:29:23 2016
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -46,7 +46,7 @@ class Ui_stu_info_dialog(object):
         self.Tuition_detail_label.setGeometry(QtCore.QRect(20, 250, 101, 16))
         self.Tuition_detail_label.setObjectName(_fromUtf8("Tuition_detail_label"))
         self.Address_detail_label = QtGui.QLabel(stu_info_dialog)
-        self.Address_detail_label.setGeometry(QtCore.QRect(20, 290, 54, 12))
+        self.Address_detail_label.setGeometry(QtCore.QRect(20, 330, 54, 12))
         self.Address_detail_label.setObjectName(_fromUtf8("Address_detail_label"))
         self.Name_detail_label = QtGui.QLabel(stu_info_dialog)
         self.Name_detail_label.setGeometry(QtCore.QRect(380, 50, 54, 12))
@@ -100,19 +100,19 @@ class Ui_stu_info_dialog(object):
         self.Update_detail_btn.setGeometry(QtCore.QRect(660, 460, 91, 21))
         self.Update_detail_btn.setObjectName(_fromUtf8("Update_detail_btn"))
         self.Medical_detail_textEdit = QtGui.QTextEdit(stu_info_dialog)
-        self.Medical_detail_textEdit.setGeometry(QtCore.QRect(500, 250, 221, 141))
+        self.Medical_detail_textEdit.setGeometry(QtCore.QRect(500, 250, 221, 171))
         self.Medical_detail_textEdit.setObjectName(_fromUtf8("Medical_detail_textEdit"))
         self.Address_detail_lineEdit = QtGui.QLineEdit(stu_info_dialog)
-        self.Address_detail_lineEdit.setGeometry(QtCore.QRect(130, 290, 221, 20))
+        self.Address_detail_lineEdit.setGeometry(QtCore.QRect(130, 330, 221, 20))
         self.Address_detail_lineEdit.setObjectName(_fromUtf8("Address_detail_lineEdit"))
         self.City_detail_label = QtGui.QLabel(stu_info_dialog)
-        self.City_detail_label.setGeometry(QtCore.QRect(20, 330, 54, 12))
+        self.City_detail_label.setGeometry(QtCore.QRect(20, 370, 54, 12))
         self.City_detail_label.setObjectName(_fromUtf8("City_detail_label"))
         self.State_detail_label_3 = QtGui.QLabel(stu_info_dialog)
-        self.State_detail_label_3.setGeometry(QtCore.QRect(20, 370, 54, 12))
+        self.State_detail_label_3.setGeometry(QtCore.QRect(20, 410, 54, 12))
         self.State_detail_label_3.setObjectName(_fromUtf8("State_detail_label_3"))
         self.City_detail_lineEdit = QtGui.QLineEdit(stu_info_dialog)
-        self.City_detail_lineEdit.setGeometry(QtCore.QRect(130, 330, 221, 20))
+        self.City_detail_lineEdit.setGeometry(QtCore.QRect(130, 370, 221, 20))
         self.City_detail_lineEdit.setObjectName(_fromUtf8("City_detail_lineEdit"))
         self.Birth_detail_dateEdit = QtGui.QDateEdit(stu_info_dialog)
         self.Birth_detail_dateEdit.setGeometry(QtCore.QRect(130, 130, 221, 22))
@@ -121,7 +121,7 @@ class Ui_stu_info_dialog(object):
         self.Gender_comboBox.setGeometry(QtCore.QRect(130, 90, 221, 22))
         self.Gender_comboBox.setObjectName(_fromUtf8("Gender_comboBox"))
         self.State_detail_ComboBox = QtGui.QComboBox(stu_info_dialog)
-        self.State_detail_ComboBox.setGeometry(QtCore.QRect(130, 370, 221, 20))
+        self.State_detail_ComboBox.setGeometry(QtCore.QRect(130, 410, 221, 20))
         self.State_detail_ComboBox.setObjectName(_fromUtf8("State_detail_ComboBox"))
         self.State_detail_ComboBox.addItem(_fromUtf8(""))
         self.State_detail_ComboBox.addItem(_fromUtf8(""))
@@ -173,6 +173,12 @@ class Ui_stu_info_dialog(object):
         self.State_detail_ComboBox.addItem(_fromUtf8(""))
         self.State_detail_ComboBox.addItem(_fromUtf8(""))
         self.State_detail_ComboBox.addItem(_fromUtf8(""))
+        self.Zipcode_detail_lineEdit = QtGui.QLineEdit(stu_info_dialog)
+        self.Zipcode_detail_lineEdit.setGeometry(QtCore.QRect(130, 290, 221, 20))
+        self.Zipcode_detail_lineEdit.setObjectName(_fromUtf8("Zipcode_detail_lineEdit"))
+        self.Zipcode_detail_label = QtGui.QLabel(stu_info_dialog)
+        self.Zipcode_detail_label.setGeometry(QtCore.QRect(20, 290, 101, 16))
+        self.Zipcode_detail_label.setObjectName(_fromUtf8("Zipcode_detail_label"))
 
         self.retranslateUi(stu_info_dialog)
         QtCore.QMetaObject.connectSlotsByName(stu_info_dialog)
@@ -246,4 +252,5 @@ class Ui_stu_info_dialog(object):
         self.State_detail_ComboBox.setItemText(47, _translate("stu_info_dialog", "West Virginia", None))
         self.State_detail_ComboBox.setItemText(48, _translate("stu_info_dialog", "Wisconsin", None))
         self.State_detail_ComboBox.setItemText(49, _translate("stu_info_dialog", "Wyoming", None))
+        self.Zipcode_detail_label.setText(_translate("stu_info_dialog", "Zipcode", None))
 

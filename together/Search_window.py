@@ -5,6 +5,7 @@ from Search import Ui_Search_MainWindow
 from PyQt4.QtSql import *
 from Advsearch_Dialog import Advsearch_Dialog
 from Stu_info_Dialog import Stu_info_dialog
+import re
 
 
 
@@ -81,18 +82,52 @@ class Search_window(QtGui.QMainWindow):
         self.detail.StuCity = self.detail.ui.City_detail_lineEdit.text()
         self.detail.StuCity.upper()
         self.detail.StuState = self.detail.ui.State_detail_ComboBox.currentText()
+        self.detail.StuZip = self.detail.ui.Zipcode_detail_lineEdit.text()
         self.detail.StuMedical = self.detail.ui.Medical_detail_textEdit.toPlainText()
 
+        #check is name empty
+        if self.detail.StuName == "":
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "student name cannot be empty!" )
+            return    
+        #check is email empty
+        if self.detail.StuEmail == "":
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "email cannot be empty!" )
+            return
+        elif self.detail.StuEmail != "" and \
+        re.match('^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$', self.detail.StuEmail) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid email address!" )
+            return
+        
+        #check if the phone is valid
+        if self.detail.StuPhone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.detail.StuPhone) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid phone number!")
+            return
+        
+        #check if eme phone is valid
+        if self.detail.StuEphone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.detail.StuEphone) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid phone number!")
+            return
+
+        #check if zipcode is valid 
+        if self.detail.StuZip != "" and re.match('^\d{5}(?:[-\s]\d{4})?$', self.detail.StuZip) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid zipcode!")
+            return
 
         update_query = QSqlQuery()
         
         if update_query.exec_("Update Student, Address, Guardian Set Student.Student_name = '%s', Student.Student_sex = '%s', Student.Student_email = '%s', \
                            Student.Student_date_of_birth = '%s', Student.Student_home_phone = '%s', Student.Student_Emergency_contact = '%s', Student.Emergency_contact_phone = '%s', \
                            Student.Student_medical_information = '%s', Student.Tuition = '%s', \
-                           Address.Street = '%s', Address.City = '%s', Address.State = '%s', Guardian.Guardian_name = '%s'\
+                           Address.Street = '%s', Address.City = '%s', Address.State = '%s', Address.Zipcode = '%d', Guardian.Guardian_name = '%s'\
                            Where Student.Student_id = '%d' and Student.Student_address = Address.Address_id and Student.Guardian_primary = Guardian.Guardian_id"\
                            %(self.detail.StuName,  self.detail.StuGender, self.detail.StuEmail, self.detail.StuBirth.toString("yyyy-MM-dd"), self.detail.StuPhone,  self.detail.StuEcon, self.detail.StuEphone,\
-                           self.detail.StuMedical, self.detail.StuTuition, self.detail.StuAddress, self.detail.StuCity, self.detail.StuState, self.detail.StuPG, int(self.detail.StuID)))\
+                           self.detail.StuMedical, self.detail.StuTuition, self.detail.StuAddress, self.detail.StuCity, self.detail.StuState, int(self.detail.StuZip), self.detail.StuPG, int(self.detail.StuID)))\
             and update_query.exec_("Update Student, Guardian Set Guardian.Guardian_name = '%s '\
                                     Where Student.Student_id = '%d' and Student.Guardian_secondary = Guardian.Guardian_id" \
                                    %(self.detail.StuSG, int(self.detail.StuID))):
@@ -167,8 +202,11 @@ class Search_window(QtGui.QMainWindow):
         #StuTuition
         if not isinstance(self.detail.record.field(13).value(), QtCore.QPyNullVariant):
             self.detail.ui.Tuition_detail_lineEdit.setText(str(self.detail.record.field(13).value()))
+        #medical
+        if not isinstance(self.detail.record.field(12).value(), QtCore.QPyNullVariant):
+            self.detail.ui.Medical_detail_textEdit.setText(self.detail.record.field(12).value())
 
-
+        #address
         if not isinstance(self.detail.record.field(1).value(), QtCore.QPyNullVariant):
             self.detail.ui.Address_detail_lineEdit.setText(self.detail.record_A.field(1).value())
 
@@ -177,11 +215,10 @@ class Search_window(QtGui.QMainWindow):
         if not isinstance(self.detail.record_A.field(3).value(), QtCore.QPyNullVariant):
             index = self.detail.ui.State_detail_ComboBox.findText(self.detail.record_A.field(3).value())
             self.detail.ui.State_detail_ComboBox.setCurrentIndex(index)
-            
-        if not isinstance(self.detail.record.field(12).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Medical_detail_textEdit.setText(self.detail.record.field(12).value())
-        
 
+        if not isinstance(self.detail.record_A.field(4).value(), QtCore.QPyNullVariant):
+            self.detail.ui.Zipcode_detail_lineEdit.setText(str(self.detail.record_A.field(4).value()))
+            
         self.detail.ui.Close_detail_btn.clicked.connect(self.detail.close)
         self.detail.ui.Update_detail_btn.clicked.connect(self.stuinfo_update)
             
@@ -215,7 +252,13 @@ class Search_window(QtGui.QMainWindow):
             self.adv.ui.Id_adv_label.show()
             flag = False 
         elif Stu_ID != '':
-            whereClause += ("Student_id = %s"%Stu_ID)
+            if Stu_ID.isdigit():
+                whereClause += ("Student_id = %s"%Stu_ID)
+            else:
+                QtGui.QMessageBox.warning(
+                    self.adv, 'Error', "please enter valid id!" )
+                return
+            
             
         if self.adv.ui.Name_cobx.isChecked() and Stu_name == '':
             self.adv.ui.Name_adv_label.show()

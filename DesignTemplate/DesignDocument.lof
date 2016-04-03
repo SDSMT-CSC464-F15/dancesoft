@@ -1,7 +1,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces A sample figure .... System Diagram }}{2}{figure.1.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -13,11 +12,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces DanceSoft Trello Board}}{B-4}{figure.B.1}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Tables currently in database}}{B-7}{figure.B.2}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Current iteration of the log in page}}{B-7}{figure.B.3}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Current iteration of the Admin Landing page}}{B-8}{figure.B.4}
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Search Pages}}{B-10}{figure.B.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -16,9 +16,9 @@
   <widget class="QPushButton" name="Set_btn">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>30</x>
      <y>130</y>
-     <width>75</width>
+     <width>81</width>
      <height>23</height>
     </rect>
    </property>
@@ -26,37 +26,88 @@
     <string>Set</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="Semester_comboBox">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>40</y>
-     <width>69</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Semester_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>40</y>
-     <width>101</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Add_btn">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>250</x>
      <y>130</y>
-     <width>75</width>
+     <width>81</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Year_spinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>40</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Term_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>80</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Term1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Term2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Term3</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="Semester_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Set_label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set current semester:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Add_label">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>10</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add new semester:</string>
    </property>
   </widget>
  </widget>

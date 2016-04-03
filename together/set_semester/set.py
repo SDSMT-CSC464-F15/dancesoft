@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'set.ui'
 #
-# Created: Thu Feb 18 09:19:19 2016
+# Created: Tue Mar 29 20:27:43 2016
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -28,17 +28,29 @@ class Ui_Semester_set_Dialog(object):
         Semester_set_Dialog.setObjectName(_fromUtf8("Semester_set_Dialog"))
         Semester_set_Dialog.resize(400, 215)
         self.Set_btn = QtGui.QPushButton(Semester_set_Dialog)
-        self.Set_btn.setGeometry(QtCore.QRect(60, 130, 75, 23))
+        self.Set_btn.setGeometry(QtCore.QRect(30, 130, 81, 23))
         self.Set_btn.setObjectName(_fromUtf8("Set_btn"))
-        self.Semester_comboBox = QtGui.QComboBox(Semester_set_Dialog)
-        self.Semester_comboBox.setGeometry(QtCore.QRect(60, 40, 69, 22))
-        self.Semester_comboBox.setObjectName(_fromUtf8("Semester_comboBox"))
-        self.Semester_lineEdit = QtGui.QLineEdit(Semester_set_Dialog)
-        self.Semester_lineEdit.setGeometry(QtCore.QRect(180, 40, 101, 20))
-        self.Semester_lineEdit.setObjectName(_fromUtf8("Semester_lineEdit"))
         self.Add_btn = QtGui.QPushButton(Semester_set_Dialog)
-        self.Add_btn.setGeometry(QtCore.QRect(200, 130, 75, 23))
+        self.Add_btn.setGeometry(QtCore.QRect(250, 130, 81, 23))
         self.Add_btn.setObjectName(_fromUtf8("Add_btn"))
+        self.Year_spinBox = QtGui.QSpinBox(Semester_set_Dialog)
+        self.Year_spinBox.setGeometry(QtCore.QRect(250, 40, 101, 22))
+        self.Year_spinBox.setObjectName(_fromUtf8("Year_spinBox"))
+        self.Term_comboBox = QtGui.QComboBox(Semester_set_Dialog)
+        self.Term_comboBox.setGeometry(QtCore.QRect(250, 80, 101, 22))
+        self.Term_comboBox.setObjectName(_fromUtf8("Term_comboBox"))
+        self.Term_comboBox.addItem(_fromUtf8(""))
+        self.Term_comboBox.addItem(_fromUtf8(""))
+        self.Term_comboBox.addItem(_fromUtf8(""))
+        self.Semester_comboBox = QtGui.QComboBox(Semester_set_Dialog)
+        self.Semester_comboBox.setGeometry(QtCore.QRect(30, 40, 101, 22))
+        self.Semester_comboBox.setObjectName(_fromUtf8("Semester_comboBox"))
+        self.Set_label = QtGui.QLabel(Semester_set_Dialog)
+        self.Set_label.setGeometry(QtCore.QRect(30, 10, 151, 16))
+        self.Set_label.setObjectName(_fromUtf8("Set_label"))
+        self.Add_label = QtGui.QLabel(Semester_set_Dialog)
+        self.Add_label.setGeometry(QtCore.QRect(250, 10, 151, 16))
+        self.Add_label.setObjectName(_fromUtf8("Add_label"))
 
         self.retranslateUi(Semester_set_Dialog)
         QtCore.QMetaObject.connectSlotsByName(Semester_set_Dialog)
@@ -47,4 +59,9 @@ class Ui_Semester_set_Dialog(object):
         Semester_set_Dialog.setWindowTitle(_translate("Semester_set_Dialog", "Dialog", None))
         self.Set_btn.setText(_translate("Semester_set_Dialog", "Set", None))
         self.Add_btn.setText(_translate("Semester_set_Dialog", "Add", None))
+        self.Term_comboBox.setItemText(0, _translate("Semester_set_Dialog", "Term1", None))
+        self.Term_comboBox.setItemText(1, _translate("Semester_set_Dialog", "Term2", None))
+        self.Term_comboBox.setItemText(2, _translate("Semester_set_Dialog", "Term3", None))
+        self.Set_label.setText(_translate("Semester_set_Dialog", "Set current semester:", None))
+        self.Add_label.setText(_translate("Semester_set_Dialog", "Add new semester:", None))
 

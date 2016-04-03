@@ -5,6 +5,7 @@ from PyQt4.QtSql import *
 from Advsearch_teacher_Dialog import Advsearch_Dialog
 from Teacher_info_Dialog import Teacher_info_dialog
 from PyQt4.QtGui import QAbstractItemView
+import re
 
 class Search_teacher_window(QtGui.QMainWindow):
     def __init__(self):
@@ -74,7 +75,60 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.detail.TeacherMedical = self.detail.ui.Medical_detail_textEdit.toPlainText()
 
 
+        #check is name empty
+        if self.detail.TeacherName == "":
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "student name cannot be empty!" )
+            return    
+        #check is email empty
+        if self.detail.TeacherEmail == "":
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "email cannot be empty!" )
+            return
+        elif self.detail.TeacherEmail != "" and \
+        re.match('^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$', self.detail.TeacherEmail) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid email address!" )
+            return
         
+        #check if the homw phone is valid
+        if self.detail.TeacherHomePhone == "":
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "home phone cannot be empty!" )
+            return
+        elif self.detail.TeacherHomePhone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.detail.TeacherHomePhone) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid phone number!")
+            return
+        
+        #check if cell phone is valid
+        if self.detail.TeacherCellPhone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.detail.TeacherCellPhone) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid phone number!")
+            return
+        
+        #check if work phone is valid
+        if self.detail.TeacherWorkPhone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.detail.TeacherWorkPhone) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid phone number!")
+            return
+
+        #check if ssn valid
+        if self.detail.TeacherSSN == "":
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "SSN cannot be empty!" )
+            return
+        elif self.detail.TeacherSSN != "" and re.match('^\d{3}-\d{2}-\d{4}$', self.detail.TeacherSSN) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a SSN number!")
+            return
+
+        #check for valid zipcode
+        if self.detail.TeacherZipcode != "" and \
+           re.match('^\d{5}(?:[-\s]\d{4})?$', self.detail.TeacherZipcode) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid zipcode!")
+            return
 
         update_query = QSqlQuery()
 
@@ -232,7 +286,12 @@ class Search_teacher_window(QtGui.QMainWindow):
             self.adv.ui.Id_adv_label.show()
             flag = False 
         elif Teacher_ID != '':
-            whereClause += ("Teacher_id = %s"%Teacher_ID)
+            if Teacher_ID.isdigit():
+                whereClause += ("Teacher_id = %s"%Teacher_ID)
+            else:
+                QtGui.QMessageBox.warning(
+                    self.adv, 'Error', "please enter valid id!" )
+                return
 
             
         if self.adv.ui.Name_cobx.isChecked() and Teacher_name == '':

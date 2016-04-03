@@ -52,6 +52,8 @@ class Search_class_window(QtGui.QMainWindow):
 
         self.ui.Class_view.setSelectionMode(QAbstractItemView.SingleSelection)
         self.ui.Class_view.setSelectionBehavior(QAbstractItemView.SelectRows)
+        
+
 
     def Classinfo_update(self):
         self.detail.ClassId = self.detail.ui.Id_detail_lineEdit.text()
@@ -71,6 +73,31 @@ class Search_class_window(QtGui.QMainWindow):
         self.detail.ClassDes = self.detail.ui.Description_detail_textEdit.toPlainText()
         update_query = QSqlQuery()
 
+        #check age range:
+        if self.detail.ClassAgeE < self.detail.ClassAgeS:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "inapporiate age range!" )
+            return
+        
+        #check time
+        if self.detail.ClassTimeE < self.detail.ClassTimeS:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "inapporiate time range!" )
+            return
+
+        #check date
+        if self.detail.ClassDateE < self.detail.ClassDateS:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "inapporiate date range!" )
+            return
+        #check class is empty
+        if self.detail.ClassName == "":
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "class name cannot be empty!" )
+            return
+            
+            
+        
         if update_query.exec_("Update Class set Class_name = '%s', Class_cost = '%f', Class_time = '%s',\
                             Class_end_time = '%s', Class_day = '%s', Class_location = '%s', Class_cap = '%d', \
                             Class_clothing = '%s', Class_start_date = '%s', Class_end_date = '%s', Class_age = '%d',\
@@ -91,6 +118,8 @@ class Search_class_window(QtGui.QMainWindow):
             QtGui.QMessageBox.warning(
                 self, 'Error', 'Please select a row')
             return curIndex
+
+        
         
         
         
@@ -100,6 +129,10 @@ class Search_class_window(QtGui.QMainWindow):
         self.detail.record = self.ui.Class.record(curIndex)
 
         #check weather the data exists in database
+        self.detail.ui.Cost_detail_doubleSpinBox.setMinimum(0.0)
+        self.detail.ui.Capacity_detail_spinBox.setMinimum(0)
+        self.detail.ui.Age_start_detail_spinBox.setMinimum(0)
+        self.detail.ui.Age_end_detail_spinBox.setMinimum(0)
 
         #ClassID
         if not isinstance(self.detail.record.field(0).value(), QtCore.QPyNullVariant):
@@ -189,7 +222,12 @@ class Search_class_window(QtGui.QMainWindow):
             self.adv.ui.Id_adv_label.show()
             flag = False 
         elif Class_ID != '':
-            whereClause += ("Class_id = %s"%Class_ID)
+            if Class_ID.isdigit():
+                whereClause += ("Class_id = '%s'" % Class_ID)
+            else:
+                QtGui.QMessageBox.warning(
+                    self.adv, 'Error', "please enter valid id!" )
+                return
             
         if self.adv.ui.Name_cobx.isChecked() and Class_name == '':
             self.adv.ui.Name_adv_label.show()

@@ -21,7 +21,7 @@ class assign_teacher(QtGui.QMainWindow):
         self.assign.sel_teach.setTable("Class")
 
         self.class_query = QSqlQuery()
-        self.class_query.exec_("Select Class_name FROM Class ORDER BY Class_name")
+        self.class_query.exec_("Select Class_name, Class_id FROM Class ORDER BY Class_name")
         self.class_result = QSqlQueryModel()
         self.class_result.setQuery(self.class_query)
         self.assign.Class_listView.setModel(self.class_result)
@@ -38,6 +38,9 @@ class assign_teacher(QtGui.QMainWindow):
         return self.db.open()
     
     def teacher_assignment(self, class_index):
+        row = class_index.row()
+        self.class_result.record(row).field(1).value()
+        
         self.current_teacher = ''
         self.selected_class = class_index.data()
 
@@ -45,10 +48,11 @@ class assign_teacher(QtGui.QMainWindow):
         self.current_teacher_query.exec("SELECT Teacher_name FROM Teacher \
                         WHERE Teacher_id = (SELECT DISTINCT Teacher_Class.Teacher_id\
                         FROM Teacher, Teacher_Class WHERE Teacher_Class.Class_id = \
-                        (select Class_id from Class where class_name = '%s')) ORDER BY Teacher_id" % (self.selected_class))
+                        (select Class_id from Class where Class_id = '%s')) ORDER BY Teacher_id" % (self.class_result.record(row).field(1).value()))
         
         self.current_teacher_query.next()
         self.current_teacher = self.current_teacher_query.value(0)
+        print(self.current_teacher)
         if self.current_teacher != None:
             confirm_msg = "This class is currently assigned to '%s' do you want to change teachers" %(self.current_teacher)
             
@@ -56,12 +60,12 @@ class assign_teacher(QtGui.QMainWindow):
                     confirm_msg, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
             if reply == QtGui.QMessageBox.Yes:
                 self.teacher_query = QSqlQuery()
-                self.teacher_query.exec_( "SELECT Teacher_name from Teacher WHERE Teacher_name\
-                      not in (SELECT NC.Teacher_name from (SELECT T.Teacher_name, C.Class_time, C.Class_end_time\
+                self.teacher_query.exec_( "SELECT Teacher_name from Teacher WHERE Teacher_name \
+                      not in (SELECT NC.Teacher_name from (SELECT T.Teacher_name, C.Class_time, C.Class_end_time, C.Class_day \
                       from Teacher as T, Teacher_Class as TC, Class as C WHERE TC.Teacher_id = T.Teacher_id and \
-                      TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time FROM Class \
-                      as C WHERE C.Class_name = '%s') as C WHERE not (NC.Class_time >= C.Class_end_time or \
-                      C.Class_time >= NC.Class_end_time)) ORDER BY Teacher_id" % (self.selected_class))
+                      TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time, C.Class_day FROM Class \
+                      as C WHERE C.Class_id = %d) as C WHERE (not (NC.Class_time >= C.Class_end_time or \
+                      C.Class_time >= NC.Class_end_time )) and NC.Class_day <> C.Class_day ) ORDER BY Teacher_id" % (self.class_result.record(row).field(1).value()))
                 self.dialogbox_Flag = False
                 self.teacher_result = QSqlQueryModel()
                 self.teacher_result.setQuery(self.teacher_query)
@@ -72,12 +76,12 @@ class assign_teacher(QtGui.QMainWindow):
         else:
         
             self.teacher_query = QSqlQuery()
-            self.teacher_query.exec_( "SELECT Teacher_name from Teacher WHERE Teacher_name\
-                          not in (SELECT NC.Teacher_name from (SELECT T.Teacher_name, C.Class_time, C.Class_end_time\
+            self.teacher_query.exec_( "SELECT Teacher_name from Teacher WHERE Teacher_name \
+                          not in (SELECT NC.Teacher_name from (SELECT T.Teacher_name, C.Class_time, C.Class_end_time, C.Class_day \
                           from Teacher as T, Teacher_Class as TC, Class as C WHERE TC.Teacher_id = T.Teacher_id and \
-                          TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time FROM Class \
-                          as C WHERE C.Class_name = '%s') as C WHERE not (NC.Class_time >= C.Class_end_time or \
-                          C.Class_time >= NC.Class_end_time)) ORDER BY Teacher_id" % (self.selected_class))
+                          TC.Class_id = C.Class_id) as NC, (SELECT C.Class_time, C.Class_end_time, C.Class_day FROM Class \
+                          as C WHERE C.Class_id = %d) as C WHERE (not (NC.Class_time >= C.Class_end_time or \
+                          C.Class_time >= NC.Class_end_time)) and NC.Class_day <> C.Class_day ) ORDER BY Teacher_id" % (self.class_result.record(row).field(1).value() ))
             
             self.teacher_result = QSqlQueryModel()
             self.teacher_result.setQuery(self.teacher_query)
@@ -131,6 +135,3 @@ class assign_teacher(QtGui.QMainWindow):
                         assign_teach_query = QSqlQuery()
                         assign_teach_query.exec("Update Teacher_Class SET Teacher_id = %d WHERE Class_id = %d" %(self.teacher_rec, self.class_rec))
             self.dialogbox_Flag = True
-
-
-        

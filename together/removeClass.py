@@ -19,11 +19,15 @@ class removeClass(QtGui.QDialog):
             QtGui.QMessageBox.warning(
                 self, 'Error', 'database contecting error')
 
+        self.idList = []
+
         self.class_query = QSqlQuery()
-        self.class_query.exec_("Select Class_name FROM Class")
+        self.class_query.exec_("Select Class_id, Class_name FROM Class")
         while self.class_query.next():
             record = self.class_query.record()
-            self.name = str(record.value(0))
+            self.id = str(record.value(0))
+            self.name = str(record.value(1))
+            self.idList.append(self.id)
             self.removeClass.classComboBox.addItem(self.name)
             
         self.removeClass.ok_btn.clicked.connect(self.submit)
@@ -31,18 +35,21 @@ class removeClass(QtGui.QDialog):
         self.removeClass.cancel_btn.clicked.connect(self.close)
 
     def submit(self):
-        self.selectedClass = self.removeClass.classComboBox.currentText()          
-
+        self.selectedClass = self.removeClass.classComboBox.currentIndex()
+        self.selectedClass = self.idList[self.selectedClass]
+        self.name = self.removeClass.classComboBox.currentText()
+        print(self.selectedClass, self.name)
+        
         self.confirmMessage = "Are you sure you want to remove '%s' from the system? This will remove all relevant information and can not be reversed." \
-                                 %(self.selectedClass)
+                                 %(self.name)
         self.confirmReply = QtGui.QMessageBox.question(self, 'Confirm', 
                 self.confirmMessage, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
 
         if (self.confirmReply == QtGui.QMessageBox.Yes):
             self.confirm_query = QSqlQuery()
-            self.class_query.exec_("DELETE from Class WHERE Class_name = '%s'" % self.selectedClass)
-            self.class_query.exec_("DELETE from Teacher_Class WHERE Class_id = \
-                (SELECT Class_id FROM Class WHERE Class_name = '%s')" % self.selectedClass)
+            self.class_query.exec_("DELETE from Class WHERE Class_id = '%s'" % self.selectedClass)
+            self.teachClass_query = QSqlQuery()
+            self.teachClass_query.exec_("DELETE from Teacher_Class WHERE Class_id = '%s'" % self.selectedClass)
             
 
             self.message = "Class Removed"

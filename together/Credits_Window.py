@@ -25,6 +25,7 @@ class discounts(QtGui.QMainWindow):
 
         # run insert new credit when apply button is clicked
         self.credit.apply_btn.clicked.connect(self.applyDiscount)
+        self.credit.back_btn.clicked.connect(self.close)
         
         
     

@@ -28,7 +28,7 @@ class add_Student(QtGui.QDialog):
         self.guardQuery.exec_("Select Guardian_name from Guardian")
 
         while self.guardQuery.next():
-            record = guardQuery.record()
+            record = self.guardQuery.record()
             guard = str(record.value(0))
             self.student.primaryComboBox.addItem(guard)
             self.student.secondaryComboBox.addItem(guard)
@@ -103,7 +103,7 @@ class add_Student(QtGui.QDialog):
                 self.primaryGuard = self.addGuardian()
                 if self.closeFlag != 0:
                     return
-                if self.primaryGuard == "Add New" or self.primaryGuard == ''
+                if self.primaryGuard == "Add New" or self.primaryGuard == '':
                     return
                 
             self.secondaryGuard = self.student.secondaryComboBox.currentText()
@@ -111,7 +111,7 @@ class add_Student(QtGui.QDialog):
                 self.secondaryGuard = self.addGuardian()
                 if self.closeFlag != 0:
                     return
-                if self.secondaryGuard == "Add New" or self.secondaryGuard == ''
+                if self.secondaryGuard == "Add New" or self.secondaryGuard == '':
                     return
                 
             self.emergency = self.student.emergencyLineEdit.text()
@@ -223,4 +223,10 @@ class add_Student(QtGui.QDialog):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
+
+app = QtGui.QApplication(sys.argv)
+window = add_Student()
+window.show()
+sys.exit(app.exec_())
+
 

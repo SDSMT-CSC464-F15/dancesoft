@@ -94,3 +94,7 @@ class Enter_partialpayment_window(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
 
+app = QtGui.QApplication(sys.argv)
+window = Enter_partialpayment_window()
+window.show()
+sys.exit(app.exec_())

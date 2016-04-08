@@ -22,9 +22,13 @@ class Stu_reg_window(QtGui.QMainWindow):
         self.ui.Stu_listView.clicked.connect(self.select_Stu)
         self.ui.Add_btn.clicked.connect(self.stu_add)
 
+
+        
     def stu_add(self):
         self.ui.stu_add = Stu_add_reg_dialog()
         self.ui.stu_add.show()
+
+        
     def search_Stu(self):
         input_Stu_name = self.ui.Stu_lineEdit.text()
         Stu_query = QSqlQuery()

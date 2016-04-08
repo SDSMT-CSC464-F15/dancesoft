@@ -595,26 +595,6 @@
        <string>Quit</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="Hours_btn">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>150</y>
-        <width>211</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>12</pointsize>
-        <italic>true</italic>
-       </font>
-      </property>
-      <property name="text">
-       <string>See Teacher Hours</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="Payroll_back_btn">
       <property name="geometry">
        <rect>

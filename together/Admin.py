@@ -184,4 +184,3 @@ class Admin_window(QtGui.QMainWindow):
         
         
         
-

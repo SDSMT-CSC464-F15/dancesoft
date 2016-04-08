@@ -2,7 +2,8 @@
 
 # Form implementation generated from reading ui file 'Admin Landing.ui'
 #
-# Created by: PyQt4 UI code generator 4.11.4
+# Created: Tue Apr  5 15:28:05 2016
+#      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -37,6 +38,7 @@ class Ui_Admin_Landing(object):
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 10, 521, 311))
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.verticalLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setMargin(0)
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         self.groupBox = QtGui.QGroupBox(self.verticalLayoutWidget)
         font = QtGui.QFont()
@@ -260,14 +262,6 @@ class Ui_Admin_Landing(object):
         font.setItalic(True)
         self.Quit_btn_5.setFont(font)
         self.Quit_btn_5.setObjectName(_fromUtf8("Quit_btn_5"))
-        self.Hours_btn = QtGui.QPushButton(self.Admin_Payroll)
-        self.Hours_btn.setGeometry(QtCore.QRect(280, 150, 211, 41))
-        font = QtGui.QFont()
-        font.setFamily(_fromUtf8("Arial"))
-        font.setPointSize(12)
-        font.setItalic(True)
-        self.Hours_btn.setFont(font)
-        self.Hours_btn.setObjectName(_fromUtf8("Hours_btn"))
         self.Payroll_back_btn = QtGui.QPushButton(self.Admin_Payroll)
         self.Payroll_back_btn.setGeometry(QtCore.QRect(340, 270, 75, 23))
         font = QtGui.QFont()
@@ -353,7 +347,6 @@ class Ui_Admin_Landing(object):
         self.Student_back_btn.setText(_translate("Admin_Landing", "Back", None))
         self.Billing_history_btn.setText(_translate("Admin_Landing", "Billing History", None))
         self.Quit_btn_5.setText(_translate("Admin_Landing", "Quit", None))
-        self.Hours_btn.setText(_translate("Admin_Landing", "See Teacher Hours", None))
         self.Payroll_back_btn.setText(_translate("Admin_Landing", "Back", None))
         self.Enter_partial_payment_btn.setText(_translate("Admin_Landing", "Enter Partial Payment", None))
         self.Enter_full_payment_btn.setText(_translate("Admin_Landing", "Enter Full Payment", None))

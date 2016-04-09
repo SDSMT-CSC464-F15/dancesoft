@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Stu_reg.ui'
 #
-# Created: Fri Apr  8 17:24:23 2016
+# Created: Fri Apr  8 18:12:13 2016
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!

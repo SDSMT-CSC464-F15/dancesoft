@@ -6,6 +6,7 @@ from Class_list_dialog import Class_list_dialog
 from PyQt4.QtSql import *
 from functools import partial
 from modify_new_guardian import add_new_guardian
+import re
 
 
 
@@ -27,6 +28,9 @@ class Stu_add_reg_dialog(QtGui.QDialog):
         guradian_query.exec_("select Guardian_name, Guardian_id from Guardian")
         self.g_dict = {}
 
+        index = self.ui.State_detail_ComboBox.findText("South Dakota")
+        self.ui.State_detail_ComboBox.setCurrentIndex(index)
+
         
         while guradian_query.next():
             self.ui.Pguradian_detail_comboBox.addItem(guradian_query.value(0))
@@ -46,21 +50,88 @@ class Stu_add_reg_dialog(QtGui.QDialog):
 
     def add_stu(self):
         self.ui.StuID = self.ui.Id_detail_lineEdit.text()
+        #can not be empty
         self.ui.StuName = self.ui.Name_detail_lineEdit.text()      
-        self.ui.StuGender = self.ui.Gender_comboBox.currentText()   
+        self.ui.StuGender = self.ui.Gender_comboBox.currentText()
+        #can not be empty
         self.ui.StuEmail = self.ui.Email_detail_lineEdit.text()
-        self.ui.StuBirth = self.ui.Birth_detail_dateEdit.date()  
+        self.ui.StuBirth = self.ui.Birth_detail_dateEdit.date()
+        #can not be empty
         self.ui.StuPhone = self.ui.Phone_detail_lineEdit.text()
+        self.ui.StuCphone = self.ui.Cphone_detail_lineEdit.text()
         self.ui.StuEcon = self.ui.Econtact_detail_lineEdit.text()
         self.ui.StuEphone = self.ui.Ephone_detail_lineEdit.text()
-        self.ui.StuTuition = self.ui.Tuition_detail_lineEdit.text()
+        #can not be empty
         self.ui.StuAddress = self.ui.Address_detail_lineEdit.text()
         self.ui.StuAddress.upper()
+        #can not be empty
         self.ui.StuCity = self.ui.City_detail_lineEdit.text()
         self.ui.StuCity.upper()
+        #can not be empty
         self.ui.StuState = self.ui.State_detail_ComboBox.currentText()
+        #can not be empty
         self.ui.StuZip = self.ui.Zipcode_detail_lineEdit.text()
         self.ui.StuMedical = self.ui.Medical_detail_textEdit.toPlainText()
+
+
+        #needs error checking
+        #if name empty
+        if self.ui.StuName == "":
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "student name cannot be empty!" )
+            return
+
+        #email
+        if self.ui.StuEmail != "" and \
+        re.match('^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$', self.ui.StuEmail ) == None:
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "please enter a valid email address!" )
+            return
+        
+        #check if the home phone is valid
+        if self.ui.StuPhone == "":
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "home phone cannot be empty!" )
+            return
+        elif self.ui.StuPhone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.ui.StuPhone) == None:
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "please enter a valid home phone number in XXX-XXX-XXXX format!")
+            return
+
+        #check if the cell phone is valid
+        if self.ui.StuCphone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.ui.StuCphone) == None:
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "please enter a valid cell phone number in XXX-XXX-XXXX format!")
+            return
+
+        #check emer phone is valid
+        if self.ui.StuEphone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.ui.StuEphone) == None:
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "please enter an valid emergency phone number in XXX-XXX-XXXX format!")
+            return
+
+        #check address
+        if self.ui.StuAddress == "":
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "Adress cannot be empty!")
+            return
+        #check city
+        if self.ui.StuCity == "":
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "City cannot be empty!")
+            return
+        #ckeck zipcode
+        if self.ui.StuZip == "":
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "Zipcode cannot be empty!")
+            return 
+        elif self.ui.StuZip != "" and not self.ui.StuZip.isdigit():
+            QtGui.QMessageBox.warning(
+                    self, 'Error', "please enter a valid zipcode!")
+            return 
+        
+
+        
 
         if self.ui.Pguradian_detail_comboBox.currentText() in self.g_dict:
             self.ui.p_id = self.g_dict[self.ui.Pguradian_detail_comboBox.currentText()]
@@ -77,31 +148,86 @@ class Stu_add_reg_dialog(QtGui.QDialog):
         if address_query.exec_("insert into Address values(%d, '%s', '%s', '%s', %d)" % (address_id, \
            self.ui.StuAddress,self.ui.StuCity, self.ui.StuState, int(self.ui.StuZip))) and \
            add_query.exec_("insert into Student values(%d, %d, '%s', '%s', '%s', '%s', '%s', '%s'\
-           , %d, %d, '%s', '%s', '%s', %f)" % \
-            (int(self.ui.StuID), address_id, self.ui.StuName, self.ui.StuGender, self.ui.StuEmail, self.ui.StuBirth.toString("yyyy-MM-dd"), self.ui.StuPhone, self.ui.StuPhone, self.ui.p_id, \
-            self.ui.s_id, self.ui.StuEcon, self.ui.StuEphone, self.ui.StuMedical, float(self.ui.StuTuition))):
+           , %d, %d, '%s', '%s', '%s', 0.0)" % \
+            (int(self.ui.StuID), address_id, self.ui.StuName, self.ui.StuGender, self.ui.StuEmail, self.ui.StuBirth.toString("yyyy-MM-dd"), self.ui.StuPhone, self.ui.StuCphone, self.ui.p_id, \
+            self.ui.s_id, self.ui.StuEcon, self.ui.StuEphone, self.ui.StuMedical)):
 
             QtGui.QMessageBox.information(
-                self.gur, 'Success', 'Update record successfully')
+                self, 'Success', 'Update record successfully')
+            self.ui.Id_detail_lineEdit.setText(str(int(self.ui.StuID)+1))
         else:
-            print ("insert into values(%d, %d, '%s', '%s', '%s', '%s', '%s', '%s'\
-           , %d, %d, '%s', '%s', '%s', %f)" % \
-            (int(self.ui.StuID), address_id, self.ui.StuName, self.ui.StuGender, self.ui.StuEmail, self.ui.StuBirth.toString("yyyy-MM-dd"), self.ui.StuPhone, self.ui.StuPhone, self.ui.p_id, \
-            self.ui.s_id, self.ui.StuEcon, self.ui.StuEphone, self.ui.StuMedical, float(self.ui.StuTuition)))
+            QtGui.QMessageBox.warning(
+                self, 'Error', 'Update record unsuccessfully')
         
-    def set_guradian(self, num):
         
+    def set_guradian(self, num):   
         self.g_name = self.gur.ui.nameLineEdit.text()
         self.g_hphone = self.gur.ui.homePhoneLineEdit.text()
         self.g_cphone = self.gur.ui.cellPhoneLineEdit.text()
         self.g_wphone = self.gur.ui.workPhoneLineEdit.text()
         self.g_address = self.gur.ui.addressLineEdit.text()
+        self.g_address = self.g_address.upper()  
         self.g_city = self.gur.ui.cityLineEdit.text()
+        self.g_city = self.g_city.upper()  
         self.g_state = self.gur.ui.stateComboBox.currentText()
         self.g_zipcode = self.gur.ui.zipcodeLineEdit.text()
         self.g_email = self.gur.ui.emailLineEdit.text()
+        
 
         #needs error checking
+        if self.g_name == "":
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "student name cannot be empty!" )
+            return
+        
+        #check if the home phone is valid
+        if self.g_hphone == "":
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "home phone cannot be empty!" )
+            return
+        elif self.g_hphone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.g_hphone) == None:
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "please enter a valid home phone number in XXX-XXX-XXXX format!")
+            return
+
+        #check if the cell phone is valid
+        if self.g_cphone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.g_cphone) == None:
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "please enter a valid cell phone number!")
+            return
+
+        #check work phone is valid
+        if self.g_wphone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.g_wphone) == None:
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "please enter a valid work phone number!")
+            return
+
+        #check address
+        if self.g_address == "":
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "Adress cannot be empty!")
+            return
+        #check city
+        if self.g_city == "":
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "City cannot be empty!")
+            return
+        #ckeck zipcode
+        if self.g_zipcode == "":
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "Zipcode cannot be empty!")
+            return 
+        elif self.g_zipcode != "" and not self.g_zipcode.isdigit():
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "please enter a valid zipcode!")
+            return 
+        #email
+        if self.g_email != "" and \
+        re.match('^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$', self.g_email ) == None:
+            QtGui.QMessageBox.warning(
+                    self.gur, 'Error', "please enter a valid email address!" )
+            return
+
 
         #update
         if self.g_id != self.highest:
@@ -136,6 +262,10 @@ class Stu_add_reg_dialog(QtGui.QDialog):
                             self.ui.s_id = self.g_id
                             self.ui.Sguardian_detail_comboBox.setCurrentIndex(index_s)
                         break
+            else:
+                QtGui.QMessageBox.warning(
+                self.gur, 'Error', 'Update record unsuccessfully')
+
                 
                 
         else:
@@ -168,9 +298,13 @@ class Stu_add_reg_dialog(QtGui.QDialog):
                     self.ui.s_id = self.highest
                     index = self.ui.Sguardian_detail_comboBox.findText(self.g_name)
                     self.ui.Sguardian_detail_comboBox.setCurrentIndex(index)
+
                 
                 #update id
                 self.highest += 1
+            else:
+                QtGui.QMessageBox.warning(
+                self.gur, 'Error', 'Update record unsuccessfully')
                 
                 
                 
@@ -179,6 +313,9 @@ class Stu_add_reg_dialog(QtGui.QDialog):
         self.gur.show()
 
         self.gur.ui.Submit_btn.clicked.connect(partial(self.set_guradian, num))
+
+        index = self.gur.ui.stateComboBox.findText("South Dakota")
+        self.gur.ui.stateComboBox.setCurrentIndex(index)
 
         if num == 0:
             #get correspoding id

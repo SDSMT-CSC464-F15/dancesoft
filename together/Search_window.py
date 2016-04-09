@@ -113,11 +113,14 @@ class Search_window(QtGui.QMainWindow):
                     self.detail, 'Error', "please enter a valid phone number!")
             return
 
+
         #check if zipcode is valid 
-        if self.detail.StuZip != "" and re.match('^\d{5}(?:[-\s]\d{4})?$', self.detail.StuZip) == None:
+        if self.detail.StuZip != "" and not self.detail.StuZip.isdigit():
             QtGui.QMessageBox.warning(
                     self.detail, 'Error', "please enter a valid zipcode!")
             return
+
+
 
         update_query = QSqlQuery()
         

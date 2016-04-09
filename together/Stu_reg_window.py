@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Stu_reg_window.ui'
 #
-# Created: Tue Mar 15 10:13:22 2016
+# Created: Fri Apr  8 21:31:56 2016
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -44,6 +44,9 @@ class Ui_Stu_reg(object):
         self.Update_btn = QtGui.QPushButton(self.centralwidget)
         self.Update_btn.setGeometry(QtCore.QRect(20, 350, 91, 21))
         self.Update_btn.setObjectName(_fromUtf8("Update_btn"))
+        self.Refresh_btn = QtGui.QPushButton(self.centralwidget)
+        self.Refresh_btn.setGeometry(QtCore.QRect(130, 350, 91, 23))
+        self.Refresh_btn.setObjectName(_fromUtf8("Refresh_btn"))
         Stu_reg.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(Stu_reg)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 348, 21))
@@ -61,4 +64,5 @@ class Ui_Stu_reg(object):
         self.Search_btn.setText(_translate("Stu_reg", "search", None))
         self.Add_btn.setText(_translate("Stu_reg", "Add", None))
         self.Update_btn.setText(_translate("Stu_reg", "Update", None))
+        self.Refresh_btn.setText(_translate("Stu_reg", "Refresh", None))
 

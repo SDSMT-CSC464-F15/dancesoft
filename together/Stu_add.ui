@@ -55,7 +55,7 @@
   <widget class="QLabel" name="Pguradian_detail_label">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>380</x>
      <y>170</y>
      <width>101</width>
      <height>16</height>
@@ -68,7 +68,7 @@
   <widget class="QLabel" name="Econtact_detail_label">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>380</x>
      <y>210</y>
      <width>101</width>
      <height>16</height>
@@ -78,24 +78,11 @@
     <string>Emergency Contact</string>
    </property>
   </widget>
-  <widget class="QLabel" name="Tuition_detail_label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>250</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Tuition</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="Address_detail_label">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>290</y>
+     <y>330</y>
      <width>54</width>
      <height>12</height>
     </rect>
@@ -135,19 +122,19 @@
     <rect>
      <x>380</x>
      <y>130</y>
-     <width>54</width>
-     <height>12</height>
+     <width>61</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Phone</string>
+    <string>Home Phone</string>
    </property>
   </widget>
   <widget class="QLabel" name="Sguardian_detail_label">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>170</y>
+     <x>20</x>
+     <y>210</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -159,8 +146,8 @@
   <widget class="QLabel" name="Ephone_detail_label">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>210</y>
+     <x>20</x>
+     <y>250</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -179,41 +166,11 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Gender_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>90</y>
-     <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Pguradian_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>170</y>
-     <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="Econtact_detail_lineEdit">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>500</x>
      <y>210</y>
-     <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Tuition_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>250</y>
      <width>221</width>
      <height>20</height>
     </rect>
@@ -239,21 +196,11 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Sguardian_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>500</x>
-     <y>170</y>
-     <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="Ephone_detail_lineEdit">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>210</y>
+     <x>130</x>
+     <y>250</y>
      <width>221</width>
      <height>20</height>
     </rect>
@@ -267,19 +214,6 @@
      <width>221</width>
      <height>20</height>
     </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="List_detail_btn">
-   <property name="geometry">
-    <rect>
-     <x>540</x>
-     <y>460</y>
-     <width>91</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>List</string>
    </property>
   </widget>
   <widget class="QLabel" name="Medical_detail_label">
@@ -314,7 +248,7 @@
      <x>500</x>
      <y>250</y>
      <width>221</width>
-     <height>141</height>
+     <height>171</height>
     </rect>
    </property>
   </widget>
@@ -322,7 +256,7 @@
    <property name="geometry">
     <rect>
      <x>130</x>
-     <y>290</y>
+     <y>330</y>
      <width>221</width>
      <height>20</height>
     </rect>
@@ -332,7 +266,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>330</y>
+     <y>370</y>
      <width>54</width>
      <height>12</height>
     </rect>
@@ -345,7 +279,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>370</y>
+     <y>410</y>
      <width>54</width>
      <height>12</height>
     </rect>
@@ -355,16 +289,6 @@
    </property>
   </widget>
   <widget class="QLineEdit" name="City_detail_lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>330</y>
-     <width>221</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="State_detail_lineEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -381,6 +305,388 @@
      <y>130</y>
      <width>221</width>
      <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Gender_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>90</y>
+     <width>221</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Male</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Female</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="State_detail_ComboBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>410</y>
+     <width>221</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Alabama</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Alaska</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Arizona</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Arkansas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>California</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Colorado</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Connecticut</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Delaware</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Florida</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Georgia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hawaii</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Idaho</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Illinois</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Indiana</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iowa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Kansas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Kentucky</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Louisiana</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Maine</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Maryland</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Massachusetts</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Michigan</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Minnesota</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mississippi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Missouri</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Montana</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Nebraska</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Nevada</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>New Hampshire</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>New Jersey</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>New Mexico</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>New York</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>North Carolina</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>North Dakota</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ohio</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Oklahoma</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Oregon</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pennsylvania</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rhode Island</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>South Carolina</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>South Dakota</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tennessee</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Texas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Utah</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vermont</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Virginia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Washington</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>West Virginia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Wisconsin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Wyoming</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="Zipcode_detail_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zipcode</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Zipcode_detail_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>290</y>
+     <width>221</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Add_first_btn">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>460</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Primary</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Add_second_btn">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>460</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Secondary</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Pguradian_detail_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>170</y>
+     <width>221</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Add new</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="Sguardian_detail_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>210</y>
+     <width>221</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Add new</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="Cphone_detail_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cell Phone</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Cphone_detail_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>170</y>
+     <width>221</width>
+     <height>20</height>
     </rect>
    </property>
   </widget>

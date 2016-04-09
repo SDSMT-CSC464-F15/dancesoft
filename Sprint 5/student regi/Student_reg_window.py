@@ -13,16 +13,23 @@ class Stu_reg_window(QtGui.QMainWindow):
         self.conn()
         Stu_query = QSqlQuery()
         Stu_query.exec_("select Student_name from Student")
-        model = QSqlQueryModel()
-        model.setQuery(Stu_query)
-        self.ui.Stu_listView.setModel(model)
+        self.model = QSqlQueryModel()
+        self.model.setQuery(Stu_query)
+        self.ui.Stu_listView.setModel(self.model)
         self.ui.Update_btn.setEnabled(False)
         self.ui.Search_btn.clicked.connect(self.search_Stu)
         self.ui.Update_btn.clicked.connect(self.stu_info)
         self.ui.Stu_listView.clicked.connect(self.select_Stu)
         self.ui.Add_btn.clicked.connect(self.stu_add)
+        self.ui.Refresh_btn.clicked.connect(self.refresh)
 
 
+    def refresh(self):
+        Stu_query = QSqlQuery()
+        Stu_query.exec_("select Student_name from Student")
+        self.model = QSqlQueryModel()
+        self.model.setQuery(Stu_query)
+        self.ui.Stu_listView.setModel(self.model)
         
     def stu_add(self):
         self.ui.stu_add = Stu_add_reg_dialog()

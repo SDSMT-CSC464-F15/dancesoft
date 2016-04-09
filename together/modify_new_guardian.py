@@ -5,15 +5,9 @@ from PyQt4.QtSql import *
 from functools import partial
 from Modify_guardian import Ui_add_teacher
 
-class add_new_guardian(QtGui.QMainWindow):
+class add_new_guardian(QtGui.QDialog):
     def __init__(self):
-        QtGui.QMainWindow.__init__(self)
+        QtGui.QDialog.__init__(self)
         self.ui = Ui_add_teacher()
         self.ui.setupUi(self)
-
-
-app = QtGui.QApplication(sys.argv)
-window = add_new_guardian()
-window.show()
-sys.exit(app.exec_())
 

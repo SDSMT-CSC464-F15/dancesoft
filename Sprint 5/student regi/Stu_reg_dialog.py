@@ -82,6 +82,7 @@ class Stu_reg_dialog(QtGui.QDialog):
             
         if not isinstance(stu_query.value(2), QtCore.QPyNullVariant):
             self.ui.Name_detail_lineEdit.setText(stu_query.value(2))
+            self.orinName = stu_query.value(2)
 
         #gender
         if not isinstance(stu_query.value(3), QtCore.QPyNullVariant):
@@ -128,7 +129,9 @@ class Stu_reg_dialog(QtGui.QDialog):
         self.StuEcon = self.ui.Econtact_detail_lineEdit.text()
         self.StuEphone = self.ui.Ephone_detail_lineEdit.text()
         self.StuAddress = self.ui.Address_detail_lineEdit.text()
-        self.StuCity = self.ui.City_detail_lineEdit.text()    
+        self.StuAddress = self.StuAddress.upper()
+        self.StuCity = self.ui.City_detail_lineEdit.text()
+        self.StuCity =  self.StuCity.upper()
         self.StuState = self.ui.State_detail_ComboBox.currentText()
         self.StuMedical = self.ui.Medical_detail_textEdit.toPlainText()
         self.StuZipcode = self.ui.Zipcode_detail_lineEdit.text()
@@ -137,7 +140,8 @@ class Stu_reg_dialog(QtGui.QDialog):
         self.StuPG = self.g_dict[self.ui.Pguradian_detail_comboBox.currentText()]
         self.StuSG = self.g_dict[self.ui.Sguardian_detail_comboBox.currentText()]
 
-        
+        name_query = QSqlQuery()
+        name_query.exec_("select Student_name from Student")
         
 
         #needs error checking
@@ -146,6 +150,12 @@ class Stu_reg_dialog(QtGui.QDialog):
             QtGui.QMessageBox.warning(
                     self, 'Error', "student name cannot be empty!" )
             return
+        elif self.StuName != "" and self.orinName != self.StuName:
+            while name_query.next():
+                if (name_query.value(0) == self.StuName):
+                    QtGui.QMessageBox.warning(
+                    self, 'Error', "student name cannot be same!" )
+                    return 
 
         #email
         if self.StuEmail != "" and \

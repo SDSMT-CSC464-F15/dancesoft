@@ -28,6 +28,8 @@ class Class_list_dialog(QtGui.QDialog):
         self.ui.Class_drop_tableView.setModel(self.class_model)
 
 
+        #class available
+
         class_query.exec_("SELECT T.Teacher_name, C.Class_id, C.Class_name, C.Class_time, C.Class_end_time, \
                             C.Class_location FROM Teacher as T, Teacher_Class as TC, \
                            Class as C WHERE T.Teacher_id = TC.Teacher_id and TC.Class_id = C.Class_id \
@@ -53,7 +55,10 @@ class Class_list_dialog(QtGui.QDialog):
     def add(self):
         data_list = [i.data() for i in self.ui.Class_add_tableView.selectedIndexes() if isinstance(i.data(),int)]
         class_add = QSqlQuery()
-        for i in data_list:
+        class_check = QSqlQuery()
+        class_time = QSqlQuery()
+        flag = False
+        for i in data_list:         
             class_add.exec_("INSERT into Student_Class values(%d, %d, 0, 0, CURDATE(), \
                             (SELECT Current_term FROM System WHERE System_id = 1))" % (self.id, i))
         self.refresh()

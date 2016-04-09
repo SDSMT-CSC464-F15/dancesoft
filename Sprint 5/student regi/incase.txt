@@ -1,0 +1,36 @@
+ flag = False
+            #class already register
+            class_check.exec_("SELECT Class_time, Class_end_time, Class_day from Student, Student_Class, \
+                              Class where Student.Student_id = Student_Class.Student_id and Student_Class.Class_id = \
+                              Class.Class_id and Student_Class.Student_semester_taken = (SELECT Current_term FROM \
+                              System WHERE System_id = 1) and Student_Class.Student_id = %d" % self.id)
+            
+            
+            #class comes in
+            class_time.exec_("SELECT C.Class_time, C.Class_end_time, C.Class_day from Student as S, Student_Class as SC, Class as C where S.Student_id = SC.Student_id and SC.Class_id = C.Class_id and SC.Student_semester_taken = (SELECT Current_term FROM System WHERE System_id = 1) and SC.Student_id = %d and C.Class_id = %d" % (self.id, i))
+
+            print (("SELECT C.Class_time, C.Class_end_time, C.Class_day from Student as S, Student_Class as SC, Class as C where S.Student_id = SC.Student_id and SC.Class_id = C.Class_id and SC.Student_semester_taken = (SELECT Current_term FROM System WHERE System_id = 1) and SC.Student_id = %d and C.Class_id = %d" % (self.id, i))
+)
+
+            while class_time.next():
+                record = class_time.record()
+                print(record.value(0))
+                print(record.value())
+                print(record.value(2))
+            print(class_time.value(0))
+            class_time.next()
+            print(class_time.value(0))
+                
+            
+            while class_check.next():
+                if class_check.isValid() and class_time.isValid() and class_check.value(2) == class_time.value(2) \
+                   and (class_time.value(1) > class_check.value(0) or class_time.value(0) < class_check.value(1)):
+                    flag = True
+                    break
+                print (class_check.value(2), class_time.value(2))
+                if class_check.isValid() and class_time.isValid() and class_check.value(2) == class_time.value(2):
+                    print (class_time.value(0), class_time.value(1))
+                    print (class_check.value(0), class_check.value(1))
+                    
+            if flag:
+                continue         

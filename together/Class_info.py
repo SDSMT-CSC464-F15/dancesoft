@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Classinfo.ui'
 #
-# Created: Mon Mar 28 19:49:32 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -60,9 +59,6 @@ class Ui_Class_info_dialog(object):
         self.Id_detail_lineEdit = QtGui.QLineEdit(Class_info_dialog)
         self.Id_detail_lineEdit.setGeometry(QtCore.QRect(130, 50, 221, 20))
         self.Id_detail_lineEdit.setObjectName(_fromUtf8("Id_detail_lineEdit"))
-        self.Location_detail_lineEdit = QtGui.QLineEdit(Class_info_dialog)
-        self.Location_detail_lineEdit.setGeometry(QtCore.QRect(500, 130, 221, 20))
-        self.Location_detail_lineEdit.setObjectName(_fromUtf8("Location_detail_lineEdit"))
         self.Name_detail_lineEdit = QtGui.QLineEdit(Class_info_dialog)
         self.Name_detail_lineEdit.setGeometry(QtCore.QRect(500, 50, 221, 20))
         self.Name_detail_lineEdit.setObjectName(_fromUtf8("Name_detail_lineEdit"))
@@ -124,6 +120,10 @@ class Ui_Class_info_dialog(object):
         self.Age_end_detail_spinBox = QtGui.QSpinBox(Class_info_dialog)
         self.Age_end_detail_spinBox.setGeometry(QtCore.QRect(630, 210, 91, 22))
         self.Age_end_detail_spinBox.setObjectName(_fromUtf8("Age_end_detail_spinBox"))
+        self.locationComboBox = QtGui.QComboBox(Class_info_dialog)
+        self.locationComboBox.setGeometry(QtCore.QRect(500, 130, 221, 22))
+        self.locationComboBox.setObjectName(_fromUtf8("locationComboBox"))
+        self.locationComboBox.addItem(_fromUtf8(""))
 
         self.retranslateUi(Class_info_dialog)
         QtCore.QMetaObject.connectSlotsByName(Class_info_dialog)
@@ -153,4 +153,5 @@ class Ui_Class_info_dialog(object):
         self.Day_detail_comboBox.setItemText(4, _translate("Class_info_dialog", "Friday", None))
         self.Day_detail_comboBox.setItemText(5, _translate("Class_info_dialog", "Saturday", None))
         self.Day_detail_comboBox.setItemText(6, _translate("Class_info_dialog", "Sunday", None))
+        self.locationComboBox.setItemText(0, _translate("Class_info_dialog", "Add New Location", None))
 

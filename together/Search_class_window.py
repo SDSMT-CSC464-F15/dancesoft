@@ -5,6 +5,7 @@ from PyQt4.QtSql import *
 from Advsearch_class_Dialog import Advsearch_Dialog
 from Class_info_Dialog import Class_info_dialog
 from PyQt4.QtGui import QAbstractItemView
+from addLocation import addLocationDialog
 
 class Search_class_window(QtGui.QMainWindow):
     def __init__(self):
@@ -14,7 +15,8 @@ class Search_class_window(QtGui.QMainWindow):
 
         
         self.conn() #need catch exception
-        
+
+       
        
         #TODO deal with foreign key
         self.ui.Class = QSqlRelationalTableModel(db = self.db)
@@ -54,7 +56,18 @@ class Search_class_window(QtGui.QMainWindow):
         self.ui.Class_view.setSelectionBehavior(QAbstractItemView.SelectRows)
         
 
-
+    def add_location(self):
+        self.ui.locationDialog =  addLocationDialog()
+        if self.ui.locationDialog.exec_():
+            self.closeFlag = self.ui.locationDialog.getClose()
+            if self.closeFlag == 0:
+                if not isinstance(self.ui.locationDialog.getLocation(), QtCore.QPyNullVariant):
+                    self.location = self.ui.locationDialog.getLocation()
+                    self.detail.ui.locationComboBox.addItem(self.location)
+                    index = self.detail.ui.locationComboBox.findText(self.location)
+                    self.detail.ui.locationComboBox.setCurrentIndex(index)
+    
+    
     def Classinfo_update(self):
         self.detail.ClassId = self.detail.ui.Id_detail_lineEdit.text()
         self.detail.ClassName = self.detail.ui.Name_detail_lineEdit.text()      
@@ -62,8 +75,16 @@ class Search_class_window(QtGui.QMainWindow):
         self.detail.ClassTimeS = self.detail.ui.Time_start_detail_timeEdit.text()
         self.detail.ClassTimeE = self.detail.ui.Time_end_detail_timeEdit.text()  
         self.detail.ClassDay = self.detail.ui.Day_detail_comboBox.currentText()
-        self.detail.ClassLoc = self.detail.ui.Location_detail_lineEdit.text()
-        self.detail.ClassLoc.upper()
+        self.detail.ClassLoc = str(self.detail.ui.locationComboBox.currentText())
+
+        if self.detail.ClassLoc == "Add New Location":
+            self.add_location()
+            if self.closeFlag != 0:
+                return
+            if self.detail.ClassLoc == "Add New Location" or self.location == '':
+                return
+
+        
         self.detail.ClassCap = self.detail.ui.Capacity_detail_spinBox.value()
         self.detail.ClassCloth = self.detail.ui.Clothing_detail_lineEdit.text()
         self.detail.ClassDateS = self.detail.ui.Date_start_detail_dateEdit.text()
@@ -122,11 +143,18 @@ class Search_class_window(QtGui.QMainWindow):
         
         
         
-        
         self.detail = Class_info_dialog()
         self.detail.show()
         
         self.detail.record = self.ui.Class.record(curIndex)
+
+        # location check
+        self.location_query = QSqlQuery()
+        self.location_query.exec_("SELECT DISTINCT Class_location FROM Class")
+        while self.location_query.next():
+            record = self.location_query.record()
+            self.location = str(record.value(0))
+            self.detail.ui.locationComboBox.addItem(self.location)
 
         #check weather the data exists in database
         self.detail.ui.Cost_detail_doubleSpinBox.setMinimum(0.0)
@@ -158,9 +186,6 @@ class Search_class_window(QtGui.QMainWindow):
             index = self.detail.ui.Day_detail_comboBox.findText(self.detail.record.field(5).value())
             self.detail.ui.Day_detail_comboBox.setCurrentIndex(index)
             
-        #ClassLocation
-        if not isinstance(self.detail.record.field(6).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Location_detail_lineEdit.setText(self.detail.record.field(6).value())
             
         #ClassCapacity
         if not isinstance(self.detail.record.field(7).value(), QtCore.QPyNullVariant):

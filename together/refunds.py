@@ -2,17 +2,40 @@ import sys
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtSql import *
 from datetime import datetime
+from dropDate import getDropDialog
 
 class refund(QtGui.QMainWindow):
     def __init__(self, className, studentName):
         QtGui.QMainWindow.__init__(self)
         #retrive student id for use in other functions
+
         self.getStudentId(studentName)
+
+        self.getDropDate()        
 
         self.issueRefund(className)
         
-       
+
+    def getDropDate(self):
+        self.dropDialog =  getDropDialog()
+        if self.dropDialog.exec_():
+            self.date = self.dropDialog.getDate()
+            self.date = self.date.toPyDate()
+    
     def issueRefund(self,className):
+        #check dates
+        checkQuery = QSqlQuery()
+        checkQuery.exec("Select DATEDIFF((Select Class_end_date from Class where \
+                         Class_name = '%s'), '%s') AS DiffDate" % (className, self.date) )
+        if(checkQuery.next()):
+            record = checkQuery.record()
+            self.dropDate = int(record.value(0))
+            if(self.dropDate < 0):
+                msg = "The End Date for this class has passed"
+                msgBox = QtGui.QMessageBox.information(self, 'Dropped', 
+                    msg)
+                return
+        
         #get the exact length of the class is days
         classQuery = QSqlQuery()
         classQuery.exec("Select DATEDIFF((Select Class_end_date from Class where \
@@ -25,8 +48,8 @@ class refund(QtGui.QMainWindow):
 
         #get the length the student was actually in the class
         dDateQuery = QSqlQuery()
-        dDateQuery.exec("Select DATEDIFF(CURDATE(),(Select Class_start_date \
-                         from Class where Class_name = '%s')) AS DiffDate" % (className))
+        dDateQuery.exec("Select DATEDIFF('%s',(Select Class_start_date \
+                         from Class where Class_name = '%s')) AS DiffDate" % (self.date, className))
         if(dDateQuery.next()):
             record = dDateQuery.record()
             #divide by 7 since classes meets once a week
@@ -41,7 +64,6 @@ class refund(QtGui.QMainWindow):
         # time left in class and subtract from total class cost
         totalClassCost = self.costofClass(className)
         newCredit = totalClassCost - (totalClassCost * self.percentTimeLeft)
-        print(totalClassCost, ' ', (totalClassCost * self.percentTimeLeft), ' ', self.percentTimeLeft)
 
         #Get current credit amount
         currentCreditQuery = QSqlQuery()

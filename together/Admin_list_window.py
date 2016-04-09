@@ -2,6 +2,7 @@ import sys
 from PyQt4 import QtGui
 from Admin_list import Ui_Admin_list
 from Admin_info_Dialog import Admin_info_dialog
+from addAdmin import addAdmin
 from PyQt4.QtSql import *
 
 class Admin_list_window(QtGui.QMainWindow):
@@ -10,16 +11,26 @@ class Admin_list_window(QtGui.QMainWindow):
         self.ui = Ui_Admin_list()
         self.ui.setupUi(self)
         self.conn()
-        Admin_query = QSqlQuery()
-        Admin_query.exec_("select Admin_name from Admin")
+        self.Admin_query = QSqlQuery()
+        self.Admin_query.exec_("select Admin_name from Admin")
         model = QSqlQueryModel()
-        model.setQuery(Admin_query)
+        model.setQuery(self.Admin_query)
         self.ui.Admin_listView.setModel(model)
         self.ui.Detail_btn.setEnabled(False)
         self.ui.Search_btn.clicked.connect(self.search_Admin)
         self.ui.Detail_btn.clicked.connect(self.print_Detail)
+        self.ui.Add_btn.clicked.connect(self.add_Admin)
         self.ui.Admin_listView.clicked.connect(self.select_Admin)
+
+    def add_Admin(self):
+        self.adminDialog = addAdmin()
+        if self.adminDialog.exec_():
+            model = QSqlQueryModel()
+            model.setQuery(self.Admin_query)
+            self.ui.Admin_listView.setModel(model)
+        #self.adminDialog.show()
         
+    
     def search_Admin(self):
         input_Admin_name = self.ui.Admin_lineEdit.text()
         Admin_query = QSqlQuery()

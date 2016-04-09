@@ -64,13 +64,13 @@ class Search_window(QtGui.QMainWindow):
 
     def stuinfo_update(self):
         #TODO check input validity
-        #TODO Solve foreign key!!!!!!!!!!!!!!!
         
         self.detail.StuID = self.detail.ui.Id_detail_lineEdit.text()
         self.detail.StuName = self.detail.ui.Name_detail_lineEdit.text()      
         self.detail.StuGender = self.detail.ui.Gender_comboBox.currentText()   
         self.detail.StuEmail = self.detail.ui.Email_detail_lineEdit.text()
-        self.detail.StuBirth = self.detail.ui.Birth_detail_dateEdit.date()  
+        self.detail.StuBirth = self.detail.ui.Birth_detail_dateEdit.date()
+        self.detail.StuBirth = self.detail.StuBirth.toPyDate()
         self.detail.StuPhone = self.detail.ui.Phone_detail_lineEdit.text()
         self.detail.StuPG = self.detail.ui.Pguradian_detail_lineEdit.text()  
         self.detail.StuSG = self.detail.ui.Sguardian_detail_lineEdit.text()
@@ -78,9 +78,9 @@ class Search_window(QtGui.QMainWindow):
         self.detail.StuEphone = self.detail.ui.Ephone_detail_lineEdit.text()
         self.detail.StuTuition = self.detail.ui.Tuition_detail_lineEdit.text()
         self.detail.StuAddress = self.detail.ui.Address_detail_lineEdit.text()
-        self.detail.StuAddress.upper()
+        self.detail.StuAddress = self.detail.StuAddress.upper()
         self.detail.StuCity = self.detail.ui.City_detail_lineEdit.text()
-        self.detail.StuCity.upper()
+        self.detail.StuCity = self.detail.StuCity.upper()
         self.detail.StuState = self.detail.ui.State_detail_ComboBox.currentText()
         self.detail.StuZip = self.detail.ui.Zipcode_detail_lineEdit.text()
         self.detail.StuMedical = self.detail.ui.Medical_detail_textEdit.toPlainText()
@@ -129,7 +129,7 @@ class Search_window(QtGui.QMainWindow):
                            Student.Student_medical_information = '%s', Student.Tuition = '%s', \
                            Address.Street = '%s', Address.City = '%s', Address.State = '%s', Address.Zipcode = '%d', Guardian.Guardian_name = '%s'\
                            Where Student.Student_id = '%d' and Student.Student_address = Address.Address_id and Student.Guardian_primary = Guardian.Guardian_id"\
-                           %(self.detail.StuName,  self.detail.StuGender, self.detail.StuEmail, self.detail.StuBirth.toString("yyyy-MM-dd"), self.detail.StuPhone,  self.detail.StuEcon, self.detail.StuEphone,\
+                           %(self.detail.StuName,  self.detail.StuGender, self.detail.StuEmail, self.detail.StuBirth, self.detail.StuPhone,  self.detail.StuEcon, self.detail.StuEphone,\
                            self.detail.StuMedical, self.detail.StuTuition, self.detail.StuAddress, self.detail.StuCity, self.detail.StuState, int(self.detail.StuZip), self.detail.StuPG, int(self.detail.StuID)))\
             and update_query.exec_("Update Student, Guardian Set Guardian.Guardian_name = '%s '\
                                     Where Student.Student_id = '%d' and Student.Guardian_secondary = Guardian.Guardian_id" \

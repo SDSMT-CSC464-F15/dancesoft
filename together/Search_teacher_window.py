@@ -64,7 +64,6 @@ class Search_teacher_window(QtGui.QMainWindow):
         self.detail.TeacherEmail.lower()
         self.detail.TeacherBirth = self.detail.ui.Birth_detail_dateEdit.date()
         self.detail.TeacherBirth = self.detail.TeacherBirth.toPyDate()
-        print(self.detail.TeacherBirth)
         self.detail.TeacherHomePhone = self.detail.ui.Homephone_detail_lineEdit.text()
         self.detail.TeacherCellPhone = self.detail.ui.Cellphone_detail_lineEdit.text()  
         self.detail.TeacherWorkPhone = self.detail.ui.Workphone_detail_lineEdit.text()

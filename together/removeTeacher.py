@@ -19,11 +19,15 @@ class removeTeacher(QtGui.QDialog):
             QtGui.QMessageBox.warning(
                 self, 'Error', 'database contecting error')
 
+        self.idList = []
+
         self.teach_query = QSqlQuery()
-        self.teach_query.exec_("Select Teacher_name FROM Teacher")
+        self.teach_query.exec_("Select Teacher_name, Teacher_id FROM Teacher")
         while self.teach_query.next():
             record = self.teach_query.record()
             self.name = str(record.value(0))
+            self.id = str(record.value(1))
+            self.idList.append(self.id)
             self.removeTeach.teacherComboBox.addItem(self.name)
             
         self.removeTeach.ok_btn.clicked.connect(self.submit)
@@ -32,19 +36,14 @@ class removeTeacher(QtGui.QDialog):
 
     def submit(self):
         self.addressCounter = 0
-        self.selectedTeacher = self.removeTeach.teacherComboBox.currentText()
-
-        self.getId = QSqlQuery()
-        self.getId.exec_("Select Teacher_id FROM Teacher WHERE \
-                         Teacher_name = '%s'" % self.selectedTeacher)
-        while self.getId.next():
-            record = self.getId.record()
-            self.id = int(record.value(0))
+        self.selectedTeacher = self.removeTeach.teacherComboBox.currentIndex()
+        self.selectedTeacherId = self.idList[self.selectedTeacher]
+        
 
         self.getAddress = QSqlQuery()
         self.getAddress.exec_("Select Teacher_address from Teacher WHERE \
             Teacher_address = (Select Teacher_address from Teacher WHERE\
-            Teacher_name = '%s')" % self.selectedTeacher)
+            Teacher_id = '%s')" % self.selectedTeacherId)
         while self.getAddress.next():
             record = self.getAddress.record()
             self.addressId = int(record.value(0))
@@ -58,10 +57,12 @@ class removeTeacher(QtGui.QDialog):
 
         if (self.confirmReply == QtGui.QMessageBox.Yes):
             self.confirm_query = QSqlQuery()
-            self.teach_query.exec_("DELETE from Teacher WHERE Teacher_name = '%s'" % self.selectedTeacher)
-            self.teach_query.exec_("DELETE from Admin WHERE Admin_name = '%s'" % self.selectedTeacher)
-            self.teach_query.exec_("DELETE from Account WHERE Teacher_id = %d" % self.id)
-            self.teach_query.exec_("UPDATE Teacher_Class SET Teacher_id = 0 WHERE Teacher_id = %d" % self.id)
+            self.teach_query.exec_("DELETE from Teacher WHERE Teacher_id = '%s'" % self.selectedTeacherId)
+            self.teach_query.exec_("Delete From Admin WHERE Admin_id = \
+                        (select Admin_id from Account where Teacher_id = '%s')" % self.selectedTeacherId)
+            self.teach_query.exec_("DELETE from Account WHERE Teacher_id = '%s'" % self.selectedTeacherId)
+            self.teach_query.exec_("DELETE from Teacher_Payrate WHERE Teacher_id = '%s'" % self.selectedTeacherId)
+            self.teach_query.exec_("UPDATE Teacher_Class SET Teacher_id = 0 WHERE Teacher_id = '%s'" % self.selectedTeacherId)
             
             if (self.addressCounter == 1):
                 self.teach_query.exec_("DELETE from Address WHERE Address_id = %d" % self.addressId)

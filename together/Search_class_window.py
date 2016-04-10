@@ -72,10 +72,8 @@ class Search_class_window(QtGui.QMainWindow):
         self.detail.ClassId = self.detail.ui.Id_detail_lineEdit.text()
         self.detail.ClassName = self.detail.ui.Name_detail_lineEdit.text()      
         self.detail.ClassCost = self.detail.ui.Cost_detail_doubleSpinBox.value()  
-        self.detail.ClassTimeS = self.detail.ui.Time_start_detail_timeEdit.text()
-        print(self.detail.ClassTimeS)
-        self.detail.ClassTimeE = self.detail.ui.Time_end_detail_timeEdit.text()
-        print(self.detail.ClassTimeE)
+        self.detail.ClassTimeS = self.detail.ui.Time_start_detail_timeEdit.time()
+        self.detail.ClassTimeE = self.detail.ui.Time_end_detail_timeEdit.time()
         self.detail.ClassDay = self.detail.ui.Day_detail_comboBox.currentText()
         self.detail.ClassLoc = str(self.detail.ui.locationComboBox.currentText())
 
@@ -89,8 +87,10 @@ class Search_class_window(QtGui.QMainWindow):
         
         self.detail.ClassCap = self.detail.ui.Capacity_detail_spinBox.value()
         self.detail.ClassCloth = self.detail.ui.Clothing_detail_lineEdit.text()
-        self.detail.ClassDateS = self.detail.ui.Date_start_detail_dateEdit.text()
-        self.detail.ClassDateE = self.detail.ui.Date_end_detail_dateEdit.text()
+        self.detail.ClassDateS = self.detail.ui.Date_start_detail_dateEdit.date()
+        self.detail.ClassDateS = self.detail.ClassDateS.toPyDate()
+        self.detail.ClassDateE = self.detail.ui.Date_end_detail_dateEdit.date()
+        self.detail.ClassDateE = self.detail.ClassDateE.toPyDate()
         self.detail.ClassAgeS = self.detail.ui.Age_start_detail_spinBox.value()
         self.detail.ClassAgeE = self.detail.ui.Age_end_detail_spinBox.value()    
         self.detail.ClassDes = self.detail.ui.Description_detail_textEdit.toPlainText()
@@ -103,7 +103,7 @@ class Search_class_window(QtGui.QMainWindow):
             return
         
         #check time
-        if self.detail.ClassTimeE < self.detail.ClassTimeS:
+        if self.detail.ClassTimeE.toString() < self.detail.ClassTimeS.toString():
             QtGui.QMessageBox.warning(
                     self.detail, 'Error', "inapporiate time range!" )
             return
@@ -125,8 +125,8 @@ class Search_class_window(QtGui.QMainWindow):
                             Class_end_time = '%s', Class_day = '%s', Class_location = '%s', Class_cap = '%d', \
                             Class_clothing = '%s', Class_start_date = '%s', Class_end_date = '%s', Class_age = '%d',\
                             Class_age_end = '%d', Class_description = '%s' where Class_id = '%d'"\
-                           %(self.detail.ClassName, float(self.detail.ClassCost),  self.detail.ClassTimeS,\
-                             self.detail.ClassTimeE, self.detail.ClassDay, self.detail.ClassLoc, int(self.detail.ClassCap),\
+                           %(self.detail.ClassName, float(self.detail.ClassCost),  self.detail.ClassTimeS.toString(),\
+                             self.detail.ClassTimeE.toString(), self.detail.ClassDay, self.detail.ClassLoc, int(self.detail.ClassCap),\
                              self.detail.ClassCloth, self.detail.ClassDateS, self.detail.ClassDateE, self.detail.ClassAgeS,\
                              self.detail.ClassAgeE, self.detail.ClassDes, int(self.detail.ClassId))):
             QtGui.QMessageBox.information(self.detail, 'Success', 'Update record successfully')

@@ -11,6 +11,8 @@ from Role_window import Role_window
 from change_username_window import username_window
 from change_password_window import password_window
 from My_Information import modify_My_Information
+from show_only_hours_dialog import show_hours_dialog
+from PyQt4.QtSql import *
 
 
 class Teacher_window(QtGui.QMainWindow):
@@ -39,10 +41,24 @@ class Teacher_window(QtGui.QMainWindow):
         self.ui.Student_quit_btn.clicked.connect(self.close)
         self.ui.Class_quit_btn.clicked.connect(self.close)
         self.ui.Personal_quit_btn.clicked.connect(self.close)
+        self.ui.Enter_hours_btn.clicked.connect(self.enter_hour)
         self.num = True
+
     def logout(self):
         self.num = False
         self.close()
+
+    def enter_hour(self):
+        id_query = QSqlQuery()
+        id_query.exec_("select Teacher_id from Account where User_name = '%s'" % self.ui.name)
+        id_query.next()
+        teacher_query = QSqlQuery()
+        teacher_query.exec_("select Teacher_name from Teacher where Teacher_id = '%s'" % id_query.value(0))
+        teacher_query.next()
+        self.ui.enter_hour = show_hours_dialog(teacher_query.value(0))
+        self.ui.enter_hour.show()
+
+        
 
     def reset_user(self):
         self.ui.reset_user = username_window(self.ui.name)

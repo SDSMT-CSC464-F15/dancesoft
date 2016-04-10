@@ -36,7 +36,7 @@ class Search_class_window(QtGui.QMainWindow):
 
         #display window
         self.ui.Class_view.setModel(self.ui.Class)
-        self.ui.Class_view.hideColumn(5)
+        self.ui.Class_view.hideColumn(2)
         self.ui.Class_view.hideColumn(8)
         self.ui.Class_view.hideColumn(9)
         self.ui.Class_view.hideColumn(10)
@@ -73,7 +73,9 @@ class Search_class_window(QtGui.QMainWindow):
         self.detail.ClassName = self.detail.ui.Name_detail_lineEdit.text()      
         self.detail.ClassCost = self.detail.ui.Cost_detail_doubleSpinBox.value()  
         self.detail.ClassTimeS = self.detail.ui.Time_start_detail_timeEdit.text()
-        self.detail.ClassTimeE = self.detail.ui.Time_end_detail_timeEdit.text()  
+        print(self.detail.ClassTimeS)
+        self.detail.ClassTimeE = self.detail.ui.Time_end_detail_timeEdit.text()
+        print(self.detail.ClassTimeE)
         self.detail.ClassDay = self.detail.ui.Day_detail_comboBox.currentText()
         self.detail.ClassLoc = str(self.detail.ui.locationComboBox.currentText())
 
@@ -185,7 +187,11 @@ class Search_class_window(QtGui.QMainWindow):
         if not isinstance(self.detail.record.field(5).value(), QtCore.QPyNullVariant):
             index = self.detail.ui.Day_detail_comboBox.findText(self.detail.record.field(5).value())
             self.detail.ui.Day_detail_comboBox.setCurrentIndex(index)
-            
+
+        #ClassDay
+        if not isinstance(self.detail.record.field(6).value(), QtCore.QPyNullVariant):
+            index = self.detail.ui.locationComboBox.findText(self.detail.record.field(6).value())
+            self.detail.ui.locationComboBox.setCurrentIndex(index)
             
         #ClassCapacity
         if not isinstance(self.detail.record.field(7).value(), QtCore.QPyNullVariant):

@@ -38,7 +38,6 @@ class removeClass(QtGui.QDialog):
         self.selectedClass = self.removeClass.classComboBox.currentIndex()
         self.selectedClass = self.idList[self.selectedClass]
         self.name = self.removeClass.classComboBox.currentText()
-        print(self.selectedClass, self.name)
         
         self.confirmMessage = "Are you sure you want to remove '%s' from the system? This will remove all relevant information and can not be reversed." \
                                  %(self.name)

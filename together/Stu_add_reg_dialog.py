@@ -73,13 +73,23 @@ class Stu_add_reg_dialog(QtGui.QDialog):
         self.ui.StuZip = self.ui.Zipcode_detail_lineEdit.text()
         self.ui.StuMedical = self.ui.Medical_detail_textEdit.toPlainText()
 
+        #check name
+        name_query = QSqlQuery()
+        name_query.exec_("select Student_name from Student")
 
+        
         #needs error checking
         #if name empty
         if self.ui.StuName == "":
             QtGui.QMessageBox.warning(
                     self, 'Error', "student name cannot be empty!" )
             return
+        elif self.ui.StuName != "":
+            while name_query.next():
+                if (name_query.value(0) == self.ui.StuName):
+                    QtGui.QMessageBox.warning(
+                    self, 'Error', "student name cannot be same!" )
+                    return 
 
         #email
         if self.ui.StuEmail != "" and \

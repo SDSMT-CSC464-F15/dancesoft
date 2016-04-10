@@ -54,6 +54,19 @@ class Student_payment_window(QtGui.QMainWindow):
         Hours_query.exec_("select sum(TIME_TO_SEC(TIMEDIFF(C.Class_end_time, C.Class_time))) from Student as S, Student_Class as SC, Class as C\
                            where S.Student_id = SC.Student_id and SC.Class_id = C.Class_id and S.Student_name = '%s'\
                            and SC.Student_semester_taken = '%s'" % (self.ui.name, self.ui.cur_term))
+        class_query = QSqlQuery()
+
+        class_query.exec_("select C.Class_name, TIME_TO_SEC(TIMEDIFF(C.Class_end_time, C.Class_time)) from Student as S, Student_Class as SC, Class as C where \
+                            S.Student_id = SC.Student_id and SC.Class_id = C.Class_id and S.Student_name = '%s' \
+                            and SC.Student_semester_taken = '%s'" % (self.ui.name, self.ui.cur_term))
+
+        class_name = []
+        class_min = []
+        while class_query.next():
+            class_name.append(class_query.value(0))
+            class_min.append(str(class_query.value(1)/60.0) + ' minutes')
+        
+        
         Hours_query.next()
         minutes = 0
         if not isinstance(Hours_query.value(0), QtCore.QPyNullVariant):
@@ -69,7 +82,7 @@ class Student_payment_window(QtGui.QMainWindow):
         if not isinstance(Money_query.value(0), QtCore.QPyNullVariant):
             Money = float(Money_query.value(0))
 
-        self.ui.print = Print_window(self.ui.cur_term, Money, self.get_rate(minutes))
+        self.ui.print = Print_window(class_name, class_min, minutes, self.ui.name, self.ui.cur_term, Money, self.get_rate(minutes))
         self.ui.print.show()
         
         

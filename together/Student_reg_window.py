@@ -59,3 +59,4 @@ class Stu_reg_window(QtGui.QMainWindow):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
+

@@ -39,14 +39,14 @@ class Billing_history_window(QtGui.QMainWindow):
         History_query = QSqlQuery()
         
         HistoryList = []
-        History_query.exec_("select P.Payment_id, P.Amount_paid, P.Date_paid from Student as S, Payment as P where S.Student_id = P.Student_id and \
-                           S.Student_name = '%s' and P.Semester_paid = '%s'" % (self.ui.name, self.ui.cur_term))
+        History_query.exec_("select P.Payment_id, P.Amount_paid, P.Date_paid, P.Semester_paid from Student as S, Payment as P where S.Student_id = P.Student_id and \
+                           S.Student_name = '%s' order by P.Date_paid Desc" % self.ui.name)
         cnt = 0
         while History_query.next():
             HistoryList.append([])
             HistoryList[cnt].append(History_query.value(0))
             HistoryList[cnt].append(self.ui.name)
-            HistoryList[cnt].append(self.ui.cur_term.replace("_", " Term "))
+            HistoryList[cnt].append(History_query.value(3).replace("_", " Term "))
             HistoryList[cnt].append(History_query.value(1))
             HistoryList[cnt].append(History_query.value(2).toString())
             cnt += 1

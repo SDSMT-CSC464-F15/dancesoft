@@ -191,6 +191,9 @@ class add_teacher(QtGui.QDialog):
                %d,%d,%d)" % (int(user_id), username, pword, access, stu_id, \
                              teach_id, 0))
 
+            new_query.exec_("Insert into Teacher_Payrate (Teacher_id, Payrate_id, Hours)\
+                values(%d,%d,%d)" % (int(self.Teacher_id), 0, 0.00) )
+
         
 
     def conn(self):

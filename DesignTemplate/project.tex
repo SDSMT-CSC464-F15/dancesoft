@@ -46,24 +46,36 @@ The DanceSoft team consist of two members, Marcus Berger and Dicheng Wu, who are
 After the backlog entry has been complete it is the developers job to test and error check the functions to make sure that the function completes all its needed tasks, in the way the team wants. Also testing is done to make sure the files don't create any problems with the rest of the software. Testing is covered in more detail in the testing section of this document.
 
 \section{Budget}
-There was no budget or monetary compensation for this project. When the project was initially laid out there was an idea for a budget that would be used for a Linux box. The Linux box would have been used to store the system on a local device. However as the requirement were brought down and redefined to an iteration of the project, rather then a full complete project, it became clear that the project would not reach a deployment state where a local machine was necessary. Thus the budget for this iteration is zero, but in future iterations the project may reach a state where a defined budget is again required. 
+There was no budget or monetary compensation for this project. When the project was initially laid out there was an idea for a budget that would be used for a Linux box. The Linux box would have been used to store the system on a local device. However as the requirement were brought down and redefined to an iteration of the project, rather then a full complete project, it became clear that the project would not reach a deployment state where a local machine was necessary. However the client provided a linux box for the senior design fair which was not claimed as a budget by this project. As work continues on this project the budget may grow.  
 Monetary compensation for this project follow the guidelines laid out in the DanceSoft Software Contract. The team will be given and accept no form of compensation for the work on the DanceSoft or any related project. This is in accordance with the conditions of the project, client, and the senior design class.
 
 \section{Intellectual Property and Licensing}
-Describe the IP ownership and issues surrounding IP.
+The intellectual property for this project is currently the property of the client Jeff McGough. However due to Dr. McGough's involvement with the South Dakota of Mines and Technology, and the senior design class, the South Dakota Board of Regents policies must be considered. These policies require that any work done by a teacher or for a teacher by a group of one or more students be submitted as property of the South Dakota Board of Regents.
+
+The only way to avoid this policy and prevent the Academy software from being owned by the state is to make the project open source in accordance with the board's policy. As a result of this set of policies all code worked on by the DanceSoft team is stored in a public Github repository provided by SDSM&T for the senior design class.
+
+Another intellectual property and licensing policy that must be considered as part of the teams choice to use PyQt is the GPL (general public license), under which the PyQt software falls. This license requires that the user release all source code for a project using any GPL licensed code in their software. However this is only required if the client plans on distributing the software they have created. As such this license will not cause any issues for Dr. McGough or the Academy of Dance Arts since the client does not plan on distributing the code to anyone other then themselves. 
+
+Based on the goals of the project the team has constructed as software that does not violate any intellectual property rules or regulations. Therefore the current rights to the software belong solely to the client until such a time as the client choices to distribute the project for monetary gain.  
 
 \section{Sprint  Overview}
 This project will be implemented in phases, the phases follow. [MB]
 
 \subsection{Sprint 1: Initial User Story and Requirements Gathering}
-This phase consist of meetings and discussing the user stories and requirements with the product owner. The product owner also lays out limitations and constraints for the project. More information can be found in section \bf 3.0 Requirements \rm
+This phase consisted of meetings and discussing the user stories and requirements with the product owner. The product owner also laid out limitations and constraints for the project. More information can be found in section \bf 3.0 Requirements \rm
 
-Also tackled during this phase was the research conducted into the tools the team were going to use for the project. There were three main areas the team needed to tackle to decide the frameworks for the project. First the team need to pick the programming language that would be used for the project. Two main languages were analysed, Python and Swift. Swift is the Mac native language resentlly released by Apple Inc. the benifits found for Swift was it nativity to the Mac OSX and it would be the easiest to intergrate into Mac. However since Swift was relativly new the team would have to take even more time to learn and new language, and since the client did not know Swift it would be harder to anailize. Python had the advantage of being a language that is more univerisly known, both to the team, the client, and the online community that the team could turn to for support. Due to this and a few other factors laid out in more detail in \bf Sprint Report 1 \rm the team choose Python as the programming language for the project.
+Also tackled during this phase was the research conducted into the tools the team were going to use for the project. There were three main areas the team needed to tackle to decide the frameworks for the project. First the team needed to pick the programming language that would be used for the project. Two main languages were analyzed, Python and Swift. Swift is the Mac native language recently released by Apple Inc. the benefits found for Swift were its nativity to the Mac OSX and it would be the easiest to integrate into Mac. However since Swift was relatively new the team would have to take even more time to learn the new language, and since the client did not know Swift it would be harder to analyze and make adaptions to in the future. Python had the advantage of being a language that is more universally known, both to the team, the client, and the online community that the team could turn to for support or questions. Due to this and a few other factors laid out in more detail in \bf Sprint Report 1 \rm the team choose Python as the programming language for the projects primary programming language.
 
-The other two areas of research were database and interface framework. The team looked to PyQt, Kivi, Tkinter, and other graphical interface frameworks. The team decided after looking at each one that due to the ease of use and some companies listing GUI experience, that the team would use PyQt as the framework for the interface. Then the DanceSoft team looked into database software. After looking at both SQL and non-SQL datebase option the team went with a MySQL database for the storage. As with programming language, the research results are laid out in the \bf Sprint Report 1 \rm   
+The other two areas of research were database and interface framework. The team looked to PyQt, Kivi, Tkinter, and other graphical interface frameworks. The team decided after looking at each one that due to the ease of use and some companies listing GUI experience, that the team would use PyQt as the framework for the interface. Then the DanceSoft team looked into database software. After looking at both SQL and non-SQL datebase options, such as MySQL and Mongo the team went with a MySQL database for the storage. As with programming language, the research results are laid out in \bf Sprint Report 1 \rm   
 
 \subsection{Sprint 2: Database Creation and Starting Pages}
-During this phase the database schema was constructed and implemented, being sure to keep the schema as concise as possible. The goal is to generate a database that can effective support the needed functions and GUI connectivity. After the database is constructed, the team will move on to the starting landing pages which will be jumping off pages for functionality creation. These page will almost certainly be modified as phases progress.
+During this phase the database schema was constructed and implemented, being sure to keep the schema as concise as possible. The goal was to generate a database that could effectively support the needed functionality and GUI connectivity. After the database was constructed, the team moved on to the starting landing pages which are jumping off pages for functionality creation. These page are modified as phases progress and further functionality was added.
+
+During this phase the team also plotted out the first drafts of the overall user interface flow for the desktop GUI. The team later modified this as the projects requirements were flushed out. The team would also reexamine this structure in later sprints as certain requirements were dropped, added or modified. Once the first verison of the database was up and running within the School of Mines' MySQL sever the team began working on the log in page, and the main navigation pages for both Academy admins and teachers.
+
+The log in page is used to confirm the user of the system and check whether or not the user has admin permissions. This system is required because of the different features the admins can access within the system, such as changing pay rates or adding students or teachers to the system. The log in page then directs to the landing page selection where the user, if they have permission, can access the admin or teacher interfaces.
+
+The first drafts of the admin and teacher interfaces were implemented in this phase as well. The admin interface contained buttons through which the user can access the various functionality of the interface, These include "Manage Employees" which takes the user to most of the employee related features within the project, also the "Manage Classes", "Manage Students", and "Manage Billing and Payroll" buttons take the user to the class, student, and billing and payroll features respectfully. The teacher interface like the admin interface contains buttons for managing students and classes, however these features differ slightly between interfaces since admins have more system access. The teacher interface also contains a "Personal Information" button which allows the user to modify certain aspects of their information in the system, such as their hours, or their user-name and password. 
 
 \subsection{Sprint 3: Functionality Creation }
 This phase will compose the bulk of the project as the first development of the functionality requested by the project owner are constructed. As the prototype progresses check ins with the client will be conducted to be as sure as possible that the team stays on track. Pages will be tested as the pages are constructed.
@@ -85,8 +97,12 @@ During this phase the last bit of testing on the remaining functionality will be
 \item GUI - Graphical User Interface - the front end screen that the users interact with using graphical assets
 \item Sprint - three week time periods where portions of the project are completed
 \item Timeline - the plan of when a assignment is to be completed
+\item GPL - General Public License - a type of software development license
+\item SDSM&T - the South Dakota School of Mines and Technology's university acronym
+\item SDBOR - South Dakota Board of Regents
+\item Interface - The screen or set of screens that the user can see and navigate within the project
+\item Source Control - A system used to manage multiple people working on the same collections of infromation to maintain consistency,  
 \end{enumerate}
-\bf(ADD TO SECTION AS NEEDED 
 
 \section{Sprint Schedule}
 The sprint schedule.  Can be tables or graphs.   This can be a list of dates with the visual 
@@ -101,22 +117,36 @@ stories.
 
 
 \section{Development Environment}
-The basic purpose for this section is to give a developer all of the necessary 
-information to setup their development environment to run, test, and/or develop. 
+The basic purpose for this section is to give a developer all of the necessary information to setup their development environment to run, test, and/or continue development of the DanceSoft project, while also providing information on the systems the team used to create the project.
 
+\subsection{Source Code Development}
+The source code for this project was written in Python. Due to the cross platform nature of this language the team used a variety of different IDEs over the course of development, these included:
+
+\begin{enumerate}
+\item Python IDLE
+\item Microsoft Visual Studio 2015
+\item Xcode 
+\end{enumerate}
+
+Any developers wishing to continue work on this project should be able to run this software within any python capable interface of their choice.  
+
+\subsection{MySQL Database}
+The projects back end contains a MySQL database. MySQL can be installed on a developers computer free of charge off of the MySQL website. This package also contains a helpful GUI interface called MySQL workbench which can aid the user in manipulating the database if they so choose. However the system should be editable within any MySQL enabled database manipulation software. Once a developer has MySQL installed they simply need to log in and connect to the database using credentials provided by the client.
+
+\subsection{PyQt}
 
 \section{Development IDE and Tools}
 Describe which IDE and provide links to installs and/or reference material. 
 
 \section{Source  Control}
-Which source control system is/was used?  How was it setup?  How does a developer 
-connect to it? 
-
+Source control for this project was conducted using Github, and the Github GUI. Github is a git add in, a developer  
+could use whatever git manager they want. The Github GUI can be installed from www.github.com. The repository was provided by South Dakota School of Mines as part of the senior design class. A developer wishing to continue work on this project simply need a git software and access as a contributor to the repository. However once the clients move the code to a local device a developer will need access to this device as well.
+ 
 \section{Dependencies}
 Describe all dependencies associated with developing the system. 
 
 \section{Build  Environment}
-How are the packages built?  Are there build scripts? 
+A user, or developer can build the project through the use of precompiled python scripts. A user can run the log in script which will compile some of the Python scripts as to speed up various aspects of running the project. There are no special build scripts that are requires before the project can be run.
 
 \section{Development Machine Setup}
 If warranted, provide a list of steps and details associated with setting up a 

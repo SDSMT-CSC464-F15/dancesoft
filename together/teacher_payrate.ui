@@ -57,7 +57,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>history</string>
+     <string>detail</string>
     </property>
    </widget>
   </widget>

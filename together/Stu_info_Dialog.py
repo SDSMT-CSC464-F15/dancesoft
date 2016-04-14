@@ -10,7 +10,5 @@ class Stu_info_dialog(QtGui.QDialog):
     def __init__(self):
         QtGui.QDialog.__init__(self)
         self.ui = Ui_stu_info_dialog()
-        self.ui.setupUi(self)
-
-        self.ui.Tuition_detail_lineEdit.setDisabled(True) 
+        self.ui.setupUi(self) 
 

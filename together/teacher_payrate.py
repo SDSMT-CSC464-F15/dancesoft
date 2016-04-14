@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'teacher_payrate.ui'
 #
-# Created: Tue Mar  8 13:46:07 2016
+# Created: Thu Apr 14 12:43:03 2016
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -56,5 +56,5 @@ class Ui_Teacher_payrate(object):
     def retranslateUi(self, Teacher_payrate):
         Teacher_payrate.setWindowTitle(_translate("Teacher_payrate", "MainWindow", None))
         self.Search_btn.setText(_translate("Teacher_payrate", "search", None))
-        self.history_btn.setText(_translate("Teacher_payrate", "history", None))
+        self.history_btn.setText(_translate("Teacher_payrate", "detail", None))
 

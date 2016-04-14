@@ -72,11 +72,11 @@ class Search_window(QtGui.QMainWindow):
         self.detail.StuBirth = self.detail.ui.Birth_detail_dateEdit.date()
         self.detail.StuBirth = self.detail.StuBirth.toPyDate()
         self.detail.StuPhone = self.detail.ui.Phone_detail_lineEdit.text()
-        self.detail.StuPG = self.detail.ui.Pguradian_detail_lineEdit.text()  
-        self.detail.StuSG = self.detail.ui.Sguardian_detail_lineEdit.text()
+        self.detail.StuCphone = self.detail.ui.Cphone_detail_lineEdit.text()
+        self.detail.StuPG = self.detail.ui.Pguradian_detail_comboBox.currentText()  
+        self.detail.StuSG = self.detail.ui.Sguardian_detail_comboBox.currentText()
         self.detail.StuEcon = self.detail.ui.Econtact_detail_lineEdit.text()
         self.detail.StuEphone = self.detail.ui.Ephone_detail_lineEdit.text()
-        self.detail.StuTuition = self.detail.ui.Tuition_detail_lineEdit.text()
         self.detail.StuAddress = self.detail.ui.Address_detail_lineEdit.text()
         self.detail.StuAddress = self.detail.StuAddress.upper()
         self.detail.StuCity = self.detail.ui.City_detail_lineEdit.text()
@@ -104,13 +104,18 @@ class Search_window(QtGui.QMainWindow):
         #check if the phone is valid
         if self.detail.StuPhone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.detail.StuPhone) == None:
             QtGui.QMessageBox.warning(
-                    self.detail, 'Error', "please enter a valid phone number!")
+                    self.detail, 'Error', "please enter a valid home phone number in XXX-XXX-XXXX format!")
+            return
+        #check if cell phone is valid
+        if self.detail.StuCphone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.detail.StuCphone) == None:
+            QtGui.QMessageBox.warning(
+                    self.detail, 'Error', "please enter a valid home phone number in XXX-XXX-XXXX format!")
             return
         
         #check if eme phone is valid
         if self.detail.StuEphone != "" and re.match('^[2-9]\d{2}-\d{3}-\d{4}$', self.detail.StuEphone) == None:
             QtGui.QMessageBox.warning(
-                    self.detail, 'Error', "please enter a valid phone number!")
+                    self.detail, 'Error', "please enter a valid home phone number in XXX-XXX-XXXX format!")
             return
 
 
@@ -123,14 +128,16 @@ class Search_window(QtGui.QMainWindow):
 
 
         update_query = QSqlQuery()
+
+        #tuition gone and cell phone gone
         
         if update_query.exec_("Update Student, Address, Guardian Set Student.Student_name = '%s', Student.Student_sex = '%s', Student.Student_email = '%s', \
                            Student.Student_date_of_birth = '%s', Student.Student_home_phone = '%s', Student.Student_Emergency_contact = '%s', Student.Emergency_contact_phone = '%s', \
-                           Student.Student_medical_information = '%s', Student.Tuition = '%s', \
+                           Student.Student_medical_information = '%s', Student.Student_cell_phone = '%s', \
                            Address.Street = '%s', Address.City = '%s', Address.State = '%s', Address.Zipcode = '%d', Guardian.Guardian_name = '%s'\
                            Where Student.Student_id = '%d' and Student.Student_address = Address.Address_id and Student.Guardian_primary = Guardian.Guardian_id"\
                            %(self.detail.StuName,  self.detail.StuGender, self.detail.StuEmail, self.detail.StuBirth, self.detail.StuPhone,  self.detail.StuEcon, self.detail.StuEphone,\
-                           self.detail.StuMedical, self.detail.StuTuition, self.detail.StuAddress, self.detail.StuCity, self.detail.StuState, int(self.detail.StuZip), self.detail.StuPG, int(self.detail.StuID)))\
+                           self.detail.StuMedical, self.detail.StuCphone, self.detail.StuAddress, self.detail.StuCity, self.detail.StuState, int(self.detail.StuZip), self.detail.StuPG, int(self.detail.StuID)))\
             and update_query.exec_("Update Student, Guardian Set Guardian.Guardian_name = '%s '\
                                     Where Student.Student_id = '%d' and Student.Guardian_secondary = Guardian.Guardian_id" \
                                    %(self.detail.StuSG, int(self.detail.StuID))):
@@ -160,10 +167,29 @@ class Search_window(QtGui.QMainWindow):
         address.next()
         self.detail.record_A = address.record()
         self.detail.ui.Id_detail_lineEdit.setDisabled(True)
-  
+
+        cphone_query = QSqlQuery()
+        cphone_query.exec_("select Student_cell_phone from Student where Student_id = %d" % self.detail.record.field(0).value())
+        cphone_query.next()
         
         #check weather the data exists in database
 
+        #populate to combobox
+        guradian_query = QSqlQuery()
+        guradian_query.exec_("select Guardian_name, Guardian_id from Guardian")
+
+        self.g_dict = {}
+        while guradian_query.next():
+            self.detail.ui.Pguradian_detail_comboBox.addItem(guradian_query.value(0))
+            self.g_dict[guradian_query.value(0)] = guradian_query.value(1)
+            self.detail.ui.Sguardian_detail_comboBox.addItem(guradian_query.value(0))
+
+        #Cell Phone
+        if not isinstance(cphone_query.value(0), QtCore.QPyNullVariant):
+            self.detail.ui.Cphone_detail_lineEdit.setText(cphone_query.value(0))
+
+
+            
         #StuID
         if not isinstance(self.detail.record.field(0).value(), QtCore.QPyNullVariant):
             self.detail.ui.Id_detail_lineEdit.setText(str(self.detail.record.field(0).value()))
@@ -191,20 +217,20 @@ class Search_window(QtGui.QMainWindow):
             self.detail.ui.Phone_detail_lineEdit.setText(self.detail.record.field(6).value())
         #StuPG
         if not isinstance(self.detail.record.field(8).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Pguradian_detail_lineEdit.setText(self.detail.record.field(8).value())
+            StuPG = self.detail.record.field(8).value()       
+            index = self.detail.ui.Pguradian_detail_comboBox.findText(StuPG)
+            self.detail.ui.Pguradian_detail_comboBox.setCurrentIndex(index) 
         #StuSG
         if not isinstance(self.detail.record.field(9).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Sguardian_detail_lineEdit.setText(self.detail.record.field(9).value())
-
+            StuSG = self.detail.record.field(9).value()
+            index = self.detail.ui.Sguardian_detail_comboBox.findText(StuSG)
+            self.detail.ui.Sguardian_detail_comboBox.setCurrentIndex(index) 
         #StuEcon     
         if not isinstance(self.detail.record.field(10).value(), QtCore.QPyNullVariant):
             self.detail.ui.Econtact_detail_lineEdit.setText(self.detail.record.field(10).value())
         #StuEphone
         if not isinstance(self.detail.record.field(11).value(), QtCore.QPyNullVariant):
             self.detail.ui.Ephone_detail_lineEdit.setText(self.detail.record.field(11).value())
-        #StuTuition
-        if not isinstance(self.detail.record.field(13).value(), QtCore.QPyNullVariant):
-            self.detail.ui.Tuition_detail_lineEdit.setText(str(self.detail.record.field(13).value()))
         #medical
         if not isinstance(self.detail.record.field(12).value(), QtCore.QPyNullVariant):
             self.detail.ui.Medical_detail_textEdit.setText(self.detail.record.field(12).value())

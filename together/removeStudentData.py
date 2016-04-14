@@ -44,7 +44,16 @@ class removeStudentData(QtGui.QDialog):
 
         self.removeStu.ok_btn.clicked.connect(self.submit)
         self.removeStu.cancel_btn.clicked.connect(self.close)
+        self.removeStu.Search_btn.clicked.connect(self.search)
 
+    def search(self):
+        stu_name = self.removeStu.Student_lineEdit.text()
+        stu_query = QSqlQuery()
+        stu_query.exec_("select Student_name FROM Student where Student_name like '%%%s%%'" % stu_name)
+        model = QSqlQueryModel()
+        model.setQuery(stu_query)
+        self.removeStu.studentListView.setModel(model)
+        
     def submit(self):
         studentList = [] #selected student
         stuAddressCounter = 0 # counter to see if address used more then once

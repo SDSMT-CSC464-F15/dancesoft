@@ -72,6 +72,7 @@ class removeAdmin(QtGui.QDialog):
             
             self.confirmReply = QtGui.QMessageBox.information(self, 'Message', 
                 self.message)
+            self.close()
 
     def conn(self):
         self.db = QSqlDatabase.addDatabase("QMYSQL")
@@ -80,9 +81,4 @@ class removeAdmin(QtGui.QDialog):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
-
-app = QtGui.QApplication(sys.argv)
-window = removeAdmin()
-window.show()
-sys.exit(app.exec_())
         

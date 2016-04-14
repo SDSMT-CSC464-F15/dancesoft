@@ -19,10 +19,16 @@ from set_dialog import semester_set_dialog
 from partial_main_window import Enter_partialpayment_window
 from enter_fullpayment_window import Enter_fullpayment_window
 from student_owe_window import Student_payment_window
+from Credits_Window import credit
 from Admin_list_window import Admin_list_window
 from enter_hours_window import Enter_hours_window
 from teacher_payrate_window import Teacher_payrate_window
+from tuition import tuition
+from fees import fees
 from Student_reg_window import Stu_reg_window
+from removeTeacher import removeTeacher
+from removeStudentData import removeStudentData
+from removeClass import removeClass
 
 class Admin_window(QtGui.QMainWindow):
     def __init__(self, name):
@@ -48,15 +54,19 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.Update_teacher_btn.clicked.connect(self.update_teacher)
         self.ui.Assign_teacher_btn.clicked.connect(self.assign_teacher)
         self.ui.New_teacher_btn.clicked.connect(self.add_teacher)
+        self.ui.Remove_teacher_btn.clicked.connect(self.removeTeach)
 
         self.ui.View_class_btn.clicked.connect(self.view_class)
         self.ui.Add_Class_btn.clicked.connect(self.new_class)
-        self.ui.Class_tuition_btn.clicked.connect(self.class_tuition)
         
         self.ui.Search_student_btn.clicked.connect(self.search_student)
         self.ui.Add_student_btn.clicked.connect(self.add_student)
-        #self.ui.Registration_btn.clicked.connect(self.register)
         self.ui.Billing_history_btn.clicked.connect(self.billing)
+        self.ui.Tuition_btn.clicked.connect(self.tuition)
+        self.ui.Fee_btn.clicked.connect(self.fee)
+        self.ui.Registration_btn.clicked.connect(self.registration)
+        self.ui.Remove_student_btn.clicked.connect(self.removeStu)
+        self.ui.Remove_class_btn.clicked.connect(self.removeClass)
 
         
         self.ui.Teaching_his_btn.clicked.connect(self.teaching_his)
@@ -68,6 +78,7 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.Enter_teacher_hour_btn.clicked.connect(self.enter_teacher_hour)
         self.ui.Enter_teacher_payrate_btn.clicked.connect(self.enter_teacher_payrate)
         self.ui.Registration_btn.clicked.connect(self.registration)
+        self.ui.Credits_btn.clicked.connect(self.studentCredit)
 
         self.ui.Quit_btn.clicked.connect(self.Quit)
         self.ui.Quit_btn_2.clicked.connect(self.Quit)
@@ -75,6 +86,7 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.Quit_btn_4.clicked.connect(self.Quit)
         self.ui.Quit_btn_5.clicked.connect(self.Quit)
         self.num = True
+        
     def logout(self):
         self.num = False
         self.close()
@@ -119,9 +131,21 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.billing = Billing_history_window()
         self.ui.billing.show()
 
+    def fee(self):
+        self.ui.fee = fees()
+        self.ui.fee.show()
+
+    def tuition(self):
+        self.ui.tuit = tuition()
+        self.ui.tuit.show()
+
     def add_teacher(self):
         self.ui.add_teacher = add_teacher()
         self.ui.add_teacher.show()
+
+    def removeTeach(self):
+        self.ui.remTeach = removeTeacher()
+        self.ui.remTeach.show()
         
     def assign_teacher(self):
         self.ui.assign_teacher = assign_teacher()
@@ -142,9 +166,6 @@ class Admin_window(QtGui.QMainWindow):
     def new_class(self):
         self.ui.add_class = add_Class()
         self.ui.add_class.show()
-        
-    def class_tuition(self):
-        print("In Progress")
 
     def search_student(self):
         self.ui.search_student_window = Search_window()
@@ -157,6 +178,18 @@ class Admin_window(QtGui.QMainWindow):
     def register(self):
         self.ui.registration = class_reg_dialog()
         self.ui.registration.show()
+
+    def removeStu(self):
+        self.ui.remStu = removeStudentData()
+        self.ui.remStu.show()
+
+    def removeClass(self):
+        self.ui.remClass = removeClass()
+        self.ui.remClass.show()
+
+    def studentCredit(self):
+        self.ui.credit = credit()
+        self.ui.credit.show()
         
     def change_window(self, index):
         self.prev_index = self.current_index

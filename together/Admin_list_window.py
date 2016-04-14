@@ -3,6 +3,7 @@ from PyQt4 import QtGui
 from Admin_list import Ui_Admin_list
 from Admin_info_Dialog import Admin_info_dialog
 from addAdmin import addAdmin
+from removeAdmin import removeAdmin
 from PyQt4.QtSql import *
 
 class Admin_list_window(QtGui.QMainWindow):
@@ -20,6 +21,7 @@ class Admin_list_window(QtGui.QMainWindow):
         self.ui.Search_btn.clicked.connect(self.search_Admin)
         self.ui.Detail_btn.clicked.connect(self.print_Detail)
         self.ui.Add_btn.clicked.connect(self.add_Admin)
+        self.ui.Remove_btn.clicked.connect(self.remove_Admin)
         self.ui.Admin_listView.clicked.connect(self.select_Admin)
 
     def add_Admin(self):
@@ -28,8 +30,14 @@ class Admin_list_window(QtGui.QMainWindow):
             model = QSqlQueryModel()
             model.setQuery(self.Admin_query)
             self.ui.Admin_listView.setModel(model)
-        #self.adminDialog.show()
         
+
+    def remove_Admin(self):
+        self.removeDialog = removeAdmin()
+        if self.removeDialog.exec_():
+            model = QSqlQueryModel()
+            model.setQuery(self.Admin_query)
+            self.ui.Admin_listView.setModel(model)
     
     def search_Admin(self):
         input_Admin_name = self.ui.Admin_lineEdit.text()

@@ -396,8 +396,8 @@
      <widget class="QPushButton" name="Enter_hours_btn">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>40</y>
+        <x>40</x>
+        <y>60</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -416,8 +416,8 @@
      <widget class="QPushButton" name="Modify_personal_info">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>110</y>
+        <x>280</x>
+        <y>60</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -436,8 +436,8 @@
      <widget class="QPushButton" name="Reset_password">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>180</y>
+        <x>280</x>
+        <y>130</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -451,6 +451,26 @@
       </property>
       <property name="text">
        <string>Reset Password</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Change_Username_btn">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Change Username</string>
       </property>
      </widget>
     </widget>

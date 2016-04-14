@@ -51,7 +51,7 @@ class Ui_change_username(object):
         self.userLineEdit.setObjectName(_fromUtf8("userLineEdit"))
         self.newUserLineEdit = QtGui.QLineEdit(self.groupBox)
         self.newUserLineEdit.setGeometry(QtCore.QRect(100, 70, 271, 20))
-        self.newUserLineEdit.setEchoMode(QtGui.QLineEdit.Password)
+        self.newUserLineEdit.setEchoMode(QtGui.QLineEdit.Normal)
         self.newUserLineEdit.setObjectName(_fromUtf8("newUserLineEdit"))
         self.confirmLabel = QtGui.QLabel(self.groupBox)
         self.confirmLabel.setGeometry(QtCore.QRect(10, 100, 91, 16))
@@ -66,7 +66,7 @@ class Ui_change_username(object):
         QtCore.QMetaObject.connectSlotsByName(change_username)
 
     def retranslateUi(self, change_username):
-        change_username.setWindowTitle(_translate("change_username", "Login", None))
+        change_username.setWindowTitle(_translate("change_username", "Username", None))
         self.groupBox.setTitle(_translate("change_username", "Dance Arts", None))
         self.cancel_btn.setText(_translate("change_username", "Cancel", None))
         self.change_btn.setText(_translate("change_username", "Change", None))

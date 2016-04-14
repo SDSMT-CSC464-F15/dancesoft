@@ -19,6 +19,7 @@ class partial_pay_dialog(QtGui.QDialog):
         self.ui.Type_comboBox.addItem("check")
         self.ui.Type_comboBox.addItem("other")
         self.ui.Confirm_btn.clicked.connect(self.pay)
+        self.ui.Cancel_btn.clicked.connect(self.close)
         
     def pay(self):
         if self.ui.Amount_lineEdit.text() == '':

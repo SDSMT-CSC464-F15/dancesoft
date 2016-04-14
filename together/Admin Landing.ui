@@ -334,9 +334,29 @@
        <string>Enter Teacher Hour</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="Remove_teacher_btn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>210</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Remove Teacher</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Admin_class">
-     <widget class="QPushButton" name="Class_tuition_btn">
+     <widget class="QPushButton" name="Remove_class_btn">
       <property name="geometry">
        <rect>
         <x>120</x>
@@ -353,7 +373,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Class Tuition</string>
+       <string>Remove Class</string>
       </property>
      </widget>
      <widget class="QPushButton" name="View_class_btn">
@@ -459,8 +479,8 @@
      <widget class="QPushButton" name="Registration_btn">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>190</y>
+        <x>290</x>
+        <y>40</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -479,8 +499,8 @@
      <widget class="QPushButton" name="Search_student_btn">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>50</y>
+        <x>60</x>
+        <y>40</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -499,8 +519,8 @@
      <widget class="QPushButton" name="Add_student_btn">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>120</y>
+        <x>290</x>
+        <y>110</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -552,6 +572,46 @@
       </property>
       <property name="text">
        <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Remove_student_btn">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>180</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Remove Student</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Credits_btn">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>110</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Student Credits</string>
       </property>
      </widget>
     </widget>
@@ -637,8 +697,8 @@
      <widget class="QPushButton" name="Enter_full_payment_btn">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>90</y>
+        <x>280</x>
+        <y>30</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -677,8 +737,8 @@
      <widget class="QPushButton" name="Enter_teacher_payrate_btn">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>30</y>
+        <x>60</x>
+        <y>90</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -692,6 +752,46 @@
       </property>
       <property name="text">
        <string>Enter Teacher Payrate</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Tuition_btn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>150</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Tuition Rates</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Fee_btn">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>210</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fee Rates</string>
       </property>
      </widget>
     </widget>

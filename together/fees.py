@@ -76,7 +76,3 @@ class fees(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
 
-app = QtGui.QApplication(sys.argv)
-window = fees()
-window.show()
-sys.exit(app.exec_())

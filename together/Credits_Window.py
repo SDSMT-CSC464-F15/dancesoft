@@ -3,7 +3,7 @@ from PyQt4 import QtGui, QtCore
 from PyQt4.QtSql import *
 from Credits import Ui_Credits
 
-class discounts(QtGui.QMainWindow):
+class credit(QtGui.QMainWindow):
     def __init__(self):
         QtGui.QMainWindow.__init__(self)
         self.credit = Ui_Credits()
@@ -24,12 +24,12 @@ class discounts(QtGui.QMainWindow):
         self.credit.studentListView.clicked.connect(self.showStudentInformation)
 
         # run insert new credit when apply button is clicked
-        self.credit.apply_btn.clicked.connect(self.applyDiscount)
+        self.credit.apply_btn.clicked.connect(self.applyCredit)
         self.credit.back_btn.clicked.connect(self.close)
         
         
     
-    def applyDiscount(self,index):
+    def applyCredit(self,index):
         #retrive the credit value in the interface fields
         self.newCredit = self.credit.creditDoubleSpinBox.value()
 
@@ -100,7 +100,3 @@ class discounts(QtGui.QMainWindow):
         self.db.setPassword("DanceSoft")
         return self.db.open()
 
-app = QtGui.QApplication(sys.argv)
-window = discounts()
-window.show()
-sys.exit(app.exec_())

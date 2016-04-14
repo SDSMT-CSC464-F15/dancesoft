@@ -192,8 +192,4 @@ class removeStudentData(QtGui.QDialog):
         self.db.setPassword("DanceSoft")
         return self.db.open()
 
-app = QtGui.QApplication(sys.argv)
-window = removeStudentData()
-window.show()
-sys.exit(app.exec_())
         

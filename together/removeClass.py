@@ -63,9 +63,4 @@ class removeClass(QtGui.QDialog):
         self.db.setUserName("dancesoft_f15")
         self.db.setPassword("DanceSoft")
         return self.db.open()
-
-app = QtGui.QApplication(sys.argv)
-window = removeClass()
-window.show()
-sys.exit(app.exec_())
         

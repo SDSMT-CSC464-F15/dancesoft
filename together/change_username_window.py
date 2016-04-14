@@ -37,21 +37,21 @@ class username_window(QtGui.QDialog):
             QtGui.QMessageBox.warning(
                 self, 'Error', "Incorrect Password")
             self.ui.userLineEdit.clear()
-            self.ui.passwordLineEdit.clear()
+            self.ui.newUserLineEdit.clear()
             self.ui.confirmLineEdit.clear()
 
         elif self.input_newName == "":
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter a new username")
             self.ui.userLineEdit.clear()
-            self.ui.passwordLineEdit.clear()
+            self.ui.newUserLineEdit.clear()
             self.ui.confirmLineEdit.clear()
         
         elif self.input_name != self.name:
             QtGui.QMessageBox.warning(
                 self, 'Error', "Please enter your username")
             self.ui.userLineEdit.clear()
-            self.ui.passwordLineEdit.clear()
+            self.ui.newUserLineEdit.clear()
             self.ui.confirmLineEdit.clear()
 
         else: # make changes

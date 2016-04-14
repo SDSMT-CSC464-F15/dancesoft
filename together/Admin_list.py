@@ -41,8 +41,11 @@ class Ui_Admin_list(object):
         self.Detail_btn.setGeometry(QtCore.QRect(20, 350, 91, 21))
         self.Detail_btn.setObjectName(_fromUtf8("Detail_btn"))
         self.Add_btn = QtGui.QPushButton(self.centralwidget)
-        self.Add_btn.setGeometry(QtCore.QRect(250, 350, 81, 23))
+        self.Add_btn.setGeometry(QtCore.QRect(140, 350, 81, 23))
         self.Add_btn.setObjectName(_fromUtf8("Add_btn"))
+        self.Remove_btn = QtGui.QPushButton(self.centralwidget)
+        self.Remove_btn.setGeometry(QtCore.QRect(250, 350, 81, 23))
+        self.Remove_btn.setObjectName(_fromUtf8("Remove_btn"))
         Admin_list.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(Admin_list)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 351, 21))
@@ -60,4 +63,5 @@ class Ui_Admin_list(object):
         self.Search_btn.setText(_translate("Admin_list", "Search", None))
         self.Detail_btn.setText(_translate("Admin_list", "Detail", None))
         self.Add_btn.setText(_translate("Admin_list", "Add", None))
+        self.Remove_btn.setText(_translate("Admin_list", "Remove", None))
 

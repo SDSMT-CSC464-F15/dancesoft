@@ -12,6 +12,7 @@ from change_username_window import username_window
 from change_password_window import password_window
 from My_Information import modify_My_Information
 from show_only_hours_dialog import show_hours_dialog
+from change_username_window import username_window
 from PyQt4.QtSql import *
 
 
@@ -37,7 +38,8 @@ class Teacher_window(QtGui.QMainWindow):
         self.ui.See_class_info_btn.clicked.connect(self.search_class)
         self.ui.See_class_role_btn.clicked.connect(self.roll_sheet)
         self.ui.Modify_personal_info.clicked.connect(self.update_teacher)
-        self.ui.Reset_password.clicked.connect(self.reset_password)      
+        self.ui.Change_Username_btn.clicked.connect(self.reset_user)
+        self.ui.Reset_password.clicked.connect(self.reset_password)
         self.ui.Student_quit_btn.clicked.connect(self.close)
         self.ui.Class_quit_btn.clicked.connect(self.close)
         self.ui.Personal_quit_btn.clicked.connect(self.close)

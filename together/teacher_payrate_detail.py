@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'teacher_payrate_detail.ui'
 #
-# Created: Thu Mar 10 14:31:13 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -56,9 +55,9 @@ class Ui_teacher_payrate_dialog(object):
         QtCore.QMetaObject.connectSlotsByName(teacher_payrate_dialog)
 
     def retranslateUi(self, teacher_payrate_dialog):
-        teacher_payrate_dialog.setWindowTitle(_translate("teacher_payrate_dialog", "Dialog", None))
-        self.Payname_label.setText(_translate("teacher_payrate_dialog", "Payname", None))
-        self.label_2.setText(_translate("teacher_payrate_dialog", "Payrate", None))
+        teacher_payrate_dialog.setWindowTitle(_translate("teacher_payrate_dialog", "Admin: Enter Pay Rate", None))
+        self.Payname_label.setText(_translate("teacher_payrate_dialog", "Pay Name", None))
+        self.label_2.setText(_translate("teacher_payrate_dialog", "Pay Rate", None))
         self.Add_btn.setText(_translate("teacher_payrate_dialog", "Add", None))
         self.Update_btn.setText(_translate("teacher_payrate_dialog", "Update", None))
 

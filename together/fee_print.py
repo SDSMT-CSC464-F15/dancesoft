@@ -21,7 +21,7 @@ class Print_window(QtGui.QWidget):
 
 
                 
-        html +=  '<p><font size="6">totol_min: %.2f</font></p>\
+        html +=  '<p><font size="6">Total Min: %.2f</font></p>\
                 <p><font size="6">Money paid: %.2f</font></p> \
                 <p><font size="6">Money due: %.2f</font></p> \
                 <p><font size="6">Remaining balance: %.2f</font></p>' \

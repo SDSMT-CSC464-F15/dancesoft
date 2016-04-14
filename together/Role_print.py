@@ -9,7 +9,7 @@ class Print_window(QtGui.QWidget):
         self.editor = QtGui.QTextBrowser(self)
         self.editor.setFontPointSize(14);
 
-        html = '<p><center><font size="6">Attandence Sheet</font></center></p>'
+        html = '<p><center><font size="6">Attendance Sheet</font></center></p>'
         
         html += '<table cellpadding="5" border="1" cellspacing = "2" style = "border:1px black;font-size: 12px;">\
                             <tr>\

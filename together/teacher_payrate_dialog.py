@@ -1,6 +1,6 @@
 import sys
 from PyQt4 import QtGui
-from teacher_payrate_detial import Ui_teacher_payrate_dialog
+from teacher_payrate_detail import Ui_teacher_payrate_dialog
 from PyQt4.QtSql import *
 
 class Teacher_payrate_dialog(QtGui.QDialog):

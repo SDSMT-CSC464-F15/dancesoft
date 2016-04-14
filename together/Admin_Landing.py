@@ -392,7 +392,7 @@ class Ui_Admin_Landing(object):
         self.Enter_partial_payment_btn.setText(_translate("Admin_Landing", "Enter Partial Payment", None))
         self.Enter_full_payment_btn.setText(_translate("Admin_Landing", "Enter Full Payment", None))
         self.Student_balance_btn.setText(_translate("Admin_Landing", "Student Balance", None))
-        self.Enter_teacher_payrate_btn.setText(_translate("Admin_Landing", "Enter Teacher Payrate", None))
+        self.Enter_teacher_payrate_btn.setText(_translate("Admin_Landing", "Enter Teacher Pay Rate", None))
         self.Tuition_btn.setText(_translate("Admin_Landing", "Tuition Rates", None))
         self.Fee_btn.setText(_translate("Admin_Landing", "Fee Rates", None))
         self.actionBacon.setText(_translate("Admin_Landing", "Bacon", None))

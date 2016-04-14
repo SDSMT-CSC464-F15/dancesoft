@@ -52,7 +52,6 @@ class assign_teacher(QtGui.QMainWindow):
         
         self.current_teacher_query.next()
         self.current_teacher = self.current_teacher_query.value(0)
-        print(self.current_teacher)
         if self.current_teacher != None:
             confirm_msg = "This class is currently assigned to '%s' do you want to change teachers" %(self.current_teacher)
             

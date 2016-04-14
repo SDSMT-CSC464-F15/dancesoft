@@ -751,7 +751,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Enter Teacher Payrate</string>
+       <string>Enter Teacher Pay Rate</string>
       </property>
      </widget>
      <widget class="QPushButton" name="Tuition_btn">

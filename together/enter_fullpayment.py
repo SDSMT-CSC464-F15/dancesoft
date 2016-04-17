@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'enter_fullpayment.ui'
 #
-# Created: Tue Feb 16 03:05:07 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -54,7 +53,7 @@ class Ui_Enter_fullpayment(object):
         QtCore.QMetaObject.connectSlotsByName(Enter_fullpayment)
 
     def retranslateUi(self, Enter_fullpayment):
-        Enter_fullpayment.setWindowTitle(_translate("Enter_fullpayment", "MainWindow", None))
+        Enter_fullpayment.setWindowTitle(_translate("Enter_fullpayment", "Enter Full Payment", None))
         self.Search_btn.setText(_translate("Enter_fullpayment", "search", None))
         self.Statement_btn.setText(_translate("Enter_fullpayment", "Clear", None))
 

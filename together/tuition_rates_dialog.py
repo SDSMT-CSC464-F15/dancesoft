@@ -66,7 +66,7 @@ class Ui_tuitionRateDialog(object):
         QtCore.QMetaObject.connectSlotsByName(tuitionRateDialog)
 
     def retranslateUi(self, tuitionRateDialog):
-        tuitionRateDialog.setWindowTitle(_translate("tuitionRateDialog", "Dialog", None))
+        tuitionRateDialog.setWindowTitle(_translate("tuitionRateDialog", "Tuition Rates", None))
         self.tuitionTimeLabel.setText(_translate("tuitionRateDialog", "Time*", None))
         self.tuitionCostLabel.setText(_translate("tuitionRateDialog", "Tuition Cost", None))
         self.timeInfoLabel.setText(_translate("tuitionRateDialog", "*How many min/hrs per week ", None))

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Class Registration</string>
   </property>
   <widget class="QTableView" name="Class_drop_tableView">
    <property name="geometry">

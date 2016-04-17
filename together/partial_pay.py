@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'partial_pay.ui'
 #
-# Created: Tue Feb 16 03:12:37 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -56,7 +55,7 @@ class Ui_Partial_pay(object):
         QtCore.QMetaObject.connectSlotsByName(Partial_pay)
 
     def retranslateUi(self, Partial_pay):
-        Partial_pay.setWindowTitle(_translate("Partial_pay", "Dialog", None))
+        Partial_pay.setWindowTitle(_translate("Partial_pay", "Enter Payment", None))
         self.Amount_label.setText(_translate("Partial_pay", "Amount", None))
         self.Type_label.setText(_translate("Partial_pay", "Type", None))
         self.Semester_label.setText(_translate("Partial_pay", "Semester", None))

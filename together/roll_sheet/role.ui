@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Class Role</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QListView" name="Role_listView">

@@ -43,7 +43,7 @@ class Ui_removeTeacherDialog(object):
         QtCore.QMetaObject.connectSlotsByName(removeTeacherDialog)
 
     def retranslateUi(self, removeTeacherDialog):
-        removeTeacherDialog.setWindowTitle(_translate("removeTeacherDialog", "Dialog", None))
+        removeTeacherDialog.setWindowTitle(_translate("removeTeacherDialog", "Remove Teacher", None))
         self.ok_btn.setText(_translate("removeTeacherDialog", "OK", None))
         self.cancel_btn.setText(_translate("removeTeacherDialog", "Cancel", None))
         self.teacherNameLabel.setText(_translate("removeTeacherDialog", "Teacher Name", None))

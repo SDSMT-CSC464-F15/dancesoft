@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Navi.ui'
 #
-# Created: Sun Nov 22 18:22:58 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -38,7 +37,7 @@ class Ui_Navi(object):
         QtCore.QMetaObject.connectSlotsByName(Navi)
 
     def retranslateUi(self, Navi):
-        Navi.setWindowTitle(_translate("Navi", "Dialog", None))
+        Navi.setWindowTitle(_translate("Navi", "Landing Selection", None))
         self.Admin_btn.setText(_translate("Navi", "Administrator", None))
         self.Teacher_btn.setText(_translate("Navi", "Teacher", None))
 

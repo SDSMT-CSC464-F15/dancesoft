@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'removeStudentDialog.ui'
 #
-# Created: Thu Apr 14 13:21:18 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -50,7 +49,7 @@ class Ui_removeStudentDialog(object):
         QtCore.QMetaObject.connectSlotsByName(removeStudentDialog)
 
     def retranslateUi(self, removeStudentDialog):
-        removeStudentDialog.setWindowTitle(_translate("removeStudentDialog", "Dialog", None))
+        removeStudentDialog.setWindowTitle(_translate("removeStudentDialog", "Remove Student", None))
         self.ok_btn.setText(_translate("removeStudentDialog", "OK", None))
         self.cancel_btn.setText(_translate("removeStudentDialog", "Cancel", None))
         self.studentNameLabel.setText(_translate("removeStudentDialog", "Students", None))

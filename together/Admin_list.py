@@ -59,7 +59,7 @@ class Ui_Admin_list(object):
         QtCore.QMetaObject.connectSlotsByName(Admin_list)
 
     def retranslateUi(self, Admin_list):
-        Admin_list.setWindowTitle(_translate("Admin_list", "MainWindow", None))
+        Admin_list.setWindowTitle(_translate("Admin_list", "Admin List", None))
         self.Search_btn.setText(_translate("Admin_list", "Search", None))
         self.Detail_btn.setText(_translate("Admin_list", "Detail", None))
         self.Add_btn.setText(_translate("Admin_list", "Add", None))

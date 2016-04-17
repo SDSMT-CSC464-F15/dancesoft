@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'student_owe.ui'
 #
-# Created: Fri Jan 22 22:16:05 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -54,7 +53,7 @@ class Ui_Student_payment(object):
         QtCore.QMetaObject.connectSlotsByName(Student_payment)
 
     def retranslateUi(self, Student_payment):
-        Student_payment.setWindowTitle(_translate("Student_payment", "MainWindow", None))
+        Student_payment.setWindowTitle(_translate("Student_payment", "Student List", None))
         self.Search_btn.setText(_translate("Student_payment", "search", None))
         self.Statement_btn.setText(_translate("Student_payment", "Statement", None))
 

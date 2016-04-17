@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'role.ui'
 #
-# Created: Fri Nov 27 04:15:14 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -51,6 +50,6 @@ class Ui_Role_window(object):
         QtCore.QMetaObject.connectSlotsByName(Role_window)
 
     def retranslateUi(self, Role_window):
-        Role_window.setWindowTitle(_translate("Role_window", "MainWindow", None))
+        Role_window.setWindowTitle(_translate("Role_window", "Class Role", None))
         self.Role_print_btn.setText(_translate("Role_window", "Print", None))
 

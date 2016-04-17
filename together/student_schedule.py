@@ -56,8 +56,8 @@ class Ui_Student_schedule(object):
         QtCore.QMetaObject.connectSlotsByName(Student_schedule)
 
     def retranslateUi(self, Student_schedule):
-        Student_schedule.setWindowTitle(_translate("Student_schedule", "MainWindow", None))
-        self.Search_btn.setText(_translate("Student_schedule", "search", None))
-        self.schedule_btn.setText(_translate("Student_schedule", "schedule", None))
+        Student_schedule.setWindowTitle(_translate("Student_schedule", "Student List", None))
+        self.Search_btn.setText(_translate("Student_schedule", "Search", None))
+        self.schedule_btn.setText(_translate("Student_schedule", "Schedule", None))
         self.cancel_btn.setText(_translate("Student_schedule", "Cancel", None))
 

@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'addstudetail.ui'
 #
-# Created: Sun Nov 29 15:57:54 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -41,7 +40,7 @@ class Ui_Addstu_detail(object):
         QtCore.QMetaObject.connectSlotsByName(Addstu_detail)
 
     def retranslateUi(self, Addstu_detail):
-        Addstu_detail.setWindowTitle(_translate("Addstu_detail", "Dialog", None))
+        Addstu_detail.setWindowTitle(_translate("Addstu_detail", "Select Student", None))
         self.Addstu_detail_label.setText(_translate("Addstu_detail", "Select student to add", None))
         self.Addstu_detail_btn.setText(_translate("Addstu_detail", "Add", None))
 

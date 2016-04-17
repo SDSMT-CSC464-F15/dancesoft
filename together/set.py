@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'set.ui'
 #
-# Created: Tue Mar 29 20:27:43 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -56,7 +55,7 @@ class Ui_Semester_set_Dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Semester_set_Dialog)
 
     def retranslateUi(self, Semester_set_Dialog):
-        Semester_set_Dialog.setWindowTitle(_translate("Semester_set_Dialog", "Dialog", None))
+        Semester_set_Dialog.setWindowTitle(_translate("Semester_set_Dialog", "Set Semester", None))
         self.Set_btn.setText(_translate("Semester_set_Dialog", "Set", None))
         self.Add_btn.setText(_translate("Semester_set_Dialog", "Add", None))
         self.Term_comboBox.setItemText(0, _translate("Semester_set_Dialog", "Term1", None))

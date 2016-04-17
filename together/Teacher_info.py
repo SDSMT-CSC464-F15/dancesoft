@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Teacher_info.ui'
 #
-# Created: Tue Mar 22 15:16:18 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -172,7 +171,7 @@ class Ui_Teacher_info_dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Teacher_info_dialog)
 
     def retranslateUi(self, Teacher_info_dialog):
-        Teacher_info_dialog.setWindowTitle(_translate("Teacher_info_dialog", "Dialog", None))
+        Teacher_info_dialog.setWindowTitle(_translate("Teacher_info_dialog", "Teacher Information", None))
         self.Id_detail_label.setText(_translate("Teacher_info_dialog", "ID", None))
         self.Gender_detail_label.setText(_translate("Teacher_info_dialog", "Gender", None))
         self.Birth_detail_label.setText(_translate("Teacher_info_dialog", "Date Birth", None))

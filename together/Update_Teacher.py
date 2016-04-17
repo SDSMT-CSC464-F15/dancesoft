@@ -190,7 +190,7 @@ class Ui_modify_teacher(object):
         QtCore.QMetaObject.connectSlotsByName(modify_teacher)
 
     def retranslateUi(self, modify_teacher):
-        modify_teacher.setWindowTitle(_translate("modify_teacher", "Dialog", None))
+        modify_teacher.setWindowTitle(_translate("modify_teacher", "Update Teacher", None))
         self.selectTeacherLabel.setText(_translate("modify_teacher", "Select Teacher", None))
         self.NameLabel.setText(_translate("modify_teacher", "Name*", None))
         self.homePhoneLabel.setText(_translate("modify_teacher", "Home Phone*", None))

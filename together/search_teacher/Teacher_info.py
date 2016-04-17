@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Teacherinfo.ui'
+# Form implementation generated from reading ui file 'Teacher_info.ui'
 #
-# Created: Fri Nov 27 16:32:00 2015
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -66,9 +65,6 @@ class Ui_Teacher_info_dialog(object):
         self.Id_detail_lineEdit = QtGui.QLineEdit(Teacher_info_dialog)
         self.Id_detail_lineEdit.setGeometry(QtCore.QRect(130, 50, 221, 20))
         self.Id_detail_lineEdit.setObjectName(_fromUtf8("Id_detail_lineEdit"))
-        self.Gender_detail_lineEdit = QtGui.QLineEdit(Teacher_info_dialog)
-        self.Gender_detail_lineEdit.setGeometry(QtCore.QRect(130, 90, 221, 20))
-        self.Gender_detail_lineEdit.setObjectName(_fromUtf8("Gender_detail_lineEdit"))
         self.Cellphone_detail_lineEdit = QtGui.QLineEdit(Teacher_info_dialog)
         self.Cellphone_detail_lineEdit.setGeometry(QtCore.QRect(130, 170, 221, 20))
         self.Cellphone_detail_lineEdit.setObjectName(_fromUtf8("Cellphone_detail_lineEdit"))
@@ -123,12 +119,15 @@ class Ui_Teacher_info_dialog(object):
         self.Birth_detail_dateEdit = QtGui.QDateEdit(Teacher_info_dialog)
         self.Birth_detail_dateEdit.setGeometry(QtCore.QRect(130, 130, 221, 22))
         self.Birth_detail_dateEdit.setObjectName(_fromUtf8("Birth_detail_dateEdit"))
+        self.Gender_comboBox = QtGui.QComboBox(Teacher_info_dialog)
+        self.Gender_comboBox.setGeometry(QtCore.QRect(130, 90, 221, 22))
+        self.Gender_comboBox.setObjectName(_fromUtf8("Gender_comboBox"))
 
         self.retranslateUi(Teacher_info_dialog)
         QtCore.QMetaObject.connectSlotsByName(Teacher_info_dialog)
 
     def retranslateUi(self, Teacher_info_dialog):
-        Teacher_info_dialog.setWindowTitle(_translate("Teacher_info_dialog", "Dialog", None))
+        Teacher_info_dialog.setWindowTitle(_translate("Teacher_info_dialog", "Teacher Information", None))
         self.Id_detail_label.setText(_translate("Teacher_info_dialog", "ID", None))
         self.Gender_detail_label.setText(_translate("Teacher_info_dialog", "Gender", None))
         self.Birth_detail_label.setText(_translate("Teacher_info_dialog", "Date Birth", None))

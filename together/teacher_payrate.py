@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'teacher_payrate.ui'
 #
-# Created: Thu Apr 14 12:43:03 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -54,7 +53,7 @@ class Ui_Teacher_payrate(object):
         QtCore.QMetaObject.connectSlotsByName(Teacher_payrate)
 
     def retranslateUi(self, Teacher_payrate):
-        Teacher_payrate.setWindowTitle(_translate("Teacher_payrate", "MainWindow", None))
+        Teacher_payrate.setWindowTitle(_translate("Teacher_payrate", "Teacher List", None))
         self.Search_btn.setText(_translate("Teacher_payrate", "search", None))
-        self.history_btn.setText(_translate("Teacher_payrate", "detail", None))
+        self.history_btn.setText(_translate("Teacher_payrate", "Pay Rates", None))
 

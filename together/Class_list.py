@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Class_list.ui'
 #
-# Created: Sun Mar 20 11:51:49 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -50,7 +49,7 @@ class Ui_Class_list_Dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Class_list_Dialog)
 
     def retranslateUi(self, Class_list_Dialog):
-        Class_list_Dialog.setWindowTitle(_translate("Class_list_Dialog", "Dialog", None))
+        Class_list_Dialog.setWindowTitle(_translate("Class_list_Dialog", "Class Registration", None))
         self.Add_btn.setText(_translate("Class_list_Dialog", "Add", None))
         self.Drop_btn.setText(_translate("Class_list_Dialog", "Drop", None))
         self.Reg_label.setText(_translate("Class_list_Dialog", "Class registered", None))

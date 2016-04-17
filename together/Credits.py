@@ -60,7 +60,7 @@ class Ui_Credits(object):
         QtCore.QMetaObject.connectSlotsByName(Credits)
 
     def retranslateUi(self, Credits):
-        Credits.setWindowTitle(_translate("Credits", "MainWindow", None))
+        Credits.setWindowTitle(_translate("Credits", "Student Credits", None))
         self.creditLabel.setText(_translate("Credits", "Update Credit", None))
         self.back_btn.setText(_translate("Credits", "Back", None))
         self.studentLabel.setText(_translate("Credits", "Select a Student", None))

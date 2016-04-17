@@ -69,7 +69,7 @@ class Ui_fee_rates(object):
         QtCore.QMetaObject.connectSlotsByName(fee_rates)
 
     def retranslateUi(self, fee_rates):
-        fee_rates.setWindowTitle(_translate("fee_rates", "MainWindow", None))
+        fee_rates.setWindowTitle(_translate("fee_rates", "Fee Rates", None))
         self.feeCostLabel.setText(_translate("fee_rates", "Cost", None))
         self.cancel_btn.setText(_translate("fee_rates", "Cancel", None))
         self.feeDescriptionLabel.setText(_translate("fee_rates", "Fee/Discount Description", None))

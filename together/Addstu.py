@@ -56,7 +56,7 @@ class Ui_Addstu_window(object):
         QtCore.QMetaObject.connectSlotsByName(Addstu_window)
 
     def retranslateUi(self, Addstu_window):
-        Addstu_window.setWindowTitle(_translate("Addstu_window", "MainWindow", None))
+        Addstu_window.setWindowTitle(_translate("Addstu_window", "Approve Student", None))
         self.Remove_stu_btn.setText(_translate("Addstu_window", "Remove", None))
         self.Add_stu_btn.setText(_translate("Addstu_window", "Add", None))
         self.label.setText(_translate("Addstu_window", "* Class Approval:   Pending: 0    Approved: 1     Rejected: -1", None))

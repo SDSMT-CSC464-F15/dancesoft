@@ -188,7 +188,7 @@ class Ui_add_student(object):
         QtCore.QMetaObject.connectSlotsByName(add_student)
 
     def retranslateUi(self, add_student):
-        add_student.setWindowTitle(_translate("add_student", "Dialog", None))
+        add_student.setWindowTitle(_translate("add_student", "Add Student", None))
         self.NameLabel.setText(_translate("add_student", "Name*", None))
         self.DOBLabel.setText(_translate("add_student", "Date of Birth*", None))
         self.homePhoneLabel.setText(_translate("add_student", "Home Phone*", None))

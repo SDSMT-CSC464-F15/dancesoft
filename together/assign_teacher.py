@@ -56,7 +56,7 @@ class Ui_Assign_teacher_window(object):
         QtCore.QMetaObject.connectSlotsByName(Assign_teacher_window)
 
     def retranslateUi(self, Assign_teacher_window):
-        Assign_teacher_window.setWindowTitle(_translate("Assign_teacher_window", "MainWindow", None))
+        Assign_teacher_window.setWindowTitle(_translate("Assign_teacher_window", "Assign Teacher", None))
         self.Select_Class_label.setText(_translate("Assign_teacher_window", "Select Class", None))
         self.Select_Teacher_label.setText(_translate("Assign_teacher_window", "Select Teacher", None))
         self.Assign_teacher_back_btn.setText(_translate("Assign_teacher_window", "Back", None))

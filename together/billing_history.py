@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'billing_history.ui'
 #
-# Created: Tue Feb  2 10:14:51 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -54,7 +53,7 @@ class Ui_Billing_history(object):
         QtCore.QMetaObject.connectSlotsByName(Billing_history)
 
     def retranslateUi(self, Billing_history):
-        Billing_history.setWindowTitle(_translate("Billing_history", "MainWindow", None))
+        Billing_history.setWindowTitle(_translate("Billing_history", "Billing History", None))
         self.Search_btn.setText(_translate("Billing_history", "search", None))
         self.Statement_btn.setText(_translate("Billing_history", "Statement", None))
 

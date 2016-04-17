@@ -43,7 +43,7 @@ class Ui_addAdminDialog(object):
         QtCore.QMetaObject.connectSlotsByName(addAdminDialog)
 
     def retranslateUi(self, addAdminDialog):
-        addAdminDialog.setWindowTitle(_translate("addAdminDialog", "Dialog", None))
+        addAdminDialog.setWindowTitle(_translate("addAdminDialog", "Add Admin", None))
         self.ok_btn.setText(_translate("addAdminDialog", "OK", None))
         self.cancel_btn.setText(_translate("addAdminDialog", "Cancel", None))
         self.teacherNameLabel.setText(_translate("addAdminDialog", "Teacher Name", None))

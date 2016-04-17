@@ -134,7 +134,7 @@ class Ui_Add_Class(object):
         QtCore.QMetaObject.connectSlotsByName(Add_Class)
 
     def retranslateUi(self, Add_Class):
-        Add_Class.setWindowTitle(_translate("Add_Class", "Dialog", None))
+        Add_Class.setWindowTitle(_translate("Add_Class", "Add Class", None))
         self.Day_comboBox.setItemText(0, _translate("Add_Class", "Sunday", None))
         self.Day_comboBox.setItemText(1, _translate("Add_Class", "Monday", None))
         self.Day_comboBox.setItemText(2, _translate("Add_Class", "Tuesday", None))

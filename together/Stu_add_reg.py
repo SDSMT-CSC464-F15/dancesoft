@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Stu_add.ui'
 #
-# Created: Fri Apr  8 18:58:15 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -191,7 +190,7 @@ class Ui_Stu_reg_dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Stu_reg_dialog)
 
     def retranslateUi(self, Stu_reg_dialog):
-        Stu_reg_dialog.setWindowTitle(_translate("Stu_reg_dialog", "Dialog", None))
+        Stu_reg_dialog.setWindowTitle(_translate("Stu_reg_dialog", "Add Student", None))
         self.Id_detail_label.setText(_translate("Stu_reg_dialog", "ID", None))
         self.Gender_detail_label.setText(_translate("Stu_reg_dialog", "Gender", None))
         self.Birth_detail_label.setText(_translate("Stu_reg_dialog", "Date Birth", None))

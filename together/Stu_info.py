@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Stuinfo.ui'
 #
-# Created: Thu Apr 14 12:19:51 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -184,7 +183,7 @@ class Ui_stu_info_dialog(object):
         QtCore.QMetaObject.connectSlotsByName(stu_info_dialog)
 
     def retranslateUi(self, stu_info_dialog):
-        stu_info_dialog.setWindowTitle(_translate("stu_info_dialog", "Dialog", None))
+        stu_info_dialog.setWindowTitle(_translate("stu_info_dialog", "Student Information", None))
         self.Id_detail_label.setText(_translate("stu_info_dialog", "ID", None))
         self.Gender_detail_label.setText(_translate("stu_info_dialog", "Gender", None))
         self.Birth_detail_label.setText(_translate("stu_info_dialog", "Date Birth", None))

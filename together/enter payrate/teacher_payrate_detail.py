@@ -55,7 +55,7 @@ class Ui_teacher_payrate_dialog(object):
         QtCore.QMetaObject.connectSlotsByName(teacher_payrate_dialog)
 
     def retranslateUi(self, teacher_payrate_dialog):
-        teacher_payrate_dialog.setWindowTitle(_translate("teacher_payrate_dialog", "Admin: Enter Pay Rate", None))
+        teacher_payrate_dialog.setWindowTitle(_translate("teacher_payrate_dialog", "Enter Pay Rate", None))
         self.Payname_label.setText(_translate("teacher_payrate_dialog", "Pay Name", None))
         self.label_2.setText(_translate("teacher_payrate_dialog", "Pay Rate", None))
         self.Add_btn.setText(_translate("teacher_payrate_dialog", "Add", None))

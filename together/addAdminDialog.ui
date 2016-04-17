@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Add Admin</string>
   </property>
   <widget class="QPushButton" name="ok_btn">
    <property name="geometry">

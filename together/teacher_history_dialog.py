@@ -1,6 +1,6 @@
 import sys
 from PyQt4 import QtGui
-from teacher_history_detial import Ui_Teacher_history_dialog
+from teacher_history_detail import Ui_Teacher_history_dialog
 from PyQt4.QtSql import *
 
 class Teacher_history_dialog(QtGui.QDialog):

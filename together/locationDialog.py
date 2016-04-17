@@ -43,7 +43,7 @@ class Ui_locationDialog(object):
         QtCore.QMetaObject.connectSlotsByName(locationDialog)
 
     def retranslateUi(self, locationDialog):
-        locationDialog.setWindowTitle(_translate("locationDialog", "Dialog", None))
+        locationDialog.setWindowTitle(_translate("locationDialog", "Add Location", None))
         self.ok_btn.setText(_translate("locationDialog", "OK", None))
         self.cancel_btn.setText(_translate("locationDialog", "Cancel", None))
         self.locationNameLabel.setText(_translate("locationDialog", "New Location", None))

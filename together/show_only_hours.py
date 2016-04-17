@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'show_hours.ui'
 #
-# Created: Sun Mar 20 14:39:52 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -59,7 +58,7 @@ class Ui_Show_hours(object):
         QtCore.QMetaObject.connectSlotsByName(Show_hours)
 
     def retranslateUi(self, Show_hours):
-        Show_hours.setWindowTitle(_translate("Show_hours", "Dialog", None))
+        Show_hours.setWindowTitle(_translate("Show_hours", "Enter Hours", None))
         self.course_label.setText(_translate("Show_hours", "Course Hours", None))
         self.other_label.setText(_translate("Show_hours", "Other Hours", None))
         self.update_btn.setText(_translate("Show_hours", "Update", None))

@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Admininfo.ui'
 #
-# Created: Fri Mar 11 14:34:31 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -125,7 +124,7 @@ class Ui_Admin_info_dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Admin_info_dialog)
 
     def retranslateUi(self, Admin_info_dialog):
-        Admin_info_dialog.setWindowTitle(_translate("Admin_info_dialog", "Dialog", None))
+        Admin_info_dialog.setWindowTitle(_translate("Admin_info_dialog", "Admin Details", None))
         self.Id_detail_label.setText(_translate("Admin_info_dialog", "ID", None))
         self.Gender_detail_label.setText(_translate("Admin_info_dialog", "Gender", None))
         self.Birth_detail_label.setText(_translate("Admin_info_dialog", "Date Birth", None))

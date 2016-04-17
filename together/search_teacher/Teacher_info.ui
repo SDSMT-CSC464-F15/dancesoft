@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Teacher Information</string>
   </property>
   <widget class="QLabel" name="Id_detail_label">
    <property name="geometry">

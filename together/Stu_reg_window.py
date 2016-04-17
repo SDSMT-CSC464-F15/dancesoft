@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Stu_reg_window.ui'
 #
-# Created: Fri Apr  8 21:31:56 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -60,7 +59,7 @@ class Ui_Stu_reg(object):
         QtCore.QMetaObject.connectSlotsByName(Stu_reg)
 
     def retranslateUi(self, Stu_reg):
-        Stu_reg.setWindowTitle(_translate("Stu_reg", "MainWindow", None))
+        Stu_reg.setWindowTitle(_translate("Stu_reg", "Student List", None))
         self.Search_btn.setText(_translate("Stu_reg", "search", None))
         self.Add_btn.setText(_translate("Stu_reg", "Add", None))
         self.Update_btn.setText(_translate("Stu_reg", "Update", None))

@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'teacher_history.ui'
 #
-# Created: Fri Jan 22 01:06:13 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -54,7 +53,7 @@ class Ui_Teacher_history(object):
         QtCore.QMetaObject.connectSlotsByName(Teacher_history)
 
     def retranslateUi(self, Teacher_history):
-        Teacher_history.setWindowTitle(_translate("Teacher_history", "MainWindow", None))
-        self.Search_btn.setText(_translate("Teacher_history", "search", None))
-        self.history_btn.setText(_translate("Teacher_history", "history", None))
+        Teacher_history.setWindowTitle(_translate("Teacher_history", "Teacher History", None))
+        self.Search_btn.setText(_translate("Teacher_history", "Search", None))
+        self.history_btn.setText(_translate("Teacher_history", "History", None))
 

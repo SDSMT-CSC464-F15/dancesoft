@@ -43,7 +43,7 @@ class Ui_removeAdminDialog(object):
         QtCore.QMetaObject.connectSlotsByName(removeAdminDialog)
 
     def retranslateUi(self, removeAdminDialog):
-        removeAdminDialog.setWindowTitle(_translate("removeAdminDialog", "Dialog", None))
+        removeAdminDialog.setWindowTitle(_translate("removeAdminDialog", "Remove Admin", None))
         self.ok_btn.setText(_translate("removeAdminDialog", "OK", None))
         self.cancel_btn.setText(_translate("removeAdminDialog", "Cancel", None))
         self.adminNameLabel.setText(_translate("removeAdminDialog", "Admin Name", None))

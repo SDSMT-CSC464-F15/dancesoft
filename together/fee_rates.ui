@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Fee Rates</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="feeCostLabel">

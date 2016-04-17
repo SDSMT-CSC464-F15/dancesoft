@@ -226,7 +226,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Request Add to Class</string>
+       <string> Add to Class</string>
       </property>
      </widget>
      <widget class="QPushButton" name="See_student_schedule_btn">
@@ -328,7 +328,7 @@
        </font>
       </property>
       <property name="text">
-       <string>See Class Info</string>
+       <string>Search Classes</string>
       </property>
      </widget>
      <widget class="QPushButton" name="See_class_role_btn">

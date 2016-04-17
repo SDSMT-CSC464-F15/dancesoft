@@ -70,7 +70,7 @@ class Ui_Search_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(Search_MainWindow)
 
     def retranslateUi(self, Search_MainWindow):
-        Search_MainWindow.setWindowTitle(_translate("Search_MainWindow", "MainWindow", None))
+        Search_MainWindow.setWindowTitle(_translate("Search_MainWindow", "Search", None))
         self.label.setText(_translate("Search_MainWindow", "Enter Student Name", None))
         self.Search_btn.setText(_translate("Search_MainWindow", "Search", None))
         self.Adv_search_btn.setText(_translate("Search_MainWindow", "Advanced Search", None))

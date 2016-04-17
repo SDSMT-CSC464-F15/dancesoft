@@ -65,7 +65,7 @@ class Ui_change_password(object):
         QtCore.QMetaObject.connectSlotsByName(change_password)
 
     def retranslateUi(self, change_password):
-        change_password.setWindowTitle(_translate("change_password", "Login", None))
+        change_password.setWindowTitle(_translate("change_password", "Change Password", None))
         self.groupBox.setTitle(_translate("change_password", "Dance Arts", None))
         self.cancel_btn.setText(_translate("change_password", "Cancel", None))
         self.change_btn.setText(_translate("change_password", "Change", None))

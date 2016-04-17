@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Update Fee Rate</string>
   </property>
   <widget class="QLabel" name="feeDescriptionLabel">
    <property name="geometry">

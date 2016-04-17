@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'partial_main.ui'
 #
-# Created: Tue Feb 16 03:42:53 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -54,7 +53,7 @@ class Ui_Enter_partialpayment(object):
         QtCore.QMetaObject.connectSlotsByName(Enter_partialpayment)
 
     def retranslateUi(self, Enter_partialpayment):
-        Enter_partialpayment.setWindowTitle(_translate("Enter_partialpayment", "MainWindow", None))
+        Enter_partialpayment.setWindowTitle(_translate("Enter_partialpayment", "Enter Partial Payment", None))
         self.Search_btn.setText(_translate("Enter_partialpayment", "search", None))
         self.Add_btn.setText(_translate("Enter_partialpayment", "Add", None))
 

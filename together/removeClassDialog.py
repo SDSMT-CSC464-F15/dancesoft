@@ -43,7 +43,7 @@ class Ui_removeClassDialog(object):
         QtCore.QMetaObject.connectSlotsByName(removeClassDialog)
 
     def retranslateUi(self, removeClassDialog):
-        removeClassDialog.setWindowTitle(_translate("removeClassDialog", "Dialog", None))
+        removeClassDialog.setWindowTitle(_translate("removeClassDialog", "Remove Class", None))
         self.ok_btn.setText(_translate("removeClassDialog", "OK", None))
         self.cancel_btn.setText(_translate("removeClassDialog", "Cancel", None))
         self.classNameLabel.setText(_translate("removeClassDialog", "Class Name", None))

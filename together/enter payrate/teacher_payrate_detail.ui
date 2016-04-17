@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Admin: Enter Pay Rate</string>
+   <string>Enter Pay Rate</string>
   </property>
   <widget class="QLabel" name="Payname_label">
    <property name="geometry">

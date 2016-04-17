@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Student List</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="Student_lineEdit">
@@ -44,7 +44,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>search</string>
+     <string>Search</string>
     </property>
    </widget>
    <widget class="QPushButton" name="schedule_btn">
@@ -57,7 +57,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>schedule</string>
+     <string>Schedule</string>
     </property>
    </widget>
    <widget class="QPushButton" name="cancel_btn">

@@ -129,7 +129,7 @@ class Ui_Class_info_dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Class_info_dialog)
 
     def retranslateUi(self, Class_info_dialog):
-        Class_info_dialog.setWindowTitle(_translate("Class_info_dialog", "Dialog", None))
+        Class_info_dialog.setWindowTitle(_translate("Class_info_dialog", "Class Information", None))
         self.Id_detail_label.setText(_translate("Class_info_dialog", "ID", None))
         self.Cost_detail_label.setText(_translate("Class_info_dialog", "Cost", None))
         self.Day_detail_label.setText(_translate("Class_info_dialog", "Day", None))

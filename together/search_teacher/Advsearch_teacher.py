@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'Advsearch.ui'
 #
-# Created: Tue Mar 22 14:07:34 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -132,7 +131,7 @@ class Ui_advsearch_dialog(object):
         QtCore.QMetaObject.connectSlotsByName(advsearch_dialog)
 
     def retranslateUi(self, advsearch_dialog):
-        advsearch_dialog.setWindowTitle(_translate("advsearch_dialog", "Dialog", None))
+        advsearch_dialog.setWindowTitle(_translate("advsearch_dialog", "Advanced Search", None))
         self.ID_cbox.setText(_translate("advsearch_dialog", "ID", None))
         self.Name_cobx.setText(_translate("advsearch_dialog", "Name", None))
         self.Homephone_cbox.setText(_translate("advsearch_dialog", "Home Phone", None))

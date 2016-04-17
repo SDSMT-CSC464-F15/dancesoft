@@ -66,7 +66,7 @@ class Ui_change_username(object):
         QtCore.QMetaObject.connectSlotsByName(change_username)
 
     def retranslateUi(self, change_username):
-        change_username.setWindowTitle(_translate("change_username", "Username", None))
+        change_username.setWindowTitle(_translate("change_username", "Change Username", None))
         self.groupBox.setTitle(_translate("change_username", "Dance Arts", None))
         self.cancel_btn.setText(_translate("change_username", "Cancel", None))
         self.change_btn.setText(_translate("change_username", "Change", None))

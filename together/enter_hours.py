@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'enter_hours.ui'
 #
-# Created: Tue Feb 23 11:50:04 2016
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -54,7 +53,7 @@ class Ui_Enter_hours(object):
         QtCore.QMetaObject.connectSlotsByName(Enter_hours)
 
     def retranslateUi(self, Enter_hours):
-        Enter_hours.setWindowTitle(_translate("Enter_hours", "MainWindow", None))
+        Enter_hours.setWindowTitle(_translate("Enter_hours", "Enter Hours", None))
         self.Search_btn.setText(_translate("Enter_hours", "search", None))
         self.Hours_btn.setText(_translate("Enter_hours", "Hours", None))
 

@@ -51,7 +51,7 @@ class removeTeacher(QtGui.QDialog):
             
 
         self.confirmMessage = "Are you sure you want to remove '%s' from the system? This will remove all relevant information and can not be reversed." \
-                                 %(self.selectedTeacher)
+                                 %(self.removeTeach.teacherComboBox.currentText())
         self.confirmReply = QtGui.QMessageBox.question(self, 'Confirm', 
                 self.confirmMessage, QtGui.QMessageBox.Yes, QtGui.QMessageBox.No)
 

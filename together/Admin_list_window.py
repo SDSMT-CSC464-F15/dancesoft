@@ -1,3 +1,4 @@
+#display the list of admins
 import sys
 from PyQt4 import QtGui
 from Admin_list import Ui_Admin_list

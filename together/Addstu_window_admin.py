@@ -1,3 +1,4 @@
+#class approve page
 import sys
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtSql import *
@@ -12,9 +13,11 @@ class Addstu_window(QtGui.QMainWindow):
         self.ui.setupUi(self)
         self.conn() #need catch exeption
         Addstu_query = QSqlQuery()
+        #get list of class
         Addstu_query.exec_("Select Class_name from Class ORDER BY Class_name")
         model = QSqlQueryModel()
         model.setQuery(Addstu_query)
+        #populate classes to listview
         self.ui.Class_listView.setModel(model)
         self.ui.Class_listView.clicked.connect(self.show_student)
         self.ui.Stu_tableView.clicked.connect(self.select_student)
@@ -24,24 +27,25 @@ class Addstu_window(QtGui.QMainWindow):
         self.ui.Remove_stu_btn.setEnabled(False)
         self.ui.Add_stu_btn.setEnabled(False)
 
-
+    #get new window to select student
     def add_student(self):
         self.ui.detail = Addstu_detail_dialog(self.class_name)
         self.ui.detail.show()
 
+    #revome student from the class
     def remove_student(self):
         Remove_query = QSqlQuery()
-     
+        
         if Remove_query.exec_("Update Student_Class Set Class_approval = -1 Where\
                             Student_id = (Select Student_id from Student Where Student_name = \
                             '%s') and Class_id = (Select Class_id from Class where \
                             Class_name = '%s')" % (self.stu_name, self.class_name)):
-
-
+            #get corresponding refund
             refund(self.class_name, self.stu_name)
             QtGui.QMessageBox.information(
                 self, 'Success', 'Remove student from class successfully')
-     
+
+    
     def select_student(self, index):
         status = -1
         

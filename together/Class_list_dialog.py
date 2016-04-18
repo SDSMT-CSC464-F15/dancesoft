@@ -1,3 +1,4 @@
+#add and drop class according to class taken
 import sys
 from PyQt4 import QtGui
 from PyQt4 import QtCore
@@ -15,6 +16,7 @@ class Class_list_dialog(QtGui.QDialog):
         self.ui.setupUi(self)
         self.id = ID
         class_query = QSqlQuery()
+        #class current register
         class_query.exec_("SELECT T.Teacher_name, C.Class_id, C.Class_name, C.Class_time, C.Class_end_time, \
                             C.Class_location FROM Teacher as T, Teacher_Class as TC, \
                            Class as C WHERE T.Teacher_id = TC.Teacher_id and TC.Class_id = C.Class_id \
@@ -51,7 +53,7 @@ class Class_list_dialog(QtGui.QDialog):
 
         
 
-
+    #add new class to student from class' pool
     def add(self):
         data_list = [i.data() for i in self.ui.Class_add_tableView.selectedIndexes() if isinstance(i.data(),int)]
         class_add = QSqlQuery()
@@ -63,6 +65,7 @@ class Class_list_dialog(QtGui.QDialog):
                             (SELECT Current_term FROM System WHERE System_id = 1))" % (self.id, i))
         self.refresh()
 
+    #drop class from curret class' list
     def drop(self):
         data_list = [i.data() for i in self.ui.Class_drop_tableView.selectedIndexes() if isinstance(i.data(),int)]
         class_drop = QSqlQuery()

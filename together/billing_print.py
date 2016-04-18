@@ -1,3 +1,4 @@
+#print billing history in html
 from PyQt4 import QtGui, QtCore
 
 class Print_window(QtGui.QWidget):

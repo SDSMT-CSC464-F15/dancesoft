@@ -1,3 +1,4 @@
+#change admin password
 import sys
 from PyQt4 import QtGui
 from change_password import Ui_change_password

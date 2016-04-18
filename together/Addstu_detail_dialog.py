@@ -12,13 +12,14 @@ class Addstu_detail_dialog(QtGui.QDialog):
         self.ui.setupUi(self)
         Stu_query = QSqlQuery()
         self.class_name = Class_name
+        #dislplay students those who have class need to be approved
         Stu_query.exec_("Select S.Student_name from Student_Class as SC,Student as S where\
                             SC.Class_id = (Select Class_id from Class where Class_name = '%s') \
                             and SC.Student_id = S.Student_id and SC.Class_finished <> 1 and \
                             SC.Class_approval <> 1" % self.class_name)
-
         model = QSqlQueryModel()
         model.setQuery(Stu_query)
+        #populate list view
         self.ui.Addstu_detail_listView.setModel(model)
         self.ui.Addstu_detail_listView.clicked.connect(self.add_student)
         self.ui.Addstu_detail_btn.setEnabled(False)

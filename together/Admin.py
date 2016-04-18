@@ -1,3 +1,4 @@
+#admin landing page
 import sys
 from PyQt4 import QtGui
 from PyQt4 import QtCore
@@ -33,11 +34,13 @@ from removeClass import removeClass
 class Admin_window(QtGui.QMainWindow):
     def __init__(self, name):
         QtGui.QMainWindow.__init__(self)
+        #button for different functionalities
         self.ui = Ui_Admin_Landing()
         self.ui.setupUi(self)
         self.current_index = 0
         self.prev_index = 0
 
+        #layout of page for scrolling back and forth
         self.ui.name = name
         self.ui.Employee_btn.clicked.connect(partial(self.change_window, index = 1))
         self.ui.Class_btn.clicked.connect(partial(self.change_window, index = 2))
@@ -86,107 +89,133 @@ class Admin_window(QtGui.QMainWindow):
         self.ui.Quit_btn_4.clicked.connect(self.Quit)
         self.ui.Quit_btn_5.clicked.connect(self.Quit)
         self.num = True
-        
+
+    #log out button
     def logout(self):
         self.num = False
         self.close()
 
+    #registration new student 
     def registration(self):
         self.ui.regi = Stu_reg_window()
         self.ui.regi.show()
 
+    #enter teacher pay rate
     def enter_teacher_payrate(self):
         self.ui.enter_teacher_payrate = Teacher_payrate_window()
         self.ui.enter_teacher_payrate.show()
 
+    #enter teacher hours
     def enter_teacher_hour(self):
         self.ui.enter_teacher_hour = Enter_hours_window()
         self.ui.enter_teacher_hour.show()
-        
+
+    #display the list of admin
     def show_admin_list(self):
         self.ui.show_admin_list = Admin_list_window()
         self.ui.show_admin_list.show()
         
+    #check student balance
     def student_balance(self):
         self.ui.student_balance = Student_payment_window()
         self.ui.student_balance.show()
-        
+
+    #enter a full payment for the student
     def enter_full_payment(self):
         self.ui.enter_full_payment = Enter_fullpayment_window()
         self.ui.enter_full_payment.show()
-        
+
+    #enter partial payment for student
     def enter_partial_payment(self):
         self.ui.enter_partial_payment = Enter_partialpayment_window()
         self.ui.enter_partial_payment.show()
-        
+
+    #set current semester        
     def set_semester(self):
         self.ui.set_semester = semester_set_dialog()
         self.ui.set_semester.show()
 
+    #display teacher history
     def teaching_his(self):
         self.ui.teaching_his = Teacher_history_window()
         self.ui.teaching_his.show()
-        
+
+    #display billing history
     def billing(self):
         self.ui.billing = Billing_history_window()
         self.ui.billing.show()
 
+    #show fee
     def fee(self):
         self.ui.fee = fees()
         self.ui.fee.show()
 
+    #sho tuition
     def tuition(self):
         self.ui.tuit = tuition()
         self.ui.tuit.show()
 
+    #add new teacher
     def add_teacher(self):
         self.ui.add_teacher = add_teacher()
         self.ui.add_teacher.show()
 
+    #remove teacher
     def removeTeach(self):
         self.ui.remTeach = removeTeacher()
         self.ui.remTeach.show()
-        
+
+    #assign teacher a class
     def assign_teacher(self):
         self.ui.assign_teacher = assign_teacher()
         self.ui.assign_teacher.show()
 
+    #update teacher information
     def update_teacher(self):
         self.ui.update_teacher = modify_Information()
         self.ui.update_teacher.show()
-        
+
+    #search teacher and show their information
     def search_teacher(self):
         self.ui.search_teacher_w = Search_teacher_window()
         self.ui.search_teacher_w.show()
 
+    #search class and show class infromation
     def view_class(self):
         self.ui.see_class = Search_class_window()
         self.ui.see_class.show()
 
+    #add new class
     def new_class(self):
         self.ui.add_class = add_Class()
         self.ui.add_class.show()
 
+    #search student and show student information
     def search_student(self):
         self.ui.search_student_window = Search_window()
         self.ui.search_student_window.show()
 
+    #add new student
     def add_student(self):
         self.ui.place_student = Addstu_window()
         self.ui.place_student.show()
 
+    #register a class
     def register(self):
         self.ui.registration = class_reg_dialog()
         self.ui.registration.show()
 
+    #remove a student
     def removeStu(self):
         self.ui.remStu = removeStudentData()
         self.ui.remStu.show()
 
+    #remove a class
     def removeClass(self):
         self.ui.remClass = removeClass()
         self.ui.remClass.show()
 
+    #show student credit
     def studentCredit(self):
         self.ui.credit = credit()
         self.ui.credit.show()

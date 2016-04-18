@@ -1,3 +1,4 @@
+#display billing history of student
 import sys
 from PyQt4 import QtGui, QtCore
 from billing_history import Ui_Billing_history
@@ -11,20 +12,26 @@ class Billing_history_window(QtGui.QMainWindow):
         self.ui.setupUi(self)
         self.conn()
         Student_query = QSqlQuery()
+        #get student name 
         Student_query.exec_("select Student_name from Student")
         model = QSqlQueryModel()
         model.setQuery(Student_query)
+        #populate to list view
         self.ui.Student_listView.setModel(model)
         self.ui.Statement_btn.setEnabled(False)
+        #search button
         self.ui.Search_btn.clicked.connect(self.search_student)
+        #print statement button
         self.ui.Statement_btn.clicked.connect(self.print_history)
         self.ui.Student_listView.clicked.connect(self.select_student)
 
+        #get current semester
         Term_query = QSqlQuery()
         Term_query.exec_("select Current_term from System where System_id = '1'")
         Term_query.next()
         self.ui.cur_term = Term_query.value(0)
-        
+
+    #search certain student
     def search_student(self):
         input_student_name = self.ui.Teacher_lineEdit.text()
         Student_query = QSqlQuery()
@@ -32,7 +39,8 @@ class Billing_history_window(QtGui.QMainWindow):
         model = QSqlQueryModel()
         model.setQuery(Student_query)
         self.ui.Student_listView.setModel(model)
-        
+
+    #print their history in a new dialog        
     def print_history(self):
         self.ui.Statement_btn.setEnabled(True)
         
@@ -55,7 +63,7 @@ class Billing_history_window(QtGui.QMainWindow):
         self.ui.print.show() 
         
 
-        
+    #select a student
     def select_student(self, index):
         #TODO
         #total hours

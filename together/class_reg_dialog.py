@@ -1,3 +1,4 @@
+#class approve for student
 import sys
 from PyQt4 import QtGui
 from class_reg import Ui_class_search
@@ -11,6 +12,7 @@ class class_reg_dialog(QtGui.QDialog):
         self.ui.setupUi(self)
         self.conn()
         Class_query = QSqlQuery()
+        #display the list of class
         Class_query.exec_("select Class_name from Class ORDER BY Class_name")
         model = QSqlQueryModel()
         model.setQuery(Class_query)

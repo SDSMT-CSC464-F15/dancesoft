@@ -102,7 +102,8 @@ class modify_Information(QtGui.QDialog):
                 self.modify.genderComboBox.setCurrentIndex(find)
             self.modify.SSNLineEdit.setText(str(record.value(8)))
             self.modify.payRateDoubleSpinBox.setValue(float(record.value(9)))
-            self.modify.medicalTextEdit.setText(str(record.value(10)))
+            if not isinstance(record.value(10), QtCore.QPyNullVariant):
+                self.modify.medicalTextEdit.setText(str(record.value(10)))
             self.modify.DOBDateEdit.setDate(record.value(11))
 
         if self.Teacher_id != 0:

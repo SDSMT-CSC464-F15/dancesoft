@@ -57,8 +57,10 @@ class modify_My_Information(QtGui.QDialog):
             self.Teacher_id = int(record.value(0))
             self.modify.nameLineEdit.setText(str(record.value(1)))
             self.modify.homePhoneLineEdit.setText(str(record.value(2)))
-            self.modify.cellPhoneLineEdit.setText(str(record.value(3)))
-            self.modify.workPhoneLineEdit.setText(str(record.value(4)))
+            if not isinstance(record.value(3), QtCore.QPyNullVariant):
+                self.modify.cellPhoneLineEdit.setText(str(record.value(3)))
+            if not isinstance(record.value(4), QtCore.QPyNullVariant):
+                self.modify.workPhoneLineEdit.setText(str(record.value(4)))
             while address_query.next():
                 address_record =address_query.record()
                 self.address_id = str(address_record.value(0))
@@ -73,7 +75,8 @@ class modify_My_Information(QtGui.QDialog):
             if find >= 0:
                 self.modify.genderComboBox.setCurrentIndex(find)
             self.modify.SSNLineEdit.setText(str(record.value(8)))
-            self.modify.medicalTextEdit.setText(str(record.value(10)))
+            if not isinstance(record.value(10), QtCore.QPyNullVariant):
+                self.modify.medicalTextEdit.setText(str(record.value(10)))
             self.modify.DOBDateEdit.setDate(record.value(11))
 
             if self.Teacher_id != 0:

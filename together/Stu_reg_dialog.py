@@ -197,9 +197,9 @@ class Stu_reg_dialog(QtGui.QDialog):
                     self, 'Error', "City cannot be empty!")
             return
         #ckeck zipcode
-        if self.StuZipcode == "":
+        if self.StuZipcode == "" or re.match('^\d{5}(-\d{4})?$', self.StuZipcode) == None:
             QtGui.QMessageBox.warning(
-                    self, 'Error', "Zipcode cannot be empty!")
+                self, 'Error', "Please enter a vaild zipcode")
             return 
         elif self.StuZipcode != "" and not self.StuZipcode.isdigit():
             QtGui.QMessageBox.warning(

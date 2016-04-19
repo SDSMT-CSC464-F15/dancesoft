@@ -86,8 +86,10 @@ def main():
         log_win = Login_Window()
         log_win.show()
         app.exec_()
+        #get username and password
         sign = log_win.getAccessLevel()
         name = log_win.getUsername()
+
         
         flag = 0
         if sign == 1 or sign == 2:

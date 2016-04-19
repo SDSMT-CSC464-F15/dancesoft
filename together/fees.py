@@ -1,3 +1,4 @@
+#
 import sys
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtSql import *
@@ -16,6 +17,7 @@ class fees(QtGui.QMainWindow):
         self.fee.remove_btn.setEnabled(False)
         self.description_query = QSqlQuery()
 
+        #get description
         self.description_query.exec_("Select Fee_Description from One_Off_Fees ORDER BY Fee_Description")
         self.model = QSqlQueryModel()
         self.model.setQuery(self.description_query)

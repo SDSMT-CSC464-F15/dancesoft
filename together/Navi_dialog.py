@@ -1,3 +1,4 @@
+#user authentication dialog
 import sys
 from PyQt4 import QtGui
 from Navi import Ui_Navi
@@ -14,6 +15,7 @@ class Navi_dialog(QtGui.QDialog):
         self.ui.Teacher_btn.clicked.connect(partial(self.is_valid, index = 1))
 
     def is_valid(self, index):
+        #check weather user have the right one
         if index == 0:
             if self.ui.permission == 1:
                 self.done(1)

@@ -1,3 +1,4 @@
+#print role sheet
 from PyQt4 import QtGui, QtCore
 
 class Print_window(QtGui.QWidget):
@@ -9,6 +10,8 @@ class Print_window(QtGui.QWidget):
         self.editor = QtGui.QTextBrowser(self)
         self.editor.setFontPointSize(14);
 
+        
+        #populate information to html 
         html = '<p><center><font size="6">Attendance Sheet</font></center></p>'
         
         html += '<table cellpadding="5" border="1" cellspacing = "2" style = "border:1px black;font-size: 12px;">\
@@ -34,7 +37,7 @@ class Print_window(QtGui.QWidget):
                      </tr>' % (temp[0], temp[1], temp[2], temp[3], temp[4])
         html += '</table>'
         self.editor.append(html)
-        
+        #set up buttons 
         self.editor.textChanged.connect(self.handleTextChanged)
         self.buttonPrint = QtGui.QPushButton('Print', self)
         self.buttonPrint.clicked.connect(self.handlePrint)

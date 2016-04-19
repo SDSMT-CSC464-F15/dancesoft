@@ -1,3 +1,4 @@
+#enter full payment 
 import sys
 from PyQt4 import QtGui, QtCore
 from enter_fullpayment import Ui_Enter_fullpayment
@@ -11,7 +12,7 @@ class Enter_fullpayment_window(QtGui.QMainWindow):
         self.ui.setupUi(self)
         self.conn()
 
-
+        #get current semester
         Term_query = QSqlQuery()
         Term_query.exec_("select Current_term from System where System_id = '1'")
         Term_query.next()
@@ -26,12 +27,14 @@ class Enter_fullpayment_window(QtGui.QMainWindow):
         
         self.ui.rates = []
         self.ui.time = []
+        #get different rates and store them in dictionary
         Rate_query = QSqlQuery()
         Rate_query.exec_("select Tuition_Rate, Tuition_Time from Tuition_Rates ")
         while Rate_query.next():
             self.ui.rates.append(float(Rate_query.value(0)))
             self.ui.time.append(float(Rate_query.value(1)))
 
+        #how much student owed
         while Teacher_query.next():
             self.owe_dict.update({Teacher_query.value(0):self.get_rate(float(Teacher_query.value(1)))})
             self.stuid_dict.update({Teacher_query.value(0):Teacher_query.value(2)})
@@ -44,6 +47,7 @@ class Enter_fullpayment_window(QtGui.QMainWindow):
         while Money_query.next():
             paid_dict.update({Money_query.value(0):float(Money_query.value(1))})
         model = QtGui.QStandardItemModel()
+
         
         for i in self.owe_dict:
             if i in paid_dict:
@@ -73,6 +77,7 @@ class Enter_fullpayment_window(QtGui.QMainWindow):
         self.ui.Student_listView.setModel(model)
  
     def clear_money(self):
+        #clear total owed money
         pay = QSqlQuery()
         delete_list = []
         for i in self.ui.Student_listView.selectedIndexes():

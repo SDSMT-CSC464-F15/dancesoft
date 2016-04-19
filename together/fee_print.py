@@ -1,3 +1,4 @@
+#print fee
 from PyQt4 import QtGui, QtCore
 
 class Print_window(QtGui.QWidget):
@@ -11,7 +12,7 @@ class Print_window(QtGui.QWidget):
         self.editor.setFontPointSize(14);
 
         
-
+        #populate to html
         html = '<p><font size="6">Name: %s</font></p> \
                 <p><font size="6">Semester: %s</font></p>' % (name, semester.replace("_", " Term "))
 

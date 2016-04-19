@@ -1,3 +1,4 @@
+#partial pay dialog 
 import sys
 from PyQt4 import QtGui
 from partial_pay import Ui_Partial_pay

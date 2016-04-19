@@ -1,3 +1,4 @@
+#enter student partial payment
 import sys
 from PyQt4 import QtGui, QtCore
 from partial_pay_dialog import *
@@ -11,7 +12,7 @@ class Enter_partialpayment_window(QtGui.QMainWindow):
         self.ui = Ui_Enter_partialpayment()
         self.ui.setupUi(self)
         self.conn()
-
+        #get current semester 
         Term_query = QSqlQuery()
         Term_query.exec_("select Current_term from System where System_id = '1'")
         Term_query.next()
@@ -21,9 +22,10 @@ class Enter_partialpayment_window(QtGui.QMainWindow):
         Teacher_query = QSqlQuery()
         Teacher_query.exec_("select S.Student_name, sum(TIME_TO_SEC(TIMEDIFF(C.Class_end_time, C.Class_time))) / 60, S.Student_id from Student as S, Student_Class as SC, Class as C where S.Student_id = SC.Student_id and SC.Class_id = C.Class_id and SC.Student_semester_taken = '%s' GROUP BY S.Student_name" % self.ui.cur_term)
 
+
+        #set up dict
         self.stuid_dict = {}
         self.owe_dict = {}
-        
         self.ui.rates = []
         self.ui.time = []
         Rate_query = QSqlQuery()
@@ -32,6 +34,7 @@ class Enter_partialpayment_window(QtGui.QMainWindow):
             self.ui.rates.append(float(Rate_query.value(0)))
             self.ui.time.append(float(Rate_query.value(1)))
 
+        #add dictionary which ties names with rates
         while Teacher_query.next():
             self.owe_dict.update({Teacher_query.value(0):self.get_rate(float(Teacher_query.value(1)))})
             self.stuid_dict.update({Teacher_query.value(0):Teacher_query.value(2)})
@@ -59,6 +62,7 @@ class Enter_partialpayment_window(QtGui.QMainWindow):
         self.ui.Add_btn.setEnabled(False)
 
     def pay_money(self):
+        #pay money partial
         pay = QSqlQuery()
         student_list = []       
         for i in self.ui.Student_listView.selectedIndexes():
@@ -69,6 +73,7 @@ class Enter_partialpayment_window(QtGui.QMainWindow):
         
     
     def get_rate(self, minitue):
+        #get rate according to name
         for i in range(len(self.ui.time)):
             if (minitue <= self.ui.time[i]):
                 return self.ui.rates[i]

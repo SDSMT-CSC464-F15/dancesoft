@@ -1,3 +1,4 @@
+#teacher can enter their work hours
 import sys
 from PyQt4 import QtGui, QtCore
 from enter_hours import Ui_Enter_hours
@@ -11,7 +12,7 @@ class Enter_hours_window(QtGui.QMainWindow):
         self.ui = Ui_Enter_hours()
         self.ui.setupUi(self)
         self.conn()
-
+        #get teacher's name
         Teacher_query = QSqlQuery()
         Teacher_query.exec_("select Teacher_name from Teacher")
         model = QSqlQueryModel()
@@ -22,14 +23,17 @@ class Enter_hours_window(QtGui.QMainWindow):
         self.ui.Hours_btn.clicked.connect(self.show_hours)
         self.ui.Teacher_listView.clicked.connect(self.select_teacher)
 
+    #show the current hour
     def show_hours(self):
         self.ui.show = show_hours_dialog(self.ui.name)
         self.ui.show.show()
 
+    #get teacher name
     def select_teacher(self, index):
         self.ui.name = index.data()
         self.ui.Hours_btn.setEnabled(True)
-        
+
+    #search teacher at entry
     def search_teacher(self):
         input_teacher_name = self.ui.Teacher_lineEdit.text()
         Teacher_query = QSqlQuery()

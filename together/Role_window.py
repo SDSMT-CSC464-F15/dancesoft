@@ -1,3 +1,4 @@
+#for specific teacher to get the role sheet by class
 import sys
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtSql import *

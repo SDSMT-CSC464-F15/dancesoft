@@ -55,6 +55,7 @@ class Print_window(QtGui.QWidget):
         <th>Thrusday</th>\
         <th>Friday</th>\
         <th>Saturday</th>\
+        <th>Sunday</th>\
     </tr>\
 </div>'
         for i in range(len(text_msg[0])):
@@ -66,8 +67,9 @@ class Print_window(QtGui.QWidget):
                     <td>%s</td>\
                     <td>%s</td>\
                     <td>%s</td>\
+                    <td>%s</td>\
                 </div>\
-            </tr>' % (time[i], time[i+1], text_msg[0][i], text_msg[1][i], text_msg[2][i],text_msg[3][i] ,text_msg[4][i] , text_msg[5][i])       
+            </tr>' % (time[i], time[i+1], text_msg[0][i], text_msg[1][i], text_msg[2][i],text_msg[3][i] ,text_msg[4][i] , text_msg[5][i], text_msg[6][i])       
         html += '</table>'
 
         self.editor.append(html)

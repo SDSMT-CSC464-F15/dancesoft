@@ -48,7 +48,7 @@ class Teacher_schedule_window(QtGui.QMainWindow):
     def select_teacher(self, index):
         self.ui.Teacher_info = []
         self.ui.msg = []
-        lookup = {'Monday': 0, 'Tuesday': 1, 'Wednesday':2, 'Thrusday':3, 'Friday':4, 'Saturday':5}
+        lookup = {'Monday': 0, 'Tuesday': 1, 'Wednesday':2, 'Thrusday':3, 'Friday':4, 'Saturday':5, 'Sunday':6}
         
 
         
@@ -81,7 +81,7 @@ class Teacher_schedule_window(QtGui.QMainWindow):
         if time_length > 1:
             time_length -= 1
 
-        self.ui.msg = [['' for i in range(time_length)] for j in range(6)]
+        self.ui.msg = [['' for i in range(time_length)] for j in range(7)]
         
         for i in range(len(timelist)):
             for j in range(self.ui.timeslicing.index(timelist[i].start), self.ui.timeslicing.index(timelist[i].end)):

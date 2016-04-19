@@ -44,7 +44,7 @@ class show_hours_dialog(QtGui.QDialog):
         self.ui.course_lineEdit.setText(str(hours))
         self.ui.course_lineEdit.setDisabled(True)
         self.ui.Wage_lineEdit.setDisabled(True)
-        self.ui.Wage_lineEdit.setText(str(sum))
+        self.ui.Wage_lineEdit.setText(str('%.2f' % sum))
         self.ui.update_btn.clicked.connect(self.update_hours)
         self.ui.cancel_btn.clicked.connect(self.close)
 
@@ -70,7 +70,7 @@ class show_hours_dialog(QtGui.QDialog):
                 sum = 0.0
                 while pay_query.next():
                     sum += (pay_query.value(1) * pay_query.value(2))
-                self.ui.Wage_lineEdit.setText(str(sum))
+                self.ui.Wage_lineEdit.setText(str('%.2f' % sum))
                 
                 self.hours_dict[str(self.ui.Hour_comboBox.currentText())] = float(self.ui.other_lineEdit.text())
                 QtGui.QMessageBox.information(self, 'success', 'Success!')

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  5 APR 2016 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  20 APR 2016 14:56
 entering extended mode
 **DesignDocument.tex
 (DesignDocument.tex
@@ -1594,37 +1594,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 {C:/Users/7110002/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-(DesignDocument.toc [3] [4] [5]
-Overfull \hbox (4.50029pt too wide) detected at line 216
- []\T1/lmss/m/n/10 B-10
- []
-
-
-Overfull \hbox (4.50029pt too wide) detected at line 217
- []\T1/lmss/m/n/10 B-10
- []
-
-
-Overfull \hbox (4.50029pt too wide) detected at line 218
- []\T1/lmss/m/n/10 B-11
- []
-
-
+(DesignDocument.toc [3] [4] [5] [6]
 Overfull \hbox (4.50029pt too wide) detected at line 219
- []\T1/lmss/m/n/10 B-11
+ []\T1/lmss/m/n/10 B-10
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 220
- []\T1/lmss/m/n/10 B-11
+ []\T1/lmss/m/n/10 B-10
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 221
- []\T1/lmss/m/n/10 B-11
+ []\T1/lmss/m/n/10 B-10
  []
 
-[6]
+
 Overfull \hbox (4.50029pt too wide) detected at line 222
  []\T1/lmss/m/n/10 B-11
  []
@@ -1636,117 +1621,117 @@ Overfull \hbox (4.50029pt too wide) detected at line 223
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 224
- []\T1/lmss/m/n/10 B-12
+ []\T1/lmss/m/n/10 B-11
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 225
- []\T1/lmss/m/n/10 B-12
+ []\T1/lmss/m/n/10 B-11
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 226
- []\T1/lmss/m/n/10 B-12
+ []\T1/lmss/m/n/10 B-11
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 227
- []\T1/lmss/m/n/10 B-12
+ []\T1/lmss/m/n/10 B-11
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 228
- []\T1/lmss/m/n/10 B-13
+ []\T1/lmss/m/n/10 B-12
+ []
+
+
+Overfull \hbox (4.50029pt too wide) detected at line 229
+ []\T1/lmss/m/n/10 B-12
+ []
+
+
+Overfull \hbox (4.50029pt too wide) detected at line 230
+ []\T1/lmss/m/n/10 B-12
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 231
- []\T1/lmss/m/n/10 B-13
- []
-
-
-Overfull \hbox (4.50029pt too wide) detected at line 232
- []\T1/lmss/m/n/10 B-13
- []
-
-
-Overfull \hbox (4.50029pt too wide) detected at line 233
- []\T1/lmss/m/n/10 B-14
+ []\T1/lmss/m/n/10 B-12
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 234
- []\T1/lmss/m/n/10 B-14
+ []\T1/lmss/m/n/10 B-13
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 235
- []\T1/lmss/m/n/10 B-14
+ []\T1/lmss/m/n/10 B-13
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 236
- []\T1/lmss/m/n/10 B-14
+ []\T1/lmss/m/n/10 B-13
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 237
- []\T1/lmss/m/n/10 B-15
+ []\T1/lmss/m/n/10 B-14
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 238
- []\T1/lmss/m/n/10 B-15
+ []\T1/lmss/m/n/10 B-14
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 239
- []\T1/lmss/m/n/10 B-15
+ []\T1/lmss/m/n/10 B-14
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 240
- []\T1/lmss/m/n/10 B-15
+ []\T1/lmss/m/n/10 B-14
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 241
- []\T1/lmss/m/n/10 B-16
+ []\T1/lmss/m/n/10 B-15
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 242
- []\T1/lmss/m/n/10 B-16
+ []\T1/lmss/m/n/10 B-15
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 243
- []\T1/lmss/m/n/10 B-17
+ []\T1/lmss/m/n/10 B-15
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 244
- []\T1/lmss/m/n/10 B-17
+ []\T1/lmss/m/n/10 B-16
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 245
- []\T1/lmss/m/n/10 B-17
+ []\T1/lmss/m/n/10 B-16
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 246
- []\T1/lmss/m/n/10 B-18
+ []\T1/lmss/m/n/10 B-17
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 247
- []\T1/lmss/m/n/10 B-18
+ []\T1/lmss/m/n/10 B-17
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 248
- []\T1/lmss/m/n/10 B-18
+ []\T1/lmss/m/n/10 B-17
  []
 
 
@@ -1755,33 +1740,33 @@ Overfull \hbox (4.50029pt too wide) detected at line 249
  []
 
 
+Overfull \hbox (4.50029pt too wide) detected at line 250
+ []\T1/lmss/m/n/10 B-18
+ []
+
+
 Overfull \hbox (4.50029pt too wide) detected at line 251
- []\T1/lmss/m/n/10 B-19
+ []\T1/lmss/m/n/10 B-18
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 252
- []\T1/lmss/m/n/10 B-19
- []
-
-
-Overfull \hbox (4.50029pt too wide) detected at line 253
- []\T1/lmss/m/n/10 B-19
+ []\T1/lmss/m/n/10 B-18
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 254
- []\T1/lmss/m/n/10 B-20
+ []\T1/lmss/m/n/10 B-19
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 255
- []\T1/lmss/m/n/10 B-20
+ []\T1/lmss/m/n/10 B-19
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 256
- []\T1/lmss/m/n/10 B-20
+ []\T1/lmss/m/n/10 B-19
  []
 
 
@@ -1796,32 +1781,32 @@ Overfull \hbox (4.50029pt too wide) detected at line 258
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 259
- []\T1/lmss/m/n/10 B-21
+ []\T1/lmss/m/n/10 B-20
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 260
- []\T1/lmss/m/n/10 B-21
+ []\T1/lmss/m/n/10 B-20
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 261
- []\T1/lmss/m/n/10 B-21
+ []\T1/lmss/m/n/10 B-20
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 262
- []\T1/lmss/m/n/10 B-22
+ []\T1/lmss/m/n/10 B-21
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 263
- []\T1/lmss/m/n/10 B-22
+ []\T1/lmss/m/n/10 B-21
  []
 
 
 Overfull \hbox (4.50029pt too wide) detected at line 264
- []\T1/lmss/m/n/10 B-22
+ []\T1/lmss/m/n/10 B-21
  []
 
 
@@ -1829,18 +1814,33 @@ Overfull \hbox (4.50029pt too wide) detected at line 265
  []\T1/lmss/m/n/10 B-22
  []
 
-)
-\tf@toc=\write6
- [7] [8
 
-] (DesignDocument.lof
+Overfull \hbox (4.50029pt too wide) detected at line 266
+ []\T1/lmss/m/n/10 B-22
+ []
+
+
+Overfull \hbox (4.50029pt too wide) detected at line 267
+ []\T1/lmss/m/n/10 B-22
+ []
+
+
+Overfull \hbox (4.50029pt too wide) detected at line 268
+ []\T1/lmss/m/n/10 B-22
+ []
+
+[7])
+\tf@toc=\write6
+ [8] (DesignDocument.lof
 Overfull \hbox (4.50029pt too wide) detected at line 19
  []\T1/lmss/m/n/10 B-10
  []
 
 )
 \tf@lof=\write7
- [9] [10
+ [9
+
+] [10
 
 ] (DesignDocument.lot)
 \tf@lot=\write8
@@ -1912,60 +1912,52 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ]
 Chapter 3.
-[15] [16] [17] [18]) (design.tex [19] [20
-
-]
+[15] [16] [17] [18] [19]) (design.tex [20]
 Chapter 4.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 11.
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 35.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [21]
+) [21
+
+]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 86.
-LaTeX Font Info:    Try loading font information for TS1+lmss on input line 88.
-
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd"
-File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [22] [23])
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 91.
+ [22] [23])
 (testing.tex [24]
 Chapter 5.
-) (prototypes.tex [25
+[25
 
-] [26
+] [26]) (prototypes.tex [27] [28
 
 ]
 Chapter 6.
-[27]) (deploy.tex [28]
+) (deploy.tex [29] [30]
 Chapter 7.
-) (userdocs.tex [29
+) (userdocs.tex [31
 
-] [30
+] [32
 
 ]
 Chapter 8.
-) (refman.tex [31] [32
+) (refman.tex [33] [34
 
 ]
 Chapter 9.
-[33] [34
+[35] [36
 
 ]
 Chapter 10.
-(class_docs.tex
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 39.
-)) (DesignDocument.bbl [35] [36
+(class_docs.tex)) (DesignDocument.bbl [37] [38
 
-]) [37] [38
+]) [39] [40
 
 ]
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1570, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1606, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -1987,7 +1979,7 @@ F version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1573, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1609, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -2015,7 +2007,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1595, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1631, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -2034,7 +2026,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1600, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1636, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -2053,7 +2045,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1605, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1642, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -2072,7 +2064,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1619, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1656, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -2091,10 +2083,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 68.
 
 ]
 Appendix A.
-(productdescription.tex
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 7.
-) [1] [2
+(productdescription.tex) [1] [2
 
 ]
 Appendix B.
@@ -2103,7 +2092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--14
 
  []
 
-[1] [2] <d1.png, id=1681, 1538.74875pt x 767.86874pt>
+[1] [2] <d1.png, id=1722, 1538.74875pt x 767.86874pt>
 File: d1.png Graphic file (type png)
  <use d1.png>
 Package pdftex.def Info: d1.png used on input line 107.
@@ -2144,14 +2133,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--165
 
  []
 
-[5] <database_tables.png, id=1736, 690.32906pt x 292.09125pt>
+[5] <database_tables.png, id=1774, 690.32906pt x 292.09125pt>
 File: database_tables.png Graphic file (type png)
 
 <use database_tables.png>
 Package pdftex.def Info: database_tables.png used on input line 202.
 (pdftex.def)             Requested size: 234.87749pt x 99.38101pt.
  [6]
-<login_page.png, id=1755, 304.88907pt x 154.32657pt>
+<login_page.png, id=1793, 304.88907pt x 154.32657pt>
 File: login_page.png Graphic file (type png)
  <use login_page.png>
 Package pdftex.def Info: login_page.png used on input line 225.
@@ -2161,7 +2150,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<admin_landing.png, id=1756, 410.2828pt x 292.84406pt>
+<admin_landing.png, id=1794, 410.2828pt x 292.84406pt>
 File: admin_landing.png Graphic file (type png)
  <use admin_landing.png>
 Package pdftex.def Info: admin_landing.png used on input line 233.
@@ -2172,21 +2161,22 @@ Package pdftex.def Info: admin_landing.png used on input line 233.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 \item S
-             earch pagespdfTeX warning (ext4): destination with the same identi
-fier (name{figure.B.3}) has been already used, duplicate ignored
+l.241 \item A
+             dd information and new information pagespdfTeX warning (ext4): des
+tination with the same identifier (name{figure.B.3}) has been already used, dup
+licate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 \item S
-             earch pages <./database_tables.png> <./login_page.png>] [8pdfTeX w
-arning (ext4): destination with the same identifier (name{figure.B.4}) has been
- already used, duplicate ignored
+l.241 \item A
+             dd information and new information pages <./database_tables.png> <
+./login_page.png>] [8pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.B.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.275 \item G
-             ui Path Charts <./admin_landing.png>]
+l.276 \item L
+             anding page Construction\\ <./admin_landing.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
@@ -2201,7 +2191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--306
 
  []
 
-[9] <search.png, id=1797, 614.295pt x 502.12593pt>
+[9] <search.png, id=1835, 614.295pt x 502.12593pt>
 File: search.png Graphic file (type png)
  <use search.png>
 Package pdftex.def Info: search.png used on input line 346.
@@ -2212,12 +2202,12 @@ Package pdftex.def Info: search.png used on input line 346.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.355 \subsection{Update Pages}
-                                <./search.png>] [11]
+                                <./search.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
-
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
@@ -2227,7 +2217,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 422--427
 
  []
 
-[12] [13] <tuitionRates.png, id=1865, 410.2828pt x 405.01312pt>
+[12] [13] <tuitionRates.png, id=1904, 410.2828pt x 405.01312pt>
 File: tuitionRates.png Graphic file (type png)
 
 <use tuitionRates.png>
@@ -2238,39 +2228,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
-<teacherHistory.png, id=1867, 276.28218pt x 339.51843pt>
+<teacherHistory.png, id=1906, 276.28218pt x 339.51843pt>
 File: teacherHistory.png Graphic file (type png)
 
 <use teacherHistory.png>
 Package pdftex.def Info: teacherHistory.png used on input line 490.
 (pdftex.def)             Requested size: 138.14075pt x 169.75879pt.
- [14 <./tuitionRates.png> <./teacherHistory.png>]
-<payment.png, id=1873, 313.17pt x 185.19188pt>
+ <payment.png, id=1907, 313.17pt x 185.19188pt>
 File: payment.png Graphic file (type png)
- <use payment.png>
+
+<use payment.png>
 Package pdftex.def Info: payment.png used on input line 497.
 (pdftex.def)             Requested size: 156.58461pt x 92.5957pt.
-
-<invoice.png, id=1874, 493.845pt x 389.95688pt>
+ [14 <./tuitionRates.png> <./teacherHistory.png>]
+<invoice.png, id=1913, 493.845pt x 389.95688pt>
 File: invoice.png Graphic file (type png)
  <use invoice.png>
 Package pdftex.def Info: invoice.png used on input line 501.
 (pdftex.def)             Requested size: 246.92189pt x 194.97795pt.
 
-<enterPayment.png, id=1875, 276.28218pt x 339.51843pt>
+<enterPayment.png, id=1914, 276.28218pt x 339.51843pt>
 File: enterPayment.png Graphic file (type png)
  <use enterPayment.png>
 Package pdftex.def Info: enterPayment.png used on input line 505.
 (pdftex.def)             Requested size: 138.14075pt x 169.75879pt.
 
-Underfull \vbox (badness 6842) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <./payment.png> <./invoice.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 508--509
 
  []
 
-<billHistory.png, id=1881, 493.845pt x 389.95688pt>
+<billHistory.png, id=1919, 493.845pt x 389.95688pt>
 File: billHistory.png Graphic file (type png)
  <use billHistory.png>
 Package pdftex.def Info: billHistory.png used on input line 510.
@@ -2291,7 +2281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 638--639
 
  []
 
-<payRates.png, id=1932, 292.09125pt x 168.63pt>
+<payRates.png, id=1970, 292.09125pt x 168.63pt>
 File: payRates.png Graphic file (type png)
  <use payRates.png>
 Package pdftex.def Info: payRates.png used on input line 640.
@@ -2301,7 +2291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 643--644
 
  []
 
-<feeDialog.png, id=1952, 333.49594pt x 127.22531pt>
+<feeDialog.png, id=1991, 333.49594pt x 127.22531pt>
 File: feeDialog.png Graphic file (type png)
  <use feeDialog.png>
 Package pdftex.def Info: feeDialog.png used on input line 645.
@@ -2311,7 +2301,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 663--664
 
  []
 
-<newAddStudent.png, id=1953, 395.97937pt x 338.76563pt>
+<newAddStudent.png, id=1992, 395.97937pt x 338.76563pt>
 File: newAddStudent.png Graphic file (type png)
 
 <use newAddStudent.png>
@@ -2327,7 +2317,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 672--673
 
  []
 
-<newLocation.png, id=1964, 550.30594pt x 410.2828pt>
+<newLocation.png, id=2003, 550.30594pt x 410.2828pt>
 File: newLocation.png Graphic file (type png)
  <use newLocation.png>
 Package pdftex.def Info: newLocation.png used on input line 674.
@@ -2337,7 +2327,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
-<removal.png, id=1965, 271.76532pt x 110.66344pt>
+<removal.png, id=2004, 271.76532pt x 110.66344pt>
 File: removal.png Graphic file (type png)
  <use removal.png>
 Package pdftex.def Info: removal.png used on input line 680.
@@ -2351,7 +2341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 723--724
 
 ]
 Appendix C.
-(industrial.tex <Berger_Marcus_Resume.pdf, id=2010, 614.295pt x 794.97pt>
+(industrial.tex <Berger_Marcus_Resume.pdf, id=2048, 614.295pt x 794.97pt>
 File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 
 <use Berger_Marcus_Resume.pdf>
@@ -2362,7 +2352,7 @@ File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 Package pdftex.def Info: Berger_Marcus_Resume.pdf used on input line 7.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<Berger_Marcus_Resume.pdf, id=2013, page=1, 614.295pt x 794.97pt>
+<Berger_Marcus_Resume.pdf, id=2051, page=1, 614.295pt x 794.97pt>
 File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 
 <use Berger_Marcus_Resume.pdf, page 1>
@@ -2389,7 +2379,7 @@ Package pdftex.def Info: Berger_Marcus_Resume.pdf, page1 used on input line 7.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 [2 <./Berger_Marcus_Resume.pdf>]
-<Wu_resume.pdf, id=2064, 614.295pt x 794.97pt>
+<Wu_resume.pdf, id=2103, 614.295pt x 794.97pt>
 File: Wu_resume.pdf Graphic file (type pdf)
  <use Wu_resume.pdf>
 Package pdftex.def Info: Wu_resume.pdf used on input line 8.
@@ -2399,7 +2389,7 @@ File: Wu_resume.pdf Graphic file (type pdf)
 <use Wu_resume.pdf>
 Package pdftex.def Info: Wu_resume.pdf used on input line 8.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <Wu_resume.pdf, id=2067, page=1, 614.295pt x 794.97pt>
+ <Wu_resume.pdf, id=2106, page=1, 614.295pt x 794.97pt>
 File: Wu_resume.pdf Graphic file (type pdf)
 
 <use Wu_resume.pdf, page 1>
@@ -2434,42 +2424,45 @@ Appendix E.
 (supporting.tex) [1] [2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (DesignDocument.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `DesignDocument.out' has not changed.
-(rerunfilecheck)             Checksum: F6F159AA15353CFA262193DCBE198B4C;16947.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
+(rerunfilecheck)             Checksum: F0FBBA218A36B370DE4FEB2634D9C2D7;17162.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 27054 strings out of 493673
- 475216 string characters out of 3141524
+ 27053 strings out of 493673
+ 474886 string characters out of 3141524
  609698 words of memory out of 3000000
- 29058 multiletter control sequences out of 15000+200000
- 85472 words of font info for 78 fonts, out of 3000000 for 9000
+ 29039 multiletter control sequences out of 15000+200000
+ 95283 words of font info for 79 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 64i,18n,72p,3300b,1880s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/MiK
-TeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fon
+ 64i,18n,72p,3300b,1878s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvip
-s/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/lm/lmss17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbo1
-0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/lm/lmtt10.pfb>
-Output written on DesignDocument.pdf (96 pages, 1794404 bytes).
+s/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri12
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/lm/lmsso10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm
+/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on DesignDocument.pdf (98 pages, 1873231 bytes).
 PDF statistics:
- 2329 PDF objects out of 2487 (max. 8388607)
- 681 named destinations out of 1000 (max. 500000)
- 2085 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2384 PDF objects out of 2487 (max. 8388607)
+ 699 named destinations out of 1000 (max. 500000)
+ 2109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

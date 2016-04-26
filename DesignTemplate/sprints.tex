@@ -27,7 +27,7 @@ This project as a whole needs to be an improvement on the current system in use 
 
 
 \subsection{Overview of the project:}
-The project consists of three major parts, Gui, database and back end code. For the Gui part, we are going to integrate everything into a small number of windows to eliminate the need for large numbers of window like the current product in use at the academy. and, thus, users can manipulate it very straightforwardly. For database part, we are going to build a database which stores students, employees, classes, billing, and other information needed for the academy to function as a business. For the code back end, we are going to develop it on using Python and PyQt with a primary focus on Mac but with cross platform compatibles. 
+The project consists of three major parts, GUI, database and back end code. For the Gui part, we are going to integrate everything into a small number of windows to eliminate the need for large numbers of window like the current product in use at the academy. and, thus, users can manipulate it very straightforwardly. For database part, we are going to build a database which stores students, employees, classes, billing, and other information needed for the academy to function as a business. For the code back end, we are going to develop it on using Python and PyQt with a primary focus on Mac but with cross platform compatibles. 
 
 \subsection{Project Environment:}
 
@@ -41,7 +41,7 @@ The context of this project is only to develop a better software solution to the
 \subsection{Project deliverables of Sprint 1:}
 
 \begin{enumerate}
-\item The research into program languages, database and Gui frameworks and architectures for the DanceSoft project.
+\item The research into program languages, database and GUI frameworks and architectures for the DanceSoft project.
 \item Final decision on frameworks and architectures for the DanceSoft project.
 \item User Stories and Product Backlogs for the project.
 \item Creating a very simple Qt window.
@@ -127,10 +127,10 @@ From the above user stories the team produced the fallowing product backlog. The
 \subsubsection{Database Research}
 
 \subsubsection{SQL VS NonSQL:}
-SQL is designed for fixing data structure and the scale of amount of data in database should be medium size otherwise with it growing big the database will drop down its speed. NonSQL is designed for frequent changing data structure and the scale of amount of data in database does not affect the performance of the database a lot. The SQL database is stable and however the NonSQL is constantly suffering failovers. The database aims to store employees and students and classes information and the size of students less than 4000 and the size of employees less than 10. The structure of data is stable, by considering all those facts above, we decide to use SQL database.\\
+SQL is designed for fixing data structure and the scale of amount of data in database should be medium size otherwise with it growing big the database will drop down its speed. NonSQL is designed for frequent changing data structure and the scale of amount of data in database does not affect the performance of the database a lot. The SQL database is stable and however the NonSQL is constantly suffering fail overs. The database aims to store employees and students and classes information and the size of students less than 4000 and the size of employees less than 10. The structure of data is stable, by considering all those facts above, we decide to use SQL database.\\
 
 \textbf{The different SQL Databases:}\\
-For this part, we think of using Mysql, SqLite, Mssql. Mysql is a free software and widely used in different fields. It has a very good portability and can runs over different OS systems and aims for small size of data. Also our experience is more focused in MySQL, and the feature set for SQL in MySQL fits within the scope of the project, for these reasons we choose MySQL as the database frame work.
+For this part, we think of using MySQL, SqLite, MsSQL. MySQL is a free software and widely used in different fields. It has a very good portability and can runs over different OS systems and aims for small size of data. Also our experience is more focused in MySQL, and the feature set for SQL in MySQL fits within the scope of the project, for these reasons we choose MySQL as the database frame work.
 
 \subsubsection{Storage Options:}
 For this part, We considered three options, local, cloud, mixed. Since the database is accessed by different devices and the internet in the Academy is not stable, we decide to use mixed storage schema either Amazon AWS plus a local database or a Linux box plus a local database. After researching Amazon AWS, it does not support storing images and videos which the Academy may require in the future, therefore   due to some inconsistency in the internet and the current and possible future needs of the Academy we decided to go with a local Linux box and database.\\
@@ -180,11 +180,11 @@ The progress is mostly out of the research phase and has began the first steps o
 
 \begin{enumerate}
 \item Creation of database tables 
-\item Draw Gui path
-\item Decision on rough Gui theme
+\item Draw GUI path
+\item Decision on rough GUI theme
 \item Create a log in page that sends the user to the correct landing page based on their permission level
 \item Create rough versions of teacher and admin landing pages to test functionally (improve look in latter sprint 
-\item Continue rough gui page creation to have environments for functionality 
+\item Continue rough GUI page creation to have environments for functionality 
 \item Sprint 2 Review
 \item Continuing practice with QT
 \end{enumerate}
@@ -208,7 +208,7 @@ A few thing to note in the database, we created student\_class and teacher\_clas
 
 The path for the gui was part of the backlog so we could figure out the minimum number of pages we would need to do the things required by this project. This does not mean we are looking to create only the minimum but just get a general idea of how many pages we would need. Also it allowed us to see how the pages were connected and how we expect navigation through the system to work. The rough drawing of the path can be found in the Github repo's sprint two folder.
 
-The other thing we need was to talk to the client about what he wanted for a navigation theme. We came up with three options, first was a button layout on the top and side of the page, second was  drop down menu similar to the way was mac and windows handle navigation in their products. Last was an expanding folder structure similar to that of the content management system Ektron. After consulting with Dr. McGough, he  decided that the more familiar drop down menu would be the easiest and most user friendly option and the option he would prefer we do. This decision allows us to use the built in menu bar functionality of pyqt and should reduce work load on navigation for this project.
+The other thing we need was to talk to the client about what he wanted for a navigation theme. We came up with three options, first was a button layout on the top and side of the page, second was  drop down menu similar to the way was mac and windows handle navigation in their products. Last was an expanding folder structure similar to that of the content management system Ektron. After consulting with Dr. McGough, he  decided that the more familiar drop down menu would be the easiest and most user friendly option and the option he would prefer we do. This decision allows us to use the built in menu bar functionality of PyQt and should reduce work load on navigation for this project.
 
 Another part of theme is color and design, the color scheme will most likely resemble the academy's color plate, but the improve design will be worked on later. As of now the primary focus is making sure all the functionality works.
 
@@ -217,7 +217,7 @@ Another part of theme is color and design, the color scheme will most likely res
 
 The GUI pages for this sprint were the log in page and the landing pages for admin and teachers. The student part of the gui will be php which will be worked on in a future sprint once the functionality is done. Since the student functions are similar to some of the admin or teacher functions most work should port over fairly quickly.
 
-The first page we made was a login in page that takes a username and a password and first checks to see if they exist and are correct within the system. If they are not a dialog saying whats wrong appears and prompts the user again. If the information passes the check the system reads the users permission level and sends them to the corresponding landing page.
+The first page we made was a log in in page that takes a user name and a password and first checks to see if they exist and are correct within the system. If they are not a dialog saying whats wrong appears and prompts the user again. If the information passes the check the system reads the users permission level and sends them to the corresponding landing page.
 
 \begin{figure}
 \caption{Current iteration of the log in page}
@@ -272,7 +272,7 @@ Meeting can continue pass these times if needed, and other times during the week
 
 Marcus:
 \begin{enumerate}
-\item Gui Path Charts
+\item GUI Path Charts
 \item Landing page Construction\\
 \end{enumerate}
 
@@ -363,7 +363,7 @@ Some issues that were encountered during this sprint were:
 
 \begin{enumerate}
 \item Time - While not as much of a problem as it was in sprint two the group still found itself running low on time. The lead gained during Christmas break should reduce the issue in phase 2.
-\item Inexperience with pyqt - While still a small issue the experience of the team is growing and while some issues still exist such as needing to look up information at times, the issues are lessened from the last sprint.
+\item Inexperience with PyQt - While still a small issue the experience of the team is growing and while some issues still exist such as needing to look up information at times, the issues are lessened from the last sprint.
 \item Team communication - The team found some issues in communicating with one another because of other projects and assignments. Which in some cases slowed sprint progress. Mitigation for this issue will be to more strongly impose a schedule in phase 2.
 \end{enumerate}
 
@@ -392,8 +392,8 @@ Marcus:
 \item Assign teacher to class
 \item Update teacher page
 \item Update clothing
-\item documentation
-\item trello management\\
+\item Documentation
+\item Trello management\\
 \end{enumerate}
 
 Dicheng:
@@ -552,7 +552,7 @@ Marcus:
 \item Enter and Update Tuition Rates
 \item Enter and Update Fee Rates and Type (Needs Updated With New Information)
 \item documentation
-\item trello management\\
+\item Trello management\\
 \end{enumerate}
 
 Dicheng:

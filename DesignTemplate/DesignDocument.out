@@ -71,172 +71,178 @@
 \BOOKMARK [2][-]{subsection.3.6.6}{Sprint 6: Updates, Fixes, and Iteration Packaging}{section.3.6}% 71
 \BOOKMARK [1][-]{section.3.7}{Terminology and Acronyms}{chapter.3}% 72
 \BOOKMARK [1][-]{section.3.8}{Sprint Schedule}{chapter.3}% 73
-\BOOKMARK [1][-]{section.3.9}{Timeline}{chapter.3}% 74
-\BOOKMARK [1][-]{section.3.10}{Backlogs}{chapter.3}% 75
-\BOOKMARK [1][-]{section.3.11}{Development Environment}{chapter.3}% 76
-\BOOKMARK [2][-]{subsection.3.11.1}{Source Code Development}{section.3.11}% 77
-\BOOKMARK [2][-]{subsection.3.11.2}{MySQL Database}{section.3.11}% 78
-\BOOKMARK [2][-]{subsection.3.11.3}{PyQt}{section.3.11}% 79
-\BOOKMARK [1][-]{section.3.12}{Development IDE and Tools}{chapter.3}% 80
-\BOOKMARK [1][-]{section.3.13}{Source Control}{chapter.3}% 81
-\BOOKMARK [1][-]{section.3.14}{Dependencies}{chapter.3}% 82
-\BOOKMARK [1][-]{section.3.15}{Build Environment}{chapter.3}% 83
-\BOOKMARK [1][-]{section.3.16}{Development Machine Setup}{chapter.3}% 84
-\BOOKMARK [0][-]{chapter.4}{Design and Implementation}{}% 85
-\BOOKMARK [1][-]{section.4.1}{Architecture and System Design}{chapter.4}% 86
-\BOOKMARK [2][-]{subsection.4.1.1}{Design Selection}{section.4.1}% 87
-\BOOKMARK [2][-]{subsection.4.1.2}{Data Structures and Algorithms}{section.4.1}% 88
-\BOOKMARK [2][-]{subsection.4.1.3}{Data Flow}{section.4.1}% 89
-\BOOKMARK [2][-]{subsection.4.1.4}{Communications}{section.4.1}% 90
-\BOOKMARK [2][-]{subsection.4.1.5}{Classes}{section.4.1}% 91
-\BOOKMARK [2][-]{subsection.4.1.6}{UML}{section.4.1}% 92
-\BOOKMARK [2][-]{subsection.4.1.7}{GUI}{section.4.1}% 93
-\BOOKMARK [2][-]{subsection.4.1.8}{MVVM, etc}{section.4.1}% 94
-\BOOKMARK [1][-]{section.4.2}{Major Component \0431 }{chapter.4}% 95
-\BOOKMARK [2][-]{subsection.4.2.1}{Technologies Used}{section.4.2}% 96
-\BOOKMARK [2][-]{subsection.4.2.2}{Component Overview}{section.4.2}% 97
-\BOOKMARK [2][-]{subsection.4.2.3}{Phase Overview}{section.4.2}% 98
-\BOOKMARK [2][-]{subsection.4.2.4}{ Architecture Diagram}{section.4.2}% 99
-\BOOKMARK [2][-]{subsection.4.2.5}{Data Flow Diagram}{section.4.2}% 100
-\BOOKMARK [2][-]{subsection.4.2.6}{Design Details}{section.4.2}% 101
-\BOOKMARK [1][-]{section.4.3}{Major Component \0432 }{chapter.4}% 102
-\BOOKMARK [2][-]{subsection.4.3.1}{Technologies Used}{section.4.3}% 103
-\BOOKMARK [2][-]{subsection.4.3.2}{Component Overview}{section.4.3}% 104
-\BOOKMARK [2][-]{subsection.4.3.3}{Phase Overview}{section.4.3}% 105
-\BOOKMARK [2][-]{subsection.4.3.4}{ Architecture Diagram}{section.4.3}% 106
-\BOOKMARK [2][-]{subsection.4.3.5}{Data Flow Diagram}{section.4.3}% 107
-\BOOKMARK [2][-]{subsection.4.3.6}{Design Details}{section.4.3}% 108
-\BOOKMARK [1][-]{section.4.4}{Major Component \0433 }{chapter.4}% 109
-\BOOKMARK [2][-]{subsection.4.4.1}{Technologies Used}{section.4.4}% 110
-\BOOKMARK [2][-]{subsection.4.4.2}{Component Overview}{section.4.4}% 111
-\BOOKMARK [2][-]{subsection.4.4.3}{Phase Overview}{section.4.4}% 112
-\BOOKMARK [2][-]{subsection.4.4.4}{ Architecture Diagram}{section.4.4}% 113
-\BOOKMARK [2][-]{subsection.4.4.5}{Data Flow Diagram}{section.4.4}% 114
-\BOOKMARK [2][-]{subsection.4.4.6}{Design Details}{section.4.4}% 115
-\BOOKMARK [0][-]{chapter.5}{System and Unit Testing}{}% 116
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 117
-\BOOKMARK [1][-]{section.5.2}{Dependencies}{chapter.5}% 118
-\BOOKMARK [1][-]{section.5.3}{Test Setup and Execution}{chapter.5}% 119
-\BOOKMARK [1][-]{section.5.4}{System Testing}{chapter.5}% 120
-\BOOKMARK [1][-]{section.5.5}{System Integration Analysis}{chapter.5}% 121
-\BOOKMARK [1][-]{section.5.6}{Risk Analysis}{chapter.5}% 122
-\BOOKMARK [2][-]{subsection.5.6.1}{Risk Mitigation}{section.5.6}% 123
-\BOOKMARK [1][-]{section.5.7}{Successes, Issues and Problems}{chapter.5}% 124
-\BOOKMARK [2][-]{subsection.5.7.1}{Changes to the Backlog}{section.5.7}% 125
-\BOOKMARK [0][-]{chapter.6}{Prototypes}{}% 126
-\BOOKMARK [1][-]{section.6.1}{Sprint 1 Prototype}{chapter.6}% 127
-\BOOKMARK [2][-]{subsection.6.1.1}{Deliverable}{section.6.1}% 128
-\BOOKMARK [2][-]{subsection.6.1.2}{Backlog}{section.6.1}% 129
-\BOOKMARK [2][-]{subsection.6.1.3}{Success/Fail}{section.6.1}% 130
-\BOOKMARK [1][-]{section.6.2}{Sprint 2 Prototype}{chapter.6}% 131
-\BOOKMARK [2][-]{subsection.6.2.1}{Deliverable}{section.6.2}% 132
-\BOOKMARK [2][-]{subsection.6.2.2}{Backlog}{section.6.2}% 133
-\BOOKMARK [2][-]{subsection.6.2.3}{Success/Fail}{section.6.2}% 134
-\BOOKMARK [1][-]{section.6.3}{Sprint 3 Prototype}{chapter.6}% 135
-\BOOKMARK [2][-]{subsection.6.3.1}{Deliverable}{section.6.3}% 136
-\BOOKMARK [2][-]{subsection.6.3.2}{Backlog}{section.6.3}% 137
-\BOOKMARK [2][-]{subsection.6.3.3}{Success/Fail}{section.6.3}% 138
-\BOOKMARK [1][-]{section.6.4}{Sprint 4 Prototype}{chapter.6}% 139
-\BOOKMARK [2][-]{subsection.6.4.1}{Deliverable}{section.6.4}% 140
-\BOOKMARK [2][-]{subsection.6.4.2}{Backlog}{section.6.4}% 141
-\BOOKMARK [2][-]{subsection.6.4.3}{Success/Fail}{section.6.4}% 142
-\BOOKMARK [1][-]{section.6.5}{Sprint 5 Prototype}{chapter.6}% 143
-\BOOKMARK [2][-]{subsection.6.5.1}{Deliverable}{section.6.5}% 144
-\BOOKMARK [2][-]{subsection.6.5.2}{Backlog}{section.6.5}% 145
-\BOOKMARK [2][-]{subsection.6.5.3}{Success/Fail}{section.6.5}% 146
-\BOOKMARK [0][-]{chapter.7}{Release \205 Setup \205 Deployment}{}% 147
-\BOOKMARK [1][-]{section.7.1}{Deployment Information and Dependencies}{chapter.7}% 148
-\BOOKMARK [1][-]{section.7.2}{Setup Information}{chapter.7}% 149
-\BOOKMARK [1][-]{section.7.3}{System Versioning Information}{chapter.7}% 150
-\BOOKMARK [0][-]{chapter.8}{User Documentation}{}% 151
-\BOOKMARK [1][-]{section.8.1}{User Guide}{chapter.8}% 152
-\BOOKMARK [1][-]{section.8.2}{Installation Guide}{chapter.8}% 153
-\BOOKMARK [1][-]{section.8.3}{Programmer Manual}{chapter.8}% 154
-\BOOKMARK [0][-]{chapter.9}{Class Index}{}% 155
-\BOOKMARK [0][-]{chapter.10}{Class Documentation}{}% 156
-\BOOKMARK [1][-]{section.10.1}{Poly Class Reference}{chapter.10}% 157
-\BOOKMARK [2][-]{subsection.10.1.1}{Constructor \046 Destructor Documentation}{section.10.1}% 158
-\BOOKMARK [2][-]{subsection.10.1.2}{Member Function Documentation}{section.10.1}% 159
-\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 160
-\BOOKMARK [0][-]{chapter.11}{Software Agreement}{}% 161
-\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 162
-\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 163
-\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 164
-\BOOKMARK [2][-]{subsection.B.1.1}{Team Members:}{section.B.1}% 165
-\BOOKMARK [2][-]{subsection.B.1.2}{Customer description}{section.B.1}% 166
-\BOOKMARK [2][-]{subsection.B.1.3}{Overview of the project:}{section.B.1}% 167
-\BOOKMARK [2][-]{subsection.B.1.4}{Project Environment:}{section.B.1}% 168
-\BOOKMARK [2][-]{subsection.B.1.5}{Project deliverables of Sprint 1:}{section.B.1}% 169
-\BOOKMARK [2][-]{subsection.B.1.6}{User Stories}{section.B.1}% 170
-\BOOKMARK [2][-]{subsection.B.1.7}{Product Backlog:}{section.B.1}% 171
-\BOOKMARK [2][-]{subsection.B.1.8}{Research}{section.B.1}% 172
-\BOOKMARK [2][-]{subsection.B.1.9}{Final Framework Decision}{section.B.1}% 173
-\BOOKMARK [2][-]{subsection.B.1.10}{Foreseeable issues}{section.B.1}% 174
-\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 175
-\BOOKMARK [2][-]{subsection.B.2.1}{Team Members:}{section.B.2}% 176
-\BOOKMARK [2][-]{subsection.B.2.2}{Prototype Progress}{section.B.2}% 177
-\BOOKMARK [2][-]{subsection.B.2.3}{Project deliverables of Sprint 2:}{section.B.2}% 178
-\BOOKMARK [2][-]{subsection.B.2.4}{Database Creation}{section.B.2}% 179
-\BOOKMARK [2][-]{subsection.B.2.5}{GUI Work}{section.B.2}% 180
-\BOOKMARK [2][-]{subsection.B.2.6}{Sprint 2 Issues}{section.B.2}% 181
-\BOOKMARK [2][-]{subsection.B.2.7}{Client Interactions}{section.B.2}% 182
-\BOOKMARK [2][-]{subsection.B.2.8}{Group Meeting}{section.B.2}% 183
-\BOOKMARK [2][-]{subsection.B.2.9}{Work Distribution}{section.B.2}% 184
-\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 185
-\BOOKMARK [2][-]{subsection.B.3.1}{Team Members:}{section.B.3}% 186
-\BOOKMARK [2][-]{subsection.B.3.2}{Prototype Progress}{section.B.3}% 187
-\BOOKMARK [2][-]{subsection.B.3.3}{Project deliverables of Sprint 3:}{section.B.3}% 188
-\BOOKMARK [2][-]{subsection.B.3.4}{Search Pages}{section.B.3}% 189
-\BOOKMARK [2][-]{subsection.B.3.5}{Add A Class}{section.B.3}% 190
-\BOOKMARK [2][-]{subsection.B.3.6}{Role Sheet}{section.B.3}% 191
-\BOOKMARK [2][-]{subsection.B.3.7}{Update Pages}{section.B.3}% 192
-\BOOKMARK [2][-]{subsection.B.3.8}{Assign Teacher to a Class}{section.B.3}% 193
-\BOOKMARK [2][-]{subsection.B.3.9}{Sprint 3 Issues}{section.B.3}% 194
-\BOOKMARK [2][-]{subsection.B.3.10}{Client Interactions}{section.B.3}% 195
-\BOOKMARK [2][-]{subsection.B.3.11}{Group Meeting}{section.B.3}% 196
-\BOOKMARK [2][-]{subsection.B.3.12}{Work Distribution}{section.B.3}% 197
-\BOOKMARK [1][-]{section.B.4}{Sprint Report \0434}{appendix.B}% 198
-\BOOKMARK [2][-]{subsection.B.4.1}{Team Members:}{section.B.4}% 199
-\BOOKMARK [2][-]{subsection.B.4.2}{Prototype Progress}{section.B.4}% 200
-\BOOKMARK [2][-]{subsection.B.4.3}{Project deliverables of Sprint 3.5 and 4:}{section.B.4}% 201
-\BOOKMARK [2][-]{subsection.B.4.4}{Sprint 3.5}{section.B.4}% 202
-\BOOKMARK [2][-]{subsection.B.4.5}{Prorated Refunds}{section.B.4}% 203
-\BOOKMARK [2][-]{subsection.B.4.6}{Enter Staff Hours}{section.B.4}% 204
-\BOOKMARK [2][-]{subsection.B.4.7}{Enter Teacher Wages}{section.B.4}% 205
-\BOOKMARK [2][-]{subsection.B.4.8}{Enter Tuition Rates and Fees}{section.B.4}% 206
-\BOOKMARK [2][-]{subsection.B.4.9}{Teacher History}{section.B.4}% 207
-\BOOKMARK [2][-]{subsection.B.4.10}{Set Semester}{section.B.4}% 208
-\BOOKMARK [2][-]{subsection.B.4.11}{partial payment}{section.B.4}% 209
-\BOOKMARK [2][-]{subsection.B.4.12}{Student's owe}{section.B.4}% 210
-\BOOKMARK [2][-]{subsection.B.4.13}{enter payment}{section.B.4}% 211
-\BOOKMARK [2][-]{subsection.B.4.14}{bill history}{section.B.4}% 212
-\BOOKMARK [2][-]{subsection.B.4.15}{Sprint 3.5 and 4 Issues}{section.B.4}% 213
-\BOOKMARK [2][-]{subsection.B.4.16}{Client Interactions}{section.B.4}% 214
-\BOOKMARK [2][-]{subsection.B.4.17}{Group Meeting}{section.B.4}% 215
-\BOOKMARK [2][-]{subsection.B.4.18}{Work Distribution}{section.B.4}% 216
-\BOOKMARK [1][-]{section.B.5}{Sprint Report \0435}{appendix.B}% 217
-\BOOKMARK [2][-]{subsection.B.5.1}{Team Members:}{section.B.5}% 218
-\BOOKMARK [2][-]{subsection.B.5.2}{Prototype Progress}{section.B.5}% 219
-\BOOKMARK [2][-]{subsection.B.5.3}{Project deliverables of Sprint 5:}{section.B.5}% 220
-\BOOKMARK [2][-]{subsection.B.5.4}{Sprint 5}{section.B.5}% 221
-\BOOKMARK [2][-]{subsection.B.5.5}{Prorated Refunds}{section.B.5}% 222
-\BOOKMARK [2][-]{subsection.B.5.6}{Enter Staff Hours}{section.B.5}% 223
-\BOOKMARK [2][-]{subsection.B.5.7}{Enter Teacher Wages}{section.B.5}% 224
-\BOOKMARK [2][-]{subsection.B.5.8}{Enter Tuition Rates and Fees}{section.B.5}% 225
-\BOOKMARK [2][-]{subsection.B.5.9}{Bug Fixes}{section.B.5}% 226
-\BOOKMARK [2][-]{subsection.B.5.10}{Updates Crossover}{section.B.5}% 227
-\BOOKMARK [2][-]{subsection.B.5.11}{Approved/Rejected Student Updates}{section.B.5}% 228
-\BOOKMARK [2][-]{subsection.B.5.12}{Admin List}{section.B.5}% 229
-\BOOKMARK [2][-]{subsection.B.5.13}{Add/Remove Locations}{section.B.5}% 230
-\BOOKMARK [2][-]{subsection.B.5.14}{Removal Functions}{section.B.5}% 231
-\BOOKMARK [2][-]{subsection.B.5.15}{Sprint 5 Issues}{section.B.5}% 232
-\BOOKMARK [2][-]{subsection.B.5.16}{Client Interactions}{section.B.5}% 233
-\BOOKMARK [2][-]{subsection.B.5.17}{Group Meeting}{section.B.5}% 234
-\BOOKMARK [2][-]{subsection.B.5.18}{Work Distribution}{section.B.5}% 235
-\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 236
-\BOOKMARK [1][-]{section.C.1}{Resumes}{appendix.C}% 237
-\BOOKMARK [1][-]{section.C.2}{ABET:Industrial Experience Reports}{appendix.C}% 238
-\BOOKMARK [2][-]{subsection.C.2.1}{Marcus Berger}{section.C.2}% 239
-\BOOKMARK [2][-]{subsection.C.2.2}{Dicheng Wu}{section.C.2}% 240
-\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 241
-\BOOKMARK [0][-]{appendix.E}{Supporting Materials}{}% 242
+\BOOKMARK [1][-]{section.3.9}{Backlogs}{chapter.3}% 74
+\BOOKMARK [2][-]{subsection.3.9.1}{Sprint 1 Backlog}{section.3.9}% 75
+\BOOKMARK [2][-]{subsection.3.9.2}{Sprint 2 Backlog}{section.3.9}% 76
+\BOOKMARK [2][-]{subsection.3.9.3}{Sprint 3 Backlog}{section.3.9}% 77
+\BOOKMARK [2][-]{subsection.3.9.4}{Sprint 3.5 Backlog}{section.3.9}% 78
+\BOOKMARK [2][-]{subsection.3.9.5}{Sprint 4 Backlog}{section.3.9}% 79
+\BOOKMARK [2][-]{subsection.3.9.6}{Sprint 5 Backlog}{section.3.9}% 80
+\BOOKMARK [2][-]{subsection.3.9.7}{Sprint 5 Fixed Bug Backlog}{section.3.9}% 81
+\BOOKMARK [2][-]{subsection.3.9.8}{Sprint 6 Backlog}{section.3.9}% 82
+\BOOKMARK [1][-]{section.3.10}{Development Environment}{chapter.3}% 83
+\BOOKMARK [2][-]{subsection.3.10.1}{Source Code Development}{section.3.10}% 84
+\BOOKMARK [2][-]{subsection.3.10.2}{MySQL Database}{section.3.10}% 85
+\BOOKMARK [2][-]{subsection.3.10.3}{PyQt}{section.3.10}% 86
+\BOOKMARK [1][-]{section.3.11}{Development IDE and Tools}{chapter.3}% 87
+\BOOKMARK [1][-]{section.3.12}{Source Control}{chapter.3}% 88
+\BOOKMARK [1][-]{section.3.13}{Dependencies}{chapter.3}% 89
+\BOOKMARK [1][-]{section.3.14}{Build Environment}{chapter.3}% 90
+\BOOKMARK [1][-]{section.3.15}{Development Machine Setup}{chapter.3}% 91
+\BOOKMARK [0][-]{chapter.4}{Design and Implementation}{}% 92
+\BOOKMARK [1][-]{section.4.1}{Architecture and System Design}{chapter.4}% 93
+\BOOKMARK [2][-]{subsection.4.1.1}{Design Selection}{section.4.1}% 94
+\BOOKMARK [2][-]{subsection.4.1.2}{Data Structures and Algorithms}{section.4.1}% 95
+\BOOKMARK [2][-]{subsection.4.1.3}{Data Flow}{section.4.1}% 96
+\BOOKMARK [2][-]{subsection.4.1.4}{Communications}{section.4.1}% 97
+\BOOKMARK [2][-]{subsection.4.1.5}{Classes}{section.4.1}% 98
+\BOOKMARK [2][-]{subsection.4.1.6}{UML}{section.4.1}% 99
+\BOOKMARK [2][-]{subsection.4.1.7}{GUI}{section.4.1}% 100
+\BOOKMARK [2][-]{subsection.4.1.8}{MVVM, etc}{section.4.1}% 101
+\BOOKMARK [1][-]{section.4.2}{Major Component \0431 }{chapter.4}% 102
+\BOOKMARK [2][-]{subsection.4.2.1}{Technologies Used}{section.4.2}% 103
+\BOOKMARK [2][-]{subsection.4.2.2}{Component Overview}{section.4.2}% 104
+\BOOKMARK [2][-]{subsection.4.2.3}{Phase Overview}{section.4.2}% 105
+\BOOKMARK [2][-]{subsection.4.2.4}{ Architecture Diagram}{section.4.2}% 106
+\BOOKMARK [2][-]{subsection.4.2.5}{Data Flow Diagram}{section.4.2}% 107
+\BOOKMARK [2][-]{subsection.4.2.6}{Design Details}{section.4.2}% 108
+\BOOKMARK [1][-]{section.4.3}{Major Component \0432 }{chapter.4}% 109
+\BOOKMARK [2][-]{subsection.4.3.1}{Technologies Used}{section.4.3}% 110
+\BOOKMARK [2][-]{subsection.4.3.2}{Component Overview}{section.4.3}% 111
+\BOOKMARK [2][-]{subsection.4.3.3}{Phase Overview}{section.4.3}% 112
+\BOOKMARK [2][-]{subsection.4.3.4}{ Architecture Diagram}{section.4.3}% 113
+\BOOKMARK [2][-]{subsection.4.3.5}{Data Flow Diagram}{section.4.3}% 114
+\BOOKMARK [2][-]{subsection.4.3.6}{Design Details}{section.4.3}% 115
+\BOOKMARK [1][-]{section.4.4}{Major Component \0433 }{chapter.4}% 116
+\BOOKMARK [2][-]{subsection.4.4.1}{Technologies Used}{section.4.4}% 117
+\BOOKMARK [2][-]{subsection.4.4.2}{Component Overview}{section.4.4}% 118
+\BOOKMARK [2][-]{subsection.4.4.3}{Phase Overview}{section.4.4}% 119
+\BOOKMARK [2][-]{subsection.4.4.4}{ Architecture Diagram}{section.4.4}% 120
+\BOOKMARK [2][-]{subsection.4.4.5}{Data Flow Diagram}{section.4.4}% 121
+\BOOKMARK [2][-]{subsection.4.4.6}{Design Details}{section.4.4}% 122
+\BOOKMARK [0][-]{chapter.5}{System and Unit Testing}{}% 123
+\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 124
+\BOOKMARK [1][-]{section.5.2}{Dependencies}{chapter.5}% 125
+\BOOKMARK [1][-]{section.5.3}{Test Setup and Execution}{chapter.5}% 126
+\BOOKMARK [1][-]{section.5.4}{System Testing}{chapter.5}% 127
+\BOOKMARK [1][-]{section.5.5}{System Integration Analysis}{chapter.5}% 128
+\BOOKMARK [1][-]{section.5.6}{Risk Analysis}{chapter.5}% 129
+\BOOKMARK [2][-]{subsection.5.6.1}{Risk Mitigation}{section.5.6}% 130
+\BOOKMARK [1][-]{section.5.7}{Successes, Issues and Problems}{chapter.5}% 131
+\BOOKMARK [2][-]{subsection.5.7.1}{Changes to the Backlog}{section.5.7}% 132
+\BOOKMARK [0][-]{chapter.6}{Prototypes}{}% 133
+\BOOKMARK [1][-]{section.6.1}{Sprint 1 Prototype}{chapter.6}% 134
+\BOOKMARK [2][-]{subsection.6.1.1}{Deliverable}{section.6.1}% 135
+\BOOKMARK [2][-]{subsection.6.1.2}{Backlog}{section.6.1}% 136
+\BOOKMARK [2][-]{subsection.6.1.3}{Success/Fail}{section.6.1}% 137
+\BOOKMARK [1][-]{section.6.2}{Sprint 2 Prototype}{chapter.6}% 138
+\BOOKMARK [2][-]{subsection.6.2.1}{Deliverable}{section.6.2}% 139
+\BOOKMARK [2][-]{subsection.6.2.2}{Backlog}{section.6.2}% 140
+\BOOKMARK [2][-]{subsection.6.2.3}{Success/Fail}{section.6.2}% 141
+\BOOKMARK [1][-]{section.6.3}{Sprint 3 Prototype}{chapter.6}% 142
+\BOOKMARK [2][-]{subsection.6.3.1}{Deliverable}{section.6.3}% 143
+\BOOKMARK [2][-]{subsection.6.3.2}{Backlog}{section.6.3}% 144
+\BOOKMARK [2][-]{subsection.6.3.3}{Success/Fail}{section.6.3}% 145
+\BOOKMARK [1][-]{section.6.4}{Sprint 4 Prototype}{chapter.6}% 146
+\BOOKMARK [2][-]{subsection.6.4.1}{Deliverable}{section.6.4}% 147
+\BOOKMARK [2][-]{subsection.6.4.2}{Backlog}{section.6.4}% 148
+\BOOKMARK [2][-]{subsection.6.4.3}{Success/Fail}{section.6.4}% 149
+\BOOKMARK [1][-]{section.6.5}{Sprint 5 Prototype}{chapter.6}% 150
+\BOOKMARK [2][-]{subsection.6.5.1}{Deliverable}{section.6.5}% 151
+\BOOKMARK [2][-]{subsection.6.5.2}{Backlog}{section.6.5}% 152
+\BOOKMARK [2][-]{subsection.6.5.3}{Success/Fail}{section.6.5}% 153
+\BOOKMARK [0][-]{chapter.7}{Release \205 Setup \205 Deployment}{}% 154
+\BOOKMARK [1][-]{section.7.1}{Deployment Information and Dependencies}{chapter.7}% 155
+\BOOKMARK [1][-]{section.7.2}{Setup Information}{chapter.7}% 156
+\BOOKMARK [1][-]{section.7.3}{System Versioning Information}{chapter.7}% 157
+\BOOKMARK [0][-]{chapter.8}{User Documentation}{}% 158
+\BOOKMARK [1][-]{section.8.1}{User Guide}{chapter.8}% 159
+\BOOKMARK [1][-]{section.8.2}{Installation Guide}{chapter.8}% 160
+\BOOKMARK [0][-]{chapter.9}{Class Index}{}% 161
+\BOOKMARK [0][-]{chapter.10}{Class Documentation}{}% 162
+\BOOKMARK [1][-]{section.10.1}{Poly Class Reference}{chapter.10}% 163
+\BOOKMARK [2][-]{subsection.10.1.1}{Constructor \046 Destructor Documentation}{section.10.1}% 164
+\BOOKMARK [2][-]{subsection.10.1.2}{Member Function Documentation}{section.10.1}% 165
+\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 166
+\BOOKMARK [0][-]{chapter.11}{Software Agreement}{}% 167
+\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 168
+\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 169
+\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 170
+\BOOKMARK [2][-]{subsection.B.1.1}{Team Members:}{section.B.1}% 171
+\BOOKMARK [2][-]{subsection.B.1.2}{Customer description}{section.B.1}% 172
+\BOOKMARK [2][-]{subsection.B.1.3}{Overview of the project:}{section.B.1}% 173
+\BOOKMARK [2][-]{subsection.B.1.4}{Project Environment:}{section.B.1}% 174
+\BOOKMARK [2][-]{subsection.B.1.5}{Project deliverables of Sprint 1:}{section.B.1}% 175
+\BOOKMARK [2][-]{subsection.B.1.6}{User Stories}{section.B.1}% 176
+\BOOKMARK [2][-]{subsection.B.1.7}{Product Backlog:}{section.B.1}% 177
+\BOOKMARK [2][-]{subsection.B.1.8}{Research}{section.B.1}% 178
+\BOOKMARK [2][-]{subsection.B.1.9}{Final Framework Decision}{section.B.1}% 179
+\BOOKMARK [2][-]{subsection.B.1.10}{Foreseeable issues}{section.B.1}% 180
+\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 181
+\BOOKMARK [2][-]{subsection.B.2.1}{Team Members:}{section.B.2}% 182
+\BOOKMARK [2][-]{subsection.B.2.2}{Prototype Progress}{section.B.2}% 183
+\BOOKMARK [2][-]{subsection.B.2.3}{Project deliverables of Sprint 2:}{section.B.2}% 184
+\BOOKMARK [2][-]{subsection.B.2.4}{Database Creation}{section.B.2}% 185
+\BOOKMARK [2][-]{subsection.B.2.5}{GUI Work}{section.B.2}% 186
+\BOOKMARK [2][-]{subsection.B.2.6}{Sprint 2 Issues}{section.B.2}% 187
+\BOOKMARK [2][-]{subsection.B.2.7}{Client Interactions}{section.B.2}% 188
+\BOOKMARK [2][-]{subsection.B.2.8}{Group Meeting}{section.B.2}% 189
+\BOOKMARK [2][-]{subsection.B.2.9}{Work Distribution}{section.B.2}% 190
+\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 191
+\BOOKMARK [2][-]{subsection.B.3.1}{Team Members:}{section.B.3}% 192
+\BOOKMARK [2][-]{subsection.B.3.2}{Prototype Progress}{section.B.3}% 193
+\BOOKMARK [2][-]{subsection.B.3.3}{Project deliverables of Sprint 3:}{section.B.3}% 194
+\BOOKMARK [2][-]{subsection.B.3.4}{Search Pages}{section.B.3}% 195
+\BOOKMARK [2][-]{subsection.B.3.5}{Add A Class}{section.B.3}% 196
+\BOOKMARK [2][-]{subsection.B.3.6}{Role Sheet}{section.B.3}% 197
+\BOOKMARK [2][-]{subsection.B.3.7}{Update Pages}{section.B.3}% 198
+\BOOKMARK [2][-]{subsection.B.3.8}{Assign Teacher to a Class}{section.B.3}% 199
+\BOOKMARK [2][-]{subsection.B.3.9}{Sprint 3 Issues}{section.B.3}% 200
+\BOOKMARK [2][-]{subsection.B.3.10}{Client Interactions}{section.B.3}% 201
+\BOOKMARK [2][-]{subsection.B.3.11}{Group Meeting}{section.B.3}% 202
+\BOOKMARK [2][-]{subsection.B.3.12}{Work Distribution}{section.B.3}% 203
+\BOOKMARK [1][-]{section.B.4}{Sprint Report \0434}{appendix.B}% 204
+\BOOKMARK [2][-]{subsection.B.4.1}{Team Members:}{section.B.4}% 205
+\BOOKMARK [2][-]{subsection.B.4.2}{Prototype Progress}{section.B.4}% 206
+\BOOKMARK [2][-]{subsection.B.4.3}{Project deliverables of Sprint 3.5 and 4:}{section.B.4}% 207
+\BOOKMARK [2][-]{subsection.B.4.4}{Sprint 3.5}{section.B.4}% 208
+\BOOKMARK [2][-]{subsection.B.4.5}{Prorated Refunds}{section.B.4}% 209
+\BOOKMARK [2][-]{subsection.B.4.6}{Enter Staff Hours}{section.B.4}% 210
+\BOOKMARK [2][-]{subsection.B.4.7}{Enter Teacher Wages}{section.B.4}% 211
+\BOOKMARK [2][-]{subsection.B.4.8}{Enter Tuition Rates and Fees}{section.B.4}% 212
+\BOOKMARK [2][-]{subsection.B.4.9}{Teacher History}{section.B.4}% 213
+\BOOKMARK [2][-]{subsection.B.4.10}{Set Semester}{section.B.4}% 214
+\BOOKMARK [2][-]{subsection.B.4.11}{partial payment}{section.B.4}% 215
+\BOOKMARK [2][-]{subsection.B.4.12}{Student's owe}{section.B.4}% 216
+\BOOKMARK [2][-]{subsection.B.4.13}{enter payment}{section.B.4}% 217
+\BOOKMARK [2][-]{subsection.B.4.14}{bill history}{section.B.4}% 218
+\BOOKMARK [2][-]{subsection.B.4.15}{Sprint 3.5 and 4 Issues}{section.B.4}% 219
+\BOOKMARK [2][-]{subsection.B.4.16}{Client Interactions}{section.B.4}% 220
+\BOOKMARK [2][-]{subsection.B.4.17}{Group Meeting}{section.B.4}% 221
+\BOOKMARK [2][-]{subsection.B.4.18}{Work Distribution}{section.B.4}% 222
+\BOOKMARK [1][-]{section.B.5}{Sprint Report \0435}{appendix.B}% 223
+\BOOKMARK [2][-]{subsection.B.5.1}{Team Members:}{section.B.5}% 224
+\BOOKMARK [2][-]{subsection.B.5.2}{Prototype Progress}{section.B.5}% 225
+\BOOKMARK [2][-]{subsection.B.5.3}{Project deliverables of Sprint 5:}{section.B.5}% 226
+\BOOKMARK [2][-]{subsection.B.5.4}{Sprint 5}{section.B.5}% 227
+\BOOKMARK [2][-]{subsection.B.5.5}{Prorated Refunds}{section.B.5}% 228
+\BOOKMARK [2][-]{subsection.B.5.6}{Enter Staff Hours}{section.B.5}% 229
+\BOOKMARK [2][-]{subsection.B.5.7}{Enter Teacher Wages}{section.B.5}% 230
+\BOOKMARK [2][-]{subsection.B.5.8}{Enter Tuition Rates and Fees}{section.B.5}% 231
+\BOOKMARK [2][-]{subsection.B.5.9}{Bug Fixes}{section.B.5}% 232
+\BOOKMARK [2][-]{subsection.B.5.10}{Updates Crossover}{section.B.5}% 233
+\BOOKMARK [2][-]{subsection.B.5.11}{Approved/Rejected Student Updates}{section.B.5}% 234
+\BOOKMARK [2][-]{subsection.B.5.12}{Admin List}{section.B.5}% 235
+\BOOKMARK [2][-]{subsection.B.5.13}{Add/Remove Locations}{section.B.5}% 236
+\BOOKMARK [2][-]{subsection.B.5.14}{Removal Functions}{section.B.5}% 237
+\BOOKMARK [2][-]{subsection.B.5.15}{Sprint 5 Issues}{section.B.5}% 238
+\BOOKMARK [2][-]{subsection.B.5.16}{Client Interactions}{section.B.5}% 239
+\BOOKMARK [2][-]{subsection.B.5.17}{Group Meeting}{section.B.5}% 240
+\BOOKMARK [2][-]{subsection.B.5.18}{Work Distribution}{section.B.5}% 241
+\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 242
+\BOOKMARK [1][-]{section.C.1}{Resumes}{appendix.C}% 243
+\BOOKMARK [1][-]{section.C.2}{ABET:Industrial Experience Reports}{appendix.C}% 244
+\BOOKMARK [2][-]{subsection.C.2.1}{Marcus Berger}{section.C.2}% 245
+\BOOKMARK [2][-]{subsection.C.2.2}{Dicheng Wu}{section.C.2}% 246
+\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 247
+\BOOKMARK [0][-]{appendix.E}{Supporting Materials}{}% 248

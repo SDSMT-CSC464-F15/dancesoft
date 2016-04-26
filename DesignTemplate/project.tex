@@ -46,7 +46,7 @@ The DanceSoft team consist of two members, Marcus Berger and Dicheng Wu, who are
 After the backlog entry has been complete it is the developers job to test and error check the functions to make sure that the function completes all its needed tasks, in the way the team wants. Also testing is done to make sure the files don't create any problems with the rest of the software. Testing is covered in more detail in the testing section of this document.
 
 \section{Budget}
-There was no budget or monetary compensation for this project. When the project was initially laid out there was an idea for a budget that would be used for a Linux box. The Linux box would have been used to store the system on a local device. However as the requirement were brought down and redefined to an iteration of the project, rather then a full complete project, it became clear that the project would not reach a deployment state where a local machine was necessary. However the client provided a linux box for the senior design fair which was not claimed as a budget by this project. As work continues on this project the budget may grow.  
+There was no budget or monetary compensation for this project. When the project was initially laid out there was an idea for a budget that would be used for a Linux box. The Linux box would have been used to store the system on a local device. However as the requirement were brought down and redefined to an iteration of the project, rather then a full complete project, it became clear that the project would not reach a deployment state where a local machine was necessary. However the client could provided a Linux box for project storage at the end of the semester, which will not be not claimed as a budget by this project. As work continues on this project the budget may grow. Most expenditures associated with the Senior Design class an example being the DanceSoft senior design poster were covered by the DanceSoft team members.
 Monetary compensation for this project follow the guidelines laid out in the DanceSoft Software Contract. The team will be given and accept no form of compensation for the work on the DanceSoft or any related project. This is in accordance with the conditions of the project, client, and the senior design class.
 
 \section{Intellectual Property and Licensing}
@@ -80,13 +80,59 @@ The first drafts of the admin and teacher interfaces were implemented in this ph
 \subsection{Sprint 3: Functionality Creation }
 This phase will compose the bulk of the project as the first development of the functionality requested by the project owner are constructed. As the prototype progresses check ins with the client will be conducted to be as sure as possible that the team stays on track. Pages will be tested as the pages are constructed.
 
+During this phase several pages were constructed. The first of these pages was the "Add a Class" page, this pages creates a form that the user can type the information for the class in and create an entry in the database for that class. 
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{pics/Add_Class.png}
+  \caption{Add Class Form}
+  \label{fig:Add Class}
+\end{figure}
+
+The second page made was the add student page which allowed the user set a students registration status for specific classes to approved, or rejected from pending. This function was later pulled when the student interface was dropped from the requirement. However at the request of the client the function was left in for future adaptations and uses.
+
+Another set of pages during this phase was the search pages. There are three types of search pages within the project, student, class, and teacher. The user is able to search any of these elements by name with the default search bar. Users can also search by different fields if they use the advanced search functionality. Lastly the users can select specific data fields and pull up all that entry's data and update it if needed.
+
+Assign teacher allows users to select a class, if that class is assigned to a teacher already a dialog pops up asking the user if they want to reassign the class. If the class is not assigned or if the user selected to reassign the class then the function generates a list of available teacher for the given class time. The user can then select a teacher and assign them.
+
+The log in page allows the system to deal with different user levels, and provide navigation to the different landing pages. The role sheet allows the currently signed in teacher to produce and print the role sheets for each of their classes.  The last main function created during this phase was the update teacher function which allow the admins to select a teacher then a form is population with the selected teacher's information. The user can then update the teacher's information within the system. The final step of this phase was the third client presentation, which capped of the first semester and the senior design I class.
+
 \subsection{Sprint 4: Development Updates and Payroll/Billing}
-This phase will consist of updates to existing functions, updates, and prototyping updated, new, or misunderstood functions. Testing will be conducted as updates are made to ensure new pages work, and updated pages retain requested function. During this phase user stories and requirements should move to final completion.
+This phase consisted of updates to phase three functions, adding new functions, and adding in the payroll function to the project. The first part of this phase was sprint 3.5, during this time the team added several bug fixes such as assign class and connecting functions together for a connected prototype.
+
+One of the pages completed during this sprint was the teaching history function. This function displays all the classes the teacher has taught in the recent time frame. Another page tackled was the student billing invoice in this function the amount owed and the amount the student has payed is displayed along with the classes the student took to generate that amount. Alongside this function the team created the ability to process a payment for a student. The user is allowed to enter in the amount the student paid and the payment type. The user can also process a full payment if the student elected to pay the full amount.
+
+As a payment is processed it is added to the student billing history which can then be viewed and printed by the user. The billing history contains the payment id, the name of the student, the amount paid, and the date of payment. Another function implemented during this phase was the students credit interface, within this page the user can select a student and then apply a credit to that student. The credits do not directly connect to any other function due to the fact that the Academy handles credits on a student by student basis at the discretion of the Academy owner Julie McFarland.
+
+Similar to credits the system also includes the functionality for the modify tuition and fees within the database. The tuition page allows the user to select the tuition name and change the rate. The user can also hit the add button on the page which opens a dialog box where they can put in the required information. Other buttons included within this page are update and delete which allow the user to update an existing entry a=or delete an entry respectfully . The fees page has the same structure as the tuition pages, the user is able to select a fee and update or delete the fee rates. There also is the ability when add or updating a fee to mark it as a percent so the value given must be a decimal from zero to one. The last function added during this phase was the ability to enter in teacher pay rates, this function allows the admin in the system to declare a pay name and pay rate that a teacher has and the amount of hours they worked. The function then calculates the gross wage of the teacher based on those pay rates. The teacher side also has an enter hours pages which allows the user to enter in the amount of hours they worked under each pay type.  
 
 \subsection{Sprint 5: Updates Bug Fixes and Functionality}
-During this phase the last bit of testing on the remaining functionality will be conducted. After this the final production needs will be completed, this may consist of final deployment or other steps depending on the state of the project at this time. Lastly the project will be handed over to the client for delivery and the senior design fair. By this point the product itself will live on the box provided by the client and a production server. Access Information, logs, and user guides and manuals will be provided, with the user guide as both pdf files and psychical copies.
+During sprint five the team tackled the remain functionality, the sprint rollover and various bug fixes. The first of these fixes was the ability to update an admin or teachers information and have the updates crossover between the two tables in the database. The address in the forms page where also modified to always be uppercase to avoid the occurrence of two similar names within the database. Another modification made was to the approve/reject student page, when the page was initially created the team did not allow rejected students to be re approved, this function was then adapted to allow for this to be closer to the client's request. Change user credentials were also added during this phase.
+
+An admin list was added that displays the admins for the system and allows the addition and removal of admins from the system. Alongside this function several removal functions where added. These include: remove student, remove class, remove class location, and remove teacher, the function are final purges for the data. This means that if a user removes a teacher the teacher information, classes taught, classes assigned, and account information are all removed from the system. For students the delete also includes all the billing and student data, so the system delete functions should only be used when the user is absolutely sure that the information is not longer needed.
+
+The main function completed during this phase was the student registration interface. This allows the Academy to enter in new students to the system, and update the student. The user can then pull up a list of available classes and classes the student is regesteer for and add them to classes. These classes are them added to the student-class table and the classes are processed by the system. The user can then view and print out student and or teacher schedules.
+
+Bug Fixes Completed During Phases 4, 5, and 6:
+\begin{enumerate}
+\item Date time update bug
+\item Form information bug
+\item Add teacher class to remove teacher
+\item Spelling errors
+\item Remove class cost
+\item Search update bug
+\item Search refresh bug
+\item Advanced search bug
+\item Error checks
+\item Remove uneccicayry button
+\item Dynamic times on schedules
+\item Few combo box changes
+\item Text changes
+\end{enumerate}
 
 \subsection{Sprint 6: Updates, Fixes, and Iteration Packaging}
+During the last phase the team attempted to finish as much as possible before turning in this iteration of the project.  This phase consisted mostly of bug fixes and client updates after demoing the final project the team managed to create.  First since the remove student showed all students in the system the team added a search bar to clean up the functions execution as much as possible. Second entering teacher hours was refined a bit to allow for a default course hours rate. Next several bugs were fixed, and modify location functionality was added.
+
+Student registration was also complete during this phase. The last half of this phase was focus on prep and execution of the design fair presentation held by the South Dakota School of Mines and Technology. Overall this last phase consisted of the last step of senior design and preparing to hand off our teams iteration of the DanceSoft project.
 
 
 \section{Terminology and Acronyms}
@@ -105,15 +151,144 @@ During this phase the last bit of testing on the remaining functionality will be
 \end{enumerate}
 
 \section{Sprint Schedule}
-The sprint schedule.  Can be tables or graphs.   This can be a list of dates with the visual 
-representation given below.
+There are three sprints for Fall semester and three for Spring semester 
+\begin{enumerate}
+\item Sprint 1: 9/14/15 - 10/2/15
+\item Review and Client Presentation: 10/20/15
+\item Sprint 2: 10/12/15 - 10/30/15
+\item Sprint 3: 11/9/15 - 11/27/15
+\item Review and Client Presentation: 12/3/15
+\item Sprint 4: 1/18/15 - 2/5/16
+\item Sprint 5: 2/15/16 - 3/4/16
+\item Review and Client Presentation: 3/22/16
+\item Sprint 6: 3/21/16 - 4/15/16
+\item Design Fair: 4/19/16
+\end{enumerate}
 
-\section{Timeline}
-Gantt chart or other type of visual representation of the project timeline.
+%\section{Timeline}
+%Gantt chart or other type of visual representation of the project timeline.
 
 \section{Backlogs}
-Place the sprint backlogs here.    The product backlog will be in the chapter with the user 
-stories.   
+\subsection{Sprint 1 Backlog}
+\begin{itemize}
+\item Set Up Github repository
+\item Conduct Programming Language Research and Analysis
+\item Conduct Database System and Infrastructure Research and Analysis
+\item Conduct GUI Interface and Framework Research 
+\item Sprint 1 Research and Sprint Report and Decision
+\item Begin Practicing and Learning Development Materials
+\item Prepare Client Presentation 1
+\end{itemize}
+
+\subsection{Sprint 2 Backlog}
+\begin{itemize}
+\item Create Starting Database Tables and Infrastructure
+\item Create GUI Interface Theme and Design
+\item Create Log In Page 
+\item Create Permission System 
+\item Create Landing Pages for Admin and Teachers
+\item Sprint 2 Report and Analysis  
+\end{itemize}
+
+\subsection{Sprint 3 Backlog}
+\begin{itemize}
+\item Create Student Search
+\item Add a Class
+\item Produce a Class Role Sheet
+\item Create Employee Search
+\item Create Class Search
+\item Add Advanced Search to Searches
+\item Add and Remove Students From a Class 
+\item Modify Student Information
+\item Assign Teacher to a Class
+\item Sprint 3 Report and Analysis
+\item Turn In Semester One Documentation
+\item Prepare Client Presentation 2  
+\end{itemize}
+
+\subsection{Sprint 3.5 Backlog}
+Most of Sprint 3.5 was bug fixes and putting function together in the interface. After this sprint it became clear to the team that the team would not be able to complete the student interface during this first iteration of the project. As such the student interface and the considering functionally where removed from the list of requirements upon discussions with the client.
+
+\begin{itemize}
+\item Role Sheet Redesign 
+\item Tie the individual Functions Together Into Single Interface and Prototype 
+\item Fix Various Bugs
+\item Add In Extra Functions Implied By User Stories
+\item Adapt Database After First Semester 
+\end{itemize}
+
+\subsection{Sprint 4 Backlog}
+\begin{itemize}
+\item Enter Staff Pay Rates
+\item Enter and Update Tuition Rates
+\item Apply and Update Credits to a Student
+\item Give Early Registration Discounts
+\item Billing/Payment History for a Student
+\item Enter a Full Payment for Several Students
+\item Full Payment for One Student
+\item Allow for Payments From Multiple Sources 
+\item Look at What A Student Still Owes
+\item View Teaching History
+\item Sprint 4 Report and Analysis 
+\end{itemize}
+
+\subsection{Sprint 5 Backlog}
+\begin{itemize}
+\item Enter in Student Registration Information for Existing Students
+\item Modify Admin and Teacher Crossover 
+\item Ignore Address Case to Forms 
+\item Modify Add/Remove Students for Client Update
+\item Allow for and Add Multiple Source of Pay to Adapt to Client Request 
+\item System Admin List
+\item Enter Staff Hours 
+\item Add and Remove Class Location
+\item Remove Admin
+\item Remove Class
+\item Remove Teacher
+\item Remove Student
+\item Prorated Refunds
+\item Update Tuition Rates Request By Client
+\item Order List Functions
+\item Password and User Name Reset Functions
+\item Quality Updates
+\item Client and Teacher Project Reformation Meeting
+\item Sprint 5 Report and Analysis 
+\end{itemize}
+
+\subsection{Sprint 5 Fixed Bug Backlog}
+\begin{itemize}
+\item Add Remove From Teacher-Class Table to Remove Teacher Function
+\item Fixed Searches Errors
+\item Fixed Advanced Search Issues 
+\item Remove Open Buttons
+\item Add More Return Buttons for Quality 
+\item Added Dynamic Teacher and Student Schedule
+\item Modified Format of Functions to Better Match Database Options 
+\item Remove Extra Navigation Bar
+\item Remove and Update Extra System Buttons
+\item Error Check Bug Fixes
+\item Fixed Print Functionality After Change
+\item Quality Updates 
+\end{itemize}
+
+
+\subsection{Sprint 6 Backlog}
+\begin{itemize}
+\item Change Log In and Highlighted Button
+\item Compute Instructor Wages
+\item Add Student and New Student Registration 
+\item Update to Refund Page
+\item Assign Discounts (if possible before submission) 
+\item Modify Location
+\item Remove Command Prompt 
+\item Final Mass Test for This Iteration of Project
+\item Design Fair Materials and Presentation
+\item Reformatting and re Factoring of Design Docs for Iteration Model
+\item Finish as much material for next Iteration as Possible
+\item Client and Teacher Project Evaluation Meeting
+\item Sprint 6 Report and Analysis
+\item Submission of Iteration Materials 
+\end{itemize}   
 
 
 \section{Development Environment}
@@ -128,28 +303,53 @@ The source code for this project was written in Python. Due to the cross platfor
 \item Xcode 
 \end{enumerate}
 
-Any developers wishing to continue work on this project should be able to run this software within any python capable interface of their choice.  
+Any developers wishing to continue work on this project should be able to run this software within any Python 3 capable interface of their choice.  
 
 \subsection{MySQL Database}
 The projects back end contains a MySQL database. MySQL can be installed on a developers computer free of charge off of the MySQL website. This package also contains a helpful GUI interface called MySQL workbench which can aid the user in manipulating the database if they so choose. However the system should be editable within any MySQL enabled database manipulation software. Once a developer has MySQL installed they simply need to log in and connect to the database using credentials provided by the client.
 
 \subsection{PyQt}
+The projects front end interface is developed using PyQt. PyQt is an extention of Qt it allows the development of Qt GUI's and functionality in Python. The tool kit contains all the normal Qt widgets including: line edits, spin boxes, combo boxes, text edits, and other normal GUI widgets. PyQt also has a designer that the team used to create the major interface pages. The designer allows the user to click and drag components and develop the pages in a more visual environment. The designer can then create generated code for the pages using the pyuic4 command in a terminal as follows, "pyuic4 -o generatedCode.py uiFilename.ui" this command produces a .py file containing the generated designer code. The generated class can then be included in the python files to use the code. In classes written by a developer, programs can include any of the major Python 3 or PyQt libraries.
+
+Some common libraries the team used where:
+\begin{itemize}
+\item QtGui
+\item QtCore
+\item PyQt4.QtSql
+\end{itemize}
+
+
 
 \section{Development IDE and Tools}
-Describe which IDE and provide links to installs and/or reference material. 
+The two main IDEs were used in the this project were Microsoft Visual Studio 2015, and Xcode 6. Python IDLE would also be used on occasion for minor quick fixes so the main IDEs would not need to be loaded completely. Of these the bulk of development was conducted with Visual Studio due to the fact that the laptops provided by South Dakota School of Mine and Technology run windows as their primary operating system. Visual Studio also provided a suite of debugging and testing features that allowed the team to manage and manipulate the code effectively.\\
+The second IDE used was Xcode which is the primary development environment for the Mac operating system. This IDE was used when ever we want to directly test Mac compatibility with our code. Since Mac is the required working operating system for this project. Though due to accessibility Xcode was not the Main IDE used by the team. Should the project be further developed in the future IDE selection should not matter due to the cross-platform development of the project.
+
+\begin{enumerate}
+\item Visual Studio install: \url{https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx}
+\item Visual Studio Reference: \url{https://msdn.microsoft.com/en-us/library/scesz732.aspx}
+\item Xcode install: \url{https://developer.apple.com/xcode/downloads/}
+\item Xcode Reference: \url{https://developer.apple.com/}
+\item IDLE install: comes with python 3 download url{https://www.python.org/downloads/}
+\item IDLE Reference: \url{https://docs.python.org/3.1/}
+\end{enumerate}
 
 \section{Source  Control}
 Source control for this project was conducted using Github, and the Github GUI. Github is a git add in, a developer  
 could use whatever git manager they want. The Github GUI can be installed from www.github.com. The repository was provided by South Dakota School of Mines as part of the senior design class. A developer wishing to continue work on this project simply need a git software and access as a contributor to the repository. However once the clients move the code to a local device a developer will need access to this device as well.
  
 \section{Dependencies}
-Describe all dependencies associated with developing the system. 
+Currently the project contains two known dependencies. The first is in the PyQt4 Python library which if changed could cause issues within the system GUI. However this seem unlikely since the main focus of PyQt updates is now focused on PyQt5. Second is the project dependence on MySQL relational database. This dependency should also be negligible since any update to MySQL are normally done with continuing compatibly with existing software in mind.
 
 \section{Build  Environment}
-A user, or developer can build the project through the use of precompiled python scripts. A user can run the log in script which will compile some of the Python scripts as to speed up various aspects of running the project. There are no special build scripts that are requires before the project can be run.
+A user, or developer can build the project through the use of compiled python scripts. A user can run the log in script which will compile some of the Python scripts as to speed up various aspects of running the project. There are no special build scripts that are requires before the project can be run a user simply needs to run the login script for the DanceSoft project.
 
 \section{Development Machine Setup}
-If warranted, provide a list of steps and details associated with setting up a 
-machine for use by a developer. 
+\begin{enumerate}
+\item A machine will need to be acquired that is capable of running PyQt and MySQL
+\item The user will need to install python 3 from \url{https://www.python.org/download/releases/3.4.3/}
+\item Next the user need to install the PyQt 4 library and the Qt designer if necessary from \url{https://riverbankcomputing.com/software/pyqt/download}
+\item After downloading Pyqt the user need to download MySql from \url{http://dev.mysql.com/} and connect to the database where the DanceSoft database is stored.
+\item Now if the PyQt libraries have been installed correctly the user should be able to run the PyQt code and proceed to develop the DanceSoft project.
+\end{enumerate}
 
 

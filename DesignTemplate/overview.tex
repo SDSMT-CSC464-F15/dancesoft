@@ -51,12 +51,22 @@ Overall the system goal is to provide a environment where academy owners, teache
 
 \section{System Overview and Diagram}
 \textmd{Users will access this application through a local GUI or a web application depending on their position within the system. The GUI application after client approval or more iterations should reach a final goal of being deployed on the local machines within the Rapid City Academy of Dance Arts. 
-When a local GUI user connects the user will navigate through the various pages listed above to the desired functionality. Figure 2 shows a simplistic view of the GUI Architecture.
+When a local GUI user connects the user will navigate through the various pages listed above to the desired functionality. Figure \ref{fig:GUI Overview} shows a simplistic view of the GUI Architecture.
 There are two major components to this iteration the project, database, and admin/teacher interface.  Each section is described in more functional detail above and in} \bf section 4 Design and Implementation \rm.
 The database architecture is a system of mySQL tables connected through the use of various keys. The tables correspond to the necessary information for various functionality within the system. [MB]
 
 
-\bf(ADD FIGURES AFTER SYSTEM DESIGN FINALIZATION)
+\begin{figure}
+  \includegraphics[width=\linewidth]{GUI.jpg}
+  \caption{Main GUI Overview}
+  \label{fig:GUI Overview}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{DatabaseDiagram.jpg}
+  \caption{Main Database Overview}
+  \label{fig:Database Overview}
+\end{figure}
 
 
 \section{Technologies Overview}
@@ -68,6 +78,8 @@ The database architecture is a system of mySQL tables connected through the use 
 \item PyQt and Qt Designer - GUI package and development environment, these tools are publicly available and can be downloaded for free off the internet. 
 \item MySQL - MySQL provides the database and relational quires to manage the data and organize it within the system. This software is also free to use and can be downloaded from the MySQL website.
 \end{enumerate}
+
+
 
 
 \textmd{These technologies were selected after a first research sprint where research into programming language, GUI, and database options was conducted and the technologies were selected. A brief description of the research can be found in the sprint 1 report or the first prototype sections of this document. [MB]}

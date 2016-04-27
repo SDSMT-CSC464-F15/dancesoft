@@ -2,19 +2,52 @@
 % !TEX root = DesignDocument.tex
 
 \chapter{Release -- Setup -- Deployment}
-This section should contain any specific subsection regarding specifics in releasing, 
-setup, and/or deployment of the system. 
+This section contains a list of the deployment dependencies, deployment instruction for future iteration development, development setup instructions, and a brief description of the concept and future versions and development of the DanceSoft product.  
 
 
 \section{Deployment Information and Dependencies}
-Are there dependencies that are not embedded into the system install? 
+The DanceSoft project created by this team is meant to be a proof of concept for the creation of a administrative software for the Academy of Dance Arts. Since this is a first iteration of the software, the system is not meant to be deployed for industrial use at the Academy. The project contains several install dependencies since a actually installer was not developed for this project.\\
+In order run this iteration of the DanceSoft software the user will need to install several separate components, these include:
+
+\begin{enumerate}
+\item A valid instillation of Python 3 which can be acquired from \url{https://www.python.org/downloads/}
+\item The PyQt 4 libraries and the PyQt designer suite acquired from url{https://www.riverbankcomputing.com/software/pyqt/download}. The product will not work with PyQt 5 without modification due to the incompatibilities between PyQt 4 \& 5
+\item A MySQL database that can be used to store data, and possibly a database management software like MySQL Workbench for direct data manipulation and continued development. You can download MySQL free of charge from \url{http://dev.mysql.com/downloads/} and MySQL workbench can be found at \url{http://dev.mysql.com/downloads/workbench}. However any MySQL database manipulation software should work with the project, so the user can use their preferred software.
+\end{enumerate}
+
+Once these main three software packages or libraries are installed the user should be able to open all the Python scripts for development or run the log in script to run the software. Other Dependencies for this project include:
+
+\begin{enumerate}
+\item The database connection - If the software can not connect to the database either over a network or a local machine, the product will be rendered useless on account of the log in page and most to all pages relying on the database to function correctly.
+\item The PyQt 4 libraries - Like with most programming languages and libraries if the standard functions are modified it can break or alter the software functionality. However this should not be a problem when deploying the system due to the main work being done on PyQt 5.
+\item PyQt instalation - During Deployment if the PyQt libraries are installed incorrectly then the system will fail to deploy/run effectively.
+\item MySQL
+\item Python 3
+\end{enumerate}
 
 
 
 \section{Setup Information}
-How is a setup/install built? 
+Setup for further development of the DanceSoft has several steps and pieces as no installer was developed within the time frame of this iteration. The following is a general overview of the steps to step up for development of the system.
+
+\subsection{Installing Python 3}
+The first major component of the system is the main programming language for this version Python. Python has two main versions at the time of writing this document, these are Python 2.7 and Python 3.4, the Dancesoft project was developed using python 3.4 and therefore will not work on Python 2.7.
+To install Python 3 go to \url{https://www.python.org/downloads/} from this webpage a developer can download several version installers for Windows, Mac OS X and Linux/UNIX. Once the installer has been run a developer can confirm success by running the Python 3 command from the command line.
+
+\subsection{Installing PyQt 4 and Designer toolkit }
+
+\subsection{Installing MySQL}
+The database component used by the team was MySQL, this software can be download and installed free of charge from \url{http://dev.mysql.com/downloads/}. Further manipulation software such as MySQL Workbench, or Navicat can be installed to help with development. Several pieces of  software can also be found on the MySQL webpage, however any MySQL development software can be used. It is up to future developer to find the software that fits there needs the best.
+
+\subsection{Running Project}
+Once all the necessary components have been downloaded and installed a developer can write/run the python and PyQt scripts for the project. To start the current system the user must run the "login" script to pull up the log in window and begin using the software. 
 
 
+\section{System Version Information}
+Past version of this system have been presented to the client as senior design projects, however due to reasons unknown by this team the projects were abandoned by the client. Therefore the previous versions have no effect or input on this teams proof of concept for the DanceSoft system. 
 
-\section{System  Versioning Information}
-How is the system versioned? 
+The system is in a pre-industrial version noted in this document as version 1.x.x this iteration of the DanceSoft project is a proof of concept presented to the client Jeff McGough. The idea of this first iteration is to show that a true in use launch of this software is possible. Whether this is through a follow up senior design team that will use this teams iteration as a blueprint, Dr. Jeff McGough continuing development himself, or finishing the project through a contractor, or industrially mentored senior design team.
+
+This version shows execution of the main functions laid out in the initial requirements. These functions provide an ideas for a minimum viable software. The first version of the software was meant to have a full interface and a student web portal for student registration, billing, and information management. However due to time constraints, DanceSoft team issues, and to many other academic commitments from the two members of the DanceSoft team, the client converted the projects goals from a industrial launched product to a proof of concept for future iteration and versions. 
+
+Future versions of the software however the client may choose to create them will most likely include more refined functionality, the addition of the student web portal if possible, more database concurrency, and security. Even though the current version is a proof of concept as described in the DanceSoft software contract; It is the belief of this team that the final version of this software is possible through future iterations, and versions.

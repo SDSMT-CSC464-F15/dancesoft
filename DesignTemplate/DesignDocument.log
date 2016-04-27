@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  26 APR 2016 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  26 APR 2016 23:21
 entering extended mode
 **DesignDocument.tex
 (DesignDocument.tex
@@ -1887,7 +1887,7 @@ Overfull \hbox (2.48369pt too wide) in paragraph at lines 48--48
  []
 
 
-Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--63
+Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--69
 [] 
  []
 
@@ -1984,18 +1984,22 @@ Chapter 5.
 Chapter 6.
 ) (deploy.tex [35] [36]
 Chapter 7.
-) (userdocs.tex [37
 
-] [38
+Overfull \hbox (122.71681pt too wide) in paragraph at lines 14--15
+[]\T1/lmr/m/n/10 The PyQt 4 li-braries and the PyQt de-signer suite ac-quired f
+rom url-https://www.riverbankcomputing.com/software/pyqt/download.
+ []
 
-]
+[37
+
+]) (userdocs.tex [38]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-<pics/userGuide/login.png, id=1731, 304.88907pt x 154.32657pt>
+<pics/userGuide/login.png, id=1742, 304.88907pt x 154.32657pt>
 File: pics/userGuide/login.png Graphic file (type png)
 
 <use pics/userGuide/login.png>
@@ -2011,7 +2015,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-<pics/userGuide/admin_landing.png, id=1732, 410.2828pt x 292.84406pt>
+<pics/userGuide/admin_landing.png, id=1743, 410.2828pt x 292.84406pt>
 File: pics/userGuide/admin_landing.png Graphic file (type png)
 
 <use pics/userGuide/admin_landing.png>
@@ -2028,8 +2032,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-[39] [40pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.8.1}) has been already used, duplicate ignored
+[39
+
+] [40pdfTeX warning (ext4): destination with the same identifier (name{figure.8
+.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2041,7 +2047,7 @@ l.42
                                                   \fi \fi 
 l.42 
       <./pics/userGuide/login.png> <./pics/userGuide/admin_landing.png>]
-<pics/userGuide/teacherSearch.png, id=1742, 601.4972pt x 498.36188pt>
+<pics/userGuide/teacherSearch.png, id=1753, 601.4972pt x 498.36188pt>
 File: pics/userGuide/teacherSearch.png Graphic file (type png)
 
 <use pics/userGuide/teacherSearch.png>
@@ -2058,7 +2064,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
-<pics/userGuide/updateTeacher.png, id=1744, 524.71031pt x 390.70969pt>
+<pics/userGuide/updateTeacher.png, id=1755, 524.71031pt x 390.70969pt>
 File: pics/userGuide/updateTeacher.png Graphic file (type png)
 
 <use pics/userGuide/updateTeacher.png>
@@ -2084,7 +2090,7 @@ on with the same identifier (name{figure.8.4}) has been already used, duplicate
                                                   \fi \fi 
 l.63 
       <./pics/userGuide/updateTeacher.png>]
-<pics/userGuide/hours.png, id=1754, 471.26062pt x 310.15875pt>
+<pics/userGuide/hours.png, id=1765, 471.26062pt x 310.15875pt>
 File: pics/userGuide/hours.png Graphic file (type png)
 
 <use pics/userGuide/hours.png>
@@ -2095,7 +2101,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
-<pics/userGuide/assignClass.png, id=1755, 352.31625pt x 276.28218pt>
+<pics/userGuide/assignClass.png, id=1766, 352.31625pt x 276.28218pt>
 File: pics/userGuide/assignClass.png Graphic file (type png)
 
 <use pics/userGuide/assignClass.png>
@@ -2106,7 +2112,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
-<pics/userGuide/history.png, id=1756, 478.03593pt x 337.26pt>
+<pics/userGuide/history.png, id=1767, 478.03593pt x 337.26pt>
 File: pics/userGuide/history.png Graphic file (type png)
 
 <use pics/userGuide/history.png>
@@ -2147,7 +2153,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
  []
 
-<pics/userGuide/classSearch.png, id=1773, 602.25pt x 499.8675pt>
+<pics/userGuide/classSearch.png, id=1784, 602.25pt x 499.8675pt>
 File: pics/userGuide/classSearch.png Graphic file (type png)
 
 <use pics/userGuide/classSearch.png>
@@ -2171,7 +2177,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--111
                                                   \fi \fi 
 l.111 
        <./pics/userGuide/classSearch.png>]
-<pics/userGuide/setSemester.png, id=1779, 302.63063pt x 186.6975pt>
+<pics/userGuide/setSemester.png, id=1790, 302.63063pt x 186.6975pt>
 File: pics/userGuide/setSemester.png Graphic file (type png)
 
 <use pics/userGuide/setSemester.png>
@@ -2188,7 +2194,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-<pics/userGuide/searchStudents.png, id=1780, 603.0028pt x 499.11469pt>
+<pics/userGuide/searchStudents.png, id=1791, 603.0028pt x 499.11469pt>
 File: pics/userGuide/searchStudents.png Graphic file (type png)
 
 <use pics/userGuide/searchStudents.png>
@@ -2214,7 +2220,7 @@ n with the same identifier (name{figure.8.10}) has been already used, duplicate
                                                   \fi \fi 
 l.140 
        <./pics/userGuide/searchStudents.png>]
-<pics/userGuide/credits.png, id=1792, 347.79938pt x 166.37157pt>
+<pics/userGuide/credits.png, id=1803, 347.79938pt x 166.37157pt>
 File: pics/userGuide/credits.png Graphic file (type png)
 
 <use pics/userGuide/credits.png>
@@ -2225,21 +2231,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-<pics/userGuide/Addstu.png, id=1793, 393.72093pt x 338.01282pt>
+<pics/userGuide/Addstu.png, id=1804, 393.72093pt x 338.01282pt>
 File: pics/userGuide/Addstu.png Graphic file (type png)
 
 <use pics/userGuide/Addstu.png>
 Package pdftex.def Info: pics/userGuide/Addstu.png used on input line 154.
 (pdftex.def)             Requested size: 469.75499pt x 403.28723pt.
 
-<pics/userGuide/studentReg.png, id=1794, 673.01437pt x 475.02469pt>
+<pics/userGuide/studentReg.png, id=1805, 673.01437pt x 475.02469pt>
 File: pics/userGuide/studentReg.png Graphic file (type png)
 
 <use pics/userGuide/studentReg.png>
 Package pdftex.def Info: pics/userGuide/studentReg.png used on input line 165.
 (pdftex.def)             Requested size: 469.75499pt x 331.56548pt.
 
-<pics/userGuide/AddStudent.png, id=1795, 593.21625pt x 393.72093pt>
+<pics/userGuide/AddStudent.png, id=1806, 593.21625pt x 393.72093pt>
 File: pics/userGuide/AddStudent.png Graphic file (type png)
 
 <use pics/userGuide/AddStudent.png>
@@ -2287,7 +2293,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
-<pics/userGuide/partPay.png, id=1817, 304.13625pt x 182.18062pt>
+<pics/userGuide/partPay.png, id=1828, 304.13625pt x 182.18062pt>
 File: pics/userGuide/partPay.png Graphic file (type png)
 
 <use pics/userGuide/partPay.png>
@@ -2310,7 +2316,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--196
                                                   \fi \fi 
 l.196 
        <./pics/userGuide/partPay.png>]
-<pics/userGuide/enterPay.png, id=1824, 290.58563pt x 167.12437pt>
+<pics/userGuide/enterPay.png, id=1835, 290.58563pt x 167.12437pt>
 File: pics/userGuide/enterPay.png Graphic file (type png)
 
 <use pics/userGuide/enterPay.png>
@@ -2321,14 +2327,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
-<pics/userGuide/stuBalence.png, id=1825, 484.81125pt x 387.69844pt>
+<pics/userGuide/stuBalence.png, id=1836, 484.81125pt x 387.69844pt>
 File: pics/userGuide/stuBalence.png Graphic file (type png)
 
 <use pics/userGuide/stuBalence.png>
 Package pdftex.def Info: pics/userGuide/stuBalence.png used on input line 207.
 (pdftex.def)             Requested size: 469.75499pt x 375.67657pt.
 
-<pics/userGuide/billHistory.png, id=1826, 481.04718pt x 384.6872pt>
+<pics/userGuide/billHistory.png, id=1837, 481.04718pt x 384.6872pt>
 File: pics/userGuide/billHistory.png Graphic file (type png)
 
 <use pics/userGuide/billHistory.png>
@@ -2336,7 +2342,7 @@ Package pdftex.def Info: pics/userGuide/billHistory.png used on input line 216.
 
 (pdftex.def)             Requested size: 469.75499pt x 375.66429pt.
 
-<pics/userGuide/tuitAndFees.png, id=1827, 814.54312pt x 245.41687pt>
+<pics/userGuide/tuitAndFees.png, id=1838, 814.54312pt x 245.41687pt>
 File: pics/userGuide/tuitAndFees.png Graphic file (type png)
 
 <use pics/userGuide/tuitAndFees.png>
@@ -2395,7 +2401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
 
-<pics/userGuide/studentSchedule.png, id=1850, 632.3625pt x 383.18156pt>
+<pics/userGuide/studentSchedule.png, id=1861, 632.3625pt x 383.18156pt>
 File: pics/userGuide/studentSchedule.png Graphic file (type png)
 
 <use pics/userGuide/studentSchedule.png>
@@ -2419,7 +2425,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--272
                                                   \fi \fi 
 l.272 
        <./pics/userGuide/studentSchedule.png>]
-<pics/userGuide/teacherSchedule.png, id=1857, 633.11531pt x 383.93437pt>
+<pics/userGuide/teacherSchedule.png, id=1868, 633.11531pt x 383.93437pt>
 File: pics/userGuide/teacherSchedule.png Graphic file (type png)
 
 <use pics/userGuide/teacherSchedule.png>
@@ -2431,7 +2437,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
-<pics/userGuide/role.png, id=1858, 484.05844pt x 385.44pt>
+<pics/userGuide/role.png, id=1869, 484.05844pt x 385.44pt>
 File: pics/userGuide/role.png Graphic file (type png)
 
 <use pics/userGuide/role.png>
@@ -2461,7 +2467,7 @@ cate ignored
                                                   \fi \fi 
 l.300 
        <./pics/userGuide/role.png>]
-<pics/pythonFiles.png, id=1871, 898.85812pt x 312.41719pt>
+<pics/pythonFiles.png, id=1882, 898.85812pt x 312.41719pt>
 File: pics/pythonFiles.png Graphic file (type png)
 
 <use pics/pythonFiles.png>
@@ -2494,7 +2500,7 @@ Chapter 10.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1924, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1935, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -2516,7 +2522,7 @@ F version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1927, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1938, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -2544,7 +2550,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1949, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1960, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -2563,7 +2569,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1954, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1965, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -2582,7 +2588,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1959, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1970, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -2601,7 +2607,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1973, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1984, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -2629,7 +2635,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--14
 
  []
 
-[1] [2] <d1.png, id=2039, 1538.74875pt x 767.86874pt>
+[1] [2] <d1.png, id=2050, 1538.74875pt x 767.86874pt>
 File: d1.png Graphic file (type png)
  <use d1.png>
 Package pdftex.def Info: d1.png used on input line 107.
@@ -2670,14 +2676,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--165
 
  []
 
-[5] <database_tables.png, id=2092, 690.32906pt x 292.09125pt>
+[5] <database_tables.png, id=2103, 690.32906pt x 292.09125pt>
 File: database_tables.png Graphic file (type png)
 
 <use database_tables.png>
 Package pdftex.def Info: database_tables.png used on input line 202.
 (pdftex.def)             Requested size: 234.87749pt x 99.38101pt.
  [6]
-<login_page.png, id=2111, 304.88907pt x 154.32657pt>
+<login_page.png, id=2122, 304.88907pt x 154.32657pt>
 File: login_page.png Graphic file (type png)
  <use login_page.png>
 Package pdftex.def Info: login_page.png used on input line 225.
@@ -2687,7 +2693,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<admin_landing.png, id=2112, 410.2828pt x 292.84406pt>
+<admin_landing.png, id=2123, 410.2828pt x 292.84406pt>
 File: admin_landing.png Graphic file (type png)
  <use admin_landing.png>
 Package pdftex.def Info: admin_landing.png used on input line 233.
@@ -2728,7 +2734,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--306
 
  []
 
-[9] <search.png, id=2153, 614.295pt x 502.12593pt>
+[9] <search.png, id=2164, 614.295pt x 502.12593pt>
 File: search.png Graphic file (type png)
  <use search.png>
 Package pdftex.def Info: search.png used on input line 346.
@@ -2754,7 +2760,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 422--427
 
  []
 
-[12] [13] <tuitionRates.png, id=2221, 410.2828pt x 405.01312pt>
+[12] [13] <tuitionRates.png, id=2232, 410.2828pt x 405.01312pt>
 File: tuitionRates.png Graphic file (type png)
 
 <use tuitionRates.png>
@@ -2765,26 +2771,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
-<teacherHistory.png, id=2222, 276.28218pt x 339.51843pt>
+<teacherHistory.png, id=2233, 276.28218pt x 339.51843pt>
 File: teacherHistory.png Graphic file (type png)
 
 <use teacherHistory.png>
 Package pdftex.def Info: teacherHistory.png used on input line 490.
 (pdftex.def)             Requested size: 138.14075pt x 169.75879pt.
- <payment.png, id=2223, 313.17pt x 185.19188pt>
+ <payment.png, id=2234, 313.17pt x 185.19188pt>
 File: payment.png Graphic file (type png)
 
 <use payment.png>
 Package pdftex.def Info: payment.png used on input line 497.
 (pdftex.def)             Requested size: 156.58461pt x 92.5957pt.
  [14 <./tuitionRates.png> <./teacherHistory.png>]
-<invoice.png, id=2229, 493.845pt x 389.95688pt>
+<invoice.png, id=2240, 493.845pt x 389.95688pt>
 File: invoice.png Graphic file (type png)
  <use invoice.png>
 Package pdftex.def Info: invoice.png used on input line 501.
 (pdftex.def)             Requested size: 246.92189pt x 194.97795pt.
 
-<enterPayment.png, id=2230, 276.28218pt x 339.51843pt>
+<enterPayment.png, id=2241, 276.28218pt x 339.51843pt>
 File: enterPayment.png Graphic file (type png)
  <use enterPayment.png>
 Package pdftex.def Info: enterPayment.png used on input line 505.
@@ -2797,7 +2803,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 508--509
 
  []
 
-<billHistory.png, id=2236, 493.845pt x 389.95688pt>
+<billHistory.png, id=2247, 493.845pt x 389.95688pt>
 File: billHistory.png Graphic file (type png)
  <use billHistory.png>
 Package pdftex.def Info: billHistory.png used on input line 510.
@@ -2818,7 +2824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 638--639
 
  []
 
-<payRates.png, id=2287, 292.09125pt x 168.63pt>
+<payRates.png, id=2298, 292.09125pt x 168.63pt>
 File: payRates.png Graphic file (type png)
  <use payRates.png>
 Package pdftex.def Info: payRates.png used on input line 640.
@@ -2828,7 +2834,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 643--644
 
  []
 
-<feeDialog.png, id=2307, 333.49594pt x 127.22531pt>
+<feeDialog.png, id=2318, 333.49594pt x 127.22531pt>
 File: feeDialog.png Graphic file (type png)
  <use feeDialog.png>
 Package pdftex.def Info: feeDialog.png used on input line 645.
@@ -2838,7 +2844,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 663--664
 
  []
 
-<newAddStudent.png, id=2308, 395.97937pt x 338.76563pt>
+<newAddStudent.png, id=2319, 395.97937pt x 338.76563pt>
 File: newAddStudent.png Graphic file (type png)
 
 <use newAddStudent.png>
@@ -2854,7 +2860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 672--673
 
  []
 
-<newLocation.png, id=2319, 550.30594pt x 410.2828pt>
+<newLocation.png, id=2330, 550.30594pt x 410.2828pt>
 File: newLocation.png Graphic file (type png)
  <use newLocation.png>
 Package pdftex.def Info: newLocation.png used on input line 674.
@@ -2864,7 +2870,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
-<removal.png, id=2320, 271.76532pt x 110.66344pt>
+<removal.png, id=2331, 271.76532pt x 110.66344pt>
 File: removal.png Graphic file (type png)
  <use removal.png>
 Package pdftex.def Info: removal.png used on input line 680.
@@ -2878,7 +2884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 723--724
 
 ]
 Appendix C.
-(industrial.tex <Berger_Marcus_Resume.pdf, id=2365, 614.295pt x 794.97pt>
+(industrial.tex <Berger_Marcus_Resume.pdf, id=2376, 614.295pt x 794.97pt>
 File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 
 <use Berger_Marcus_Resume.pdf>
@@ -2889,7 +2895,7 @@ File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 Package pdftex.def Info: Berger_Marcus_Resume.pdf used on input line 7.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<Berger_Marcus_Resume.pdf, id=2368, page=1, 614.295pt x 794.97pt>
+<Berger_Marcus_Resume.pdf, id=2379, page=1, 614.295pt x 794.97pt>
 File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 
 <use Berger_Marcus_Resume.pdf, page 1>
@@ -2916,7 +2922,7 @@ Package pdftex.def Info: Berger_Marcus_Resume.pdf, page1 used on input line 7.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 [2 <./Berger_Marcus_Resume.pdf>]
-<Wu_resume.pdf, id=2419, 614.295pt x 794.97pt>
+<Wu_resume.pdf, id=2430, 614.295pt x 794.97pt>
 File: Wu_resume.pdf Graphic file (type pdf)
  <use Wu_resume.pdf>
 Package pdftex.def Info: Wu_resume.pdf used on input line 8.
@@ -2926,7 +2932,7 @@ File: Wu_resume.pdf Graphic file (type pdf)
 <use Wu_resume.pdf>
 Package pdftex.def Info: Wu_resume.pdf used on input line 8.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <Wu_resume.pdf, id=2422, page=1, 614.295pt x 794.97pt>
+ <Wu_resume.pdf, id=2433, page=1, 614.295pt x 794.97pt>
 File: Wu_resume.pdf Graphic file (type pdf)
 
 <use Wu_resume.pdf, page 1>
@@ -2967,7 +2973,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `DesignDocument.out' has not changed.
-(rerunfilecheck)             Checksum: DDA538FE545793AE72A47EB6440E697D;17843.
+(rerunfilecheck)             Checksum: 5F866EB839DFAF54EA1F8B87C7B18CC6;17840.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2975,9 +2981,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 27324 strings out of 493673
- 480513 string characters out of 3141524
- 609698 words of memory out of 3000000
+ 27332 strings out of 493673
+ 480577 string characters out of 3141524
+ 610698 words of memory out of 3000000
  29178 multiletter control sequences out of 15000+200000
  95283 words of font info for 79 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -3001,9 +3007,9 @@ nts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/lm/lmsso10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm
 /lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on DesignDocument.pdf (126 pages, 2404803 bytes).
+Output written on DesignDocument.pdf (126 pages, 2410379 bytes).
 PDF statistics:
- 2721 PDF objects out of 2984 (max. 8388607)
- 804 named destinations out of 1000 (max. 500000)
+ 2734 PDF objects out of 2984 (max. 8388607)
+ 812 named destinations out of 1000 (max. 500000)
  2311 words of extra memory for PDF output out of 10000 (max. 10000000)
 

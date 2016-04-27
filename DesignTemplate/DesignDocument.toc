@@ -166,8 +166,8 @@
 \contentsline {subsection}{\numberline {6.5.3}Success/Fail}{36}{subsection.6.5.3}
 \contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{37}{chapter.7}
 \contentsline {section}{\numberline {7.1}Deployment Information and Dependencies}{37}{section.7.1}
-\contentsline {section}{\numberline {7.2}Setup Information}{37}{section.7.2}
-\contentsline {section}{\numberline {7.3}System Versioning Information}{37}{section.7.3}
+\contentsline {section}{\numberline {7.2}Setup Information}{38}{section.7.2}
+\contentsline {section}{\numberline {7.3}System Version Information}{38}{section.7.3}
 \contentsline {chapter}{\numberline {8}User Documentation}{39}{chapter.8}
 \contentsline {section}{\numberline {8.1}User Guide}{39}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Entering the Software}{39}{subsection.8.1.1}

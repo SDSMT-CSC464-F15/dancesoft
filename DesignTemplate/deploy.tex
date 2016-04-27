@@ -20,7 +20,7 @@ Once these main three software packages or libraries are installed the user shou
 \begin{enumerate}
 \item The database connection - If the software can not connect to the database either over a network or a local machine, the product will be rendered useless on account of the log in page and most to all pages relying on the database to function correctly.
 \item The PyQt 4 libraries - Like with most programming languages and libraries if the standard functions are modified it can break or alter the software functionality. However this should not be a problem when deploying the system due to the main work being done on PyQt 5.
-\item PyQt instalation - During Deployment if the PyQt libraries are installed incorrectly then the system will fail to deploy/run effectively.
+\item PyQt installation - During Deployment if the PyQt libraries are installed incorrectly then the system will fail to deploy/run effectively.
 \item MySQL
 \item Python 3
 \end{enumerate}
@@ -32,9 +32,13 @@ Setup for further development of the DanceSoft has several steps and pieces as n
 
 \subsection{Installing Python 3}
 The first major component of the system is the main programming language for this version Python. Python has two main versions at the time of writing this document, these are Python 2.7 and Python 3.4, the Dancesoft project was developed using python 3.4 and therefore will not work on Python 2.7.
-To install Python 3 go to \url{https://www.python.org/downloads/} from this webpage a developer can download several version installers for Windows, Mac OS X and Linux/UNIX. Once the installer has been run a developer can confirm success by running the Python 3 command from the command line.
+To install Python 3 go to \url{https://www.python.org/downloads/} from this site a developer can download several version installers for Windows, Mac OS X and Linux/UNIX. Once the installer has been run a developer can confirm success by running the Python 3 command from the command line.
 
 \subsection{Installing PyQt 4 and Designer toolkit }
+
+A developer can install the PyQt 4 library from \url{https://www.riverbankcomputing.com/software/pyqt/download}. The PyQt 4 library can also be copied from the DanceSoft git repo located at \url{https://github.com/SDSMT-CSC464-F15/dancesoft}.
+
+The riverbank website contains installers for the PyQt library that include all needed components for the system. On Mac or Linux user can download the snips or source code from the website, or use one of the many tutorials online if needed. The team recommends just copying the files from the repo and placing the PyQt folder in the site-packages sub-folder of the Python 3 folder. 
 
 \subsection{Installing MySQL}
 The database component used by the team was MySQL, this software can be download and installed free of charge from \url{http://dev.mysql.com/downloads/}. Further manipulation software such as MySQL Workbench, or Navicat can be installed to help with development. Several pieces of  software can also be found on the MySQL webpage, however any MySQL development software can be used. It is up to future developer to find the software that fits there needs the best.

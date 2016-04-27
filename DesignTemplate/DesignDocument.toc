@@ -170,16 +170,26 @@
 \contentsline {section}{\numberline {7.3}System Versioning Information}{37}{section.7.3}
 \contentsline {chapter}{\numberline {8}User Documentation}{39}{chapter.8}
 \contentsline {section}{\numberline {8.1}User Guide}{39}{section.8.1}
-\contentsline {section}{\numberline {8.2}Installation Guide}{39}{section.8.2}
-\contentsline {chapter}{\numberline {9}Class Index}{41}{chapter.9}
-\contentsline {chapter}{\numberline {10}Class Documentation}{43}{chapter.10}
-\contentsline {section}{\numberline {10.1}Poly Class Reference}{43}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{43}{subsection.10.1.1}
-\contentsline {subsubsection}{\numberline {10.1.1.a}Poly}{43}{subsubsection.10.1.1.1}
-\contentsline {subsubsection}{\numberline {10.1.1.b}$\sim $\discretionary {-}{}{}Poly}{43}{subsubsection.10.1.1.2}
-\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{43}{subsection.10.1.2}
-\contentsline {subsubsection}{\numberline {10.1.2.a}myfunction}{43}{subsubsection.10.1.2.1}
-\contentsline {chapter}{Bibliography}{45}{chapter*.7}
+\contentsline {subsection}{\numberline {8.1.1}Entering the Software}{39}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Admin Landing}{39}{subsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.2.a}Manage Employees}{39}{subsubsection.8.1.2.1}
+\contentsline {subsubsection}{\numberline {8.1.2.b}Manage Classes}{46}{subsubsection.8.1.2.2}
+\contentsline {subsubsection}{\numberline {8.1.2.c}Manage Students}{47}{subsubsection.8.1.2.3}
+\contentsline {subsubsection}{\numberline {8.1.2.d}Manage Billing}{53}{subsubsection.8.1.2.4}
+\contentsline {subsection}{\numberline {8.1.3}Teacher Landing}{54}{subsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.3.a}Student Options}{57}{subsubsection.8.1.3.1}
+\contentsline {subsubsection}{\numberline {8.1.3.b}Class Options}{58}{subsubsection.8.1.3.2}
+\contentsline {subsubsection}{\numberline {8.1.3.c}Personal Options}{59}{subsubsection.8.1.3.3}
+\contentsline {section}{\numberline {8.2}Installation Guide}{61}{section.8.2}
+\contentsline {chapter}{\numberline {9}Class Index}{63}{chapter.9}
+\contentsline {chapter}{\numberline {10}Class Documentation}{65}{chapter.10}
+\contentsline {section}{\numberline {10.1}Poly Class Reference}{65}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{65}{subsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.1.a}Poly}{65}{subsubsection.10.1.1.1}
+\contentsline {subsubsection}{\numberline {10.1.1.b}$\sim $\discretionary {-}{}{}Poly}{65}{subsubsection.10.1.1.2}
+\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{65}{subsection.10.1.2}
+\contentsline {subsubsection}{\numberline {10.1.2.a}myfunction}{65}{subsubsection.10.1.2.1}
+\contentsline {chapter}{Bibliography}{67}{chapter*.7}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.11}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {chapter}{\numberline {B}Sprint Reports}{B-1}{appendix.B}

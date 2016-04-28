@@ -145,55 +145,55 @@
 \contentsline {subsection}{\numberline {5.7.1}Changes to the Backlog}{32}{subsection.5.7.1}
 \contentsline {chapter}{\numberline {6}Prototypes}{35}{chapter.6}
 \contentsline {section}{\numberline {6.1}Sprint 1 Prototype}{35}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Deliverable}{35}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Backlog}{35}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Success/Fail}{35}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Sprint 2 Prototype}{35}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Deliverable}{35}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Backlog}{35}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Success/Fail}{35}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Sprint 3 Prototype}{35}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Deliverable}{35}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Backlog}{35}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Success/Fail}{35}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Sprint 4 Prototype}{35}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Deliverable}{35}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Backlog}{35}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Success/Fail}{35}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Sprint 5 Prototype}{35}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Deliverable}{35}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Backlog}{35}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Success/Fail}{36}{subsection.6.5.3}
-\contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{37}{chapter.7}
-\contentsline {section}{\numberline {7.1}Deployment Information and Dependencies}{37}{section.7.1}
-\contentsline {section}{\numberline {7.2}Setup Information}{38}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Installing Python 3}{38}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Installing PyQt 4 and Designer toolkit }{38}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Installing MySQL}{38}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Running Project}{38}{subsection.7.2.4}
-\contentsline {section}{\numberline {7.3}System Version Information}{39}{section.7.3}
-\contentsline {chapter}{\numberline {8}User Documentation}{41}{chapter.8}
-\contentsline {section}{\numberline {8.1}User Guide}{41}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Entering the Software}{41}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Admin Landing}{41}{subsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.2.a}Manage Employees}{41}{subsubsection.8.1.2.1}
-\contentsline {subsubsection}{\numberline {8.1.2.b}Manage Classes}{48}{subsubsection.8.1.2.2}
-\contentsline {subsubsection}{\numberline {8.1.2.c}Manage Students}{49}{subsubsection.8.1.2.3}
-\contentsline {subsubsection}{\numberline {8.1.2.d}Manage Billing}{55}{subsubsection.8.1.2.4}
-\contentsline {subsection}{\numberline {8.1.3}Teacher Landing}{56}{subsection.8.1.3}
-\contentsline {subsubsection}{\numberline {8.1.3.a}Student Options}{59}{subsubsection.8.1.3.1}
-\contentsline {subsubsection}{\numberline {8.1.3.b}Class Options}{60}{subsubsection.8.1.3.2}
-\contentsline {subsubsection}{\numberline {8.1.3.c}Personal Options}{61}{subsubsection.8.1.3.3}
-\contentsline {section}{\numberline {8.2}Installation Guide}{63}{section.8.2}
-\contentsline {chapter}{\numberline {9}Class Index}{65}{chapter.9}
-\contentsline {chapter}{\numberline {10}Class Documentation}{67}{chapter.10}
-\contentsline {section}{\numberline {10.1}Poly Class Reference}{67}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{67}{subsection.10.1.1}
-\contentsline {subsubsection}{\numberline {10.1.1.a}Poly}{67}{subsubsection.10.1.1.1}
-\contentsline {subsubsection}{\numberline {10.1.1.b}$\sim $\discretionary {-}{}{}Poly}{67}{subsubsection.10.1.1.2}
-\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{67}{subsection.10.1.2}
-\contentsline {subsubsection}{\numberline {10.1.2.a}myfunction}{67}{subsubsection.10.1.2.1}
-\contentsline {chapter}{Bibliography}{69}{chapter*.7}
+\contentsline {subsection}{\numberline {6.1.1}Deliverable}{36}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Backlog}{36}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Success/Fail}{36}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Sprint 2 Prototype}{36}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Deliverable}{37}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Backlog}{37}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Success/Fail}{37}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Sprint 3 Prototype}{38}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Deliverable}{38}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Backlog}{39}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Success/Fail}{39}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Sprint 3.5 and 4 Prototype}{39}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Deliverable}{42}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Backlog}{42}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Success/Fail}{43}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Sprint 5 Prototype}{43}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Deliverable}{45}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Backlog}{45}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Success/Fail}{46}{subsection.6.5.3}
+\contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{47}{chapter.7}
+\contentsline {section}{\numberline {7.1}Deployment Information and Dependencies}{47}{section.7.1}
+\contentsline {section}{\numberline {7.2}Setup Information}{48}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Installing Python 3}{48}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Installing PyQt 4 and Designer toolkit }{48}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Installing MySQL}{48}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Running Project}{48}{subsection.7.2.4}
+\contentsline {section}{\numberline {7.3}System Version Information}{49}{section.7.3}
+\contentsline {chapter}{\numberline {8}User Documentation}{51}{chapter.8}
+\contentsline {section}{\numberline {8.1}User Guide}{51}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Entering the Software}{51}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Admin Landing}{51}{subsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.2.a}Manage Employees}{51}{subsubsection.8.1.2.1}
+\contentsline {subsubsection}{\numberline {8.1.2.b}Manage Classes}{58}{subsubsection.8.1.2.2}
+\contentsline {subsubsection}{\numberline {8.1.2.c}Manage Students}{59}{subsubsection.8.1.2.3}
+\contentsline {subsubsection}{\numberline {8.1.2.d}Manage Billing}{65}{subsubsection.8.1.2.4}
+\contentsline {subsection}{\numberline {8.1.3}Teacher Landing}{66}{subsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.3.a}Student Options}{69}{subsubsection.8.1.3.1}
+\contentsline {subsubsection}{\numberline {8.1.3.b}Class Options}{70}{subsubsection.8.1.3.2}
+\contentsline {subsubsection}{\numberline {8.1.3.c}Personal Options}{71}{subsubsection.8.1.3.3}
+\contentsline {section}{\numberline {8.2}Installation Guide}{73}{section.8.2}
+\contentsline {chapter}{\numberline {9}Class Index}{75}{chapter.9}
+\contentsline {chapter}{\numberline {10}Class Documentation}{77}{chapter.10}
+\contentsline {section}{\numberline {10.1}Poly Class Reference}{77}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{77}{subsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.1.a}Poly}{77}{subsubsection.10.1.1.1}
+\contentsline {subsubsection}{\numberline {10.1.1.b}$\sim $\discretionary {-}{}{}Poly}{77}{subsubsection.10.1.1.2}
+\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{77}{subsection.10.1.2}
+\contentsline {subsubsection}{\numberline {10.1.2.a}myfunction}{77}{subsubsection.10.1.2.1}
+\contentsline {chapter}{Bibliography}{79}{chapter*.7}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.11}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {chapter}{\numberline {B}Sprint Reports}{B-1}{appendix.B}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  27 APR 2016 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  28 APR 2016 14:23
 entering extended mode
 **DesignDocument.tex
 (DesignDocument.tex
@@ -1835,7 +1835,7 @@ Overfull \hbox (4.50029pt too wide) detected at line 288
 )
 \tf@toc=\write6
  [8] (DesignDocument.lof
-Overfull \hbox (4.50029pt too wide) detected at line 46
+Overfull \hbox (4.50029pt too wide) detected at line 48
  []\T1/lmss/m/n/10 B-10
  []
 
@@ -1887,7 +1887,7 @@ Overfull \hbox (2.48369pt too wide) in paragraph at lines 48--48
  []
 
 
-Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--73
+Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--75
 [] 
  []
 
@@ -1902,13 +1902,13 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 55.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [2]
-<GUI.jpg, id=1442, 858.20625pt x 460.72125pt>
+<GUI.jpg, id=1446, 858.20625pt x 460.72125pt>
 File: GUI.jpg Graphic file (type jpg)
  <use GUI.jpg>
 Package pdftex.def Info: GUI.jpg used on input line 60.
 (pdftex.def)             Requested size: 469.75499pt x 252.1883pt.
 
-<DatabaseDiagram.jpg, id=1443, 456.20438pt x 298.86656pt>
+<DatabaseDiagram.jpg, id=1447, 456.20438pt x 298.86656pt>
 File: DatabaseDiagram.jpg Graphic file (type jpg)
 
 <use DatabaseDiagram.jpg>
@@ -1941,7 +1941,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ]
 Chapter 3.
-[15] [16] [17] <pics/Add_Class.png, id=1547, 590.95781pt x 440.39531pt>
+[15] [16] [17] <pics/Add_Class.png, id=1551, 590.95781pt x 440.39531pt>
 File: pics/Add_Class.png Graphic file (type png)
 
 <use pics/Add_Class.png>
@@ -1982,7 +1982,248 @@ Chapter 5.
 
 ]
 Chapter 6.
-) (deploy.tex [35] [36]
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+<database_tables.png, id=1742, 690.32906pt x 292.09125pt>
+File: database_tables.png Graphic file (type png)
+
+<use database_tables.png>
+Package pdftex.def Info: database_tables.png used on input line 51.
+(pdftex.def)             Requested size: 234.87749pt x 99.38101pt.
+ <login_page.png, id=1743, 304.88907pt x 154.32657pt>
+File: login_page.png Graphic file (type png)
+
+<use login_page.png>
+Package pdftex.def Info: login_page.png used on input line 59.
+(pdftex.def)             Requested size: 234.87749pt x 118.89304pt.
+ [36pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.60 \end{figure}
+                  <./database_tables.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+[37pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.92 
+      <./login_page.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+<search.png, id=1775, 614.295pt x 502.12593pt>
+File: search.png Graphic file (type png)
+ <use search.png>
+Package pdftex.def Info: search.png used on input line 95.
+(pdftex.def)             Requested size: 234.87749pt x 191.98975pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+[38 <./search.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
+ []
+
+<tuitionRates.png, id=1784, 410.2828pt x 405.01312pt>
+File: tuitionRates.png Graphic file (type png)
+ <use tuitionRates.png>
+Package pdftex.def Info: tuitionRates.png used on input line 149.
+(pdftex.def)             Requested size: 205.1409pt x 202.50606pt.
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+
+ []
+
+<teacherHistory.png, id=1803, 276.28218pt x 339.51843pt>
+File: teacherHistory.png Graphic file (type png)
+
+<use teacherHistory.png>
+Package pdftex.def Info: teacherHistory.png used on input line 154.
+(pdftex.def)             Requested size: 138.14075pt x 169.75879pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+<payment.png, id=1804, 313.17pt x 185.19188pt>
+File: payment.png Graphic file (type png)
+ <use payment.png>
+Package pdftex.def Info: payment.png used on input line 162.
+(pdftex.def)             Requested size: 156.58461pt x 92.5957pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
+
+ []
+
+[40 <./tuitionRates.png> <./teacherHistory.png> <./payment.png>]
+<invoice.png, id=1810, 493.845pt x 389.95688pt>
+File: invoice.png Graphic file (type png)
+ <use invoice.png>
+Package pdftex.def Info: invoice.png used on input line 167.
+(pdftex.def)             Requested size: 246.92189pt x 194.97795pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
+
+ []
+
+<enterPayment.png, id=1811, 276.28218pt x 339.51843pt>
+File: enterPayment.png Graphic file (type png)
+ <use enterPayment.png>
+Package pdftex.def Info: enterPayment.png used on input line 172.
+(pdftex.def)             Requested size: 138.14075pt x 169.75879pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
+
+ []
+
+<billHistory.png, id=1812, 493.845pt x 389.95688pt>
+File: billHistory.png Graphic file (type png)
+ <use billHistory.png>
+Package pdftex.def Info: billHistory.png used on input line 177.
+(pdftex.def)             Requested size: 246.92189pt x 194.97795pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41 <./invoice.png> <./enterPayment.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+[42 <./billHistory.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+<payRates.png, id=1837, 292.09125pt x 168.63pt>
+File: payRates.png Graphic file (type png)
+ <use payRates.png>
+Package pdftex.def Info: payRates.png used on input line 240.
+(pdftex.def)             Requested size: 146.04526pt x 84.31479pt.
+ [43]
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
+
+ []
+
+<feeDialog.png, id=1846, 333.49594pt x 127.22531pt>
+File: feeDialog.png Graphic file (type png)
+ <use feeDialog.png>
+Package pdftex.def Info: feeDialog.png used on input line 245.
+(pdftex.def)             Requested size: 166.74756pt x 63.61249pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+
+ []
+
+<newAddStudent.png, id=1847, 395.97937pt x 338.76563pt>
+File: newAddStudent.png Graphic file (type png)
+
+<use newAddStudent.png>
+Package pdftex.def Info: newAddStudent.png used on input line 266.
+(pdftex.def)             Requested size: 197.9892pt x 169.38239pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
+
+ []
+
+[44 <./payRates.png> <./feeDialog.png> <./newAddStudent.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
+
+ []
+
+<newLocation.png, id=1857, 550.30594pt x 410.2828pt>
+File: newLocation.png Graphic file (type png)
+ <use newLocation.png>
+Package pdftex.def Info: newLocation.png used on input line 275.
+(pdftex.def)             Requested size: 275.1523pt x 205.1409pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
+
+ []
+
+<removal.png, id=1858, 271.76532pt x 110.66344pt>
+File: removal.png Graphic file (type png)
+ <use removal.png>
+Package pdftex.def Info: removal.png used on input line 280.
+(pdftex.def)             Requested size: 135.88232pt x 55.33157pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+[45 <./newLocation.png> <./removal.png>]) (deploy.tex [46]
 Chapter 7.
 
 Overfull \hbox (122.71681pt too wide) in paragraph at lines 14--15
@@ -1995,14 +2236,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[37
+[47
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-[38]) (userdocs.tex [39] [40
+[48]) (userdocs.tex [49] [50
 
 ]
 Chapter 8.
@@ -2011,7 +2252,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-<pics/userGuide/login.png, id=1781, 304.88907pt x 154.32657pt>
+<pics/userGuide/login.png, id=1921, 304.88907pt x 154.32657pt>
 File: pics/userGuide/login.png Graphic file (type png)
 
 <use pics/userGuide/login.png>
@@ -2027,7 +2268,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-<pics/userGuide/admin_landing.png, id=1782, 410.2828pt x 292.84406pt>
+<pics/userGuide/admin_landing.png, id=1922, 410.2828pt x 292.84406pt>
 File: pics/userGuide/admin_landing.png Graphic file (type png)
 
 <use pics/userGuide/admin_landing.png>
@@ -2044,7 +2285,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-[41] [42pdfTeX warning (ext4): destination with the same identifier (name{figur
+[51] [52pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.8.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2057,7 +2298,7 @@ l.42
                                                   \fi \fi 
 l.42 
       <./pics/userGuide/login.png> <./pics/userGuide/admin_landing.png>]
-<pics/userGuide/teacherSearch.png, id=1792, 601.4972pt x 498.36188pt>
+<pics/userGuide/teacherSearch.png, id=1932, 601.4972pt x 498.36188pt>
 File: pics/userGuide/teacherSearch.png Graphic file (type png)
 
 <use pics/userGuide/teacherSearch.png>
@@ -2074,7 +2315,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
-<pics/userGuide/updateTeacher.png, id=1794, 524.71031pt x 390.70969pt>
+<pics/userGuide/updateTeacher.png, id=1933, 524.71031pt x 390.70969pt>
 File: pics/userGuide/updateTeacher.png Graphic file (type png)
 
 <use pics/userGuide/updateTeacher.png>
@@ -2086,13 +2327,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-[43pdfTeX warning (ext4): destination with the same identifier (name{figure.8.3
+[53pdfTeX warning (ext4): destination with the same identifier (name{figure.8.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.63 
-      <./pics/userGuide/teacherSearch.png>] [44pdfTeX warning (ext4): destinati
+      <./pics/userGuide/teacherSearch.png>] [54pdfTeX warning (ext4): destinati
 on with the same identifier (name{figure.8.4}) has been already used, duplicate
  ignored
 
@@ -2100,7 +2341,7 @@ on with the same identifier (name{figure.8.4}) has been already used, duplicate
                                                   \fi \fi 
 l.63 
       <./pics/userGuide/updateTeacher.png>]
-<pics/userGuide/hours.png, id=1805, 471.26062pt x 310.15875pt>
+<pics/userGuide/hours.png, id=1943, 471.26062pt x 310.15875pt>
 File: pics/userGuide/hours.png Graphic file (type png)
 
 <use pics/userGuide/hours.png>
@@ -2111,7 +2352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
-<pics/userGuide/assignClass.png, id=1806, 352.31625pt x 276.28218pt>
+<pics/userGuide/assignClass.png, id=1944, 352.31625pt x 276.28218pt>
 File: pics/userGuide/assignClass.png Graphic file (type png)
 
 <use pics/userGuide/assignClass.png>
@@ -2122,7 +2363,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
-<pics/userGuide/history.png, id=1807, 478.03593pt x 337.26pt>
+<pics/userGuide/history.png, id=1945, 478.03593pt x 337.26pt>
 File: pics/userGuide/history.png Graphic file (type png)
 
 <use pics/userGuide/history.png>
@@ -2138,13 +2379,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 
-[45pdfTeX warning (ext4): destination with the same identifier (name{figure.8.5
+[55pdfTeX warning (ext4): destination with the same identifier (name{figure.8.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.94 \subsubsection{Manage Classes}
-                                    <./pics/userGuide/hours.png>] [46pdfTeX war
+                                    <./pics/userGuide/hours.png>] [56pdfTeX war
 ning (ext4): destination with the same identifier (name{figure.8.6}) has been a
 lready used, duplicate ignored
 
@@ -2152,7 +2393,7 @@ lready used, duplicate ignored
                                                   \fi \fi 
 l.94 \subsubsection{Manage Classes}
                                     <./pics/userGuide/assignClass.png>]
-[47pdfTeX warning (ext4): destination with the same identifier (name{figure.8.7
+[57pdfTeX warning (ext4): destination with the same identifier (name{figure.8.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2163,7 +2404,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
  []
 
-<pics/userGuide/classSearch.png, id=1823, 602.25pt x 499.8675pt>
+<pics/userGuide/classSearch.png, id=1962, 602.25pt x 499.8675pt>
 File: pics/userGuide/classSearch.png Graphic file (type png)
 
 <use pics/userGuide/classSearch.png>
@@ -2180,14 +2421,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
 
-[48pdfTeX warning (ext4): destination with the same identifier (name{figure.8.8
+[58pdfTeX warning (ext4): destination with the same identifier (name{figure.8.8
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.111 
        <./pics/userGuide/classSearch.png>]
-<pics/userGuide/setSemester.png, id=1829, 302.63063pt x 186.6975pt>
+<pics/userGuide/setSemester.png, id=1968, 302.63063pt x 186.6975pt>
 File: pics/userGuide/setSemester.png Graphic file (type png)
 
 <use pics/userGuide/setSemester.png>
@@ -2204,7 +2445,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-<pics/userGuide/searchStudents.png, id=1830, 603.0028pt x 499.11469pt>
+<pics/userGuide/searchStudents.png, id=1969, 603.0028pt x 499.11469pt>
 File: pics/userGuide/searchStudents.png Graphic file (type png)
 
 <use pics/userGuide/searchStudents.png>
@@ -2216,13 +2457,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
  []
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{figure.8.9
+[59pdfTeX warning (ext4): destination with the same identifier (name{figure.8.9
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.140 
-       <./pics/userGuide/setSemester.png>] [50pdfTeX warning (ext4): destinatio
+       <./pics/userGuide/setSemester.png>] [60pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.8.10}) has been already used, duplicate
  ignored
 
@@ -2230,7 +2471,7 @@ n with the same identifier (name{figure.8.10}) has been already used, duplicate
                                                   \fi \fi 
 l.140 
        <./pics/userGuide/searchStudents.png>]
-<pics/userGuide/credits.png, id=1843, 347.79938pt x 166.37157pt>
+<pics/userGuide/credits.png, id=1981, 347.79938pt x 166.37157pt>
 File: pics/userGuide/credits.png Graphic file (type png)
 
 <use pics/userGuide/credits.png>
@@ -2241,21 +2482,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-<pics/userGuide/Addstu.png, id=1844, 393.72093pt x 338.01282pt>
+<pics/userGuide/Addstu.png, id=1982, 393.72093pt x 338.01282pt>
 File: pics/userGuide/Addstu.png Graphic file (type png)
 
 <use pics/userGuide/Addstu.png>
 Package pdftex.def Info: pics/userGuide/Addstu.png used on input line 154.
 (pdftex.def)             Requested size: 469.75499pt x 403.28723pt.
 
-<pics/userGuide/studentReg.png, id=1845, 673.01437pt x 475.02469pt>
+<pics/userGuide/studentReg.png, id=1983, 673.01437pt x 475.02469pt>
 File: pics/userGuide/studentReg.png Graphic file (type png)
 
 <use pics/userGuide/studentReg.png>
 Package pdftex.def Info: pics/userGuide/studentReg.png used on input line 165.
 (pdftex.def)             Requested size: 469.75499pt x 331.56548pt.
 
-<pics/userGuide/AddStudent.png, id=1846, 593.21625pt x 393.72093pt>
+<pics/userGuide/AddStudent.png, id=1984, 593.21625pt x 393.72093pt>
 File: pics/userGuide/AddStudent.png Graphic file (type png)
 
 <use pics/userGuide/AddStudent.png>
@@ -2266,27 +2507,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--178
 
  []
 
-[51pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+[61pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.178 
-       <./pics/userGuide/credits.png>] [52pdfTeX warning (ext4): destination wi
+       <./pics/userGuide/credits.png>] [62pdfTeX warning (ext4): destination wi
 th the same identifier (name{figure.8.12}) has been already used, duplicate ign
 ored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.178 
-       <./pics/userGuide/Addstu.png>] [53pdfTeX warning (ext4): destination wit
+       <./pics/userGuide/Addstu.png>] [63pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.8.13}) has been already used, duplicate igno
 red
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.178 
-       <./pics/userGuide/studentReg.png>] [54pdfTeX warning (ext4): destination
+       <./pics/userGuide/studentReg.png>] [64pdfTeX warning (ext4): destination
  with the same identifier (name{figure.8.14}) has been already used, duplicate 
 ignored
 
@@ -2303,7 +2544,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
-<pics/userGuide/partPay.png, id=1867, 304.13625pt x 182.18062pt>
+<pics/userGuide/partPay.png, id=2006, 304.13625pt x 182.18062pt>
 File: pics/userGuide/partPay.png Graphic file (type png)
 
 <use pics/userGuide/partPay.png>
@@ -2319,14 +2560,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
-[55pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+[65pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.196 
        <./pics/userGuide/partPay.png>]
-<pics/userGuide/enterPay.png, id=1875, 290.58563pt x 167.12437pt>
+<pics/userGuide/enterPay.png, id=2013, 290.58563pt x 167.12437pt>
 File: pics/userGuide/enterPay.png Graphic file (type png)
 
 <use pics/userGuide/enterPay.png>
@@ -2337,14 +2578,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
-<pics/userGuide/stuBalence.png, id=1876, 484.81125pt x 387.69844pt>
+<pics/userGuide/stuBalence.png, id=2014, 484.81125pt x 387.69844pt>
 File: pics/userGuide/stuBalence.png Graphic file (type png)
 
 <use pics/userGuide/stuBalence.png>
 Package pdftex.def Info: pics/userGuide/stuBalence.png used on input line 207.
 (pdftex.def)             Requested size: 469.75499pt x 375.67657pt.
 
-<pics/userGuide/billHistory.png, id=1877, 481.04718pt x 384.6872pt>
+<pics/userGuide/billHistory.png, id=2015, 481.04718pt x 384.6872pt>
 File: pics/userGuide/billHistory.png Graphic file (type png)
 
 <use pics/userGuide/billHistory.png>
@@ -2352,27 +2593,27 @@ Package pdftex.def Info: pics/userGuide/billHistory.png used on input line 216.
 
 (pdftex.def)             Requested size: 469.75499pt x 375.66429pt.
 
-<pics/userGuide/tuitAndFees.png, id=1878, 814.54312pt x 245.41687pt>
+<pics/userGuide/tuitAndFees.png, id=2016, 814.54312pt x 245.41687pt>
 File: pics/userGuide/tuitAndFees.png Graphic file (type png)
 
 <use pics/userGuide/tuitAndFees.png>
 Package pdftex.def Info: pics/userGuide/tuitAndFees.png used on input line 225.
 
 (pdftex.def)             Requested size: 469.75499pt x 141.533pt.
- [56pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+ [66pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.237 
-       <./pics/userGuide/enterPay.png>] [57pdfTeX warning (ext4): destination w
+       <./pics/userGuide/enterPay.png>] [67pdfTeX warning (ext4): destination w
 ith the same identifier (name{figure.8.17}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.237 
-       <./pics/userGuide/stuBalence.png>] [58pdfTeX warning (ext4): destination
+       <./pics/userGuide/stuBalence.png>] [68pdfTeX warning (ext4): destination
  with the same identifier (name{figure.8.18}) has been already used, duplicate 
 ignored
 
@@ -2395,7 +2636,7 @@ File: pics/userGuide/searchStudents.png Graphic file (type png)
 Package pdftex.def Info: pics/userGuide/searchStudents.png used on input line 2
 43.
 (pdftex.def)             Requested size: 469.75499pt x 388.82047pt.
- [59pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+ [69pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2411,7 +2652,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
 
-<pics/userGuide/studentSchedule.png, id=1900, 632.3625pt x 383.18156pt>
+<pics/userGuide/studentSchedule.png, id=2039, 632.3625pt x 383.18156pt>
 File: pics/userGuide/studentSchedule.png Graphic file (type png)
 
 <use pics/userGuide/studentSchedule.png>
@@ -2428,14 +2669,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
-[60pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
+[70pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.272 
        <./pics/userGuide/studentSchedule.png>]
-<pics/userGuide/teacherSchedule.png, id=1907, 633.11531pt x 383.93437pt>
+<pics/userGuide/teacherSchedule.png, id=2046, 633.11531pt x 383.93437pt>
 File: pics/userGuide/teacherSchedule.png Graphic file (type png)
 
 <use pics/userGuide/teacherSchedule.png>
@@ -2447,7 +2688,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
-<pics/userGuide/role.png, id=1908, 484.05844pt x 385.44pt>
+<pics/userGuide/role.png, id=2047, 484.05844pt x 385.44pt>
 File: pics/userGuide/role.png Graphic file (type png)
 
 <use pics/userGuide/role.png>
@@ -2463,13 +2704,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
-[61pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
+[71pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.300 
-       <./pics/userGuide/teacherSchedule.png>] [62pdfTeX warning (ext4): destin
+       <./pics/userGuide/teacherSchedule.png>] [72pdfTeX warning (ext4): destin
 ation with the same identifier (name{figure.8.23}) has been already used, dupli
 cate ignored
 
@@ -2477,13 +2718,13 @@ cate ignored
                                                   \fi \fi 
 l.300 
        <./pics/userGuide/role.png>]
-<pics/pythonFiles.png, id=1922, 898.85812pt x 312.41719pt>
+<pics/pythonFiles.png, id=2060, 898.85812pt x 312.41719pt>
 File: pics/pythonFiles.png Graphic file (type png)
 
 <use pics/pythonFiles.png>
 Package pdftex.def Info: pics/pythonFiles.png used on input line 316.
 (pdftex.def)             Requested size: 469.75499pt x 163.27304pt.
- [63pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+ [73pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2494,23 +2735,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--329
 
  []
 
-) (refman.tex [64]
+) (refman.tex [74]
 Chapter 9.
-[65
+[75
 
-] [66
+] [76
 
 ]
 Chapter 10.
-(class_docs.tex)) (DesignDocument.bbl [67] [68
+(class_docs.tex)) (DesignDocument.bbl [77] [78
 
-]) [69] [70
+]) [79] [80
 
 ]
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1974, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=2113, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -2532,7 +2773,7 @@ F version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1977, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=2116, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -2560,7 +2801,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1999, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=2138, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -2579,7 +2820,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=2004, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=2143, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -2598,7 +2839,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=2010, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=2148, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -2617,7 +2858,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 68.
 
 pdfTeX warning: pdflatex (file ./SoftwareContract.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=2024, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=2162, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -2655,7 +2896,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--14
 
  []
 
-[1] [2] <d1.png, id=2089, 1538.74875pt x 767.86874pt>
+[1] [2] <d1.png, id=2227, 1538.74875pt x 767.86874pt>
 File: d1.png Graphic file (type png)
  <use d1.png>
 Package pdftex.def Info: d1.png used on input line 107.
@@ -2696,14 +2937,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--165
 
  []
 
-[5] <database_tables.png, id=2141, 690.32906pt x 292.09125pt>
+[5]
 File: database_tables.png Graphic file (type png)
-
-<use database_tables.png>
+ <use database_tables.png>
 Package pdftex.def Info: database_tables.png used on input line 202.
 (pdftex.def)             Requested size: 234.87749pt x 99.38101pt.
  [6]
-<login_page.png, id=2160, 304.88907pt x 154.32657pt>
 File: login_page.png Graphic file (type png)
  <use login_page.png>
 Package pdftex.def Info: login_page.png used on input line 225.
@@ -2713,7 +2952,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<admin_landing.png, id=2161, 410.2828pt x 292.84406pt>
+<admin_landing.png, id=2298, 410.2828pt x 292.84406pt>
 File: admin_landing.png Graphic file (type png)
  <use admin_landing.png>
 Package pdftex.def Info: admin_landing.png used on input line 233.
@@ -2732,9 +2971,9 @@ licate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.241 \item A
-             dd information and new information pages <./database_tables.png> <
-./login_page.png>] [8pdfTeX warning (ext4): destination with the same identifie
-r (name{figure.B.4}) has been already used, duplicate ignored
+             dd information and new information pages] [8pdfTeX warning (ext4):
+ destination with the same identifier (name{figure.B.4}) has been already used,
+ duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2754,7 +2993,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--306
 
  []
 
-[9] <search.png, id=2202, 614.295pt x 502.12593pt>
+[9]
 File: search.png Graphic file (type png)
  <use search.png>
 Package pdftex.def Info: search.png used on input line 346.
@@ -2765,7 +3004,7 @@ Package pdftex.def Info: search.png used on input line 346.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.355 \subsection{Update Pages}
-                                <./search.png>]
+                               ]
 Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
@@ -2780,10 +3019,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 422--427
 
  []
 
-[12] [13] <tuitionRates.png, id=2271, 410.2828pt x 405.01312pt>
+[12] [13]
 File: tuitionRates.png Graphic file (type png)
-
-<use tuitionRates.png>
+ <use tuitionRates.png>
 Package pdftex.def Info: tuitionRates.png used on input line 485.
 (pdftex.def)             Requested size: 205.1409pt x 202.50606pt.
 
@@ -2791,45 +3029,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
-<teacherHistory.png, id=2272, 276.28218pt x 339.51843pt>
 File: teacherHistory.png Graphic file (type png)
-
 <use teacherHistory.png>
 Package pdftex.def Info: teacherHistory.png used on input line 490.
 (pdftex.def)             Requested size: 138.14075pt x 169.75879pt.
- <payment.png, id=2273, 313.17pt x 185.19188pt>
 File: payment.png Graphic file (type png)
-
-<use payment.png>
+ <use payment.png>
 Package pdftex.def Info: payment.png used on input line 497.
 (pdftex.def)             Requested size: 156.58461pt x 92.5957pt.
- [14 <./tuitionRates.png> <./teacherHistory.png>]
-<invoice.png, id=2279, 493.845pt x 389.95688pt>
+ [14]
 File: invoice.png Graphic file (type png)
  <use invoice.png>
 Package pdftex.def Info: invoice.png used on input line 501.
 (pdftex.def)             Requested size: 246.92189pt x 194.97795pt.
-
-<enterPayment.png, id=2280, 276.28218pt x 339.51843pt>
 File: enterPayment.png Graphic file (type png)
- <use enterPayment.png>
+
+<use enterPayment.png>
 Package pdftex.def Info: enterPayment.png used on input line 505.
 (pdftex.def)             Requested size: 138.14075pt x 169.75879pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./payment.png> <./invoice.png>]
+ [15]
 Underfull \hbox (badness 10000) in paragraph at lines 508--509
 
  []
 
-<billHistory.png, id=2285, 493.845pt x 389.95688pt>
 File: billHistory.png Graphic file (type png)
- <use billHistory.png>
+<use billHistory.png>
 Package pdftex.def Info: billHistory.png used on input line 510.
 (pdftex.def)             Requested size: 246.92189pt x 194.97795pt.
-
-[16 <./enterPayment.png> <./billHistory.png>]
+ [16]
 Underfull \hbox (badness 10000) in paragraph at lines 555--556
 
  []
@@ -2844,9 +3074,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 638--639
 
  []
 
-<payRates.png, id=2336, 292.09125pt x 168.63pt>
 File: payRates.png Graphic file (type png)
- <use payRates.png>
+<use payRates.png>
 Package pdftex.def Info: payRates.png used on input line 640.
 (pdftex.def)             Requested size: 146.04526pt x 84.31479pt.
  [19]
@@ -2854,9 +3083,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 643--644
 
  []
 
-<feeDialog.png, id=2357, 333.49594pt x 127.22531pt>
 File: feeDialog.png Graphic file (type png)
- <use feeDialog.png>
+<use feeDialog.png>
 Package pdftex.def Info: feeDialog.png used on input line 645.
 (pdftex.def)             Requested size: 166.74756pt x 63.61249pt.
 
@@ -2864,13 +3092,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 663--664
 
  []
 
-<newAddStudent.png, id=2358, 395.97937pt x 338.76563pt>
 File: newAddStudent.png Graphic file (type png)
-
 <use newAddStudent.png>
 Package pdftex.def Info: newAddStudent.png used on input line 665.
 (pdftex.def)             Requested size: 197.9892pt x 169.38239pt.
- [20 <./payRates.png> <./feeDialog.png>]
+ [20]
 Underfull \hbox (badness 10000) in paragraph at lines 668--669
 
  []
@@ -2880,9 +3106,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 672--673
 
  []
 
-<newLocation.png, id=2369, 550.30594pt x 410.2828pt>
 File: newLocation.png Graphic file (type png)
- <use newLocation.png>
+<use newLocation.png>
 Package pdftex.def Info: newLocation.png used on input line 674.
 (pdftex.def)             Requested size: 275.1523pt x 205.1409pt.
 
@@ -2890,21 +3115,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
-<removal.png, id=2370, 271.76532pt x 110.66344pt>
 File: removal.png Graphic file (type png)
- <use removal.png>
+<use removal.png>
 Package pdftex.def Info: removal.png used on input line 680.
 (pdftex.def)             Requested size: 135.88232pt x 55.33157pt.
- [21 <./newAddStudent.png> <./newLocation.png>]
+ [21]
 Underfull \hbox (badness 10000) in paragraph at lines 723--724
 
  []
 
-[22 <./removal.png>]) [23] [24
+[22]) [23] [24
 
 ]
 Appendix C.
-(industrial.tex <Berger_Marcus_Resume.pdf, id=2414, 614.295pt x 794.97pt>
+(industrial.tex <Berger_Marcus_Resume.pdf, id=2538, 614.295pt x 794.97pt>
 File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 
 <use Berger_Marcus_Resume.pdf>
@@ -2915,7 +3139,7 @@ File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 Package pdftex.def Info: Berger_Marcus_Resume.pdf used on input line 7.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<Berger_Marcus_Resume.pdf, id=2417, page=1, 614.295pt x 794.97pt>
+<Berger_Marcus_Resume.pdf, id=2541, page=1, 614.295pt x 794.97pt>
 File: Berger_Marcus_Resume.pdf Graphic file (type pdf)
 
 <use Berger_Marcus_Resume.pdf, page 1>
@@ -2942,7 +3166,7 @@ Package pdftex.def Info: Berger_Marcus_Resume.pdf, page1 used on input line 7.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 [2 <./Berger_Marcus_Resume.pdf>]
-<Wu_resume.pdf, id=2469, 614.295pt x 794.97pt>
+<Wu_resume.pdf, id=2592, 614.295pt x 794.97pt>
 File: Wu_resume.pdf Graphic file (type pdf)
  <use Wu_resume.pdf>
 Package pdftex.def Info: Wu_resume.pdf used on input line 8.
@@ -2952,7 +3176,7 @@ File: Wu_resume.pdf Graphic file (type pdf)
 <use Wu_resume.pdf>
 Package pdftex.def Info: Wu_resume.pdf used on input line 8.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <Wu_resume.pdf, id=2472, page=1, 614.295pt x 794.97pt>
+ <Wu_resume.pdf, id=2595, page=1, 614.295pt x 794.97pt>
 File: Wu_resume.pdf Graphic file (type pdf)
 
 <use Wu_resume.pdf, page 1>
@@ -2993,7 +3217,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `DesignDocument.out' has not changed.
-(rerunfilecheck)             Checksum: 351401A31EE8AA74E5E915938022CBFB;18148.
+(rerunfilecheck)             Checksum: 66D8330F645A1D3F6497727846023BEE;18156.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3001,9 +3225,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 27345 strings out of 493673
- 480742 string characters out of 3141524
- 611698 words of memory out of 3000000
+ 27435 strings out of 493673
+ 481456 string characters out of 3141524
+ 612698 words of memory out of 3000000
  29181 multiletter control sequences out of 15000+200000
  91021 words of font info for 78 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -3027,9 +3251,9 @@ fonts/type1/public/lm/lmsso10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm
 /lmtk10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb
 >
-Output written on DesignDocument.pdf (128 pages, 2407732 bytes).
+Output written on DesignDocument.pdf (138 pages, 2445855 bytes).
 PDF statistics:
- 2772 PDF objects out of 2984 (max. 8388607)
- 823 named destinations out of 1000 (max. 500000)
+ 2914 PDF objects out of 2984 (max. 8388607)
+ 913 named destinations out of 1000 (max. 500000)
  2343 words of extra memory for PDF output out of 10000 (max. 10000000)
 

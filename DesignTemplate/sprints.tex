@@ -130,7 +130,7 @@ From the above user stories the team produced the fallowing product backlog. The
 SQL is designed for fixing data structure and the scale of amount of data in database should be medium size otherwise with it growing big the database will drop down its speed. NonSQL is designed for frequent changing data structure and the scale of amount of data in database does not affect the performance of the database a lot. The SQL database is stable and however the NonSQL is constantly suffering fail overs. The database aims to store employees and students and classes information and the size of students less than 4000 and the size of employees less than 10. The structure of data is stable, by considering all those facts above, we decide to use SQL database.\\
 
 \textbf{The different SQL Databases:}\\
-For this part, we think of using MySQL, SqLite, MsSQL. MySQL is a free software and widely used in different fields. It has a very good portability and can runs over different OS systems and aims for small size of data. Also our experience is more focused in MySQL, and the feature set for SQL in MySQL fits within the scope of the project, for these reasons we choose MySQL as the database frame work.
+For this part, we think of using MySQL. MySQL is a free software and widely used in different fields. It has a very good portability and can runs over different OS systems and aims for small size of data. Also our experience is more focused in MySQL, and the feature set for SQL in MySQL fits within the scope of the project, for these reasons we choose MySQL as the database frame work.
 
 \subsubsection{Storage Options:}
 For this part, We considered three options, local, cloud, mixed. Since the database is accessed by different devices and the internet in the Academy is not stable, we decide to use mixed storage schema either Amazon AWS plus a local database or a Linux box plus a local database. After researching Amazon AWS, it does not support storing images and videos which the Academy may require in the future, therefore   due to some inconsistency in the internet and the current and possible future needs of the Academy we decided to go with a local Linux box and database.\\
@@ -426,7 +426,7 @@ Marcus Berger
 \\
 
 \subsection{Prototype Progress}
-During sprint 3.5 the team organized the functionality and tied them together to create the working prototype. Other updates were made to fix known bugs and add a class search. While the team worked on putting the project together smaller bugs or needed pages that were implied by user stories were tackled as they came up. This resulted in to much time being used, so the student interface was not tackled. The student interface has since been dropped from the clients project requirements due to time.
+During sprint 3.5 the team organized the functionality and tied them together to create the single current working prototype. Other updates were made to fix known bugs and add a class search. While the team worked on putting the project together smaller bugs or needed pages that were implied by user stories were tackled as they came up. This resulted in to much time being used, so the student interface was not tackled. The student interface has since been dropped from the clients project requirements due to time.
 
 Sprint 4 was dedicated to payroll and billing. First the client rewrote the user stories to provide more clarity to the team. After this the user stories were tackled by the group to produce the first draft of the payroll and billing interface. This included logging hours, payments, fees, rates, credits, and discounts. After this was done the team demoed the project for the client and got notes on the project as a whole. These notes will be tackled as part of the backlog in the next sprint.
 
@@ -596,12 +596,12 @@ Marcus Berger
 \subsection{Prototype Progress}
 
 
-Sprint five was dedicated to finishing the last of the functions and clean up of the project. First the client modified  some requirements for the team. After this the user stories remaining from sprint four were tackled by the group to produce the remaining payroll and billing interface. This included logging hours, and payments. After this was done the team started on bug fixes and quality of life updates such as new buttons and removal functions. The team is currently working on finishing up the student registration, and tax calculation for wages. If progress continues at this rate the prototype should be completed functionally however without some work the prototype may not reach some of the teams desired standard.
+Sprint five was dedicated to finishing the last of the functions and clean up of the project. First the client modified  some requirements for the team. After this the user stories remaining from sprint four were tackled by the group to produce the remaining payroll and billing interface. This included logging hours, and payments. After this was done the team started on bug fixes and quality of life updates such as new buttons and removal functions. The team is currently working on finishing up the student registration. If progress continues at this rate the prototype should be completed functionally for our teams iteration however without some work the prototype may not reach some of the teams desired standard.
 
 
 \subsection{Project deliverables of Sprint 5:}
 
-Sprint 5 deliverables were the remaining functionality for the project. If the sprint was successful the main project will be done or very close to done functionally at the end of the sprint.
+Sprint 5 deliverables were the remaining functionality for the redefined requirements from the client for the project. If the sprint was successful the main project will be done or very close to done functionally for this iteration at the end of the sprint.
 
 
 \subsubsection{Sprint 5 Backlog}
@@ -626,7 +626,7 @@ Sprint 5 deliverables were the remaining functionality for the project. If the s
 
 
 \subsection{Sprint 5}
-During sprint five the team tackled the remaining functionally, bugs, and quality updates in an attempt to finish the base project. Removal functions to clean out the database were added, and some client requested quality of life updates were added. Bugs and glitches were patch up in many functions. Another job of this sprint was to finish the rollover from sprint four since some payroll functions still needed work. Lastly the team tackled student registration since the student interface was dropped from the project requirements in sprint 4. The registration is still in progress at this time, as the team failed to complete this functionality in time for the end of the sprint.
+During sprint five the team tackled the remaining functionally, bugs, and quality updates in an attempt to finish the base project. Removal functions to clean out the database were added, and some client requested quality of life updates were added for this project version. Bugs and glitches were patched up in many functions. Another job of this sprint was to finish the rollover from sprint four since some payroll functions still needed work. Lastly the team tackled student registration since the student interface was dropped from the project requirements in sprint 4. The registration is still in progress at this time, as the team failed to complete this functionality in time for the end of the sprint. However it was completed during sprint 6.
 
 \subsection{Prorated Refunds}
 The prorated refunds code will keep track of how much a class costed a student. If the student drops a class it will refund the remaining worth of the class to the students school credit field. This file has now been completed.

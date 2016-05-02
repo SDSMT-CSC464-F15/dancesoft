@@ -1,12 +1,12 @@
 \contentsline {chapter}{Title}{i}{Doc-Start}
-\contentsline {chapter}{Contents}{viii}{chapter*.1}
-\contentsline {chapter}{List of Figures}{ix}{chapter*.2}
-\contentsline {chapter}{List of Tables}{xi}{chapter*.3}
-\contentsline {chapter}{List of Algorithms}{xiii}{chapter*.4}
-\contentsline {chapter}{Overview Statements}{xv}{chapter*.5}
-\contentsline {section}{\numberline {0.1}Mission Statement}{xv}{section.0.1}
-\contentsline {section}{\numberline {0.2}Elevator Pitch}{xv}{section.0.2}
-\contentsline {chapter}{Document Preparation and Updates}{xvii}{chapter*.6}
+\contentsline {chapter}{Contents}{xi}{chapter*.1}
+\contentsline {chapter}{List of Figures}{xiii}{chapter*.2}
+\contentsline {chapter}{List of Tables}{xv}{chapter*.3}
+\contentsline {chapter}{List of Algorithms}{xvii}{chapter*.4}
+\contentsline {chapter}{Overview Statements}{xix}{chapter*.5}
+\contentsline {section}{\numberline {0.1}Mission Statement}{xix}{section.0.1}
+\contentsline {section}{\numberline {0.2}Elevator Pitch}{xix}{section.0.2}
+\contentsline {chapter}{Document Preparation and Updates}{xxi}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Overview and concept of operations}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Team Members and Team Name}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Client}{1}{section.1.2}
@@ -137,63 +137,528 @@
 \contentsline {section}{\numberline {5.1}Overview}{31}{section.5.1}
 \contentsline {section}{\numberline {5.2}Dependencies}{31}{section.5.2}
 \contentsline {section}{\numberline {5.3}Test Setup and Execution}{31}{section.5.3}
-\contentsline {section}{\numberline {5.4}System Testing}{31}{section.5.4}
-\contentsline {section}{\numberline {5.5}System Integration Analysis}{31}{section.5.5}
-\contentsline {section}{\numberline {5.6}Risk Analysis}{31}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Risk Mitigation}{32}{subsection.5.6.1}
-\contentsline {section}{\numberline {5.7}Successes, Issues and Problems}{32}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Changes to the Backlog}{32}{subsection.5.7.1}
-\contentsline {chapter}{\numberline {6}Prototypes}{35}{chapter.6}
-\contentsline {section}{\numberline {6.1}Sprint 1 Prototype}{35}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Deliverable}{36}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Backlog}{36}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Success/Fail}{36}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Sprint 2 Prototype}{36}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Deliverable}{37}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Backlog}{37}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Success/Fail}{37}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Sprint 3 Prototype}{38}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Deliverable}{38}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Backlog}{39}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Success/Fail}{39}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Sprint 3.5 and 4 Prototype}{39}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Deliverable}{42}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Backlog}{42}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Success/Fail}{43}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Sprint 5 Prototype}{43}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Deliverable}{45}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Backlog}{45}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Success/Fail}{46}{subsection.6.5.3}
-\contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{47}{chapter.7}
-\contentsline {section}{\numberline {7.1}Deployment Information and Dependencies}{47}{section.7.1}
-\contentsline {section}{\numberline {7.2}Setup Information}{48}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Installing Python 3}{48}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Installing PyQt 4 and Designer toolkit }{48}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Installing MySQL}{48}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Running Project}{48}{subsection.7.2.4}
-\contentsline {section}{\numberline {7.3}System Version Information}{49}{section.7.3}
-\contentsline {chapter}{\numberline {8}User Documentation}{51}{chapter.8}
-\contentsline {section}{\numberline {8.1}User Guide}{51}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Entering the Software}{51}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Admin Landing}{51}{subsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.2.a}Manage Employees}{51}{subsubsection.8.1.2.1}
-\contentsline {subsubsection}{\numberline {8.1.2.b}Manage Classes}{58}{subsubsection.8.1.2.2}
-\contentsline {subsubsection}{\numberline {8.1.2.c}Manage Students}{59}{subsubsection.8.1.2.3}
-\contentsline {subsubsection}{\numberline {8.1.2.d}Manage Billing}{65}{subsubsection.8.1.2.4}
-\contentsline {subsection}{\numberline {8.1.3}Teacher Landing}{66}{subsection.8.1.3}
-\contentsline {subsubsection}{\numberline {8.1.3.a}Student Options}{69}{subsubsection.8.1.3.1}
-\contentsline {subsubsection}{\numberline {8.1.3.b}Class Options}{70}{subsubsection.8.1.3.2}
-\contentsline {subsubsection}{\numberline {8.1.3.c}Personal Options}{71}{subsubsection.8.1.3.3}
-\contentsline {section}{\numberline {8.2}Installation Guide}{73}{section.8.2}
-\contentsline {chapter}{\numberline {9}Class Index}{75}{chapter.9}
-\contentsline {chapter}{\numberline {10}Class Documentation}{77}{chapter.10}
-\contentsline {section}{\numberline {10.1}Poly Class Reference}{77}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{77}{subsection.10.1.1}
-\contentsline {subsubsection}{\numberline {10.1.1.a}Poly}{77}{subsubsection.10.1.1.1}
-\contentsline {subsubsection}{\numberline {10.1.1.b}$\sim $\discretionary {-}{}{}Poly}{77}{subsubsection.10.1.1.2}
-\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{77}{subsection.10.1.2}
-\contentsline {subsubsection}{\numberline {10.1.2.a}myfunction}{77}{subsubsection.10.1.2.1}
-\contentsline {chapter}{Bibliography}{79}{chapter*.7}
+\contentsline {section}{\numberline {5.4}System Testing}{32}{section.5.4}
+\contentsline {section}{\numberline {5.5}System Integration Analysis}{34}{section.5.5}
+\contentsline {section}{\numberline {5.6}Risk Analysis}{34}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Risk Mitigation}{34}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}Successes, Issues and Problems}{35}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Changes to the Backlog}{35}{subsection.5.7.1}
+\contentsline {chapter}{\numberline {6}Prototypes}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Sprint 1 Prototype}{37}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Deliverable}{38}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Backlog}{38}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Success/Fail}{38}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Sprint 2 Prototype}{38}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Deliverable}{39}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Backlog}{39}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Success/Fail}{39}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Sprint 3 Prototype}{40}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Deliverable}{40}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Backlog}{41}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Success/Fail}{41}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Sprint 3.5 and 4 Prototype}{41}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Deliverable}{44}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Backlog}{44}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Success/Fail}{45}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Sprint 5 Prototype}{45}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Deliverable}{47}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Backlog}{47}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Success/Fail}{48}{subsection.6.5.3}
+\contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{49}{chapter.7}
+\contentsline {section}{\numberline {7.1}Deployment Information and Dependencies}{49}{section.7.1}
+\contentsline {section}{\numberline {7.2}Setup Information}{50}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Installing Python 3}{50}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Installing PyQt 4 and Designer toolkit }{50}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Installing MySQL}{50}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Running Project}{50}{subsection.7.2.4}
+\contentsline {section}{\numberline {7.3}System Version Information}{51}{section.7.3}
+\contentsline {section}{\numberline {7.4}Future Work}{51}{section.7.4}
+\contentsline {chapter}{\numberline {8}User Documentation}{53}{chapter.8}
+\contentsline {section}{\numberline {8.1}User Guide}{53}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Entering the Software}{53}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Admin Landing}{53}{subsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.2.a}Manage Employees}{53}{subsubsection.8.1.2.1}
+\contentsline {subsubsection}{\numberline {8.1.2.b}Manage Classes}{60}{subsubsection.8.1.2.2}
+\contentsline {subsubsection}{\numberline {8.1.2.c}Manage Students}{61}{subsubsection.8.1.2.3}
+\contentsline {subsubsection}{\numberline {8.1.2.d}Manage Billing}{67}{subsubsection.8.1.2.4}
+\contentsline {subsection}{\numberline {8.1.3}Teacher Landing}{68}{subsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.3.a}Student Options}{71}{subsubsection.8.1.3.1}
+\contentsline {subsubsection}{\numberline {8.1.3.b}Class Options}{72}{subsubsection.8.1.3.2}
+\contentsline {subsubsection}{\numberline {8.1.3.c}Personal Options}{73}{subsubsection.8.1.3.3}
+\contentsline {section}{\numberline {8.2}Installation Guide}{75}{section.8.2}
+\contentsline {chapter}{\numberline {9}Class Index}{77}{chapter.9}
+\contentsline {chapter}{\numberline {10}Class Documentation}{79}{chapter.10}
+\contentsline {section}{\numberline {10.1}Add Class Reference}{79}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{79}{subsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.1.a}def __init__ (self):}{79}{subsubsection.10.1.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{79}{subsection.10.1.2}
+\contentsline {subsubsection}{\numberline {10.1.2.a}def setup_database (self):}{79}{subsubsection.10.1.2.1}
+\contentsline {subsubsection}{\numberline {10.1.2.b}def add_location (self):}{79}{subsubsection.10.1.2.2}
+\contentsline {subsubsection}{\numberline {10.1.2.c}def add_class (self):}{79}{subsubsection.10.1.2.3}
+\contentsline {subsubsection}{\numberline {10.1.2.d}def conn (self):}{79}{subsubsection.10.1.2.4}
+\contentsline {section}{\numberline {10.2}Add admin Reference}{80}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Constructor \& Destructor Documentation}{80}{subsection.10.2.1}
+\contentsline {subsubsection}{\numberline {10.2.1.a}__init__ (self):}{80}{subsubsection.10.2.1.1}
+\contentsline {subsection}{\numberline {10.2.2}Member Function Documentation}{80}{subsection.10.2.2}
+\contentsline {subsubsection}{\numberline {10.2.2.a}def submit(self):}{80}{subsubsection.10.2.2.1}
+\contentsline {section}{\numberline {10.3}Add new teacher Reference}{80}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Constructor \& Destructor Documentation}{80}{subsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.1.a}def __init__ (self):}{80}{subsubsection.10.3.1.1}
+\contentsline {subsection}{\numberline {10.3.2}Member Function Documentation}{80}{subsection.10.3.2}
+\contentsline {subsubsection}{\numberline {10.3.2.a}def check_existing_address(self):}{80}{subsubsection.10.3.2.1}
+\contentsline {subsubsection}{\numberline {10.3.2.b}def insert_teacher(self):}{80}{subsubsection.10.3.2.2}
+\contentsline {subsubsection}{\numberline {10.3.2.c}def create_account(self):}{80}{subsubsection.10.3.2.3}
+\contentsline {subsubsection}{\numberline {10.3.2.d}def conn(self):}{81}{subsubsection.10.3.2.4}
+\contentsline {section}{\numberline {10.4}addLocation Reference}{81}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Constructor \& Destructor Documentation}{81}{subsection.10.4.1}
+\contentsline {subsubsection}{\numberline {10.4.1.a}def __init__ (self):}{81}{subsubsection.10.4.1.1}
+\contentsline {subsection}{\numberline {10.4.2}Member Function Documentation}{81}{subsection.10.4.2}
+\contentsline {subsubsection}{\numberline {10.4.2.a}def addLocation(self):}{81}{subsubsection.10.4.2.1}
+\contentsline {subsubsection}{\numberline {10.4.2.b}def getLocation(self):}{81}{subsubsection.10.4.2.2}
+\contentsline {subsubsection}{\numberline {10.4.2.c}def setClose(self):}{81}{subsubsection.10.4.2.3}
+\contentsline {subsubsection}{\numberline {10.4.2.d}def getClose(self):}{81}{subsubsection.10.4.2.4}
+\contentsline {section}{\numberline {10.5}Addstu details Reference}{81}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Constructor \& Destructor Documentation}{82}{subsection.10.5.1}
+\contentsline {subsubsection}{\numberline {10.5.1.a}def __init__ (self):}{82}{subsubsection.10.5.1.1}
+\contentsline {subsection}{\numberline {10.5.2}Member Function Documentation}{82}{subsection.10.5.2}
+\contentsline {subsubsection}{\numberline {10.5.2.a}def set_student(self):}{82}{subsubsection.10.5.2.1}
+\contentsline {subsubsection}{\numberline {10.5.2.b}def add_student(self):}{82}{subsubsection.10.5.2.2}
+\contentsline {section}{\numberline {10.6}Addstu window Reference}{82}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Constructor \& Destructor Documentation}{82}{subsection.10.6.1}
+\contentsline {subsubsection}{\numberline {10.6.1.a}def __init__ (self):}{82}{subsubsection.10.6.1.1}
+\contentsline {subsection}{\numberline {10.6.2}Member Function Documentation}{82}{subsection.10.6.2}
+\contentsline {subsubsection}{\numberline {10.6.2.a}def add_student(self):}{82}{subsubsection.10.6.2.1}
+\contentsline {subsubsection}{\numberline {10.6.2.b}def remove_student(self):}{82}{subsubsection.10.6.2.2}
+\contentsline {subsubsection}{\numberline {10.6.2.c}def select_student(self):}{82}{subsubsection.10.6.2.3}
+\contentsline {subsubsection}{\numberline {10.6.2.d}def show_student(self):}{83}{subsubsection.10.6.2.4}
+\contentsline {subsubsection}{\numberline {10.6.2.e}def conn(self):}{83}{subsubsection.10.6.2.5}
+\contentsline {section}{\numberline {10.7}Addstu window admin Reference}{83}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Constructor \& Destructor Documentation}{83}{subsection.10.7.1}
+\contentsline {subsubsection}{\numberline {10.7.1.a}def __init__ (self):}{83}{subsubsection.10.7.1.1}
+\contentsline {subsection}{\numberline {10.7.2}Member Function Documentation}{83}{subsection.10.7.2}
+\contentsline {subsubsection}{\numberline {10.7.2.a}def add_student(self):}{83}{subsubsection.10.7.2.1}
+\contentsline {subsubsection}{\numberline {10.7.2.b}def remove_student(self):}{83}{subsubsection.10.7.2.2}
+\contentsline {subsubsection}{\numberline {10.7.2.c}def select_student(self):}{83}{subsubsection.10.7.2.3}
+\contentsline {subsubsection}{\numberline {10.7.2.d}def show_student(self):}{83}{subsubsection.10.7.2.4}
+\contentsline {subsubsection}{\numberline {10.7.2.e}def conn(self):}{83}{subsubsection.10.7.2.5}
+\contentsline {section}{\numberline {10.8}Admin Reference}{84}{section.10.8}
+\contentsline {subsection}{\numberline {10.8.1}Constructor \& Destructor Documentation}{84}{subsection.10.8.1}
+\contentsline {subsubsection}{\numberline {10.8.1.a}def __init__ (self):}{84}{subsubsection.10.8.1.1}
+\contentsline {subsection}{\numberline {10.8.2}Member Function Documentation}{84}{subsection.10.8.2}
+\contentsline {subsubsection}{\numberline {10.8.2.a}def logout(self):}{84}{subsubsection.10.8.2.1}
+\contentsline {subsubsection}{\numberline {10.8.2.b}def registration(self):}{84}{subsubsection.10.8.2.2}
+\contentsline {subsubsection}{\numberline {10.8.2.c}def enter_teacher_payrate(self):}{85}{subsubsection.10.8.2.3}
+\contentsline {subsubsection}{\numberline {10.8.2.d}def enter_teacher_hour(self):}{85}{subsubsection.10.8.2.4}
+\contentsline {subsubsection}{\numberline {10.8.2.e}def show_admin_list(self):}{85}{subsubsection.10.8.2.5}
+\contentsline {subsubsection}{\numberline {10.8.2.f}def student_balance(self):}{85}{subsubsection.10.8.2.6}
+\contentsline {subsubsection}{\numberline {10.8.2.g}def enter_full_payment(self):}{85}{subsubsection.10.8.2.7}
+\contentsline {subsubsection}{\numberline {10.8.2.h}def enter_partial_payment(self):}{85}{subsubsection.10.8.2.8}
+\contentsline {subsubsection}{\numberline {10.8.2.i}def set_semester(self):}{85}{subsubsection.10.8.2.9}
+\contentsline {subsubsection}{\numberline {10.8.2.j}def teaching_his(self):}{85}{subsubsection.10.8.2.10}
+\contentsline {subsubsection}{\numberline {10.8.2.k}def billing(self):}{85}{subsubsection.10.8.2.11}
+\contentsline {subsubsection}{\numberline {10.8.2.l}def fee(self):}{85}{subsubsection.10.8.2.12}
+\contentsline {subsubsection}{\numberline {10.8.2.m}def tuition(self):}{86}{subsubsection.10.8.2.13}
+\contentsline {subsubsection}{\numberline {10.8.2.n}def add_teacher(self):}{86}{subsubsection.10.8.2.14}
+\contentsline {subsubsection}{\numberline {10.8.2.o}def removeTeach(self):}{86}{subsubsection.10.8.2.15}
+\contentsline {subsubsection}{\numberline {10.8.2.p}def assign_teacher(self):}{86}{subsubsection.10.8.2.16}
+\contentsline {subsubsection}{\numberline {10.8.2.q}def update_teacher(self):}{86}{subsubsection.10.8.2.17}
+\contentsline {subsubsection}{\numberline {10.8.2.r}def search_teacher(self):}{86}{subsubsection.10.8.2.18}
+\contentsline {subsubsection}{\numberline {10.8.2.s}def view_class(self):}{86}{subsubsection.10.8.2.19}
+\contentsline {subsubsection}{\numberline {10.8.2.t}def new_class(self):}{86}{subsubsection.10.8.2.20}
+\contentsline {subsubsection}{\numberline {10.8.2.u}def search_student(self):}{86}{subsubsection.10.8.2.21}
+\contentsline {subsubsection}{\numberline {10.8.2.v}def add_student(self):}{87}{subsubsection.10.8.2.22}
+\contentsline {subsubsection}{\numberline {10.8.2.w}def register(self):}{87}{subsubsection.10.8.2.23}
+\contentsline {subsubsection}{\numberline {10.8.2.x}def removeStu(self):}{87}{subsubsection.10.8.2.24}
+\contentsline {subsubsection}{\numberline {10.8.2.y}def removeClass(self):}{87}{subsubsection.10.8.2.25}
+\contentsline {subsubsection}{\numberline {10.8.2.z}def studentCredit(self):}{87}{subsubsection.10.8.2.26}
+\contentsline {subsection}{\numberline {10.8.3}Member Function continued Documentation}{87}{subsection.10.8.3}
+\contentsline {subsubsection}{\numberline {10.8.3.a}def change_window(self):}{87}{subsubsection.10.8.3.1}
+\contentsline {subsubsection}{\numberline {10.8.3.b}def conn(self):}{87}{subsubsection.10.8.3.2}
+\contentsline {subsubsection}{\numberline {10.8.3.c}def Back_btn(self):}{87}{subsubsection.10.8.3.3}
+\contentsline {subsubsection}{\numberline {10.8.3.d}def Quit(self):}{87}{subsubsection.10.8.3.4}
+\contentsline {section}{\numberline {10.9}Admin info Reference}{87}{section.10.9}
+\contentsline {subsection}{\numberline {10.9.1}Constructor \& Destructor Documentation}{88}{subsection.10.9.1}
+\contentsline {subsubsection}{\numberline {10.9.1.a}def __init__ (self):}{88}{subsubsection.10.9.1.1}
+\contentsline {section}{\numberline {10.10}Admin list Reference}{88}{section.10.10}
+\contentsline {subsection}{\numberline {10.10.1}Constructor \& Destructor Documentation}{88}{subsection.10.10.1}
+\contentsline {subsubsection}{\numberline {10.10.1.a}def __init__ (self):}{88}{subsubsection.10.10.1.1}
+\contentsline {subsection}{\numberline {10.10.2}Member Function Documentation}{88}{subsection.10.10.2}
+\contentsline {subsubsection}{\numberline {10.10.2.a}def add_Admin (self):}{88}{subsubsection.10.10.2.1}
+\contentsline {subsubsection}{\numberline {10.10.2.b}def remove_Admin (self):}{88}{subsubsection.10.10.2.2}
+\contentsline {subsubsection}{\numberline {10.10.2.c}def search_Admin (self):}{88}{subsubsection.10.10.2.3}
+\contentsline {subsubsection}{\numberline {10.10.2.d}def print_Detail (self):}{88}{subsubsection.10.10.2.4}
+\contentsline {subsubsection}{\numberline {10.10.2.e}def select_Admin (self):}{88}{subsubsection.10.10.2.5}
+\contentsline {subsubsection}{\numberline {10.10.2.f}def conn (self):}{89}{subsubsection.10.10.2.6}
+\contentsline {section}{\numberline {10.11}Adv class Reference}{89}{section.10.11}
+\contentsline {subsection}{\numberline {10.11.1}Constructor \& Destructor Documentation}{89}{subsection.10.11.1}
+\contentsline {subsubsection}{\numberline {10.11.1.a}def __init__ (self):}{89}{subsubsection.10.11.1.1}
+\contentsline {subsection}{\numberline {10.11.2}Member Function Documentation}{89}{subsection.10.11.2}
+\contentsline {subsubsection}{\numberline {10.11.2.a}def checkbox_change (self):}{89}{subsubsection.10.11.2.1}
+\contentsline {section}{\numberline {10.12}Adv student Reference}{89}{section.10.12}
+\contentsline {subsection}{\numberline {10.12.1}Constructor \& Destructor Documentation}{89}{subsection.10.12.1}
+\contentsline {subsubsection}{\numberline {10.12.1.a}def __init__ (self):}{89}{subsubsection.10.12.1.1}
+\contentsline {subsection}{\numberline {10.12.2}Member Function Documentation}{89}{subsection.10.12.2}
+\contentsline {subsubsection}{\numberline {10.12.2.a}def checkbox_change (self):}{89}{subsubsection.10.12.2.1}
+\contentsline {section}{\numberline {10.13}Adv teacher Reference}{89}{section.10.13}
+\contentsline {subsection}{\numberline {10.13.1}Constructor \& Destructor Documentation}{90}{subsection.10.13.1}
+\contentsline {subsubsection}{\numberline {10.13.1.a}def __init__ (self):}{90}{subsubsection.10.13.1.1}
+\contentsline {subsection}{\numberline {10.13.2}Member Function Documentation}{90}{subsection.10.13.2}
+\contentsline {subsubsection}{\numberline {10.13.2.a}def checkbox_change (self):}{90}{subsubsection.10.13.2.1}
+\contentsline {section}{\numberline {10.14}Assign class Reference}{90}{section.10.14}
+\contentsline {subsection}{\numberline {10.14.1}Constructor \& Destructor Documentation}{90}{subsection.10.14.1}
+\contentsline {subsubsection}{\numberline {10.14.1.a}def __init__ (self):}{90}{subsubsection.10.14.1.1}
+\contentsline {subsection}{\numberline {10.14.2}Member Function Documentation}{90}{subsection.10.14.2}
+\contentsline {subsubsection}{\numberline {10.14.2.a}def teacher_assignment (self):}{90}{subsubsection.10.14.2.1}
+\contentsline {subsubsection}{\numberline {10.14.2.b}def assign_teacher (self):}{90}{subsubsection.10.14.2.2}
+\contentsline {subsubsection}{\numberline {10.14.2.c}def Update_assign_teacher (self):}{90}{subsubsection.10.14.2.3}
+\contentsline {section}{\numberline {10.15}Billing history Reference}{91}{section.10.15}
+\contentsline {subsection}{\numberline {10.15.1}Constructor \& Destructor Documentation}{91}{subsection.10.15.1}
+\contentsline {subsubsection}{\numberline {10.15.1.a}def __init__ (self):}{91}{subsubsection.10.15.1.1}
+\contentsline {subsection}{\numberline {10.15.2}Member Function Documentation}{91}{subsection.10.15.2}
+\contentsline {subsubsection}{\numberline {10.15.2.a}def search_student (self):}{91}{subsubsection.10.15.2.1}
+\contentsline {subsubsection}{\numberline {10.15.2.b}def print_history (self):}{91}{subsubsection.10.15.2.2}
+\contentsline {subsubsection}{\numberline {10.15.2.c}def select_student (self):}{91}{subsubsection.10.15.2.3}
+\contentsline {subsubsection}{\numberline {10.15.2.d}def conn (self):}{91}{subsubsection.10.15.2.4}
+\contentsline {section}{\numberline {10.16}Print Hist Reference}{91}{section.10.16}
+\contentsline {subsection}{\numberline {10.16.1}Constructor \& Destructor Documentation}{91}{subsection.10.16.1}
+\contentsline {subsubsection}{\numberline {10.16.1.a}def __init__ (self):}{91}{subsubsection.10.16.1.1}
+\contentsline {subsection}{\numberline {10.16.2}Member Function Documentation}{92}{subsection.10.16.2}
+\contentsline {subsubsection}{\numberline {10.16.2.a}def handlePrint (self):}{92}{subsubsection.10.16.2.1}
+\contentsline {subsubsection}{\numberline {10.16.2.b}def handlePreview (self):}{92}{subsubsection.10.16.2.2}
+\contentsline {subsubsection}{\numberline {10.16.2.c}def handleTextChanged (self):}{92}{subsubsection.10.16.2.3}
+\contentsline {section}{\numberline {10.17}Change PW Reference}{92}{section.10.17}
+\contentsline {subsection}{\numberline {10.17.1}Constructor \& Destructor Documentation}{92}{subsection.10.17.1}
+\contentsline {subsubsection}{\numberline {10.17.1.a}def __init__ (self):}{92}{subsubsection.10.17.1.1}
+\contentsline {subsection}{\numberline {10.17.2}Member Function Documentation}{92}{subsection.10.17.2}
+\contentsline {subsubsection}{\numberline {10.17.2.a}def update (self):}{92}{subsubsection.10.17.2.1}
+\contentsline {subsubsection}{\numberline {10.17.2.b}def conn (self):}{92}{subsubsection.10.17.2.2}
+\contentsline {section}{\numberline {10.18}Change user Reference}{92}{section.10.18}
+\contentsline {subsection}{\numberline {10.18.1}Constructor \& Destructor Documentation}{93}{subsection.10.18.1}
+\contentsline {subsubsection}{\numberline {10.18.1.a}def __init__ (self):}{93}{subsubsection.10.18.1.1}
+\contentsline {subsection}{\numberline {10.18.2}Member Function Documentation}{93}{subsection.10.18.2}
+\contentsline {subsubsection}{\numberline {10.18.2.a}def update (self):}{93}{subsubsection.10.18.2.1}
+\contentsline {subsubsection}{\numberline {10.18.2.b}def getName (self):}{93}{subsubsection.10.18.2.2}
+\contentsline {subsubsection}{\numberline {10.18.2.c}def conn (self):}{93}{subsubsection.10.18.2.3}
+\contentsline {section}{\numberline {10.19}Class list Reference}{93}{section.10.19}
+\contentsline {subsection}{\numberline {10.19.1}Constructor \& Destructor Documentation}{93}{subsection.10.19.1}
+\contentsline {subsubsection}{\numberline {10.19.1.a}def __init__ (self):}{93}{subsubsection.10.19.1.1}
+\contentsline {subsection}{\numberline {10.19.2}Member Function Documentation}{93}{subsection.10.19.2}
+\contentsline {subsubsection}{\numberline {10.19.2.a}def add (self):}{93}{subsubsection.10.19.2.1}
+\contentsline {subsubsection}{\numberline {10.19.2.b}def drop (self):}{93}{subsubsection.10.19.2.2}
+\contentsline {subsubsection}{\numberline {10.19.2.c}def refresh (self):}{94}{subsubsection.10.19.2.3}
+\contentsline {section}{\numberline {10.20}Class reg Reference}{94}{section.10.20}
+\contentsline {subsection}{\numberline {10.20.1}Constructor \& Destructor Documentation}{94}{subsection.10.20.1}
+\contentsline {subsubsection}{\numberline {10.20.1.a}def __init__ (self):}{94}{subsubsection.10.20.1.1}
+\contentsline {subsection}{\numberline {10.20.2}Member Function Documentation}{94}{subsection.10.20.2}
+\contentsline {subsubsection}{\numberline {10.20.2.a}def update_satus (self):}{94}{subsubsection.10.20.2.1}
+\contentsline {subsubsection}{\numberline {10.20.2.b}def show_student (self):}{94}{subsubsection.10.20.2.2}
+\contentsline {subsubsection}{\numberline {10.20.2.c}def select_student (self):}{94}{subsubsection.10.20.2.3}
+\contentsline {subsubsection}{\numberline {10.20.2.d}def conn (self):}{94}{subsubsection.10.20.2.4}
+\contentsline {section}{\numberline {10.21}Credits Reference}{94}{section.10.21}
+\contentsline {subsection}{\numberline {10.21.1}Constructor \& Destructor Documentation}{95}{subsection.10.21.1}
+\contentsline {subsubsection}{\numberline {10.21.1.a}def __init__ (self):}{95}{subsubsection.10.21.1.1}
+\contentsline {subsection}{\numberline {10.21.2}Member Function Documentation}{95}{subsection.10.21.2}
+\contentsline {subsubsection}{\numberline {10.21.2.a}def applyCredit (self):}{95}{subsubsection.10.21.2.1}
+\contentsline {subsubsection}{\numberline {10.21.2.b}def showStudentInformation (self):}{95}{subsubsection.10.21.2.2}
+\contentsline {subsubsection}{\numberline {10.21.2.c}def conn (self):}{95}{subsubsection.10.21.2.3}
+\contentsline {section}{\numberline {10.22}Full pay Reference}{95}{section.10.22}
+\contentsline {subsection}{\numberline {10.22.1}Constructor \& Destructor Documentation}{95}{subsection.10.22.1}
+\contentsline {subsubsection}{\numberline {10.22.1.a}def __init__ (self):}{95}{subsubsection.10.22.1.1}
+\contentsline {subsection}{\numberline {10.22.2}Member Function Documentation}{95}{subsection.10.22.2}
+\contentsline {subsubsection}{\numberline {10.22.2.a}def get_rate (self):}{95}{subsubsection.10.22.2.1}
+\contentsline {subsubsection}{\numberline {10.22.2.b}def search_student (self):}{95}{subsubsection.10.22.2.2}
+\contentsline {subsubsection}{\numberline {10.22.2.c}def clear_money (self):}{96}{subsubsection.10.22.2.3}
+\contentsline {subsubsection}{\numberline {10.22.2.d}def select_student (self):}{96}{subsubsection.10.22.2.4}
+\contentsline {subsubsection}{\numberline {10.22.2.e}def conn (self):}{96}{subsubsection.10.22.2.5}
+\contentsline {section}{\numberline {10.23}Enter hours Reference}{96}{section.10.23}
+\contentsline {subsection}{\numberline {10.23.1}Constructor \& Destructor Documentation}{96}{subsection.10.23.1}
+\contentsline {subsubsection}{\numberline {10.23.1.a}def __init__ (self):}{96}{subsubsection.10.23.1.1}
+\contentsline {subsection}{\numberline {10.23.2}Member Function Documentation}{96}{subsection.10.23.2}
+\contentsline {subsubsection}{\numberline {10.23.2.a}def show_hours (self):}{96}{subsubsection.10.23.2.1}
+\contentsline {subsubsection}{\numberline {10.23.2.b}def select_teacher (self):}{96}{subsubsection.10.23.2.2}
+\contentsline {subsubsection}{\numberline {10.23.2.c}def search_teacher (self):}{96}{subsubsection.10.23.2.3}
+\contentsline {subsubsection}{\numberline {10.23.2.d}def conn (self):}{96}{subsubsection.10.23.2.4}
+\contentsline {section}{\numberline {10.24}Print fees Reference}{97}{section.10.24}
+\contentsline {subsection}{\numberline {10.24.1}Constructor \& Destructor Documentation}{97}{subsection.10.24.1}
+\contentsline {subsubsection}{\numberline {10.24.1.a}def __init__ (self):}{97}{subsubsection.10.24.1.1}
+\contentsline {subsection}{\numberline {10.24.2}Member Function Documentation}{97}{subsection.10.24.2}
+\contentsline {subsubsection}{\numberline {10.24.2.a}def handlePrint (self):}{97}{subsubsection.10.24.2.1}
+\contentsline {subsubsection}{\numberline {10.24.2.b}def handlePreview (self):}{97}{subsubsection.10.24.2.2}
+\contentsline {subsubsection}{\numberline {10.24.2.c}def handleTextChanged (self):}{97}{subsubsection.10.24.2.3}
+\contentsline {section}{\numberline {10.25}fees Reference}{97}{section.10.25}
+\contentsline {subsection}{\numberline {10.25.1}Constructor \& Destructor Documentation}{97}{subsection.10.25.1}
+\contentsline {subsubsection}{\numberline {10.25.1.a}def __init__ (self):}{97}{subsubsection.10.25.1.1}
+\contentsline {subsection}{\numberline {10.25.2}Member Function Documentation}{98}{subsection.10.25.2}
+\contentsline {subsubsection}{\numberline {10.25.2.a}def show_information (self):}{98}{subsubsection.10.25.2.1}
+\contentsline {subsubsection}{\numberline {10.25.2.b}def add (self):}{98}{subsubsection.10.25.2.2}
+\contentsline {subsubsection}{\numberline {10.25.2.c}def update (self):}{98}{subsubsection.10.25.2.3}
+\contentsline {subsubsection}{\numberline {10.25.2.d}def remove (self):}{98}{subsubsection.10.25.2.4}
+\contentsline {subsubsection}{\numberline {10.25.2.e}def refresh_list (self):}{98}{subsubsection.10.25.2.5}
+\contentsline {subsubsection}{\numberline {10.25.2.f}def conn (self):}{98}{subsubsection.10.25.2.6}
+\contentsline {section}{\numberline {10.26}login Reference}{98}{section.10.26}
+\contentsline {subsection}{\numberline {10.26.1}Constructor \& Destructor Documentation}{98}{subsection.10.26.1}
+\contentsline {subsubsection}{\numberline {10.26.1.a}def __init__ (self):}{98}{subsubsection.10.26.1.1}
+\contentsline {subsection}{\numberline {10.26.2}Member Function Documentation}{99}{subsection.10.26.2}
+\contentsline {subsubsection}{\numberline {10.26.2.a}def handleLogin (self):}{99}{subsubsection.10.26.2.1}
+\contentsline {subsubsection}{\numberline {10.26.2.b}def getAccessLevel (self):}{99}{subsubsection.10.26.2.2}
+\contentsline {subsubsection}{\numberline {10.26.2.c}def getUsername (self):}{99}{subsubsection.10.26.2.3}
+\contentsline {subsubsection}{\numberline {10.26.2.d}def conn (self):}{99}{subsubsection.10.26.2.4}
+\contentsline {section}{\numberline {10.27}My info Reference}{99}{section.10.27}
+\contentsline {subsection}{\numberline {10.27.1}Constructor \& Destructor Documentation}{99}{subsection.10.27.1}
+\contentsline {subsubsection}{\numberline {10.27.1.a}def __init__ (self):}{99}{subsubsection.10.27.1.1}
+\contentsline {subsection}{\numberline {10.27.2}Member Function Documentation}{99}{subsection.10.27.2}
+\contentsline {subsubsection}{\numberline {10.27.2.a}def check_existing_address (self):}{99}{subsubsection.10.27.2.1}
+\contentsline {subsubsection}{\numberline {10.27.2.b}def fill_form (self):}{99}{subsubsection.10.27.2.2}
+\contentsline {subsubsection}{\numberline {10.27.2.c}def submit_updates (self):}{100}{subsubsection.10.27.2.3}
+\contentsline {subsubsection}{\numberline {10.27.2.d}def conn (self):}{100}{subsubsection.10.27.2.4}
+\contentsline {section}{\numberline {10.28}Navi Reference}{100}{section.10.28}
+\contentsline {subsection}{\numberline {10.28.1}Constructor \& Destructor Documentation}{100}{subsection.10.28.1}
+\contentsline {subsubsection}{\numberline {10.28.1.a}def __init__ (self):}{100}{subsubsection.10.28.1.1}
+\contentsline {subsection}{\numberline {10.28.2}Member Function Documentation}{100}{subsection.10.28.2}
+\contentsline {subsubsection}{\numberline {10.28.2.a}def is_valid (self):}{100}{subsubsection.10.28.2.1}
+\contentsline {section}{\numberline {10.29}Partial pay Reference}{100}{section.10.29}
+\contentsline {subsection}{\numberline {10.29.1}Constructor \& Destructor Documentation}{100}{subsection.10.29.1}
+\contentsline {subsubsection}{\numberline {10.29.1.a}def __init__ (self):}{100}{subsubsection.10.29.1.1}
+\contentsline {subsection}{\numberline {10.29.2}Member Function Documentation}{100}{subsection.10.29.2}
+\contentsline {subsubsection}{\numberline {10.29.2.a}def pay_money (self):}{100}{subsubsection.10.29.2.1}
+\contentsline {subsubsection}{\numberline {10.29.2.b}def get_rate (self):}{101}{subsubsection.10.29.2.2}
+\contentsline {subsubsection}{\numberline {10.29.2.c}def select_student (self):}{101}{subsubsection.10.29.2.3}
+\contentsline {subsubsection}{\numberline {10.29.2.d}def search_student (self):}{101}{subsubsection.10.29.2.4}
+\contentsline {subsubsection}{\numberline {10.29.2.e}def conn (self):}{101}{subsubsection.10.29.2.5}
+\contentsline {section}{\numberline {10.30}Part pay dialog Reference}{101}{section.10.30}
+\contentsline {subsection}{\numberline {10.30.1}Constructor \& Destructor Documentation}{101}{subsection.10.30.1}
+\contentsline {subsubsection}{\numberline {10.30.1.a}def __init__ (self):}{101}{subsubsection.10.30.1.1}
+\contentsline {subsection}{\numberline {10.30.2}Member Function Documentation}{101}{subsection.10.30.2}
+\contentsline {subsubsection}{\numberline {10.30.2.a}def pay (self):}{101}{subsubsection.10.30.2.1}
+\contentsline {section}{\numberline {10.31}refund Reference}{101}{section.10.31}
+\contentsline {subsection}{\numberline {10.31.1}Constructor \& Destructor Documentation}{102}{subsection.10.31.1}
+\contentsline {subsubsection}{\numberline {10.31.1.a}def __init__ (self):}{102}{subsubsection.10.31.1.1}
+\contentsline {subsection}{\numberline {10.31.2}Member Function Documentation}{102}{subsection.10.31.2}
+\contentsline {subsubsection}{\numberline {10.31.2.a}def getDropDate (self):}{102}{subsubsection.10.31.2.1}
+\contentsline {subsubsection}{\numberline {10.31.2.b}def issueRefund (self):}{102}{subsubsection.10.31.2.2}
+\contentsline {subsubsection}{\numberline {10.31.2.c}def costofClass (self):}{102}{subsubsection.10.31.2.3}
+\contentsline {subsubsection}{\numberline {10.31.2.d}def getStudentId (self):}{102}{subsubsection.10.31.2.4}
+\contentsline {subsubsection}{\numberline {10.31.2.e}def conn (self):}{102}{subsubsection.10.31.2.5}
+\contentsline {section}{\numberline {10.32}removeAdmin Reference}{102}{section.10.32}
+\contentsline {subsection}{\numberline {10.32.1}Constructor \& Destructor Documentation}{102}{subsection.10.32.1}
+\contentsline {subsubsection}{\numberline {10.32.1.a}def __init__ (self):}{102}{subsubsection.10.32.1.1}
+\contentsline {subsection}{\numberline {10.32.2}Member Function Documentation}{102}{subsection.10.32.2}
+\contentsline {subsubsection}{\numberline {10.32.2.a}def submit (self):}{102}{subsubsection.10.32.2.1}
+\contentsline {subsubsection}{\numberline {10.32.2.b}def conn (self):}{103}{subsubsection.10.32.2.2}
+\contentsline {section}{\numberline {10.33}removeClass Reference}{103}{section.10.33}
+\contentsline {subsection}{\numberline {10.33.1}Constructor \& Destructor Documentation}{103}{subsection.10.33.1}
+\contentsline {subsubsection}{\numberline {10.33.1.a}def __init__ (self):}{103}{subsubsection.10.33.1.1}
+\contentsline {subsection}{\numberline {10.33.2}Member Function Documentation}{103}{subsection.10.33.2}
+\contentsline {subsubsection}{\numberline {10.33.2.a}def submit (self):}{103}{subsubsection.10.33.2.1}
+\contentsline {subsubsection}{\numberline {10.33.2.b}def conn (self):}{103}{subsubsection.10.33.2.2}
+\contentsline {section}{\numberline {10.34}removeStudentData Reference}{103}{section.10.34}
+\contentsline {subsection}{\numberline {10.34.1}Constructor \& Destructor Documentation}{103}{subsection.10.34.1}
+\contentsline {subsubsection}{\numberline {10.34.1.a}def __init__ (self):}{103}{subsubsection.10.34.1.1}
+\contentsline {subsection}{\numberline {10.34.2}Member Function Documentation}{103}{subsection.10.34.2}
+\contentsline {subsubsection}{\numberline {10.34.2.a}def refreshModel (self):}{103}{subsubsection.10.34.2.1}
+\contentsline {subsubsection}{\numberline {10.34.2.b}def conn (self):}{104}{subsubsection.10.34.2.2}
+\contentsline {section}{\numberline {10.35}removeTeacher Reference}{104}{section.10.35}
+\contentsline {subsection}{\numberline {10.35.1}Constructor \& Destructor Documentation}{104}{subsection.10.35.1}
+\contentsline {subsubsection}{\numberline {10.35.1.a}def __init__ (self):}{104}{subsubsection.10.35.1.1}
+\contentsline {subsection}{\numberline {10.35.2}Member Function Documentation}{104}{subsection.10.35.2}
+\contentsline {subsubsection}{\numberline {10.35.2.a}def submit (self):}{104}{subsubsection.10.35.2.1}
+\contentsline {subsubsection}{\numberline {10.35.2.b}def conn (self):}{104}{subsubsection.10.35.2.2}
+\contentsline {section}{\numberline {10.36}Roll Reference}{104}{section.10.36}
+\contentsline {subsection}{\numberline {10.36.1}Constructor \& Destructor Documentation}{104}{subsection.10.36.1}
+\contentsline {subsubsection}{\numberline {10.36.1.a}def __init__ (self):}{104}{subsubsection.10.36.1.1}
+\contentsline {subsection}{\numberline {10.36.2}Member Function Documentation}{104}{subsection.10.36.2}
+\contentsline {subsubsection}{\numberline {10.36.2.a}def print_student (self):}{104}{subsubsection.10.36.2.1}
+\contentsline {subsubsection}{\numberline {10.36.2.b}def show_class (self):}{105}{subsubsection.10.36.2.2}
+\contentsline {subsubsection}{\numberline {10.36.2.c}def conn (self):}{105}{subsubsection.10.36.2.3}
+\contentsline {section}{\numberline {10.37}Print Roll Reference}{105}{section.10.37}
+\contentsline {subsection}{\numberline {10.37.1}Constructor \& Destructor Documentation}{105}{subsection.10.37.1}
+\contentsline {subsubsection}{\numberline {10.37.1.a}def __init__ (self):}{105}{subsubsection.10.37.1.1}
+\contentsline {subsection}{\numberline {10.37.2}Member Function Documentation}{105}{subsection.10.37.2}
+\contentsline {subsubsection}{\numberline {10.37.2.a}def handlePrint (self):}{105}{subsubsection.10.37.2.1}
+\contentsline {subsubsection}{\numberline {10.37.2.b}def handlePreview (self):}{105}{subsubsection.10.37.2.2}
+\contentsline {subsubsection}{\numberline {10.37.2.c}def handleTextChanged (self):}{105}{subsubsection.10.37.2.3}
+\contentsline {section}{\numberline {10.38}schedule print Reference}{105}{section.10.38}
+\contentsline {subsection}{\numberline {10.38.1}Constructor \& Destructor Documentation}{106}{subsection.10.38.1}
+\contentsline {subsubsection}{\numberline {10.38.1.a}def __init__ (self):}{106}{subsubsection.10.38.1.1}
+\contentsline {subsection}{\numberline {10.38.2}Member Function Documentation}{106}{subsection.10.38.2}
+\contentsline {subsubsection}{\numberline {10.38.2.a}def handlePrint (self):}{106}{subsubsection.10.38.2.1}
+\contentsline {subsubsection}{\numberline {10.38.2.b}def handlePreview (self):}{106}{subsubsection.10.38.2.2}
+\contentsline {subsubsection}{\numberline {10.38.2.c}def handleTextChanged (self):}{106}{subsubsection.10.38.2.3}
+\contentsline {section}{\numberline {10.39}Search class Reference}{106}{section.10.39}
+\contentsline {subsection}{\numberline {10.39.1}Constructor \& Destructor Documentation}{106}{subsection.10.39.1}
+\contentsline {subsubsection}{\numberline {10.39.1.a}def __init__ (self):}{106}{subsubsection.10.39.1.1}
+\contentsline {subsection}{\numberline {10.39.2}Member Function Documentation}{106}{subsection.10.39.2}
+\contentsline {subsubsection}{\numberline {10.39.2.a}def add_location (self):}{106}{subsubsection.10.39.2.1}
+\contentsline {subsubsection}{\numberline {10.39.2.b}def Classinfo_update (self):}{106}{subsubsection.10.39.2.2}
+\contentsline {subsubsection}{\numberline {10.39.2.c}def detail_show (self):}{107}{subsubsection.10.39.2.3}
+\contentsline {subsubsection}{\numberline {10.39.2.d}def advsearch_show (self):}{107}{subsubsection.10.39.2.4}
+\contentsline {subsubsection}{\numberline {10.39.2.e}def advsearch_query (self):}{107}{subsubsection.10.39.2.5}
+\contentsline {subsubsection}{\numberline {10.39.2.f}def reset_table (self):}{107}{subsubsection.10.39.2.6}
+\contentsline {subsubsection}{\numberline {10.39.2.g}def search (self):}{107}{subsubsection.10.39.2.7}
+\contentsline {subsubsection}{\numberline {10.39.2.h}def conn (self):}{107}{subsubsection.10.39.2.8}
+\contentsline {section}{\numberline {10.40}Search teacher Reference}{107}{section.10.40}
+\contentsline {subsection}{\numberline {10.40.1}Constructor \& Destructor Documentation}{107}{subsection.10.40.1}
+\contentsline {subsubsection}{\numberline {10.40.1.a}def __init__ (self):}{107}{subsubsection.10.40.1.1}
+\contentsline {subsection}{\numberline {10.40.2}Member Function Documentation}{108}{subsection.10.40.2}
+\contentsline {subsubsection}{\numberline {10.40.2.a}def Teacherinfo_update (self):}{108}{subsubsection.10.40.2.1}
+\contentsline {subsubsection}{\numberline {10.40.2.b}def detail_show (self):}{108}{subsubsection.10.40.2.2}
+\contentsline {subsubsection}{\numberline {10.40.2.c}def advsearch_show (self):}{108}{subsubsection.10.40.2.3}
+\contentsline {subsubsection}{\numberline {10.40.2.d}def advsearch_query (self):}{108}{subsubsection.10.40.2.4}
+\contentsline {subsubsection}{\numberline {10.40.2.e}def reset_table (self):}{108}{subsubsection.10.40.2.5}
+\contentsline {subsubsection}{\numberline {10.40.2.f}def search (self):}{108}{subsubsection.10.40.2.6}
+\contentsline {subsubsection}{\numberline {10.40.2.g}def conn (self):}{108}{subsubsection.10.40.2.7}
+\contentsline {section}{\numberline {10.41}Search student Reference}{108}{section.10.41}
+\contentsline {subsection}{\numberline {10.41.1}Constructor \& Destructor Documentation}{109}{subsection.10.41.1}
+\contentsline {subsubsection}{\numberline {10.41.1.a}def __init__ (self):}{109}{subsubsection.10.41.1.1}
+\contentsline {subsection}{\numberline {10.41.2}Member Function Documentation}{109}{subsection.10.41.2}
+\contentsline {subsubsection}{\numberline {10.41.2.a}def stuinfo_update (self):}{109}{subsubsection.10.41.2.1}
+\contentsline {subsubsection}{\numberline {10.41.2.b}def detail_show (self):}{109}{subsubsection.10.41.2.2}
+\contentsline {subsubsection}{\numberline {10.41.2.c}def advsearch_show (self):}{109}{subsubsection.10.41.2.3}
+\contentsline {subsubsection}{\numberline {10.41.2.d}def advsearch_query (self):}{109}{subsubsection.10.41.2.4}
+\contentsline {subsubsection}{\numberline {10.41.2.e}def reset_table (self):}{109}{subsubsection.10.41.2.5}
+\contentsline {subsubsection}{\numberline {10.41.2.f}def search (self):}{109}{subsubsection.10.41.2.6}
+\contentsline {subsubsection}{\numberline {10.41.2.g}def conn (self):}{109}{subsubsection.10.41.2.7}
+\contentsline {section}{\numberline {10.42}Update teacher Reference}{109}{section.10.42}
+\contentsline {subsection}{\numberline {10.42.1}Constructor \& Destructor Documentation}{110}{subsection.10.42.1}
+\contentsline {subsubsection}{\numberline {10.42.1.a}def __init__ (self):}{110}{subsubsection.10.42.1.1}
+\contentsline {subsection}{\numberline {10.42.2}Member Function Documentation}{110}{subsection.10.42.2}
+\contentsline {subsubsection}{\numberline {10.42.2.a}def checkExistingAddress (self):}{110}{subsubsection.10.42.2.1}
+\contentsline {subsubsection}{\numberline {10.42.2.b}def clearForm (self):}{110}{subsubsection.10.42.2.2}
+\contentsline {subsubsection}{\numberline {10.42.2.c}def fillForm (self):}{110}{subsubsection.10.42.2.3}
+\contentsline {subsubsection}{\numberline {10.42.2.d}def submitUpdates (self):}{110}{subsubsection.10.42.2.4}
+\contentsline {subsubsection}{\numberline {10.42.2.e}def conn (self):}{110}{subsubsection.10.42.2.5}
+\contentsline {section}{\numberline {10.43}Set semester Reference}{110}{section.10.43}
+\contentsline {subsection}{\numberline {10.43.1}Constructor \& Destructor Documentation}{110}{subsection.10.43.1}
+\contentsline {subsubsection}{\numberline {10.43.1.a}def __init__ (self):}{110}{subsubsection.10.43.1.1}
+\contentsline {subsection}{\numberline {10.43.2}Member Function Documentation}{111}{subsection.10.43.2}
+\contentsline {subsubsection}{\numberline {10.43.2.a}def add (self):}{111}{subsubsection.10.43.2.1}
+\contentsline {subsubsection}{\numberline {10.43.2.b}def set (self):}{111}{subsubsection.10.43.2.2}
+\contentsline {subsubsection}{\numberline {10.43.2.c}def conn (self):}{111}{subsubsection.10.43.2.3}
+\contentsline {section}{\numberline {10.44}Show hours Reference}{111}{section.10.44}
+\contentsline {subsection}{\numberline {10.44.1}Constructor \& Destructor Documentation}{111}{subsection.10.44.1}
+\contentsline {subsubsection}{\numberline {10.44.1.a}def __init__ (self):}{111}{subsubsection.10.44.1.1}
+\contentsline {subsection}{\numberline {10.44.2}Member Function Documentation}{111}{subsection.10.44.2}
+\contentsline {subsubsection}{\numberline {10.44.2.a}def update_text (self):}{111}{subsubsection.10.44.2.1}
+\contentsline {subsubsection}{\numberline {10.44.2.b}def update_hours (self):}{111}{subsubsection.10.44.2.2}
+\contentsline {section}{\numberline {10.45}Stu add Reference}{111}{section.10.45}
+\contentsline {subsection}{\numberline {10.45.1}Constructor \& Destructor Documentation}{112}{subsection.10.45.1}
+\contentsline {subsubsection}{\numberline {10.45.1.a}def __init__ (self):}{112}{subsubsection.10.45.1.1}
+\contentsline {subsection}{\numberline {10.45.2}Member Function Documentation}{112}{subsection.10.45.2}
+\contentsline {subsubsection}{\numberline {10.45.2.a}def add_stu (self):}{112}{subsubsection.10.45.2.1}
+\contentsline {subsubsection}{\numberline {10.45.2.b}def set_guradian (self):}{112}{subsubsection.10.45.2.2}
+\contentsline {subsubsection}{\numberline {10.45.2.c}def add_guradian (self):}{112}{subsubsection.10.45.2.3}
+\contentsline {subsubsection}{\numberline {10.45.2.d}def show_list (self):}{112}{subsubsection.10.45.2.4}
+\contentsline {section}{\numberline {10.46}Stu reg Reference}{112}{section.10.46}
+\contentsline {subsection}{\numberline {10.46.1}Constructor \& Destructor Documentation}{112}{subsection.10.46.1}
+\contentsline {subsubsection}{\numberline {10.46.1.a}def __init__ (self):}{112}{subsubsection.10.46.1.1}
+\contentsline {subsection}{\numberline {10.46.2}Member Function Documentation}{112}{subsection.10.46.2}
+\contentsline {section}{\numberline {10.47}Stu pay Reference}{112}{section.10.47}
+\contentsline {subsection}{\numberline {10.47.1}Constructor \& Destructor Documentation}{113}{subsection.10.47.1}
+\contentsline {subsubsection}{\numberline {10.47.1.a}def __init__ (self):}{113}{subsubsection.10.47.1.1}
+\contentsline {subsection}{\numberline {10.47.2}Member Function Documentation}{113}{subsection.10.47.2}
+\contentsline {subsubsection}{\numberline {10.47.2.a}def get_rate (self):}{113}{subsubsection.10.47.2.1}
+\contentsline {subsubsection}{\numberline {10.47.2.b}def search_student (self):}{113}{subsubsection.10.47.2.2}
+\contentsline {subsubsection}{\numberline {10.47.2.c}def print_history (self):}{113}{subsubsection.10.47.2.3}
+\contentsline {subsubsection}{\numberline {10.47.2.d}def select_student (self):}{113}{subsubsection.10.47.2.4}
+\contentsline {subsubsection}{\numberline {10.47.2.e}def conn (self):}{113}{subsubsection.10.47.2.5}
+\contentsline {section}{\numberline {10.48}Stu reg window Reference}{113}{section.10.48}
+\contentsline {subsection}{\numberline {10.48.1}Constructor \& Destructor Documentation}{114}{subsection.10.48.1}
+\contentsline {subsubsection}{\numberline {10.48.1.a}def __init__ (self):}{114}{subsubsection.10.48.1.1}
+\contentsline {subsection}{\numberline {10.48.2}Member Function Documentation}{114}{subsection.10.48.2}
+\contentsline {subsubsection}{\numberline {10.48.2.a}def refresh (self):}{114}{subsubsection.10.48.2.1}
+\contentsline {subsubsection}{\numberline {10.48.2.b}def stu_add (self):}{114}{subsubsection.10.48.2.2}
+\contentsline {subsubsection}{\numberline {10.48.2.c}def search_Stu (self):}{114}{subsubsection.10.48.2.3}
+\contentsline {subsubsection}{\numberline {10.48.2.d}def select_Stu (self):}{114}{subsubsection.10.48.2.4}
+\contentsline {subsubsection}{\numberline {10.48.2.e}def conn (self):}{114}{subsubsection.10.48.2.5}
+\contentsline {section}{\numberline {10.49}Student schedule Reference}{114}{section.10.49}
+\contentsline {subsection}{\numberline {10.49.1}Constructor \& Destructor Documentation}{114}{subsection.10.49.1}
+\contentsline {subsubsection}{\numberline {10.49.1.a}def __init__ (self):}{114}{subsubsection.10.49.1.1}
+\contentsline {subsection}{\numberline {10.49.2}Member Function Documentation}{115}{subsection.10.49.2}
+\contentsline {subsubsection}{\numberline {10.49.2.a}def search_student (self):}{115}{subsubsection.10.49.2.1}
+\contentsline {subsubsection}{\numberline {10.49.2.b}def print_schedule (self):}{115}{subsubsection.10.49.2.2}
+\contentsline {subsubsection}{\numberline {10.49.2.c}def select_Student (self):}{115}{subsubsection.10.49.2.3}
+\contentsline {subsubsection}{\numberline {10.49.2.d}def conn (self):}{115}{subsubsection.10.49.2.4}
+\contentsline {section}{\numberline {10.50}Teacher Reference}{115}{section.10.50}
+\contentsline {subsection}{\numberline {10.50.1}Constructor \& Destructor Documentation}{115}{subsection.10.50.1}
+\contentsline {subsubsection}{\numberline {10.50.1.a}def __init__ (self):}{115}{subsubsection.10.50.1.1}
+\contentsline {subsection}{\numberline {10.50.2}Member Function Documentation}{115}{subsection.10.50.2}
+\contentsline {subsubsection}{\numberline {10.50.2.a}def logout (self):}{115}{subsubsection.10.50.2.1}
+\contentsline {subsubsection}{\numberline {10.50.2.b}def enter_hour (self):}{116}{subsubsection.10.50.2.2}
+\contentsline {subsubsection}{\numberline {10.50.2.c}def reset_user (self):}{116}{subsubsection.10.50.2.3}
+\contentsline {subsubsection}{\numberline {10.50.2.d}def reset_password (self):}{116}{subsubsection.10.50.2.4}
+\contentsline {subsubsection}{\numberline {10.50.2.e}def update_teacher (self):}{116}{subsubsection.10.50.2.5}
+\contentsline {subsubsection}{\numberline {10.50.2.f}def roll_sheet (self):}{116}{subsubsection.10.50.2.6}
+\contentsline {subsubsection}{\numberline {10.50.2.g}def search_class (self):}{116}{subsubsection.10.50.2.7}
+\contentsline {subsubsection}{\numberline {10.50.2.h}def See_teacher_schedule (self):}{116}{subsubsection.10.50.2.8}
+\contentsline {subsubsection}{\numberline {10.50.2.i}def Add_student_class (self):}{116}{subsubsection.10.50.2.9}
+\contentsline {subsubsection}{\numberline {10.50.2.j}def See_student_schedule (self):}{116}{subsubsection.10.50.2.10}
+\contentsline {subsubsection}{\numberline {10.50.2.k}def search_student (self):}{116}{subsubsection.10.50.2.11}
+\contentsline {subsubsection}{\numberline {10.50.2.l}def change_window (self):}{117}{subsubsection.10.50.2.12}
+\contentsline {section}{\numberline {10.51}Teacher history dialog Reference}{117}{section.10.51}
+\contentsline {subsection}{\numberline {10.51.1}Constructor \& Destructor Documentation}{117}{subsection.10.51.1}
+\contentsline {subsubsection}{\numberline {10.51.1.a}def __init__ (self):}{117}{subsubsection.10.51.1.1}
+\contentsline {subsection}{\numberline {10.51.2}Member Function Documentation}{117}{subsection.10.51.2}
+\contentsline {section}{\numberline {10.52}Teacher history window Reference}{117}{section.10.52}
+\contentsline {subsection}{\numberline {10.52.1}Constructor \& Destructor Documentation}{117}{subsection.10.52.1}
+\contentsline {subsubsection}{\numberline {10.52.1.a}def __init__ (self):}{117}{subsubsection.10.52.1.1}
+\contentsline {subsection}{\numberline {10.52.2}Member Function Documentation}{117}{subsection.10.52.2}
+\contentsline {subsubsection}{\numberline {10.52.2.a}def search_teacher (self):}{117}{subsubsection.10.52.2.1}
+\contentsline {subsubsection}{\numberline {10.52.2.b}def print_history (self):}{117}{subsubsection.10.52.2.2}
+\contentsline {subsubsection}{\numberline {10.52.2.c}def select_teacher (self):}{117}{subsubsection.10.52.2.3}
+\contentsline {section}{\numberline {10.53}Teacher payrate dialog Reference}{118}{section.10.53}
+\contentsline {subsection}{\numberline {10.53.1}Constructor \& Destructor Documentation}{118}{subsection.10.53.1}
+\contentsline {subsubsection}{\numberline {10.53.1.a}def __init__ (self):}{118}{subsubsection.10.53.1.1}
+\contentsline {subsection}{\numberline {10.53.2}Member Function Documentation}{118}{subsection.10.53.2}
+\contentsline {subsubsection}{\numberline {10.53.2.a}def update_text (self):}{118}{subsubsection.10.53.2.1}
+\contentsline {subsubsection}{\numberline {10.53.2.b}def update (self):}{118}{subsubsection.10.53.2.2}
+\contentsline {subsubsection}{\numberline {10.53.2.c}def insert (self):}{118}{subsubsection.10.53.2.3}
+\contentsline {section}{\numberline {10.54}Teacher payrate Reference}{118}{section.10.54}
+\contentsline {subsection}{\numberline {10.54.1}Constructor \& Destructor Documentation}{118}{subsection.10.54.1}
+\contentsline {subsubsection}{\numberline {10.54.1.a}def __init__ (self):}{118}{subsubsection.10.54.1.1}
+\contentsline {subsection}{\numberline {10.54.2}Member Function Documentation}{119}{subsection.10.54.2}
+\contentsline {subsubsection}{\numberline {10.54.2.a}def search_teacher (self):}{119}{subsubsection.10.54.2.1}
+\contentsline {subsubsection}{\numberline {10.54.2.b}def print_history (self):}{119}{subsubsection.10.54.2.2}
+\contentsline {subsubsection}{\numberline {10.54.2.c}def select_teacher (self):}{119}{subsubsection.10.54.2.3}
+\contentsline {subsubsection}{\numberline {10.54.2.d}def conn (self):}{119}{subsubsection.10.54.2.4}
+\contentsline {section}{\numberline {10.55}Teacher schedule Reference}{119}{section.10.55}
+\contentsline {subsection}{\numberline {10.55.1}Constructor \& Destructor Documentation}{119}{subsection.10.55.1}
+\contentsline {subsubsection}{\numberline {10.55.1.a}def __init__ (self):}{119}{subsubsection.10.55.1.1}
+\contentsline {subsection}{\numberline {10.55.2}Member Function Documentation}{119}{subsection.10.55.2}
+\contentsline {subsubsection}{\numberline {10.55.2.a}def search_student (self):}{119}{subsubsection.10.55.2.1}
+\contentsline {subsubsection}{\numberline {10.55.2.b}def print_schedule (self):}{119}{subsubsection.10.55.2.2}
+\contentsline {subsubsection}{\numberline {10.55.2.c}def select_Student (self):}{120}{subsubsection.10.55.2.3}
+\contentsline {subsubsection}{\numberline {10.55.2.d}def conn (self):}{120}{subsubsection.10.55.2.4}
+\contentsline {section}{\numberline {10.56}Tuition Reference}{120}{section.10.56}
+\contentsline {subsection}{\numberline {10.56.1}Constructor \& Destructor Documentation}{120}{subsection.10.56.1}
+\contentsline {subsubsection}{\numberline {10.56.1.a}def __init__ (self):}{120}{subsubsection.10.56.1.1}
+\contentsline {subsection}{\numberline {10.56.2}Member Function Documentation}{120}{subsection.10.56.2}
+\contentsline {subsubsection}{\numberline {10.56.2.a}def show_information (self):}{120}{subsubsection.10.56.2.1}
+\contentsline {subsubsection}{\numberline {10.56.2.b}def change_min_checkbox (self):}{120}{subsubsection.10.56.2.2}
+\contentsline {subsubsection}{\numberline {10.56.2.c}def change_hour_checkbox (self):}{120}{subsubsection.10.56.2.3}
+\contentsline {subsubsection}{\numberline {10.56.2.d}def add (self):}{120}{subsubsection.10.56.2.4}
+\contentsline {subsubsection}{\numberline {10.56.2.e}def update (self):}{121}{subsubsection.10.56.2.5}
+\contentsline {subsubsection}{\numberline {10.56.2.f}def remove (self):}{121}{subsubsection.10.56.2.6}
+\contentsline {subsubsection}{\numberline {10.56.2.g}def refresh_list (self):}{121}{subsubsection.10.56.2.7}
+\contentsline {subsubsection}{\numberline {10.56.2.h}def conn (self):}{121}{subsubsection.10.56.2.8}
+\contentsline {section}{\numberline {10.57}Update fees Reference}{121}{section.10.57}
+\contentsline {subsection}{\numberline {10.57.1}Constructor \& Destructor Documentation}{121}{subsection.10.57.1}
+\contentsline {subsubsection}{\numberline {10.57.1.a}def __init__ (self):}{121}{subsubsection.10.57.1.1}
+\contentsline {subsection}{\numberline {10.57.2}Member Function Documentation}{121}{subsection.10.57.2}
+\contentsline {subsubsection}{\numberline {10.57.2.a}def change_flat (self):}{121}{subsubsection.10.57.2.1}
+\contentsline {subsubsection}{\numberline {10.57.2.b}def change_percent (self):}{121}{subsubsection.10.57.2.2}
+\contentsline {subsubsection}{\numberline {10.57.2.c}def fill_window (self):}{122}{subsubsection.10.57.2.3}
+\contentsline {subsubsection}{\numberline {10.57.2.d}def submit_updates (self):}{122}{subsubsection.10.57.2.4}
+\contentsline {subsubsection}{\numberline {10.57.2.e}def add_rate (self):}{122}{subsubsection.10.57.2.5}
+\contentsline {section}{\numberline {10.58}Update rates Reference}{122}{section.10.58}
+\contentsline {subsection}{\numberline {10.58.1}Constructor \& Destructor Documentation}{122}{subsection.10.58.1}
+\contentsline {subsubsection}{\numberline {10.58.1.a}def __init__ (self):}{122}{subsubsection.10.58.1.1}
+\contentsline {subsection}{\numberline {10.58.2}Member Function Documentation}{122}{subsection.10.58.2}
+\contentsline {subsubsection}{\numberline {10.58.2.a}def change_flat (self):}{122}{subsubsection.10.58.2.1}
+\contentsline {subsubsection}{\numberline {10.58.2.b}def change_percent (self):}{122}{subsubsection.10.58.2.2}
+\contentsline {subsubsection}{\numberline {10.58.2.c}def fill_window (self):}{122}{subsubsection.10.58.2.3}
+\contentsline {subsubsection}{\numberline {10.58.2.d}def submit_updates (self):}{122}{subsubsection.10.58.2.4}
+\contentsline {subsubsection}{\numberline {10.58.2.e}def add_rate (self):}{123}{subsubsection.10.58.2.5}
+\contentsline {chapter}{Bibliography}{125}{chapter*.7}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.11}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {chapter}{\numberline {B}Sprint Reports}{B-1}{appendix.B}

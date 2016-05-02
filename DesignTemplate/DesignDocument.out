@@ -159,97 +159,269 @@
 \BOOKMARK [2][-]{subsection.7.2.3}{Installing MySQL}{section.7.2}% 159
 \BOOKMARK [2][-]{subsection.7.2.4}{Running Project}{section.7.2}% 160
 \BOOKMARK [1][-]{section.7.3}{System Version Information}{chapter.7}% 161
-\BOOKMARK [0][-]{chapter.8}{User Documentation}{}% 162
-\BOOKMARK [1][-]{section.8.1}{User Guide}{chapter.8}% 163
-\BOOKMARK [2][-]{subsection.8.1.1}{Entering the Software}{section.8.1}% 164
-\BOOKMARK [2][-]{subsection.8.1.2}{Admin Landing}{section.8.1}% 165
-\BOOKMARK [2][-]{subsection.8.1.3}{Teacher Landing}{section.8.1}% 166
-\BOOKMARK [1][-]{section.8.2}{Installation Guide}{chapter.8}% 167
-\BOOKMARK [0][-]{chapter.9}{Class Index}{}% 168
-\BOOKMARK [0][-]{chapter.10}{Class Documentation}{}% 169
-\BOOKMARK [1][-]{section.10.1}{Poly Class Reference}{chapter.10}% 170
-\BOOKMARK [2][-]{subsection.10.1.1}{Constructor \046 Destructor Documentation}{section.10.1}% 171
-\BOOKMARK [2][-]{subsection.10.1.2}{Member Function Documentation}{section.10.1}% 172
-\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 173
-\BOOKMARK [0][-]{chapter.11}{Software Agreement}{}% 174
-\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 175
-\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 176
-\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 177
-\BOOKMARK [2][-]{subsection.B.1.1}{Team Members:}{section.B.1}% 178
-\BOOKMARK [2][-]{subsection.B.1.2}{Customer description}{section.B.1}% 179
-\BOOKMARK [2][-]{subsection.B.1.3}{Overview of the project:}{section.B.1}% 180
-\BOOKMARK [2][-]{subsection.B.1.4}{Project Environment:}{section.B.1}% 181
-\BOOKMARK [2][-]{subsection.B.1.5}{Project deliverables of Sprint 1:}{section.B.1}% 182
-\BOOKMARK [2][-]{subsection.B.1.6}{User Stories}{section.B.1}% 183
-\BOOKMARK [2][-]{subsection.B.1.7}{Product Backlog:}{section.B.1}% 184
-\BOOKMARK [2][-]{subsection.B.1.8}{Research}{section.B.1}% 185
-\BOOKMARK [2][-]{subsection.B.1.9}{Final Framework Decision}{section.B.1}% 186
-\BOOKMARK [2][-]{subsection.B.1.10}{Foreseeable issues}{section.B.1}% 187
-\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 188
-\BOOKMARK [2][-]{subsection.B.2.1}{Team Members:}{section.B.2}% 189
-\BOOKMARK [2][-]{subsection.B.2.2}{Prototype Progress}{section.B.2}% 190
-\BOOKMARK [2][-]{subsection.B.2.3}{Project deliverables of Sprint 2:}{section.B.2}% 191
-\BOOKMARK [2][-]{subsection.B.2.4}{Database Creation}{section.B.2}% 192
-\BOOKMARK [2][-]{subsection.B.2.5}{GUI Work}{section.B.2}% 193
-\BOOKMARK [2][-]{subsection.B.2.6}{Sprint 2 Issues}{section.B.2}% 194
-\BOOKMARK [2][-]{subsection.B.2.7}{Client Interactions}{section.B.2}% 195
-\BOOKMARK [2][-]{subsection.B.2.8}{Group Meeting}{section.B.2}% 196
-\BOOKMARK [2][-]{subsection.B.2.9}{Work Distribution}{section.B.2}% 197
-\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 198
-\BOOKMARK [2][-]{subsection.B.3.1}{Team Members:}{section.B.3}% 199
-\BOOKMARK [2][-]{subsection.B.3.2}{Prototype Progress}{section.B.3}% 200
-\BOOKMARK [2][-]{subsection.B.3.3}{Project deliverables of Sprint 3:}{section.B.3}% 201
-\BOOKMARK [2][-]{subsection.B.3.4}{Search Pages}{section.B.3}% 202
-\BOOKMARK [2][-]{subsection.B.3.5}{Add A Class}{section.B.3}% 203
-\BOOKMARK [2][-]{subsection.B.3.6}{Role Sheet}{section.B.3}% 204
-\BOOKMARK [2][-]{subsection.B.3.7}{Update Pages}{section.B.3}% 205
-\BOOKMARK [2][-]{subsection.B.3.8}{Assign Teacher to a Class}{section.B.3}% 206
-\BOOKMARK [2][-]{subsection.B.3.9}{Sprint 3 Issues}{section.B.3}% 207
-\BOOKMARK [2][-]{subsection.B.3.10}{Client Interactions}{section.B.3}% 208
-\BOOKMARK [2][-]{subsection.B.3.11}{Group Meeting}{section.B.3}% 209
-\BOOKMARK [2][-]{subsection.B.3.12}{Work Distribution}{section.B.3}% 210
-\BOOKMARK [1][-]{section.B.4}{Sprint Report \0434}{appendix.B}% 211
-\BOOKMARK [2][-]{subsection.B.4.1}{Team Members:}{section.B.4}% 212
-\BOOKMARK [2][-]{subsection.B.4.2}{Prototype Progress}{section.B.4}% 213
-\BOOKMARK [2][-]{subsection.B.4.3}{Project deliverables of Sprint 3.5 and 4:}{section.B.4}% 214
-\BOOKMARK [2][-]{subsection.B.4.4}{Sprint 3.5}{section.B.4}% 215
-\BOOKMARK [2][-]{subsection.B.4.5}{Prorated Refunds}{section.B.4}% 216
-\BOOKMARK [2][-]{subsection.B.4.6}{Enter Staff Hours}{section.B.4}% 217
-\BOOKMARK [2][-]{subsection.B.4.7}{Enter Teacher Wages}{section.B.4}% 218
-\BOOKMARK [2][-]{subsection.B.4.8}{Enter Tuition Rates and Fees}{section.B.4}% 219
-\BOOKMARK [2][-]{subsection.B.4.9}{Teacher History}{section.B.4}% 220
-\BOOKMARK [2][-]{subsection.B.4.10}{Set Semester}{section.B.4}% 221
-\BOOKMARK [2][-]{subsection.B.4.11}{partial payment}{section.B.4}% 222
-\BOOKMARK [2][-]{subsection.B.4.12}{Student's owe}{section.B.4}% 223
-\BOOKMARK [2][-]{subsection.B.4.13}{enter payment}{section.B.4}% 224
-\BOOKMARK [2][-]{subsection.B.4.14}{bill history}{section.B.4}% 225
-\BOOKMARK [2][-]{subsection.B.4.15}{Sprint 3.5 and 4 Issues}{section.B.4}% 226
-\BOOKMARK [2][-]{subsection.B.4.16}{Client Interactions}{section.B.4}% 227
-\BOOKMARK [2][-]{subsection.B.4.17}{Group Meeting}{section.B.4}% 228
-\BOOKMARK [2][-]{subsection.B.4.18}{Work Distribution}{section.B.4}% 229
-\BOOKMARK [1][-]{section.B.5}{Sprint Report \0435}{appendix.B}% 230
-\BOOKMARK [2][-]{subsection.B.5.1}{Team Members:}{section.B.5}% 231
-\BOOKMARK [2][-]{subsection.B.5.2}{Prototype Progress}{section.B.5}% 232
-\BOOKMARK [2][-]{subsection.B.5.3}{Project deliverables of Sprint 5:}{section.B.5}% 233
-\BOOKMARK [2][-]{subsection.B.5.4}{Sprint 5}{section.B.5}% 234
-\BOOKMARK [2][-]{subsection.B.5.5}{Prorated Refunds}{section.B.5}% 235
-\BOOKMARK [2][-]{subsection.B.5.6}{Enter Staff Hours}{section.B.5}% 236
-\BOOKMARK [2][-]{subsection.B.5.7}{Enter Teacher Wages}{section.B.5}% 237
-\BOOKMARK [2][-]{subsection.B.5.8}{Enter Tuition Rates and Fees}{section.B.5}% 238
-\BOOKMARK [2][-]{subsection.B.5.9}{Bug Fixes}{section.B.5}% 239
-\BOOKMARK [2][-]{subsection.B.5.10}{Updates Crossover}{section.B.5}% 240
-\BOOKMARK [2][-]{subsection.B.5.11}{Approved/Rejected Student Updates}{section.B.5}% 241
-\BOOKMARK [2][-]{subsection.B.5.12}{Admin List}{section.B.5}% 242
-\BOOKMARK [2][-]{subsection.B.5.13}{Add/Remove Locations}{section.B.5}% 243
-\BOOKMARK [2][-]{subsection.B.5.14}{Removal Functions}{section.B.5}% 244
-\BOOKMARK [2][-]{subsection.B.5.15}{Sprint 5 Issues}{section.B.5}% 245
-\BOOKMARK [2][-]{subsection.B.5.16}{Client Interactions}{section.B.5}% 246
-\BOOKMARK [2][-]{subsection.B.5.17}{Group Meeting}{section.B.5}% 247
-\BOOKMARK [2][-]{subsection.B.5.18}{Work Distribution}{section.B.5}% 248
-\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 249
-\BOOKMARK [1][-]{section.C.1}{Resumes}{appendix.C}% 250
-\BOOKMARK [1][-]{section.C.2}{Industrial Experience Reports}{appendix.C}% 251
-\BOOKMARK [2][-]{subsection.C.2.1}{Marcus Berger}{section.C.2}% 252
-\BOOKMARK [2][-]{subsection.C.2.2}{Dicheng Wu}{section.C.2}% 253
-\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 254
-\BOOKMARK [0][-]{appendix.E}{Supporting Materials}{}% 255
+\BOOKMARK [1][-]{section.7.4}{Future Work}{chapter.7}% 162
+\BOOKMARK [0][-]{chapter.8}{User Documentation}{}% 163
+\BOOKMARK [1][-]{section.8.1}{User Guide}{chapter.8}% 164
+\BOOKMARK [2][-]{subsection.8.1.1}{Entering the Software}{section.8.1}% 165
+\BOOKMARK [2][-]{subsection.8.1.2}{Admin Landing}{section.8.1}% 166
+\BOOKMARK [2][-]{subsection.8.1.3}{Teacher Landing}{section.8.1}% 167
+\BOOKMARK [1][-]{section.8.2}{Installation Guide}{chapter.8}% 168
+\BOOKMARK [0][-]{chapter.9}{Class Index}{}% 169
+\BOOKMARK [0][-]{chapter.10}{Class Documentation}{}% 170
+\BOOKMARK [1][-]{section.10.1}{Add Class Reference}{chapter.10}% 171
+\BOOKMARK [2][-]{subsection.10.1.1}{Constructor \046 Destructor Documentation}{section.10.1}% 172
+\BOOKMARK [2][-]{subsection.10.1.2}{Member Function Documentation}{section.10.1}% 173
+\BOOKMARK [1][-]{section.10.2}{Add admin Reference}{chapter.10}% 174
+\BOOKMARK [2][-]{subsection.10.2.1}{Constructor \046 Destructor Documentation}{section.10.2}% 175
+\BOOKMARK [2][-]{subsection.10.2.2}{Member Function Documentation}{section.10.2}% 176
+\BOOKMARK [1][-]{section.10.3}{Add new teacher Reference}{chapter.10}% 177
+\BOOKMARK [2][-]{subsection.10.3.1}{Constructor \046 Destructor Documentation}{section.10.3}% 178
+\BOOKMARK [2][-]{subsection.10.3.2}{Member Function Documentation}{section.10.3}% 179
+\BOOKMARK [1][-]{section.10.4}{addLocation Reference}{chapter.10}% 180
+\BOOKMARK [2][-]{subsection.10.4.1}{Constructor \046 Destructor Documentation}{section.10.4}% 181
+\BOOKMARK [2][-]{subsection.10.4.2}{Member Function Documentation}{section.10.4}% 182
+\BOOKMARK [1][-]{section.10.5}{Addstu details Reference}{chapter.10}% 183
+\BOOKMARK [2][-]{subsection.10.5.1}{Constructor \046 Destructor Documentation}{section.10.5}% 184
+\BOOKMARK [2][-]{subsection.10.5.2}{Member Function Documentation}{section.10.5}% 185
+\BOOKMARK [1][-]{section.10.6}{Addstu window Reference}{chapter.10}% 186
+\BOOKMARK [2][-]{subsection.10.6.1}{Constructor \046 Destructor Documentation}{section.10.6}% 187
+\BOOKMARK [2][-]{subsection.10.6.2}{Member Function Documentation}{section.10.6}% 188
+\BOOKMARK [1][-]{section.10.7}{Addstu window admin Reference}{chapter.10}% 189
+\BOOKMARK [2][-]{subsection.10.7.1}{Constructor \046 Destructor Documentation}{section.10.7}% 190
+\BOOKMARK [2][-]{subsection.10.7.2}{Member Function Documentation}{section.10.7}% 191
+\BOOKMARK [1][-]{section.10.8}{Admin Reference}{chapter.10}% 192
+\BOOKMARK [2][-]{subsection.10.8.1}{Constructor \046 Destructor Documentation}{section.10.8}% 193
+\BOOKMARK [2][-]{subsection.10.8.2}{Member Function Documentation}{section.10.8}% 194
+\BOOKMARK [2][-]{subsection.10.8.3}{Member Function continued Documentation}{section.10.8}% 195
+\BOOKMARK [1][-]{section.10.9}{Admin info Reference}{chapter.10}% 196
+\BOOKMARK [2][-]{subsection.10.9.1}{Constructor \046 Destructor Documentation}{section.10.9}% 197
+\BOOKMARK [1][-]{section.10.10}{Admin list Reference}{chapter.10}% 198
+\BOOKMARK [2][-]{subsection.10.10.1}{Constructor \046 Destructor Documentation}{section.10.10}% 199
+\BOOKMARK [2][-]{subsection.10.10.2}{Member Function Documentation}{section.10.10}% 200
+\BOOKMARK [1][-]{section.10.11}{Adv class Reference}{chapter.10}% 201
+\BOOKMARK [2][-]{subsection.10.11.1}{Constructor \046 Destructor Documentation}{section.10.11}% 202
+\BOOKMARK [2][-]{subsection.10.11.2}{Member Function Documentation}{section.10.11}% 203
+\BOOKMARK [1][-]{section.10.12}{Adv student Reference}{chapter.10}% 204
+\BOOKMARK [2][-]{subsection.10.12.1}{Constructor \046 Destructor Documentation}{section.10.12}% 205
+\BOOKMARK [2][-]{subsection.10.12.2}{Member Function Documentation}{section.10.12}% 206
+\BOOKMARK [1][-]{section.10.13}{Adv teacher Reference}{chapter.10}% 207
+\BOOKMARK [2][-]{subsection.10.13.1}{Constructor \046 Destructor Documentation}{section.10.13}% 208
+\BOOKMARK [2][-]{subsection.10.13.2}{Member Function Documentation}{section.10.13}% 209
+\BOOKMARK [1][-]{section.10.14}{Assign class Reference}{chapter.10}% 210
+\BOOKMARK [2][-]{subsection.10.14.1}{Constructor \046 Destructor Documentation}{section.10.14}% 211
+\BOOKMARK [2][-]{subsection.10.14.2}{Member Function Documentation}{section.10.14}% 212
+\BOOKMARK [1][-]{section.10.15}{Billing history Reference}{chapter.10}% 213
+\BOOKMARK [2][-]{subsection.10.15.1}{Constructor \046 Destructor Documentation}{section.10.15}% 214
+\BOOKMARK [2][-]{subsection.10.15.2}{Member Function Documentation}{section.10.15}% 215
+\BOOKMARK [1][-]{section.10.16}{Print Hist Reference}{chapter.10}% 216
+\BOOKMARK [2][-]{subsection.10.16.1}{Constructor \046 Destructor Documentation}{section.10.16}% 217
+\BOOKMARK [2][-]{subsection.10.16.2}{Member Function Documentation}{section.10.16}% 218
+\BOOKMARK [1][-]{section.10.17}{Change PW Reference}{chapter.10}% 219
+\BOOKMARK [2][-]{subsection.10.17.1}{Constructor \046 Destructor Documentation}{section.10.17}% 220
+\BOOKMARK [2][-]{subsection.10.17.2}{Member Function Documentation}{section.10.17}% 221
+\BOOKMARK [1][-]{section.10.18}{Change user Reference}{chapter.10}% 222
+\BOOKMARK [2][-]{subsection.10.18.1}{Constructor \046 Destructor Documentation}{section.10.18}% 223
+\BOOKMARK [2][-]{subsection.10.18.2}{Member Function Documentation}{section.10.18}% 224
+\BOOKMARK [1][-]{section.10.19}{Class list Reference}{chapter.10}% 225
+\BOOKMARK [2][-]{subsection.10.19.1}{Constructor \046 Destructor Documentation}{section.10.19}% 226
+\BOOKMARK [2][-]{subsection.10.19.2}{Member Function Documentation}{section.10.19}% 227
+\BOOKMARK [1][-]{section.10.20}{Class reg Reference}{chapter.10}% 228
+\BOOKMARK [2][-]{subsection.10.20.1}{Constructor \046 Destructor Documentation}{section.10.20}% 229
+\BOOKMARK [2][-]{subsection.10.20.2}{Member Function Documentation}{section.10.20}% 230
+\BOOKMARK [1][-]{section.10.21}{Credits Reference}{chapter.10}% 231
+\BOOKMARK [2][-]{subsection.10.21.1}{Constructor \046 Destructor Documentation}{section.10.21}% 232
+\BOOKMARK [2][-]{subsection.10.21.2}{Member Function Documentation}{section.10.21}% 233
+\BOOKMARK [1][-]{section.10.22}{Full pay Reference}{chapter.10}% 234
+\BOOKMARK [2][-]{subsection.10.22.1}{Constructor \046 Destructor Documentation}{section.10.22}% 235
+\BOOKMARK [2][-]{subsection.10.22.2}{Member Function Documentation}{section.10.22}% 236
+\BOOKMARK [1][-]{section.10.23}{Enter hours Reference}{chapter.10}% 237
+\BOOKMARK [2][-]{subsection.10.23.1}{Constructor \046 Destructor Documentation}{section.10.23}% 238
+\BOOKMARK [2][-]{subsection.10.23.2}{Member Function Documentation}{section.10.23}% 239
+\BOOKMARK [1][-]{section.10.24}{Print fees Reference}{chapter.10}% 240
+\BOOKMARK [2][-]{subsection.10.24.1}{Constructor \046 Destructor Documentation}{section.10.24}% 241
+\BOOKMARK [2][-]{subsection.10.24.2}{Member Function Documentation}{section.10.24}% 242
+\BOOKMARK [1][-]{section.10.25}{fees Reference}{chapter.10}% 243
+\BOOKMARK [2][-]{subsection.10.25.1}{Constructor \046 Destructor Documentation}{section.10.25}% 244
+\BOOKMARK [2][-]{subsection.10.25.2}{Member Function Documentation}{section.10.25}% 245
+\BOOKMARK [1][-]{section.10.26}{login Reference}{chapter.10}% 246
+\BOOKMARK [2][-]{subsection.10.26.1}{Constructor \046 Destructor Documentation}{section.10.26}% 247
+\BOOKMARK [2][-]{subsection.10.26.2}{Member Function Documentation}{section.10.26}% 248
+\BOOKMARK [1][-]{section.10.27}{My info Reference}{chapter.10}% 249
+\BOOKMARK [2][-]{subsection.10.27.1}{Constructor \046 Destructor Documentation}{section.10.27}% 250
+\BOOKMARK [2][-]{subsection.10.27.2}{Member Function Documentation}{section.10.27}% 251
+\BOOKMARK [1][-]{section.10.28}{Navi Reference}{chapter.10}% 252
+\BOOKMARK [2][-]{subsection.10.28.1}{Constructor \046 Destructor Documentation}{section.10.28}% 253
+\BOOKMARK [2][-]{subsection.10.28.2}{Member Function Documentation}{section.10.28}% 254
+\BOOKMARK [1][-]{section.10.29}{Partial pay Reference}{chapter.10}% 255
+\BOOKMARK [2][-]{subsection.10.29.1}{Constructor \046 Destructor Documentation}{section.10.29}% 256
+\BOOKMARK [2][-]{subsection.10.29.2}{Member Function Documentation}{section.10.29}% 257
+\BOOKMARK [1][-]{section.10.30}{Part pay dialog Reference}{chapter.10}% 258
+\BOOKMARK [2][-]{subsection.10.30.1}{Constructor \046 Destructor Documentation}{section.10.30}% 259
+\BOOKMARK [2][-]{subsection.10.30.2}{Member Function Documentation}{section.10.30}% 260
+\BOOKMARK [1][-]{section.10.31}{refund Reference}{chapter.10}% 261
+\BOOKMARK [2][-]{subsection.10.31.1}{Constructor \046 Destructor Documentation}{section.10.31}% 262
+\BOOKMARK [2][-]{subsection.10.31.2}{Member Function Documentation}{section.10.31}% 263
+\BOOKMARK [1][-]{section.10.32}{removeAdmin Reference}{chapter.10}% 264
+\BOOKMARK [2][-]{subsection.10.32.1}{Constructor \046 Destructor Documentation}{section.10.32}% 265
+\BOOKMARK [2][-]{subsection.10.32.2}{Member Function Documentation}{section.10.32}% 266
+\BOOKMARK [1][-]{section.10.33}{removeClass Reference}{chapter.10}% 267
+\BOOKMARK [2][-]{subsection.10.33.1}{Constructor \046 Destructor Documentation}{section.10.33}% 268
+\BOOKMARK [2][-]{subsection.10.33.2}{Member Function Documentation}{section.10.33}% 269
+\BOOKMARK [1][-]{section.10.34}{removeStudentData Reference}{chapter.10}% 270
+\BOOKMARK [2][-]{subsection.10.34.1}{Constructor \046 Destructor Documentation}{section.10.34}% 271
+\BOOKMARK [2][-]{subsection.10.34.2}{Member Function Documentation}{section.10.34}% 272
+\BOOKMARK [1][-]{section.10.35}{removeTeacher Reference}{chapter.10}% 273
+\BOOKMARK [2][-]{subsection.10.35.1}{Constructor \046 Destructor Documentation}{section.10.35}% 274
+\BOOKMARK [2][-]{subsection.10.35.2}{Member Function Documentation}{section.10.35}% 275
+\BOOKMARK [1][-]{section.10.36}{Roll Reference}{chapter.10}% 276
+\BOOKMARK [2][-]{subsection.10.36.1}{Constructor \046 Destructor Documentation}{section.10.36}% 277
+\BOOKMARK [2][-]{subsection.10.36.2}{Member Function Documentation}{section.10.36}% 278
+\BOOKMARK [1][-]{section.10.37}{Print Roll Reference}{chapter.10}% 279
+\BOOKMARK [2][-]{subsection.10.37.1}{Constructor \046 Destructor Documentation}{section.10.37}% 280
+\BOOKMARK [2][-]{subsection.10.37.2}{Member Function Documentation}{section.10.37}% 281
+\BOOKMARK [1][-]{section.10.38}{schedule print Reference}{chapter.10}% 282
+\BOOKMARK [2][-]{subsection.10.38.1}{Constructor \046 Destructor Documentation}{section.10.38}% 283
+\BOOKMARK [2][-]{subsection.10.38.2}{Member Function Documentation}{section.10.38}% 284
+\BOOKMARK [1][-]{section.10.39}{Search class Reference}{chapter.10}% 285
+\BOOKMARK [2][-]{subsection.10.39.1}{Constructor \046 Destructor Documentation}{section.10.39}% 286
+\BOOKMARK [2][-]{subsection.10.39.2}{Member Function Documentation}{section.10.39}% 287
+\BOOKMARK [1][-]{section.10.40}{Search teacher Reference}{chapter.10}% 288
+\BOOKMARK [2][-]{subsection.10.40.1}{Constructor \046 Destructor Documentation}{section.10.40}% 289
+\BOOKMARK [2][-]{subsection.10.40.2}{Member Function Documentation}{section.10.40}% 290
+\BOOKMARK [1][-]{section.10.41}{Search student Reference}{chapter.10}% 291
+\BOOKMARK [2][-]{subsection.10.41.1}{Constructor \046 Destructor Documentation}{section.10.41}% 292
+\BOOKMARK [2][-]{subsection.10.41.2}{Member Function Documentation}{section.10.41}% 293
+\BOOKMARK [1][-]{section.10.42}{Update teacher Reference}{chapter.10}% 294
+\BOOKMARK [2][-]{subsection.10.42.1}{Constructor \046 Destructor Documentation}{section.10.42}% 295
+\BOOKMARK [2][-]{subsection.10.42.2}{Member Function Documentation}{section.10.42}% 296
+\BOOKMARK [1][-]{section.10.43}{Set semester Reference}{chapter.10}% 297
+\BOOKMARK [2][-]{subsection.10.43.1}{Constructor \046 Destructor Documentation}{section.10.43}% 298
+\BOOKMARK [2][-]{subsection.10.43.2}{Member Function Documentation}{section.10.43}% 299
+\BOOKMARK [1][-]{section.10.44}{Show hours Reference}{chapter.10}% 300
+\BOOKMARK [2][-]{subsection.10.44.1}{Constructor \046 Destructor Documentation}{section.10.44}% 301
+\BOOKMARK [2][-]{subsection.10.44.2}{Member Function Documentation}{section.10.44}% 302
+\BOOKMARK [1][-]{section.10.45}{Stu add Reference}{chapter.10}% 303
+\BOOKMARK [2][-]{subsection.10.45.1}{Constructor \046 Destructor Documentation}{section.10.45}% 304
+\BOOKMARK [2][-]{subsection.10.45.2}{Member Function Documentation}{section.10.45}% 305
+\BOOKMARK [1][-]{section.10.46}{Stu reg Reference}{chapter.10}% 306
+\BOOKMARK [2][-]{subsection.10.46.1}{Constructor \046 Destructor Documentation}{section.10.46}% 307
+\BOOKMARK [2][-]{subsection.10.46.2}{Member Function Documentation}{section.10.46}% 308
+\BOOKMARK [1][-]{section.10.47}{Stu pay Reference}{chapter.10}% 309
+\BOOKMARK [2][-]{subsection.10.47.1}{Constructor \046 Destructor Documentation}{section.10.47}% 310
+\BOOKMARK [2][-]{subsection.10.47.2}{Member Function Documentation}{section.10.47}% 311
+\BOOKMARK [1][-]{section.10.48}{Stu reg window Reference}{chapter.10}% 312
+\BOOKMARK [2][-]{subsection.10.48.1}{Constructor \046 Destructor Documentation}{section.10.48}% 313
+\BOOKMARK [2][-]{subsection.10.48.2}{Member Function Documentation}{section.10.48}% 314
+\BOOKMARK [1][-]{section.10.49}{Student schedule Reference}{chapter.10}% 315
+\BOOKMARK [2][-]{subsection.10.49.1}{Constructor \046 Destructor Documentation}{section.10.49}% 316
+\BOOKMARK [2][-]{subsection.10.49.2}{Member Function Documentation}{section.10.49}% 317
+\BOOKMARK [1][-]{section.10.50}{Teacher Reference}{chapter.10}% 318
+\BOOKMARK [2][-]{subsection.10.50.1}{Constructor \046 Destructor Documentation}{section.10.50}% 319
+\BOOKMARK [2][-]{subsection.10.50.2}{Member Function Documentation}{section.10.50}% 320
+\BOOKMARK [1][-]{section.10.51}{Teacher history dialog Reference}{chapter.10}% 321
+\BOOKMARK [2][-]{subsection.10.51.1}{Constructor \046 Destructor Documentation}{section.10.51}% 322
+\BOOKMARK [2][-]{subsection.10.51.2}{Member Function Documentation}{section.10.51}% 323
+\BOOKMARK [1][-]{section.10.52}{Teacher history window Reference}{chapter.10}% 324
+\BOOKMARK [2][-]{subsection.10.52.1}{Constructor \046 Destructor Documentation}{section.10.52}% 325
+\BOOKMARK [2][-]{subsection.10.52.2}{Member Function Documentation}{section.10.52}% 326
+\BOOKMARK [1][-]{section.10.53}{Teacher payrate dialog Reference}{chapter.10}% 327
+\BOOKMARK [2][-]{subsection.10.53.1}{Constructor \046 Destructor Documentation}{section.10.53}% 328
+\BOOKMARK [2][-]{subsection.10.53.2}{Member Function Documentation}{section.10.53}% 329
+\BOOKMARK [1][-]{section.10.54}{Teacher payrate Reference}{chapter.10}% 330
+\BOOKMARK [2][-]{subsection.10.54.1}{Constructor \046 Destructor Documentation}{section.10.54}% 331
+\BOOKMARK [2][-]{subsection.10.54.2}{Member Function Documentation}{section.10.54}% 332
+\BOOKMARK [1][-]{section.10.55}{Teacher schedule Reference}{chapter.10}% 333
+\BOOKMARK [2][-]{subsection.10.55.1}{Constructor \046 Destructor Documentation}{section.10.55}% 334
+\BOOKMARK [2][-]{subsection.10.55.2}{Member Function Documentation}{section.10.55}% 335
+\BOOKMARK [1][-]{section.10.56}{Tuition Reference}{chapter.10}% 336
+\BOOKMARK [2][-]{subsection.10.56.1}{Constructor \046 Destructor Documentation}{section.10.56}% 337
+\BOOKMARK [2][-]{subsection.10.56.2}{Member Function Documentation}{section.10.56}% 338
+\BOOKMARK [1][-]{section.10.57}{Update fees Reference}{chapter.10}% 339
+\BOOKMARK [2][-]{subsection.10.57.1}{Constructor \046 Destructor Documentation}{section.10.57}% 340
+\BOOKMARK [2][-]{subsection.10.57.2}{Member Function Documentation}{section.10.57}% 341
+\BOOKMARK [1][-]{section.10.58}{Update rates Reference}{chapter.10}% 342
+\BOOKMARK [2][-]{subsection.10.58.1}{Constructor \046 Destructor Documentation}{section.10.58}% 343
+\BOOKMARK [2][-]{subsection.10.58.2}{Member Function Documentation}{section.10.58}% 344
+\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 345
+\BOOKMARK [0][-]{chapter.11}{Software Agreement}{}% 346
+\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 347
+\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 348
+\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 349
+\BOOKMARK [2][-]{subsection.B.1.1}{Team Members:}{section.B.1}% 350
+\BOOKMARK [2][-]{subsection.B.1.2}{Customer description}{section.B.1}% 351
+\BOOKMARK [2][-]{subsection.B.1.3}{Overview of the project:}{section.B.1}% 352
+\BOOKMARK [2][-]{subsection.B.1.4}{Project Environment:}{section.B.1}% 353
+\BOOKMARK [2][-]{subsection.B.1.5}{Project deliverables of Sprint 1:}{section.B.1}% 354
+\BOOKMARK [2][-]{subsection.B.1.6}{User Stories}{section.B.1}% 355
+\BOOKMARK [2][-]{subsection.B.1.7}{Product Backlog:}{section.B.1}% 356
+\BOOKMARK [2][-]{subsection.B.1.8}{Research}{section.B.1}% 357
+\BOOKMARK [2][-]{subsection.B.1.9}{Final Framework Decision}{section.B.1}% 358
+\BOOKMARK [2][-]{subsection.B.1.10}{Foreseeable issues}{section.B.1}% 359
+\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 360
+\BOOKMARK [2][-]{subsection.B.2.1}{Team Members:}{section.B.2}% 361
+\BOOKMARK [2][-]{subsection.B.2.2}{Prototype Progress}{section.B.2}% 362
+\BOOKMARK [2][-]{subsection.B.2.3}{Project deliverables of Sprint 2:}{section.B.2}% 363
+\BOOKMARK [2][-]{subsection.B.2.4}{Database Creation}{section.B.2}% 364
+\BOOKMARK [2][-]{subsection.B.2.5}{GUI Work}{section.B.2}% 365
+\BOOKMARK [2][-]{subsection.B.2.6}{Sprint 2 Issues}{section.B.2}% 366
+\BOOKMARK [2][-]{subsection.B.2.7}{Client Interactions}{section.B.2}% 367
+\BOOKMARK [2][-]{subsection.B.2.8}{Group Meeting}{section.B.2}% 368
+\BOOKMARK [2][-]{subsection.B.2.9}{Work Distribution}{section.B.2}% 369
+\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 370
+\BOOKMARK [2][-]{subsection.B.3.1}{Team Members:}{section.B.3}% 371
+\BOOKMARK [2][-]{subsection.B.3.2}{Prototype Progress}{section.B.3}% 372
+\BOOKMARK [2][-]{subsection.B.3.3}{Project deliverables of Sprint 3:}{section.B.3}% 373
+\BOOKMARK [2][-]{subsection.B.3.4}{Search Pages}{section.B.3}% 374
+\BOOKMARK [2][-]{subsection.B.3.5}{Add A Class}{section.B.3}% 375
+\BOOKMARK [2][-]{subsection.B.3.6}{Role Sheet}{section.B.3}% 376
+\BOOKMARK [2][-]{subsection.B.3.7}{Update Pages}{section.B.3}% 377
+\BOOKMARK [2][-]{subsection.B.3.8}{Assign Teacher to a Class}{section.B.3}% 378
+\BOOKMARK [2][-]{subsection.B.3.9}{Sprint 3 Issues}{section.B.3}% 379
+\BOOKMARK [2][-]{subsection.B.3.10}{Client Interactions}{section.B.3}% 380
+\BOOKMARK [2][-]{subsection.B.3.11}{Group Meeting}{section.B.3}% 381
+\BOOKMARK [2][-]{subsection.B.3.12}{Work Distribution}{section.B.3}% 382
+\BOOKMARK [1][-]{section.B.4}{Sprint Report \0434}{appendix.B}% 383
+\BOOKMARK [2][-]{subsection.B.4.1}{Team Members:}{section.B.4}% 384
+\BOOKMARK [2][-]{subsection.B.4.2}{Prototype Progress}{section.B.4}% 385
+\BOOKMARK [2][-]{subsection.B.4.3}{Project deliverables of Sprint 3.5 and 4:}{section.B.4}% 386
+\BOOKMARK [2][-]{subsection.B.4.4}{Sprint 3.5}{section.B.4}% 387
+\BOOKMARK [2][-]{subsection.B.4.5}{Prorated Refunds}{section.B.4}% 388
+\BOOKMARK [2][-]{subsection.B.4.6}{Enter Staff Hours}{section.B.4}% 389
+\BOOKMARK [2][-]{subsection.B.4.7}{Enter Teacher Wages}{section.B.4}% 390
+\BOOKMARK [2][-]{subsection.B.4.8}{Enter Tuition Rates and Fees}{section.B.4}% 391
+\BOOKMARK [2][-]{subsection.B.4.9}{Teacher History}{section.B.4}% 392
+\BOOKMARK [2][-]{subsection.B.4.10}{Set Semester}{section.B.4}% 393
+\BOOKMARK [2][-]{subsection.B.4.11}{partial payment}{section.B.4}% 394
+\BOOKMARK [2][-]{subsection.B.4.12}{Student's owe}{section.B.4}% 395
+\BOOKMARK [2][-]{subsection.B.4.13}{enter payment}{section.B.4}% 396
+\BOOKMARK [2][-]{subsection.B.4.14}{bill history}{section.B.4}% 397
+\BOOKMARK [2][-]{subsection.B.4.15}{Sprint 3.5 and 4 Issues}{section.B.4}% 398
+\BOOKMARK [2][-]{subsection.B.4.16}{Client Interactions}{section.B.4}% 399
+\BOOKMARK [2][-]{subsection.B.4.17}{Group Meeting}{section.B.4}% 400
+\BOOKMARK [2][-]{subsection.B.4.18}{Work Distribution}{section.B.4}% 401
+\BOOKMARK [1][-]{section.B.5}{Sprint Report \0435}{appendix.B}% 402
+\BOOKMARK [2][-]{subsection.B.5.1}{Team Members:}{section.B.5}% 403
+\BOOKMARK [2][-]{subsection.B.5.2}{Prototype Progress}{section.B.5}% 404
+\BOOKMARK [2][-]{subsection.B.5.3}{Project deliverables of Sprint 5:}{section.B.5}% 405
+\BOOKMARK [2][-]{subsection.B.5.4}{Sprint 5}{section.B.5}% 406
+\BOOKMARK [2][-]{subsection.B.5.5}{Prorated Refunds}{section.B.5}% 407
+\BOOKMARK [2][-]{subsection.B.5.6}{Enter Staff Hours}{section.B.5}% 408
+\BOOKMARK [2][-]{subsection.B.5.7}{Enter Teacher Wages}{section.B.5}% 409
+\BOOKMARK [2][-]{subsection.B.5.8}{Enter Tuition Rates and Fees}{section.B.5}% 410
+\BOOKMARK [2][-]{subsection.B.5.9}{Bug Fixes}{section.B.5}% 411
+\BOOKMARK [2][-]{subsection.B.5.10}{Updates Crossover}{section.B.5}% 412
+\BOOKMARK [2][-]{subsection.B.5.11}{Approved/Rejected Student Updates}{section.B.5}% 413
+\BOOKMARK [2][-]{subsection.B.5.12}{Admin List}{section.B.5}% 414
+\BOOKMARK [2][-]{subsection.B.5.13}{Add/Remove Locations}{section.B.5}% 415
+\BOOKMARK [2][-]{subsection.B.5.14}{Removal Functions}{section.B.5}% 416
+\BOOKMARK [2][-]{subsection.B.5.15}{Sprint 5 Issues}{section.B.5}% 417
+\BOOKMARK [2][-]{subsection.B.5.16}{Client Interactions}{section.B.5}% 418
+\BOOKMARK [2][-]{subsection.B.5.17}{Group Meeting}{section.B.5}% 419
+\BOOKMARK [2][-]{subsection.B.5.18}{Work Distribution}{section.B.5}% 420
+\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 421
+\BOOKMARK [1][-]{section.C.1}{Resumes}{appendix.C}% 422
+\BOOKMARK [1][-]{section.C.2}{Industrial Experience Reports}{appendix.C}% 423
+\BOOKMARK [2][-]{subsection.C.2.1}{Marcus Berger}{section.C.2}% 424
+\BOOKMARK [2][-]{subsection.C.2.2}{Dicheng Wu}{section.C.2}% 425
+\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 426
+\BOOKMARK [0][-]{appendix.E}{Supporting Materials}{}% 427

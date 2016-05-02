@@ -6,27 +6,218 @@
 This section describes the approach taken with regard to testing the DanceSoft project. 
 
 \section{Overview}
-Provides a brief overview of the testing approach, testing frameworks, and general 
-how testing is/will be done to provide a measure of success for the system.
+The general testing for this iteration of the DanceSoft was done through manual user testing of the GUI and making sure that that correct values ended up in the database in the way the team was expecting. The team also checked removal to make sure that they were being processed correctly. Other GUI functionality was also tested such as buttons and overall usability of functions.
 
-Each requirement (user story component) should be tested.    A review of objectives and
-constraints might be needed here.  
+Success for this testing procedure is measure by correct interactions with the database and user. An example of a successful test would be a user adds a teacher, the system check required fields and outputs an error dialog if not filled out. Once the form is filled out the teacher information is correctly placed in the Teacher table and an account is made within the Account table.
+
+Failure is similarly defined for this project, if a function misplaces or incorrectly places data in the database or if the query fails and breaks search, then it is defined as a failure. Other instances of failure are defined for the individual functions.
 
 \section{Dependencies}
-Describe the basic dependencies which should include unit testing frameworks and 
-reference material. 
+There are several dependencies for the testing of the DanceSoft system. The follow is a general overview of the dependencies found by the team:
+
+\begin{itemize}
+\item Team Inexperience - The team lack mass testing experience due to the fact that neither team member has had any industrial experience before this project.
+\item Difficulty of Unit Testing - Owing to the project being mostly GUI and Database the team had issues with developing unit test for the project. So for many reason the project was manual and within database testing
+\item Team Testing Effectiveness - Since the testing was manual the thoroughness of testing was completely determined by the team members efficiency. This caused issues within the team and the testing since some team member were less effective at times.  
+\end{itemize} 
 
 
 \section{Test Setup and Execution}
-Describe how test cases were developed, setup, and executed.  This section can 
-be extremely involved if a complete list of test cases was warranted for the system.   One 
-approach is to list each requirement, module, or component and describe the test.
+The DanceSoft project has all of it functions tied to various GUI elements such as buttons, spinboxes, and line edits. As such the teams testing approach was to test the functions and database connections. Most pages follow this general testing structure:
 
-The unit tests are described here.
+\begin{itemize}
+\item Test error notifications - such as not filling out required form fields
+\item Button allocence - can the user only click a button or element within the page when allowed.
+\item Correct Data Apperence - Does the functions that recive data recive the correct values from the database
+\item Correct Data Submiition - Does data creation or updates get processed within the database and placed in the correct tables
+\item Correct Database Handling - Are the updates place in the correct places and are they complete
+\end{itemize}
+
 
 \section{System Testing}
 
+Login page:\\
+
+Log in testing case structure:
+\begin{itemize}
+\item test invalid user name
+\item test invalid password
+\item test correct log in 
+\item test log in button directing to landing selection page
+\item test cancel button exiting software
+\item test permission system - once at landing selection is someone with the correct permissions locked out of admin landing
+\item test navigation - do the buttons to the admin and teacher landing pages work navigate correctly
+\end{itemize}
+
+Landing Selection:\\
+
+\begin{itemize}
+\item Tested to confirm that the admin button goes to the admin landing page
+\item Tested to confirm that the teacher button goes to the teacher landing page
+\end{itemize}
+
+Admin Landing:\\
+
+The admin landing page is composed of entirely buttons that go to the function windows tied to the button. Therefore the admin landing testing is covered in system integration testing and testing other function since the buttons needed to work to test the functions.
+
+Teacher Landing:\\
+
+As with the admin landing page the testing for this page is retroactively covered by navigating to other pages through the GUI, the system integration testing and the demos.
+
+Add Information Forms:\\
+
+There are several forms that add information to the system these include add teacher, add student, and add class the testing structure follows:
+
+\begin{itemize}
+\item Test that each button connected to a form displays correctly and opens the correct form
+\item Test the line edits ability to accept input
+\item Test the spin boxes
+\item Test the date edits
+\item Test Combo boxes
+\item Test the submit button triggering the require field dialog if not filled out correctly
+\item Test the submission of new data entry to the database when the submit button is clicked
+\end{itemize}
+
+The teacher and student forms error check the name, phone numbers which must be formatted as a ten digit number, and address. The address in placed in the data base in caps to prevent the duplication of addresses within the database. As a class is generated the class id is set to the next in the database.
+
+The student forms include a guardian option where the user is able to select a guardian from a combo box or add a new one to the system. Test were run to make sure that when add new was selected a guardian dialog will pop up and the user can enter a new guardian which is then added to the combo box.
+
+The class form similar to the student page includes a location combo box that when add new is selected brings up a line edit dialog where the user can enter a new location. Specific special form test where:
+
+\begin{itemize}
+\item Student Form: Test add new guardian and add secondary pulling up forms
+\item Student Form: Test the adding of guardian name to combo box
+\item Student Form: Test Updates
+\item Class Form: Test the adding of a location to the combo box and location retrieval from the database
+\end{itemize}
+
+Search Pages:\\
+
+Show Admin List:\\
+The admin list is a fairly simple widget the user clicks a button and a list window pops up with a search and list of system admin. The following test were conducted:
+
+\begin{itemize}
+\item Test that button on the Admin Landing page opens correct window.
+\itme Test that every system admin is displayed in the list (using test data)
+\item Test that search function correctly refines the list of names based on if the name contains the typed string
+\end{itemize}
+
+Update Teacher Information:\\
+The update teacher information form is very similar to the add a teacher form and therefore when through the same test, does the error checking work, does the submit button update the teacher in the database correctly. However there are a few test cases for update that do not apply to "new teacher." The new test cases are:
+
+\begin{itemize}
+\item Does the select teacher combo box populate with the teacher names correctly
+\item Test if the teacher select button correctly populate the form with the correct teachers data
+\item Once the data change has been submitted does it register correctly within the database
+\end{itemize}
+
+Enter Teacher Hours:\\
+The enter teacher hours page is supposed to allow the user to see the hours logged by a selected teacher and change them if need be. The following test cases were used to test this function:
+
+\begin{itemize}
+\item Test that the landing button bring up the correct window
+\item Test that the teacher list contain the full list of teachers before searching
+\item Test the search function refining the list of teachers correctly.
+\item Test that the course hours are correctly calculated
+\item Test the pay rate combo box selection
+\item Test changing the hours of pay rates and confirm that gross wage is being recalculated correctly
+\end{itemize} 
+
+Assign Teacher to Class:\\
+
+Teaching History:\\
+Teaching history should allow the user the ability to select a teacher and view a simple text list of past classes taught. The following are generic test to confirm page function:
+
+\begin{itemize}
+\item Test that landing page button opens correct window
+\item Confirm that teacher list is being retrieved from the database correctly
+\item Confirm that search refines the teacher list correctly based on the string typed and teacher names
+\item Test class history button and display of past classes
+\end{itemize}
+
+Set Semester:\\
+Set semester should allow the user to set the current semester in the system and add new ones to the system. The general test follow:
+
+\begin{itemize}
+\item Test that the landing page button goes to the correct window
+\item Test that the combo box contains the list of semesters
+\item Test adding a new semester
+\end{itemize}
+
+Currently there exist no way of removing semester from the system within the GUI.
+
+Student Credits:\\
+Student Credits is a stand alone function that allows the user to look for a student and see if any credits have been logged and add to or subtract credit as needed. The function is only meant to store a value. The test follow:
+
+\begin{itemize}
+\item Test landing button opening the correct window
+\item Test student selection - does the credit amount for that student show up in the spin box
+\item Test changing and updating the values by clicking the update button swiching students and reselecting the student.
+\item Test that the cancel button closes the window
+
+Due to the Academy's no refund policy the credits are not apllied to anything and therefore any sort of calculation test are not required.
+\end{itemize}
+
+Add/Remove Student:\\
+This page is supposed to add and remove students from classes the function is not currently in use in the project but is left in at the request of the client. The following test were conducted before the functionality was abandoned:
+
+\begin{itemize}
+\item Test that window displays on button press
+\item Test that correct class list displays
+\item Confirm that student status window displays correctly
+\item Test add functionality on both pending and rejected students
+\item Test remove functionality on both pending and approved students
+\end{itemize}
+
+Registration:\\
+
+
+Removal Functions:\\
+
+
+Enter Partial Payment:\\
+This page should be able to log student payments. The test to confirm functionality follow:
+
+\begin{itemize}
+
+\end{itemize}
+Enter Full Payment:\\
+
+Enter Teacher Pay Rate:\\
+
+Student Balance:\\
+
+Billing History:\\
+
+Tuition Rates and Fees:\\
+
+Student Schedule:\\
+
+Teacher Class Schedule:\\
+
+Class Role Sheet:\\
+
+Change Password\\
+
+Change Username:\\
+
+Modify Personal Information:\\
+
+Enter Hours:\\
+
+
+
 \section{System Integration Analysis}
+System integration testing occurred at several points during development with the goal of making sure that the separate functions of the user interface tied together and worked correctly.
+
+At the start of sprint 2 the admin and teacher main pages where tied into the "login" page, through several log ins the team was able to confirm that the navigation works as intended.
+
+The major system integration test occurred during sprint 3.5. During this time the majority of the functions were tied to the main pages. These pages include the searches, assign teacher, and many others completed before this point. Once the pages where connected the system was ran several times to confirm that the navigation connected to the correct pages and the functions ran. This phase created the projects first connected prototype, which culminated in a first semester prototype demo for the client after returning from sprint 3.5.
+
+After the first connected prototype was created the team tied the functions in as they were finished and through testing the functions also tested system integration since the team would need to log in and navigate to the various pages within the system. 
+
+Once development of the project was frozen by the client the team conducted a last round of system integration testing was conducted across all functions to confirm that the system would correctly flow for the South Dakota School of Mines Design Fair. After the design fair the team has conducted no further test due to the development freeze on the project.
+
 
 \section{Risk Analysis}
 During development of the DanceSoft project the project encountered a few possible risk that could effect the system. The team has found the following main risk within the system.
@@ -46,11 +237,11 @@ The third set of risk with the DanceSoft system is database backups and data sec
 
 
 \subsection{Risk Mitigation}
-The following section is the teams approaches, goals, and ideas to mitigate the various risk with this the DanceSoft project.
+The following section is the teams approaches, goals, and ideas to mitigate the various risk with the the DanceSoft project.
 
 The teams has been developing each interface with the idea of usability in mind during the entire process. One of the testing approaches that the team used was user testing. This method meant sitting down and acting like a user of the system and not a developer or technical user. If during this process something did not make sense or execution did not work in the expected way, the interface or function was reworked. Another part of this approach involved having people do sudo-beta test by sitting and attempting navigation of the system. If any questions or concerns came up from the user they were analyzed and addressed if necessary by the team. By keeping the interface simple and asking for feedback the team hopes to mitigate usability issues as much as possible.
 
-The database risk are only partially dealt with in the current project. The database connection issues are handled through a few error checks in the connection. Also since the database will be contained in the local machine provided by the client the database can be connected to directly. This connection issue will become greater once a student web interface is added to system, or if the client moves the database the connection will become reliance on the communication between either the two systems or the network connectivity at the Academy. Some of these future student interface issues were discussed before the student portal was dropped from the project. The rink could possibly be handled by storing the information the students are sending through a socket and storing it until the database is booted at the Academy. At which point the updates would be submitted.
+The database risks are only partially dealt with in the current project. The database connection issues are handled through a few error checks in the connection. Also since the database will be contained in the local machine provided by the client the database can be connected to directly. This connection issue will increase once a student web interface is added to system, or if the client moves the database the connection will become reliance on the communication between either the two systems or the network connectivity at the Academy. Some of these future student interface issues were discussed before the student portal was dropped from the project. The rink could possibly be handled by storing the information the students are sending through a socket and storing it until the database is booted at the Academy. At which point the updates would be submitted.
 Another database risk is the security of the data stored within. The backup issue can be solved through writing the contents to a file which can be stored on either the local machine, or another machine as to protect the data should something happen to the computer in which the database is stored. Many MySQL management software also have ways of exporting the statements needed to create the database which the client can use to manage backups and create text file backups. The actually security of the data will not be completed in this iteration of the software. However the team has a few ideas for data security. Firstly since only the local system exist at this time, data should not be passed over a network. The SQL queries can be placed into prepared statement to aid in their security. Its is highly advised by the development team that security solutions be explored by future developers as the current team lacks the experience and expertise to truly ensure the security of the data contain within the system.
 
 \section{Successes, Issues and Problems}

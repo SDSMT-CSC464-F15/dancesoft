@@ -3,33 +3,33 @@
 
 \chapter{System  and Unit Testing}
 
-This section describes the approach taken with regard to testing the DanceSoft project. 
+This section describes the approach taken with regard to testing for the DanceSoft project. 
 
 \section{Overview}
-The general testing for this iteration of the DanceSoft was done through manual user testing of the GUI and making sure that that correct values ended up in the database in the way the team was expecting. The team also checked removal to make sure that they were being processed correctly. Other GUI functionality was also tested such as buttons and overall usability of functions.
+The general testing for this iteration of the DanceSoft was done through manual user and developer testing of the GUI and making sure that the correct values ended up in the database in the way the team was expecting. The team also checked removal to make sure that they were being processed correctly. Other GUI functionality was also tested such as buttons and overall usability of functions.
 
-Success for this testing procedure is measure by correct interactions with the database and user. An example of a successful test would be a user adds a teacher, the system check required fields and outputs an error dialog if not filled out. Once the form is filled out the teacher information is correctly placed in the Teacher table and an account is made within the Account table.
+Success for this testing procedure is measured by correct interactions with the database and user. An example of a successful test would be a user adds a teacher, the system checks the required fields and outputs an error dialog if not filled out. Once the form is filled out the teacher information is correctly placed in the Teacher table and an account is made within the Account table.
 
 Failure is similarly defined for this project, if a function misplaces or incorrectly places data in the database or if the query fails and breaks search, then it is defined as a failure. Other instances of failure are defined for the individual functions.
 
 \section{Dependencies}
-There are several dependencies for the testing of the DanceSoft system. The follow is a general overview of the dependencies found by the team:
+There are several dependencies for the testing of the DanceSoft system. The following is a general overview of the dependencies found by the team:
 
 \begin{itemize}
 \item Team Inexperience - The team lack mass testing experience due to the fact that neither team member has had any industrial experience before this project.
-\item Difficulty of Unit Testing - Owing to the project being mostly GUI and Database the team had issues with developing unit test for the project. So for many reason the project was manual and within database testing
-\item Team Testing Effectiveness - Since the testing was manual the thoroughness of testing was completely determined by the team members efficiency. This caused issues within the team and the testing since some team member were less effective at times.  
+\item Difficulty of Unit Testing - Owing to the project being mostly GUI and Database the team had issues with developing unit test for the project. So for many reasons the project was manually tested for both GUI and database
+\item Team Testing Effectiveness - Since the testing was manually conducted the thoroughness of testing was completely determined by the team members efficiency. This caused issues within the team and the testing since some team member were less effective at times.  
 \end{itemize} 
 
 
 \section{Test Setup and Execution}
-The DanceSoft project has all of it functions tied to various GUI elements such as buttons, spinboxes, and line edits. As such the teams testing approach was to test the functions and database connections. Most pages follow this general testing structure:
+The DanceSoft project has all of it functions tied to various GUI elements such as buttons, spinboxes, and line edits. As such the teams testing approach was to test the functions and database connections. Most pages followed this general testing structure:
 
 \begin{itemize}
 \item Test error notifications - such as not filling out required form fields
-\item Button allocence - can the user only click a button or element within the page when allowed.
-\item Correct Data Apperence - Does the functions that recive data recive the correct values from the database
-\item Correct Data Submiition - Does data creation or updates get processed within the database and placed in the correct tables
+\item Button allocation - can the user only click a button or element within the page when allowed.
+\item Correct Data Appearance - Does the functions that receive data receive the correct values from the database
+\item Correct Data Submission - Does data creation or updates get processed within the database and placed in the correct tables
 \item Correct Database Handling - Are the updates place in the correct places and are they complete
 \end{itemize}
 
@@ -92,6 +92,22 @@ The class form similar to the student page includes a location combo box that wh
 \end{itemize}
 
 Search Pages:\\
+There are several search pages in the system these including class search, student search and teacher search
+The general testing format for the search pages follow:
+
+\begin{itemize}
+\item Do the windows connect to the right button
+\item Test that the search window has correct starting data
+\item Test that the user can type a name into the search bar and find the correct values when the submit button is clicked
+\item Test the search again with the exact box checked to confirm that only what is typed is found
+\item After a search test the refresh button to confirm that it bring back the full list of values
+\item Test that the advance search dialog comes up when the advanced button is clicked
+\item Test the various fields in the advanced search for success
+\item Test that the search window allows for selection of values in the search window
+\item Test that details button pops up with an error dialog if the user has not selected a value
+\item Test that when the details button is clicked a dialog containing the selected values information
+\item Test updating information for value following the update forms testing
+\end{itemize}
 
 Show Admin List:\\
 The admin list is a fairly simple widget the user clicks a button and a list window pops up with a search and list of system admin. The following test were conducted:
@@ -124,6 +140,16 @@ The enter teacher hours page is supposed to allow the user to see the hours logg
 \end{itemize} 
 
 Assign Teacher to Class:\\
+This page should allow the user to select the class and assign teachers to the class. The following test were used to test this function:
+
+\begin{itemize}
+\item Test the landing page button directs to the right page
+\item Test that the class and teacher list generate correctly
+\item Test that when a class is selected that the teacher list only generates the available teachers 
+\item Test assign to a not assigned class
+\item Test assign to a class that is already assigned to a teacher (pops up a dialog asking the user)
+\item Check the database for changes and submissions 
+\end{itemize}
 
 Teaching History:\\
 Teaching history should allow the user the ability to select a teacher and view a simple text list of past classes taught. The following are generic test to confirm page function:
@@ -170,40 +196,152 @@ This page is supposed to add and remove students from classes the function is no
 \end{itemize}
 
 Registration:\\
+Test cases for student registration page follow:
 
+\begin{itemize}
+\item Test the entering new student
+\item Test error checking for the fields
+\item Test add guardian and and secondary guardian
+\item Confirm that added guardians are inserted into the combo box
+\item Confirm that new student is added to the database
+\item Test that update function brings up selected students data
+\item Test that updates are correctly processed
+\item Test that classes can be added and dropped from the selected students schedule
+\item Confirm database data is correct 
+\end{itemize}
 
 Removal Functions:\\
+The removal functions follow this general testing framework:
 
+\begin{itemize}
+\item Test that windows pop up when buttons are pressed on the admin landing page
+\item Test that the selection drop down fully populates with the data from the tables
+\item Test removal and that data is fully removed from the database
+\end{itemize}
 
+The teacher removal removes from the Teacher table, the Teacher_Class, Address, Teacher_Payrate, Account, and the admin table if needed. The class removal removes from the Class, Student_Class, and the Teacher_Class. The student removal removes from the Student, Student_Class, Address, Guardian, and billing tables. Lastly the admin removal removes either admin permissions or admin from the system.
+  
 Enter Partial Payment:\\
 This page should be able to log student payments. The test to confirm functionality follow:
 
 \begin{itemize}
-
+\item Test that that landing page button correctly links to the payment page
+\item Test that the window displays all students in the system
+\item Once a student is selected test the selection button which brings up the payment window
+\item Test the ability to enter and submit a payment to the database.
+\item Test that submitted payment is displayed in billing history
 \end{itemize}
+
 Enter Full Payment:\\
+Like the partial payment page the full payment page clears the selected student debt.
+
+\item Test that that landing page button correctly links to the payment page
+\item Test that the window displays all students in the system
+\item Once a student is selected test the clear button, which should clear the students billing
+\end{itemize}
+
 
 Enter Teacher Pay Rate:\\
 
+\begin{itemize}
+\item Test that the landing button bring up the correct window
+\item Test that the teacher list contain the full list of teachers before searching
+\item Test the search function refining the list of teachers correctly.
+\item Test that the course hours are correctly calculated
+\item Test the pay rate combo box selection
+\item Test changing the hours of pay rates and confirm that gross wage is being recalculated correctly
+\end{itemize} 
+
+
 Student Balance:\\
+Student Balance displays an invoice for the selected student
+
+\begin{itemize}
+\item Test that the landing button bring up the correct window
+\item Test that the student list contain the full list of students before searching
+\item Test the search function refining the list of students correctly.
+\item Test that the invoice appears correctly and check within database that the numbers are correct
+\item Test the print button functionality
+\item Test the close button returning to the landing page
+\end{itemize} 
 
 Billing History:\\
+The testing for billing history is very similar to the testing for most of the payroll functions:
 
-Tuition Rates and Fees:\\
+\begin{itemize}
+\item Test that the landing button bring up the correct window
+\item Test that the student list contain the full list of students before searching
+\item Test the search function refining the list of students correctly.
+\item Test that the invoice appears correctly
+\item Test the print button functionality
+\item Test the close button returning to the landing page
+\end{itemize}
+
 
 Student Schedule:\\
 
+\begin{itemize}
+\item Test that window appears correctly
+\item Test that student list is generated correctly
+\item Test that the class schedule display button correctly pulls up the student schedule
+\item Test that the dynamic schedules are generated in the right way for the classes the student is in
+\item Test the print button and the close button
+\end{itemize}
+
 Teacher Class Schedule:\\
+
+\begin{itemize}
+\item Test that window appears correctly
+\item Test that teacher list is generated correctly
+\item Test that the class schedule display button correctly pulls up the schedules 
+\item Test that the dynamic schedules are generated in the right way for the classes the teacher is teaching
+\item Test the print button and the close button
+\end{itemize}
 
 Class Role Sheet:\\
 
-Change Password\\
+\begin{itemize}
+\item Test that window appears correctly
+\item Test that teacher's class list is generated correctly
+\item Test that the student list is generated correctly for the selected class
+\item Test the role sheet display button correctly pulls up the role sheet
+\item Test the role sheet print button and close button
+\end{itemize}
+
+Change Password:\\
+The change password function has the following test cases:
+
+\begin{itemize}
+\item does the window show correctly when the button on the landing page was pressed
+\item Test that the error checking occurs for incorrectly entered user name and password 
+\end{itemize}
 
 Change Username:\\
+The change user name function has the following test cases:
+
+\begin{itemize}
+\item does the window show correctly when the button was pressed
+\item Test that the error checking occurs for incorrectly entered user name and password 
+\end{itemize}
 
 Modify Personal Information:\\
 
+The update my teacher information form is very similar to the add a teacher form and therefore when through the same test, does the error checking work, does the submit button update the teacher in the database correctly. However there are a few test cases for update that do not apply to "new teacher."
+
+\begin{itemize}
+\item Test if the system correctly populates the form with the correct teachers data
+\item Once the data change has been submitted does it register correctly within the database
+\end{itemize}
+
 Enter Hours:\\
+
+\begin{itemize}
+\item Test that the landing button bring up the correct window
+\item Test that the course hours are correctly calculated
+\item Test the ability for the teacher to log hours and dynamically see hours
+\end{itemize} 
+
+
 
 
 
@@ -245,6 +383,20 @@ The database risks are only partially dealt with in the current project. The dat
 Another database risk is the security of the data stored within. The backup issue can be solved through writing the contents to a file which can be stored on either the local machine, or another machine as to protect the data should something happen to the computer in which the database is stored. Many MySQL management software also have ways of exporting the statements needed to create the database which the client can use to manage backups and create text file backups. The actually security of the data will not be completed in this iteration of the software. However the team has a few ideas for data security. Firstly since only the local system exist at this time, data should not be passed over a network. The SQL queries can be placed into prepared statement to aid in their security. Its is highly advised by the development team that security solutions be explored by future developers as the current team lacks the experience and expertise to truly ensure the security of the data contain within the system.
 
 \section{Successes, Issues and Problems}
+The following is an overview of the testing successes, issues and problems.
+
+The team testing approach was mostly successful for this project, bugged where found and handled by the team as the they came up. The overall functionality of several pages was tested when working with other functions creating secondary test.
+
+Some issues and problems that came up for the team where:
+
+\begin{itemize}
+\item Different levels of testing thoroughness by the team members
+\item Team had to watch when making changing the database since it could change unwanted values
+\item By doing manual testing the testing was not done automatically like with unit test. In the next iteration it is highly recommend that the new team finds a unit testing framework to reduce overall work load.
+\item Due to this project being the first iteration of the system and the team was on the senior design deadline some functions did not reach the full completion state so the team was unable to test incomplete or left out functions.
+\item Due to the overall problems with the project it is possible the team may have missed possible edge cases. 
+\end{itemize}
+
 
 \subsection{Changes to the Backlog}
 Overall the project's base remained unchanged from the the beginning requirements. However as the project was being built the backlog and project encountered a few changes and iterations. These changes and modification are briefly explained in this section. 

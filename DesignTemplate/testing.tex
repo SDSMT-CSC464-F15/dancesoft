@@ -114,7 +114,7 @@ The admin list is a fairly simple widget the user clicks a button and a list win
 
 \begin{itemize}
 \item Test that button on the Admin Landing page opens correct window.
-\itme Test that every system admin is displayed in the list (using test data)
+\item Test that every system admin is displayed in the list (using test data)
 \item Test that search function correctly refines the list of names based on if the name contains the typed string
 \end{itemize}
 
@@ -219,7 +219,7 @@ The removal functions follow this general testing framework:
 \item Test removal and that data is fully removed from the database
 \end{itemize}
 
-The teacher removal removes from the Teacher table, the Teacher_Class, Address, Teacher_Payrate, Account, and the admin table if needed. The class removal removes from the Class, Student_Class, and the Teacher_Class. The student removal removes from the Student, Student_Class, Address, Guardian, and billing tables. Lastly the admin removal removes either admin permissions or admin from the system.
+The teacher removal removes from the Teacher table, the Teacher Class, Address, Teacher Payrate, Account, and the admin table if needed. The class removal removes from the Class, Student\_Class, and the Teacher\_Class. The student removal removes from the Student, Student\_Class, Address, Guardian, and billing tables. Lastly the admin removal removes either admin permissions or admin from the system.
   
 Enter Partial Payment:\\
 This page should be able to log student payments. The test to confirm functionality follow:
@@ -235,6 +235,7 @@ This page should be able to log student payments. The test to confirm functional
 Enter Full Payment:\\
 Like the partial payment page the full payment page clears the selected student debt.
 
+\begin{itemize}
 \item Test that that landing page button correctly links to the payment page
 \item Test that the window displays all students in the system
 \item Once a student is selected test the clear button, which should clear the students billing

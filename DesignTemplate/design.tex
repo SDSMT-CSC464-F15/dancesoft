@@ -6,7 +6,7 @@ in the DanceSoft project.
   
  
  \section{Architecture and System Design and Data flow }
- The teams overall design was defined during sprint 2 of the project the team drew out the overall system structure and has for the most part stuck to the intial design laid out during this time and added to it as things like the payroll interface were added to the project.
+ The teams overall design was defined during sprint 2 of the project the team drew out the overall system structure and has for the most part stuck to the initial design laid out during this time and added to it as things like the payroll interface were added to the project.
  
 \begin{figure}
   \includegraphics[width=\linewidth]{pics/GUI_digram.jpg}
@@ -74,10 +74,10 @@ There are several components in our GUI design and can be divided into four part
 \subsection{Phase Overview}
 
 \subsubsection{Initial Creation}
-We first created login and permission-level pages which is for authentication purposes. Then, we made two landing pages, one is for admins and another is for teachers. Those landing pages contain several sub-pages which corresponding to certain group of functionalities.
+We first created log in and permission-level pages which is for authentication purposes. Then, we made two landing pages, one is for admins and another is for teachers. Those landing pages contain several sub-pages which corresponding to certain group of functionalities.
 
 \subsubsection{authentication pages}
-It consists of a login page and a permission-level page which is used to authenticate users and lead them to corresponding landing page.\\
+It consists of a log in page and a permission-level page which is used to authenticate users and lead them to corresponding landing page.\\
 \includegraphics[scale=0.7]{pics/login_page.png}
 
 \subsubsection{admin landing pages} 
@@ -99,17 +99,17 @@ Admin GUI structure.\\
 
 
 \subsection{Data Flow Description}
-Users can log into system through the login page and if username and password are correct then it leads user to permission system which currently is a dialogue box otherwise users get rejected from system. From permission system, user either can be leaded to admin landing page or teacher landing page. Then if the user is an admin they can search employee's information, add class, add teacher, assign teacher to class, sets clothing requirement for specific class. If users are teachers, they can search student's information, assign students to class, print the role sheet of the class she is teaching. 
+Users can log into system through the log in page and if user name and password are correct then it leads user to permission system which currently is a dialogue box otherwise users get rejected from system. From permission system, user either can be lead to admin landing page or teacher landing page. Then if the user is an admin they can search employee's information, add class, add teacher, assign teacher to class, sets clothing requirement for specific class. If users are teachers, they can search student's information, assign students to class, print the role sheet of the class she is teaching. 
 
 \subsection{Design Details}
-We first draw couple of pages on white boards and try to figure out what structure fits our scheme. Later, we decide to use a tree-like structure both for simplicity and extensibility. It consisted of a login page which user can use to log into the system, and two landing pages leaded by different options on authentication page. 
+We first draw couple of pages on white boards and try to figure out what structure fits our scheme. Later, we decided to use a tree-like structure both for simplicity and extensibility. It consisted of a log in page which user can use to log into the system, and two landing pages leaded by different options on authentication page. 
 
 \subsubsection{Role Sheet Page}
 
 \includegraphics[scale=0.5]{pics/role.png}\\
 This window provides a list of classes the teacher, who logs in to system, is currently teaching on the left list view. User can select specific class and it will populate a list of name of student those are in this class\\
 \includegraphics[scale=0.5]{pics/print.png}\\
-By clicking print button, it will pop up a window which has the student's names in a text list and user can directly modify names in text list. In later spring, we are going to add some format for the list and make it looks better. User also can import external txt or xml file by clicking open button. Before print use can use preview to generate a pdf with list names of student on it and to see whether it is the list user wants to use. By clicking print button, use can print the actual list.
+By clicking print button, it will pop up a window which has the student's names in a text list and user can directly modify names in text list. In later spring, we are going to add some format for the list and make it looks better.  Before printing users can use the preview button to generate a pdf with list names of student on it and to see whether it is the list user wants to use. By clicking print button, users can print the actual list.
 
 \subsubsection{Update Form Page}
 \includegraphics[scale=0.5]{pics/Update_Teacher.png}\\
@@ -127,9 +127,9 @@ clicking add button which pops up a dialog containing a list of student's names 
 
 \subsubsection{Search Page}
 \includegraphics[scale=0.5]{pics/search.png}\\
-This window provides the ability for searching information students and employees. User can search full or partial name by check or unchecked exact box, and it will populate brief information on the table view.
+This window provides the ability for searching information for students and employees. Users can search full or partial name by check or unchecked exact box, and it will populate brief information on the table view.
 \includegraphics[scale=0.5]{pics/adv_search.png}\\
-User can do advanced search by clicking advanced search button. It will let user to choose what kinds of attributes the user wants to use and do the and operation search.\\
+User can do advanced search by clicking advanced search button. It will let the user choose what kinds of attributes the user wants to use and do the search.\\
 
 \includegraphics[scale=0.5]{pics/detail.png}\\
 User can look into details of each one in the list and click detail button, it will pop up a window that shows detailed information. User also can directly modify information appears in text fields and click submit button to submit new information to database.
@@ -142,33 +142,33 @@ If the user selects a classes that is already assigned then the GUI will pop up 
 
 \subsubsection{Enter Payment}
 \includegraphics[scale=0.5]{pics/partial_pay_main.png}\\
-This partial payment page will let user to choose students who is not clear their payment and also search those students by their name. User can choose one or more of students at a time and enter payment for them with different amount and methods.\\
+This partial payment page will let user choose students who is not clearing their payment and also search those students by their name. User can choose one or more of students at a time and enter payment for them with different amount and methods.\\
 \includegraphics[scale=0.5]{pics/partial_pay_sub.png}\\
 This dialog allows user to enter certain amount of payment and with different payment methods and semesters.\\
 \includegraphics[scale=0.5]{pics/full_pay.png}\\
-This full payment page will let user choose students who is not clear their payment and also search those students by their name. User can choose one or more of students at a time and clear all the due of selected student. The total due is calculate by the student.
+This full payment page will let user choose students who have not cleared their payment and also search those students by their name. User can choose one or more of students at a time and clear all the due of selected student. The total due is calculate by the system.
 
 \subsubsection{Enter Teacher Pay Rate}
 \includegraphics[scale=0.5]{pics/pay_rate_main.png}\\
-The teacher pay rate page will let user to choose teacher and also search those students by their name. User can choose one of those teacher and enter payment name and rate for them.\\
+The teacher pay rate page will let user choose teacher and also search those students by their name. User can choose one of those teachers and enter payment name and rate for them.\\
 \includegraphics[scale=0.5]{pics/pay_rate_dialog.png}\\
 In this dialog user can enter pay name with corresponding pay rate for each individual teacher and also update pay rate already existed record. 
 
 \subsubsection{Student Balance}
 \includegraphics[scale=0.5]{pics/balance_main.png}\\
-This student balance page will let user to choose students and also search those students by their name. User can choose one of the students to see their current balance of current semester. \\
+This student balance page will let user choose students and also search those students by their name. User can choose one of the students to see their current balance of current semester. \\
 \includegraphics[scale=0.5]{pics/balance_dialog.png}\\
-In this dialog, it shows name of student and current semester. The list of class the student have registered and with corresponding minutes. It also calculate the total minutes and money has paid and money has not paid. User can preview those information in a pdf or print it out in the printer.
+In this dialog, it shows the name of student and current semester. The list of classes the student have registered for and with corresponding minutes. It also calculates the total minutes and money they have paid and money not paid. User can preview this information in a pdf or print it out to the printer.
 
 \subsubsection{Billing History}
 \includegraphics[scale=0.5]{pics/billing_main.png}\\
-This student balance page will let user to choose students and also search those students by their name. User can choose one of the students to see their billing history.\\
+This student balance page will let user choose students and also search those students by their name. User can choose one of the students to see their billing history.\\
 \includegraphics[scale=0.5]{pics/billing_dialog.png}\\
-In this dialog, it shows the payment id and name of who paid and term and amount paid and Date. It also will be sorted by paid date in descending order.User can preview those information in a pdf or print it out in the printer.\\
+In this dialog, it shows the payment id and name of who paid and term and amount paid and Date. It also will be sorted by paid date in descending order. User can preview those information in a pdf or print it out in the printer.\\
 
 \subsubsection{Tuition Rate}
 \includegraphics[scale=0.5]{pics/Tuition_rate.png}\\
-In this page user can add new tuition for certain category and update a existing tuition rate. User also can drop tuition rate they do not want.
+In this page user can add new tuition for certain category and update a existing tuition rate. User also can drop tuition rate they do not want. If this is done however project code will need to be changed.
 
 \subsubsection{Fee Rate}
 \includegraphics[scale=0.5]{pics/Fee_rate.png}\\
@@ -178,25 +178,25 @@ In this page user can add new fee for certain category and update a existing fee
 \includegraphics[scale=0.5]{pics/reg_main.png}\\
 This student balance page will let user to choose students and also search those students by their name. User can choose one of the students to see their current information and classes' registration. \\
 \includegraphics[scale=0.5]{pics/reg_update.png}\\
-In this dialog, user can update student information and guardians as well. it error checking for entered information.\\
+In this dialog, user can update student information and guardians as well. It error checks the entered information as well.\\
 \includegraphics[scale=0.5]{pics/reg_add.png}\\
-In this dialog, user can add new student and fill out information for them. it error checking for entered information.\\
+In this dialog, user can add new student and fill out information for them. It error checks the entered information.\\
 \includegraphics[scale=0.5]{pics/reg_add_gura.png}\\
-In this dialog, user can add new guardians and fill out information for them. it error checking for entered information.\\
+In this dialog, user can add new guardians and fill out information for them. It error checks the entered information.\\
 \includegraphics[scale=0.5]{pics/reg_list.png}\\
 In this dialog, user can register and drop classes for each student. in left table view it shows the list of classes that student currently registered and tight table view shows the list of available classes that student can take. user can choose one or multiple classes in each field and add to or drop from the lists.
 
 \subsubsection{Student Credits}
 \includegraphics[scale=0.5]{pics/student_credits.png}\\
-In this dialog, user can apply credits from each student to their tuition and modify the amount of credits they actually want to apply.
+In this dialog, user can apply credits from each student to their name and modify the amount of credits they actually want to apply. These credits are only stored in the system and are for user reference purposes, by client request.
 
 \subsubsection{Update/Add/Remove}
 \includegraphics[scale=0.5]{pics/update.png}\\
-In the window, user can update new entity to the database and it is used for several pages in the program which handle different types of data.\\
+In this window, users can update new entity to the database and it is used for several pages in the program which handle different types of data.\\
 \includegraphics[scale=0.5]{pics/add.png}\\
-In the window, user can add new entity to the database and it is used for several pages in the program which handle different types of data.\\
+In this window, users can add new entity to the database and it is used for several pages in the program which handle different types of data.\\
 \includegraphics[scale=0.5]{pics/remove.png}\\
-In the window, user can remove entity from the database and it is used for several pages in the program which handle different types of data.\\
+In this window, user can remove entity from the database and it is used for several pages in the program which handle different types of data.\\
 
 \subsubsection{Set Semester}
 \includegraphics[scale=0.5]{pics/set_semester.png}\\
@@ -204,11 +204,11 @@ It allows user to set a existing semester to current semester or they can add a 
 
 \subsubsection{Admin List}
 \includegraphics[scale=0.5]{pics/admin_list.png}\\
-The admin list page will let user to choose admin and also search those admin by their name. User can choose one of those admin and click detail to look at their information.\\
+The admin list page will let users choose admin and also search those admin by their name. User can choose one of those admin and click detail to look at their information.\\
 
 \subsubsection{Enter Teacher Hours}
 \includegraphics[scale=0.5]{pics/enter_hours_main.png}\\
-The teacher list page will let user to choose teacher and also search those teacher by their name. User can click one of the teacher and start entering hours.\\
+The teacher list page will let users choose teacher and also search those teachers by their name. User can click one of the teachers and start entering hours.\\
 \includegraphics[scale=0.5]{pics/enter_hours_dialog.png}\\
 In this dialog, users can enter hours for each category indicating how many hours they actually worked or update existing record. The final result will be presented in a text field.
  
@@ -220,7 +220,7 @@ User can see schedule of each teacher/student which is dynamically generated by 
 
 \subsubsection{Change Password/Username}
 \includegraphics[scale=0.5]{pics/change_pass.png}\\
-This dialog allows current users to change their password/Username.\\
+This dialog allows current the user to change their password/User name.\\
 
 
 
@@ -233,16 +233,11 @@ The database the team used was MySQL
 The database tables are listed below.
 
 
-\subsection{Phase Overview}
-This is an extension of the Phase Overview, but specific to this component. 
-It is meant to be basically a brief list with space for marking the phase status.
-
 \subsubsection{Initial creation}
-There are Student, teacher, admins and class tables and each are connected by different relationship in order to perform certain functionality we want. It consists many-to-many relationship has intermediate table and many-to-one relationship. We also have N account table for user authentication and it has permission level included in order to distinguish different user groups for example admin and teacher have different permission levels.\\
+There are Student, teacher, admins and class tables and each are connected by different relationship in order to perform certain functionality we want. It contains many-to-many relationship has intermediate table and many-to-one relationship. We also have an account table for user authentication and it has permission level included in order to distinguish different user groups for example admin and teacher have different permission levels.\\
 
 \subsubsection{Later creation}
-The database will need to be updated as further iterations of the DanceSoft project are created.
-
+The database will need to be updated or go through slight redesigns as further iterations of the DanceSoft project are created.
 
 \subsection{ Architecture  Diagram}
 
@@ -250,11 +245,11 @@ The database will need to be updated as further iterations of the DanceSoft proj
 \includegraphics[scale=0.8]{pics/database.png}\\
 
 \subsection{Data Flow Description}
-Each table has different purposes for example teacher's table is for storing information of teachers and student's table's is for storing information of student. Different tables are evoked by different functionality for instance the function of search for students' information will use student and guardians and address tables at same time, and for assign teacher to classes it will use teacher and class and class-teacher table at same time
+Each table has different purposes for example teacher's table is for storing information about teachers and student's table is for storing information for students. Different tables are evoked by different functionality for instance the function of search for students, information will use student and guardians and address tables at same time, and for assign teacher to classes it will use teacher and class and class-teacher table at same time
 
 
 \subsection{Design Details}
-We first draw row diagram on board and try to figure out which table is necessary to implement and did some fine pruning. later stage, we create this scheme in power designer and create ERP diagram. From that diagram, we create our initial scheme and generate it in MySQL database. We also add couple of new tables on the fly due to the project needs such as the payment tables. For example, we add payment and payrate table for pay roll purpose, and System table for distinguish different semester in order to produce correct result of each function. The discount and credit are also added based on various needs.
+We first draw row diagram on board and try to figure out which table is necessary to implement and did some fine pruning. later stage, we create this scheme in power designer and create ERP diagram. From that diagram, we create our initial scheme and generate it in MySQL database. We also added a couple of new tables on the fly due to the project needs such as the payment tables. For example, we added payment and payrate table for pay roll purpose, and System table for distinguish different semester in order to produce correct result of each function. The discount and credit are also added based on various needs.
 
 \subsubsection{Account table}
 Store account's information of admins, teacher and students.\\
